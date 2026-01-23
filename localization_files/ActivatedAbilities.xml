@@ -1,0 +1,1733 @@
+<activatedabilities>
+	<ability Command="CommandAmputateLimb">
+		<description>당신은 자신의 팔다리 중 하나 또는 감염된 동반자의 팔다리를 절단합니다.</description>
+		<UITile Tile="Abilities/abil_amputate_limb.bmp" Foreground="y" Detail="Y" />
+	</ability>
+	<ability Command="CommandFlyToggle">
+		<description>
+			<p>당신은 지상 지형을 통과하며 지상 생물들의 근접 공격을 받지 않습니다.</p>
+			<br />
+			<p>매 라운드마다 <stat Name="CrashChance" />% 확률로 지면에 추락합니다.</p>
+			<br />
+			<p>당신은 지상 위에서만 날 수 있습니다.</p>
+		</description>
+		<UITile Tile="Abilities/abil_fly_toggle_off.bmp" Foreground="y" Detail="b" /> 
+  </ability>
+  <ability Command="CommandSwoopAttack">
+		<description>
+			<p>당신은 지상의 목표를 공격하기 위해 급강하하며, 공격에 한 턴, 공중으로 돌아가는데 한 턴을 사용합니다.</p>
+			<br />
+			<p><stat Name="SwoopCrashChance" />% 확률로 지면에 추락합니다 (방패에 공격이 막히면 확률이 두 배가 됩니다).</p>
+		</description>
+		<UITile Tile="Abilities/abil_swoop.bmp" Foreground="B" Detail="W" /> 
+  </ability>
+  <ability Command="CommandEndBurrowing">
+    <UITile Tile="Abilities/abil_stop_burrow.bmp" Foreground="w" Detail="W" />
+		<description>당신은 굴에서 나옵니다.</description>
+  </ability>
+  <ability Command="CommandEndDomination">
+    <UITile Tile="Abilities/abil_end_domination.bmp" Foreground="m" Detail="r" />
+		<description>당신은 이 생물을 지배하는 것을 멈춥니다.</description>
+  </ability>
+  <ability Command="ShadeOilPhase">			
+		<description>
+			<p>당신은 짧은 시간 동안 고체 물체를 통과할 수 있습니다.</p>
+      <br />
+      <statline Name="Duration" />				
+		</description>
+		<UITile Tile="Abilities/abil_phase_toggle_off.bmp" Foreground="y" Detail="B" />
+		<UITile Tile="Abilities/abil_phase_toggle_on.bmp" Foreground="Y" Detail="B" State="ToggleOn" />
+  </ability>
+  <ability Command="CommandEndSubmerged">
+    <UITile Tile="Abilities/abil_surface.bmp" Foreground="B" Detail="W" />
+		<description>당신은 숨은 장소에서 나옵니다.</description>
+  </ability>
+  <ability Command="ActivateFabricateFromSelf">
+		<description>
+			<p>당신은 <stat Name="FabricateSource" />에서 <stat Name="An" /><stat Name="FabricateBlueprint" />을(를) <stat Name="FabricateVerb" />합니다.</p>
+      <br/>
+			<statline Name="BatchSize" DisplayName="배치 크기" />
+			<statline Name="HitpointsPer" DisplayName="배치당 체력" />
+			<statline Name="Cooldown" />
+		</description>
+		<UITile Tile="Abilities/abil_fabricate.bmp" Foreground="C" Detail="W" /> 
+  </ability>
+  <ability Command="CommandPlaceMine">
+		<description>
+			<p>당신은 <stat Name="MineAn" /> <stat Name="MineDisplayName" /> 지뢰를 설치합니다.</p>
+      <br />
+      <statline Name="MineTimer" DisplayName="타이머" Unit="round" HideValue="-1" />
+			<statline Name="Cooldown" Unit="round" />
+		</description>
+		<UITile Tile="Abilities/abil_lay_mine.bmp" Foreground="R" Detail="W" /> 
+  </ability>
+  <ability Command="CommandRunOver">
+		<description>
+			<p>당신은 직선으로 돌진하여 경로상의 생물들을 짓밟습니다.</p>
+      <br />
+			<statline Name="Damage" />
+			<statline Name="Range" />
+			<statline Name="Knockdown" DisplayName="넘어짐 저항" />
+			<statline Name="Daze" DisplayName="혼절 저항" />
+		</description>
+    <UITile Tile="Abilities/abil_run_over.bmp" Foreground="W" Detail="B" /> 
+  </ability>
+  <ability Command="CommandClone">
+		<description>당신은 유기 생물을 복제합니다.</description>
+		<UITile Tile="Abilities/abil_clone.bmp" Foreground="r" Detail="W" /> 
+  </ability>
+  <ability Command="CommandTinkerTurret">
+		<description>
+      <p>당신은 인접한 공간에 <stat Name="An" /> <stat Name="TurretName" />을(를) 틴커링합니다.</p>
+      <br/>
+      <statline Name="Cooldown" />
+    </description>
+		<UITile Tile="Abilities/abil_deploy_turret.bmp" Foreground="g" Detail="W" />
+	</ability>
+  <ability Command="CommandEngulf">
+    <description>당신은 인접한 생물을 삼켜 살아있는 채로 소비하며, 잠재적으로 더 많은 것을 소비할 수 있습니다.</description>
+    <UITile Tile="Abilities/abil_engulf.bmp" Foreground="G" Detail="W" /> 
+  </ability>
+  <ability Command="CommandToggleAnchorSpikes">
+		<description>당신은 물리적 수단으로 강제로 이동당할 수 없습니다.</description>
+		<UITile Tile="Abilities/abil_anchor_spikes_toggle_off.bmp" Foreground="y" Detail="r" /> 
+    <UITile Tile="Abilities/abil_anchor_spikes_toggle_on.bmp" Foreground="Y" Detail="w" State="ToggleOn" />		
+  </ability>
+  <ability Command="CommandToggleAnomalyFumigator">
+		<description>당신은 매 턴마다 정상성 가스 구름을 방출합니다.</description>
+    <UITile Tile="Abilities/abil_anomaly_fumigator_toggle_off.bmp" Foreground="y" Detail="w" /> 
+    <UITile Tile="Abilities/abil_anomaly_fumigator_toggle_on.bmp" Foreground="Y" Detail="C" State="ToggleOn" /> 
+  </ability>
+  <ability Command="CommandCathedraBlackOpal"> 		
+		<description>
+			<p>당신은 시공간을 찢어 쿠드의 무작위 위치로 순간이동합니다.</p>
+			<br />				
+			<statline Name="Cooldown" />
+		</description>						
+		<UITile Tile="Abilities/abil_wormhole.bmp" Foreground="r" Detail="B" /> 
+  </ability>
+  <ability Command="CommandCathedraRuby">
+		<description>
+			<p>당신은 자신 주변에 염력장을 생성하여 피해를 주고 3라운드 동안 불을 붙입니다.</p>
+			<br />				
+			<statline Name="Area" />
+			<statline Name="DamageRound1" DisplayName="1라운드 피해" />
+			<statline Name="DamageRound2" DisplayName="2라운드 피해" />
+			<statline Name="DamageRound3" DisplayName="3라운드 피해" />
+			<statline Name="Cooldown" Unit="round" />
+		</description>
+		<UITile Tile="Mutations/pyrokinesis.bmp" Foreground="R" Detail="W" /> 
+  </ability>
+  <ability Command="CommandCathedraSapphire">
+		<description>
+			<p>당신은 자신 주변에 충격파를 발동합니다. 생물들은 폭발 중심에서 밀려나고, 기절하며, 최대 3회 증가분으로 압착 피해를 받습니다.</p>
+			<br />				
+			<statline Name="Area" />
+			<statline Name="DamageIncrement" DisplayName="피해 증가분" />
+			<statline Name="Cooldown" Unit="round" />
+		</description>
+		<UITile Tile="Mutations/stunning_force.bmp" Foreground="g" Detail="G" /> 
+  </ability>
+  <ability Command="CommandCathedraWhiteOpal"> 
+		<description>
+			<p>당신은 자신 주변에 반짝임을 폭발시킵니다.</p>
+			<br />				
+			<statline Name="Duration" Unit="turn" />				
+			<statline Name="Cooldown" Unit="round" />
+		</description>
+    <UITile Tile="Items/sw_skin_glitter.bmp" Foreground="M" Detail="Y" />
+  </ability>
+  <ability Command="CommandToggleFireSuppressionSystem">
+		<description>당신이 불타고 있을 때 매 라운드마다 난연 젤을 자동으로 방출합니다.</description>
+		<UITile Tile="Abilities/abil_fire_suppression_toggle_off.bmp" Foreground="y" Detail="r" />
+		<UITile Tile="Abilities/abil_fire_suppression_toggle_on.bmp" Foreground="y" Detail="R" />
+  </ability>    
+  <ability Command="CommandRecomposite">
+		<description>
+			<p>당신은 지도상의 어떤 탐험된 공간으로든 순간이동합니다.</p>		
+      <br />		
+			<statline Name="Cooldown" />				
+		</description>
+		<UITile Tile="Abilities/abil_recomposite.bmp" Foreground="m" Detail="M" />
+  </ability>
+  <ability Command="CommandInflateAxons">
+		<description>			
+			<p>당신은 <stat Name="QuicknessDuration" />라운드 동안 +<stat Name="QuicknessBonus" /> 민첩을 얻고, 그 후 10라운드 동안 느려집니다.</p>
+			<br />			
+			<statline Name="Cooldown" />
+		</description>
+    <UITile Tile="Items/sw_axions.bmp" Foreground="W" Detail="g" />
+  </ability>
+  <ability Command="CommandEmergencyRecomposite">
+		<description>			
+			<p>당신은 지도상의 무작위 탐험된 공간으로 순간이동합니다.</p>
+			<br />
+			<statline Name="Cooldown" />
+		</description>
+		<UITile Tile="Abilities/abil_emergency_recomposite.bmp" Foreground="m" Detail="M" />
+  </ability>
+  <ability Command="CommandToggleMedassistModule">
+    <description>
+      <p>적절할 때 최대 8개의 장전된 주사기를 자동으로 적용합니다.</p>
+      <br />
+      <statline Name="Loadout" />
+    </description>
+    <UITile Tile="Abilities/abil_medassist_module_toggle_off.bmp" Foreground="y" Detail="r" />
+    <UITile Tile="Abilities/abil_medassist_module_toggle_on.bmp" Foreground="Y" Detail="r" State="ToggleOn" />
+  </ability>
+  <ability Command="CommandToggleCyberNightVision">
+    <description>당신은 어둠 속에서도 볼 수 있습니다.</description>
+    <UITile Tile="Abilities/abil_night_vision_toggle_off.bmp" Foreground="y" Detail="g" />
+		<UITile Tile="Abilities/abil_night_vision_toggle_on.bmp" Foreground="Y" Detail="G" />
+	</ability>
+  <ability Command="CommandToggleNocturnalApex">
+    <description>
+      <p><stat Name="Duration" />라운드 동안 +<stat Name="AgilityBonus" /> 민첩과 +<stat Name="MovespeedBonus" /> 이동 속도를 얻습니다.</p>
+      <br />
+      <statline Name="Cooldown" />      
+    </description>
+    <UITile Tile="Items/sw_nocturnal.bmp" Foreground="b" Detail="C" />
+  </ability>
+  <ability Command="CommandActivateOnboardRecoilerImprinting">
+    <description>
+      <p>온보드 리코일러에 되돌아갈 위치를 각인합니다.</p>
+      <br />
+      <statline Name="Location" DisplayName="현재 위치" />
+      <statline Name="Cooldown" />
+    </description>
+    <UITile Tile="Abilities/abil_imprint.bmp" Foreground="B" Detail="W" />
+  </ability>
+  <ability Command="CommandActivateOnboardRecoilerTeleporter">
+    <description>
+      <p>당신은 프로그램된 위치로 되돌아갑니다.</p>
+      <br />
+      <statline Name="Location" DisplayName="현재 위치" />
+      <statline Name="Cooldown" />
+    </description>
+    <UITile Tile="Abilities/abil_recoil.bmp" Foreground="B" Detail="W" />
+  </ability>
+  <ability Command="CommandTogglePenetratingRadar">
+    <description>
+      <p>당신은 자신 주변 <stat Name="Radius" /> 반경 내에서 완전한 가시성을 얻으며, 역장과 시공간 이상에 의해서만 차단됩니다.</p>
+      <br />
+    </description>
+    <UITile Tile="Abilities/abil_penetrating_radar_toggle_off.bmp" Foreground="B" Detail="y" />
+		<UITile Tile="Abilities/abil_penetrating_radar_toggle_on.bmp" Foreground="B" Detail="Y" />
+  </ability>
+  <ability Command="CommandTogglePhaseHarmonicModulator">
+    <description>당신은 동상위와 이상위 물체 및 생물 모두와 상호작용할 수 있습니다.</description>
+    <UITile Tile="Abilities/abil_phase_harmonic_modulator_toggle_off.bmp" Foreground="y" Detail="m" />
+    <UITile Tile="Abilities/abil_phase_harmonic_modulator_toggle_on.bmp" Foreground="Y" Detail="m" State="ToggleOn" />
+  </ability>
+	<ability Command="AlterHolographicVisage">
+		<description>당신은 자신의 외모를 변경하고 선택한 파벌과의 평판을 +200 얻습니다.</description>
+		<UITile Tile="Abilities/abil_alter_visage.bmp" Foreground="C" Detail="B" />
+	</ability>
+	<ability Command="CommandStasisEntangler">		
+		<description>
+			<p>당신은 시야 내의 한 생물을 선택합니다. 다른 모든 생물들은 <stat Name="Duration" /> 동안 정지장에 들어갑니다.</p>
+			<br />
+			<statline Name="Cooldown" />			
+		</description>
+		<UITile Tile="Items/implant_stasis_entangler.bmp" Foreground="r" Detail="C" />
+	</ability>
+	<ability Command="CommandTogglePhaseAdaptiveScope">
+		<description>당신이 미사일 무기를 발사하거나 무언가를 던질 때, 당신의 투사체는 위상을 이동하여 장애물을 통과하고 목표에 도달합니다.</description>
+		<UITile Tile="Abilities/abil_phase_adaptive_projectiles_toggle_off.bmp" Foreground="y" Detail="y" />
+		<UITile Tile="Abilities/abil_phase_adaptive_projectiles_toggle_on.bmp" Foreground="Y" Detail="y" State="ToggleOn" />
+	</ability>
+	<ability Command="CommandFabricateForceKnife">
+		<description>당신은 1d8 피해를 주고, 관통력이 목표의 방어력과 같으며, +6 투척 사거리를 가진 역장 단검을 제작합니다.</description>
+		<UITile Tile="Abilities/abil_fabricate_force_knife.bmp" Foreground="C" Detail="B" />
+	</ability>
+	<ability Command="ProjectStasisField">
+    <description>
+      <p><stat Name="Duration" /> 동안 지속되는 최대 <stat Name="Coverage" />칸의 정지장을 생성합니다.</p>
+      <br />      
+      <statline Name="Cooldown" />
+    </description>
+    <UITile Tile="Items/sw_stasis_projector.bmp" Foreground="C" Detail="r" />
+  </ability>
+  <ability Command="CommandActivateTetheredRecoilerTeleporter">
+    <description>
+      <p>당신은 연결된 위치로 순간이동합니다.</p>
+      <br />
+      <statline Name="Cooldown" />
+      <statline Name="Destination" />
+      <statline Name="TetherStatus" DisplayName="연결 상태" />
+    </description>
+		<UITile Tile="Abilities/abil_recoil.bmp" Foreground="B" Detail="W" />
+  </ability>
+  <ability Command="ActivateAjiConch">
+		<description>
+			<p>당신은 소라에 불어 무작위 가스의 원뿔을 생성합니다.</p>
+			<br />			
+			<statline Name="Cooldown" />
+		</description>
+		<UITile Tile="Items/sw_shell_1.bmp" Foreground="r" Detail="K" />
+  </ability>
+	<ability Command="CommandRecoil">
+		<description>당신은 프로그램된 위치로 되돌아갑니다.</description>
+		<UITile Tile="Abilities/abil_recoil.bmp" Foreground="y" Detail="g" />
+	</ability>
+  <ability Command="ToggleHologramEmitter">
+		<description>
+			<p>당신은 자신의 홀로그래픽 <stat Name="Decoys" /> <stat Name="DecoyNumber" />개를 생성합니다.</p>
+			<br />
+			<p>미끼는 당신을 반영하여 움직이며 어그로를 끕니다.</p>
+			<statline Name="Range" />
+			<p>라운드당 <stat Name="ChargeDraw" /> 충전 소비.</p>
+		</description>
+		<UITile Tile="Abilities/abil_activate_decoy.bmp" Foreground="B" Detail="b" />
+  </ability>
+  <ability Command="ToggleForceEmitter">
+		<description>
+			<p>당신은 자신 주변에 역장을 생성합니다.</p>
+			<br />
+			<p>자신을 중심으로 3x3 역장을 생성합니다.</p>
+			<p>당신은 역장을 통해 미사일 무기를 발사할 수 있습니다.</p>
+			<p>라운드당 높은 충전 소비.</p>			
+		</description>
+		<UITile Tile="Abilities/abil_force_emitter.bmp" Foreground="B" Detail="C" />
+  </ability>
+  <ability Command="CommandQuickenMind">
+		<description>
+			<p>당신은 창조적 에너지로 빠르게 됩니다.</p>
+			<br />
+			<p><stat Name="RefreshDescription" /></p>
+			<statline Name="Cooldown" />
+		</description>
+		<UITile Tile="Abilities/abil_quicken_mind.bmp" Foreground="M" Detail="Y" />
+  </ability>
+  <ability Command="ActivateTeleprojector">		
+		<description>
+			<p>당신은 자신의 정신을 인접한 로봇에 투영하여 그 행동을 제어하며, 자신의 몸은 휴면 상태로 있습니다.</p>
+			<br />
+			<p>로봇에 대한 기술 공격.</p>
+			<p>공격 굴림: <stat Name="Attack" /> vs. 방어자 MA + 레벨</p>
+			<p>활성화 시 높은 충전 소비.</p>
+			<p>라운드당 낮은 충전 소비.</p>
+			<statline Name="Duration" />
+			<statline Name="Cooldown" />
+		</description>
+		<UITile Tile="Items/sw_teleprojector.bmp" Foreground="C" Detail="M" />
+  </ability>
+  <ability Command="ConfigureTemperatureController">
+		<description>
+			<p>당신은 목표 온도를 설정하고 그것에 도달할 때까지 매 라운드마다 가열되거나 냉각됩니다.</p>
+			<br />
+			<statline Name="TemperatureChange" DisplayName="라운드당 온도 변화" />
+			<statline Name="ChargeUse" DisplayName="라운드당 충전 소비" />			
+		</description>
+		<UITile Tile="Abilities/abil_set_temperature.bmp" Foreground="y" Detail="R" />
+  </ability>
+  <ability Command="ActivatePaxInfection">
+		<description>
+			<p>당신은 포자를 뿜어 클랑크를 퍼뜨립니다.</p>
+			<br />
+			<statline Name="Cooldown" />
+		</description>
+		<UITile Tile="Items/sw_klanq_infection.bmp" Foreground="O" Detail="C" /> 
+  </ability>
+  <ability Command="ActivateSkyshroud">
+		<description>
+			<p>당신은 불꽃과 연기의 기둥 속에서 돌진을 시작합니다.</p>
+			<br />
+			<p>돌진하는 동안, 당신이 방향으로 이동할 때마다 가장 가까운 적이나 장애물을 향해 돌진하며 공격을 수행합니다.</p>
+			<br />
+			<p>돌진한 세 칸마다, 당신은 명중에 +2 보너스와 돌진 공격에 +2 관통 굴림 보너스를 얻습니다.</p>
+			<br />
+			<p>스무 칸 후에도 적이나 장애물을 만나지 않으면 이동을 멈춥니다.</p>
+			<br />
+			<statline Name="Duration" />
+			<statline Name="Cooldown" />
+		</description>
+		<UITile Tile="Items/sw_jetbackpack.bmp" Foreground="M" Detail="m" />
+  </ability>
+  <ability Command="ActivateStopsvalinn">
+		<description>
+			<p>당신은 로봇의 이동을 방해하는 역장 벽을 생성합니다.</p>
+			<br />
+			<p>3개의 연속된 공간의 이동 가능한 역장을 생성합니다.</p>
+			<p>로봇 이동 저항: 의지력 18</p>
+			<p>라운드당 높은 충전 소비.</p>
+		</description>
+		<UITile Tile="Items/sw_buckler2.bmp" Foreground="Y" Detail="r" />
+  </ability>
+  <ability Command="CommandChangeGrip">
+    <description>
+      <p>당신은 무기의 그립 스타일을 변경하여 다른 무기 유형으로 휘둘립니다.</p>
+    </description>
+    <UITile Tile="Abilities/sw_skill_axe.png" Foreground="y" Detail="R" />
+  </ability>
+  <ability Command="CommandBeguileCreature">
+		<description>
+			<p>당신은 인접한 생물을 현혹시켜 충성스럽게 복무하게 만듭니다.</p>
+			<br />
+			<p>정신을 가진 생물에 대한 정신 공격.</p>
+			<p>공격 굴림: <stat Name="Attack" /> vs. 방어자 MA + 레벨</p>
+			<p>현혹된 생물은 <stat Name="BonusHP" /> 보너스 체력을 얻습니다.</p>
+			<statline Name="Cooldown" />
+		</description>
+		<UITile Tile="Mutations/beguiling.bmp" Foreground="m" Detail="R" />
+  </ability>
+  <ability Command="CommandBurgeoning">
+    <description>
+      <p>당신은 근처 지역에 식물이 자발적으로 자라게 하여 적들을 방해합니다.</p>
+      <br />
+			<p>식물은 돌연변이 등급에 따라 다릅니다.</p>
+			<statline Name="Area" />
+			<statline Name="Range" />      
+      <statline Name="Cooldown" />
+    </description>
+		<UITile Tile="Mutations/burgeoning.bmp" Foreground="g" Detail="G" />
+  </ability>
+  <ability Command="CommandClairvoyance">			
+		<description>
+      <p>당신은 잠시 동안 근처 지역의 시야를 얻습니다.</p>
+      <br />
+      <statline Name="VisionRadius" DisplayName="시야 반경"/>
+      <statline Name="VisionDuration" DisplayName="시야 지속 시간" Unit="round" />
+      <statline Name="Cooldown" />
+    </description>
+		<UITile Tile="Mutations/clairvoyance.bmp" Foreground="m" Detail="C" />
+  </ability>
+  <ability Command="CommandConfuse">
+		<description>
+			<p>당신은 근처의 적들을 혼란시킵니다.</p>
+			<br />
+			<p>영향을 받은 생물들은 반 무작위로 행동하며 정신 능력에 <stat Name="Penalty" /> 페널티를 받습니다.</p>
+			<statline Name="ConeAngle" DisplayName="원뿔 각도" />
+			<statline Name="ConeLength" DisplayName="원뿔 길이" />
+			<statline Name="Duration" />			
+			<statline Name="Cooldown" />
+		</description>
+		<UITile Tile="Mutations/confusion.bmp" Foreground="r" Detail="B" />
+  </ability>
+  <ability Command="CommandCryokinesis">
+		<description>
+			<p>당신은 정신으로 근처 지역을 냉각시켜 피해를 주고 3라운드 동안 얼립니다.</p>
+			<br />
+			<statline Name="Range" />
+			<statline Name="Area" />
+			<statline Name="DamageRound1" DisplayName="1라운드 피해" />
+			<statline Name="DamageRound2" DisplayName="2라운드 피해" />
+			<statline Name="DamageRound3" DisplayName="3라운드 피해" />
+			<statline Name="Cooldown" />
+		</description>
+		<UITile Tile="Mutations/cryokinesis.bmp" Foreground="b" Detail="B" />
+  </ability>
+  <ability Command="CommandDisintegration">
+		<description>
+			<p>당신은 근처의 물질을 분해합니다.</p>
+			<br />			
+			<statline Name="Area" />
+			<statline Name="DamageNonStructural" DisplayName="비구조적 물체에 대한 피해" />
+			<statline Name="DamageStructural" DisplayName="구조적 물체에 대한 피해" />
+			<p>이 능력을 사용한 후 3라운드 동안 지쳐있습니다.</p>
+			<statline Name="Cooldown" />
+		</description>
+		<UITile Tile="Mutations/disintergration.bmp" Foreground="r" Detail="W" />
+  </ability>
+  <ability Command="CommandDominateCreature">
+		<description>
+			<p>당신은 인접한 생물의 정신을 교살하여 그 행동을 제어하며, 자신의 몸은 휴면 상태로 있습니다.</p>
+			<br />			
+			<p>정신을 가진 생물에 대한 정신 공격.</p>
+			<p>공격 굴림: <stat Name="Attack" /> vs. 방어자 MA + 레벨</p>
+			<statline Name="Duration" />
+			<statline Name="Cooldown" />
+		</description>
+		<UITile Tile="Mutations/domination.bmp" Foreground="w" Detail="M" />
+  </ability>
+  <ability Command="CommandForceBubble">
+    <description>
+			<p>당신은 자신 주변에 역장을 생성합니다.</p>
+			<br />			
+			<p>자신을 중심으로 3x3 역장을 생성합니다.</p>
+			<p>당신은 역장을 통해 미사일 무기를 발사할 수 있습니다.</p>
+			<statline Name="Duration" />
+			<statline Name="Cooldown" />
+		</description>
+		<UITile Tile="Abilities/abil_force_bubble_toggle_off.bmp" Foreground="B" Detail="y" />
+		<UITile Tile="Abilities/abil_force_bubble_toggle_on.bmp" Foreground="B" Detail="Y" State="ToggleOn" />
+  </ability>
+  <ability Command="CommandForceWall">
+		<description>
+			<p>당신은 적들로부터 자신을 보호하는 역장 벽을 생성합니다.</p>
+			<br />
+			<p>9개의 연속된 고정 역장 칸을 생성합니다.</p>
+			<p>당신은 역장을 통해 미사일 무기를 발사할 수 있습니다.</p>
+			<statline Name="Duration" />
+			<statline Name="Cooldown" />
+		</description>
+		<UITile Tile="Mutations/force_wall.bmp" Foreground="B" Detail="y" />
+  </ability>
+  <ability Command="CommandKindle">
+    <description>
+      <p>당신은 정신으로 작은 불을 점화합니다.</p>
+      <br />      
+      <statline Name="Range" />
+      <statline Name="Cooldown" />
+    </description>
+    <UITile Tile="Mutations/kindle.bmp" Foreground="y" Detail="R" />
+  </ability>
+  <ability Command="CommandLeyShift">
+    <description>
+      <p>당신은 지역의 시공간을 이동시킵니다.</p>
+      <br />      
+      <statline Name="Cooldown" />
+    </description>
+    <UITile Tile="Abilities/abil_ley_shift.bmp" Foreground="m" Detail="G" />
+  </ability>
+  <ability Command="CommandLifeDrain">
+    <description>
+      <p>당신은 근처의 유기 생물과 결합하여 그 생명력을 흡수합니다.</p>
+      <br />
+      <p>정신을 가진 생물에 대한 정신 공격.</p>
+      <p>라운드당 <stat Name="HP" />를 흡수합니다.</p>
+      <p>목표는 매 라운드마다 피해를 저항하기 위한 정신 저항을 얻습니다.</p>
+      <br />
+      <statline Name="Duration" />
+      <statline Name="Cooldown" />
+    </description>
+    <UITile Tile="Mutations/syphon_vim.bmp" Foreground="m" Detail="M" />
+  </ability>
+  <ability Command="CommandLase">
+    <description>
+      <p>당신은 주변광을 레이저 빔으로 집중시킵니다.</p>      
+      <p>일시적으로 주변광의 반경을 1 감소시킵니다.</p>
+      <br />      
+      <statline Name="LaserDamageInc" DisplayName="레이저 피해 증가분" />
+      <statline Name="LaserPen" DisplayName="레이저 관통력" />
+    </description>
+    <UITile Tile="Mutations/light_manipulation.bmp" Foreground="Y" Detail="C" />
+  </ability>
+  <ability Command="CommandAmbientLight">
+    <description>
+      <p>당신은 <stat Name="Radius" /> 반경 내에 주변광을 생성합니다.</p>
+      <p>당신은 빛을 레이저 빔으로 집중시켜 일시적으로 반경을 1 감소시킬 수 있습니다.</p>
+      <br />
+      <statline Name="RechargeRate" DisplayName="주변광 재충전 속도" />
+    </description>
+    <UITile Tile="Abilities/abil_ambient_light_toggle_off.bmp" Foreground="y" Detail="C" />
+		<UITile Tile="Abilities/abil_ambient_light_toggle_on.bmp" Foreground="Y" Detail="C" State="ToggleOn" />
+  </ability>
+  <ability Command="CommandMassMind">
+    <description>
+      <p>모든 정신 돌연변이를 새로고침합니다.</p>
+      <p>사용할 때마다 심령 침입자들의 주의를 조금 더 끕니다.</p>
+      <br />
+      <statline Name="CooldownNoWillpower" DisplayName="재사용 대기시간" />
+      <p>재사용 대기시간은 의지력의 영향을 받지 않습니다.</p>
+    </description>
+    <UITile Tile="Mutations/mass_mind.bmp" Foreground="B" Detail="W" />
+  </ability>
+  <ability Command="CommandMentalMirror">
+    <description>
+      <p>정신 거울이 재사용 대기시간이 아닐 때 정신 공격을 받으면, 당신은 +<stat Name="BonusMA" /> MA를 얻습니다. 공격이 당신의 MA를 관통하지 못하면, 그것은 공격자에게 반사됩니다.</p>
+      <br />
+      <statline Name="Cooldown" />
+    </description>
+    <UITile Tile="Mutations/mental_mirror.bmp" Foreground="g" Detail="y" />
+  </ability>
+  <ability Command="CommandPrecognition">
+    <description>
+      <p>당신은 자신의 가까운 미래를 엿봅니다.</p>
+      <br />
+      <p>당신은 이 능력을 활성화한 후 나중에 활성화한 시점으로 되돌아갈 수 있습니다.</p>
+      <br />
+      <statline Name="Duration" DisplayName="사용과 되돌림 사이의 지속 시간" />
+      <statline Name="Cooldown" />
+    </description>    
+    <UITile Tile="Mutations/precognition.bmp" Foreground="Y" Detail="M" />
+  </ability>
+  <ability Command="CommandPrecognitionRevert">
+    <description>
+      <p>활성화된 예지 시야를 시야가 시작된 시점으로 되돌립니다.</p>      
+    </description>
+    <UITile Tile="Abilities/abil_end_vision.bmp" Foreground="y" Detail="M" />
+  </ability>
+  <ability Command="CommandPsychometryMenu">
+    <description>
+      <p>당신은 유물을 만지면서 그 역사를 읽어 그들이 무엇을 하는지 그리고 어떻게 만들어졌는지 배웁니다.</p>
+      <br />
+      <p>복잡도 등급 <stat Name="IdentifyComplexity" />까지의 유물을 확실하게 식별합니다.</p>
+      <p>복잡도 등급 <stat Name="ConstructComplexity" />까지의 식별된 유물을 제작하는 방법을 배웁니다.</p>
+      <br />
+      <p>심리측정을 사용하려면, 유물과 상호작용한 후 '심리측정으로 역사 읽기'를 선택하세요.</p>
+    </description>
+    <UITile Tile="Mutations/psychometry.bmp" Foreground="C" Detail="W" />    
+  </ability>
+  <ability Command="CommandPyrokinesis">
+		<description>
+			<p>당신은 정신으로 근처 지역을 가열하여 피해를 주고 3라운드 동안 불을 붙입니다.</p>
+			<br />
+			<statline Name="Range" />
+			<statline Name="Area" />
+			<statline Name="DamageRound1" DisplayName="1라운드 피해" />
+			<statline Name="DamageRound2" DisplayName="2라운드 피해" />
+			<statline Name="DamageRound3" DisplayName="3라운드 피해" />
+			<statline Name="Cooldown" Unit="round" />
+		</description>
+		<UITile Tile="Mutations/pyrokinesis.bmp" Foreground="R" Detail="W" />
+  </ability>  
+  <ability Command="CommandSpaceTimeVortex">
+    <description>
+      <p>당신은 시공간을 찢어 근처의 것들을 우주 구조의 찢김을 통해 요동치게 보냅니다.</p>
+      <br />
+      <p>경로상의 모든 것을 삼키는 소용돌이를 소환합니다.</p>
+      <p>당신은 소용돌이에 들어가 쿠드의 무작위 위치로 순간이동할 수 있습니다.<stat Name="BonusDuration" /></p>
+      <br />      
+      <statline Name="Cooldown" />
+    </description>
+    <UITile Tile="Mutations/spacetime_vortex.bmp" Foreground="B" Detail="m" />
+  </ability>
+  <ability Command="CommandStunningForce">
+		<description>
+			<p>당신은 근처 지역에 충격파를 발동합니다. 생물들은 폭발 중심에서 밀려나고, 기절하며, 최대 3회 증가분으로 압착 피해를 받습니다.</p>
+			<br />
+			<statline Name="Range" />
+			<statline Name="Area" />
+			<statline Name="DamageIncrement" DisplayName="피해 증가분" />				
+			<statline Name="Cooldown" />
+		</description>
+		<UITile Tile="Mutations/stunning_force.bmp" Foreground="w" Detail="W" />
+  </ability>
+  <ability Command="CommandSunderMind">
+    <description>
+      <p>당신은 적의 정신을 찢어 고통에 휘청거리게 만듭니다.</p>
+      <br />
+      <p>최대 10라운드 동안, 당신은 상대와 심령 전투를 벌이며 매 라운드 피해를 줍니다.</p>
+      <p>턴을 넘기는 것 외의 어떤 행동도 연결을 끊습니다.</p>
+      <p>매 라운드 당신은 MA에 대한 정신 공격을 합니다.</p>
+      <p>열 번째 라운드 후, 당신은 지금까지 준 총 피해량과 같은 보너스 피해를 줍니다.</p>
+      <br />
+      <statline Name="DamageIncrement" DisplayName="피해 증가분" />
+      <statline Name="Range" />
+      <statline Name="Cooldown" />
+    </description>
+    <UITile Tile="Mutations/telepathy.bmp" Foreground="w" Detail="B" />
+    <UITile Tile="Mutations/sunder_mind.bmp" Foreground="w" Detail="R" />
+  </ability>        
+  <ability Command="CommandTelepathy">
+		<description>
+			<p>당신은 심령 에테르를 통해 다른 사람들과 소통할 수 있습니다.</p>
+			<br />
+			<p>시야 내의 누구와도 대화합니다.</p>
+			<p>동반자들에게 명령을 내리는 데 훨씬 적은 시간이 걸립니다.</p>
+		</description>
+		<UITile Tile="Mutations/telepathy.bmp" Foreground="w" Detail="B" />
+  </ability>
+  <ability Command="CommandTeleport">
+		<description>
+			<p>당신은 근처 위치로 순간이동합니다.</p>
+			<br />
+			<p>지정된 영역 내의 무작위 위치로 순간이동합니다.</p>
+			<statline Name="UncertaintyRadius" DisplayName="불확실성 반경" />
+			<statline Name="Cooldown" />			
+		</description>
+		<UITile Tile="Mutations/teleportation.bmp" Foreground="b" Detail="B" />
+  </ability>
+	<ability Command="CommandLeaderTeleport">
+		<description>
+			<p>당신은 지도자 근처의 근처 위치로 순간이동합니다.</p>
+			<br />
+			<statline Name="Cooldown" />
+		</description>
+		<UITile Tile="Mutations/teleportation.bmp" Foreground="b" Detail="B" />
+	</ability>
+  <ability Command="CommandTeleportOther">
+		<description>
+			<p>당신은 인접한 생물을 무작위 근처 위치로 순간이동시킵니다.</p>
+			<br />
+			<statline Name="Cooldown" />
+		</description>
+		<UITile Tile="Mutations/teleport_other.bmp" Foreground="B" Detail="Y" />
+  </ability>
+  <ability Command="CommandTemporalFugue">
+		<description>
+			<p>당신은 시간을 통해 빠르게 앞뒤로 이동하여 자신의 여러 복사본을 생성합니다.</p>
+			<br />
+			<statline Name="Copies" />
+			<statline Name="Duration" />		
+			<statline Name="Cooldown" />
+		</description>
+		<UITile Tile="Mutations/temporal_fugue.bmp" Foreground="y" Detail="G" />
+  </ability>
+  <ability Command="CommandQuantumFugue">
+    <!-- todo:jason -->
+    <description>
+      <p>당신은 시간을 통해 빠르게 앞뒤로 이동하여 자신의 여러 복사본을 생성합니다.</p>
+      <br />
+      <p>효과가 만료되면 가장 건강한 복사본의 몸에 거주합니다.</p>
+      <statline Name="Copies" />
+      <statline Name="Duration" />
+      <statline Name="Cooldown" />
+    </description>
+    <UITile Tile="Mutations/temporal_fugue.bmp" Foreground="y" Detail="M" />
+  </ability>
+  <ability Command="CommandTimeDilation">
+		<description>
+			<p>당신은 적들을 느리게 만들기 위해 자신 주변의 시간을 왜곡시킵니다.</p>
+			<br />
+			<p><stat Name="Range" />칸 내의 생물들은 당신에게 얼마나 가까운지에 따라 느려집니다.</p>
+			<p>거리 1: 생물들은 <stat Name="QuicknessPenalty1" />% 민첩 페널티를 받습니다</p>
+			<p>거리 4: 생물들은 <stat Name="QuicknessPenalty4" />% 민첩 페널티를 받습니다</p>
+			<p>거리 7: 생물들은 <stat Name="QuicknessPenalty7" />% 민첩 페널티를 받습니다</p>
+			<statline Name="Duration" />
+			<statline Name="Cooldown" />			
+		</description>
+		<UITile Tile="Mutations/time_dilation.bmp" Foreground="y" Detail="m" />
+  </ability>
+  <ability Command="CommandWillForceStrength">
+		<description>
+			<p>순수한 의지력으로, 당신은 기이한 신체적 기량을 발휘합니다.</p>
+			<br />
+			<p>자아 보너스의 두 배와 같은 양만큼 힘 속성을 증가시킵니다.</p>
+      <br />
+			<statline Name="Bonus" DisplayName="힘 보너스" />
+			<statline Name="Duration" />
+			<statline Name="Cooldown" />
+		</description>
+		<UITile Tile="Abilities/abil_boost_strength.bmp" Foreground="C" Detail="R" />
+  </ability>
+  <ability Command="CommandWillForceAgility">
+		<description>
+			<p>순수한 의지력으로, 당신은 기이한 신체적 기량을 발휘합니다.</p>
+			<br />
+			<p>자아 보너스의 두 배와 같은 양만큼 민첩 속성을 증가시킵니다.</p>
+      <br />
+			<statline Name="Bonus" DisplayName="민첩 보너스" />
+			<statline Name="Duration" />
+			<statline Name="Cooldown" />
+		</description>
+		<UITile Tile="Abilities/abil_boost_agility.bmp" Foreground="C" Detail="G" />
+  </ability>
+  <ability Command="CommandWillForceToughness">
+		<description>
+			<p>순수한 의지력으로, 당신은 기이한 신체적 기량을 발휘합니다.</p>
+			<br />
+			<p>자아 보너스의 두 배와 같은 양만큼 강인함 속성을 증가시킵니다.</p>
+      <br />
+			<statline Name="Bonus" DisplayName="강인함 보너스" />
+			<statline Name="Duration" />
+			<statline Name="Cooldown" />
+		</description>
+		<UITile Tile="Abilities/abil_boost_toughness.bmp" Foreground="C" Detail="B" />
+  </ability>
+  <ability Command="CommandSpitAcid">
+		<description>
+			<p>당신은 부식성 산의 웅덩이를 뱉습니다.</p>
+			<br />
+			<p>지역을 산성 점액으로 덮습니다.</p>
+			<statline Name="Area" />
+			<statline Name="Range" />
+			<statline Name="Cooldown" />
+		</description>
+		<UITile Tile="Mutations/slime_glands.bmp" Foreground="g" Detail="G" />
+  </ability>
+  <ability Command="CommandBelchUrchins">
+		<description>
+			<p>당신은 근처 지역에 다양한 성게들을 트림합니다.</p>
+			<br />			
+			<statline Name="Amount" DisplayName="성게 수" />
+			<statline Name="Range" />
+			<statline Name="Radius" />
+			<statline Name="Cooldown" />
+		</description>
+		<UITile Tile="Abilities/abil_belch.bmp" Foreground="g" Detail="W" />
+  </ability>
+  <ability Command="CommandBurrow">
+    <description>
+      <p>당신은 굴을 파서 지하로 이동할 수 있습니다.</p>
+      <br />
+      <statline Name="Cooldown" />
+    </description>
+    <UITile Tile="Abilities/abil_burrow.bmp" Foreground="w" Detail="W" />
+  </ability>
+  <ability Command="CommandDecarbonizer">
+    <description>
+      <p>당신은 살아있는 물질에서 탄소를 추출합니다.</p>
+      <br />
+      <p>3라운드 준비 후 목표의 팔다리를 절단하는 빔을 발사합니다.</p>
+      <br />
+      <statline Name="BeamDistance" DisplayName="빔 거리" Unit="space" />   
+      <statline Name="Cooldown" />
+    </description>
+    <UITile Tile="Abilities/abil_decarbonize.bmp" Foreground="r" Detail="R" />
+  </ability>
+  <ability Command="CommandScintillate">
+    <description>
+      <p>당신은 혼란 등급 <stat Name="ConfusionRank"/>에 따라 근처의 적대적 생물들을 혼란시킵니다.</p>
+      <br />
+      <p>반짝이는 동안 행동할 수 없습니다.</p>
+      <br />
+      <statline Name="ConfusionRank" DisplayName="혼란 등급" />
+      <statline Name="Cooldown" />
+    </description>
+    <UITile Tile="Abilities/abil_scintillate.bmp" Foreground="W" Detail="Ma" />
+  </ability>  
+  <ability Command="CommandFearAura">
+    <description>
+      <p>당신은 주변의 생물들을 두렵게 만듭니다.</p>
+      <br />
+      <p>당신은 인접한 생물들이 공포에 도망가게 만듭니다.</p>
+      <br />      
+      <statline Name="Cooldown" />
+    </description>
+    <UITile Tile="Abilities/abil_fear.bmp" Foreground="w" Detail="G" />
+  </ability>
+  <ability Command="CommandStoneGaze">
+    <description>
+      <p>당신은 시선으로 물건들을 돌로 만듭니다.</p>
+      <br />
+      <p>3라운드 준비 후 목표를 돌로 만드는 빔을 발사합니다.</p>
+      <br />
+      <statline Name="Range" />
+      <statline Name="Cooldown" />
+    </description>
+    <UITile Tile="Abilities/abil_gaze.bmp" Foreground="y" Detail="Y" />
+  </ability>
+  <ability Command="CommandCrungleGaze">
+    <description>
+      <p>당신은 시선으로 각성 꿈을 유발합니다.</p>
+      <br />
+      <p>3라운드 준비 후 목표를 각성 꿈으로 보내는 빔을 발사합니다.</p>
+      <br />
+      <statline Name="Range" />
+      <statline Name="Cooldown" />
+    </description>
+    <UITile Tile="Abilities/abil_gaze.bmp" Foreground="b" Detail="B" />
+  </ability>
+  <ability Command="CommandIrisdualBeam">
+    <description>
+      <p>당신은 빛과 물질의 스펙트럼 전반에 걸쳐 파워 빔을 방출합니다.</p>
+      <br />
+      <p><stat Name="Duration" /> 동안 매 라운드 무작위 적들에게 <stat Name="Beams" />개의 빔을 발사합니다.</p>
+      <statline Name="Cooldown" />
+    </description>
+    <UITile Tile="Abilities/abil_gaze.bmp" Foreground="m" Detail="W" />
+  </ability>
+  <ability Command="CommandInfiltrate">
+    <description>      
+      <p>당신은 근처 위치로 순간이동하며 반경 <stat Name="TeleportRadius" /> 내의 모든 사람을 함께 데려갑니다</p>
+      <br />      
+      <statline Name="Cooldown" />
+    </description>
+    <UITile Tile="Abilities/abil_infiltrate.bmp" Foreground="r" Detail="W" />
+  </ability>
+  <ability Command="CommandMagneticPulse">
+    <description>      
+      <p>한 라운드 준비 후, 당신은 반경 <stat Name="Radius" />의 펄스를 방출하여 생물들이 장착한 장비를 포함한 금속 물체들을 당신 쪽으로 끌어당기려고 시도합니다.</p>
+      <br />      
+      <statline Name="Cooldown" />
+    </description>
+    <UITile Tile="Abilities/abil_magnetic_pulse.bmp" Foreground="y" Detail="r" />
+  </ability>
+  <ability Command="CommandMassiveCharge">
+    <description>      
+      <p>한 라운드 준비 후, 당신은 파괴적인 돌진을 시작하여 벽을 파괴하고 경로상의 생물들을 밀어냅니다.</p>
+      <br />
+      <statline Name="Distance" DisplayName="돌진 거리" />
+      <statline Name="Cooldown" />
+    </description>
+    <UITile Tile="Abilities/abil_charge.bmp" Foreground="R" Detail="Y" />
+  </ability>
+	<ability Command="CommandSlog">
+		<description>
+      <p>당신은 자신의 공간에서 근처 지역으로 액체 웅덩이를 뿜어냅니다.</p>
+      <br />            
+      <statline Name="Range" />
+      <statline Name="Area" />
+      <statline Name="KnockdownChance" DisplayName="상대를 넘어뜨릴 확률" />
+      <statline Name="Cooldown" />
+    </description>
+    <UITile Tile="Mutations/slime_glands.bmp" Foreground="w" Detail="G" />
+	</ability>
+  <ability Command="CommandSpinWeb">        
+    <description>
+      <p>당신은 끈끈한 실크 거미줄을 짭니다.</p>
+      <br />
+      <p>짜는 동안, 당신은 이동하면서 뒤에 거미줄을 남깁니다.</p>
+      <br />
+      <statline Name="SpinDuration" Unit="move action" />
+      <statline Name="Cooldown" />
+    </description>
+    <UITile Tile="Abilities/abil_spin_webs_toggle_off.bmp" Foreground="y" Detail="M" />
+		<UITile Tile="Abilities/abil_spin_webs_toggle_on.bmp" Foreground="Y" Detail="M" State="ToggleOn" />
+  </ability>
+  <ability Command="CommandSpinSimpleWeb">
+    <description>
+      <p>당신은 끈끈한 실크 거미줄을 짭니다.</p>
+      <br />
+      <p>짜는 동안, 당신은 이동하면서 뒤에 거미줄을 남깁니다.</p>
+      <br />
+      <statline Name="SpinDuration" Unit="move action" />
+      <statline Name="Cooldown" />
+    </description>
+    <UITile Tile="Abilities/abil_spin_webs_toggle_off.bmp" Foreground="y" Detail="M" />
+    <UITile Tile="Abilities/abil_spin_webs_toggle_on.bmp" Foreground="Y" Detail="M" State="ToggleOn" />
+  </ability>
+  <ability Command="CommandStickyTongue">
+    <description>
+      <p>한 라운드 준비 후, 당신은 혀로 가장 가까운 생물을 자신 쪽으로 당깁니다.</p>
+      <br />      
+      <statline Name="Range" />
+      <statline Name="Cooldown" />
+    </description>
+    <UITile Tile="Abilities/abil_tongue.bmp" Foreground="r" Detail="W" />
+  </ability>
+  <ability Command="CommandWaveformWorm">
+    <description>
+      <p>당신은 방향으로 돌진하여 통과하는 생물들에게 피해를 줍니다.</p>
+      <br />
+      <statline Name="Range" />
+      <statline Name="Damage" />
+      <statline Name="Cooldown" />
+    </description>
+    <UITile Tile="Abilities/abil_waveform_dash.bmp" Foreground="g" Detail="G" />
+  </ability>
+  <ability Command="CommandBreatherBase">
+    <UITile Tile="Abilities/abil_breathe.bmp" Foreground="g" Detail="W" />
+  </ability>
+  <ability Command="CommandBreathe_ConfusionBreather">
+    <description>
+      <p>당신은 혼란 가스를 내뿜습니다.</p>
+      <br />
+      <statline Name="ConeLength" DisplayName="원뿔 길이" Unit="tile" />
+      <statline Name="ConeAngle" DisplayName="원뿔 각도" Unit="degree" />
+      <statline Name="Cooldown" />
+    </description>
+    <UITile Tile="Abilities/abil_breathe.bmp" Foreground="b" Detail="W" />
+  </ability>
+  <ability Command="CommandBreathe_CorrosiveBreather">
+    <description>
+      <p>당신은 부식성 가스를 내뿜습니다.</p>
+      <br />
+      <statline Name="ConeLength" DisplayName="원뿔 길이" Unit="tile" />
+      <statline Name="ConeAngle" DisplayName="원뿔 각도" Unit="degree" />
+      <statline Name="Cooldown" />
+    </description>
+    <UITile Tile="Abilities/abil_breathe.bmp" Foreground="g" Detail="W" />
+  </ability>
+  <ability Command="CommandBreathe_FireBreather">
+    <description>
+      <p>당신은 불을 내뿜습니다.</p>
+      <br />
+      <statline Name="Damage" />
+      <statline Name="ConeLength" DisplayName="원뿔 길이" Unit="tile" />
+      <statline Name="ConeAngle" DisplayName="원뿔 각도" Unit="degree" />
+      <statline Name="Cooldown" />
+    </description>
+    <UITile Tile="Abilities/abil_breathe.bmp" Foreground="R" Detail="W" />
+  </ability>
+  <ability Command="CommandBreathe_IceBreather">
+    <description>
+      <p>당신은 얼음을 내뿜습니다.</p>
+      <br />
+      <statline Name="Damage" />
+      <statline Name="ConeLength" DisplayName="원뿔 길이" Unit="tile" />
+      <statline Name="ConeAngle" DisplayName="원뿔 각도" Unit="degree" />
+      <statline Name="Cooldown" />
+    </description>
+    <UITile Tile="Abilities/abil_breathe.bmp" Foreground="C" Detail="W" />
+  </ability>
+  <ability Command="CommandBreathe_NormalityBreather">
+    <description>
+      <p>당신은 정상성 가스를 내뿜습니다.</p>
+      <br />
+      <statline Name="ConeLength" DisplayName="원뿔 길이" Unit="tile" />
+      <statline Name="ConeAngle" DisplayName="원뿔 각도" Unit="degree" />
+      <statline Name="Cooldown" />
+    </description>
+    <UITile Tile="Abilities/abil_breathe.bmp" Foreground="K" Detail="W" />
+  </ability>
+  <ability Command="CommandBreathe_PoisonBreather">
+    <description>
+      <p>당신은 독 가스를 내뿜습니다.</p>
+      <br />
+      <statline Name="ConeLength" DisplayName="원뿔 길이" Unit="tile" />
+      <statline Name="ConeAngle" DisplayName="원뿔 각도" Unit="degree" />
+      <statline Name="Cooldown" />
+    </description>
+    <UITile Tile="Abilities/abil_breathe.bmp" Foreground="G" Detail="W" />
+  </ability>
+  <ability Command="CommandBreathe_ShameBreather">
+    <description>
+      <p>당신은 수치 가스를 내뿜습니다.</p>
+      <br />
+      <statline Name="ConeLength" DisplayName="원뿔 길이" Unit="tile" />
+      <statline Name="ConeAngle" DisplayName="원뿔 각도" Unit="degree" />
+      <statline Name="Cooldown" />
+    </description>
+    <UITile Tile="Abilities/abil_breathe.bmp" Foreground="y" Detail="W" />
+  </ability>
+  <ability Command="CommandBreathe_SleepBreather">
+    <description>
+      <p>당신은 수면 가스를 내뿜습니다.</p>
+      <br />
+      <statline Name="ConeLength" DisplayName="원뿔 길이" Unit="tile" />
+      <statline Name="ConeAngle" DisplayName="원뿔 각도" Unit="degree" />
+      <statline Name="Cooldown" />
+    </description>
+    <UITile Tile="Abilities/abil_breathe.bmp" Foreground="w" Detail="W" />
+  </ability>
+  <ability Command="CommandBreathe_StunBreather">
+    <description>
+      <p>당신은 기절 가스를 내뿜습니다.</p>
+      <br />
+      <statline Name="ConeLength" DisplayName="원뿔 길이" Unit="tile" />
+      <statline Name="ConeAngle" DisplayName="원뿔 각도" Unit="degree" />
+      <statline Name="Cooldown" />
+    </description>
+    <UITile Tile="Abilities/abil_breathe.bmp" Foreground="c" Detail="W" />
+  </ability> 
+  <ability Command="CommandReleaseAdrenaline">
+    <description>
+      <p>당신은 <stat Name="Duration" /> 동안 몸의 아드레날린 흐름을 증가시킵니다.</p>
+      <p>흐르는 동안, 당신은 +<stat Name="QuicknessBonus" /> 민첩을 얻고 다른 신체 돌연변이는 +<stat Name="MutationBonus" /> 등급을 얻습니다.</p>
+      <br />      
+      <statline Name="Cooldown" />
+    </description>
+    <UITile Tile="Mutations/adrenal_control.bmp" Foreground="w" Detail="W" />
+  </ability>
+  <ability Command="CommandDigUp">
+    <description>당신은 위로 통로를 팝니다.</description>
+    <UITile Tile="Tiles2/sw_stairsup.bmp" Foreground="r" Detail="W" />
+  </ability>
+  <ability Command="CommandDigDown">
+    <description>당신은 아래로 통로를 팝니다.</description>
+    <UITile Tile="Tiles2/sw_stairsdown.bmp" Foreground="r" Detail="W" />
+  </ability>
+  <ability Command="CommandToggleBurrowingClaws">
+    <description>
+      <p>당신은 땅을 파고들 수 있는 삽 같은 발톱을 가지고 있습니다.</p>
+      <br />
+      <statline Name="WallPenetration" DisplayName="벽에 대한 발톱 관통력" />
+      <p>발톱은 4번의 관통 타격 후 벽을 파괴합니다.</p>      
+    </description>
+    <UITile Tile="Abilities/abil_burrowing_claws_toggle_off.bmp" Foreground="r" Detail="y" />
+		<UITile Tile="Abilities/abil_burrowing_claws_toggle_on.bmp" Foreground="R" Detail="Y" State="ToggleOn" />
+  </ability>
+  <ability Command="CommandTightenCarapace">
+    <description>당신은 정지 상태를 유지하는 한 <stat Name="CarapaceName" />을(를) 조여 -2 DV 페널티로 AV 보너스를 두 배로 만들 수 있습니다.</description>
+    <UITile Tile="Mutations/carapace.bmp" Foreground="y" Detail="g" />
+  </ability>
+  <ability Command="CommandDischarge">
+    <description>
+      <p><stat Name="DischargeChunk" /> 충전당 1d4 피해로 보유한 모든 전기 충전을 방전합니다.</p>
+      <p>방전은 인접한 목표로 아크를 발생시켜 감소된 피해를 주며, <stat Name="DischargeChunk" /> 충전당 최대 1개의 목표까지 가능합니다.</p>
+      <p>활성화하려면 최소 <stat Name="DischargeChunk" /> 충전이 있어야 합니다.</p>
+      <statline Name="CurrentCharge" DisplayName="현재 충전" />      
+    </description>
+    <UITile Tile="Mutations/electrical_generation.bmp" Foreground="W" Detail="W" />
+  </ability>
+  <ability Command="CommandToggleProvideCharge">
+    <description>당신은 통합 전원 시스템을 가진 장착된 장치들에 전력을 공급합니다.</description>
+    <UITile Tile="Abilities/abil_power_devices_toggle_off.bmp" Foreground="y" Detail="W" />
+		<UITile Tile="Abilities/abil_power_devices_toggle_on.bmp" Foreground="Y" Detail="W" State="ToggleOn" />
+  </ability>
+  <ability Command="CommandElectromagneticPulse">
+    <description>
+      <p>당신은 근처의 유물과 기계를 무력화하는 전자기 펄스를 생성합니다.</p>
+      <br />
+      <statline Name="Area" Unit="centered around yourself" />
+      <statline Name="Duration" DisplayName="무력화 지속 시간" Unit="rounds" />
+      <statline Name="Cooldown" />
+    </description>
+    <UITile Tile="Mutations/electromagnetic_pulse.bmp" Foreground="W" Detail="b" />
+  </ability>
+      <ability Command="CommandFlamingRay">
+    <description>
+      <p><stat Name="EmitText" /></p>
+      <br />
+      <p>선택한 방향으로 <stat Name="Range" />칸의 불꽃 광선을 방출합니다.</p>
+      <statline Name="Damage" />
+      <statline Name="Cooldown" />
+    </description>
+    <UITile Tile="Mutations/flaming_ray.bmp" Foreground="w" Detail="R" />
+  </ability>
+  <ability Command="CommandFrostWebs">
+    <description>
+      <p>당신은 근처 지역을 서리 거미줄로 채웁니다.</p>
+      <br />      
+      <statline Name="Range" />
+      <statline Name="Area" />
+      <statline Name="Cooldown" />
+    </description>
+    <UITile Tile="Mutations/spinnerets.bmp" Foreground="C" Detail="B" />
+  </ability>  
+  <ability Command="GasGenerationCommandSleepGas">
+    <description>
+      <p>당신은 자신 주변에 수면 가스를 폭발시킵니다</p>
+      <br />
+      <p><stat Name="Duration" /> 동안 수면 가스를 방출합니다.</p>
+      <statline Name="Cooldown" />
+    </description>
+    <UITile Tile="Abilities/abil_release_gas_toggle_off.bmp" Foreground="w" Detail="Y" />
+		<UITile Tile="Abilities/abil_release_gas_toggle_on.bmp" Foreground="w" Detail="Y" State="ToggleOn" />		
+  </ability>
+  <ability Command="GasGenerationCommandNormalityGas">
+    <description>
+      <p>당신은 자신 주변에 정상성 가스를 폭발시킵니다</p>
+      <br />
+      <p><stat Name="Duration" /> 동안 정상성 가스를 방출합니다.</p>
+      <statline Name="Cooldown" />
+    </description>
+    <UITile Tile="Abilities/abil_release_gas_toggle_off.bmp" Foreground="K" Detail="y" />
+    <UITile Tile="Abilities/abil_release_gas_toggle_on.bmp" Foreground="K" Detail="y" State="ToggleOn" />
+  </ability>
+  <ability Command="GasGenerationCommandAcidGas">
+    <description>
+      <p>당신은 자신 주변에 부식성 가스를 폭발시킵니다</p>
+      <br />
+      <p><stat Name="Duration" /> 동안 부식성 가스를 방출합니다.</p>
+      <statline Name="Cooldown" />
+    </description>
+    <UITile Tile="Abilities/abil_release_gas_toggle_off.bmp" Foreground="g" Detail="G" />
+    <UITile Tile="Abilities/abil_release_gas_toggle_on.bmp" Foreground="g" Detail="G" State="ToggleOn" />
+  </ability>
+  <ability Command="GasGenerationCommandPlasma">
+    <description>
+      <p>당신은 자신 주변에 플라즈마를 폭발시킵니다</p>
+      <br />
+      <p><stat Name="Duration" /> 동안 플라즈마를 방출합니다.</p>
+      <statline Name="Cooldown" />
+    </description>
+    <UITile Tile="Abilities/abil_release_gas_toggle_off.bmp" Foreground="G" Detail="Y" />
+    <UITile Tile="Abilities/abil_release_gas_toggle_on.bmp" Foreground="G" Detail="Y" State="ToggleOn" />
+  </ability>
+  <ability Command="GasGenerationCommandDefoliantGas">
+    <description>
+      <p>당신은 자신 주변에 낙엽제를 폭발시킵니다</p>
+      <br />
+      <p><stat Name="Duration" /> 동안 낙엽제를 방출합니다.</p>
+      <statline Name="Cooldown" />
+    </description>
+    <UITile Tile="Abilities/abil_release_gas_toggle_off.bmp" Foreground="W" Detail="w" />
+    <UITile Tile="Abilities/abil_release_gas_toggle_on.bmp" Foreground="W" Detail="w" State="ToggleOn" />
+  </ability>
+  <ability Command="GasGenerationCommandPoisonGas">
+    <description>
+      <p>당신은 자신 주변에 독 가스를 폭발시킵니다</p>
+      <br />
+      <p><stat Name="Duration" /> 동안 독 가스를 방출합니다.</p>
+      <statline Name="Cooldown" />
+    </description>
+    <UITile Tile="Abilities/abil_release_gas_toggle_off.bmp" Foreground="g" Detail="k" />
+    <UITile Tile="Abilities/abil_release_gas_toggle_on.bmp" Foreground="g" Detail="k" State="ToggleOn" />
+  </ability>
+  <ability Command="GasGenerationCommandFungicideGas">
+    <description>
+      <p>당신은 자신 주변에 살균제를 폭발시킵니다</p>
+      <br />
+      <p><stat Name="Duration" /> 동안 살균제를 방출합니다.</p>
+      <statline Name="Cooldown" />
+    </description>
+    <UITile Tile="Abilities/abil_release_gas_toggle_off.bmp" Foreground="m" Detail="M" />
+    <UITile Tile="Abilities/abil_release_gas_toggle_on.bmp" Foreground="m" Detail="M" State="ToggleOn" />
+  </ability>
+  <ability Command="GasGenerationCommandConfusionGas">
+    <description>
+      <p>당신은 자신 주변에 혼란 가스를 폭발시킵니다</p>
+      <br />
+      <p><stat Name="Duration" /> 동안 혼란 가스를 방출합니다.</p>
+      <statline Name="Cooldown" />
+    </description>
+    <UITile Tile="Abilities/abil_release_gas_toggle_off.bmp" Foreground="b" Detail="c" />
+    <UITile Tile="Abilities/abil_release_gas_toggle_on.bmp" Foreground="b" Detail="c" State="ToggleOn" />
+  </ability>
+  <ability Command="GasGenerationCommandGlitterGas">
+    <description>
+      <p>당신은 자신 주변에 반짝임을 폭발시킵니다</p>
+      <br />
+      <p><stat Name="Duration" /> 동안 반짝임을 방출합니다.</p>
+      <statline Name="Cooldown" />
+    </description>
+    <UITile Tile="Abilities/abil_release_gas_toggle_off.bmp" Foreground="m" Detail="C" />
+    <UITile Tile="Abilities/abil_release_gas_toggle_on.bmp" Foreground="m" Detail="C" State="ToggleOn" />
+  </ability>
+  
+  <ability Command="CommandSpitLiquid">
+    <description>
+      <p>당신은 <stat Name="Liquid" />의 웅덩이를 뱉습니다.</p>
+      <br />
+      <statline Name="Range" />
+      <statline Name="Area" />
+      <statline Name="Cooldown" />
+    </description>
+    <UITile Tile="Mutations/slime_glands.bmp" Foreground="w" Detail="W" />
+  </ability>
+  <ability Command="CommandMetamorphosis">
+    <description>
+      <p>당신은 만지는 어떤 생물의 형태를 취합니다.</p>
+      <br />
+      <p>레벨 <stat Name="MaxLevel" /> 이하의 생물 형태만 취할 수 있습니다.</p>      
+      <statline Name="Cooldown" />
+    </description>
+    <UITile Tile="Mutations/metamorphosis.bmp" Foreground="w" Detail="G" />
+  </ability>  
+	<ability Command="CommandEndMetamorphosis">
+    <description>당신은 이 생물의 형태를 취하는 것을 멈춥니다.</description>
+    <UITile Tile="Abilities/abil_end_metamorphosis.bmp" Foreground="w" Detail="r" />
+  </ability>    
+  <ability Command="CommandTogglePhase">              
+		<description>
+			<p>당신은 짧은 시간 동안 고체 물체를 통과할 수 있습니다.</p>
+      <br />
+			<statline Name="Duration"></statline>
+			<statline Name="Cooldown"></statline>
+		</description>
+		<UITile Tile="Abilities/abil_phase_toggle_off.bmp" Foreground="y" Detail="B" />
+		<UITile Tile="Abilities/abil_phase_toggle_on.bmp" Foreground="Y" Detail="B" State="ToggleOn" />
+  </ability>
+  <ability Command="CommandBask">
+    <description>
+      <p>당신은 햇빛에 몸을 쬐며 식사를 대신하여 태양의 영양 광선을 흡수합니다.</p>
+      <br />
+      <p><stat Name="DurationDay" /> 동안 특별한 대사 효과를 얻습니다.</p>
+      <br />
+      <statline Name="BonusRegen" DisplayName="자연 치유 속도 보너스"/>
+      <statline Name="BonusQuickness" DisplayName="민첩 보너스" />
+    </description>  
+    <UITile Tile="Mutations/photosynthetic_skin.bmp" Foreground="g" Detail="W" />
+  </ability>
+  <ability Command="CommandQuillFling">
+    <description>
+      <p>당신은 자신 주변에 폭발로 <stat Name="Quills" />의 10%를 방출합니다.</p>
+      <p>당신은 라운드당 약 <stat Name="RegenRate" />의 속도로 <stat Name="Quills" />를 재생합니다.</p>
+      <p><stat Name="Quills" />가 절반 이하로 떨어지면 <stat Name="AVPenalty"/> AV를 잃습니다.</p>
+      <br />
+      <p><stat Name="QuillPen" /></p>
+      <p><stat Name="QuillDamage" /></p>
+    </description>  
+    <UITile Tile="Mutations/quills.bmp" Foreground="r" Detail="W" />
+  </ability>
+  <ability Command="CommandSpitSlime">
+    <description>
+      <p>당신은 물건에 뱉을 수 있는 점성 점액을 생성합니다.</p>
+      <br />
+      <p>지역을 점액으로 덮습니다.</p>
+      <statline Name="Range" />
+      <statline Name="Area" />
+      <statline Name="Cooldown" />
+    </description>
+    <UITile Tile="Mutations/slime_glands.bmp" Foreground="g" Detail="W" />
+  </ability>    
+  <ability Command="CommandSting">
+    <description>
+      <p>당신은 침으로 공격하여 자동으로 명중, 관통하며 <stat Name="VenomType" /> 독을 적용합니다.</p>      
+      <br />
+      <statline Name="StingerPen" DisplayName="침 관통력" />
+      <statline Name="StingerDamage" DisplayName="침 피해" />
+      <p><switch Name="VenomType">
+        <case Value="paralyzing">독은 <stat Name="Duration" /> 동안 상대를 마비시킵니다.</case>
+        <case Value="confusing">독은 <stat Name="Duration" /> 동안 상대를 혼란시킵니다.</case>
+        <case Value="poisonous">독은 <stat Name="Duration" /> 동안 상대를 중독시킵니다.</case>
+      </switch></p>
+      <statline Name="Cooldown" />
+    </description>  
+    <UITile Tile="Mutations/stinger.bmp" Foreground="w" Detail="W" />
+  </ability>
+	<ability Command="CommandRepellingForce">
+    <description>
+      <p>당신은 주변 지역에 반발력을 발동하여 적들을 뒤로 던집니다.</p>
+      <br />
+      <p>생물들은 폭발 중심에서 밀려납니다.</p>      
+      <statline Name="Area" />
+      <statline Name="Cooldown" />
+    </description>
+    <UITile Tile="Abilities/abil_repel.bmp" Foreground="W" Detail="g" />
+	</ability>    
+  <ability Command="CommandFreezingRay">
+    <description>
+      <p><stat Name="EmitText" /></p>
+      <br />
+      <p>선택한 방향으로 <stat Name="Range" />칸의 서리 광선을 방출합니다.</p>
+      <statline Name="Damage" />
+      <statline Name="Cooldown" />
+    </description>
+    <UITile Tile="Mutations/freezing_ray.bmp" Foreground="y" Detail="B" />
+  </ability>
+  <ability Command="CommandPowerSwitch">
+	<!-- UITile is set by code to be the tile of the item the switch is on. -->
+	<description>
+		<stat Name="ItemDescription" />
+	</description>
+  </ability>
+	<ability Command="CommandFreezeBreath">
+		<description>
+      <p><stat Name="EmitText" /></p>
+      <br />
+      <p>선택한 방향으로 <stat Name="Range" />칸의 서리 광선을 방출합니다.</p>
+      <statline Name="Damage" />
+      <statline Name="Cooldown" />
+    </description>
+    <UITile Tile="Mutations/freezing_ray.bmp" Foreground="y" Detail="B" />
+	</ability>
+  <ability Command="CommandDig">
+    <description>당신의 위치에서 목표 위치까지 자동으로 팝니다.</description>
+    <UITile Tile="Abilities/abil_dig.bmp" Foreground="w" Detail="Y" />
+  </ability>
+  <ability Command="CommandToggleRunning">
+		<description>
+      <p>당신은 빠르게 이동합니다 <switch Name="PowerSkate"><case Value="true">그리고 불타는 배기가스를 뒤에 남깁니다</case><default>짧은 시간 동안</default></switch>.</p>  
+      <br />
+      <p><switch Name="Multipler"><case Value="100">이동 속도를 두 배로</case><case Value="200">세 배로</case><default>+<stat Name="Multiplier" />%</default></switch> 증가시킵니다 <switch Name="PowerSkate"><case Value="true">연료가 떨어질 때까지</case><default><stat Name="Duration" /></default></switch>.</p>
+      <switch Name="DV"><case Value="0"></case><default><p><stat Name="DV" /> DV</p></default></switch>
+      <p>근접 전투에서 명중에 -10.</p>
+      <switch Name="MissileAccuracy">
+        <case Value="Pistol"><p>권총을 제외한 미사일 무기의 정확도 감소.</p></case>
+        <case Value=""><p>미사일 무기의 정확도 감소.</p></case>
+      </switch>
+      <p>이동하거나 턴을 넘기는 것 외의 신체 행동을 취하면 돌진이 일찍 끝납니다.</p>			
+      <br />
+			<statline Name="Cooldown" />
+		</description>
+		<UITile Tile="Abilities/abil_sprint_toggle_off.bmp" Foreground="w" Detail="y" />
+    <UITile Tile="Abilities/abil_sprint_toggle_on.bmp" Foreground="w" Detail="Y" State="ToggleOn" />
+    <tag Name="Skill">Tactics</tag>
+  </ability>
+  <ability Command="CommandToggleTrashRifling">
+		<description>
+      <p>당신은 쓰레기를 뒤지며, <switch Name="RiflingSkills">
+        <case Value="TrashDivining"><stat Name="Chance" />% 확률로 단서를 조합하여 무작위 비밀을 배웁니다</case>
+        <case Value="Scavenger">더미에서 고철을 수집할 확률</case>
+        <case Value="Scavenger,TrashDivining">더미에서 고철을 수집할 확률과 <stat Name="Chance" />% 확률로 단서를 조합하여 무작위 비밀을 배웁니다</case>
+        </switch>.</p>
+    </description>
+		<UITile Tile="Abilities/abil_trash_toggle_off.bmp" Foreground="b" Detail="y" />
+		<UITile Tile="Abilities/abil_trash_toggle_on.bmp" Foreground="b" Detail="Y" State="ToggleOn" />
+    <tag Name="Skill">Tinkering</tag>
+  </ability>
+  <ability Command="CommandAcrobaticsJump">
+    <UITile Tile="Abilities/abil_jump.bmp" Foreground="g" Detail="G" />
+		<description>
+			<p><switch Name="IsRangeIncreased"><case Value="true">당신은 <switch Name="Rocket"><case Value="true">로켓 </case></switch>점프하여 사거리 <stat Name="MinimumRange" />-<stat Name="Range" /> 내의 빈 공간으로 이동합니다.</case>
+      <default>당신은 <switch Name="Rocket"><case Value="true">로켓 </case></switch>점프하여 <stat Name="Range" />칸 떨어진 빈 공간으로 이동합니다.</default></switch></p>
+      <switch Name="CanJumpOverCreatures">
+        <case Value="true"><p>당신은 생물 위로 점프할 수 있습니다.</p></case>
+        <default><p>당신은 생물 위로 점프할 수 없습니다.</p></default>
+      </switch>
+      <br />
+      <statline Name="Cooldown" />
+		</description>
+    <tag Name="Skill">Acrobatics</tag>
+  </ability>
+  <ability Command="CommandAxeBerserk">
+    <description>
+      <p>당신은 피의 광란에 빠지며, <stat Name="Duration" /> 동안 도끼 공격으로 절단할 확률이 100%가 됩니다.</p>
+      <p>절단이 재사용 대기시간이면 사용할 수 없으며, 광란을 사용하면 절단이 재사용 대기시간이 됩니다.</p>
+      <p>활성화하려면 도끼를 휘둘러야 합니다.</p>
+      <br />
+      <statline Name="Cooldown" />
+    </description>
+    <UITile Tile="Abilities/abil_berserk.bmp" Foreground="r" Detail="R" />
+    <tag Name="Skill">Axe</tag>
+  </ability>
+  <ability Command="CommandToggleDecapitate">
+    <description>
+      <p>머리가 절단할 수 있는 가능한 팔다리 목록에 추가됩니다.</p>
+      <p>생물의 유일한 머리를 잘라내면 즉시 죽입니다.</p>
+      <p>생물이 여러 머리를 가지고 있으면 심하게 출혈하기 시작합니다 (턴당 2-3 피해; 강인함 35 저항).</p>
+    </description>
+    <UITile Tile="Abilities/abil_decapitate_toggle_off.bmp" Foreground="y" Detail="R" />
+    <tag Name="Skill">Axe</tag>
+  </ability>
+  <ability Command="CommandDismember">
+    <description>
+      <p>당신은 상대에게 도끼 공격을 합니다. 명중하고 관통하면, 무작위로 그들의 팔다리 중 하나를 절단하며 출혈이 시작됩니다.</p>
+      <br />
+      <statline Name="BleedDamage" DisplayName="출혈 피해" />
+      <statline Name="BleedSave" DisplayName="출혈 저항" />
+      <statline Name="Cooldown" />
+    </description>
+    <UITile Tile="Abilities/abil_dismember.bmp" Foreground="W" Detail="r" />
+    <tag Name="Skill">Axe</tag>
+  </ability>
+  <ability Command="CommandAxeHookAndDrag">
+    <description>
+      <p>당신은 도끼의 뒤꿈치로 상대의 팔다리를 잡습니다.</p>
+      <p>성공하면, 당신이 이동할 때마다 상대를 함께 끌고 도끼로 무료 공격을 합니다.</p>
+      <p>상대는 이동을 저항할 기회와 자신의 턴 시작 시 벗어날 기회를 얻습니다.</p>      
+      <br />
+      <statline Name="DurationSpecial" />
+      <statline Name="ResistSave" DisplayName="이동 저항 / 벗어남 저항" />
+      <statline Name="Cooldown" />
+    </description>
+    <UITile Tile="Abilities/abil_hook_and_drag.bmp" Foreground="W" Detail="G" />
+    <tag Name="Skill">Axe</tag>
+  </ability>
+  <ability Command="CommandButcherToggle">
+    <description>당신은 지나가는 시체를 도축합니다.</description>
+    <UITile Tile="Abilities/abil_butcher_toggle_off.bmp" Foreground="y" Detail="r" />
+    <UITile Tile="Abilities/abil_butcher_toggle_on.bmp" Foreground="Y" Detail="r" State="ToggleOn" />
+    <tag Name="Skill">CookingAndGathering</tag>
+  </ability>
+  <ability Command="CommandHarvestToggle">
+    <description>당신은 지나가는 식물을 수확합니다.</description>
+    <UITile Tile="Abilities/abil_harvest_toggle_off.bmp" Foreground="y" Detail="g" />
+    <UITile Tile="Abilities/abil_harvest_toggle_on.bmp" Foreground="Y" Detail="g" State="ToggleOn" />
+    <tag Name="Skill">CookingAndGathering</tag>
+  </ability>
+  <ability Command="CommandFloorSmash">
+    <description>
+      <p>3라운드 준비 후, 당신은 지면에 풀크리트 판을 발사하여 피해를 주고 목표 칸에 구덩이를 만들며, 인접한 칸에 추가 구덩이가 생길 확률이 있습니다.</p>      
+      <br />
+      <statline Name="Range" />            
+      <statline Name="Damage" />
+      <statline Name="AdditionalDirectHitDamage" DisplayName="추가 직접 명중 피해" />
+      <statline Name="Cooldown" />
+    </description>
+    <UITile Tile="Abilities/abil_catapult.bmp" Foreground="C" Detail="R" />
+  </ability>
+  <ability Command="CommandSnapjawHowl">
+    <description>
+      <p>당신은 울부짖으며 근처의 스냅조를 광란 상태로 만듭니다.</p>
+      <br />
+      <statline Name="Radius" DisplayName="효과 반경" />
+      <statline Name="Duration" />      
+      <statline Name="Cooldown" />
+    </description>
+    <UITile Tile="Abilities/abil_howl.bmp" Foreground="w" Detail="C" />
+  </ability>
+  <ability Command="CommandSubmerge">
+    <description>당신은 물 속에 잠깁니다.</description>
+    <UITile Tile="Abilities/abil_submerge.bmp" Foreground="B" Detail="W" />
+  </ability>
+  <ability Command="CommandConk">
+    <description>
+      <p>당신은 인접한 상대에게 곤봉으로 공격을 합니다. 명중하면 자동으로 3-4라운드 동안 혼절시킵니다.</p>
+      <p>혼절한 상대를 혼절시키면 기절시킵니다.</p>
+      <p>기절한 상대를 때리면 대신 30-40라운드 동안 의식을 잃게 만듭니다 (의식을 잃은 상대는 피해를 받으면 혼절 상태로 깨어납니다).</p>      
+      <br />            
+      <statline Name="Cooldown" />
+    </description>
+    <UITile Tile="Abilities/abil_conk.bmp" Foreground="W" Detail="B" />
+    <tag Name="Skill">Cudgel</tag>
+  </ability>
+  <ability Command="CommandCudgelSlam">
+    <description>
+      <p>당신은 관통 굴림에 +1을 받으며 인접한 상대에게 곤봉으로 공격을 합니다.</p>
+      <p>명중하면, 상대를 최대 <stat Name="Distance" />칸 뒤로 강타하여 다른 생물들을 밀어내고, 그들의 AV가 당신의 힘 수정치의 5배 미만이면 벽을 부수고 통과합니다.</p>
+      <p>밀려난 상대는 밀려난 칸당 추가 라운드를 포함하여 1라운드 동안 기절합니다.</p>
+      <p>벽을 통과하거나 벽에 부딪힌 상대는 벽당 추가 무기 피해를 받습니다.</p>
+      <p>거대한 상대는 밀려나지 않지만 여전히 1라운드 동안 기절합니다.</p>
+      <p>AV가 당신의 힘 수정치의 5배 미만이면 벽이나 문을 파괴합니다.</p>      
+      <br />
+      <statline Name="Cooldown" />
+    </description>
+    <UITile Tile="Abilities/abil_slam.bmp" Foreground="W" Detail="w" />
+    <tag Name="Skill">Cudgel</tag>
+  </ability>
+  <ability Command="CommandSmashUp">
+    <description>
+      <p><stat Name="Duration" /> 동안, 곤봉 공격으로 혼절시킬 확률이 100%가 되고 강타에 재사용 대기시간이 없습니다.</p>
+      <p>강타가 재사용 대기시간이면 사용할 수 없으며, 파괴를 사용하면 강타가 재사용 대기시간이 됩니다.</p>
+      <p>활성화하려면 곤봉을 휘둘러야 합니다.</p>
+      <br />
+      <statline Name="Cooldown" />
+    </description>
+    <UITile Tile="Abilities/abil_demolish.bmp" Foreground="w" Detail="R" />
+    <tag Name="Skill">Cudgel</tag>
+  </ability>
+  <ability Command="CommandFlurry">
+    <description>
+      <p>당신은 돌연변이나 기술로 얻은 추가 팔다리를 포함하여 무기를 휘두르는 모든 팔다리로 공격을 합니다.</p>      
+      <br />
+      <statline Name="Cooldown" />
+    </description>
+    <UITile Tile="Abilities/abil_flurry.bmp" Foreground="W" Detail="g" />
+    <tag Name="Skill">Multiweapon_Fighting</tag>
+  </ability>  
+  <ability Command="CommandStaunchWounds">
+      <UITile Tile="Abilities/abil_staunch_wounds.bmp" Foreground="y" Detail="R" />
+  </ability>
+  <ability Command="CommandSingleWeaponFighting">
+		<description>당신은 단일 무기로 숙련을 얻는 대가로 보조 손 공격을 하지 않습니다.</description>
+		<UITile Tile="Abilities/abil_single_weapon_fighting_toggle_off.bmp" Foreground="W" Detail="y" />
+    <UITile Tile="Abilities/abil_single_weapon_fighting_toggle_on.bmp" Foreground="W" Detail="Y" State="ToggleOn" />
+    <tag Name="Skill">SingleWeaponFighting</tag>
+  </ability>
+  <ability Command="CommandHeavyWeaponsSweep">
+    <description>
+      <p>당신은 중화기로 <stat Name="Shots" />발을 발사하며 <stat Name="ConeWidth" />도 원뿔을 쓸어갑니다. 중화기는 각 발사 전에 재장전됩니다.</p>
+      <br />
+      <statline Name="Cooldown" />
+    </description>
+    <UITile Tile="Abilities/abil_sweep.bmp" Foreground="C" Detail="r" />
+    <tag Name="Skill">HeavyWeapons</tag>
+  </ability>
+  <ability Command="CommandAggressiveStance">    
+    <description>
+      <p>주 손에 긴 칼을 휘두르는 동안, 당신은 관통 굴림에 +<stat Name="PenBonus" />를 얻지만 명중에 -<stat Name="HitPenalty" />를 받습니다.</p>
+      <br />
+      <p>자세는 다른 기술에도 영향을 줄 수 있습니다.</p>
+    </description>
+    <UITile Tile="Abilities/abil_aggressive_stance_toggle_off.bmp" Foreground="y" Detail="r" />
+    <tag Name="Skill">LongBlades</tag>
+  </ability>
+  <ability Command="CommandDefensiveStance">
+    <description>
+      <p>주 손에 긴 칼을 휘두르는 동안, 당신은 +<stat Name="DVBonus" /> DV를 얻습니다.</p>
+      <br />
+      <p>자세는 다른 기술에도 영향을 줄 수 있습니다.</p>
+    </description>
+    <UITile Tile="Abilities/abil_defensive_stance_toggle_off.bmp" Foreground="y" Detail="b" />
+    <tag Name="Skill">LongBlades</tag>
+  </ability>
+  <ability Command="CommandDeathblow">
+    <description>
+      <p>다음 <stat Name="Duration" /> 동안, 돌진과 휩쓸기가 재사용 대기시간이 없습니다.</p>
+      <br />
+      <statline Name="Cooldown" />
+    </description>
+    <UITile Tile="Abilities/abil_engarde.bmp" Foreground="Y" Detail="W" />
+    <tag Name="Skill">LongBlades</tag>
+  </ability>
+  <ability Command="CommandDuelingStance">
+    <description>
+      <p>주 손에 긴 칼을 휘두르는 동안, 당신은 명중에 +<stat Name="HitBonus" />를 얻습니다.</p>
+      <br />
+      <p>자세는 다른 기술에도 영향을 줄 수 있습니다.</p>
+    </description>
+    <UITile Tile="Abilities/abil_dueling_stance_toggle_off.bmp" Foreground="y" Detail="g" />
+    <tag Name="Skill">LongBlades</tag>
+  </ability>
+  <ability Command="CommandLunge">
+    <description>      
+      <p>{{W|공격적 자세}}: 빈 공간을 통해 상대에게 돌진하며 관통 굴림에 +2로 공격합니다. 빈 공간을 통해 돌진해야 합니다.</p>
+      <br />
+      <p>{{W|방어적 자세}}: 상대를 공격한 후 2칸 뒤로 돌진합니다.</p>
+      <br />
+      <p>{{W|결투 자세}}: 관통 굴림에 +1로 상대를 공격합니다. 공격은 최소 한 번은 명중하고 관통하는 것이 보장됩니다.</p>
+      <br />
+      <p>돌진을 사용하려면 주 손에 긴 칼을 휘둘러야 합니다.</p>
+      <br />
+      <statline Name="Cooldown" />
+    </description>
+    <UITile Tile="Abilities/abil_lunge.bmp" Foreground="W" Detail="C" />
+    <tag Name="Skill">LongBlades</tag>
+  </ability>
+  <ability Command="CommandSwipe">
+    <description>
+      <p>{{W|공격적 자세}}: 모든 인접한 상대에게 공격을 합니다.</p>
+      <br />
+      <p>{{W|방어적 자세}}: 모든 인접한 생물을 1칸 뒤로 밀어내고 상대를 넘어뜨리려고 시도합니다. (힘 / 민첩 저항; 난이도 30)</p>
+      <br />
+      <p>{{W|결투 자세}}: 상대를 공격하고 무장 해제를 시도합니다 (힘 저항; 난이도 25 + 민첩 수정치). 공격은 최소 한 번은 명중하고 관통하는 것이 보장됩니다.</p>
+      <br />
+      <p>휩쓸기를 사용하려면 주 손에 긴 칼을 휘둘러야 합니다.</p>
+      <br />
+      <statline Name="Cooldown" />
+    </description>
+    <UITile Tile="Abilities/abil_swipe.bmp" Foreground="W" Detail="m" />
+    <tag Name="Skill">LongBlades</tag>
+  </ability>
+  <ability Command="CommandPersuasionBerate">
+    <description>
+      <p>당신은 근처의 생물을 수치스럽게 하여 DV, 명중, 자아, 의지력에 -4, 민첩에 -10%를 줍니다.</p>
+      <br />
+      <statline Name="Duration" />
+      <statline Name="Range" />
+      <statline Name="Cooldown" />
+    </description>
+    <UITile Tile="Abilities/abil_berate.bmp" Foreground="y" Detail="r" />
+    <tag Name="Skill">Persuasion</tag>
+  </ability>
+  <ability Command="CommandIntimidate">
+    <description>
+      <p>당신은 인접한 적대적 생물들을 <stat Name="Duration" /> 동안 당신으로부터 도망가게 만듭니다.</p>
+      <br />
+      <p>정신을 가진 생물에 대한 정신 공격.</p>
+      <br />
+      <statline Name="Cooldown" />
+    </description>
+    <UITile Tile="Abilities/abil_intimidate.bmp" Foreground="y" Detail="m" />
+    <tag Name="Skill">Persuasion</tag>
+  </ability>
+  <ability Command="CommandPersuasionMenacingStare">
+    <description>
+      <p>당신은 상대를 노려보며 공포에 도망가게 만듭니다.</p>
+      <br />
+      <p>정신을 가진 생물에 대한 정신 공격.</p>
+      <br />
+      <statline Name="Range" />
+      <statline Name="Cooldown" />
+    </description>
+    <UITile Tile="Abilities/abil_menacing_stare.bmp" Foreground="w" Detail="M" />
+    <tag Name="Skill">Persuasion</tag>
+  </ability>
+  <ability Command="CommandProselytize">
+    <description>
+      <p>당신은 지능 있는 생물을 설득하여 당신과 함께하게 만듭니다.</p>
+      <br />
+      <p>자아 + 캐릭터 레벨 공격 vs. MA + 캐릭터 레벨</p>
+      <statline Name="Cooldown" />
+    </description>
+    <UITile Tile="Abilities/abil_proselytize.bmp" Foreground="y" Detail="G" />
+    <tag Name="Skill">Persuasion</tag>
+  </ability>
+  <ability Command="CommandRebukeRobot">
+		<description>
+			<p>당신은 로봇을 꾸짖어 떠돌거나 당신과 함께하게 만듭니다.</p>
+			<br />			
+			<p>로봇에 대한 자아 기반 공격.</p>			
+			<statline Name="Cooldown" />
+		</description>
+		<UITile Tile="Abilities/abil_rebuke_robot.bmp" Foreground="y" Detail="C" />
+    <tag Name="Skill">Persuasion</tag>
+  </ability>
+  <ability Command="CommandToggleAkimbo">
+		<description>여러 총을 휘두르는 동안 원거리 공격을 할 때마다 각각으로 발사합니다.</description>
+		<UITile Tile="Abilities/abil_akimbo_toggle_off.bmp" Foreground="y" Detail="C" />
+    <tag Name="Skill">Pistol</tag>
+  </ability>
+  <ability Command="CommandPistolEmptyTheClips">
+		<description>
+			<p>권총 발사는 전체 라운드 대신 반 라운드만 소요됩니다.</p>			
+			<br />
+			<statline Name="Duration" />
+			<statline Name="Cooldown" />
+		</description>
+		<UITile Tile="Abilities/abil_empty_the_clips.bmp" Foreground="C" Detail="W" />
+    <tag Name="Skill">Pistol</tag>
+  </ability>
+  <ability Command="CommandMarkTarget">
+		<description>
+			<p>당신은 한 턴을 소비하여 목표에 조준선을 맞추고 표시합니다.</p>
+			<br />
+			<p>활이나 소총으로 표시된 목표를 발사할 때마다, 정확도를 결정하기 위해 민첩이 2점 더 높은 것처럼 취급됩니다.</p>
+			<br />
+			<p>한 번에 하나의 목표만 표시할 수 있습니다.</p>
+			<br />
+			<p>목표의 시야를 잃으면 표시가 해제됩니다.</p>			
+		</description>
+		<UITile Tile="Abilities/abil_mark_target.bmp" Foreground="r" Detail="R" />
+    <tag Name="Skill">Rifles</tag>
+  </ability>
+  <ability Command="CommandDisciplineMeditate">
+		<description>
+			<p>명상하는 동안, 당신은 세 배 빠르게 재생하며 부정적 상태 효과가 세 배 빠르게 사라집니다.</p>
+			<br />
+			<p>명상하는 동안 취할 수 있는 유일한 행동은 대기입니다.</p>
+			<br />
+			<p>한 라운드에 <stat Name="DamageThreshold" />를 초과하는 피해를 받으면 명상을 멈춥니다.</p>
+			<br />
+			<p>10턴 이상 휴식하면 자동으로 명상을 시작합니다.</p>
+			<br />
+			<statline Name="Cooldown" />
+		</description>
+		<UITile Tile="Abilities/abil_meditate.bmp" Foreground="w" Detail="b" />
+    <tag Name="Skill">Discipline</tag>
+  </ability>
+  <ability Command="CommandShieldWall">
+    <description>
+			<p>다음 세 라운드 동안, 당신은 모든 들어오는 근접 공격을 자동으로 막습니다.</p>
+			<br />
+			<p>버클러와 함께 사용할 수 없습니다.</p>
+      <statline Name="Cooldown" />
+    </description>
+    <UITile Tile="Abilities/abil_shield_wall.bmp" Foreground="C" Detail="W" />
+    <tag Name="Skill">Shield</tag>
+  </ability>
+  <ability Command="CommandShieldSlam">					
+		<description>
+			<p>당신은 방패로 상대를 넘어뜨리고 피해를 줍니다.</p>
+      <br />
+      <p>방패를 장착한 상태로 상대에게 돌진할 때마다, 그들에게 무료 방패 강타 공격을 얻습니다.</p>
+			<br />			
+			<statline Name="Damage" />
+			<statline Name="KnockdownSave" DisplayName="넘어짐 저항" />
+			<statline Name="Cooldown" />			
+		</description>
+		<UITile Tile="Abilities/abil_shield_slam.bmp" Foreground="C" Detail="R" />
+    <tag Name="Skill">Shield</tag>
+  </ability>
+  <ability Command="CommandHobble">
+		<description>
+			<p>당신은 주 손에 짧은 칼로 공격하여 상대의 방어구의 약점을 찾습니다. 명중하면 정확히 한 번 관통하며 그들을 절뚝거리게 만듭니다.</p>
+			<br />
+			<statline Name="HobbleEffect" DisplayName="절뚝거림 효과" />
+			<statline Name="HobbleDuration" DisplayName="절뚝거림 지속 시간" Unit="round" />			
+			<statline Name="Cooldown" />
+		</description>
+		<UITile Tile="Abilities/abil_hobble.bmp" Foreground="g" Detail="W" />
+    <tag Name="Skill">ShortBlades</tag>
+  </ability>
+  <ability Command="CommandToggleRejoinder">
+		<description>라운드당 한 번, 상대가 근접 공격으로 당신을 놓쳤을 때, 40% 확률로 휘두르는 짧은 칼로 무료 공격을 합니다.</description>
+		<UITile Tile="Abilities/abil_rejoinder_toggle_off.bmp" Foreground="y" Detail="w" />
+    <tag Name="Skill">ShortBlades</tag>
+  </ability>
+  <ability Command="CommandShank">
+		<description>
+			<p>당신은 주 손(선호) 또는 보조 손에 짧은 칼로 근접 공격을 합니다. 명중하면, 상대가 받는 각 부정적 상태 효과당 공격이 관통 굴림에 +2를 얻습니다.</p>
+			<br />			
+			<statline Name="PrimaryHandCooldown" DisplayName="주 손 재사용 대기시간" Unit="round" />
+			<statline Name="OffhandCooldown" DisplayName="보조 손 재사용 대기시간" Unit="round" />			
+		</description>
+		<UITile Tile="Abilities/abil_shank.bmp" Foreground="W" Detail="m" />
+    <tag Name="Skill">ShortBlades</tag>
+  </ability>
+  <ability Command="CommandSurvivalCamp">
+		<description>
+			<p>당신은 식사를 요리하고 음식을 보존하기 위해 모닥불을 피웁니다.</p>
+			<br />
+			<p>전투 중에는 캠프를 만들 수 없습니다.</p>
+		</description>
+		<UITile Tile="Items/sw_campfire.bmp" Foreground="w" Detail="R" />
+    <tag Name="Skill">Survival</tag>
+  </ability>
+  <ability Command="CommandMeleeCharge">
+		<description>
+			<p>당신은 앞으로 돌진하며 관통 굴림에 +1로 근접 공격을 합니다.</p>
+			<br />
+			<statline Name="Range" Unit="spaces" />
+			<statline Name="Cooldown" />
+		</description>
+		<UITile Tile="Abilities/abil_charge.bmp" Foreground="W" Detail="r" />
+    <tag Name="Skill">Tactics</tag>
+  </ability>
+  <ability Command="CommandTacticsJuke">		
+		<description>
+			<p>당신은 행동 비용 없이 한 칸 이동하며, 목표 칸에 생물이 있으면 공간을 교환합니다. </p>
+			<br />
+			<p>당신은 적대적 생물과 공간을 교환할 수 있습니다.</p>
+			<br />
+			<statline Name="Cooldown" />
+		</description>		
+		<UITile Tile="Abilities/abil_juke.bmp" Foreground="b" Detail="B" />
+    <tag Name="Skill">Tactics</tag>
+  </ability>
+  <ability Command="CommandDeployTurret">
+		<description>당신은 미사일 무기를 정적 포탑으로 배치하고 탄약을 공급합니다.</description>
+		<UITile Tile="Abilities/abil_deploy_turret.bmp" Foreground="g" Detail="W" />
+    <tag Name="Skill">Tinkering</tag>
+  </ability>
+  <ability Command="CommandLayMine">
+		<description>당신은 수류탄을 지뢰로 배치합니다.</description>
+		<UITile Tile="Abilities/abil_lay_mine.bmp" Foreground="R" Detail="W" />
+    <tag Name="Skill">Tinkering</tag>
+	</ability>
+  <ability Command="CommandLayMineTimed">
+		<description>당신은 수류탄을 시한 폭탄으로 배치합니다.</description>
+		<UITile Tile="Abilities/abil_set_bomb.bmp" Foreground="B" Detail="W" />
+    <tag Name="Skill">Tinkering</tag>
+	</ability>
+  <ability Command="CommandRechargeObject">
+		<description>당신은 틴커링 비트로 에너지 셀이나 축전기를 재충전합니다.</description>
+		<UITile Tile="Abilities/abil_recharge.bmp" Foreground="C" Detail="W" />
+    <tag Name="Skill">Tinkering</tag>
+  </ability>
+  <ability Command="CommandReleaseVehicle">
+		<description>당신은 타고 있는 차량의 조종석에서 나옵니다.</description>
+		<UITile Tile="Abilities/abil_exit_seat.bmp" Foreground="w" Detail="W" />
+  </ability>
+	<ability Command="CommandSeatEject">
+		<description>당신과 앉아 있는 동반자들이 타고 있는 차량에서 강제로 추방됩니다.</description>
+		<UITile Tile="Abilities/abil_eject.bmp" Foreground="r" Detail="W" />
+	</ability>
+
+</activatedabilities>

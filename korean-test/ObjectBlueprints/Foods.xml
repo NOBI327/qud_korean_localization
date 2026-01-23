@@ -41,185 +41,204 @@
 
   <!-- Butcherables -->
   <object Name="Raw Meat" Load="Merge">
-    <part Name="Render" DisplayName="[생고기]"/>    
+    <part Name="Render" DisplayName="[생고기]"/>
+    <part Name="Food" Message="질기지만 든든합니다." />
     </object>
   <object Name="Raw Bear Meat" Load="Merge">
-    <part Name="Render" DisplayName="{{r|생곰고기}}"/>
-    <part Name="Description" Short="생곰 살점은 흘러내린 자기 피로 물들어 있습니다."/>
+    <part Name="Render" DisplayName="{{r|생 곰고기}}"/>
+    <part Name="Description" Short="피로 흥건한 익히지 않은 곰고기입니다."/>
+    <part Name="Food" Message="맛은 역겹지만 요기는 된다." />
     </object>
   <object Name="Raw Pig Meat" Load="Merge">
-    <part Name="Render" DisplayName="{{r|생돼지고기}}"/>
-		<part Name="Description" Short="생돼지고기에는 흘러내린 자기 피가 배어 있습니다."/>
+    <part Name="Render" DisplayName="{{r|생 돼지고기}}"/>
+		<part Name="Description" Short="피로 흥건한 익히지 않은 돼지고기입니다." />
+    <part Name="Food" Message="조미료가 있으면 좋을 것 같다." />
     </object>
   <object Name="Raw Boar Meat" Load="Merge">
-    <part Name="Render" DisplayName="{{r|생멧돼지고기}}"/>
-		<part Name="Description" Short="생멧돼지 살점은 흘러내린 자기 피로 물들어 있습니다."/>
+    <part Name="Render" DisplayName="{{r|생 멧돼지고기}}"/>
+		<part Name="Description" Short="피로 흥건한 익히지 않은 멧돼지고기입니다." />
+    <part Name="Food" Message="조미료가 있으면 좋을 것 같다." />
     </object>
   <object Name="Raw Barkbiter Meat" Load="Merge">
     <part Name="Render" DisplayName="{{r|생 바크바이터 고기}}"/>
-		<part Name="Description" Short="생 바크바이터 살점은 흘러내린 자기 피로 물들어 있습니다."/>
+		<part Name="Description" Short="피로 흥건한 익히지 않은 바크바이터 고기입니다." />
+		<part Name="Food" Message="조미료가 있으면 좋을 것 같다." />
 		</object>
   <object Name="Raw Beetle Meat" Load="Merge">    
-    <part Name="Render" DisplayName="{{y|생딱정벌레고기}}"/>
+    <part Name="Render" DisplayName="{{y|생 딱정벌레고기}}"/>
 		<part Name="Description" Short="벌레 근육이 부서진 껍데기 위에 수북이 올려져 있습니다."/>
+    <part Name="Food" Message="짭짤하고 씁쓸합니다." />
     </object>
   <object Name="Raw Goat Meat" Load="Merge">
-    <part Name="Render" DisplayName="{{r|생염소고기}}"/>
-		<part Name="Description" Short="생염소 살점은 흘러내린 자기 피로 물들어 있습니다."/>
+    <part Name="Render" DisplayName="{{r|생 염소고기}}"/>
+		<part Name="Description" Short="피로 흥건한 익히지 않은 염소고기입니다." />
+		<part Name="Food" Message="기름과 염분으로 고기가 녹아내린다." />
 		</object>
   <object Name="Raw Scorpiock Meat" Load="Merge">
-    <part Name="Render" DisplayName="{{r|생 스코피오크 고기}}"/>
+    <part Name="Render" DisplayName="{{r|생 스콜피오크 고기}}"/>
 		<part Name="Description" Short="벌레 근육이 부서진 외골격 위에 수북이 올려져 있습니다."/>
+    <part Name="Food" Message="톡 쏘는 맛이다." />
     </object>
   <object Name="Raw Frog Meat" Load="Merge">
-    <part Name="Render" DisplayName="{{r|생개구리고기}}"/>
-    <part Name="Description" Short="개구리 다리 살은 흘러내린 자기 피로 물들어 있습니다."/>    
+    <part Name="Render" DisplayName="{{r|생 개구리고기}}"/>
+    <part Name="Description" Short="피로 흥건한 익히지 않은 개구리 다리입니다."/>    
     </object>
   <object Name="Raw Fish Meat" Load="Merge">
-    <part Name="Render" DisplayName="{{Y|생생선살}}"/>
-    <part Name="Description" Short="볼과 턱살에는 소금기 어린 냄새가 배어 있습니다."/>
+    <part Name="Render" DisplayName="{{Y|생 생선살}}"/>
+    <part Name="Description" Short="볼과 턱살에는 짭짤한 냄새가 난다."/>
+    <part Name="Food" Message="바삭하고 맛있다." />
     </object>
   <object Name="Raw Worm Meat" Load="Merge">
-    <part Name="Render" DisplayName="{{r|생벌레고기}}"/>
-		<part Name="Description" Short="벌레 살점에는 흘러나온 자기 점액이 배어 있습니다."/>    
+    <part Name="Render" DisplayName="{{r|생 애벌레고기}}"/>
+		<part Name="Description" Short="점액으로 흥건한 익히지 않은 애벌레 고기입니다."/>    
     </object>
   <object Name="Dawnglider Tail" Load="Merge">
     <part Name="Render" DisplayName="{{G|던글라이더 꼬리}}"/>
-    <part Name="Description" Short="용골 같은 비늘의 모자이크가 상처 난 밧줄처럼 휘감겨 있습니다. 그을음이 달라붙어 있고 연기 냄새가 납니다."/>
+    <part Name="Description" Short="용골 같은 비늘의 모자이크가 상처 난 밧줄처럼 휘감겨 있습니다. 바삭하게 그을려 있고 연기 냄새가 납니다."/>
+    <part Name="Food" Message="훈연향과 열기가 요동친다." />
     </object>
   <object Name="Albino Ape Heart" Load="Merge">
-    <part Name="Render" DisplayName="{{r|백화 유인원 심장}}"/>
-		<part Name="Description" Short="네 개의 방으로 이뤄진 젖고 날것의 살덩이가 축축한 무게에 짓눌려 축 처져 있습니다."/>
+    <part Name="Render" DisplayName="{{r|알비노 유인원 심장}}"/>
+		<part Name="Description" Short="네 개의 방으로 이뤄진 흠뻑 젖은 날것의 살덩이가 무게에 짓눌려 축 처져 있습니다."/>
+    <part Name="Food" Message="질기고 쇳맛이 난다." />
     </object>
   <object Name="Ogre Ape Heart" Load="Merge">
     <part Name="Render" DisplayName="{{r|오우거 유인원 심장}}"/>
-		<part Name="Description" Short="네 개의 방으로 이뤄진 젖고 날것의 살덩이가 축축한 무게에 짓눌려 축 처져 있습니다."/>
+		<part Name="Description" Short="네 개의 방으로 이뤄진 흠뻑 젖은 날것의 살덩이가 무게에 짓눌려 축 처져 있습니다."/>
+    <part Name="Food" Message="질기고 쇳맛이 난다." />
     </object>
   <object Name="Black Puma Haunch" Load="Merge">
     <part Name="Render" DisplayName="{{K|검은 퓨마}} 넓적다리살"/>
-		<part Name="Description" Short="오팔빛 검은 털이 축축한 다리 고기에 여기저기 달라붙어 있습니다."/>
+		<part Name="Description" Short="젖은 다리 살에 윤기나는 오팔빛 털이 엉켜 있습니다."/>
+    <part Name="Food" Message="훈연 향이 짙다." />
 		</object>
   <object Name="Tongue Twist" Load="Merge">
-    <part Name="Render" DisplayName="{{r|혀 꼬임}}"/>
-		<part Name="Description" Short="세 개의 혀가 질긴 섬유질처럼 꼬여 한 덩이가 되어 있습니다. 침이 얇게 덮여 번들거립니다."/>
+    <part Name="Render" DisplayName="{{r|꼬인 혀}}"/>
+		<part Name="Description" Short="세 가닥의 혀가 서로 엉켜있고, 체액으로 쌓여 광택이 납니다."/>
+    <part Name="Food" Message="당신의 혀를 씹는 것 같다." />
 		</object>
   <object Name="Eyeless Crab Legs" Load="Merge">
-    <part Name="Render" DisplayName="눈먼 게 다리"/>
+    <part Name="Render" DisplayName="눈없는 게 다리"/>
     <part Name="Description" Short="마디지고 가시 돋친 다리들이 뼈 젤리 웅덩이 속에 가지런히 놓여 있습니다."/>
     <tag Name="Gender" Value="plural"/>
   </object>
 	<object Name="Eyeless King Crab Legs" Load="Merge">
-		<part Name="Render" DisplayName="눈먼 왕게 다리"/>
+		<part Name="Render" DisplayName="눈없는 킹크랩 다리"/>
 		<part Name="Description" Short="거대한 마디지고 가시 돋친 다리들이 뼈 젤리 웅덩이 속에 가지런히 놓여 있습니다."/>
 		<tag Name="Gender" Value="plural"/>
 	</object>
   <object Name="Fire Ant Gaster" Load="Merge">
-    <part Name="Render" DisplayName="{{R|불개미 배마디}}"/>
-		<part Name="Description" Short="석회화된 구슬에서 연기 고리가 피어오릅니다."/>
+    <part Name="Render" DisplayName="{{R|불개미 배}}"/>
+		<part Name="Description" Short="석회화된 구슬에서 연기 무리가 피어오릅니다."/>
+    <part Name="Food" Message="쫄깃하고 뜨겁고 매콤하다." />
 		</object>
   <object Name="Spark Tick Scutum" Load="Merge">
     <part Name="Render" DisplayName="{{W|스파크 진드기 등딱지}}"/>
-		<part Name="Description" Short="종잇장처럼 얇은 뼈 그릇에 번개가 남긴 밝고 갈라진 흔적이 새겨져 있습니다."/>
+		<part Name="Description" Short="종잇장처럼 얇은 뼈 그릇에 밝고 갈라진 번개 문양이 새겨져 있습니다."/>
+    <part Name="Food" Message="당신의 미뢰 위에서 튀는 맛이다."/>
 		</object>
   <object Name="Voider Gland" Load="Merge">
-    <part Name="Render" DisplayName="{{B|보이더 샘}}"/>
-    <part Name="Description" Short="세 개의 변위실로 공간을 나누어, 우회 기관 주변에 음압을 만들어 냅니다."/>
+    <part Name="Render" DisplayName="{{B|보이더 분비선}}"/>
+    <part Name="Food" Message="당신의 입 안에서 녹아내린다." />
+    <part Name="Description" Short="우회 기관 주변에 음압을 만들어 내기 위해 3개의 방으로 나눠져있습니다."/>
     </object>
   <object Name="Psychal Gland" Load="Merge">
-    <part Name="Render" DisplayName="{{m|사이컬 샘}}"/>
-		<part Name="Description" Short="신경의 미궁이 맑은 조직막을 뚫고 삐져나와 있습니다."/>
+    <part Name="Render" DisplayName="{{m|정신의 분비선}}"/>
+		<part Name="Description" Short="미궁처럼 복잡하게 얽힌 신경이 투명한 조직을 뚫고 삐져나왔습니다."/>
 		</object>
   <object Name="Compacted Bone Matter" Load="Merge">
-    <part Name="Render" DisplayName="{{Y|압축 뼈 물질}}"/>
-    <part Name="Description" Short="세월을 모르는 뼈를 갈아, 뼈벌레의 흉터 난 창자 속에서 압축해 만든 것입니다."/>
+    <part Name="Render" DisplayName="{{Y|압착된 뼛가루}}"/>
+    <part Name="Description" Short="영겁의 세월을 보낸 뼈를 갈아, 뼈벌레의 흉터 난 창자 속에서 압착해 만든 것입니다."/>
+    <part Name="Food" Message="기분 좋게 바삭거린다." />
     </object>
   
   <object Name="BaseBreatherGland" Load="Merge">
-    <part Name="Render" DisplayName="[호흡샘]"/>
+    <part Name="Render" DisplayName="[브리더 분비선]"/>
+    <part Name="Food" Message="조직이 톡 터지며 역겨운 액체로 당신의 입안을 채운다." />   
     </object>
 	<object Name="BaseElderBreatherGland" Load="Merge">
 		</object>
   <object Name="FireBreatherGland" Load="Merge">
-    <part Name="Render" DisplayName="{{r|화염수염 샘}}"/>
+    <part Name="Render" DisplayName="{{r|플레임비어드 분비선}}"/>
 		<part Name="Description" Short="향기로운 이슬이 쪼그라든 조직의 주름을 적시고, 주변 공기를 그을립니다."/>
 		</object>
   <object Name="ElderFireBreatherGland" Load="Merge">
-    <part Name="Render" DisplayName="{{R|원로 화염수염 샘}}"/>
+    <part Name="Render" DisplayName="{{R|장로 플레임비어드 분비선}}"/>
 		<part Name="Description" Short="향기로운 이슬이 쪼그라든 조직의 주름을 적시고, 주변 공기를 그을립니다."/>
     </object>
   <object Name="IceBreatherGland" Load="Merge">
-    <part Name="Render" DisplayName="{{c|진눈깨비수염 샘}}"/>
+    <part Name="Render" DisplayName="{{c|슬릿비어드 분비선}}"/>
 		<part Name="Description" Short="향기로운 이슬이 쪼그라든 조직의 주름을 적시고, 주변 공기를 얼립니다."/>
     </object>
   <object Name="ElderIceBreatherGland" Load="Merge">
-    <part Name="Render" DisplayName="{{c|원로 진눈깨비수염 샘}}"/>
+    <part Name="Render" DisplayName="{{c|장로 슬릿비어드 분비선}}"/>
 		<part Name="Description" Short="향기로운 이슬이 쪼그라든 조직의 주름을 적시고, 주변 공기를 얼립니다."/>
     </object>
   <object Name="CorrosiveBreatherGland" Load="Merge">
-    <part Name="Render" DisplayName="{{g|신맛수염 샘}}"/>
+    <part Name="Render" DisplayName="{{g|타트비어드 분비선}}"/>
 		<part Name="Description" Short="향기로운 이슬이 쪼그라든 조직의 주름을 적시고, 주변 공기를 따끔하게 자극합니다."/>
     </object>
   <object Name="ElderCorrosiveBreatherGland" Load="Merge">
-    <part Name="Render" DisplayName="{{G|원로 신맛수염 샘}}"/>
+    <part Name="Render" DisplayName="{{G|장로 타트비어드 분비선}}"/>
 		<part Name="Description" Short="향기로운 이슬이 쪼그라든 조직의 주름을 적시고, 주변 공기를 따끔하게 자극합니다."/>
     </object>
   <object Name="NormalityBreatherGland" Load="Merge">
-    <part Name="Render" DisplayName="{{y|공허수염 샘}}"/>
+    <part Name="Render" DisplayName="{{y|널비어드 분비선}}"/>
 		<part Name="Description" Short="향기로운 이슬이 쪼그라든 조직의 주름을 적시고, 주변 공기를 편극시킵니다."/>
     </object>
   <object Name="ElderNormalityBreatherGland" Load="Merge">
-    <part Name="Render" DisplayName="{{Y|원로 공허수염 샘}}"/>
+    <part Name="Render" DisplayName="{{Y|장로 널비어드 분비선}}"/>
 		<part Name="Description" Short="향기로운 이슬이 쪼그라든 조직의 주름을 적시고, 주변 공기를 편극시킵니다."/>
     </object>
   <object Name="PoisonBreatherGland" Load="Merge">
-    <part Name="Render" DisplayName="{{g|쓸개수염 샘}}"/>
+    <part Name="Render" DisplayName="{{g|갈비어드 분비선}}"/>
 		<part Name="Description" Short="향기로운 이슬이 쪼그라든 조직의 주름을 적시고, 주변 공기를 따끔하게 자극합니다."/>
     </object>
   <object Name="ElderPoisonBreatherGland" Load="Merge">
-    <part Name="Render" DisplayName="{{G|원로 쓸개수염 샘}}"/>
+    <part Name="Render" DisplayName="{{G|장로 갈비어드 분비선}}"/>
 		<part Name="Description" Short="향기로운 이슬이 쪼그라든 조직의 주름을 적시고, 주변 공기를 따끔하게 자극합니다."/>
     </object>
   <object Name="SleepBreatherGland" Load="Merge">
-    <part Name="Render" DisplayName="{{w|꿈수염 샘}}"/>
+    <part Name="Render" DisplayName="{{w|드림비어드 분비선}}"/>
 		<part Name="Description" Short="향기로운 이슬이 쪼그라든 조직의 주름을 적시고, 주변 공기를 축축하게 만듭니다."/>
     </object>
   <object Name="ElderSleepBreatherGland" Load="Merge">
-    <part Name="Render" DisplayName="{{W|원로 꿈수염 샘}}"/>
+    <part Name="Render" DisplayName="{{W|장로 드림비어드 분비선}}"/>
 		<part Name="Description" Short="향기로운 이슬이 쪼그라든 조직의 주름을 적시고, 주변 공기를 축축하게 만듭니다."/>
     </object>
   <object Name="StunBreatherGland" Load="Merge">
-    <part Name="Render" DisplayName="{{c|정적수염 샘}}"/>
+    <part Name="Render" DisplayName="{{c|스틸비어드 분비선}}"/>
 		<part Name="Description" Short="향기로운 이슬이 쪼그라든 조직의 주름을 적시고, 주변 공기의 움직임을 멈춰 세웁니다."/>
     </object>
   <object Name="ElderStunBreatherGland" Load="Merge">
-    <part Name="Render" DisplayName="{{C|원로 정적수염 샘}}"/>
+    <part Name="Render" DisplayName="{{C|장로 스틸비어드 분비선}}"/>
 		<part Name="Description" Short="향기로운 이슬이 쪼그라든 조직의 주름을 적시고, 주변 공기의 움직임을 멈춰 세웁니다."/>
     </object>
   <object Name="ConfusionBreatherGland" Load="Merge">
-    <part Name="Render" DisplayName="{{b|미궁수염 샘}}"/>
+    <part Name="Render" DisplayName="{{b|메이즈비어드 분비선}}"/>
 		<part Name="Description" Short="향기로운 이슬이 쪼그라든 조직의 주름을 적시고, 주변 공기를 흐릿하게 만듭니다."/>
     </object>
   <object Name="ElderConfusionBreatherGland" Load="Merge">
-    <part Name="Render" DisplayName="{{B|원로 미궁수염 샘}}"/>
+    <part Name="Render" DisplayName="{{B|장로 메이즈비어드 분비선}}"/>
 		<part Name="Description" Short="향기로운 이슬이 쪼그라든 조직의 주름을 적시고, 주변 공기를 흐릿하게 만듭니다."/>
     </object>    
   
   <!-- Harvestables -->
   <object Name="Yondercane" Load="Merge">
     <part Name="Render" DisplayName="{{W|욘더케인}}"/>
-    <part Name="Description" Short="술 달린 욘더브러시의 홈진 줄기가 초점 밖의 먼 끝을 향해 휘어져 있습니다."/>
+    <part Name="Description" Short="술 달린 욘더브러시의 홈진 줄기가 흐릿한 저편을 향해 휘어져 있습니다."/>
     </object>
   <object Name="Vinewafer" Load="Merge">
     <part Name="Render" DisplayName="바인웨이퍼"/>
 		<part Name="Description" Short="작은 코르크 혹 하나가 수분을 머금고 부풀어 있습니다. 그것은 비인간적인 인내를 두른 채 펼쳐진 잎이 백 마일 바람에서 빗방울 한 점을 빨아들여, 뜨거운 몇 주 동안 물을 대어 길러낸 것입니다."/>
     </object>
   <object Name="Dreadroot Tuber" Load="Merge">    
-    <part Name="Render" DisplayName="{{K|드레드루트 괴경}}"/>
+    <part Name="Render" DisplayName="{{K|드레드루트 덩이줄기}}"/>
     <part Name="Description" Short="땅의 흉터가 계피빛 구근을 품고 있으며, 흙과 크롬의 압력에 뒤틀려 천 겹의 파멸을 새긴 듯한 형상을 하고 있습니다."/>
 		</object>
   <object Name="Starapple" Load="Merge">
     <part Name="Render" DisplayName="별사과"/>
-    <part Name="Description" Short="오점(五點)처럼 박힌 속살을 감싼 밝은 껍질에서 즙이 뚝뚝 떨어집니다. 허기로 젖은 눈에는 화산 소금 속의 석류석처럼 빛나 보입니다."/>
+    <part Name="Description" Short="오엽각으로 속살을 감싼 밝은 껍질에서 즙이 뚝뚝 떨어집니다. 허기로 젖은 눈에는 화산 소금 속의 석류석처럼 빛나 보입니다."/>
     </object>
   <object Name="Spine Fruit" Load="Merge">
     <part Name="Render" DisplayName="가시 열매"/>
@@ -231,12 +250,16 @@
     </object>
   <object Name="Smoldered Mushroom" Load="Merge">
     <part Name="Render" DisplayName="그을린 버섯"/>
-    <part Name="Description" Short="이 트러플은 지상에서는 알 수 없는 기체가 빚어낸 포도주빛 그을음 찌꺼기로 뒤덮여 있습니다. 땅속 깊고도 깊은 곳, 그리고 Pale Sea 너머에서 은근히 그을려 촉촉한 풍미를 머금게 되었습니다."/>
+    <part Name="Description" Short="이 트러플은 지상에서는 알 수 없는 기체가 빚어낸 포도주빛 그을음 찌꺼기로 뒤덮여 있습니다. 땅속 깊고도 깊은 곳, 그리고 페일 씨 너머에서 은근히 그을려 촉촉한 풍미를 머금게 되었습니다."/>
     </object>
   <object Name="Hoarshroom" Load="Merge">
     <part Name="Render" DisplayName="{{C|발광}} 서리버섯"/>
 		<part Name="Description" Short="부드러운 생체발광으로 빛나는 갓등 모양의 갓 위에 서리가 반짝입니다."/>
-		<part Name="RulesDescription" Text="지속시간: 180-220 라운드 반경 2로 빛을 냅니다. 복용 후 첫 5라운드 동안, 매 라운드마다 레벨당 체력 0.6(최소 3)을 회복합니다. 냉기 저항 +20 중독될 수 없습니다."/>
+		<part Name="RulesDescription" Text="지속시간: 180-220 라운드
+당신은 반경 2 범위를 밝힙니다.
+섭취 후 첫 5라운드 동안, 매 라운드마다 레벨당 체력 0.6(최소 3)을 회복합니다.
++20 냉기 저항 
+당신은 중독되지 않습니다."/>
     </object>
   <object Name="Godshroom Cap" Load="Merge">
     <part Name="Render" DisplayName="{{o|Eater의 살점}}"/>
@@ -245,40 +268,45 @@
   <object Name="Lah Petals" Load="Merge">
     <part Name="Render" DisplayName="{{lah|lah 꽃잎}}"/>
     <part Name="Description" Short="톡 쏘는 황토빛 꽃잎은 향긋한 허브처럼 보이지만, 감칠맛은 허브차보다는 육수에 더 가깝습니다."/>
+    <part Name="Food" Message="감칠맛, 그 이상 그 이하도 아니다." />
     <tag Name="Gender" Value="plural"/>
 		</object>
   <object Name="Clump of Grave Moss" Load="Merge">
     <part Name="Render" DisplayName="한 줌의 {{C|무덤이끼}}"/>
     <part Name="Description" Short="빛이 바랜 청록빛 무덤이끼가 드물고도 부드러운 한 줌으로 자라 있습니다."/>
+    <part Name="Food" Message="입안에서 바스락거리며 부서진다." />
     </object>
   <object Name="Banana" Load="Merge">
     <part Name="Render" DisplayName="{{W|바나나}}"/>
-    <part Name="Description" Short="완숙한 색이 진하게 배어 있고, 껍질에는 Spindle의 반짝임이 점점이 박혀 있습니다."/>
+    <part Name="Description" Short="완숙한 색이 진하게 배어 있고, 껍질에는 스핀들의 반짝임이 점점이 박혀 있습니다."/>
     </object>
   <object Name="Yuckwheat Stem" Load="Merge">
-    <part Name="Render" DisplayName="{{w|역겨밀 줄기}}"/>
-    <part Name="Description" Short="아이들은 역겨밀 줄기가 아삭하게 똑 부러지는 소리에 울음을 터뜨립니다. 수백 년 동안 그래 왔습니다. 아이들은 울고, 버둥대고, 엄마의 손아귀에서 몸을 비틀며, 이 식물이 지닌 약효를 아무리 달래도 들은 척도 하지 않습니다. 잘라 으깬 줄기는 혀끝에 시큼한 맛을 남기고, 아이들의 얼굴은 아이들 특유의 고통으로 일그러집니다. 하지만 밤에는 더 잘 잔다고, 엄마들은 말합니다."/>
+    <part Name="Render" DisplayName="{{w|역밀 줄기}}"/>
+    <part Name="Description" Short="아이들은 역밀 줄기가 아삭하게 똑 부러지는 소리에 울음을 터뜨립니다. 수백 년 동안 그래 왔습니다. 아이들은 울고, 버둥대고, 엄마의 손아귀에서 몸을 비틀며, 이 식물이 지닌 약효를 아무리 달래도 들은 척도 하지 않습니다. 잘라 으깬 줄기는 혀끝에 시큼한 맛을 남기고, 아이들의 얼굴은 아이들 특유의 고통으로 일그러집니다. 하지만 밤에는 더 잘 잔다고, 엄마들은 말합니다."/>
     </object>
   <object Name="Lagroot Tuber" Load="Merge">
-    <part Name="Render" DisplayName="래그루트 괴경"/>
+    <part Name="Render" DisplayName="라그루트 덩이줄기"/>
     <part Name="Description" Short="전분이 가득한 수상돌기들을 땅에서 베어 내어 깎아 다듬었습니다."/>
     </object>
   <object Name="Vanta Petals" Load="Merge">
     <part Name="Render" DisplayName="{{K|반타 꽃잎}}"/>
     <part Name="Description" Short="빛이 달의 영향권 경계에서 뚝뚝 흘러내려 공허로 스며듭니다."/>
+    <part Name="Food" Message="빛과 열을 모조리 빼앗기며 얼어붙는다." />
     <tag Name="Gender" Value="plural"/>
 		</object>
   <object Name="Urberry" Load="Merge">
-    <part Name="Render" DisplayName="{{m|우르베리}}"/>
+    <part Name="Render" DisplayName="{{m|울베리}}"/>
     <part Name="Description" Short="대지처럼 묵직한 즙이 베리 껍질을 압박해, 빛을 굽히는 완벽한 구체로 빚어 놓았습니다. 안쪽의 씨앗 하나에는 형상들의 형상을 위한 백만 겹의 지침이 새겨져 있습니다."/>
     </object>
   <object Name="Arsplice Seed" Load="Merge">
-    <part Name="Render" DisplayName="{{C-C-c-m-m-c-C-C sequence|아스플라이스}} 씨앗"/>
+    <part Name="Render" DisplayName="{{C-c-m-m-c-C sequence|아스플라이스}} 씨앗"/>
     <part Name="Description" Short="초원-산호-균류 혼종이 창자 속에서 그림자처럼 갈라져 뻗으며 먹어치운, 수천 년 동안 화학 변성된 거대도시가 생태 덩이의 씨껍질 안으로 흡수되어 있습니다."/>
+    <part Name="Food" Message="포근한 온기가 혈관과 신경으로 통해 당신의 몸에 뿌리내린다." />
     </object>
   <object Name="Bop Cheek" Load="Merge">
-    <part Name="Render" DisplayName="{{B|보프 볼살}}"/>
-    <part Name="Description" Short="겹겹이 적층된 스펀지의 좋은 부위입니다. 손대면 탱글탱글 흔들립니다."/>
+    <part Name="Render" DisplayName="{{B|밥 볼살}}"/>
+    <part Name="Description" Short="겹겹이 적층된 스펀지의 먹을 수 있는 부분입니다. 손대면 탱글탱글 흔들립니다."/>
+    <part Name="Food" Message="지금까지 먹어본 그 어떤 것보다 쫄깃하다." />
     </object>
   <object Name="Mirror Shard" Load="Merge">
     <part Name="Render" DisplayName="{{Y|거울 파편}}"/>
@@ -287,12 +315,13 @@
 	<object Name="Bundle of Noisegrass" Load="Merge">
 		<part Name="Render" DisplayName="노이즈그래스 묶음"/>
 		<part Name="Description" Short="별빛처럼 밝은 풀이 의미의 국지적 정점에 이르렀을 때, 베어 묶어 둔 것입니다."/>
+    <part Name="Food" Message="보스락거리는 맛이 난다." />
 		</object>    
   <object Name="Mushroom" Load="Merge">
     <part Name="Render" DisplayName="[버섯]"/>
     </object>  
   <object Name="Qudzu Stem" Load="Merge">
-    <part Name="Render" DisplayName="{{r|쿼드주 줄기}}"/>
+    <part Name="Render" DisplayName="{{r|칰 줄기}}"/>
     <part Name="Description" Short="붉은 셀러리 줄기 하나가 수백 년의 마모된 먼지를 뒤집어쓴 듯 희뿌옇습니다."/>
     </object>
   <object Name="Lover's Blossom" Load="Merge">
@@ -302,19 +331,22 @@
   <object Name="Humble Pie" Load="Merge">
     <part Name="Render" DisplayName="소박한 파이"/>
     <part Name="Description" Short="껍질 아래 다진 고기에 간을 하는 것은 yyffur 가루 한 꼬집입니다. 동명의 버섯 줄기에서 깎아 낸 뒤 곱게 갈아 만든 것입니다. 버섯 한 통째는 포유류의 정신에 너무 강력해서(하나를 먹으면 단 몇 순간 만에 자아가 완전히 지워져 버립니다), 맛있는 파이에 가루를 한 꼬집 얹는 것만으로도 우주에서 자신의 자리를 떠올리게 해 줍니다."/>
-    <part Name="RulesDescription" Text="자아가 영구적으로 1 감소합니다."/>
+    <part Name="RulesDescription" Text="영구적으로 -1 Ego"/>
+    <part Name="Food" Message="씁쓸한 맛이 난다.
+당신의 {{Y|Ego}}가 {{C|1}}만큼 줄어들었다." />
     </object>  
   <object Name="Ripe Cucumber" Load="Merge">
     <part Name="Render" DisplayName="{{G|잘 익은 오이}}"/>
     <part Name="Description" Short="박하빛 옥색의 길고 울퉁불퉁한 목이 비옥한 덩굴에서 맺혀, 아삭하게 따냈습니다."/>
     </object> 
   <object Name="Taco Suprema" Load="Merge">
-    <part Name="Render" DisplayName="{{m|타코 수프레마}}"/>
+    <part Name="Render" DisplayName="{{m|타코 수프리마}}"/>
     <part Name="Description" Short="얇고 오래된 종이, 기름때가 겹겹이 덧씌워진 팔림프세스트가 튀긴 웨이퍼의 바삭한 안장을 감싸고 있습니다. 굳어버린 꿀이 일곱 겹으로 바삭한 틈새를 가득 채우고 있습니다."/>
   </object>  
   <object Name="Crystal of Eve" Load="Merge">
     <part Name="Render" DisplayName="{{crystalline|이브의 수정}}"/>
-		<part Name="Description" Short="사이컬 에너지가 영점 근처에서는 부드러운 솜털처럼 맴돌다가, 사면체 결정 습성에서 정점에 이릅니다. 이 수정은 체계가 종소리 같은 지성을 발달시키기 전에 뿌리 꽃다발에서 떼어낸 것입니다. 태동하는 생각과 감정으로 진동하고 있습니다."/>
+		<part Name="Description" Short="정신적 에너지가 영점 근처에서는 부드러운 솜털처럼 맴돌다가, 사면체 결정 습성에서 정점에 이릅니다. 이 수정은 체계가 종소리 같은 지성을 발달시키기 전에 뿌리 꽃다발에서 떼어낸 것입니다. 태동하는 생각과 감정으로 진동하고 있습니다."/>
+    <part Name="Food" Message="결정이 깨지며 농축된 정신이 머리에 물밀듯 쏟아져 들어옵니다." />    
 		</object>  
   <object Name="Hunk of Cheese" Load="Merge">
     <part Name="Render" DisplayName="한 덩이의 {{W|치즈}}"/>
@@ -337,14 +369,14 @@
   
   <object Name="Starapple Preserves" Load="Merge">
     <part Name="Render" DisplayName="{{R|별사과 잼}}"/>
-    <part Name="Description" Short="달콤한 별사과를 으깨 불 위에 올려 졸이고, 밖에 두어 식힌 다음, 나중에 쓰려고 병에 담아 두었습니다. 과일 향기로운 에테르 속에 실처럼 질긴 과육 조각들이 떠 있습니다."/>
+    <part Name="Description" Short="달콤한 별사과를 으깨 불 위에 올려 졸이고, 밖에 두어 식힌 다음, 보존을 위해 병에 담아 두었습니다. 과일 향기로운 에테르 속에 실처럼 질긴 과육 조각들이 떠 있습니다."/>
     </object>
   <object Name="Spine Fruit Jam" Load="Merge">
     <part Name="Render" DisplayName="{{M|가시 열매 잼}}"/>
-    <part Name="Description" Short="프락티의 가시 돋친 열매를 으깨 불 위에 올려 졸이고, 밖에 두어 식힌 다음, 나중에 쓰려고 병에 담아 두었습니다. 과일 향기로운 에테르 속에 가시 돋친 과육 조각들이 떠 있습니다."/>
+    <part Name="Description" Short="가시 돋친 열매 조각을 으깨 불 위에 올려 졸이고, 밖에 두어 식힌 다음, 보존을 위해 병에 담아 두었습니다. 과일 향기로운 에테르 속에 가시 돋친 과육 조각들이 떠 있습니다."/>
     </object>
   <object Name="Vinewafer Sheaf" Load="Merge">
-    <part Name="Render" DisplayName="{{g|바인웨이퍼 단}}"/>
+    <part Name="Render" DisplayName="{{g|바인웨이퍼 다발}}"/>
     <part Name="Description" Short="수분을 빨아들이는 물덩굴 식물에서 거둬들인 웨이퍼를 한데 모아, 노끈으로 묶어 놓았습니다."/>
     </object>
   <object Name="Pickled Mushrooms" Load="Merge">
@@ -383,7 +415,7 @@
     <part Name="Description" Short="몇 주 묵은 소금 결정이 젖은 줄기의 홈진 골짜기를 따라 늘어서 있습니다."/>
     </object>
   <object Name="Fermented Yuckwheat Stem" Load="Merge">
-    <part Name="Render" DisplayName="{{w|발효 역겨밀 줄기}}"/>
+    <part Name="Render" DisplayName="{{w|발효 역밀 줄기}}"/>
     <part Name="Description" Short="몇 주 묵은 소금 결정이 줄기의 꺾인 갈래마다 옹기종기 모여 있습니다."/>
     </object>
   <object Name="Voider Gland Paste" Load="Merge">
@@ -405,23 +437,23 @@
     <tag Name="Gender" Value="plural"/>
 		</object>
   <object Name="Compacted Bone Meal" Load="Merge">
-    <part Name="Render" DisplayName="{{Y|뼛가루}}"/>
+    <part Name="Render" DisplayName="{{Y|골식}}"/>
     <part Name="Description" Short="세월을 모르는 뼈를 갈아, 뼈벌레의 흉터 난 창자 속에서 압축해 만들었습니다. 그 뒤 뼛가루로 빻았습니다."/>
     </object>
   <object Name="Crushed Grave Moss" Load="Merge">
-    <part Name="Render" DisplayName="{{C|빻은 무덤이끼}}"/>
+    <part Name="Render" DisplayName="{{C|으깬 무덤이끼}}"/>
     <part Name="Description" Short="무덤이끼가 드물고도 부드러운 한 줌으로 자라 있었고, 그것을 빻아 향신료 쟁반에 올려두었습니다."/>
     </object>
   <object Name="Mashed Lag" Load="Merge">
-    <part Name="Render" DisplayName="{{W|으깬 래그}}"/>
-    <part Name="Description" Short="껍질을 벗긴 래그루트 괴경을 으깨 소금을 치고 병에 담았습니다."/>
+    <part Name="Render" DisplayName="{{W|으깬 라그}}"/>
+    <part Name="Description" Short="껍질을 벗긴 라그루트 덩이줄기를 으깨 소금을 치고 병에 담았습니다."/>
     </object>
   <object Name="Sun-Dried Banana" Load="Merge">
     <part Name="Render" DisplayName="{{W|햇볕에 말린 바나나}}"/>
     <part Name="Description" Short="소금빛 태양이 과일의 수분을 구워 빼냈지만, Spindle glitter는 여전히 원반 칩 위에 내려앉아 반짝입니다."/>
     </object>
   <object Name="Psychal Gland Paste" Load="Merge">
-    <part Name="Render" DisplayName="{{m|사이컬 샘 페이스트}}"/>
+    <part Name="Render" DisplayName="{{m|정신의 분비선 페이스트}}"/>
     <part Name="Description" Short="기억에 흠뻑 젖은 신경을 절구에 빻아, 염수에 은근히 끓여 응고시켰습니다."/>
     </object>
   <object Name="Mirror Dust" Load="Merge">
@@ -429,7 +461,7 @@
     <part Name="Description" Short="거울 세계의 유물을 부수어, 고운 가루로 갈아냈습니다."/>
     </object>
   <object Name="Canned Have-It-All" Load="Merge">
-    <part Name="Render" DisplayName="{{w|통조림 Have-It-All}}"/>
+    <part Name="Render" DisplayName="{{w|해브-잇-올 통조림}}"/>
     <part Name="Description" Short="깡통에 찍힌 도안에는 발톱을 지닌 동물이 그려져 있습니다. 아니, 저건 발굽일까요? 스누드(아니면 뿔? 가지뿔?)가 그 녀석의 코와 미간을 오므립니다. 덥수룩하고 엉킨 털, 아니면 주름진 깃털이, 열기(또는 냉기)로부터 그것을 감싸고 있습니다."/>
     </object>
   <object Name="Crusty Loaf" Load="Merge">
@@ -437,7 +469,7 @@
     <part Name="Description" Short="매년 가을이면, 많은 골짜기 거주자들이 Stiltgrounds로 하이킹을 가서 Fall wine을 삽니다. 그들은 집으로 돌아와 밀기울을 와인에 우려내고, 점토 오븐에서 반죽을 발효시켜 부풀립니다. 더 운이 좋은 이들도 있습니다. 균류 숲 거주자들은 바깥으로 한 걸음만 나가도 효모를 거둘 수 있고, 균류와 친한 이들은 효모가 잔뜩 묻은 부속지를 흔들기만 하면 됩니다."/>
     </object>
   <object Name="Ekuemekiyyen Greens" Load="Merge">
-    <part Name="Render" DisplayName="{{g|Ekuemekiyyen 잎채소}}"/>
+    <part Name="Render" DisplayName="{{g|에쿠에미키엔 잎채소}}"/>
     <part Name="Description" Short="공작석빛 잎과 피스타치오가 별 끈으로 묶여 있습니다. 잎채소는 공기 중 독소가 없다는 사실에 의기양양하게 부풀어 있습니다."/>
     <tag Name="Gender" Value="plural"/>
     </object>
@@ -446,15 +478,15 @@
     <part Name="Description" Short="스펀지 같은 음식 덩이를 완벽한 비율의 슬레이트빛 큐브로 빚어 놓았습니다. 먹는 행위의 어수선함과 큐브의 정밀함을 어떤 힘이 결혼시킨 걸까요?"/>
     </object>
   <object Name="Fermented Tongue" Load="Merge">
-    <part Name="Render" DisplayName="{{r|발효 혀}}"/>
+    <part Name="Render" DisplayName="{{r|발효된 혀}}"/>
     <part Name="Description" Short="잘게 썬 혀를 제 침으로 시어지게 만든 뒤, 막대에 감아 비틀어 놓았습니다."/>
     </object>
   <object Name="Sliced Bop Cheek" Load="Merge">
-    <part Name="Render" DisplayName="{{B|썬 보프 볼살}}"/>
+    <part Name="Render" DisplayName="{{B|썰린 밥 볼살}}"/>
     <part Name="Description" Short="겹겹이 적층된 스펀지의 좋은 부위를 서빙용으로 썰어 놓았습니다. 손대면 탱글탱글 흔들립니다."/>
     </object>
 	<object Name="Wild Rice" Load="Merge">
-        <part Name="Render" DisplayName="{{m-M-m-M sequence|야생}} 쌀"/>
+        <part Name="Render" DisplayName="{{m-M sequence|야생}} 쌀"/>
 		<part Name="Description" Short="자두빛 흰 쌀껍질은 만지면 치직거리고, 그 까락은 변덕스럽고도 서정적인 소리를 끙끙 냅니다."/>		
 		</object>
 	<object Name="Dream Smoke" Load="Merge">
@@ -499,87 +531,87 @@
 		<part Name="Description" Short="염소 살점을 깔끔한 줄로 잘라, 소금을 치고 훈연했습니다."/>
     </object>
   <object Name="Worm Jerky" Load="Merge">
-    <part Name="Render" DisplayName="벌레 육포"/>
-		<part Name="Description" Short="벌레 고기를 깔끔한 줄로 잘라, 소금을 치고 훈연했습니다."/>
+    <part Name="Render" DisplayName="애벌레 육포"/>
+		<part Name="Description" Short="애벌레 고기를 깔끔한 줄로 잘라, 소금을 치고 훈연했습니다."/>
     </object>
   <object Name="Scorpiock Jerky" Load="Merge">
-    <part Name="Render" DisplayName="{{W|스코피오크 육포}}"/>
-		<part Name="Description" Short="으깬 스코피오크 고기를 깔끔한 줄로 잘라, 소금을 치고 훈연했습니다."/>
+    <part Name="Render" DisplayName="{{W|스콜피오크 육포}}"/>
+		<part Name="Description" Short="으깬 스콜피오크 고기를 깔끔한 줄로 잘라, 소금을 치고 훈연했습니다."/>
   </object>
   <object Name="Fish Jerky" Load="Merge">
-    <part Name="Render" DisplayName="{{Y|생선 육포}}"/>
+    <part Name="Render" DisplayName="{{Y|어포}}"/>
 		<part Name="Description" Short="생선 고기를 깔끔한 줄로 잘라, 소금을 치고 훈연했습니다."/>
   </object>
   
   <!-- Breathbeard pastes -->
   <object Name="BaseBreatherGlandPaste" Load="Merge">
-    <part Name="Render" DisplayName="[호흡샘 페이스트]"/>
+    <part Name="Render" DisplayName="[브리더 페이스트]"/>
     <part Name="Description" Short="안개에 젖은 조직을 절구에 빻아, 염수에 은근히 끓여 응고시켰습니다."/>
     </object>  
   <object Name="BaseElderBreatherGlandPaste" Load="Merge">
     </object>
   <object Name="FireBreatherGlandPaste" Load="Merge">
-    <part Name="Render" DisplayName="{{r|화염수염 샘 페이스트}}"/>
+    <part Name="Render" DisplayName="{{r|플레임비어드 분비선 페이스트}}"/>
 		<part Name="Description" Short="그을린 조직을 절구에 빻아, 염수에 은근히 끓여 응고시켰습니다."/>
 		</object>
   <object Name="ElderFireBreatherGlandPaste" Load="Merge">
-    <part Name="Render" DisplayName="{{R|농축 화염수염 샘 페이스트}}"/>
+    <part Name="Render" DisplayName="{{R|농축된 플레임비어드 분비선 페이스트}}"/>
 		<part Name="Description" Short="그을린 조직을 절구에 빻아, 염수에 은근히 끓여 응고시켰습니다."/>
     </object>
   <object Name="IceBreatherGlandPaste" Load="Merge">
-    <part Name="Render" DisplayName="{{c|진눈깨비수염 샘 페이스트}}"/>
+    <part Name="Render" DisplayName="{{c|슬릿비어드 분비선 페이스트}}"/>
 		<part Name="Description" Short="서리 낀 조직을 절구에 빻아, 염수에 은근히 끓여 응고시켰습니다."/>
     </object>
   <object Name="ElderIceBreatherGlandPaste" Load="Merge">
-    <part Name="Render" DisplayName="{{c|농축 진눈깨비수염 샘 페이스트}}"/>
+    <part Name="Render" DisplayName="{{c|농축된 슬릿비어드 샘 페이스트}}"/>
 		<part Name="Description" Short="서리 낀 조직을 절구에 빻아, 염수에 은근히 끓여 응고시켰습니다."/>
     </object>
   <object Name="CorrosiveBreatherGlandPaste" Load="Merge">
-    <part Name="Render" DisplayName="{{g|신맛수염 샘 페이스트}}"/>
+    <part Name="Render" DisplayName="{{g|타트비어드 샘 페이스트}}"/>
 		<part Name="Description" Short="신맛 나는 조직을 절구에 빻아, 염수에 은근히 끓여 응고시켰습니다."/>
     </object>
   <object Name="ElderCorrosiveBreatherGlandPaste" Load="Merge">
-    <part Name="Render" DisplayName="{{G|농축 신맛수염 샘 페이스트}}"/>
+    <part Name="Render" DisplayName="{{G|농축된 타트비어드 샘 페이스트}}"/>
 		<part Name="Description" Short="신맛 나는 조직을 절구에 빻아, 염수에 은근히 끓여 응고시켰습니다."/>
     </object>
   <object Name="NormalityBreatherGlandPaste" Load="Merge">
-    <part Name="Render" DisplayName="{{y|공허수염 샘 페이스트}}"/>
+    <part Name="Render" DisplayName="{{y|널비어드 샘 페이스트}}"/>
 		<part Name="Description" Short="육각형 조직을 절구에 빻아, 염수에 은근히 끓여 응고시켰습니다."/>
     </object>
   <object Name="ElderNormalityBreatherGlandPaste" Load="Merge">
-    <part Name="Render" DisplayName="{{Y|농축 공허수염 샘 페이스트}}"/>
+    <part Name="Render" DisplayName="{{Y|농축된 널비어드 샘 페이스트}}"/>
 		<part Name="Description" Short="육각형 조직을 절구에 빻아, 염수에 은근히 끓여 응고시켰습니다."/>
     </object>
   <object Name="PoisonBreatherGlandPaste" Load="Merge">
-    <part Name="Render" DisplayName="{{g|쓸개수염 샘 페이스트}}"/>
+    <part Name="Render" DisplayName="{{g|갈비어드 샘 페이스트}}"/>
 		<part Name="Description" Short="독성 조직을 절구에 빻아, 염수에 은근히 끓여 응고시켰습니다."/>
     </object>
   <object Name="ElderPoisonBreatherGlandPaste" Load="Merge">
-    <part Name="Render" DisplayName="{{G|농축 쓸개수염 샘 페이스트}}"/>
+    <part Name="Render" DisplayName="{{G|농축된 갈비어드 샘 페이스트}}"/>
 		<part Name="Description" Short="독성 조직을 절구에 빻아, 염수에 은근히 끓여 응고시켰습니다."/>
     </object>
   <object Name="SleepBreatherGlandPaste" Load="Merge">
-    <part Name="Render" DisplayName="{{w|꿈수염 샘 페이스트}}"/>
+    <part Name="Render" DisplayName="{{w|드림비어드 샘 페이스트}}"/>
 		<part Name="Description" Short="쪼그라든 조직을 절구에 빻아, 염수에 은근히 끓여 응고시켰습니다."/>
     </object>
   <object Name="ElderSleepBreatherGlandPaste" Load="Merge">
-    <part Name="Render" DisplayName="{{W|농축 꿈수염 샘 페이스트}}"/>
+    <part Name="Render" DisplayName="{{W|농축된 드림비어드 샘 페이스트}}"/>
 		<part Name="Description" Short="쪼그라든 조직을 절구에 빻아, 염수에 은근히 끓여 응고시켰습니다."/>
     </object>
   <object Name="StunBreatherGlandPaste" Load="Merge">
-    <part Name="Render" DisplayName="{{c|정적수염 샘 페이스트}}"/>
+    <part Name="Render" DisplayName="{{c|스틸비어드 샘 페이스트}}"/>
 		<part Name="Description" Short="정적의 조직을 절구에 빻아, 염수에 은근히 끓여 응고시켰습니다."/>
     </object>
   <object Name="ElderStunBreatherGlandPaste" Load="Merge">
-    <part Name="Render" DisplayName="{{C|농축 정적수염 샘 페이스트}}"/>
+    <part Name="Render" DisplayName="{{C|농축된 스틸비어드 샘 페이스트}}"/>
 		<part Name="Description" Short="정적의 조직을 절구에 빻아, 염수에 은근히 끓여 응고시켰습니다."/>
     </object>
   <object Name="ConfusionBreatherGlandPaste" Load="Merge">
-    <part Name="Render" DisplayName="{{b|미궁수염 샘 페이스트}}"/>
+    <part Name="Render" DisplayName="{{b|메이즈비어드 샘 페이스트}}"/>
 		<part Name="Description" Short="기이한 조직을 절구에 빻아, 염수에 은근히 끓여 응고시켰습니다."/>
     </object>
   <object Name="ElderConfusionBreatherGlandPaste" Load="Merge">
-    <part Name="Render" DisplayName="{{B|농축 미궁수염 샘 페이스트}}"/>
+    <part Name="Render" DisplayName="{{B|농축된 메이즈비어드 샘 페이스트}}"/>
 		<part Name="Description" Short="기이한 조직을 절구에 빻아, 염수에 은근히 끓여 응고시켰습니다."/>
     </object>
       
@@ -595,8 +627,8 @@
 
   <!-- Congealed tonics -->
   <object Name="Congealed Shade Oil" Load="Merge">
-    <part Name="Render" DisplayName="응고된 {{shade|그늘 기름}}"/>
-    <part Name="Description" Short="셰이드 오일을 주사기에서 추출해 톡 쏘는 공기 속에서 걸쭉하게 만든 뒤, 요리에 쓰려고 병에 담아 두었습니다."/>
+    <part Name="Render" DisplayName="응고된 {{shade|음영 기름}}"/>
+    <part Name="Description" Short="음영 오일을 주사기에서 추출해 톡 쏘는 공기 속에서 걸쭉하게 만든 뒤, 요리에 쓰려고 병에 담아 두었습니다."/>
     </object>
   <object Name="Congealed Blaze" Load="Merge">
     <part Name="Render" DisplayName="응고된 {{blaze|불꽃}}"/>
@@ -607,7 +639,7 @@
     <part Name="Description" Short="연고를 주사기에서 추출해 톡 쏘는 공기 속에서 걸쭉하게 만든 뒤, 요리에 쓰려고 병에 담아 두었습니다."/>
     </object>
   <object Name="Soul Curd" Load="Merge">
-    <part Name="Render" DisplayName="{{soul|영혼 커드}}"/>
+    <part Name="Render" DisplayName="{{soul|영혼 응유}}"/>
     <part Name="Description" Short="우버노스트럼을 주사기에서 추출해 톡 쏘는 공기 속에서 걸쭉하게 만든 뒤, 요리에 쓰려고 병에 담아 두었습니다."/>
     </object>
   <object Name="Drop of Nectar" Load="Merge">
@@ -619,7 +651,7 @@
     <part Name="Description" Short="헐크 꿀을 주사기에서 추출해 톡 쏘는 공기 속에서 걸쭉하게 만든 뒤, 요리에 쓰려고 병에 담아 두었습니다."/>
     </object>
   <object Name="Congealed Skulk" Load="Merge">
-    <part Name="Render" DisplayName="응고된 {{skulk|잠행}}"/>
+    <part Name="Render" DisplayName="응고된 {{skulk|스컬크}}"/>
     <part Name="Description" Short="스컬크를 주사기에서 추출해 톡 쏘는 공기 속에서 걸쭉하게 만든 뒤, 요리에 쓰려고 병에 담아 두었습니다."/>
     </object>
   <object Name="Congealed Love" Load="Merge">
