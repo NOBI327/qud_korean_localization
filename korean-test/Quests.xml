@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<quests>
+    <quest Name="What's Eating the Watervine?"
+            DisplayName="무엇이 수중덩굴을 갉아먹고 있나?"
+            DisplayAccomplishment="당신은 씹어먹힌 물덩굴의 수수께끼를 풀고 조파 마을 사람들에게 기르쉬에 대해 경고했습니다." 
+            DisplayHagiograph="=year=년 =month=월, =name=은 크롬 아치를 지나 기르쉬 무리들을 물리치고 시들어가는 농작물을 치료했습니다."
+            DisplayGospel="붉은 바위에서의 전투에서, =name= fought the combined girshling and baboon forces to liberate the villagers of Joppa. In =player.t's= honor they &lt;spice.history.gospels.Celebration.LateSultanate.!random&gt;.">
+        <step Name="Travel to Red Rock" DisplayName="붉은 바위로 이동하세요.">
+            <text>조파에서 북쪽으로 두 파라상을 여행하여 붉은 바위로 이동하세요.</text>
+        </step>
+        <step Name="Find the Vermin" DisplayName="해충을 찾으세요.">
+            <text>조파의 수중덩굴을 갉아먹는 생물들을 찾으세요.</text>
+        </step>
+        <step Name="Get a Corpse" DisplayName="시체를 가져오세요.">
+            <text>생물 중 하나의 시체를 수집하세요.</text>
+        </step>
+        <step Name="Return with the Corpse" DisplayName="시체를 가지고 돌아가세요.">
+            <text>수중덩굴 해충의 시체를 가지고 조파로 돌아가세요.</text>
+        </step>
+    </quest>
+
+    <quest Name="Fetch Argyve a Knickknack" 
+            DisplayName="아르기브를 위한 장신구 가져오기" 
+         DisplayAccomplishment="당신은 장신구를 노인에게 가져다주었습니다."
+         DisplayHagiograph="물과 덩굴의 사원 안에서, =name=은 노인에게 크롬의 가치를 가르쳤습니다."
+         DisplayGospel="&lt;spice.elements.entity$elements[random].weddingConditions.!random.capitalize&gt;, =name=은 Tinkers' Guild와의 우정을 Argyve를 기쁘게 함으로써 굳혔습니다.">
+    
+    <step Name="Find a Knickknack" DisplayName="장신구를 찾으세요.">
+      <text>조파 주변 지역에서 유물을 찾으세요.</text>
+    </step>
+
+    <step Name="Return to Argyve" DisplayName="아르기브에게 돌아가세요.">
+      <text>유물을 아르기브에게 가져가세요.</text>
+    </step>
+
+  </quest>
+</quests>

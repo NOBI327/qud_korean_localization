@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<skills>
+  <skill Name="Axe" Class="Axe" Description="You are skilled with axes." DisplayName="도끼" DisplayDescription="도끼에 능숙해집니다.">
+    <power Name="Axe Proficiency" Description="You get +2 to hit with axes." DisplayName="도끼 숙련" DisplayDescription="도끼에 +2 명중 보너스를 얻습니다."></power>
+    <power Name="Cleave" Description="Whenever you hit an opponent with an axe, there's a 75% chance you cleave their armor, giving them a -1 penalty to their AV. This penalty can stack a number of times up to half your Str modifier, rounded up, +1 on a critical hit." 
+    DisplayName="쪼개기" DisplayDescription="도끼로 적을 공격할 때 75% 확률로 갑옷을 쪼개어 AV에 -1 패널티를 부여합니다. 이 패널티는 힘 보정치의 절반(올림)까지 중첩될 수 있으며, 치명타 시 +1 추가됩니다."></power>
+    <power Name="Charging Strike" Description="When you charge with an axe and hit, if you cleave their armor, they get an additional -1 penalty to their AV. If you have Dismember, your chance to dismember when charging with an axe is doubled. When you charge with a cudgel and hit, you automatically daze your opponent."
+    DisplayName="돌진 타격" DisplayDescription="도끼로 돌진하여 공격할 때 적의 방어구를 쪼개면, AV에 -1 패널티를 부여합니다. "></power>
+    <power Name="Dismember" Snippet="dismembering" Description="Activated; cooldown 30. Axe attack. If you hit and penetrate, you dismember one of their limbs at random and they start bleeding (1-2 damage per turn. toughness save; difficulty 35). Additionally, your axe attacks that penetrate have a percentage chance to dismember: 3% for one-handed axes and 6% for two-handed axes."
+    DisplayName="사지 절단" DisplayDescription="활성화됨; 재사용 대기시간 30초. 도끼 공격. 적중 및 관통 시, 무작위로 상대의 사지를 절단하고 출혈 상태를 유발합니다(턴당 1-2 피해. 강인함 내성; 난이도 35). 또한 관통하는 도끼 공격은 절단 확률을 가집니다: 한손 도끼 3%, 양손 도끼 6%."></power>
+    <power Name="Hook and Drag" Description="Activated; cooldown 50. You grab an opponent's limb with the heel of your axe. If successful, you pull your opponent with you as you move and make a free attack with your axe. Your opponent gets a chance to resist the move (strength save; difficulty 20 + your Str modifier) and a chance to break free at the start of their turn (same save). Lasts for 9 rounds or until you dismember the opponent."
+    DisplayName="후크 앤 드래그" DisplayDescription="활성화됨; 재사용 대기시간 50. 도끼의 뒤꿈치로 상대의 사지를 움켜쥡니다. 성공 시, 이동하며 상대를 끌고 가며 도끼로 자유 공격을 가합니다. 상대는 이 동작에 저항할 기회(힘 저항 검사; 난이도 20 + 당신의 힘 능력치 수정치)와 자신의 턴 시작 시 벗어나기 기회(동일한 저항 검사)를 얻습니다. 9라운드 동안 지속되거나 상대를 절단할 때까지 유지됩니다."></power>
+    <power Name="Decapitate" Description="Heads are added to the list of possible limbs you can dismember. Chopping off the only head of a creature kills them instantly. If the creature has multiple heads, they start bleeding profusely (2-3 damage per turn. toughness save; difficulty 35)."
+    DisplayName="참수" DisplayDescription="참수 가능한 부위 목록에 머리가 추가됩니다. 생물의 유일한 머리를 베어내면 즉시 죽입니다. 생물이 여러 개의 머리를 가진 경우, 머리가 베인 부위에서 대량 출혈이 발생합니다(턴당 2-3 대미지. 체력 저항 검사; 난이도 35)."></power>
+    <power Name="Berserk!" Description="Activated; cooldown 100.
+You enter a blood frenzy, and for 5 rounds your chance to dismember with axe attacks is 100%. To use Berserk, Dismember must be off cooldown, and using Berserk puts Dismember on cooldown."
+DisplayName="버서크!" DisplayDescription="활성화됨; 재사용 대기시간 100. 5라운드 동안 도끼 공격으로 절단할 확률이 100%가 됩니다. 버서크를 사용하려면 사지 절단이 재사용 대기시간이 아니어야 하며, 버서크 사용 시 사지 절단이 재사용 대기시간에 들어갑니다."></power>
+  </skill>
+</skills>

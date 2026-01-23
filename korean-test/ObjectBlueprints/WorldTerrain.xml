@@ -1,0 +1,908 @@
+<?xml version='1.0' encoding='utf-8'?>
+<objects>
+
+  <!--    
+    1 Regions
+    2 Locations
+    3 Multi-tile water features
+    4 Dimensions
+    5 Historic site templates
+  -->
+
+  <object Name="Terrain" Load="Merge">
+    <part Name="Render" DisplayName="[Terrain]"/>
+    </object>
+
+  <!--
+
+    *************
+       Regions
+    *************
+
+  -->
+  
+  <object Name="TerrainDesertCanyon" Load="Merge">
+    <part Name="Render" DisplayName="사막 협곡"/>
+    <part Name="Description" Short="아주 오래전, 강들 자체가 굶주려 있었고, Great Salt Sea에서 부풀어 오른 휴식을 취하기 전에 셰일과 석회암을 잔뜩 파먹었습니다. 이제 그 갈라진 상처들은 붉은빛과 소금으로 썩어들었습니다."/>
+    <tag Name="Gender" Value="plural"/>
+    </object>
+  <object Name="TerrainDesertCanyon2" Load="Merge">
+    <part Name="Render" DisplayName="사막 협곡"/>
+    <part Name="Description" Short="아주 오래전, 강들 자체가 굶주려 있었고, Great Salt Sea에서 부풀어 오른 휴식을 취하기 전에 셰일과 석회암을 잔뜩 파먹었습니다. 이제 그 갈라진 상처들은 붉은빛과 소금으로 썩어들었습니다."/>
+    <tag Name="Gender" Value="plural"/>
+  </object>
+  <object Name="TerrainDesertCanyon3" Load="Merge">
+    <part Name="Render" DisplayName="사막 협곡"/>
+    <part Name="Description" Short="아주 오래전, 강들 자체가 굶주려 있었고, Great Salt Sea에서 부풀어 오른 휴식을 취하기 전에 셰일과 석회암을 잔뜩 파먹었습니다. 이제 그 갈라진 상처들은 붉은빛과 소금으로 썩어들었습니다."/>
+    <tag Name="Gender" Value="plural"/>
+  </object>
+  <object Name="TerrainDesertCanyon4" Load="Merge">
+    <part Name="Render" DisplayName="사막 협곡"/>
+    <part Name="Description" Short="아주 오래전, 강들 자체가 굶주려 있었고, Great Salt Sea에서 부풀어 오른 휴식을 취하기 전에 셰일과 석회암을 잔뜩 파먹었습니다. 이제 그 갈라진 상처들은 붉은빛과 소금으로 썩어들었습니다."/>
+    <tag Name="Gender" Value="plural"/>
+  </object>
+  <object Name="TerrainSaltmarsh" Load="Merge">
+    <part Name="Render" DisplayName="염습지"/>
+    <part Name="Description" Short="고여 있는 웅덩이에서는 빛나는 백합들이 밤하늘의 별무리 띠와 겨루고 있습니다. 하지만 소금기 어린 태양 아래에서는, 그것들도 brine weed의 그늘로 오그라들고 맙니다."/>
+    </object>
+  <object Name="TerrainSaltmarsh2" Load="Merge">
+    <part Name="Render" DisplayName="염습지"/>
+    <part Name="Description" Short="고여 있는 웅덩이에서는 빛나는 백합들이 밤하늘의 별무리 띠와 겨루고 있습니다. 하지만 소금기 어린 태양 아래에서는, 그것들도 brine weed의 그늘로 오그라들고 맙니다."/>
+    </object>
+  <object Name="TerrainWatervine" Load="Merge">
+    <part Name="Render" DisplayName="염습지"/>
+    <part Name="Description" Short="고여 있는 웅덩이에서는 빛나는 백합들이 밤하늘의 별무리 띠와 겨루고 있습니다. 하지만 소금기 어린 태양 아래에서는, 그것들도 brine weed의 그늘로 오그라들고 맙니다."/>
+    </object>
+  <object Name="TerrainSaltdunes" Load="Merge">
+    <part Name="Render" DisplayName="소금 언덕"/>
+    <part Name="Description" Short="상아빛 바다의 모래언덕은, 제자리에 얼어붙은 파도 같습니다. 보석 같은 태양에 물집이 잡힌 대지가 수축하며 갈라진 자리마다 소금에 금이 가 있습니다. 수평선은 Moghra'yi, Great Salt Desert의 광활한 평원과 하늘을 함께 녹여 섞어 버립니다."/>
+    <tag Name="Gender" Value="plural"/>
+    </object>
+  <object Name="TerrainSaltdunes2" Load="Merge">
+    <part Name="Render" DisplayName="소금 언덕"/>
+    <part Name="Description" Short="상아빛 바다의 모래언덕은, 제자리에 얼어붙은 파도 같습니다. 보석 같은 태양에 물집이 잡힌 대지가 수축하며 갈라진 자리마다 소금에 금이 가 있습니다. 수평선은 Moghra'yi, Great Salt Desert의 광활한 평원과 하늘을 함께 녹여 섞어 버립니다."/>
+    <tag Name="Gender" Value="plural"/>
+    </object>
+  <object Name="TerrainTremblezone" Load="Merge">
+    <part Name="Render" DisplayName="소금 언덕"/>
+    <part Name="Description" Short="상아빛 바다의 모래언덕은, 제자리에 얼어붙은 파도 같습니다. 보석 같은 태양에 물집이 잡힌 대지가 수축하며 갈라진 자리마다 소금에 금이 가 있습니다. 수평선은 Moghra'yi, Great Salt Desert의 광활한 평원과 하늘을 함께 녹여 섞어 버립니다."/>
+    <tag Name="Gender" Value="plural"/>
+    </object>
+  <object Name="TerrainFlowerfields" Load="Merge">
+    <part Name="Render" DisplayName="꽃밭"/>
+    <part Name="Description" Short="프리즘 실가닥이 소금기 밴 부패 사이의 균열을 차지하고 있습니다. 그녀는, 이곳에 초원이 있다고 말합니다."/>
+    <tag Name="Gender" Value="plural"/>
+    </object>
+  <object Name="TerrainJungle" Load="Merge">
+    <part Name="Render" DisplayName="밀림"/>
+    <part Name="Description" Short="뿌리의 땋은 줄기와 잎자루의 띠가 평평한 부엽토에 차원을 부여하고 있습니다. 버려진 잎 하나가 누군가의 집이 되기도 합니다."/>
+    </object>
+  <object Name="TerrainDeepJungle" Load="Merge">
+    <part Name="Render" DisplayName="깊은 밀림"/>
+    <part Name="Description" Short="번성하는 식물군이 미로처럼 빽빽한 뿌리로 부엽토를 가득 메우고, 높은 화관 같은 수관이 마지막 빛줄기마저 질식시키고 있습니다."/>
+    </object>
+  <object Name="TerrainFungalBase" Load="Merge">
+    <part Name="Render" DisplayName="무지개 숲"/>
+    <part Name="Description" Short="만화경 같은 균류 갓 위로 포자들이 소용돌이치며 춤추고 있습니다. 용암빛으로 주조된 원시 수프의 강줄기가, 생기를 재촉하는 선율을 꿀렁이며 흘려보냅니다."/>
+    <!--<tag Name="VillageRegionalFarmPlantChance" Value="30" />-->
+    </object>
+  <object Name="TerrainFungal" Load="Merge">
+    </object>
+  <object Name="TerrainFungalOuter" Load="Merge">
+  </object>
+  <object Name="TerrainFungalCenter" Load="Merge">
+    <part Name="Render"/>
+    </object>
+  <object Name="TerrainFungalR" Load="Merge">
+    <part Name="Render"/>
+  </object>
+  <object Name="TerrainFungalB" Load="Merge">
+    <part Name="Render"/>
+  </object>
+  <object Name="TerrainFungalG" Load="Merge">
+    <part Name="Render"/>
+  </object>
+  <object Name="TerrainFungalcG" Load="Merge">
+    <part Name="Render"/>
+  </object>
+  <object Name="TerrainFungalGw" Load="Merge">
+    <part Name="Render"/>
+  </object>
+  <object Name="TerrainFungalW" Load="Merge">
+    <part Name="Render"/>
+  </object>
+  <object Name="TerrainFungalM" Load="Merge">
+    <part Name="Render"/>
+  </object>
+  <object Name="TerrainFungalC" Load="Merge">
+    <part Name="Render"/>
+  </object>
+  <object Name="TerrainFungalOuterR" Load="Merge">
+    <part Name="Render"/>
+  </object>
+  <object Name="TerrainFungalOuterB" Load="Merge">
+    <part Name="Render"/>
+  </object>
+  <object Name="TerrainFungalOuterG" Load="Merge">
+    <part Name="Render"/>
+  </object>
+  <object Name="TerrainFungalOutercG" Load="Merge">
+    <part Name="Render"/>
+  </object>
+  <object Name="TerrainFungalOuterGw" Load="Merge">
+    <part Name="Render"/>
+  </object>
+  <object Name="TerrainFungalOuterW" Load="Merge">
+    <part Name="Render"/>
+  </object>
+  <object Name="TerrainFungalOuterM" Load="Merge">
+    <part Name="Render"/>
+  </object>
+  <object Name="TerrainFungalOuterC" Load="Merge">
+    <part Name="Render"/>
+  </object>
+  <object Name="TerrainMoonStair" Load="Merge">
+    <part Name="Render" DisplayName="달의 계단"/>
+    <part Name="Description" Short="육각 기둥들이 검은 대리석의 바닥에서 터져 나오고, 그 모서리들은 따뜻한 정전기 이슬처럼 탈결맞음이 되어 흩어지고 있습니다. Stair는 낮은 주파수로 가르랑거리고 있습니다."/>
+		</object>
+  <object Name="TerrainCraters" Load="Merge">
+    <part Name="Render" DisplayName="분화구"/>
+    <part Name="Description" Short=""/>
+    <tag Name="Gender" Value="plural"/>
+    </object>
+  <object Name="RandomCrater" Load="Merge">
+    <part Name="Render" DisplayName="분화구"/>
+    <part Name="Description" Short=""/>
+    <tag Name="Gender" Value="plural"/>
+    </object>
+  <object Name="TerrainHills" Load="Merge">
+    <part Name="Render" DisplayName="언덕"/>
+    <part Name="Description" Short="시간에 따라 일렁이는 돌의 파형 그래프에서, 작은 튀어 오름들입니다."/>
+    <tag Name="Gender" Value="plural"/>
+		</object>
+  <object Name="TerrainMountains" Load="Merge">
+    <part Name="Render" DisplayName="산맥"/>
+    <part Name="Description" Short="시간에 따라 일렁이는 돌의 파형 그래프에서, 한때 세계 판들이 스스로를 괴롭혀 전쟁을 벌이던 자리에는 이제 고요한 평화가 내려앉아 있습니다."/>
+    <tag Name="Gender" Value="plural"/>
+		</object>
+  <object Name="TerrainMountainsSpindleShadow" Load="Merge">
+    <part Name="Render"/>
+    </object>
+  <object Name="TerrainBananaGrove" Load="Merge">
+    <part Name="Render" DisplayName="바나나 숲"/>
+    <part Name="Description" Short="숲의 백만 갈래로 레이스처럼 얽힌 손가락들이 부드러운 풍요 속에서 흔들리고 있습니다. 푸르른 잎자루들이 산처럼 솟은 아늑한 자리에 자리한 Spindle의 기슭을 감싸고 있습니다."/>
+    </object>
+  <object Name="TerrainBananaGroveSpindleShadow" Load="Merge">
+    <part Name="Render"/>
+    </object>  
+  <object Name="TerrainWater" Load="Merge">
+    <part Name="Render" DisplayName="물"/>
+    <part Name="Description" Short="물"/>
+    </object>
+  <object Name="TerrainRiverSvy" Load="Merge">
+    <part Name="Render" DisplayName="스비 강"/>
+    <part Name="Description" Short="Svy는 소금이 덮인 봉우리들을 넘어 밀려가며, 물덩굴이 땋아 엮인 부엽토로 흘러넘치고 있습니다. 그 강둑은 거인들의 크롬 시체가 드리운 그늘 아래에 놓여 있습니다."/>
+    </object>
+  <object Name="TerrainRiverOpal" Load="Merge">
+    <part Name="Render" DisplayName="오팔 강"/>
+    <part Name="Description" Short="Spindle이 그녀의 수면 위에서 물의 초상처럼 반짝이고 있습니다. 그녀는 산길을 가로질러 으스러진 화강암을 실어 나르며, 잎이 무성한 하구로 흘려보냅니다."/>
+    </object>
+  <object Name="TerrainOpalDuskwaters" Load="Merge">
+    <part Name="Render" DisplayName="오팔의 어스름 수역"/>
+    <tag Name="Gender" Value="plural"/>
+    <part Name="Description" Short="가지들의 그늘이 Opal의 물에서 온기를 짜내어, 그늘진 웅덩이만 남겨 두고 있습니다."/>
+    </object>
+  <object Name="TerrainRiverYonth" Load="Merge">
+    <part Name="Render" DisplayName="욘스 강"/>
+    <part Name="Description" Short="Yonth는 기괴한 동쪽의 산괴를 가르고, 이름 없는 물을 Qud로 이끌어 들입니다. 물고기 같은 것들이 그녀의 현무암 조각을 먹고 있습니다."/>
+    </object>
+  <object Name="TerrainMountainStream" Load="Merge">
+    <part Name="Render" DisplayName="산줄기 시내"/>
+    <part Name="Description" Short="아득한 과거에 열려 있던 오래된 알프스 골짜기들이, 서늘한 염수로 채워져 있습니다."/>
+    </object>
+  <object Name="TerrainLakeHinnom" Load="Merge">
+    <part Name="Render" DisplayName="힌놈 호수"/>
+    <part Name="Description" Short="산호의 손가락들이 해면 바닥에서 튀어나와 조류 번성을 뚫고 올라오고 있으며, 그곳에는 흰 esh가 수백 마리씩 떼 지어 모여 있습니다."/>
+    </object>
+  <object Name="TerrainPalladiumReef" Load="Merge">
+    <part Name="Render" DisplayName="팔라듐 암초"/>
+    <part Name="Description" Short="빛나는 폴립들의 아콜로지가 오래된 납땜 격자 위로 아치형으로 뻗어 있으며, 풍성하게 다양한 생명들이 그곳에 깃들어 있습니다."/>
+    </object>
+  <object Name="TerrainRuins" Load="Merge">
+    <part Name="Render" DisplayName="폐허"/>
+    <part Name="Description" Short="이곳에는 신비로운 Eaters의 물덩굴에 휘감긴 작품들이 무너져 내리고 있습니다. 그것들은 아득한 과거, 키클롭스의 선반 위에서 빚어졌습니다. 셰일의 움켜쥠 위로 솟아오른 크롬 첨탑과 흉벽은, 그 아래에 있는 미궁을 암시하고 있습니다."/>
+    <tag Name="Gender" Value="plural"/>
+    <!--<part Name="RandomRenderString" Strings="199,200,201,202,203,204,205,206,207,208,209,210,211,212" />-->
+    </object>
+  <object Name="TerrainBaroqueRuins" Load="Merge">
+    <part Name="Render" DisplayName="바로크 폐허"/>
+    <part Name="Description" Short="무성히 번지는 녹음이 Eaters의 가장 화려한 작품들이 터뜨린 별무리 같은 흔적 위로 수관을 드리우고 있습니다. 밀림은 모서리마다 찢겨 있고, 그 틈으로 크리스틸 난간과 별난초 창끝이 고개를 내밀고 있습니다."/>
+    <tag Name="Gender" Value="plural"/>
+    <!--<part Name="RandomRenderString" Strings="199,200,201,202,203,204,205,206,207,208,209,210,211,212" />-->
+    </object>  
+  
+  <!-- End regions -->
+
+  <!--
+
+    ***************
+       Locations
+    ***************
+
+  -->
+  <object Name="TerrainJoppa" Load="Merge">
+    <part Name="Render" DisplayName="조파"/>
+    <part Name="Description" Short="청록빛 겨 속의 개미들처럼, 농부들이 소금이 반짝이는 대지에서 마지막 남은 순수한 수분 한 방울까지도 짜내고 있습니다."/>
+    </object>
+  <object Name="TerrainJoppaRuins" Load="Merge">
+    <part Name="Render" DisplayName="염습지"/>
+    <part Name="Description" Short="고여 있는 웅덩이에서는 빛나는 백합들이 밤하늘의 별무리 띠와 겨루고 있습니다. 하지만 소금기 어린 태양 아래에서는, 그것들도 brine weed의 그늘로 오그라들고 맙니다."/>
+    </object>
+  <object Name="TerrainTheSpindle" Load="Merge">
+    <part Name="Render" DisplayName="스핀들"/>
+    <part Name="Description" Short="이곳은 마야 블루의 길이 없는 바늘인 Spindle이 무덤 같은 대지를 찢고 솟아올라, 창공을 꿰뚫는 성스러운 땅입니다."/>
+    </object>
+  <object Name="TerrainOmonporch" Load="Merge">
+    <part Name="Render" DisplayName="오몬포치"/>
+    <part Name="Description" Short="숨 막히는 나무들의 짙은 그늘 사이로, 장례 기념물의 백 개 아치문과 부벽이 날아오르듯 솟아 있습니다. 그것들은 Eaters of earth의 지하묘를 덮는 대리석 아케이드를 내려다보고 있습니다."/>
+    </object>
+  <object Name="TerrainKyakukya" Load="Merge">
+    <part Name="Render" DisplayName="캬쿠캬"/>
+    <part Name="Description" Short="이곳은 원숭이 신을 숭배하는 이들의 밀림 마을이며, 그들이 사는 거대한 버섯 거처가 있는 곳입니다."/>
+    </object>
+  <object Name="TerrainRedRock" Load="Merge">
+    <part Name="Render" DisplayName="붉은 바위"/>
+    <part Name="Description" Short="소금기 밴 바위투성이 지형에서, 자연스레 붉어진 바위 노두가 불쑥 솟아 있습니다."/>
+    </object>
+  <object Name="TerrainJoppaRedrockChannel" Load="Merge">
+    <part Name="Render" DisplayName="염습지"/>
+    <part Name="Description" Short="고여 있는 웅덩이에서는 빛나는 백합들이 밤하늘의 별무리 띠와 겨루고 있습니다. 하지만 소금기 어린 태양 아래에서는, 그것들도 brine weed의 그늘로 오그라들고 맙니다."/>
+    </object>
+  <object Name="TerrainSixDayStilt" Load="Merge">
+    <part Name="Render" DisplayName="여섯 날 장대"/>
+    <part Name="Description" Short="Six Day Stilt가 사구 위로, 돌이 되어 굳어 버린 크라켄의 시체처럼 솟아올라 텅 빈 평지를 짓누르고 있습니다."/>
+    </object>
+  <object Name="TerrainEynRogel" Load="Merge">
+    <part Name="Render" DisplayName="아인 로겔"/>
+    <part Name="Description" Short="아인 로겔입니다."/>
+    </object>
+  <object Name="TerrainGritGate" Load="Merge">
+    <part Name="Render" DisplayName="그릿 게이트"/>
+    <part Name="Description" Short="백 가지 해독할 수 없는 언어의 룬이 새겨진 거대한 관문의 윗부분이 아직도 우뚝 서 있습니다. 그 크롬 말뚝 아래로는 넓은 통로가 열려, 밀림의 부엽토로 이어지고 있습니다."/>
+    </object>
+  <object Name="TerrainRustWell" Load="Merge">
+    <part Name="Render" DisplayName="녹 우물"/>
+    <part Name="Description" Short="붉은 qudzu 덩굴이, 땅에 뚫린 크롬 우물을 격자 지지대로 삼고 있습니다."/>
+    <tag Name="Gender" Value="plural"/>
+    </object>
+  <object Name="TerrainGolgotha" Load="Merge">
+    <part Name="Render" DisplayName="골고타"/>
+    <part Name="Description" Short="썩어 가는 밀림에, 크롬의 묘지인 Golgotha의 녹 동굴로 이어지는 입구들이 가려져 있습니다."/>
+    </object>
+  <object Name="TerrainBethesdaSusa" Load="Merge">
+    <part Name="Render" DisplayName="베데스다 수사"/>
+    <part Name="Description" Short="영겁의 이동으로 뒤틀린 돌이 Bethsaida의 은신처, 각이 없는 건축을 무덤처럼 봉인하고 있습니다."/>
+    </object>
+  <object Name="TerrainAsphaltMines" Load="Merge">
+    <part Name="Render" DisplayName="아스팔트 광산"/>
+    <part Name="Description" Short="이곳은 고대 부족들이 저들만의 불가해한 목적을 위해 검은 피를 빨아 올리던, 버려진 광산입니다. 잔해가 그 주변을 감싸고 있습니다."/>
+    <tag Name="Gender" Value="plural"/>
+    </object>
+  <object Name="TerrainRustedArchway" Load="Merge">
+    <part Name="Render" DisplayName="녹슨 아치문"/>
+    <part Name="Description" Short="녹의 호가 하늘을 물들이며, 한때 크롬을 두른 거인들이 지나던 길을 원형으로 두르고 있습니다."/>
+    </object>
+  <object Name="TerrainEynRoj" Load="Merge">
+    <part Name="Render" DisplayName="아인 로즈"/>
+    <part Name="Description" Short="대리석 숲터 깊숙한 곳에, 생명의 나무 Chavvah의 갈라진 줄기가 자리하고 있습니다. 떨어진 잎들은 거울 같은 융단처럼 깔려 있고, 꿈 굴뚝새들이 심령의 캐럴을 짹짹이며 울어댑니다."/>
+    </object>
+  
+  <!-- End locations -->
+
+  <!--
+
+    *******************************
+       Multi-tile water features
+    *******************************
+
+  -->
+  
+  <!-- River Svy -->  
+  <object Name="TerrainRiverSvy WE" Load="Merge">
+    <part Name="Render"/>
+    </object>
+  <object Name="TerrainRiverSvy NS" Load="Merge">
+    <part Name="Render"/>
+    </object>
+  <object Name="TerrainRiverSvy NSW" Load="Merge">
+    <part Name="Render"/>
+    </object>
+  <object Name="TerrainRiverSvy NE" Load="Merge">
+    <part Name="Render"/>
+    </object>
+  <object Name="TerrainRiverSvy SW" Load="Merge">
+    <part Name="Render"/>
+    </object>
+  <object Name="TerrainRiverSvy NW" Load="Merge">
+    <part Name="Render"/>
+    </object>
+  <object Name="TerrainRiverSvy NSE" Load="Merge">
+    <part Name="Render"/>
+    </object>
+  <object Name="TerrainRiverSvy NWE" Load="Merge">
+    <part Name="Render"/>
+    </object>
+  <object Name="TerrainRiverSvy SE" Load="Merge">
+    <part Name="Render"/>
+    </object>
+  <object Name="TerrainRiverSvy SWE" Load="Merge">
+    <part Name="Render"/>
+    </object>
+  <object Name="TerrainRiverSvy NtoEnd" Load="Merge">
+    <part Name="Render"/>
+    </object>
+  <object Name="TerrainRiverSvy EtoEnd" Load="Merge">
+    <part Name="Render"/>
+    </object>
+  <object Name="TerrainRiverSvy Lake 1i" Load="Merge">
+    <part Name="Render"/>
+  </object>
+  <object Name="TerrainRiverSvy Lake 1j" Load="Merge">
+    <part Name="Render"/>
+  </object>
+  <object Name="TerrainRiverSvy Lake 2h" Load="Merge">
+    <part Name="Render"/>
+  </object>
+  <object Name="TerrainRiverSvy Lake 2i" Load="Merge">
+    <part Name="Render"/>
+  </object>
+  <object Name="TerrainRiverSvy Lake 2j" Load="Merge">
+    <part Name="Render"/>
+  </object>
+  <object Name="TerrainRiverSvy Lake 3e" Load="Merge">
+    <part Name="Render"/>
+  </object>
+  <object Name="TerrainRiverSvy Lake 3f" Load="Merge">
+    <part Name="Render"/>
+  </object>
+  <object Name="TerrainRiverSvy Lake 3g" Load="Merge">
+    <part Name="Render"/>
+  </object>
+  <object Name="TerrainRiverSvy Lake 3h" Load="Merge">
+    <part Name="Render"/>
+  </object>
+  <object Name="TerrainRiverSvy Lake 3i" Load="Merge">
+    <part Name="Render"/>
+  </object>
+  <object Name="TerrainRiverSvy Lake 3j" Load="Merge">
+    <part Name="Render"/>
+  </object>
+  <object Name="TerrainRiverSvy Lake 4d" Load="Merge">
+    <part Name="Render"/>
+  </object>
+  <object Name="TerrainRiverSvy Lake 4e" Load="Merge">
+    <part Name="Render"/>
+  </object>
+  <object Name="TerrainRiverSvy Lake 4f" Load="Merge">
+    <part Name="Render"/>
+  </object>
+  <object Name="TerrainRiverSvy Lake 4g" Load="Merge">
+    <part Name="Render"/>
+  </object>
+  <object Name="TerrainRiverSvy Lake 4i" Load="Merge">
+    <part Name="Render"/>
+  </object>
+  <object Name="TerrainRiverSvy Lake 5c" Load="Merge">
+    <part Name="Render"/>
+  </object>
+  <object Name="TerrainRiverSvy Lake 5d" Load="Merge">
+    <part Name="Render"/>
+  </object>
+  <object Name="TerrainRiverSvy Lake 5h" Load="Merge">
+    <part Name="Render"/>
+  </object>
+  <object Name="TerrainRiverSvy Lake 5i" Load="Merge">
+    <part Name="Render"/>
+  </object>
+  <object Name="TerrainRiverSvy Lake 6c" Load="Merge">
+    <part Name="Render"/>
+  </object>
+  <object Name="TerrainRiverSvy Lake 6f" Load="Merge">
+    <part Name="Render"/>
+  </object>
+  <object Name="TerrainRiverSvy Lake 6h" Load="Merge">
+    <part Name="Render"/>
+  </object>
+  <object Name="TerrainRiverSvy Lake 6i" Load="Merge">
+    <part Name="Render"/>
+  </object>
+  <object Name="TerrainRiverSvy Lake 7a" Load="Merge">
+    <part Name="Render"/>
+  </object>
+  <object Name="TerrainRiverSvy Lake 7b" Load="Merge">
+    <part Name="Render"/>
+  </object>
+  <object Name="TerrainRiverSvy Lake 7c" Load="Merge">
+    <part Name="Render"/>
+  </object>
+  <object Name="TerrainRiverSvy Lake 7d" Load="Merge">
+    <part Name="Render"/>
+  </object>
+  <object Name="TerrainRiverSvy Lake 7e" Load="Merge">
+    <part Name="Render"/>
+  </object>
+  <object Name="TerrainRiverSvy Lake 7f" Load="Merge">
+    <part Name="Render"/>
+  </object>
+  <object Name="TerrainRiverSvy Lake 8b" Load="Merge">
+    <part Name="Render"/>
+  </object>
+  <object Name="TerrainRiverSvy Lake 8c" Load="Merge">
+    <part Name="Render"/>
+  </object>
+  <object Name="TerrainRiverSvy Lake 8d" Load="Merge">
+    <part Name="Render"/>
+  </object>
+  <object Name="TerrainRiverSvy Lake Blank" Load="Merge">
+    <part Name="Render"/>
+  </object>
+
+  <!-- River Opal -->    
+  <object Name="TerrainRiverOpal WE" Load="Merge">
+    <part Name="Render"/>
+    </object>
+  <object Name="TerrainRiverOpal NS" Load="Merge">
+    <part Name="Render"/>
+    </object>
+  <object Name="TerrainRiverOpal NE" Load="Merge">
+    <part Name="Render"/>
+    </object>
+  <object Name="TerrainRiverOpal SW" Load="Merge">
+    <part Name="Render"/>
+    </object>
+  <object Name="TerrainRiverOpal SE" Load="Merge">
+    <part Name="Render"/>
+    </object>
+  <object Name="TerrainRiverOpal NW" Load="Merge">
+    <part Name="Render"/>
+    </object>    
+  <object Name="TerrainOpalDuskwaters 1" Load="Merge">
+    <part Name="Render"/>
+  </object>
+  <object Name="TerrainOpalDuskwaters 2" Load="Merge">
+    <part Name="Render"/>
+  </object>
+  <object Name="TerrainOpalDuskwaters 3" Load="Merge">
+    <part Name="Render"/>
+  </object>
+  <object Name="TerrainOpalDuskwaters 4" Load="Merge">
+    <part Name="Render"/>
+  </object>
+  <object Name="TerrainOpalDuskwaters 5" Load="Merge">
+    <part Name="Render"/>
+  </object>
+  <object Name="TerrainOpalDuskwaters 6" Load="Merge">
+    <part Name="Render"/>
+  </object>
+  <object Name="TerrainOpalDuskwaters 7" Load="Merge">
+    <part Name="Render"/>
+  </object>
+  <object Name="TerrainOpalDuskwaters 8" Load="Merge">
+    <part Name="Render"/>
+  </object>
+  <object Name="TerrainOpalDuskwaters 9" Load="Merge">
+    <part Name="Render"/>
+  </object>
+  <object Name="TerrainOpalDuskwaters 10" Load="Merge">
+    <part Name="Render"/>
+  </object>
+  
+  <!-- River Yonth -->  
+  <object Name="TerrainRiverYonth WE" Load="Merge">
+    <part Name="Render"/>
+    </object>
+  <object Name="TerrainRiverYonth NS" Load="Merge">
+    <part Name="Render"/>
+    </object>
+  <object Name="TerrainRiverYonth NSW" Load="Merge">
+    <part Name="Render"/>
+    </object>
+  <object Name="TerrainRiverYonth NE" Load="Merge">
+    <part Name="Render"/>
+    </object>
+  <object Name="TerrainRiverYonth SW" Load="Merge">
+    <part Name="Render"/>
+    </object>
+  <object Name="TerrainRiverYonth NW" Load="Merge">
+    <part Name="Render"/>
+    </object>
+  <object Name="TerrainRiverYonth NSE" Load="Merge">
+    <part Name="Render"/>
+    </object>
+  <object Name="TerrainRiverYonth NWE" Load="Merge">
+    <part Name="Render"/>
+    </object>
+  <object Name="TerrainRiverYonth SE" Load="Merge">
+    <part Name="Render"/>
+    </object>
+  <object Name="TerrainRiverYonth NtoEnd" Load="Merge">
+    <part Name="Render"/>
+    </object>
+  <object Name="TerrainRiverYonth SouthLake 1" Load="Merge">
+    <part Name="Render"/>
+  </object>
+  <object Name="TerrainRiverYonth SouthLake 2" Load="Merge">
+    <part Name="Render"/>
+  </object>
+  <object Name="TerrainRiverYonth SouthLake 3" Load="Merge">
+    <part Name="Render"/>
+  </object>
+  <object Name="TerrainRiverYonth SouthLake 4" Load="Merge">
+    <part Name="Render"/>
+  </object>
+  <object Name="TerrainRiverYonth SouthLake 5" Load="Merge">
+    <part Name="Render"/>
+  </object>
+  <object Name="TerrainRiverYonth NorthLake 1" Load="Merge">
+    <part Name="Render"/>
+  </object>
+  <object Name="TerrainRiverYonth NorthLake 2" Load="Merge">
+    <part Name="Render"/>
+  </object>
+  <object Name="TerrainRiverYonth NorthLake 3" Load="Merge">
+    <part Name="Render"/>
+  </object>
+  <object Name="TerrainRiverYonth NorthLake 4" Load="Merge">
+    <part Name="Render"/>
+  </object>
+  
+  <!-- Mountain Stream -->  
+  <object Name="TerrainMountainStream WE" Load="Merge">
+    <part Name="Render"/>
+    </object>
+  <object Name="TerrainMountainStream NS" Load="Merge">
+    <part Name="Render"/>
+    </object>
+  <object Name="TerrainMountainStream NSW" Load="Merge">
+    <part Name="Render"/>
+    </object>
+  <object Name="TerrainMountainStream NE" Load="Merge">
+    <part Name="Render"/>
+    </object>
+  <object Name="TerrainMountainStream SW" Load="Merge">
+    <part Name="Render"/>
+    </object>
+  
+  <!-- Lake Hinnom -->    
+  <object Name="TerrainLakeHinnom 1i" Load="Merge">
+    <part Name="Render"/>
+  </object>
+  <object Name="TerrainLakeHinnom 1j" Load="Merge">
+    <part Name="Render"/>
+  </object>
+  <object Name="TerrainLakeHinnom 2c" Load="Merge">
+    <part Name="Render"/>
+  </object>
+  <object Name="TerrainLakeHinnom 2d" Load="Merge">
+    <part Name="Render"/>
+  </object>
+  <object Name="TerrainLakeHinnom 2g" Load="Merge">
+    <part Name="Render"/>
+  </object>
+  <object Name="TerrainLakeHinnom 2l" Load="Merge">
+    <part Name="Render"/>
+  </object>
+  <object Name="TerrainLakeHinnom 2m" Load="Merge">
+    <part Name="Render"/>
+  </object>
+  <object Name="TerrainLakeHinnom 2n" Load="Merge">
+    <part Name="Render"/>
+  </object>
+  <object Name="TerrainLakeHinnom 3c" Load="Merge">
+    <part Name="Render"/>
+  </object>
+  <object Name="TerrainLakeHinnom 3d" Load="Merge">
+    <part Name="Render"/>
+  </object>
+  <object Name="TerrainLakeHinnom 3e" Load="Merge">
+    <part Name="Render"/>
+  </object>
+  <object Name="TerrainLakeHinnom 3f" Load="Merge">
+    <part Name="Render"/>
+  </object>
+  <object Name="TerrainLakeHinnom 3g" Load="Merge">
+    <part Name="Render"/>
+  </object>
+  <object Name="TerrainLakeHinnom 3o" Load="Merge">
+    <part Name="Render"/>
+  </object>
+  <object Name="TerrainLakeHinnom 4c" Load="Merge">
+    <part Name="Render"/>
+  </object>
+  <object Name="TerrainLakeHinnom 4d" Load="Merge">
+    <part Name="Render"/>
+  </object>
+  <object Name="TerrainLakeHinnom 4e" Load="Merge">
+    <part Name="Render"/>
+  </object>
+  <object Name="TerrainLakeHinnom 4f" Load="Merge">
+    <part Name="Render"/>
+  </object>
+  <object Name="TerrainLakeHinnom 4m" Load="Merge">
+    <part Name="Render"/>
+  </object>
+  <object Name="TerrainLakeHinnom 5b" Load="Merge">
+    <part Name="Render"/>
+  </object>
+  <object Name="TerrainLakeHinnom 5c" Load="Merge">
+    <part Name="Render"/>
+  </object>
+  <object Name="TerrainLakeHinnom 6a" Load="Merge">
+    <part Name="Render"/>
+  </object>
+  <object Name="TerrainLakeHinnom 6b" Load="Merge">
+    <part Name="Render"/>
+  </object>
+  <object Name="TerrainLakeHinnom 6c" Load="Merge">
+    <part Name="Render"/>
+  </object>
+  <object Name="TerrainLakeHinnom 6g" Load="Merge">
+    <part Name="Render"/>
+  </object>
+  <object Name="TerrainLakeHinnom 6h" Load="Merge">
+    <part Name="Render"/>
+  </object>
+  <object Name="TerrainLakeHinnom 6i" Load="Merge">
+    <part Name="Render"/>
+  </object>
+  <object Name="TerrainLakeHinnom 6m" Load="Merge">
+    <part Name="Render"/>
+  </object>
+  <object Name="TerrainLakeHinnom 7a" Load="Merge">
+    <part Name="Render"/>
+  </object>
+  <object Name="TerrainLakeHinnom 7b" Load="Merge">
+    <part Name="Render"/>
+  </object>
+  <object Name="TerrainLakeHinnom 7c" Load="Merge">
+    <part Name="Render"/>
+  </object>
+  <object Name="TerrainLakeHinnom 7d" Load="Merge">
+    <part Name="Render"/>
+  </object>
+  <object Name="TerrainLakeHinnom 7e" Load="Merge">
+    <part Name="Render"/>
+  </object>
+  <object Name="TerrainLakeHinnom 7f" Load="Merge">
+    <part Name="Render"/>
+  </object>
+  <object Name="TerrainLakeHinnom 7g" Load="Merge">
+    <part Name="Render"/>
+  </object>
+  <object Name="TerrainLakeHinnom 7i" Load="Merge">
+    <part Name="Render"/>
+  </object>
+  <object Name="TerrainLakeHinnom 7j" Load="Merge">
+    <part Name="Render"/>
+  </object>
+  <object Name="TerrainLakeHinnom 7k" Load="Merge">
+    <part Name="Render"/>
+  </object>
+  <object Name="TerrainLakeHinnom 7l" Load="Merge">
+    <part Name="Render"/>
+  </object>
+  <object Name="TerrainLakeHinnom 8a" Load="Merge">
+    <part Name="Render"/>
+  </object>
+  <object Name="TerrainLakeHinnom 8b" Load="Merge">
+    <part Name="Render"/>
+  </object>
+  <object Name="TerrainLakeHinnom 8c" Load="Merge">
+    <part Name="Render"/>
+  </object>
+  <object Name="TerrainLakeHinnom 8d" Load="Merge">
+    <part Name="Render"/>
+  </object>
+  <object Name="TerrainLakeHinnom 8e" Load="Merge">
+    <part Name="Render"/>
+  </object>
+  <object Name="TerrainLakeHinnom 8f" Load="Merge">
+    <part Name="Render"/>
+  </object>
+  <object Name="TerrainLakeHinnom 8g" Load="Merge">
+    <part Name="Render"/>
+  </object>
+  <object Name="TerrainLakeHinnom 9c" Load="Merge">
+    <part Name="Render"/>
+  </object>
+  <object Name="TerrainLakeHinnom 9d" Load="Merge">
+    <part Name="Render"/>
+  </object>
+  <object Name="TerrainLakeHinnom 9e" Load="Merge">
+    <part Name="Render"/>
+  </object>
+  <object Name="TerrainLakeHinnom 9f" Load="Merge">
+    <part Name="Render"/>
+  </object>
+  <object Name="TerrainLakeHinnom 9g" Load="Merge">
+    <part Name="Render"/>
+  </object>
+  <object Name="TerrainLakeHinnom 9h" Load="Merge">
+    <part Name="Render"/>
+  </object>
+  <object Name="TerrainLakeHinnom blank" Load="Merge">
+    <part Name="Render"/>
+  </object>
+
+  <!-- Palladium Reef -->  
+  <object Name="TerrainPalladiumReef 1k" Load="Merge">
+    <part Name="Render"/>
+  </object>
+  <object Name="TerrainPalladiumReef 1l" Load="Merge">
+    <part Name="Render"/>
+  </object>
+  <object Name="TerrainPalladiumReef 1o" Load="Merge">
+    <part Name="Render"/>
+  </object>
+  <object Name="TerrainPalladiumReef 2h" Load="Merge">
+    <part Name="Render"/>
+  </object>
+  <object Name="TerrainPalladiumReef 2i" Load="Merge">
+    <part Name="Render"/>
+  </object>
+  <object Name="TerrainPalladiumReef 2j" Load="Merge">
+    <part Name="Render"/>
+  </object>
+  <object Name="TerrainPalladiumReef 2k" Load="Merge">
+    <part Name="Render"/>
+  </object>
+  <object Name="TerrainPalladiumReef 3j" Load="Merge">
+    <part Name="Render"/>
+  </object>
+  <object Name="TerrainPalladiumReef 3k" Load="Merge">
+    <part Name="Render"/>
+  </object>
+  <object Name="TerrainPalladiumReef 3l" Load="Merge">
+    <part Name="Render" DisplayName="이드 자유령"/>
+    <part Name="Description" Short="해면 바닥에 설치된 염색된 배관 토폴로지가, 서정적인 공동체에 길잡이 별이 되어 주고 있습니다."/>
+    </object>
+  <object Name="TerrainPalladiumReef 3m" Load="Merge">
+    <part Name="Render"/>
+  </object>
+  <object Name="TerrainPalladiumReef 3n" Load="Merge">
+    <part Name="Render"/>
+  </object>
+  <object Name="TerrainPalladiumReef 3p" Load="Merge">
+    <part Name="Render"/>
+  </object>
+  <object Name="TerrainPalladiumReef 4h" Load="Merge">
+    <part Name="Render"/>
+  </object>
+  <object Name="TerrainPalladiumReef 4j" Load="Merge">
+    <part Name="Render"/>
+  </object>
+  <object Name="TerrainPalladiumReef 4k" Load="Merge">
+    <part Name="Render"/>
+  </object>
+  <object Name="TerrainPalladiumReef 4l" Load="Merge">
+    <part Name="Render"/>
+  </object>
+  <object Name="TerrainPalladiumReef 4n" Load="Merge">
+    <part Name="Render"/>
+  </object>
+  <object Name="TerrainPalladiumReef 4o" Load="Merge">
+    <part Name="Render"/>
+  </object>
+  <object Name="TerrainPalladiumReef 4q" Load="Merge">
+    <part Name="Render"/>
+  </object>
+  <object Name="TerrainPalladiumReef 5h" Load="Merge">
+    <part Name="Render"/>
+  </object>
+  <object Name="TerrainPalladiumReef 5i" Load="Merge">
+    <part Name="Render"/>
+  </object>
+  <object Name="TerrainPalladiumReef 5j" Load="Merge">
+    <part Name="Render"/>
+  </object>
+  <object Name="TerrainPalladiumReef 5k" Load="Merge">
+    <part Name="Render"/>
+  </object>
+  <object Name="TerrainPalladiumReef 5l" Load="Merge">
+    <part Name="Render"/>
+  </object>
+  <object Name="TerrainPalladiumReef 5m" Load="Merge">
+    <part Name="Render"/>
+  </object>
+  <object Name="TerrainPalladiumReef 5n" Load="Merge">
+    <part Name="Render"/>
+  </object>
+  <object Name="TerrainPalladiumReef 6j" Load="Merge">
+    <part Name="Render"/>
+  </object>
+  <object Name="TerrainPalladiumReef 6k" Load="Merge">
+    <part Name="Render"/>
+  </object>
+  <object Name="TerrainPalladiumReef 6l" Load="Merge">
+    <part Name="Render"/>
+  </object>
+
+  <!--
+
+    ****************
+       Dimensions
+    ****************
+
+  -->
+  <object Name="TerrainBrightsheol" Load="Merge">
+    <part Name="Render" DisplayName="브라이트셰올"/>
+    </object>
+  <object Name="TerrainTzimtzlum" Load="Merge">
+    <part Name="Render" DisplayName="츠임츠룸"/>
+    </object>
+  
+  <!-- End dimenions -->
+
+  <!--
+
+    ******************************
+       Historic site templates
+    ******************************
+
+  -->
+  
+  <object Name="HistoricHills" Load="Merge">
+    <part Name="Render"/>
+		</object>
+  <object Name="HistoricHuts" Load="Merge">
+    <part Name="Render"/>
+		</object>
+  <object Name="HistoricHouse" Load="Merge">
+    <part Name="Render"/>
+		</object>
+  <object Name="HistoricHouses" Load="Merge">
+    <part Name="Render"/>
+		</object>
+  <object Name="HistoricGrid" Load="Merge">
+    <part Name="Render"/>
+		</object>
+  <object Name="HistoricCastle" Load="Merge">
+    <part Name="Render"/>
+		</object>
+  <object Name="HistoricPantheon" Load="Merge">
+    <part Name="Render"/>
+		</object>
+  <object Name="HistoricBuilding" Load="Merge">
+    <part Name="Render"/>
+		</object>
+  <object Name="HistoricArch" Load="Merge">
+    <part Name="Render"/>
+		</object>
+  <object Name="HistoricArms" Load="Merge">
+    <part Name="Render"/>
+		</object>
+  <object Name="HistoricBuilding2" Load="Merge">
+    <part Name="Render"/>
+		</object>
+  <object Name="HistoricBuilding3" Load="Merge">
+    <part Name="Render"/>
+		</object>
+  <object Name="HistoricPond" Load="Merge">
+    <part Name="Render"/>
+		</object>
+  <object Name="HistoricPools" Load="Merge">
+    <part Name="Render"/>		
+  </object>
+  <object Name="HistoricRing" Load="Merge">
+    <part Name="Render"/>
+		</object>
+  <object Name="HistoricTower" Load="Merge">
+    <part Name="Render"/>
+		</object>
+  <object Name="HistoricGardens" Load="Merge">
+    <part Name="Render"/>		
+  </object>
+  
+  <!-- End historic site templates -->
+  
+</objects>

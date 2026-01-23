@@ -1,0 +1,2858 @@
+<?xml version='1.0' encoding='utf-8'?>
+<objects>
+
+  <!--    
+    1 Base objects
+    2 Infrastructure
+    3 Doors
+    4 Power conduits
+    5 Grid-enabled tech furniture
+    6 Offgrid tech furniture
+    7 Bookshelves
+    8 Beds
+    9 Chairs
+   10 Chests
+   11 Non-chest storage
+   12 Light sources
+   13 Liquid vessels
+   14 Ovens
+   15 Tables
+   16 Arts/crafts/culture/decorations
+   17 Statues
+   18 Holograms
+   19 Village monuments
+   20 Signs
+   21 Burial furniture
+  -->
+
+  <!--
+
+    ******************
+       Base objects
+    ******************
+
+  -->
+
+  <object Name="Furniture" Load="Merge">
+    <part Name="Render"/>
+    </object>
+
+  <object Name="MountedFurniture" Load="Merge">
+    <part Name="Render" DisplayName="[MountedFurniture]"/>
+    </object>
+
+  <!--
+
+    ********************
+       Infrastructure
+    ********************
+
+  -->
+
+  <object Name="GritGateCommPanel" Load="Merge">
+    <part Name="Render" DisplayName="통신 패널"/>
+    <part Name="Description" Short="금속 덧살이 양방향 스피커의 소리를 분산시킵니다. 아래쪽 모서리에는 작은 버튼이 하나 튀어나와 있습니다."/>
+    </object>
+  <object Name="GritGateMainframeRoomCommPanel" Load="Merge">
+    <part Name="Render" DisplayName="통신 패널"/>
+    <part Name="Description" Short="금속 덧살이 양방향 스피커의 소리를 분산시킵니다. 아래쪽 모서리에는 작은 버튼이 하나 튀어나와 있습니다."/>
+    </object>
+  <object Name="Bell of Rest" Load="Merge">
+    <part Name="Render" DisplayName="안식의 종"/>
+    </object>
+  <object Name="Switch" Load="Merge">
+    <part Name="Render" DisplayName="스위치"/>
+    </object>
+  <object Name="DoorSwitch" Load="Merge">
+    <part Name="Render" DisplayName="조작 스위치"/>
+    <part Name="Description" Short="낙서가 갈겨진 금속 직사각형 위에 버튼 두 개가 세로로 나란히 박혀 있습니다."/>
+  </object>
+  <object Name="ElevatorSwitch" Load="Merge">
+    <part Name="Render" DisplayName="조작 스위치"/>
+    <part Name="Description" Short="낙서가 갈겨진 금속 직사각형 위에 버튼 두 개가 세로로 나란히 박혀 있습니다."/>
+  </object>
+  <object Name="DisabledSwitch" Load="Merge">
+    <part Name="Render"/>
+    </object>
+  <object Name="TempleSwitch" Load="Merge">
+    <part Name="Render" DisplayName="조작 스위치"/>
+    <part Name="Description" Short="낙서가 갈겨진 금속 직사각형 한가운데에 버튼 하나가 외롭게 박혀 있습니다."/>
+  </object>
+  <object Name="Platform" Load="Merge">
+    <part Name="Render" DisplayName="크롬 발판"/>
+    <part Name="Description" Short="검고 격자무늬가 난 금속 발판 위에 세월의 먼지가 소복이 내려앉아 있습니다. 아주 작은 생명체들이 남긴 흔적이 여기저기 교차해 있습니다."/>
+    </object>
+  <object Name="StiltWell" Load="Merge">
+    <part Name="Description" Short="검은 대리석 분수의 가장자리 둘레에는 교화 이후의 화려함을 그린 스핑크스 장면들이 금빛으로, 움푹 파인 부조로 늘어서 있습니다. 밝은 맥의 무늬가 눈을 찌를 듯 선명하지만, 아래로 내려다보면 별 하나 없는 깊이로 서서히 사라집니다."/>
+    <part Name="Render" DisplayName="성스러운 우물"/>
+    </object>
+  <object Name="Marble Dais" Load="Merge">
+    <part Name="Render" DisplayName="대리석 단상"/>
+    <part Name="Description" Short="매끈한 담청색 대리석은 마치 홀로그래픽 빛이 단단한 바위로 풀어붙은 듯 보입니다. 가장자리와 모서리는 금으로 장식되어 있습니다."/>
+    </object>
+  <object Name="NW Marble Dais" Load="Merge">
+    <part Name="Render" DisplayName="대리석 단상"/>
+  </object>
+  <object Name="N Marble Dais" Load="Merge">
+    <part Name="Render" DisplayName="대리석 단상"/>
+  </object>
+  <object Name="NE Marble Dais" Load="Merge">
+    <part Name="Render" DisplayName="대리석 단상"/>
+  </object>
+  <object Name="W Marble Dais" Load="Merge">
+    <part Name="Render" DisplayName="대리석 단상"/>
+  </object>
+  <object Name="W1 Marble Dais" Load="Merge">
+    <part Name="Render" DisplayName="대리석 단상"/>
+  </object>
+  <object Name="W2 Marble Dais" Load="Merge">
+    <part Name="Render" DisplayName="대리석 단상"/>
+  </object>
+  <object Name="W3 Marble Dais" Load="Merge">
+    <part Name="Render" DisplayName="대리석 단상"/>
+  </object>
+  <object Name="E1 Marble Dais" Load="Merge">
+    <part Name="Render" DisplayName="대리석 단상"/>
+  </object>
+  <object Name="E2 Marble Dais" Load="Merge">
+    <part Name="Render" DisplayName="대리석 단상"/>
+  </object>
+  <object Name="E3 Marble Dais" Load="Merge">
+    <part Name="Render" DisplayName="대리석 단상"/>
+  </object>
+  <object Name="S1 Marble Dais" Load="Merge">
+    <part Name="Render" DisplayName="대리석 단상"/>
+  </object>
+  <object Name="S2 Marble Dais" Load="Merge">
+    <part Name="Render" DisplayName="대리석 단상"/>
+  </object>
+  <object Name="E Marble Dais" Load="Merge">
+    <part Name="Render" DisplayName="대리석 단상"/>
+  </object>
+  <object Name="SW Marble Dais" Load="Merge">
+    <part Name="Render" DisplayName="대리석 단상"/>
+  </object>
+  <object Name="SE Marble Dais" Load="Merge">
+    <part Name="Render" DisplayName="대리석 단상"/>
+  </object>
+
+
+  <!-- End infrastructure -->
+
+  <!--
+
+    ***********
+       Doors
+    ***********
+
+  -->
+
+  <object Name="Archway" Load="Merge">
+    <part Name="Render" DisplayName="아치형 통로"/>
+    <part Name="Description" Short="겹겹이 쌓은 돌로 만든 열린 통로입니다."/>
+    </object>
+  <object Name="Door" Load="Merge">
+    <part Name="Render" DisplayName="문"/>
+    <part Name="Description" Short="판재에는 수년간 남은 손자국이 배어 있고, 경첩 위쪽에서는 녹가루가 둥글게 벗겨져 내립니다. 그럼에도 이 문은, ‘안’과 ‘밖’을 가르는 고집스러운 주장으로서 계속 서 있습니다."/>
+    </object>
+  <object Name="Windowed Door" Load="Merge">
+    <part Name="Render" DisplayName="문"/>
+    <part Name="Description" Short="언젠가 이 문의 과거 어느 순간, 거주민 하나가 호기심에 마음을 풀어내고 경계 너머를 보기 위한 구멍을 냈습니다."/>
+    </object>
+  <object Name="Striped Door" Load="Merge">
+    <part Name="Render" DisplayName="문"/>
+    <part Name="Description" Short="레일에서 레일까지 이어진 판넬들이 가로대를 덧대어 ‘안’과 ‘밖’의 경계를 더 단단히 보강하고 있습니다."/>
+    </object>
+  <object Name="Wavy Door" Load="Merge">
+    <part Name="Render" DisplayName="문"/>
+    <part Name="Description" Short="코사인 톱으로 잘라낸 금속을 정밀하게 용접해 강철 프레임에 맞춰 끼워 넣었습니다. 잠금장치 쪽 세로대는 크롬으로 덧대어져 있습니다."/>
+    </object>
+  <object Name="Metal Door" Load="Merge">
+    <part Name="Render" DisplayName="문"/>
+    <part Name="Description" Short="홈이 파인 금속 판이 출입구의 아치에 맞춰져 있고, 중앙에는 미닫이 판이 잘려 나 있습니다."/>
+    </object>
+  <object Name="Double Door" Load="Merge">
+    <part Name="Description" Short="두 장의 판재에는 수년간의 손자국이 배어 있고, 경첩 위쪽에서는 녹가루가 둥글게 모두 벗겨져 내립니다. 그럼에도 이 문들은, ‘안’과 ‘밖’을 가르는 고집스러운 주장으로서 계속 서 있습니다."/>
+    </object>
+  <object Name="Double Door N" Load="Merge">
+    <part Name="Render"/>
+    </object>
+  <object Name="Double Door S" Load="Merge">
+    <part Name="Render"/>
+    </object>
+  <object Name="Double Door E" Load="Merge">
+    <part Name="Render"/>
+    </object>
+  <object Name="Double Door W" Load="Merge">
+    <part Name="Render"/>
+    </object>
+  <object Name="Double Windowed Door" Load="Merge">
+    <part Name="Description" Short="언젠가 이 양문이 지나온 과거 어느 순간, 거주민 하나가 호기심에 마음을 풀어내고 경계 너머를 보기 위한 구멍을 냈습니다."/>
+    </object>
+  <object Name="Double Windowed Door N" Load="Merge">
+    <part Name="Render"/>
+    </object>
+  <object Name="Double Windowed Door S" Load="Merge">
+    <part Name="Render"/>
+    </object>
+  <object Name="Double Windowed Door E" Load="Merge">
+    <part Name="Render"/>
+    </object>
+  <object Name="Double Windowed Door W" Load="Merge">
+    <part Name="Render"/>
+    </object>
+  <object Name="Double Striped Door N" Load="Merge">
+    <part Name="Render"/>
+    <part Name="Description" Short="레일에서 레일까지 이어진 판넬들이 가로대를 덧대어 ‘안’과 ‘밖’의 경계를 더 단단히 보강하고 있습니다."/>
+    </object>
+  <object Name="Double Striped Door S" Load="Merge">
+    <part Name="Render"/>
+    <part Name="Description" Short="레일에서 레일까지 이어진 판넬들이 가로대를 덧대어 ‘안’과 ‘밖’의 경계를 더 단단히 보강하고 있습니다."/>
+    </object>
+  <object Name="Double Striped Door E" Load="Merge">
+    <part Name="Render"/>
+    <part Name="Description" Short="레일에서 레일까지 이어진 판넬들이 가로대를 덧대어 ‘안’과 ‘밖’의 경계를 더 단단히 보강하고 있습니다."/>
+    </object>
+  <object Name="Double Striped Door W" Load="Merge">
+    <part Name="Render"/>
+    <part Name="Description" Short="레일에서 레일까지 이어진 판넬들이 가로대를 덧대어 ‘안’과 ‘밖’의 경계를 더 단단히 보강하고 있습니다."/>
+    </object>
+  <object Name="BaseDoubleWavyDoor" Load="Merge">
+    <part Name="Render"/>
+    <part Name="Description" Short="코사인 톱으로 잘라낸 금속을 정밀하게 용접해 두 짝 너비의 강철 프레임에 맞춰 끼워 넣었습니다. 잠금장치 쪽 세로대들은 크롬으로 덧대어져 있습니다."/>
+    </object>
+  <object Name="Double Wavy Door N" Load="Merge">
+    <part Name="Render"/>
+    </object>
+  <object Name="Double Wavy Door S" Load="Merge">
+    <part Name="Render"/>
+    </object>
+  <object Name="Double Wavy Door E" Load="Merge">
+    <part Name="Render"/>
+    </object>
+  <object Name="Double Wavy Door W" Load="Merge">
+    <part Name="Render"/>
+    </object>
+  <object Name="BaseDoubleMetalDoor" Load="Merge">
+    <part Name="Render"/>
+    <part Name="Description" Short="홈이 파인 금속 판 두 장이 양문 출입구의 아치에 맞춰져 있고, 각 판의 중앙에는 미닫이 판이 잘려 나 있습니다."/>
+    </object>
+  <object Name="Double Metal Door N" Load="Merge">
+    <part Name="Render"/>
+    </object>
+  <object Name="Double Metal Door S" Load="Merge">
+    <part Name="Render"/>
+    </object>
+  <object Name="Double Metal Door E" Load="Merge">
+    <part Name="Render"/>
+    </object>
+  <object Name="Double Metal Door W" Load="Merge">
+    <part Name="Render"/>
+    </object>	
+  <object Name="Glass Door" Load="Merge">
+    <part Name="Render" DisplayName="유리문"/>
+    <part Name="Description" Short="속이 들여다보이고 매끈하게 연마된 유리 판들이 미닫이 레일에 맞춰져 있습니다."/>
+    </object>
+  <object Name="Glass Door W" Load="Merge">
+    <part Name="Render"/>
+    </object>
+  <object Name="Tinted Glass Door W" Load="Merge">
+    <part Name="Render" DisplayName="색유리문"/>
+    <part Name="Description" Short="투명한 유리 판 한 장입니다."/>
+  </object>
+  <object Name="WanderStopper Tinted Glass Door W" Load="Merge">
+    </object>
+  <object Name="Glass Door E" Load="Merge">
+    <part Name="Render"/>
+    </object>
+  <object Name="Tinted Glass Door E" Load="Merge">
+    <part Name="Render" DisplayName="색유리문"/>
+		<part Name="Description" Short="연마된 유리 판들을 어둡게 서리 낀 듯 처리해 미닫이 레일에 맞춰 넣었습니다."/>
+  </object>
+  <object Name="WanderStopper Tinted Glass Door E" Load="Merge">
+    </object>
+
+  <!-- Security Doors -->
+  <object Name="Security Door" Load="Merge">
+    <part Name="Render" DisplayName="보안문"/>
+    <part Name="Description" Short="홈이 파인 금속 판이 출입구의 아치에 맞춰져 있고, 중앙에는 미닫이 판이 움푹 들어가 자리 잡고 있습니다. 그 판에는 키카드 형태의 홈이 찍혀 있습니다."/>
+    </object>
+  <object Name="Red Security Door" Load="Merge">
+    <part Name="Render"/>
+    </object>
+  <object Name="Yellow Security Door" Load="Merge">
+    <part Name="Render"/>
+    </object>
+  <object Name="Green Security Door" Load="Merge">
+    <part Name="Render"/>
+    </object>
+  <object Name="Blue Security Door" Load="Merge">
+    <part Name="Render"/>
+    </object>
+  <object Name="Purple Security Door" Load="Merge">
+    <part Name="Render"/>
+    </object>
+  <object Name="Fused Security Door" Load="Merge">
+    <part Name="Render" DisplayName="융착된 보안문"/>
+    <part Name="Description" Short="홈이 파인 금속 판이 출입구의 아치에 맞춰져 있습니다. 경첩과 레일은 녹아내려 벽 프레임에 달라붙어 굳어 있습니다."/>
+    </object>
+  <object Name="Troll Door" Load="Merge">
+    <part Name="Render" DisplayName="축 늘어진 금속문"/>        
+    </object>
+  <object Name="Troll Door 1" Load="Merge">
+    <part Name="Render"/>
+		<part Name="Description" Short="구리색으로 칠한 금속으로 된 거대한 판이 오래된 문틀에서 축 늘어져 있습니다. 손잡이는 화려한 기계식 자물쇠에 의해 꼼짝 못 하게 고정되어 있습니다."/>
+		</object>
+  <object Name="Troll Door 2" Load="Merge">
+    <part Name="Render"/>
+		<part Name="Description" Short="은색으로 칠한 금속으로 된 거대한 판이 오래된 문틀에서 축 늘어져 있습니다. 손잡이는 화려한 기계식 자물쇠에 의해 꼼짝 못 하게 고정되어 있습니다."/>
+		</object>
+  <object Name="Troll Door 3" Load="Merge">
+    <part Name="Render"/>
+		<part Name="Description" Short="금색으로 칠한 금속으로 된 거대한 판이 오래된 문틀에서 축 늘어져 있습니다. 손잡이는 화려한 기계식 자물쇠에 의해 꼼짝 못 하게 고정되어 있습니다."/>
+		</object>
+
+
+  <!-- Grit Gate -->
+  <object Name="MetalDoor_GritGateRank0" Load="Merge">
+    </object>
+  <object Name="Door_GritGateRank1" Load="Merge">
+    <part Name="Render" DisplayName="문"/>
+    </object>
+  <object Name="WiredDoor_GritGateRank1" Load="Merge">
+    </object>
+  <object Name="Door_GritGateRank2" Load="Merge">
+    <part Name="Render" DisplayName="문"/>
+    </object>
+  <object Name="WiredDoor_GritGateRank2" Load="Merge">
+    </object>
+  <object Name="MetalDoor_GritGateRank1" Load="Merge">
+    </object>
+  <object Name="MetalDoor_GritGateRank2" Load="Merge">
+    </object>
+  <object Name="GlassDoorW_GritGateRank2" Load="Merge">
+    <part Name="Render"/>
+    </object>
+  <object Name="GlassDoorE_GritGateRank2" Load="Merge">
+    <part Name="Render"/>
+    </object>
+  <object Name="MetalDoubleDoorW_GritGateRank0" Load="Merge">
+    <part Name="Render"/>
+    </object>
+  <object Name="MetalDoubleDoorE_GritGateRank0" Load="Merge">
+    <part Name="Render"/>
+    </object>
+  <object Name="MetalDoubleDoorW_GritGateRank1" Load="Merge">
+    <part Name="Render"/>
+    </object>
+  <object Name="MetalDoubleDoorE_GritGateRank1" Load="Merge">
+    <part Name="Render"/>
+    </object>
+  <object Name="MetalDoubleDoorW_GritGateRank2" Load="Merge">
+    <part Name="Render"/>
+    </object>
+  <object Name="MetalDoubleDoorE_GritGateRank2" Load="Merge">
+    <part Name="Render"/>
+    </object>
+  <object Name="WiredMetalDoubleDoorW_GritGateRank0" Load="Merge">
+    </object>
+  <object Name="WiredMetalDoubleDoorE_GritGateRank0" Load="Merge">
+    </object>
+  <object Name="WiredMetalDoubleDoorW_GritGateRank1" Load="Merge">
+    </object>
+  <object Name="WiredMetalDoubleDoorE_GritGateRank1" Load="Merge">
+    </object>
+  <object Name="WiredMetalDoubleDoorW_GritGateRank2" Load="Merge">
+    </object>
+  <object Name="WiredMetalDoubleDoorE_GritGateRank2" Load="Merge">
+    </object>
+
+  <!-- Omonporch -->
+  <object Name="Death Gate W" Load="Merge">
+    <part Name="Render" DisplayName="Death Gate"/>
+    <part Name="Description" Short="녹청이 거석 같은 청동문을 바닷거품과 산호로 이루어진 거대한 층층 선반처럼 바꾸어 놓았습니다. 판넬에는 서정적인 죽음이 깊은 부조로 새겨져 있습니다. 사슬로 엮인 케이블이 뒤집힌 피라미드를 들어 올린 채, 석회화된 마을과 기체의 불길과 염수의 아치 천장 사이를 지나갑니다. 해골 하프 연주자들이 프리즈를 따라 어슬렁거리고, 염소들은 코니스에서 구리 뼈를 우적우적 씹고 있습니다."/>
+    </object>
+  <object Name="Death Gate E" Load="Merge">
+    <part Name="Render" DisplayName="Death Gate"/>
+    <part Name="Description" Short="녹청이 거석 같은 청동문을 바닷거품과 산호로 이루어진 거대한 층층 선반처럼 바꾸어 놓았습니다. 판넬에는 서정적인 죽음이 깊은 부조로 새겨져 있습니다. 사슬로 엮인 케이블이 뒤집힌 피라미드를 들어 올린 채, 석회화된 마을과 기체의 불길과 염수의 아치 천장 사이를 지나갑니다. 해골 하프 연주자들이 프리즈를 따라 어슬렁거리고, 염소들은 코니스에서 구리 뼈를 우적우적 씹고 있습니다."/>
+    </object>
+  <object Name="Life Gate W" Load="Merge">
+    <part Name="Render" DisplayName="Life Gate"/>
+    <part Name="Description" Short="녹청이 거석 같은 청동문을 바닷거품과 산호로 이루어진 거대한 층층 선반처럼 바꾸어 놓았습니다. 판넬에는 생명의 연극이 깊은 부조로 새겨져 있습니다. 야자 잎이 피라미드를 별빛 리본이 드리운 하늘로 들어 올리고, 물은 오이노코에의 주둥이에서 흘러넘칩니다. 연인들이 프리즈를 가로질러 서로 멍에를 지고 있으며, 염소들은 코니스에서 구리 되새김질을 우적우적 씹고 있습니다."/>
+    </object>
+  <object Name="Life Gate E" Load="Merge">
+    <part Name="Render" DisplayName="Life Gate"/>
+    <part Name="Description" Short="녹청이 거석 같은 청동문을 바닷거품과 산호로 이루어진 거대한 층층 선반처럼 바꾸어 놓았습니다. 판넬에는 생명의 연극이 깊은 부조로 새겨져 있습니다. 야자 잎이 피라미드를 별빛 리본이 드리운 하늘로 들어 올리고, 물은 오이노코에의 주둥이에서 흘러넘칩니다. 연인들이 프리즈를 가로질러 서로 멍에를 지고 있으며, 염소들은 코니스에서 구리 되새김질을 우적우적 씹고 있습니다."/>
+    </object>
+
+  <!-- Tomb crypts -->
+  <object Name="Crypt Door" Load="Merge">
+    <part Name="Render" DisplayName="현판이 달린 화려한 조각 무늬의 대리석문"/>
+    <part Name="Description" Short="밝은 세공 무늬가 문의 검은 대리석 표면에 드리운 공허를 가로질러, 한 생애의 의미를 지도처럼 그려 냅니다. 추모 현판에는 가문의 이름이 새겨져 있습니다."/>
+    </object>
+  <object Name="InnerCryptDoor1" Load="Merge">
+    <part Name="Render"/>
+    </object>
+  <object Name="InnerCryptDoor2" Load="Merge">
+    <part Name="Render"/>
+    </object>
+  <object Name="InnerCryptDoor3" Load="Merge">
+    <part Name="Render"/>
+    </object>
+  <object Name="InnerCryptDoor4" Load="Merge">
+    <part Name="Render"/>
+    </object>
+  <object Name="InnerCryptDoor5" Load="Merge">
+    <part Name="Render"/>
+    </object>
+  <object Name="InnerCryptDoor6" Load="Merge">
+    <part Name="Render"/>
+    </object>
+  <object Name="Crypt Double Door N" Load="Merge">
+    <part Name="Render" DisplayName="문"/>
+    <part Name="Description" Short="밝은 세공 무늬가 문의 검은 대리석 표면에 드리운 공허를 가로질러, 한 생애의 의미를 지도처럼 그려 냅니다. 추모 현판에는 가문의 이름이 새겨져 있습니다."/>
+    </object>
+  <object Name="Crypt Double Door S" Load="Merge">
+    <part Name="Render" DisplayName="문"/>
+    <part Name="Description" Short="밝은 세공 무늬가 문의 검은 대리석 표면에 드리운 공허를 가로질러, 한 생애의 의미를 지도처럼 그려 냅니다. 추모 현판에는 가문의 이름이 새겨져 있습니다."/>
+    </object>
+
+  <!-- Brightsheol -->
+  <object Name="Brightsheol Gate W" Load="Merge">
+    <part Name="Render" DisplayName="Brightsheol로 통하는 문"/>
+    </object>
+  <object Name="Brightsheol Gate E" Load="Merge">
+    <part Name="Render" DisplayName="Brightsheol로 통하는 문"/>
+    </object>
+  <object Name="Recoming Nook Door" Load="Merge">
+    <part Name="Render" DisplayName="현판이 달린 화려한 조각 무늬의 대리석문"/>
+    <part Name="Description" Short="밝은 세공 무늬가 문의 검은 대리석 표면에 드리운 공허를 가로질러, 한 생애의 의미를 지도처럼 그려 냅니다. 추모 현판에는 가문의 이름이 새겨져 있습니다."/>
+    </object>
+
+  <!-- Gates -->
+  <object Name="Gate" Load="Merge">
+    <part Name="Render" DisplayName="[문]"/>
+    </object>
+  <object Name="Brinestalk Gate" Load="Merge">
+    <part Name="Render" DisplayName="염수줄기 문"/>
+    <part Name="Description" Short="염수줄기를 깎아 말뚝살로 만들고, 철제 빗장으로 잠그는 난간에 가로질러 세워 두었습니다."/>
+		</object>
+  <object Name="Iron Gate" Load="Merge">
+    <part Name="Render" DisplayName="철문"/>
+    <part Name="Description" Short="쇠로 된 말뚝살이 빗장 난간을 가로질러 세워져 있습니다."/>
+    </object>
+
+
+  <!-- End doors -->
+
+  <!--
+
+    ********************
+       Power conduits
+    ********************
+
+  -->
+
+  <object Name="PowerLine" Load="Merge">
+    <part Name="Render" DisplayName="전력선"/>
+    <part Name="Description" Short="구리, 알루미늄, 유리 섬유를 둥글게 말아 전기 도관으로 만들었습니다."/>
+    </object>
+  <object Name="HeavyPowerLine" Load="Merge">
+    <part Name="Render" DisplayName="고전압 전력선"/>
+    <part Name="Description" Short="구리, 탄소, 유리 섬유를 둥글게 말아 튼튼한 전기 도관으로 만들었습니다."/>
+    </object>
+  <object Name="BaseHydraulicPipe" Load="Merge">
+    </object>
+  <object Name="GlassHydraulicPipe" Load="Merge">
+    <part Name="Render" DisplayName="유리 유압관"/>
+    <part Name="Description" Short="유리를 불어 기계의 혈관으로 만들었습니다."/>
+    </object>
+  <object Name="YdFreeholdGlassHydraulicPipe1" Load="Merge">
+    <part Name="Render"/>
+    <part Name="Description" Short="유리를 불어 기계의 혈관으로 만들고, 우라늄으로 이온색을 입혀 형광빛의 초록-노랑으로 물들였습니다."/>
+    </object>
+  <object Name="YdFreeholdGlassHydraulicPipe2" Load="Merge">
+    </object>
+  <object Name="BaseMechanicalTransmission" Load="Merge">
+    </object>
+  <object Name="WoodenMechanicalTransmission" Load="Merge">
+    <part Name="Render" DisplayName="목제 기계장치"/>
+    <part Name="Description" Short="나무를 깎고 잘라 매끈한 원통형 축으로 만든 뒤, 기어박스 안에 맞춰 넣어 동작이 끊기지 않도록 전달합니다."/>
+    </object>
+
+
+  <!-- Grit Gate -->
+  <object Name="GritGatePowerLine" Load="Merge">
+    </object>
+  <object Name="GritGateHeavyPowerLine" Load="Merge">
+    </object>
+  <object Name="GritGateGlassHydraulicPipe" Load="Merge">
+    </object>
+
+  <!-- End power conduits -->
+
+  <!--
+
+    *********************************
+       Grid-enabled tech furniture
+    *********************************
+
+  -->
+
+  <object Name="HighTechInstallation" Load="Merge">
+    </object>
+  <object Name="SolidHighTechInstallation" Load="Merge">
+    <part Name="Render"/>
+    </object>
+
+  <!-- Grid-enabled tech furniture, Tier 1 -->
+  <!-- Grid-enabled tech furniture, Tier 2 -->
+  <object Name="Wooden Wind Turbine" Load="Merge">
+    <part Name="Render" DisplayName="{{w|목제}} 풍력 터빈"/>
+    <part Name="Description" Short="돛천이 염수에 절인 목제 팔에 단단히 고정되어 있으며, 바람의 노래에 따라 회전해 중앙 축을 돌립니다."/>
+    </object>
+  <object Name="Millstone" Load="Merge">
+    <part Name="Render" DisplayName="맷돌"/>
+    <part Name="Description" Short="석회암으로 만든 원반들이, 오래된 것들의 껍질 탓에 굴빛 회색으로 바래고 구멍이 송송 뚫린 채 세로 판으로 배열되어 있습니다. 그것들이 서로 맞물려 돌며 섬유질 곡물을 갈아 가루로 만듭니다."/>
+    </object>
+  <object Name="Wooden Water Wheel" Load="Merge">
+    <part Name="Render" DisplayName="{{w|목제}} 물레방아"/>
+    <part Name="Description" Short="젖은 부식으로 새까매진 나무 노가 재잘거리는 시냇물의 힘을 받아, 바퀴를 세월만큼이나 느리게 돌립니다."/>
+    </object>
+  <object Name="Powered Orrery" Load="Merge">
+    <part Name="Render" DisplayName="동력식 천구의"/>
+    </object>
+  <object Name="Kiln" Load="Merge">
+    <part Name="Render" DisplayName="가마"/>
+    <part Name="Description" Short="윤이 나는 강철 외피가 연기가 피어오르는 화덕을 감싸고 있습니다. 여러 재료가 그을린 흔적이 옆면에 두껍게 달라붙어 있습니다."/>
+    </object>
+
+
+  <!-- Grid-enabled tech furniture, Tier 3 -->
+  <object Name="Electric Generator" Load="Merge">
+    <part Name="Render" DisplayName="전기 발전기"/>
+    <part Name="Description" Short="외피에 싸인 회전자에 손잡이 크랭크로 전하를 공급하고, 태양열이 이를 보태 줍니다. 흠집 난 금속 표면은 지면의 주파수에 맞춰 진동합니다."/>
+    </object> 
+  <object Name="Induction Charging Station" Load="Merge">
+    <part Name="Render" DisplayName="유도식 충전소"/>
+    <part Name="Description" Short="코르크 패드 아래에 유도 코일이 뿌리내려 있고, 그곳에서 전기가 배터리 셀로 전달됩니다."/>
+    </object>
+  <object Name="Hydraulic Irrigator" Load="Merge">
+    <part Name="Render" DisplayName="{{B|유압식}} 관개기"/>
+    <part Name="Description" Short="자화된 강철이 다이어프램을 위로 밀어 올리고, 생명수가 크롬 관을 통해 목마른 식물들에게 뿜어져 나갑니다."/>
+    </object>
+  <object Name="GritGateHydraulicIrrigator" Load="Merge">
+    </object>
+  <object Name="Clockthing_QGirl" Load="Merge">
+    <part Name="Render" DisplayName="{{M|Q Girl}} {{Y|진자}}가 달린 Barathrum 시계"/>
+    <part Name="Description" Short="Q Girl이 이 Barathrum 시계의 낡은 진동자를 흔들진자로 바꿔 달았습니다. 이제 시간이 관측자들에게서 하루에 몇 시간씩 속여 빼앗아 가던 것이, 고작 몇 분으로 줄어들었습니다."/>
+    </object>
+  <object Name="Hydraulic Bubblething" Load="Merge">
+    <part Name="Render" DisplayName="유압식 황동 거품 생성기"/>
+    <part Name="Description" Short="발명을 하다 보면, 때때로 형태 없는 회색 거품이 필요할 때가 있습니다. 아니면 적어도 언젠가는 필요할지도 모르고요. 그래서 어떤 땜장이가 문제를 미리 앞질러, 황동 거품 생성기를 발명해 두었습니다. 받침대에는 이렇게 새겨져 있습니다. '거품은 잔뜩, 언젠가 거품이 필요할지도 모른다는 슬픔은 한 줌도 없이'."/>
+    </object>
+  <object Name="Gas Burner" Load="Merge">
+    <part Name="Render" DisplayName="가스 버너"/>
+    <part Name="Description" Short="가스가 호스를 통해 밀려 나와 불꽃으로 점화됩니다. 이슬이 호스의 톱니 모양 마디에 질감을 더해 줍니다."/>
+    </object>
+  <object Name="Powered Telescope" Load="Merge">
+    <part Name="Render" DisplayName="동력식 망원경"/>
+    </object>
+  <object Name="Rock Tumbler" Load="Merge">
+    <part Name="Render" DisplayName="암석 연마기"/>
+    <part Name="Description" Short="모터로 돌리는 통의 안쪽은 고무로 덧대어져 있습니다. 아래 칸에는 흑단빛 탄화물 연마 가루가 한 솥 담겨, 언제든 갈아낼 준비를 하고 있습니다."/>
+    </object>
+  <object Name="Lathe" Load="Merge">
+    <part Name="Render" DisplayName="선반"/>
+    <part Name="Description" Short="손바퀴와 주축이 돌아가며 재료를 깎아 나선과 둥근 물건들을 세상에 내놓습니다. 아래 바닥에는 금속 분진이 쌓여 있습니다."/>
+    </object>
+
+  <!--<object Name="Combustion Turbine" Inherits="SolidHighTechInstallation">
+    <part Name="Render" DisplayName="{{K|combustion}} {{c|turbine}}" ColorString="&amp;c" DetailColor="K" RenderString="158" Tile="Items/sw_combustion_turbine.png" />
+    <part Name="Description" Short="A massive, stationary metal fuel tank and engine with heavy-duty power conduits." />
+    <part Name="Commerce" Value="1200" />
+    <part Name="LiquidFueledPowerPlant" Liquid="oil" ChargePerDram="1000" ChargeRate="1500" />
+    <part Name="LiquidVolume" MaxVolume="512" Volume="0" StartVolume="0-512" InitialLiquid="oil-1000" Collector="true" />
+    <part Name="LeakWhenBroken" />
+    <part Name="LiquidPump" Liquid="oil" FillSelfOnly="true" ChargeUse="1" Rate="5" />
+    <part Name="ElectricalPowerTransmission" ChargeRate="10000" IsProducer="true" />
+    <part Name="PowerSwitch" SecurityClearance="2" />
+    <part Name="Examiner" Unknown="UnknownBizarreContraption" Alternate="UnknownBizarreContraption" Complexity="4" Difficulty="2" />
+    <part Name="TinkerItem" Bits="0BBRR13" CanDisassemble="false" CanBuild="false" />
+    <stat Name="AV" Value="8" />
+    <tag Name="HeroNameTitleDescriptor" Value="Gassy,Generous,Lavish,Oily,Plentiful,Potent,Profligate,Replenisher,Slick" />
+    <tag Name="HeroNameTitleClientele" Value="Appliances,Drillers,Energy Cells,Power Grids,the Depleted,the Jacked,the Power-Hungry,Tinkers" />
+    <tag Name="NamingTag" Value="Animated" />
+    <tag Name="BodyType" Value="RailedMechanism" />
+    <builder Name="Animated" ChanceOneIn="15000" />
+    <tag Name="Animatable" />
+    <tag Name="DynamicObjectsTable:AnimatableFurniture" />
+		<tag Name="Class" Value="infrastructure" />
+    <tag Name="Mods" Value="CommonMods,ElectronicsMods" />
+    <tag Name="Tier" Value="3" />
+    <stag Name="Power" />
+    <stag Name="SurfacePower" />
+    <stag Name="DeepPower" />
+    <stag Name="ElectricalPower" />
+    <stag Name="SurfaceElectricalPower" />
+    <stag Name="DeepElectricalPower" />
+  </object>-->
+	<!--<object Name="Electric Crematorium" Inherits="SolidHighTechInstallation">
+		<part Name="Render" DisplayName="electric crematorium" ColorString="&amp;C" DetailColor="R" RenderString="234" Tile="Items/sw_oven.bmp" Occluding="false" RenderIfDark="true" />
+		<part Name="Description" Short="" />
+		<part Name="TemperatureAdjuster" ChargeUse="10" WorksOnSelf="false" WorksOnHolder="false" WorksOnWearer="false" WorksOnCarrier="false" WorksOnCellContents="false" WorksOnAdjacentCellContents="false" WorksOnInventory="true" TemperatureAmount="50" TemperatureThreshold="800" ThresholdAbove="true" BehaviorDescription="Heats =pronouns.possessive= contents." />
+		<part Name="ElectricalPowerTransmission" ChargeRate="10000" IsConsumer="true" />
+		<part Name="Examiner" Complexity="3" />
+		<part Name="TinkerItem" Bits="0123" CanDisassemble="false" CanBuild="false" />
+		<part Name="Container" />
+		<part Name="Inventory" />
+		<part Name="DepositCorpses" />
+		<part Name="ClearInventoryOnZoneThaw" Blueprint="Ashes" />
+		<part Name="PowerSwitch" />
+		<stag Name="Cremation" />
+		<stag Name="Power" />
+		<stag Name="DeepPower" />
+		<stag Name="SurfacePower" />
+		<stag Name="ElectricalPower" />
+		<stag Name="ElectricalPowerConsumer" />
+		<stag Name="DeepElectricalPowerConsumer" />
+		<tag Name="Tier" Value="3" />
+		<tag Name="DontWarnOnOpen" />
+		<tag Name="QuestableVerb" Value="put something in" />
+		<tag Name="QuestableEvent" Value="PutSomethingIn" />
+		<tag Name="ExcludeFromDynamicEncounters" />
+	</object>
+	<object Name="Grit Gate Electric Crematorium" Inherits="Electric Crematorium">
+		<part Name="Physics" Owner="Barathrumites" />
+		<part Name="TinkerItem" SubstituteBlueprint="Electric Crematorium" />
+		<part Name="DepositCorpses" ChargeMinimum="10" />
+		<tag Name="ExcludeFromDynamicEncounters" Value="*noinherit" />
+	</object>-->
+
+  <!-- Grid-enabled tech furniture, Tier 4 -->
+  <object Name="Solar Power Station" Load="Merge">
+    <part Name="Render" DisplayName="{{W|태양광}} 발전소"/>
+    <part Name="Description" Short="광전 소자가 소켓에 꽂힌 두 개의 초승달 모양 판 위에 배열되어 있습니다. 최적의 범위를 위해 회전하며, 태양 에너지를 진공 케이스에 싸인 플라이휠에 전달합니다."/>
+    </object>
+  <object Name="Solar Pumping Station" Load="Merge">
+    <part Name="Render" DisplayName="{{W|태양광}} {{c|양수기}}"/>
+    <part Name="Description" Short="크롬 원통을 둘러싼 기초부 곳곳의 광전 소자가 햇빛을 포집하고, 그 열로 물을 퍼 올려 관로로 보내 흩뿌릴 수 있게 합니다."/>
+    </object>
+  <object Name="Food Processor" Load="Merge">
+    <part Name="Render" DisplayName="식품 가공기"/>
+    <part Name="Description" Short="배선이 얽힌 금속 격자가 서랍과 버너로 이루어진 캐비닛을 둘러, 굽기와 절이기, 동결건조를 할 수 있게 합니다."/>
+    </object>
+  <object Name="Universal Charging Station" Load="Merge">
+    <part Name="Render" DisplayName="범용 충전소"/>
+    <part Name="Description" Short="선반과 패드, 판재와 거치대가 크롬 벌집처럼 금속으로 가공되어 있습니다. 전력이 배터리 전하로 농축되어, 도킹된 셀에 주입됩니다."/>
+    </object>
+  <object Name="Hydraulic Turbine" Load="Merge">
+    <part Name="Render" DisplayName="{{B|유압식}} 터빈"/>
+    <part Name="Description" Short="정밀하게 절삭된 크롬 회전자가 발전기 축을 따라 층층이 쌓여 있고, 넓은 핀 블레이드가 유체의 밀어내는 힘을 받아 전기의 실을 뽑아내듯 회전합니다."/>
+    </object>
+  <object Name="Hydraulic Press" Load="Merge">
+    <part Name="Render" DisplayName="유압 프레스"/>
+    <part Name="Description" Short="판재 절단 금속으로 된 가로 빔을 따라 유압 피스톤이 아래로 밀어붙입니다. 바닥의 평평한 면에는 잡동사니 조각들이 남긴 흠집이 홈으로 패여 있습니다."/>
+    </object>
+  <object Name="Force Projector" Load="Merge">
+    <part Name="Render" DisplayName="역장 투사기"/>
+    <part Name="Description" Short="유리와 강철로 된 차체 안에서 역장 유체의 바다가 난류로 소용돌이칩니다. 그리고 다이나모가 그것을 고체 물질로 분쇄해, 공간으로 투사하여 장(field)으로 펼쳐 냅니다."/>
+    </object>
+  <object Name="GritGateForceProjector" Load="Merge">
+    </object>
+  <object Name="GritGateForceProjector_Rank0" Load="Merge">
+    </object>
+  <object Name="GritGateForceProjector_Rank1" Load="Merge">
+    </object>
+  <object Name="GritGateForceProjector_Rank2" Load="Merge">
+    </object>
+  <object Name="Fluxthing" Load="Merge">
+    <part Name="Render" DisplayName="플럭스 계기"/>
+    <part Name="Description" Short="플랜지가 달린 결합부 네 개가 십자 형태를 이루고, 중앙에는 파형 그래프 판독기가 달려 있습니다. 액체와 기체가 관을 따라 흐르는 동안, 플럭스 수치가 네온 문자열처럼 표시됩니다."/>
+    </object>
+  <object Name="Electrothing" Load="Merge">
+    <part Name="Render" DisplayName="일렉트로디쿠스"/>
+    <part Name="Description" Short="구리 구체 두 개가 스파크 갭을 이루어, 이온화된 기체의 경로를 따라 전류가 흐르도록 돕습니다. 이 물건은 당신을 향해 탁탁 튀며 스파크를 일으킵니다."/>
+    </object>
+  <object Name="Unicomputer" Load="Merge">
+    <part Name="Render" DisplayName="유니컴퓨터"/>
+    <part Name="Description" Short="금속 섀시 안에서, 음극선이 그려내는 주사선 위로 호박빛 글리프가 미끄러져 흐릅니다. 원뿔대 모양의 키들이 조용한 줄을 이루어 배열되어 있습니다."/>
+    </object>
+  <object Name="Liquid-Cooled Unicomputer" Load="Merge">
+    <part Name="Render" DisplayName="액체 냉각식 유니컴퓨터"/>
+    </object>
+  <object Name="Crematory Liquid-Cooled Unicomputer" Load="Merge">
+    </object>
+  <object Name="Loudspeaker" Load="Merge">
+    <part Name="Render" DisplayName="확성기"/>
+    <part Name="Description" Short="자화된 내부 장치가 전기 신호를 삼켜 파형으로 토해내고, 다이어프램이 황동 그릴 위로 먼지를 숨결처럼 뿜어냅니다."/>
+    </object>
+  <object Name="Glass Furnace" Load="Merge">
+    <part Name="Render" DisplayName="유리 용광로"/>
+    <part Name="Description" Short="소다회와 석회암이 뜨거운 도가니와 수로를 연이어 흘러 배치 블랭킷으로 향하고, 그곳에서 유리가 회수되어 정제됩니다."/>
+    </object>
+	<object Name="Wire Extruder" Load="Merge">
+		<part Name="Render" DisplayName="철선 압출기"/>
+		<part Name="Description" Short="반짝이는 강철 주축에는 홈이 나선형으로 파여 있어, 원재료 덩어리와 잉곳에서 철선을 뽑아 벗겨 내도록 되어 있습니다."/>
+		</object>
+
+  <!--
+  <object Name="Energy Cell Rack" Inherits="SolidHighTechInstallation">
+    <part Name="Render" DisplayName="energy cell rack" ColorString="&amp;C" DetailColor="W" RenderString="209" Tile="Items/sw_weapons_rack.bmp" />
+    <part Name="Description" Short="A sturdy console with an array of square slots." />
+    <part Name="EnergyCellRack" SlotType="EnergyCell" PreventOther="true" />
+    <part Name="ElectricalPowerTransmission" ChargeRate="10000" IsProducer="true" />
+    <part Name="Examiner" Complexity="2" />
+    <part Name="TinkerItem" Bits="00015" CanDisassemble="false" CanBuild="false" />
+    <part Name="Container" Preposition="on" />
+    <inventoryobject Blueprint="#Chem Cell,Chem Cell,@DynamicObjectsTable:EnergyCells:Tier{zonetier}" Number="1d8-3" />
+    <tag Name="HeroNameTitleDescriptor" Value="All-Supportive,Generous,Lavish,Many-Socketed,Plentiful,Potent,Profligate,Replenisher" />
+    <tag Name="HeroNameTitleClientele" Value="Appliances,the Depleted,the Power-Hungry,Tinkers" />
+    <tag Name="NamingTag" Value="Animated" />
+    <tag Name="BodyType" Value="RailedMechanism" />
+    <builder Name="Animated" ChanceOneIn="15000" />
+    <tag Name="Mods" Value="CommonMods" />
+    <tag Name="Animatable" />
+    <tag Name="DynamicObjectsTable:AnimatableFurniture" />
+    <tag Name="Class" Value="infrastructure" />
+    <tag Name="Tier" Value="4" />
+    <stag Name="Power" />
+    <stag Name="SurfacePower" />
+    <stag Name="DeepPower" />
+  </object>-->
+  <!--
+  <object Name="Pumping Station" Inherits="SolidHighTechInstallation">
+    <part Name="Render" DisplayName="{{c|pumping station}}" ColorString="&amp;c" DetailColor="K" RenderString="232" Tile="Items/sw_pumping_station.bmp" />
+    <part Name="Description" Short="" />
+    <part Name="ElectricalPowerTransmission" ChargeRate="10000" IsConsumer="true" />
+    <part Name="HydraulicPowerTransmission" ChargeUse="100" ChargeRate="20000" IsProducer="true" DischargeLiquidWhenBrokenAndPowered="true" MingleLiquidsWhenPowered="true" />
+    <part Name="PowerSwitch" SecurityClearance="2" />
+    <part Name="LiquidVolume" MaxVolume="256" Volume="0" StartVolume="256" InitialLiquid="water-1000" Sealed="true" LiquidVisibleWhenSealed="true" />
+    <part Name="Examiner" Complexity="3" />
+    <part Name="TinkerItem" Bits="0B134" CanDisassemble="false" CanBuild="false" />
+    <part Name="AnimatedMaterialGeneric" AnimationLength="400" TileAnimationFrames="0=Items/sw_pumping_station_1.bmp,100=Items/sw_pumping_station_2.bmp,200=Items/sw_pumping_station_3.bmp,300=Items/sw_pumping_station_4.bmp" RequiresOperationalActivePart="HydraulicPowerTransmission" />
+    <stat Name="Hitpoints" Value="500" />
+    <tag Name="DetailColorByLiquid" Value="K" />
+    <tag Name="DetailColorByLiquidContrastShiftFrom" Value="B" />
+    <tag Name="DetailColorByLiquidContrastShiftTo" Value="y" />
+    <tag Name="HeroNameTitleDescriptor" Value="Lymphatic,Flowing,Replenisher" />
+    <tag Name="HeroNameTitleClientele" Value="hydraulics,flow,fluid" />
+    <tag Name="NamingTag" Value="Animated" />
+    <tag Name="BodyType" Value="RailedMechanism" />
+    <builder Name="Animated" ChanceOneIn="15000" />
+    <tag Name="Animatable" />
+    <tag Name="DynamicObjectsTable:AnimatableFurniture" />
+		<tag Name="Class" Value="infrastructure" />
+    <tag Name="Tier" Value="4" />
+    <stag Name="Power" />
+    <stag Name="SurfacePower" />
+    <stag Name="DeepPower" />
+    <stag Name="HydraulicPower" />
+    <stag Name="HydraulicPowerProducer" />
+    <intproperty Name="ThermalInsulation" Value="900" />
+    <tag Name="ExcludeFromDynamicEncounters" Value="*noinherit" />
+  </object>-->
+
+  <!-- Grid-enabled tech furniture, Tier 5 -->
+  <object Name="Broadcast Power Station" Load="Merge">
+    <part Name="Render" DisplayName="전파 송신 발전소"/>
+    <part Name="Description" Short="금속을 꼬아 전자기 발판을 만들었고, 그 위에서 변조기가 기저대역의 점토를 빚어 새 신호의 형태를 드러냅니다."/>
+    </object>
+  <object Name="GritGateBroadcastPowerStation" Load="Merge">
+    </object>
+  <object Name="Fusion Power Station" Load="Merge">
+    <part Name="Render" DisplayName="{{C|핵융합}} 발전소"/>
+    <part Name="Description" Short="크롬 원통의 초승달 같은 면 뒤쪽에서 미세한 물질 조각들이 서로 충돌하며, 그 열이 전력을 그리드 아래로 퍼 올리는 데 쓰입니다."/>
+    </object>
+  <object Name="GritGateFusionPowerStation" Load="Merge">
+    </object>
+  <object Name="YdFreeholdFusionPowerStation" Load="Merge">
+    <part Name="Render"/>
+    </object>
+  <object Name="Fusion Pumping Station" Load="Merge">
+    <part Name="Render" DisplayName="{{C|핵융합}} 양수기"/>
+    <part Name="Description" Short="유리 원통의 초승달 같은 면 뒤쪽에서 미세한 물질 조각들이 서로 충돌하며, 그 열이 물을 퍼 올려 관로로 보내 흩뿌리는 데 쓰입니다."/>
+    </object>
+  <object Name="GritGateFusionPumpingStation" Load="Merge">
+    </object>
+  <object Name="YdFreeholdFusionPumpingStation" Load="Merge">
+    <part Name="Render"/>
+    </object>
+  <object Name="Industrial Fan" Load="Merge">
+    <part Name="Render" DisplayName="산업용 팬"/>
+    <part Name="Description" Short="익형으로 빚어낸 거석 같은 날개들이, 세월의 상처로 여기저기 패인 금속 고리 안에 수납되어 있습니다. 까마득한 옛날, 누군가는 거대한 규모로 공기의 흐름을 지휘하곤 했습니다."/>
+    </object>
+  <object Name="Industrial Fan North" Load="Merge">
+    </object>
+  <object Name="Industrial Fan South" Load="Merge">
+    </object>
+	<object Name="Broken Industrial Fan" Load="Merge">
+		</object>
+  <object Name="Glass Printer" Load="Merge">
+    <part Name="Render" DisplayName="유리 프린터"/>
+    <part Name="Description" Short="청동빛 프레임의 유리창 뒤에는 유리 제작을 위한 프로그래밍 가능한 도구들이 놓여 있습니다. 뜨거운 작업을 위한 난로와 블로우파이프, 차가운 작업을 위한 오일러와 바퀴가 있습니다."/>
+    </object>
+
+  <!--
+  <object Name="Solar Broadcast Power Station" Inherits="SolidHighTechInstallation">
+    <part Name="Render" DisplayName="{{W|solar}} {{c|broadcast power station}}" ColorString="&amp;c" DetailColor="K" RenderString="157" Tile="Items/sw_solar_broadcast_power_station.png" />
+    <part Name="Description" Short="A cylindrical installation bearing curved photovoltaic arrays and spiraling transmission vanes. It collects the sun's energy, stores it in a frictionless flywheel, and retransmits it as broadcast power." />
+    <part Name="SolarArray" ChargeRate="10" />
+    <part Name="Flywheel" Charge="10000" MaxCharge="10000" ChargeRate="10" StartCharge="0-10000" />
+    <part Name="BroadcastPowerTransmitter" />
+    <part Name="PowerSwitch" SecurityClearance="2" />
+    <part Name="Examiner" Complexity="4" Difficulty="2" />
+    <part Name="TinkerItem" Bits="00124" CanDisassemble="false" CanBuild="false" />
+    <stat Name="AV" Value="14" />
+    <stat Name="Hitpoints" Value="300" />
+    <tag Name="HeroNameTitleDescriptor" Value="All-Supportive,Basker,Generous,Lavish,Phototropic,Photovoltaic,Plentiful,Potent,Profligate,Radio-Frequency,Replenisher,Transmissive,Wireless" />
+    <tag Name="HeroNameTitleClientele" Value="Appliances,the Coiled,the Depleted,the Power-Hungry,the Receptive,Tinkers" />
+    <tag Name="NamingTag" Value="Animated" />
+    <tag Name="BodyType" Value="VanedMechanism" />
+    <builder Name="Animated" ChanceOneIn="15000" />
+    <tag Name="Animatable" />
+    <tag Name="DynamicObjectsTable:AnimatableFurniture" />
+		<tag Name="Class" Value="infrastructure" />
+    <tag Name="Tier" Value="5" />
+    <stag Name="Power" />
+    <stag Name="SurfacePower" />
+    <stag Name="BroadcastPower" />
+    <stag Name="SurfaceBroadcastPower" />
+  </object>-->
+  <!--<object Name="Thermoelectric Turbine" Inherits="SolidHighTechInstallation">
+    <part Name="Render" DisplayName="{{R|thermoelectric}} {{c|turbine}}" ColorString="&amp;c" DetailColor="R" RenderString="158" Tile="Items/sw_thermoelectric_turbine.png" />
+    <part Name="Description" Short="A massive, stationary metal containment tank and engine with heavy-duty power conduits." />
+    <part Name="Commerce" Value="1500" />
+    <part Name="LiquidFueledPowerPlant" Liquid="lava" ChargePerDram="5000" ChargeRate="2500" />
+    <part Name="LiquidVolume" MaxVolume="512" Volume="0" StartVolume="0-512" InitialLiquid="lava-1000" Collector="true" />
+    <part Name="LeakWhenBroken" />
+    <part Name="LiquidPump" Liquid="lava" FillSelfOnly="true" ChargeUse="1" Rate="5" />
+    <part Name="ElectricalPowerTransmission" ChargeRate="10000" IsProducer="true" />
+    <part Name="PowerSwitch" SecurityClearance="2" />
+    <part Name="Examiner" Complexity="5" Difficulty="2" />
+    <part Name="TinkerItem" Bits="0BBRR24" CanDisassemble="false" CanBuild="false" />
+    <tag Name="HeroNameTitleDescriptor" Value="Generous,Lavish,Plentiful,Potent,Profligate,Replenisher,Warm,Warm-Hearted" />
+    <tag Name="HeroNameTitleClientele" Value="Appliances,Energy Cells,Power Grids,the Depleted,the Jacked,the Power-Hungry,Tinkers,Volcanoes" />
+    <tag Name="NamingTag" Value="Animated" />
+    <tag Name="BodyType" Value="RailedMechanism" />
+    <builder Name="Animated" ChanceOneIn="15000" />
+    <tag Name="Animatable" />
+    <tag Name="DynamicObjectsTable:AnimatableFurniture" />
+		<tag Name="Class" Value="infrastructure" />
+    <tag Name="Mods" Value="CommonMods,ElectronicsMods" />
+    <tag Name="Tier" Value="5" />
+    <stag Name="Power" />
+    <stag Name="SurfacePower" />
+    <stag Name="DeepPower" />
+    <stag Name="ElectricalPower" />
+    <stag Name="SurfaceElectricalPower" />
+    <stag Name="DeepElectricalPower" />
+    <intproperty Name="ThermalInsulation" Value="700" />
+    <tag Name="HangingSupport" />
+  </object>-->
+
+  <!-- Grid-enabled tech furniture, Tier 6 -->
+  <object Name="Regen Tank" Load="Merge">
+    <part Name="Render" DisplayName="재생 탱크"/>
+    <part Name="Description" Short="테트라제노노글라스 벽과 회복 젤이 양막의 환경을 재현하여, 파충류와 조류, 포유류의 배아가 온전한 생명으로 자라나도록 보살핍니다."/>
+    </object>
+
+  <!--<object Name="Biodynamic Turbine" Inherits="SolidHighTechInstallation">
+    <part Name="Render" DisplayName="{{r|biodynamic}} {{c|turbine}}" ColorString="&amp;c" DetailColor="r" RenderString="158" Tile="Items/sw_biodynamic_turbine.png" />
+    <part Name="Description" Short="A massive, stationary metal storage tank and engine with heavy-duty power conduits." />
+    <part Name="Commerce" Value="1800" />
+    <part Name="LiquidFueledPowerPlant" Liquid="blood" ChargePerDram="7500" ChargeRate="3000" />
+    <part Name="LiquidVolume" MaxVolume="512" Volume="0" StartVolume="0-512" InitialLiquid="blood-1000" Collector="true" />
+    <part Name="LeakWhenBroken" />
+    <part Name="LiquidPump" Liquid="blood" FillSelfOnly="true" ChargeUse="1" Rate="5" />
+    <part Name="ElectricalPowerTransmission" ChargeRate="10000" IsProducer="true" />
+    <part Name="PowerSwitch" SecurityClearance="2" />
+    <part Name="Examiner" Complexity="5" Difficulty="2" />
+    <part Name="TinkerItem" Bits="0BBRR35" CanDisassemble="false" CanBuild="false" />
+    <stat Name="AV" Value="12" />
+    <tag Name="HeroNameTitleDescriptor" Value="Bloody,Generous,Lavish,Plentiful,Potent,Profligate,Replenisher,Sanguine" />
+    <tag Name="HeroNameTitleClientele" Value="Appliances,Energy Cells,Power Grids,the Depleted,the Jacked,the Power-Hungry,Tinkers,Vampires" />
+    <tag Name="NamingTag" Value="Animated" />
+    <tag Name="BodyType" Value="RailedMechanism" />
+    <builder Name="Animated" ChanceOneIn="15000" />
+    <tag Name="Animatable" />
+    <tag Name="DynamicObjectsTable:AnimatableFurniture" />
+		<tag Name="Class" Value="infrastructure" />
+    <tag Name="Mods" Value="CommonMods,ElectronicsMods" />
+    <tag Name="Tier" Value="6" />
+    <stag Name="Power" />
+    <stag Name="SurfacePower" />
+    <stag Name="DeepPower" />
+    <stag Name="ElectricalPower" />
+    <stag Name="SurfaceElectricalPower" />
+    <stag Name="DeepElectricalPower" />
+  </object>-->
+  <!--<object Name="Broadcast Power Plant" Inherits="Plant">
+    <part Name="Render" DisplayName="{{c|broadcast power}} {{leafy|plant}}" RenderString="244" ColorString="&amp;c" DetailColor="G" Tile="Tiles/sw_broadcast_power_plant.png" Occluding="false" />
+    <part Name="Harvestable" OnSuccess="Scrap Energy" OnSuccessAmount="1" StartRipeChance="1:10" RipeColor="&amp;C" RipeDetailColor="G" UnripeColor="&amp;c" UnripeDetailColor="G" />
+    <part Name="Description" Short="Curvilinear metallic striations in this biosculpted plant's photovoltaic leaves send the energy it collects from the sun back out again as broadcast power." />
+    <part Name="SolarArray" ChargeRate="5" IsEMPSensitive="false" IsBioScannable="true" />
+    <part Name="Circuitry" IsBioScannable="true" NameForStatus="Biocircuitry" />
+    <part Name="BroadcastPowerTransmitter" IsBioScannable="true" />
+    <part Name="Fireflies" />
+    <part Name="Examiner" Unknown="UnknownStrangePlant" Complexity="4" Difficulty="2" />
+    <part Name="TinkerItem" Bits="BR" CanDisassemble="false" CanBuild="false" />
+    <stat Name="AV" Value="1" />
+    <stat Name="Hitpoints" Value="12" />
+    <tag Name="DynamicObjectsTable:Hills_FarmablePlants" />
+    <tag Name="Mods" Value="ElectronicsMods" />
+    <tag Name="Tier" Value="0" />
+    <tag Name="TechTier" Value="6" />
+    <tag Name="LivePlant" />
+    <stag Name="Power" />
+    <stag Name="SurfacePower" />
+    <stag Name="BroadcastPower" />
+    <stag Name="SurfaceBroadcastPower" />
+  </object>-->
+  <!--<object Name="Fusion Broadcast Power Station" Inherits="SolidHighTechInstallation">
+    <part Name="Render" DisplayName="{{C|fusion}} {{c|broadcast power station}}" ColorString="&amp;c" DetailColor="C" RenderString="157" Tile="Items/sw_fusion_broadcast_power_station.png" />
+    <part Name="Description" Short="A cylindrical installation bearing spiraling transmission vanes. It retransmits the energy of the fusion reactor in its heart as broadcast power." />
+    <part Name="FusionReactor" ChargeRate="1000" />
+    <part Name="Circuitry" StartCharge="1000" />
+    <part Name="BroadcastPowerTransmitter" />
+    <part Name="PowerSwitch" SecurityClearance="2" />
+    <part Name="Examiner" Complexity="5" Difficulty="3" />
+    <part Name="TinkerItem" Bits="01246" CanDisassemble="false" CanBuild="false" />
+    <stat Name="AV" Value="20" />
+    <stat Name="Hitpoints" Value="500" />
+    <tag Name="HeroNameTitleDescriptor" Value="All-Supportive,Fireheart,Generous,Lavish,Microstar,Plentiful,Potent,Profligate,Radio-Frequency,Replenisher,Transmissive,Wireless" />
+    <tag Name="HeroNameTitleClientele" Value="Appliances,the Coiled,the Depleted,the Power-Hungry,the Receptive,Tinkers" />
+    <tag Name="NamingTag" Value="Animated" />
+    <tag Name="BodyType" Value="VanedMechanism" />
+    <builder Name="Animated" ChanceOneIn="15000" />
+    <tag Name="Animatable" />
+    <tag Name="DynamicObjectsTable:AnimatableFurniture" />
+		<tag Name="Class" Value="infrastructure" />
+    <tag Name="Tier" Value="6" />
+    <stag Name="Power" />
+    <stag Name="SurfacePower" />
+    <stag Name="DeepPower" />
+    <stag Name="BroadcastPower" />
+    <stag Name="SurfaceBroadcastPower" />
+    <stag Name="DeepBroadcastPower" />
+  </object>-->
+
+  <!-- Grid-enabled tech furniture, Tier 7 -->
+   <object Name="Psiamp Sarcophagus" Load="Merge">
+    <part Name="Render" DisplayName="사이오닉 석관"/>
+    <part Name="Description" Short="이것은 이세계의 석회암으로 가공되어 있습니다. 그 돌은 어스름한 별을 공전하는 유영 세계에서 채석된 것으로, 희미한 광채로는 공허의 물질이 바위의 산호질에서 바래지지 않았습니다. 이제 이 석관은 잠든 이를 물질성의 광선으로부터 차단하고, 그 광선을 정신적 에테르로 흘려 보냅니다."/>
+    </object>
+  <object Name="Base Ring Gate" Load="Merge">
+    <part Name="Render" DisplayName="관문"/>
+    <part Name="Description" Short="물의 띠가 뼈처럼 희게 바랜 대리석 기둥을 높은 부조로 타고 오릅니다. 그것들은 아키볼트를 타고 올라 나선형 고리들 사이로 구불거리다가, 종석에서 날카롭게 위로 꺾입니다. 여기가 곧 저기가 됩니다."/>
+    </object>
+  <object Name="Base Electrical Ring Gate" Load="Merge">
+    </object>
+  <object Name="Base Hydraulic Ring Gate" Load="Merge">
+    </object>
+  <object Name="Ring Gate 1" Load="Merge">
+    <part Name="Render"/>
+    </object>
+  <object Name="Ring Gate 2" Load="Merge">
+    <part Name="Render"/>
+    </object>
+  <object Name="Ring Gate 3" Load="Merge">
+    <part Name="Render"/>
+    </object>
+  <object Name="Hydraulic Ring Gate 1" Load="Merge">
+    <part Name="Render"/>
+    </object>
+  <object Name="Hydraulic Ring Gate 2" Load="Merge">
+    <part Name="Render"/>
+    </object>
+  <object Name="Hydraulic Ring Gate 3" Load="Merge">
+    <part Name="Render"/>
+    </object>
+  <object Name="Ruined Ring Gate" Load="Merge">
+    <part Name="Render" DisplayName="무너진 관문"/>
+    <part Name="Description" Short="높은 부조로 새겨진 물의 띠가 부서진 대리석에서 부스러져 떨어져 나갑니다. 한때 여행자들의 전진을 감싸 안던 아치의 조각들은 이제, 어딘가 다른 곳의 매끈한 등허리 위에 누워 있습니다."/>
+    </object>
+
+
+  <!-- End grid-enabled tech furniture -->
+
+  <!--
+
+    *********************************
+       Offgrid tech furniture
+    *********************************
+
+  -->
+
+  <!-- Offgrid tech furniture, Tier X -->
+  <object Name="CyberneticsTerminal2" Load="Merge">
+    <part Name="Render" DisplayName="증강 벽감"/>
+    <part Name="Description" Short="인간의 형상이 찍힌 뉴트로폼 직사각형이 유리 아치 아래에 매달려 있습니다. 거품의 눈높이쯤에는 타원형 화면 위로 글리프가 고리처럼 이어집니다. 눈부신 빛에 가려진 수술 장비가, 둘러싼 돔의 아래쪽에서 딱정벌레처럼 우르르 기어나옵니다."/>
+    </object>
+
+
+  <!-- Conveyors-->
+  <object Name="ConveyorDrive" Load="Merge">
+    <part Name="Render" DisplayName="컨베이어 구동 장치"/>
+    <part Name="Description" Short="밝은 크롬 엔진에서 윤활유가 뚝뚝 떨어져 아이들러를 얼룩지게 합니다. 풀리 바퀴들이 기묘한 각도로 배치되어, 납작한 고무 벨트를 공간 속으로 휘젓듯 돌려 보냅니다."/>
+    </object>
+  <object Name="ConveyorPad" Load="Merge">
+    <part Name="Render" DisplayName="컨베이어 벨트"/>
+    <part Name="Description" Short="썩은 찌꺼기가 납작하고 새까만 다이고무 홈에 들러붙어 있습니다."/>
+    </object>
+  <object Name="CrematoryConveyorPad" Load="Merge">
+    <part Name="Description" Short="뼛빛 회색 재가 납작하고 새까만 다이고무 홈에 들러붙어 있습니다."/>
+  </object>
+  <object Name="ConveyorPadW" Load="Merge">
+    </object>
+  <object Name="ConveyorPadN" Load="Merge">
+    </object>
+  <object Name="ConveyorPadS" Load="Merge">
+    </object>
+  <object Name="ConveyorPadE" Load="Merge">
+    </object>
+  <object Name="CrematoryConveyorPadW" Load="Merge">
+    </object>
+  <object Name="CrematoryConveyorPadN" Load="Merge">
+    </object>
+  <object Name="CrematoryConveyorPadS" Load="Merge">
+    </object>
+  <object Name="CrematoryConveyorPadE" Load="Merge">
+    </object>
+  <object Name="BeltCurtains" Load="Merge">
+    <part Name="Render" DisplayName="고무 커튼"/>
+    <part Name="Description" Short="변색된 금속 프레임 아래로, 검은 고무 한 장을 유연한 커튼 조각으로 잘라 만든 커튼이 드리워져 있습니다."/>
+    </object>
+
+
+  <!-- Offgrid tech furniture, Tier 1 -->
+  <object Name="Catchbasin" Load="Merge">
+    <part Name="Render" DisplayName="집수조"/>
+    <part Name="Description" Short="질그릇이 뼛속까지 마른 공기가 내어주는 아주 작은 수분을 받아 모읍니다."/>
+    </object>
+  <object Name="Air Well" Load="Merge">
+    <part Name="Render" DisplayName="공기 우물"/>
+    <part Name="Description" Short="돌을 깎아 거칠게 돔 형태로 다듬고, 공기가 흐르도록 사각 창을 일정한 간격으로 냈습니다. 돔 안의 미세한 온도 차로 공기에서 이슬이 응결되어, 아래 집수조에 고입니다."/>
+    </object>
+  <object Name="Underground Air Well" Load="Merge">
+    </object>
+  <object Name="Underground Catchbasin" Load="Merge">
+    </object>
+
+  <!-- Offgrid tech furniture, Tier 2 -->
+
+  <!-- Offgrid tech furniture, Tier 3 -->
+  <object Name="Solar Still" Load="Merge">
+    <part Name="Render" DisplayName="태양열 증류기"/>
+    <part Name="Description" Short="소금 태양의 열이 기수(鹹水)를 증발시킵니다. 물이 다시 응결할 때, 순수한 성분과 불순한 성분이 갈라집니다. 소금은 증류기에 들러붙고, 민물은 집수조에 모입니다."/>
+    </object>
+
+  <!-- Offgrid tech furniture, Tier 4 -->
+  <object Name="Solar Condenser" Load="Merge">
+    <part Name="Render" DisplayName="태양열 응축기"/>
+    <part Name="Description" Short="크롬 플랜지가 증발한 공기가 증류된 이슬로 다시 내려앉을 수 있도록 표면적을 최대한 늘려 줍니다."/>
+    </object>
+  <object Name="GritGateChromeBeacon" Load="Merge">
+    <part Name="Render" DisplayName="크로멜링 신호 중계기"/>
+    <part Name="Description" Short="유리 초승달 위로 부서지는 사인파가 엔클레이브의 기계 아이들이 지닌 행동의 기초 규약을 부호화합니다. 전자장이 그것들을 안테나를 통해 빨아들여 에테르로 흘려 보냅니다."/>
+    </object>
+
+  <!-- Offgrid tech furniture, Tier 5 -->
+  <object Name="Reclamation Cist" Load="Merge">
+    <part Name="Render" DisplayName="{{r|회수 석관}}"/>
+    <part Name="Description" Short="강철과 황동, 그리고 음극관으로 된 관이, 죽은 자로부터 장기 물질을 빨아올려 동포와 혈족에게 다시 돌려주기 위해 쓰이는 정밀 기구들의 배열을 감추고 있습니다."/>
+    </object>	
+
+  <!-- Offgrid tech furniture, Tier 6 -->
+  <object Name="FactoryArm" Load="Merge">
+    <part Name="Render" DisplayName="회전하는 기계 팔"/>
+    <part Name="Description" Short="메탈폼을 채워 넣고 도금하여 거대한 생체 팔의 모사품을 만들었으며, 그곳에서 상완이두근과 상완삼두근의 머리가 번뜩입니다. 거대한 관절이 회전의 힘겨움에 맞춰 짹짹거립니다."/>
+    </object>
+  <object Name="GrabberArm" Load="Merge">
+    <part Name="Render" DisplayName="고정식 기계 팔"/>
+    <part Name="Description" Short="메탈폼을 채워 넣고 도금하여 거대한 생체 팔의 모사품을 만들었으며, 그곳에서 상완이두근과 상완삼두근의 머리가 번뜩입니다. 황동 집게가 목표물의 움직임을 탁 꺾어 빼앗습니다."/>
+    </object>
+  <object Name="Exit Teleporter" Load="Merge">
+    <part Name="Render" DisplayName="계단실 텔레포터"/>
+    <part Name="Description" Short="황동 테가 폼 전송 패드를 둘러싸고, 머리 위의 격자 장식은 한때 익숙했던 출구 표식의 글리프로 엮여 있습니다."/>
+    </object>
+  <object Name="Catacombs Exit Teleporter" Load="Merge">
+    </object>
+  <object Name="Crypt Exit Teleporter" Load="Merge">
+    </object>
+
+  <!-- Offgrid tech furniture, Tier 7 -->
+  <object Name="Quantum Rippler" Load="Merge">
+    <part Name="Render" DisplayName="양자 리플러"/>
+    <part Name="Description" Short="금으로 도금된 상자 안에서, 만화경 같은 타일과 음색이 여러 차원에 걸쳐 조화롭게 울려 퍼집니다."/>
+    </object>
+  <object Name="Grid Quantum Rippler" Load="Merge">
+    </object>
+  <object Name="NormCore" Load="Merge">
+    <part Name="Render" DisplayName="놈 코어"/>
+    <part Name="Description" Short="다이아몬드 매니폴드가 석영을 ê 형태로 가압해, 국지 지역의 레이 라인을 따라 시공간을 결정화합니다. 굴뚝에 맺힌 정상성 응축액 방울은 빛을 굴절시켜 내측 차원으로 비춥니다."/>
+    </object>
+  <object Name="NormCore1" Load="Merge">
+    <part Name="Render" DisplayName="놈 코어 Mk I"/>
+    </object>
+  <object Name="NormCore2" Load="Merge">
+    <part Name="Render" DisplayName="놈 코어 Mk II"/>
+    </object>
+  <object Name="NormCore3" Load="Merge">
+    <part Name="Render" DisplayName="놈 코어 Mk III"/>
+    </object>
+  <object Name="GridNormCore1" Load="Merge">
+    </object>
+  <object Name="GridNormCore2" Load="Merge">
+    </object>
+  <object Name="GridNormCore3" Load="Merge">
+    </object>
+  <object Name="Full-Scale Recompositer" Load="Merge">
+    <part Name="Render" DisplayName="전면형 재구성기"/>
+    <part Name="Description" Short="풀러라이트 테가 폼 착지 패드를 둘러싸고, 머리 위의 격자 장식은 한때 익숙했던 재구성과 귀환 표식의 글리프로 엮여 있습니다."/>
+    </object>
+  <object Name="Melted Pad" Load="Merge">
+    <part Name="Render" DisplayName="무성하게 뒤덮인 폼 패드"/>
+    <part Name="Description" Short="풀러라이트 테의 세공 무늬가 눈부신 흰빛으로 녹아내려 갈라진 폼 패드 위로 뚝뚝 떨어집니다. 갈라진 틈에서는 백합 새싹이 빠르게 돋아나 밀어 올리고, 생명이 바깥으로 기어 나옵니다."/>
+    </object>
+
+	<!-- Offgrid tech furniture, Tier 8 -->
+	<object Name="Reshaping Nook" Load="Merge">
+		<part Name="Render" DisplayName="재형성 벽감"/>
+		<part Name="Description" Short="특유의 유리 아치가, 이 공간이 용도를 바꾸기 위해 속을 도려내고 전선을 벗겨낸 증강 벽감임을 드러냅니다. 납땜과 성형을 위한 갈고리가 뻗어 있고, 아래쪽 드럼에서는 바퀴가 젖은 점토를 돌려, 햇슬래그 발효에 쓸 수 있도록 신선하고 준비된 상태로 만듭니다."/>
+		</object>
+	<object Name="Reshaping Pad" Load="Merge">
+		<part Name="Render" DisplayName="재형성 패드"/>
+		<part Name="Description" Short="조잡한 돌 테가 폼 착지 패드를 둘러싸고, 머리 위의 격자 장식은 새로 유행하는 재형성과 귀환 표식의 글리프로 엮여 있습니다."/>
+		</object>
+
+
+  <!-- End offgrid tech furniture -->
+
+  <!--
+
+    *****************
+       Bookshelves
+    *****************
+
+  -->
+	<object Name="BaseBookshelf" Load="Merge">
+		<part Name="Render" DisplayName="목제 책장"/>
+		<part Name="Description" Short="나무 판자들이 직각으로 못질되어 있고, 종이 표지들 위로 먼지가 잠들어 있습니다."/>
+		</object>
+
+  <object Name="Bookshelf" Load="Merge">
+    </object>
+  <object Name="MerchantBookshelf" Load="Merge">
+	  </object>
+  <object Name="ishelf1" Load="Merge">
+    <part Name="Render"/>
+  </object>
+  <object Name="ishelf2" Load="Merge">
+    <part Name="Render"/>
+  </object>
+  <object Name="ishelf3" Load="Merge">
+    <part Name="Render"/>
+  </object>
+  <object Name="ishelf4" Load="Merge">
+    <part Name="Render"/>
+  </object>
+	<object Name="Joppa Bookshelf" Load="Merge">
+		<part Name="Render" DisplayName="목제 책장"/>
+		</object>
+  <object Name="NuntuBookshelf" Load="Merge">
+    <part Name="Render" DisplayName="목제 책장"/>
+    </object>
+  <object Name="NuntuBookshelf2" Load="Merge">
+    <part Name="Render" DisplayName="목제 책장"/>
+    </object>
+  <object Name="Village Bookshelf" Load="Merge">
+    <part Name="Render" DisplayName="목제 책장"/>
+    </object>
+  <object Name="UndergroundBookshelf" Load="Merge">
+    <part Name="Render" DisplayName="목제 책장"/>
+    </object>
+  <object Name="UndergroundMerchantBookshelf" Load="Merge">
+    <part Name="Render" DisplayName="목제 책장"/>
+    </object>
+  <object Name="HydroponBookshelf" Load="Merge">
+    <part Name="Render" DisplayName="목제 책장"/>
+    </object>
+  <object Name="GritGateBookshelf" Load="Merge">
+    </object>
+  <object Name="YdFreeholdBookshelf" Load="Merge">
+    </object>
+  <object Name="GritGateBookshelf_Kitchen" Load="Merge">
+    </object>
+  <object Name="BarathrumBookshelf" Load="Merge">
+    </object>
+  <object Name="CrematoryMachineRoomBookshelf" Load="Merge">
+    </object>
+  <object Name="Redrock Bookshelf" Load="Merge">
+    <part Name="Render" DisplayName="목제 책장"/>
+    </object>
+
+
+  <!-- End bookshelves -->
+
+  <!--
+
+    **********
+       Beds
+    **********
+
+  -->	
+
+	<object Name="BaseBed" Load="Merge">
+    <part Name="Render" DisplayName="[침대]"/>
+    </object>
+  <object Name="Bed" Load="Merge">
+    <part Name="Render" DisplayName="침대"/>
+    <part Name="Description" Short="직물을 물덩굴의 겨로 채워, 산악민의 방식대로 나무 널판 위에 깔아 두었습니다."/>
+    </object>
+  <object Name="Bedroll" Load="Merge">
+    <part Name="Render" DisplayName="침낭"/>
+    <part Name="Description" Short="캔버스 끈으로 묶어 둔 염소 털 침상입니다."/>
+    </object>
+  <object Name="Crib" Load="Merge">
+    <part Name="Render" DisplayName="요람"/>
+    <part Name="Description" Short="나무 살은 아이에게 거석과도 같습니다. 깃털 베개는 차가운 풀밭입니다. 여기는 그 황혼 세계의 경계입니다."/>
+    </object>
+  <object Name="Folding Cot" Load="Merge">
+    <part Name="Render" DisplayName="접이식 간이침대"/>
+    <part Name="Description" Short="물덩굴 캔버스를 나무 다리 위에 팽팽히 당겨 걸어, 접어 둘 수 있게 해 두었습니다."/>
+    </object>
+  <object Name="Hammock" Load="Merge">
+    <part Name="Render" DisplayName="해먹"/>
+    <part Name="Description" Short="염수짚을 꼬아 밧줄 격자 형태의 그물 안장을 만들고, 오래된 참나무 두 그루 사이에 걸어 낮잠을 잘 수 있게 했습니다. 가운데 처진 부분의 섬유는, 누운 엉덩이의 중심 하중 때문에 유난히 더 헤지고 닳아 있습니다."/>
+    </object>
+  <object Name="Four-Poster Bed" Load="Merge">
+    <part Name="Render" DisplayName="네 기둥 침대"/>
+    <part Name="Description" Short="나무를 꼼꼼히 선삭해 기둥으로 만들고, 장식적으로 세공해 깎아 냈습니다. 누비 이불솜은 Svy 강둑의 재봉사들과 흥정해 들여온 것으로, 케이크처럼 층층이 포개고 베개로 설탕옷을 입혔습니다. 이곳에서 부유한 잠꾸러기는 꿈의 골짜기로 들어가는 총애받는 입구를 찾습니다."/>
+    </object>
+  <object Name="Medical Bed" Load="Merge">
+    <part Name="Render" DisplayName="소화성 침대"/>
+    <part Name="Description" Short="소금 표백제처럼 하얀 플라스틱을, 평온한 잠과 회복, 그리고 체액의 균형을 다시 맞추기 위해 곡면으로 빚어 만들었습니다."/>
+    </object>
+  <object Name="Waterbed" Load="Merge">
+    <part Name="Render" DisplayName="물침대"/>
+    <part Name="Description" Short="나무 널판을 산악민의 방식대로 직각으로 걸쳐 두었습니다. 다만 겨를 채운 방석 대신, 기름진 물을 주입한 플라스틱 매트리스가 놓여 있습니다. 호수의 물결을 그리워하는 뗏목꾼들이 선호하는 대안입니다."/>
+    </object>
+  <object Name="Bedger" Load="Merge">
+    <part Name="Render" DisplayName="오소리 침대"/>
+    <part Name="Description" Short="여가의 역사가들은 모든 시대를 다음 세 시대로 나눕니다. 곰 같은 생물이 진화하기도 전에, 혹은 문명이 일어나 그들을 흠모하기도 전의 시기. 곰이 두드러지게 자리한 뒤, 문명이 그들을 본뜬 소파를 빚어낼 수 있게 되기까지의 시기. 그리고 그 뒤로, 문명이 몰락하기까지의 시기입니다."/>
+    </object>
+  <object Name="Hyperbiotic Bed" Load="Merge">
+    <part Name="Render" DisplayName="하이퍼바이오틱 침대"/>
+    <part Name="Description" Short="숨겨진 미세 반응로가 입자들을 서로 충돌시켜 열을 만들어 내고, 지친 잠자는 이를 젊게 되돌리는 생체 기계 장치에 동력을 공급합니다."/>
+    </object>
+
+
+  <!-- Grit Gate -->
+  <object Name="GritGateBed" Load="Merge">
+    </object>
+  <object Name="GritGateMedicalBed" Load="Merge">
+    </object>
+  <object Name="GritGateHyperbioticBed" Load="Merge">
+    </object>
+
+  <!-- End beds -->
+
+  <!--
+
+    ************
+       Chairs
+    ************
+
+  -->
+
+  <object Name="BaseChair" Load="Merge">
+    <part Name="Render" DisplayName="[의자]"/>
+    </object>
+  <object Name="BasePortableChair" Load="Merge">
+    <part Name="Render" DisplayName="[휴대용 의자]"/>
+    </object>
+
+  <object Name="Chair" Load="Merge">
+    <part Name="Render" DisplayName="의자"/>
+    <part Name="Description" Short="나무 판자들이 습지 주민들의 방식대로 직각으로 못질되어 붙어 있습니다."/>
+    </object>
+  <object Name="Floor Cushion" Load="Merge">
+    <part Name="Render" DisplayName="바닥 방석"/>
+    <part Name="Description" Short="물덩굴 겨와 글로우크로우 깃털을 채워 넣은 단추 달린 방석으로, 다리를 꼬고 편히 쉴 수 있게 해 줍니다."/>
+    </object>
+  <object Name="Kline" Load="Merge">
+    <part Name="Render" DisplayName="클리네"/>
+    <part Name="Description" Short="소금볕에 구워진 Moghra'yi와 Spindle의 그늘 사이 경계인 리멘에서 벌어지는 연회에는, 사이더를 덥혀 향을 내는 일과 홀로그래피, 그리고 클리나이를 직각으로 배치하는 일이 포함됩니다."/>
+    </object>
+  <object Name="Bench" Load="Merge">
+    <part Name="Render" DisplayName="벤치"/>
+    <part Name="Description" Short="나무 판자들을 단순히 못질해, 엄정한 좌석을 만들었습니다."/>
+    </object>
+  <object Name="Stool" Load="Merge">
+    <part Name="Render" DisplayName="스툴"/>
+    <part Name="Description" Short="어떤 것도 제자리에 머물지 않고, 모든 것이 움직이며, 앉아 있는 자는 다음 순간을 대비해야 합니다. 그 다음 순간에는 여가의 기억이 신경증적인 우상으로 불태워집니다. 이 스툴은 그런 진실들을 묵묵히 견딥니다."/>
+    </object>
+  <object Name="Canvas Folding Chair" Load="Merge">
+    <part Name="Render" DisplayName="캔버스 접이식 의자"/>
+    <part Name="Description" Short="관절로 잇댄 나무와 물덩굴로 짠 천이, 엉덩이를 위한 움직이는 부두가 되어 줍니다."/>
+    </object>
+  <object Name="Throne" Load="Merge">
+    <part Name="Render" DisplayName="왕좌"/>
+    <part Name="Description" Short="각인된 금속과 보석 장식이, 세계의 축을 가리킵니다."/>
+    </object>
+  <object Name="Armchair" Load="Merge">
+    <part Name="Render" DisplayName="안락의자"/>
+    <part Name="Description" Short="가죽장이가 소금 태양 아래서 주물러 빚어 만들고, 주인의 휴식을 위해 글로우크로우 깃털을 채워 넣었습니다."/>
+    </object>
+  <object Name="Medical Chair" Load="Merge">
+    <part Name="Render" DisplayName="소화 의자"/>
+    <part Name="Description" Short="소금 표백제처럼 하얀 플라스틱을, 이상적인 소화와 체액의 조화를 위해 자세에 맞춰 곡면으로 빚어 만들었습니다."/>
+    </object>
+  <object Name="Massage Chair" Load="Merge">
+    <part Name="Render" DisplayName="사체 반죽기"/>
+    <part Name="Description" Short="크랭크샤프트가 오톨도톨한 고무 시트를 돌리며, 앉은 이의 뒤쪽에 뭉친 결림을 주물러 풀어 줍니다."/>
+    </object>
+  <object Name="Work Chair" Load="Merge">
+    <part Name="Render" DisplayName="바퀴 달린 의자"/>
+    <part Name="Description" Short="빽빽하게 당겨진 검은 메쉬가 척추를 곧게 세워 줍니다. 바퀴는 캐스터 아래로 내려와 움직입니다."/>
+    </object>
+  <object Name="Ergomax Chair" Load="Merge">
+    <part Name="Render" DisplayName="인체공학 의자"/>
+    <part Name="Description" Short="소금 표백제처럼 하얀 플라스틱을, 이상적인 사색을 위해 자세에 맞춰 곡면으로 빚어 만들었습니다."/>
+    </object>
+  <object Name="Chairbear" Load="Merge">
+    <part Name="Render" DisplayName="의자곰"/>
+    <part Name="Description" Short="여가의 역사가들은 모든 시대를 다음 세 시대로 나눕니다. 곰 같은 생물이 진화하기도 전에, 혹은 문명이 일어나 그들을 흠모하기도 전의 시기. 곰이 두드러지게 자리한 뒤, 문명이 그들을 본뜬 소파를 빚어낼 수 있게 되기까지의 시기. 그리고 그 뒤로, 문명이 몰락하기까지의 시기입니다."/>
+    </object>
+  <object Name="Torture Chair" Load="Merge">
+    <part Name="Render" DisplayName="고문 의자"/>
+    <part Name="Description" Short="새 맥락에서 소화 의자는 위협적으로 변했습니다. 말라붙은 피가 플라스틱 좌석을 물들이고, 카테터는 벌레 뭉치처럼 해어져 있습니다."/>
+    </object>
+  <object Name="Hyperbiotic Chair" Load="Merge">
+    <part Name="Render" DisplayName="하이퍼바이오틱 의자"/>
+    <part Name="Description" Short="숨겨진 미세 반응로가 입자들을 서로 충돌시켜 열을 만들어 내고, 상처 입은 기대어 앉은 이를 되살리는 생체 기계 장치에 동력을 공급합니다."/>
+    </object>
+  <object Name="Barathrumite Hyperbiotic Chair" Load="Merge">
+    </object>
+  <object Name="Gravchair" Load="Merge">
+    <part Name="Render" DisplayName="{{K|중력}} 의자"/>
+    <part Name="Description" Short="열 선반에서 매끈하게 다듬은 플라스틱을 주물러, 완전한 구가 자기 주변의 시공간을 휘게 만든다는 Eater의 직관을 떠올리게 하는 형태로 빚어 만들었습니다."/>
+    </object>
+  <object Name="Ornate Chair" Load="Merge">
+    <part Name="Render" DisplayName="화려한 의자"/>
+    <part Name="Description" Short="방석의 푹신함은 앉아 사유하는 이에게 맞춰 가늠되어 있고, 창끝 같은 아치가 장난스럽게 등받이를 눌러 줍니다. 발톱과 구 형태의 다리는, 이 물건 자체에 숨은 생명이 있음을 암시합니다. 의미가 가득 실린 의자입니다."/>
+    </object>
+  <object Name="Ornate Bench" Load="Merge">
+    <part Name="Render" DisplayName="화려한 벤치"/>
+    <part Name="Description" Short="길드 가구 제작자들은 Eater의 태양 아래 밝은 작업실에서 공모하듯, 열정적인 연인 둘에게 딱 맞는 크기로 방석을 팽팽히 씌우고, 직각 모서리에 보기 좋은 사슬갑옷 다이아몬드를 놓았습니다. 발톱과 구 형태의 다리는 움직임을 암시합니다."/>
+  </object>
+  <object Name="Scrapasan" Load="Merge">
+    <part Name="Render" DisplayName="스크라파산 의자"/>
+    <part Name="Description" Short="주워 모은 천 조각과 충전재로 만든 그릇 모양 바구니가, 소박하고 편안한 포옹과 그 뒤를 잇는 고된 탈출을 약속하듯 크게 벌어져 있습니다."/>
+    </object>
+  <object Name="Starmchair" Load="Merge">
+    <part Name="Render" DisplayName="별안락의자"/>
+    <part Name="Description" Short="불가사리 팔에 식물질을 채워 넣고 단단히 굳힌 뒤, 오목한 원반 둘레에 고정해 두 발로 걷는 이들에게 꼭 맞는 바닥 방석 형태를 만들었습니다. 축 방향의 팔이 목을 곧게 세워 주고, 아래가시의 풀밭이 은근한 치료용 찔림을 가합니다."/>
+    </object>
+  <object Name="Sofa" Load="Merge">
+    <part Name="Render" DisplayName="소파"/>
+    <part Name="Description" Short="짙고 부유한 초록 술을 촘촘하고 부드러운 격자로 엮고, 물덩굴 겨와 글로우크로우 깃털을 채워 넣은 다음, 기울어진 나무 프레임에 걸어 두었습니다."/>
+    </object>
+  <object Name="Sofa L" Load="Merge">
+    <part Name="Render" DisplayName="소파"/>
+  </object>
+  <object Name="Sofa C" Load="Merge">
+    <part Name="Render" DisplayName="소파"/>
+  </object>
+  <object Name="Sofa R" Load="Merge">
+    <part Name="Render" DisplayName="소파"/>
+  </object>
+
+  <!-- Grit Gate -->
+  <object Name="GritGateChair" Load="Merge">
+    </object>
+  <object Name="GritGateCanvasFoldingChair" Load="Merge">
+    </object>
+  <object Name="GritGateChairbear" Load="Merge">
+    </object>
+  <object Name="GritGateWorkChair" Load="Merge">
+    </object>
+  <object Name="GritGateMedicalChair" Load="Merge">
+    </object>
+  <object Name="GritGateHyperbioticChair" Load="Merge">
+    </object>
+
+  <!-- End chairs -->
+
+  <!--
+
+    ************
+       Chests
+    ************
+
+  -->
+
+  <object Name="Chest" Load="Merge">
+    <part Name="Render" DisplayName="궤짝"/>
+		<part Name="Description" Short="경첩 달린 뚜껑과 빗장이 있는 나무 보관함입니다. 표면에 긁어 낸 홈들은 언어가 지닌 모든 확률의 배열, 그리고 그 부재를 암시합니다."/>
+    </object>
+  <object Name="ChestBronzeIngots" Load="Merge">
+    </object>
+  <object Name="ChestIsner" Load="Merge">
+		<part Name="Description" Short="경첩 달린 뚜껑과 빗장이 있는 나무 보관함입니다. 표면에 긁어 낸 홈들은 언어가 지닌 모든 확률의 배열, 그리고 그 부재를 암시합니다. 열려 있는 자물쇠에는 엎질러진 물방울 하나가 새겨져 있습니다."/>
+		<part Name="Render" DisplayName="궤짝"/>
+    </object>
+  <object Name="ScrapChest" Load="Merge">
+    </object>
+  <object Name="Chest1" Load="Merge">
+    </object>
+  <object Name="Chest2" Load="Merge">
+    </object>
+  <object Name="Chest3" Load="Merge">
+    </object>
+  <object Name="Chest4" Load="Merge">
+    </object>
+  <object Name="Chest5" Load="Merge">
+    </object>
+  <object Name="Chest6" Load="Merge">
+    </object>
+  <object Name="Chest7" Load="Merge">
+    </object>
+  <object Name="Chest8" Load="Merge">
+    </object>
+  <object Name="Metal Chest1" Load="Merge">
+    <part Name="Render"/>		
+    <part Name="Description" Short="무딘 강철 표면은 황동으로 모서리를 두르고, 손때에 얼룩져 있습니다. 뚜껑은 빗장으로 굳게 잠겨 있습니다."/>
+		</object>
+  <object Name="Metal Chest2" Load="Merge">
+    <part Name="Render"/>
+		<part Name="Description" Short="무딘 강철 표면은 황동으로 모서리를 두르고, 손때에 얼룩져 있습니다. 뚜껑은 빗장으로 굳게 잠겨 있습니다."/>
+		</object>
+  <object Name="Metal Chest3" Load="Merge">
+    <part Name="Render"/>
+		<part Name="Description" Short="무딘 강철 표면은 황동으로 모서리를 두르고, 손때에 얼룩져 있습니다. 뚜껑은 빗장으로 굳게 잠겨 있습니다."/>
+		</object>
+  <object Name="Metal Chest4" Load="Merge">
+    <part Name="Render"/>
+		<part Name="Description" Short="무딘 강철 표면은 황동으로 모서리를 두르고, 손때에 얼룩져 있습니다. 뚜껑은 빗장으로 굳게 잠겨 있습니다."/>
+		</object>
+  <object Name="Metal Chest5" Load="Merge">
+    <part Name="Render"/>
+		<part Name="Description" Short="무딘 강철 표면은 황동으로 모서리를 두르고, 손때에 얼룩져 있습니다. 뚜껑은 빗장으로 굳게 잠겨 있습니다."/>
+		</object>
+  <object Name="Metal Chest6" Load="Merge">
+    <part Name="Render"/>
+		<part Name="Description" Short="무딘 강철 표면은 황동으로 모서리를 두르고, 손때에 얼룩져 있습니다. 뚜껑은 빗장으로 굳게 잠겨 있습니다."/>
+		</object>
+  <object Name="Metal Chest7" Load="Merge">
+    <part Name="Render"/>
+		<part Name="Description" Short="무딘 강철 표면은 황동으로 모서리를 두르고, 손때에 얼룩져 있습니다. 뚜껑은 빗장으로 굳게 잠겨 있습니다."/>
+		</object>
+  <object Name="Metal Chest8" Load="Merge">
+    <part Name="Render"/>
+		<part Name="Description" Short="무딘 강철 표면은 황동으로 모서리를 두르고, 손때에 얼룩져 있습니다. 뚜껑은 빗장으로 굳게 잠겨 있습니다."/>
+		</object>
+  <object Name="ChestMinorRazed" Load="Merge">
+    </object>
+  <object Name="RareChest" Load="Merge">
+    <part Name="Render"/>
+    </object>
+  <object Name="Rare Chest1" Load="Merge">
+    </object>
+  <object Name="Rare Chest2" Load="Merge">
+    </object>
+  <object Name="Rare Chest3" Load="Merge">
+    </object>
+  <object Name="Rare Chest4" Load="Merge">
+    </object>
+  <object Name="Rare Chest5" Load="Merge">
+    </object>
+  <object Name="Rare Chest6" Load="Merge">
+    </object>
+  <object Name="Rare Chest7" Load="Merge">
+    </object>
+  <object Name="Rare Chest8" Load="Merge">
+    </object>
+  <object Name="RelicChest" Load="Merge">
+    <part Name="Render"/>
+	  </object>
+  <object Name="RewardChestJunk" Load="Merge">
+    </object>
+  <object Name="FossilizedRemains" Load="Merge">
+    <part Name="Render" DisplayName="화석화된 유해"/>
+    <part Name="Description" Short="이빨과 껍데기, 뼈가 흙먼지 같은 진흙에 의해 새까맣게 굳어 정지 상태가 되었습니다."/>
+    </object>  
+  <object Name="NuntuChest" Load="Merge">
+    </object>
+  <object Name="YurlChest" Load="Merge">
+    </object>
+  <object Name="Locker2" Load="Merge">
+    </object>
+  <object Name="RustLocker" Load="Merge">
+    <part Name="Render" DisplayName="{{r|녹}}에 파먹힌 사물함"/>
+    <part Name="Description" Short="황동 띠가, 공기와 비에 붉게 잠식된 오래된 철제 상자를 테처럼 두르고 있습니다."/>
+    </object>
+  <object Name="MedLocker" Load="Merge">
+    <part Name="Render" DisplayName="의료 사물함"/>
+    <part Name="Description" Short="무딘 강철 표면이 손때에 얼룩져 있습니다. 뚜껑에는 붉은 십자가가 칠해져 있고, 빗장으로 잠겨 있습니다."/>
+    </object>
+  <object Name="Locker" Load="Merge">
+    <part Name="Render" DisplayName="사물함"/>
+    <part Name="Description" Short="세월의 낡음이 묻어나는 금속 사물함입니다."/>
+    </object>
+  <object Name="GritgateLocker" Load="Merge">
+    </object>
+  <object Name="BeyLahChest" Load="Merge">
+    </object>
+  <object Name="Scrapable Deposit Box 6" Load="Merge">
+    <part Name="Render" DisplayName="분해 가능한 보관함"/>
+    <part Name="Description" Short="금속 판재가 크롬 상자를 황금 직사각형들로 구획합니다. 안쪽에서는 유물들이, 계획된 마모를 거쳐 광물 형태로 돌아갈 날을 기다리고 있습니다."/>
+    </object>
+  <object Name="Weapon Rack" Load="Merge">
+    <part Name="Render" DisplayName="무기 거치대"/>
+    <part Name="Description" Short="나무와 크롬 기둥이 무기들을 평온히 쉬게 해 줍니다."/>
+    </object>
+  <object Name="Gun Rack" Load="Merge">
+    <part Name="Render" DisplayName="총기 거치대"/>
+    <part Name="Description" Short="나무와 크롬 기둥이 총기들을 평온히 쉬게 해 줍니다."/>
+    </object>
+  <object Name="Armor Rack" Load="Merge">
+    <part Name="Render" DisplayName="갑옷 거치대"/>
+    <part Name="Description" Short="나무와 크롬 기둥이 갑옷을 평온히 쉬게 해 줍니다."/>
+    </object>
+
+
+  <!-- Cybernetics -->
+  <object Name="CyberneticsRack" Load="Merge">
+    <part Name="Render" DisplayName="사이버네틱스 거치대"/>
+    <part Name="Description" Short="크롬 핀이 격자 구조를 이루고 있으며, 그 위에서 바이오닉 모듈들이 결합을 기다리고 있습니다."/>
+    </object>
+  <object Name="CyberneticsStationRack" Load="Merge">
+    <part Name="Render" DisplayName="사이버네틱스 거치대"/>
+    <part Name="Description" Short="크롬 핀이 격자 구조를 이루고 있으며, 그 위에서 모듈들이 결합을 기다리고 있습니다."/>
+    </object>
+	<object Name="BaseWedgeChest" Load="Merge">		
+		<part Name="Render" DisplayName="크레딧 금고"/>
+		<part Name="Description" Short="윤이 나고 세월에도 끄떡없는 금속으로 된, 빗장 달린 상자입니다. 표면에는 번호가 매겨진 직사각형 홈들이 파여 있습니다."/>		
+		</object>
+	<object Name="WedgeChest1" Load="Merge">    
+    </object>
+	<object Name="WedgeChest2" Load="Merge">
+		</object>
+	<object Name="WedgeChest3" Load="Merge">
+		</object>
+	<object Name="WedgeChest4" Load="Merge">
+		</object>
+  <object Name="WedgeChest5" Load="Merge">    
+    </object>
+	<object Name="WedgeChest6" Load="Merge">
+		</object> 
+
+  <!-- Reliquaries -->
+  <object Name="Reliquary" Load="Merge">
+    <part Name="Render" DisplayName="성유물함"/>
+    <part Name="Description" Short="먼지 쌓인 과거의 한구석에서, 이름 없는 일꾼들이 줄무늬 대리석에 유약을 입히고 금을 상감해, 어깨가 축 늘어진 Eater의 가보와 부장품을 모셔 둘 함을 만들었습니다."/>
+    </object>
+  <!-- put contents in the east one (i.e. SultanReliquaryE) -->
+  <object Name="SultanReliquaryW" Load="Merge">
+    <part Name="Render" DisplayName="성유물함"/>
+    <part Name="Description" Short="거석 같은 대리석 판재들이 제국의 보물을 위한 금지의 프리즘을 에워싸고 있으며, 그 안에는 생물적이면서도 군주의 것이기도 한 가면도 포함되어 있습니다. 광활한 표면을 가로질러 금세공이 생명과 그 경계의 기하학적 수열을 그려 내고, 물은 세계의 카리아티드들 몸체를 따라 쏟아져 내렸다가 다시 하늘로 말려 올라갑니다."/>
+    </object>
+  <object Name="SultanReliquaryE" Load="Merge">
+    <part Name="Render" DisplayName="성유물함"/>
+    <part Name="Description" Short="거석 같은 대리석 판재들이 제국의 보물을 위한 금지의 프리즘을 에워싸고 있으며, 그 안에는 생물적이면서도 군주의 것이기도 한 가면도 포함되어 있습니다. 광활한 표면을 가로질러 금세공이 생명과 그 경계의 기하학적 수열을 그려 내고, 물은 세계의 카리아티드들 몸체를 따라 쏟아져 내렸다가 다시 하늘로 말려 올라갑니다."/>
+    </object>
+  <object Name="SultanReliquaryWPeriod1" Load="Merge"/>
+  <object Name="SultanReliquaryWPeriod2" Load="Merge"/>
+  <object Name="SultanReliquaryWPeriod3" Load="Merge"/>
+  <object Name="SultanReliquaryWPeriod4" Load="Merge"/>
+  <object Name="SultanReliquaryWPeriod5" Load="Merge"/>
+  <object Name="SultanReliquaryWPeriod6" Load="Merge"/>
+  <object Name="SultanReliquaryEPeriod1" Load="Merge">
+    </object>
+  <object Name="SultanReliquaryEPeriod2" Load="Merge">
+    </object>
+  <object Name="SultanReliquaryEPeriod3" Load="Merge">
+    </object>
+  <object Name="SultanReliquaryEPeriod4" Load="Merge">
+    </object>
+  <object Name="SultanReliquaryEPeriod5" Load="Merge">
+    </object>
+  <object Name="SultanReliquaryEPeriod6" Load="Merge">
+    </object>
+  <object Name="Recoming Reliquary" Load="Merge">
+    <part Name="Render" DisplayName="귀환의 성유물함"/>
+    <part Name="Description" Short="먼지 쌓인 과거의 한구석에서, 이름 없는 일꾼들이 줄무늬 대리석에 유약을 입히고 자수정을 상감해, 돌아온 High Eater의 속세 장비를 모셔 둘 함을 만들었습니다."/>
+    </object>
+  <object Name="Melted Reliquary" Load="Merge">
+    <part Name="Render" DisplayName="녹아내린 성유물함"/>
+    <part Name="Description" Short="대리석의 줄무늬가 녹아 분홍빛 바위 슬래그로 번져 흐르고, 세월을 모르는 상자는 열린 채로 놓여 있습니다."/>
+    </object>
+
+  <!-- End chests -->
+
+  <!--
+
+    ***********************
+       Non-chest storage
+    ***********************
+
+  -->
+
+  <object Name="Woven Basket" Load="Merge">
+    <part Name="Render" DisplayName="엮은 바구니"/>
+		<part Name="Description" Short="습지 갈대를 씨줄과 날줄로 손수 엮어, 곡식 단과 다른 마른 물품을 담는 그릇을 만들었습니다."/>
+    </object>
+  <object Name="Preserved Food Basket" Load="Merge">
+    </object>
+  <object Name="Multicabinet" Load="Merge">
+    <part Name="Render" DisplayName="미닫이 서랍장"/>
+    <part Name="Description" Short="아연도금 금속으로 된 미닫이 서랍들이, 크기가 제각각인 직사각형들로 캐비닛 안에 배열되어 있습니다. 수납은 프랙탈입니다."/>
+    </object>
+  <object Name="Argyve Multicabinet" Load="Merge">
+    </object>
+
+
+  <!-- End non-chest storage -->
+
+  <!--
+
+    *******************
+       Light sources
+    *******************
+
+  -->
+
+  <object Name="Brazier" Load="Merge">
+    <part Name="Render" DisplayName="청동 화로"/>
+    <part Name="Description" Short="윤이 나는 청동이 뜨거운 숯불에 달궈져, 의식 속의 빛으로 타오릅니다."/>
+    </object>
+  <object Name="Tall Brazier" Load="Merge">
+    <part Name="Render" DisplayName="청동 화로"/>
+    <part Name="Description" Short="윤이 나는 청동이 뜨거운 숯불에 달궈져, 의식 속의 빛으로 타오릅니다."/>
+    </object>
+  <object Name="Sconce" Load="Merge">
+    <part Name="Render" DisplayName="횃불 벽걸이"/>
+		<part Name="Description" Short="밝게 타오르는 손불이 나무와 쇠 사이에 걸려 있습니다."/>
+		</object>
+  <object Name="Torchpost" Load="Merge">
+    <part Name="Render" DisplayName="횃불 벽걸이"/>
+    <part Name="Description" Short="밝게 타오르는 손불이 나무와 쇠 사이에 걸려 있습니다."/>
+    </object>	
+	<object Name="Unlit Torchpost" Load="Merge">
+    <part Name="Render" DisplayName="횃불 벽걸이"/>
+		<part Name="Description" Short="나무와 쇠로 된 벽걸이가 빛 없이 매달려 있습니다."/>
+    </object>
+  <object Name="Techlight1" Load="Merge">
+    <part Name="Render" DisplayName="아크 벽걸이등"/>
+		<part Name="Description" Short="날카롭게 솟은 크롬 끝들이 이 실용적인 조명 기구의 꼭짓점들입니다. 눈부심이 가장자리에서 터져 나와 세상을 밝힙니다."/>
+    </object>
+  <object Name="Techlight2" Load="Merge">
+    <part Name="Render" DisplayName="아크 벽걸이등"/>
+		<part Name="Description" Short="날카롭게 솟은 크롬 끝들이 이 실용적인 조명 기구의 꼭짓점들입니다. 눈부심이 가장자리에서 터져 나와 세상을 밝힙니다."/>
+    </object>
+  <object Name="Techlight3" Load="Merge">
+    <part Name="Render" DisplayName="아크 벽걸이등"/>
+    <part Name="Description" Short="날카롭게 솟은 크롬 끝들이 이 실용적인 조명 기구의 꼭짓점들입니다. 눈부심이 가장자리에서 터져 나와 세상을 밝힙니다."/>
+    </object>
+  <object Name="Full-Spectrum Techlight" Load="Merge">
+    <part Name="Render" DisplayName="전 스펙트럼 밝은 벽걸이등"/>
+    <part Name="Description" Short="날카롭게 솟은 크롬 끝들이 이 실용적인 조명 기구의 꼭짓점들입니다. 전 스펙트럼의 눈부심이 가장자리에서 터져 나와 세상을 밝힙니다."/>
+    </object>
+  <object Name="Half Candelabra" Load="Merge">
+    <part Name="Render" DisplayName="촛대"/>
+    <part Name="Description" Short="완강한 촛불에서 밀랍이 눈물처럼 흘러내려 벽걸이로 뚝뚝 떨어지고, 청동 층계를 타고 왁스 폭포를 이룹니다."/>
+    </object>
+  <object Name="Candelabra" Load="Merge">
+    <part Name="Render" DisplayName="촛대"/>
+		<part Name="Description" Short="완강한 촛불에서 밀랍이 눈물처럼 흘러내려 벽걸이로 뚝뚝 떨어지고, 청동 층계를 타고 왁스 폭포를 이룹니다."/>
+		</object>
+  <object Name="Tomb Techlight1" Load="Merge">
+    <part Name="Render" DisplayName="아크 벽걸이등"/>
+    <part Name="Description" Short="날카롭게 솟은 크롬 끝들이 이 장식용 조명 기구의 꼭짓점들입니다. 눈부심이 가장자리에서 터져 나와 세상을 불붙이듯 밝힙니다."/>
+    </object>
+  <object Name="Tomb Techlight2" Load="Merge">
+    <part Name="Render"/>
+  </object>
+  <object Name="Tomb Techlight3" Load="Merge">
+    <part Name="Render"/>
+  </object>
+  <object Name="Tomb Techlight4" Load="Merge">
+    <part Name="Render"/>
+  </object>
+  <object Name="Tomb Techlight5" Load="Merge">
+    <part Name="Render"/>
+  </object>
+  <object Name="Tomb Techlight6" Load="Merge">
+    <part Name="Render"/>
+  </object>
+  <object Name="Inner Tomb Techlight1" Load="Merge">
+    </object>
+  <object Name="Inner Tomb Techlight2" Load="Merge">
+    </object>
+  <object Name="Inner Tomb Techlight3" Load="Merge">
+    </object>
+  <object Name="Inner Tomb Techlight4" Load="Merge">
+    </object>
+  <object Name="Inner Tomb Techlight5" Load="Merge">
+    </object>
+  <object Name="Inner Tomb Techlight6" Load="Merge">
+    </object>
+  <object Name="CatacombLight" Load="Merge">
+  </object>
+
+  <!-- End light sources -->
+
+  <!--
+
+    ********************
+       Liquid vessels
+    ********************
+
+  -->
+
+  <object Name="Vessel" Load="Merge">
+    <part Name="Render" DisplayName="[꽃병]"/>
+    </object>
+  <object Name="Vase" Load="Merge">
+    <part Name="Render" DisplayName="꽃병"/>
+    <part Name="Description" Short="장식용 슬립을 입힌 커다란 보관용 꽃병입니다. 그 양식으로 보아 협곡 거주자가 집의 가마에서 구워 낸 물건임을 짐작할 수 있습니다."/>
+    </object>
+  <object Name="Vase Unhandled" Load="Merge">
+    <part Name="Render" DisplayName="꽃병"/>
+	  </object>
+  <object Name="Cider Vase" Load="Merge">
+    <part Name="Render" DisplayName="꽃병"/>
+    </object>
+  <object Name="Merchant Cider Vase" Load="Merge">    
+    </object>
+  <object Name="Honey Vase" Load="Merge">
+    <part Name="Render" DisplayName="꽃병"/>
+    </object>
+  <object Name="Merchant Honey Vase" Load="Merge">
+    </object>
+  <object Name="Wine Vase" Load="Merge">
+    <part Name="Render" DisplayName="꽃병"/>
+    </object>
+  <object Name="Merchant Wine Vase" Load="Merge">
+    </object>
+  <object Name="Oil Vase" Load="Merge">
+    <part Name="Render" DisplayName="꽃병"/>
+    </object>
+  <object Name="Merchant Oil Vase" Load="Merge">
+    </object>
+  <object Name="Bottle" Load="Merge">
+    <part Name="Render" DisplayName="유리병"/>
+    <part Name="Description" Short="자유롭게 불어 만든 유리 그릇이 달의 호처럼 휘어 있습니다. 그 양식으로 보아, Moghra'yi 반대편 머나먼 연기 나는 신의 바다 해안에서 온 물건이며, 아마도 드로마드들이 수출했을 가능성이 큽니다."/>
+    </object>
+  <object Name="Wide Bottle" Load="Merge">
+    <part Name="Render" DisplayName="넓은 유리병"/>
+    <part Name="Description" Short="숲 융단으로 뒤덮인 산의 라기노스 전통에 따라, 유리를 넓은 사발과 가느다란 목으로 불어 만들었습니다. 이 양식의 첫 장인들은 무사 숲의 두텁고 무르익은 공기를 가르며 일했을까요? Spindle의 반짝이는 먼지가 그들의 성형판과 파이프 위에 내려앉았을까요?"/>
+    </object>
+  <object Name="Random Bottle" Load="Merge">
+    </object>
+  <object Name="Random Bottle Rare Liquid" Load="Merge">
+    </object>
+  <object Name="Random Merchant Bottle" Load="Merge">
+    </object>
+  <object Name="Merchant Bottle" Load="Merge">
+    </object>
+  <object Name="Cider Bottle" Load="Merge">
+    </object>
+  <object Name="Merchant Cider Bottle" Load="Merge">    
+    </object>
+  <object Name="Honey Bottle" Load="Merge">
+    </object>
+  <object Name="Merchant Honey Bottle" Load="Merge">
+    </object>
+  <object Name="Wine Bottle" Load="Merge">
+    </object>
+  <object Name="Merchant Wine Bottle" Load="Merge">
+    </object>
+  <object Name="Oil Bottle" Load="Merge">
+    </object>
+  <object Name="Merchant Oil Bottle" Load="Merge">
+    </object>
+  <object Name="Pitcher" Load="Merge">
+    <part Name="Render" DisplayName="점토 물주전자"/>
+    <part Name="Description" Short="흘러내린 무늬가 있는 그릇이 아침의 부드러운 온기 속에서 물레 위에 처음 빚어졌습니다. 협곡 주민은 생명의 귀한 액체를 지키기 위해 주둥이를 특히 정성스럽게 다듬었습니다."/>
+    </object>
+  <object Name="Ewer" Load="Merge">
+    <part Name="Render" DisplayName="주전자"/>
+    <part Name="Description" Short="청동을 녹이고 식히고, 형태를 잡고 새겨 넣어, 생명의 물을 따르도록 만들었습니다."/>
+    </object>
+  <object Name="Jug" Load="Merge">
+    <part Name="Render" DisplayName="점토 항아리"/>
+    <part Name="Description" Short="점토를 둥글게 빚어 가마에 구워, 기름과 포도주를 보관하도록 만들었습니다."/>
+    </object>
+  <object Name="Jug Eastern Style" Load="Merge">
+    <part Name="Render" DisplayName="점토 항아리"/>
+    <part Name="Description" Short="점토를 둥글게 빚어 가마에 구워, 기름과 포도주를 보관하도록 만들었습니다."/>
+	  </object>
+  <object Name="Jug Wide Eastern Style" Load="Merge">
+    <part Name="Render" DisplayName="점토 항아리"/>
+    <part Name="Description" Short="점토를 둥글게 빚어 가마에 구워, 기름과 포도주를 보관하도록 만들었습니다."/>
+  </object>
+  <object Name="Jug Wide Eastern Style with Wine" Load="Merge">
+    <part Name="Render"/>
+    </object>
+  <object Name="Long Jug" Load="Merge">
+    <part Name="Render" DisplayName="그릇"/>
+    <part Name="Description" Short="점토를 물레 위에서 돌리며 물결처럼 빚어, 구워 내고 유약을 입혀 전통적인 그릇으로 만들었습니다."/>
+    </object>
+  <object Name="Recoming Water Jug" Load="Merge">
+    <part Name="Render" DisplayName="첫 모금의 그릇"/>
+    <part Name="Description" Short="점토를 물레 위에서 돌리며 물결처럼 빚어, 구워 내고 유약을 입혀 의식용 그릇으로 만들었습니다. 두 상형문자가 나란히 패널로 새겨져 있습니다. '생명'과 '마심'."/>
+    </object>
+  <object Name="Melted Jug" Load="Merge">
+    <part Name="Render" DisplayName="금이 간 장식 그릇"/>
+    <part Name="Description" Short="유약을 입힌 점토가 과열되어 갈라진 채 벌어져 있습니다. 두 상형문자는 알아볼 수 없게 되었습니다."/>
+    </object>
+  <object Name="Cider Pitcher" Load="Merge">
+    <part Name="Render" DisplayName="점토 물주전자"/>
+    </object>
+  <object Name="Merchant Cider Pitcher" Load="Merge">    
+    </object>
+  <object Name="Honey Pitcher" Load="Merge">
+    <part Name="Render" DisplayName="점토 물주전자"/>
+    </object>
+  <object Name="Merchant Honey Pitcher" Load="Merge">
+    </object>
+  <object Name="Wine Pitcher" Load="Merge">
+    <part Name="Render" DisplayName="점토 물주전자"/>
+    </object>
+  <object Name="Merchant Wine Pitcher" Load="Merge">
+    </object>
+  <object Name="Oil Pitcher" Load="Merge">
+    <part Name="Render" DisplayName="점토 물주전자"/>
+    </object>
+  <object Name="Merchant Oil Pitcher" Load="Merge">
+    </object>
+  <object Name="Grit Gate Honey Vase" Load="Merge">
+    <part Name="Render" DisplayName="꽃병"/>
+    <part Name="Description" Short="이 금속 꽃병의 허리둘레를 따라, 성벽 톱니 같은 무늬가 그려져 둘러져 있습니다."/>
+    </object>
+    
+  <!-- End liquid vessels -->
+
+  <!--
+
+    ***********
+       Ovens
+    ***********
+
+  -->
+
+  <object Name="Campfire" Load="Merge">
+    <part Name="Render" DisplayName="모닥불"/>
+		<part Name="Description" Short="먼 옛 지구의 따스한 형광이 나무벽돌 격자에 깔끔히 얽혀, 이제는 현미경 같은 작은 별로 기능합니다."/>
+    <!-- if you remove this they'll start spawning on top of furniture so probably don't BB 6/27/201 -->
+  </object>
+  <object Name="BlueCampfire" Load="Merge">
+    <part Name="Render"/>
+    </object>
+  <object Name="Campfire Remains" Load="Merge">
+    <part Name="Render" DisplayName="모닥불 흔적"/>
+    <part Name="Description" Short="타버린 나무 심지가, 발자국이 찍힌 재에 휩싸여 있습니다."/>
+    </object>
+  <object Name="BlueCampfireRemains" Load="Merge">
+    <part Name="Render"/>
+    </object>
+  <object Name="Oven" Load="Merge">
+    <part Name="Render" DisplayName="점토 화덕"/>
+    <part Name="Description" Short="두툼한 점토 화덕에서 타닥거리는 불길이 온기를 뿜어내고, 군침 도는 음식 냄새가 함께 번져 나옵니다."/>
+    </object>
+  <object Name="ChefOven" Load="Merge">
+    <part Name="Render" DisplayName="점토 화덕"/>
+    <part Name="Description" Short="두툼한 점토 화덕에서 타닥거리는 불길이 온기를 뿜어내고, 군침 도는 음식 냄새가 함께 번져 나옵니다."/>
+    </object>
+  <object Name="JoppaOven" Load="Merge">
+    <part Name="Render" DisplayName="점토 화덕"/>
+    <part Name="Description" Short="두툼한 점토 화덕에서 타닥거리는 불길이 온기를 뿜어내고, 뜨거운 스타애플 잼과 구운 마츠의 냄새가 함께 번져 나옵니다."/>
+    </object>
+  <object Name="KyakukyaOven" Load="Merge">
+    <part Name="Render" DisplayName="진흙 화덕"/>
+    <part Name="Description" Short="둥근 진흙 화덕에서 타닥거리는 불길이 온기를 뿜어내고, 덥혀 향을 낸 사이더와 염장 버섯의 냄새가 함께 번져 나옵니다."/>
+    </object>
+  <object Name="EzraOven" Load="Merge">
+    <part Name="Render" DisplayName="점토 화덕"/>
+    <part Name="Description" Short="둥근 점토 화덕에서 타닥거리는 불길이 온기를 뿜어내고, 찐 염소고기와 달콤한 바나나의 냄새가 함께 번져 나옵니다."/>
+    </object>
+  <object Name="YdFreeholdOven" Load="Merge">
+    <part Name="Render" DisplayName="점토 화덕"/>
+    <part Name="Description" Short="둥근 점토 화덕에서 타닥거리는 불길이 온기를 뿜어내고, 발효된 혀와 굳어버린 사랑의 냄새가 함께 번져 나옵니다."/>
+    </object>
+  <object Name="MopangoOven" Load="Merge">
+    <part Name="Render" DisplayName="뼈 화덕"/>
+    <part Name="Description" Short="둥근 뼈 화덕에서 타닥거리는 불길이 온기를 뿜어내고, 부푼 페이스트리와 달콤한 바나나, 그리고 따뜻한 스컬크의 냄새가 함께 번져 나옵니다."/>
+    </object>
+  <object Name="StiltOven" Load="Merge">
+    <part Name="Render" DisplayName="돌 화덕"/>
+    <part Name="Description" Short="밝은 돌 화덕에서 타닥거리는 불길이 온기를 뿜어내고, 뜨거운 가시 열매 잼과 구운 꼬리의 냄새가 함께 번져 나옵니다."/>
+    </object>
+  <object Name="BeyLahOven" Load="Merge">
+    <part Name="Render" DisplayName="점토 화덕"/>
+    <part Name="Description" Short="두툼한 점토 화덕에서 타닥거리는 불길이 온기를 뿜어내고, 라 브로스와 찐 마츠의 냄새가 함께 번져 나옵니다."/>
+    </object>
+  <object Name="GritGateOven" Load="Merge">
+    <part Name="Render" DisplayName="전기 화덕"/>
+    <part Name="Description" Short="어두운 전기 화덕에서 타닥거리는 불길이 온기를 뿜어내고, 씁쓸한 억위트와 삶은 플라스마의 냄새가 함께 번져 나옵니다."/>
+    </object>
+	<object Name="ChavvahOven" Load="Merge">
+		<part Name="Render" DisplayName="수정 화덕"/>
+		<part Name="Description" Short="둥근 수정 화덕에서 타닥거리는 불길이 온기를 뿜어내고, 식어 가는 정전기의 냄새가 함께 번져 나옵니다. 이상하게도, 여기에는 요리 재료가 하나도 준비되어 있지 않습니다."/>
+    </object>
+
+  <!-- End ovens -->
+
+  <!--
+
+    **************************
+       Tables & Table-likes
+    **************************
+
+  -->
+	
+  <object Name="Table" Load="Merge">
+    <part Name="Render" DisplayName="탁자"/>
+    <part Name="Description" Short="살아 있는 나무의 가지들이 흡수되고 다시 짜여, 줄기의 옹이로 재형성되었습니다. 그리고 수백 년 뒤, 협곡 목수의 기름 먹인 톱이 그 수목의 기하를 흐트러뜨려, 사람들 쓰라고 평평하게 다듬어 놓았습니다. 그 역사는 이제 이차원의 면에 주조된 채로, 먼지로 가루앉고 연필 자국에 긁힌 채 남아 있습니다."/>
+    </object>
+  <object Name="Metal Table" Load="Merge">
+    <part Name="Render" DisplayName="금속 탁자"/>
+    <part Name="Description" Short="강철에 액체 크롬을 발라 식힌 뒤, 평평하고 쓰기 좋은 면으로 두들겨 빚어 만들었습니다."/>
+    </object>
+  <object Name="Workbench" Load="Merge">
+    <part Name="Render" DisplayName="작업대"/>
+		<part Name="Description" Short="수분을 적절히 머금은 단단한 옹이목이, 대지의 무게를 직각으로 버텨 냅니다. 홈 사이사이는 그을음 자국과 소금이 장식처럼 남아 있습니다."/>
+		</object>
+  <object Name="Metal Workbench" Load="Merge">
+    <part Name="Render" DisplayName="금속 작업대"/>
+  </object>
+  <object Name="Redrock Metal Workbench" Load="Merge">
+    </object>
+  <object Name="Desk" Load="Merge">
+    <part Name="Render" DisplayName="책상"/>
+	  <part Name="Description" Short="축축한 숲에서 건져 올린 나무를 판재로 깎아, Shale Bridge의 프리홀드까지 실어 왔습니다. 그곳에서 건조한 공기에 익숙해진 목수들이, 풍성한 나무를 자기 작업에 쓰겠다며 기꺼이 받아들였습니다."/>
+	  </object>
+  <object Name="Sleek Table" Load="Merge">
+    <part Name="Render" DisplayName="탁자"/>
+    <part Name="Description" Short="날카로운 직사각형 하나가, 더 작은 직사각형 위에 선 금속 기둥 위로 균형 있게 얹혀 있어, 단단한 작업 면을 이룹니다. 용접 자국은 보이지 않습니다."/>
+    </object>
+  <object Name="Low Table" Load="Merge">
+    <part Name="Render" DisplayName="낮은 탁자"/>
+    <part Name="Description" Short="절구공이가 나무를 쪼개며 긁어 놓아, 상판에 흠집이 나 있습니다."/>
+    </object>
+  <object Name="Octagonal Table" Load="Merge">
+    <part Name="Render" DisplayName="팔각 탁자"/>
+    <part Name="Description" Short="그려 넣은 만다라로 장식되고 기하학의 손길로 빚어진 이 탁자는, 대칭과 수비학에 경의를 표합니다."/>
+    </object>
+  <object Name="Dresser" Load="Merge">
+    <part Name="Render" DisplayName="서랍장"/>
+    <part Name="Description" Short="나무를 정밀하게 잘라 서랍으로 만들고, 황동 레일 위에 얹어 옷을 보관하도록 했습니다."/>
+    </object>
+  <object Name="Book Table" Load="Merge">
+    <part Name="Render" DisplayName="책 탁자"/>
+    <part Name="Description" Short="땅의 갈라진 틈에 사는 이들은 퍼즐 상자 같은 방식으로 탁자를 만듭니다. 그 서랍에는 속기처럼 압축된 상상력이 깃들어 있습니다."/>
+    </object>
+  <object Name="Ornate Table" Load="Merge">
+    <part Name="Render" DisplayName="화려한 탁자"/>
+    <part Name="Description" Short="호화로운 다리에는 각인된 크로뮴 장식이 발톱과 구 형태의 다리로 가늘게 모이고, 대리석 상판에서는 기하학적 흠이 줄로 갈려 나가 철제 양동이 속으로 던져졌는데, 그 양동이는 어딘가에 아직 남아 있을지도 모릅니다. Eater들이 여기에서 말했고, 계획을 세웠습니다."/>
+    </object>  
+  <object Name="NuntuTable" Load="Merge">
+    </object>
+  <object Name="GunsmithTable" Load="Merge">
+    </object>
+  <object Name="Alchemist Table" Load="Merge">
+    <part Name="Render" DisplayName="연금술사의 탁자"/>
+    <part Name="Description" Short="뜨거운 화학이 남긴 방사형 그을음 무늬로 탄 자국이 난 탁자 위에, 약병 거치대와 증류기가 놓여 있습니다."/>
+    </object>
+  <object Name="Klanq Alchemist Table" Load="Merge">
+    </object>
+  <object Name="Grit Gate Table" Load="Merge">
+    <part Name="Render" DisplayName="작업대"/>
+    </object>
+  <object Name="Grit Gate Sleek Table" Load="Merge">
+    <part Name="Render" DisplayName="작업대"/>
+    </object>
+  <object Name="Grit Gate Metal Table" Load="Merge">
+    <part Name="Render" DisplayName="금속 작업대"/>
+    </object>
+  <object Name="Barathrum Table" Load="Merge">
+    <part Name="Render" DisplayName="작업대"/>
+    </object>
+  <object Name="Klanq Table" Load="Merge">
+    <part Name="Render" DisplayName="작업대"/>
+    </object>
+
+  <!-- End tables & table-likes -->
+
+  <!--
+
+    *************************************
+       Arts/crafts/culture/decorations
+    *************************************
+
+  -->
+
+  <object Name="Globe" Load="Merge">
+    <part Name="Render" DisplayName="지구본"/>
+    <part Name="Description" Short="높은 부조로 새겨진 모래빛의 굴곡과 옹이진 형상들이 구체 모형의 사파이어빛 표면을 왕관처럼 덮고 있습니다. 비늘 같은 스케일의 병치, 바다와 육지의 비율, 그리고 이런 물건을 고안하는 데 동원된 집단적 지혜를 떠올리면 머리가 빙빙 돕니다."/>
+    </object>
+  <object Name="Orrery" Load="Merge">
+    <part Name="Render" DisplayName="혼천의"/>
+    <part Name="Description" Short="황동 톱니바퀴와 구, 고리들이 정밀하게 회전하며 세계와 별들의 움직임을 그대로 흉내 냅니다."/>
+    </object>
+  <object Name="Clockthing" Load="Merge">
+    <part Name="Render" DisplayName="Barathrum 시계"/>
+    <part Name="Description" Short="Barathrum의 발명품은 크라운 휠로 진행을 조절하여, 순간의 똑딱임까지 시간을 기록합니다. 그 유용함을 알게 된 물 귀족들은 하루 중 정해진 순간마다 저수지의 수위를 정밀하게 측정하고자, 같은 시계를 수십 개 더 조립해 달라고 의뢰했습니다."/>
+    </object>
+  <object Name="Bubblething" Load="Merge">
+    <part Name="Render" DisplayName="황동 거품 생성기"/>
+    <part Name="Description" Short="발명을 벌이다 보면, 때로는 형태 없는 회색 거품이 필요할 때가 있습니다. 아니, 당장 필요하지 않더라도 언젠가는 필요할지도 모릅니다. 그래서 어떤 땜장이가 신중하게도 문제를 미리 앞질러, 황동 거품 생성기를 발명해 버렸습니다. 받침대에는 이렇게 새겨져 있습니다. '거품은 전부, 언젠가 거품이 필요할지도 모르는데 없을까 봐 우울해지는 일은 전무'."/>
+    </object>
+  <object Name="Powerless Bubblething" Load="Merge">
+    </object>
+  <object Name="Powerless Fluxthing" Load="Merge">
+    </object>
+  <object Name="Powerless Electrothing" Load="Merge">
+    </object>
+  <object Name="Powerless Unicomputer" Load="Merge">
+    </object>
+  <object Name="Powerless Loudspeaker" Load="Merge">
+    </object>
+  <object Name="Unpowered Gas Burner" Load="Merge">
+    </object>
+  <object Name="Telescope" Load="Merge">
+    <part Name="Render" DisplayName="망원경"/>
+    <part Name="Description" Short="유리 초승달들이 빛을 굴절시켜, 허구의 각크기로 이미지를 그려 냅니다."/>
+    </object>
+  <object Name="Bust of K4K5" Load="Merge">
+    <part Name="Render" DisplayName="K4K5의 크롬 흉상"/>
+    <part Name="Description" Short="Tungsten King의 신탁 같은 용모가 크롬에 얼어붙어, 완벽한 규격으로 주조되어 있습니다."/>
+    </object>
+  <object Name="Bust of Mehmet I" Load="Merge">
+    <part Name="Render" DisplayName="Mehmet I의 크롬 흉상"/>
+    <part Name="Description" Short="단단한 크롬이, 부드러운 볼과 둥근 이마의 틀에 맞춰 주조되었습니다. 학문의 후원 왕이 성인처럼 추앙받고 있습니다."/>
+    </object>
+  <object Name="Ornate Potted Plant 1" Load="Merge">
+    <part Name="Render" DisplayName="화려한 화분의 식물"/>
+    <part Name="Description" Short="크로뮴 절개 무늬가 새겨진 고대의 가마솥 같은 화분에서, 은밀한 초록빛 식물의 엽편들이 퍼져 나옵니다. 흙에 뿌리내린 사촌들처럼 살아 숨 쉬지만, 생체 데이터는 아마란스빛 씨앗과 접합되었습니다. 주변의 Eater들이 썩어 문드러져도, 이들은 죽지 않습니다."/>
+    </object>
+  <object Name="Ornate Potted Plant 2" Load="Merge">
+    <part Name="Render" DisplayName="화려한 화분의 식물"/>
+    <part Name="Description" Short="크로뮴 절개 무늬가 새겨진 고대의 가마솥 같은 화분에서, 은밀한 초록빛 식물의 엽편들이 퍼져 나옵니다. 흙에 뿌리내린 사촌들처럼 살아 숨 쉬지만, 생체 데이터는 아마란스빛 씨앗과 접합되었습니다. 주변의 Eater들이 썩어 문드러져도, 이들은 죽지 않습니다."/>
+    </object>
+  <object Name="Ornate Potted Plant 3" Load="Merge">
+    <part Name="Render" DisplayName="화려한 화분의 식물"/>
+    <part Name="Description" Short="크로뮴 절개 무늬가 새겨진 고대의 가마솥 같은 화분에서, 은밀한 초록빛 식물의 엽편들이 퍼져 나옵니다. 흙에 뿌리내린 사촌들처럼 살아 숨 쉬지만, 생체 데이터는 아마란스빛 씨앗과 접합되었습니다. 주변의 Eater들이 썩어 문드러져도, 이들은 죽지 않습니다."/>
+    </object>
+  <object Name="Ornate Potted Plant 4" Load="Merge">
+    <part Name="Render" DisplayName="화려한 화분의 식물"/>
+    <part Name="Description" Short="크로뮴 절개 무늬가 새겨진 고대의 가마솥 같은 화분에서, 은밀한 초록빛 식물의 엽편들이 퍼져 나옵니다. 흙에 뿌리내린 사촌들처럼 살아 숨 쉬지만, 생체 데이터는 아마란스빛 씨앗과 접합되었습니다. 주변의 Eater들이 썩어 문드러져도, 이들은 죽지 않습니다."/>
+    </object>
+  <object Name="Chalkboard" Load="Merge">
+    <part Name="Render" DisplayName="칠판"/>
+    <part Name="Description" Short="절단한 판암 위로, 바깥으로 끄집어낸 생각의 흐릿한 잔재가 가루처럼 내려앉아 있고, 그 돌판은 괴물에 의해 높이 들어 올려져 있습니다."/>
+    </object>
+  <object Name="Display Breadboard" Load="Merge">
+    <part Name="Render" DisplayName="전시용 브레드보드"/>
+    <part Name="Description" Short="나뭇결이 거친 목재 속에 끼워진 플라스틱 판이, 접점 격자로 촘촘히 뚫려 있습니다. 커패시터와 인덕터가 스프링 클립에 고정되어 있고, 꽃다발 같은 전선 다발로 서로 연결되어 있습니다."/>
+    </object>
+  <object Name="Sewing Machine" Load="Merge">
+    <part Name="Render" DisplayName="재봉틀"/>
+    <part Name="Description" Short="긁힌 금속 C 안쪽에서 바늘과 보빈이, 두 가닥 실을 맞물림땀으로 꿰뚫어 넣을 준비를 하고 있습니다. 받침대 둘레에는 이니셜이 빽빽하게 새겨져 있습니다."/>
+    </object>
+  <object Name="Mannequin" Load="Merge">
+    <part Name="Render" DisplayName="마네킹"/>
+    <part Name="Description" Short="나무와 유리섬유의 고치 속에서, 두 발로 걷는 형상이 모습을 드러냅니다."/>
+    </object>
+	<object Name="HamilcrabMannequin" Inherts="Mannequin" Load="Merge">
+		<part Name="Render" DisplayName="거대한 마네킹"/>
+		<part Name="Description" Short="나무와 유리섬유로 된 거대한 고치 속에서, 두 발로 걷는 형상이 모습을 드러냅니다."/>
+		</object>
+  <object Name="Light Sculpture" Load="Merge">
+    <part Name="Render" DisplayName="빛 조각"/>
+    <part Name="Description" Short="푸른 레이저 빛이 기준 빔에서 터져 나와, 빛 선반으로 조각된 파면을 새롭게 그려 냅니다. 공기가 거친 결을 한 겹 더 얹습니다."/>
+    </object>
+  <object Name="Brain Sculpture" Load="Merge">
+    <part Name="Render" DisplayName="뇌 조각"/>
+    <part Name="Description" Short="폭신한 폼 재질을 대뇌이랑과 대뇌고랑 형태로 배치해, 뇌의 미로를 모사했습니다."/>
+    </object>
+  <object Name="Unfinished Sculpture" Load="Merge">
+    <part Name="Render" DisplayName="미완성 조각"/>
+    <part Name="Description" Short="대지의 젖은 물감들, 곧 점토와 슬래그, 크롬과 염료가, 물질의 무게를 실은 반쪽짜리 발상을 축 늘어뜨리고 있습니다. 망설임이나 방치로 인해 변형이 중도에서 멈춰 섰습니다."/>
+    </object>
+  <object Name="Painted Column L" Load="Merge">
+    <part Name="Render" DisplayName="채색된 기둥"/>
+    <part Name="Description" Short="윗부분에는 나선형 볼루트처럼 대리석이 꽃피어 있습니다. 기둥에는 물감이 여기저기 튀어 있습니다."/>
+    </object>
+  <object Name="Painted Column R" Load="Merge">
+    <part Name="Render"/>
+    </object>
+  <object Name="Painting" Load="Merge">
+    <part Name="Render" DisplayName="그림"/>
+    <part Name="Description" Short="진주빛 유성 물감이 에크뤼색 리넨을 적시고, 이젤 위로 뚝뚝 흘러내렸습니다. 캔버스의 평면에서 한 이미지가 눌려 나와 있습니다."/>
+    </object>
+  <object Name="Mushroom Case" Load="Merge">
+    <part Name="Render" DisplayName="버섯 케이스"/>
+    <part Name="Description" Short="반달 모양 유리 지붕이 지하 테라리움을 덮어 시체 포식자들을 보호하고, 그들은 안쪽에서 번성했습니다. 이것은 아가미의 아콜로지입니다."/>
+    </object>
+  <object Name="Harp" Load="Merge">
+    <part Name="Render" DisplayName="하프"/>
+    <part Name="Description" Short="그누의 창자 줄이 공명판 위로 지층처럼 뻗어 있고, 로즈 골드가 짙은 나무의 무릎과 머리 부분을 덮습니다. 프레임은 반쪽짜리 심장 형태를 이루며, Eater들이 가장 좋아하던 것이 아직 남아 있습니다."/>
+    </object>
+  <object Name="Rectangular Bells" Load="Merge">
+    <part Name="Render" DisplayName="직사각형 종"/>
+    <part Name="Description" Short="직사각형 건반들이 기울어진 사다리 아래로 배열되어, 위로 오를수록 음정이 높아지게 되어 있습니다. 틀에는 음을 치는 말렛 하나가 걸려 있습니다."/>
+    </object>
+  <object Name="Hammered Dulcimer" Load="Merge">
+    <part Name="Render" DisplayName="해머드 덜시머"/>
+    <part Name="Description" Short="그누의 창자 줄이 사다리꼴 몸통 위로 팽팽히 당겨져 있습니다. 타격용 채는 나무집에 걸려 있습니다."/>
+    </object>
+  <object Name="Iron Maiden" Load="Merge">
+    <part Name="Render" DisplayName="철의 처녀"/>
+    <part Name="Description" Short="녹이 들러붙은 가시들이 철제 석관의 안쪽을 따라 늘어서 있습니다. 속세의 형벌이 성에 차지 않았던 설계자는, 영원의 평온한 잠마저 타락시키고자 했습니다."/>
+    </object>
+  <object Name="Hookah" Load="Merge">
+    <part Name="Render" DisplayName="물담배"/>
+    <part Name="Description" Short="수정 물파이프에서 흡연용 줄기들이 꽃처럼 뻗어 나옵니다."/>
+    </object>
+  <object Name="Cage" Load="Merge">
+    <part Name="Render" DisplayName="우리"/>
+    <part Name="Description" Short="이 상자는 갉아먹힌 철사와 찌그러진 철로 단조해 만들었습니다."/>
+    </object>
+  <object Name="Forge" Load="Merge">
+    <part Name="Render" DisplayName="단조 화덕"/>
+    <!--<part Name="AnimatedMaterialFire" />-->
+    <part Name="Description" Short="오래된 돌로 된 관 달린 화덕 안에서 염수줄기 조각이 탁탁 튀며 타고, 연기가 피어오릅니다."/>
+    </object>
+  <object Name="Anvil" Load="Merge">
+    <part Name="Render" DisplayName="돌 모루"/>
+    <part Name="Description" Short="거친 화강암 덩어리의 윗면을 금속 작업용으로 매끈하게 다듬고, 옆면은 성형용 뿔처럼 둥글게 만들었습니다."/>
+    </object>
+
+
+  <!-- End arts/crafts/culture/decorations -->
+
+  <!--
+
+    *************
+       Statues 
+    *************
+
+  -->
+
+  <object Name="Statue" Load="Merge">
+    <part Name="Render"/>
+    </object>
+  <object Name="Random Statue" Load="Merge">
+    <part Name="Render" DisplayName="[조각상]"/>
+    <part Name="Description" Short="*material*로 빚어 만든 이 조각상은 *creature.a**creature*를 정교하게 묘사하고 있습니다: "/>
+    </object>
+  <object Name="Random Stone Statue" Load="Merge">
+    <part Name="Render" DisplayName="돌 조각상"/>
+    </object>
+  <object Name="Random Marble Statue" Load="Merge">
+    <part Name="Render" DisplayName="대리석 조각상"/>
+    </object>
+  <object Name="ImplantedEaterStatue" Load="Merge">
+    <part Name="Render" DisplayName="임플란트 Eater 조각상"/>
+    <part Name="Description" Short="침식이 형상을 추상으로 매끈하게 지워 버렸지만, 한때 이것은 기계와 사람의 결합을 기리는 기념비로 서 있었습니다."/>
+    </object>
+  <object Name="EaterStatue" Load="Merge">
+    <part Name="Render" DisplayName="Eater 조각상"/>
+    <part Name="Description" Short="돌이라는 캔버스에서 형상들이 솟구쳐 올라, 아득한 과거의 인물로 산산이 빚어집니다. 머리카락, 피부, 이마, 허벅지. 그 세부가 당신 안에 새 감정을 부화시킵니다. 낯설면서도 익숙한 감각입니다. 석화된 닮음을 둘러 움직이며, 당신은 이 Eater가 어떻게 자기 자신을 당신의 시공간 꼬임 속에 새겨 넣었는지 경탄합니다."/>
+    </object>
+  <object Name="EaterStatueFlipped" Load="Merge">
+    <part Name="Render"/>
+		</object>
+  <object Name="EaterStatue Gold" Load="Merge">
+    <part Name="Render"/>
+    </object>
+  <object Name="EaterStatueFlipped Gold" Load="Merge">
+    <part Name="Render"/>
+		</object>
+  <object Name="Oboroqoru Statue" Load="Merge">
+    <part Name="Render" DisplayName="Oboroqoru 조각상"/>
+    <part Name="Description" Short="Oboroqoru의 이 돌 우상은 스무 스팬 높이로 서 있습니다. 이름 모를 조각가는, 유인원 신이 다리를 꼬고 앉아 세 쌍의 거대한 팔이 서로를 움켜쥐게 한 모습을 택해 묘사했습니다. 우상은 덩굴에 휘감겨 있으며, 관리인들은 덤불이 Oboroqoru의 온화한 용모를 가릴 듯한 곳만 손을 대고 나머지는 자연에 내맡겼습니다. 숲이 길러 내는 모든 색의 꽃 화관들, 곧 푸른빛과 연두빛, 남빛과 홍옥빛이 신전 바닥에 흩어져 있습니다. 무심한 신처럼 보이는 존재에게 바치는 보잘것없는 공물입니다."/>
+    </object>
+  <object Name="Keresh Statue" Load="Merge">
+    <part Name="Render" DisplayName="사슴 조각상"/>
+    <part Name="Description" Short="Bey Lah 외곽의 구석진 오두막에 버려진 이 거대한 hornsfel 조각상은, 시든 식생의 층 아래에서 맥없이 놓여 있습니다. 땅에서 한쪽 발굽을 든 위엄 있는 사슴을 묘사했는데, 사람 같은 눈으로 주변을 심판하듯 훑고는 못마땅하다는 듯한 표정을 짓고 있습니다. 받침대의 금속 명판은 세월을 잘 견디지 못했고, 당신이 겨우 알아볼 수 있는 글리프는 'K', 'R', 'S', 'H'뿐입니다."/>
+    </object>
+
+  <!-- Six Day Stilt -->
+  <object Name="Six Day Stilt statue" Load="Merge">
+    <part Name="Render"/>
+    </object>
+  <object Name="statue of mason" Load="Merge">
+    <part Name="Render" DisplayName="Nisroch 조각상"/>
+    <part Name="Description" Short="별의 석공 Nisroch는, 강대한 다리로 대지를 가로질러 딛고 선 모습으로 묘사되어 있습니다. 그는 가장 아끼는 어깨띠를 두르고 있는데, 그 주름은 금으로 정교하게 빚어져 있습니다."/>
+    </object>
+  <object Name="statue of knight" Load="Merge">
+    <part Name="Render" DisplayName="Bel 조각상"/>
+    <part Name="Description" Short="Bel의 조각상은 윤이 나는 대리석으로 자신의 엄청난 무게를 걸치고 있습니다. 그는 별빛 서녘의 여명 속 소용돌이치는 가스 구름을 막아냈다는 이야기로 전해지는, 기념비적인 방패를 휘두르고 있습니다."/>
+    </object>
+  <object Name="statue of Shekhinah" Load="Merge">
+    <part Name="Render" DisplayName="Shekhinah 조각상"/>
+    <part Name="Description" Short="여기서 Shekhinah는 장엄한 감청색 대리석으로 영원히 굳어 조각되어 있습니다. 그의 몸은 축복받은 완전함을 향해 정으로 쪼아 다듬어졌습니다. 황금 디아뎀이 그를 ‘아버지들 중의 아버지’로 왕관처럼 받듭니다."/>
+    </object>
+  <object Name="statue of wizard" Load="Merge">
+    <part Name="Render" DisplayName="Dagon 조각상"/>
+    <part Name="Description" Short="웅변가 Dagon은 뻔뻔할 만큼 당당한 자세로 서쪽 앱스를 압도합니다. 그의 황금 관테는 불빛에 찬란하게 빛납니다."/>
+    </object>
+  <object Name="statue of athlete" Load="Merge">
+    <part Name="Render" DisplayName="Carthax 조각상"/>
+    <part Name="Description" Short="운동선수 Carthax는 여기에서 한창 걸음을 내딛는 순간으로 묘사되어 있습니다. 그는 천상 전통에 따라, 번들거리는 은빛 머리칼을 뒤로 묶은 채 하늘의 궁창을 가로질러 도약합니다."/>
+    </object>
+  <object Name="statue of scholar" Load="Merge">
+    <part Name="Render" DisplayName="Resheph 조각상"/>
+    <part Name="Description" Short="'Above'라 불리는 Resheph는, 수수께끼 같은 손가락 하나를 들어 병든 자의 상처를 치유합니다."/>
+    </object>
+
+
+  <!-- Sultan shrines -->
+  <object Name="SultanShrine" Load="Merge">
+    <part Name="Render" DisplayName="성소"/>
+    <part Name="Description" Short=""/>
+    </object>
+  <object Name="JoppaSultanShrine" Load="Merge">
+    <part Name="Render" DisplayName="성소"/>
+    </object>
+  <object Name="Period1SultanShrine" Load="Merge">
+    <part Name="Render" DisplayName="성소"/>
+    </object>
+  <object Name="Period2SultanShrine" Load="Merge">
+    <part Name="Render" DisplayName="성소"/>
+    </object>
+  <object Name="Period3SultanShrine" Load="Merge">
+    <part Name="Render" DisplayName="성소"/>
+    </object>
+  <object Name="Period4SultanShrine" Load="Merge">
+    <part Name="Render" DisplayName="성소"/>
+    </object>
+  <object Name="Period5SultanShrine" Load="Merge">
+    <part Name="Render" DisplayName="성소"/>
+    </object>
+  <object Name="Period6SultanShrine" Load="Merge">
+    <part Name="Render" DisplayName="성소"/>
+    </object>
+
+	<!-- Nephilim statues -->
+	<object Name="NephilimShrine" Load="Merge">
+		<part Name="Render" DisplayName="Nephilim 성소"/>
+		</object>
+	<object Name="AgolgotShrine" Load="Merge">
+		<part Name="Render" DisplayName="Girsh Agolgot께 바치는 성소"/>
+		<part Name="Description" Short="괴물의 머리가 오래된 돌 속에서 축 늘어져 있고, 가운데 등마루를 따라 새겨진 낭종들이 돋아나 반신의 근원에서 질병이 퍼져 나가는 모습을 떠올리게 합니다. 여러 세대의 이끼가 짐승의 사마귀투성이 다리 아래로 치맛자락처럼 드리워져 있습니다."/>
+		</object>
+	<object Name="BethsaidaShrine" Load="Merge">
+		<part Name="Render" DisplayName="Girsh Bethsaida께 바치는 성소"/>
+		<part Name="Description" Short="축 늘어진 어깨가 갈라진 돌 등판의 골짜기를 이루고, 석공이 묘사한 반신의 빠른 고동을 따라 두 쌍의 맞닿은 팔이 수많은 마디가 모인 손에서 합쳐져 있습니다. 여러 세대의 이끼가 짐승의 정맥류처럼 부풀어 오른 다리 아래로 치맛자락처럼 드리워져 있습니다."/>
+		</object>
+	<object Name="RermadonShrine" Load="Merge">
+		<part Name="Render" DisplayName="Girsh Rermadon께 바치는 성소"/>
+		<part Name="Description" Short="가시 돋친 괴물 물고기가 석조로 깎아 만든 물웅덩이 안에 앉아 있습니다. 아래쪽에는 지느러미 달린 꼬리가 있는데, 시인들은 이것이 Maqqom의 관들에서 거품 이는 염수를 두드려 Hinnom 호수를 만들었다고 노래했습니다. 여러 세대의 이끼가 그 아래지느러미를 치맛자락처럼 감싸고 있습니다."/>
+		</object>
+	<object Name="ShugruithShrine" Load="Merge">
+		<part Name="Render" DisplayName="굴착자 Shug'ruith께 바치는 성소"/>
+		<part Name="Description" Short="정으로 쪼아 만든 가시들이 구불구불한 세계포식자를 화관처럼 두르고 있으며, 그는 말기에 이른 동굴인들이 살게 된 지하 동굴들을 파냈다고 전해집니다. 전설 속 백아홉 개의 눈이 시간을 가로질러 응시하고, 여러 세대의 이끼가 짐승의 띠무늬 아래배를 치맛자락처럼 감싸고 있습니다."/>
+		</object>
+	<object Name="QasShrine" Load="Merge">
+		<part Name="Render" DisplayName="Girsh Qas께 바치는 성소"/>
+		<part Name="Description" Short="반신이 오래된 돌로 넓게 다듬어 만든 뒷다리 위에 무릎을 꿇고 있습니다. 타일로 된 다각형들이 조각상의 받침대에서 흘러내리듯 퍼져, Qas가 공간과 시간, 산과 마을을 바로잡는 모습을 떠올리게 합니다. 여러 세대의 이끼가 짐승의 나무꾼 발굽 아래로 치맛자락처럼 드리워져 있습니다."/>
+		</object>
+	<object Name="QonShrine" Load="Merge">
+		<part Name="Render" DisplayName="Girsh Qon께 바치는 성소"/>
+		<part Name="Description" Short="신성한 백조가 돌의 우아함 속에 앉아 있고, 거대한 연의 꼬리는 어지러울 만큼 휘몰아치는 소용돌이로 말려 있습니다. 그는 비어 있고 읽어낼 수 없는 표정을 하고 있는데, 조각가가 그를 불확실성의 악몽 같은 존재로 느꼈음을 떠올리게 합니다. 여러 세대의 이끼가 짐승의 솜깃 아래로 치맛자락처럼 드리워져 있습니다."/>
+		</object>
+	<object Name="RuinedNephilimShrime" Load="Merge">
+		<part Name="Render" DisplayName="무너진 성소"/>
+	</object>
+
+  <!-- Special statues -->
+  <object Name="JoppaReshephShrine" Load="Merge">
+    <part Name="Render" DisplayName="Resheph께 바치는 성소"/>
+    <part Name="Epithets" Primary=", 마지막 술탄"/>
+    </object>
+  
+
+  <!-- End statues -->
+
+  <!--
+
+    ***************
+       Holograms
+    ***************
+
+  -->
+
+  <object Name="Eater Hologram" Load="Merge">
+    <part Name="Render" DisplayName="Eater 홀로그램"/>
+    <part Name="Description" Short="그을린 빛이 크로뮴 판 위에서 폭발하듯 솟구쳐, 아득한 과거의 인물로 산산이 부서져 빚어집니다. 머리카락, 피부, 이마, 허벅지. 그 특징들이 당신 안에 새 감정을 부화시킵니다. 낯설면서도 익숙한 감각입니다. 당신이 움직이면 형상도 시차를 두고 함께 움직이고, 당신은 이 Eater가 어떻게 자기 자신을 당신의 시공간 꼬임 속에 새겨 넣었는지 경탄합니다."/>
+    </object>
+  <object Name="Eater Hologram Flipped" Load="Merge">
+    <part Name="Render"/>
+		</object>
+  <object Name="Eater Hologram Dynamic Flip" Load="Merge">
+    </object>
+  <object Name="hologram of Shekhinah" Load="Merge">
+    <part Name="Render" DisplayName="Shekhinah 홀로그램"/>
+    <part Name="Description" Short="영광스러운 Shekhinah, 은빛의 Adonis이자 First Father께서 빛나는 연기로 자태를 취하십니다. 늙지 않는 별들처럼, 고정되고 영원한 위엄을 지닌 그분은 자신의 영예를 위해 세워진 신전을 가늠하시고, 만족하듯 고개를 갸웃하십니다. Kasaphescence와의 합일을 기억하기에 합당하게, 그분은 비천한 식물과 점토 대지의 푸른빛과 붉은빛을 버리고, 감청빛 그늘로 자신의 현현을 걸치십니다."/>
+    <part Name="Chat" Says="[Shekhinah가 팔을 활짝 벌린 채 당신을 향해 몸을 돌립니다.]"/>
+		</object>
+
+
+  <!-- End holograms -->
+
+  <!--
+
+    ***********************
+       Village monuments
+    ***********************
+
+  -->
+  <object Name="Village Monument" Load="Merge">
+    <part Name="Render" DisplayName="[마을 기념물]"/>
+    <part Name="Description" Short=""/>
+    </object>
+  <object Name="Village Monument Obelisk" Load="Merge">
+    <part Name="Render" DisplayName="돌 오벨리스크"/>
+    <part Name="Description" Short="돌은 하늘을 향해 몸을 세움으로써 자신의 중요함을 주장합니다. 그곳에서 가장 오래된 지혜가 꿈틀거립니다."/>
+  </object>
+  <object Name="Village Monument Amphora" Load="Merge">
+    <part Name="Render" DisplayName="도자기 암포라"/>
+    <part Name="Description" Short="그릇의 배는 신성합니다. 생명의 물을 나를 뿐 아니라, 유동하는 과거를 볼록한 현재 위로 투사하기 때문입니다."/>
+    </object>
+  <object Name="Village Monument Birdhouse" Load="Merge">
+    <part Name="Render" DisplayName="돌 비둘기집"/>
+    <part Name="Description" Short="작고 날개 달린 벗들을 위한 이 미드 홀에는, 그들이 이해할 수 없는 이야기들이 새겨져 있습니다."/>
+  </object>
+  <object Name="Village Monument Diptych" Load="Merge">
+    <part Name="Render" DisplayName="조각된 디프틱"/>
+    <part Name="Description" Short="이 돌에 새겨진 경계, 그 형상이 강요하는 환원적 이중성 속에 한 서사가 갇혀 있습니다."/>
+  </object>
+  <object Name="Village Monument Stele" Load="Merge">
+    <part Name="Render" DisplayName="돌 석비"/>
+    <part Name="Description" Short="고대의 돌에 새겨진 글리프가 현재로 굴절되어 들어옵니다."/>
+  </object>
+  <object Name="Village Monument Monolith" Load="Merge">
+    <part Name="Render" DisplayName="돌 모놀리스"/>
+    <part Name="Description" Short="이끼의 물질이, 조각된 바위가 불러낸 이야기 세계 속으로 스스로를 끼워 넣습니다."/>
+  </object>
+  <object Name="Village Monument Sculpture" Load="Merge">
+    <part Name="Render" DisplayName="크롬 조각"/>
+    <part Name="Description" Short="금속세공사의 손에서 막대와 띠가 분출하듯 튀어나와, 식으며 형상을 이루었습니다."/>
+    </object>
+  <object Name="Village Monument Orb" Load="Merge">
+    <part Name="Render" DisplayName="거대 구체"/>
+    <part Name="Description" Short="이상에 가깝게 매끈히 다듬어진 구체는 황동 다리 위에 들어 올려져, 공경의 대상이 되었습니다."/>
+  </object>
+  <object Name="Village Hologram 1" Load="Merge">
+    <part Name="Render" DisplayName="역사적 홀로그램"/>
+    <part Name="Description" Short="빛의 간섭 무늬가 깜빡이며, 모아레가 폭포처럼 흘러내리는 장면을 이룹니다."/>
+    </object>
+  <object Name="Village Hologram 2" Load="Merge">
+    <part Name="Render" DisplayName="역사적 홀로그램"/>
+    <part Name="Description" Short="빛의 간섭 무늬가 깜빡이며, 모아레가 폭포처럼 흘러내리는 장면을 이룹니다."/>
+    </object>
+	<object Name="Kyakukya Monument 1" Load="Merge">
+		<part Name="Render"/>
+		</object>
+	<object Name="Kyakukya Monument 2" Load="Merge">
+		<part Name="Render"/>
+		</object>
+	<object Name="Yd Village Monument 1" Load="Merge">
+    <part Name="Render"/>
+    </object>
+  <object Name="Yd Village Monument 2" Load="Merge">
+    <part Name="Render"/>
+    </object>
+
+  <!-- End village monuments -->
+
+  <!--
+
+    ***********
+       Signs
+    ***********
+
+  -->
+
+  <object Name="Sign" Load="Merge">
+    <part Name="Render"/>
+    <part Name="Description" Short="테라코타 판에 황토와 간 철가루로 채색해 두었습니다."/>
+    <part Name="Chat" Says="[알아볼 수 없는 휘갈김.]"/>
+    </object>
+
+  <!-- Merchant signs -->
+  <object Name="AppleSign1" Load="Merge">
+    <part Name="Render" DisplayName="간판"/>
+    <part Name="Chat" Says="스타애플과 사이더"/>
+  </object>
+  <object Name="AppleSign2" Load="Merge">
+    <part Name="Render" DisplayName="간판"/>
+    <part Name="Chat" Says="향신료 사이더"/>
+  </object>
+  <object Name="AppleSign3" Load="Merge">
+    <part Name="Render" DisplayName="간판"/>
+    <part Name="Chat" Says="사과. 맛있습니다."/>
+  </object>
+  <object Name="BookSign1" Load="Merge">
+    <part Name="Render" DisplayName="간판"/>
+    <part Name="Chat" Says="책"/>
+  </object>
+  <object Name="BookSign2" Load="Merge">
+    <part Name="Render" DisplayName="간판"/>
+    <part Name="Chat" Says="지혜와 지식"/>
+  </object>
+  <object Name="BookSign3" Load="Merge">
+    <part Name="Render" DisplayName="간판"/>
+    <part Name="Chat" Says="잉크 얼룩"/>
+  </object>
+  <object Name="BottleSign1" Load="Merge">
+    <part Name="Render" DisplayName="간판"/>
+    <part Name="Chat" Says="달콤한 꿀"/>
+  </object>
+  <object Name="BottleSign2" Load="Merge">
+    <part Name="Render" DisplayName="간판"/>
+    <part Name="Chat" Says="벌꿀즙"/>
+  </object>
+  <object Name="BottleSign3" Load="Merge">
+    <part Name="Render" DisplayName="간판"/>
+    <part Name="Chat" Says="끈적한 꿀"/>
+  </object>
+  <object Name="BootSign1" Load="Merge">
+    <part Name="Render" DisplayName="간판"/>
+    <part Name="Chat" Says="부츠 여기 있습니다!"/>
+  </object>
+  <object Name="BootSign2" Load="Merge">
+    <part Name="Render" DisplayName="간판"/>
+    <part Name="Chat" Says="부츠와 구두"/>
+  </object>
+  <object Name="BootSign3" Load="Merge">
+    <part Name="Render" DisplayName="간판"/>
+    <part Name="Chat" Says="구두장이"/>
+  </object>
+  <object Name="HatSign1" Load="Merge">
+    <part Name="Render" DisplayName="간판"/>
+    <part Name="Chat" Says="모자와 캡"/>
+  </object>
+  <object Name="HatSign2" Load="Merge">
+    <part Name="Render" DisplayName="간판"/>
+    <part Name="Chat" Says="연약한 머리를 가리세요"/>
+  </object>
+  <object Name="HatSign3" Load="Merge">
+    <part Name="Render" DisplayName="간판"/>
+    <part Name="Chat" Says="멋진 모자"/>
+  </object>
+  <object Name="GloveSign1" Load="Merge">
+    <part Name="Render" DisplayName="간판"/>
+    <part Name="Chat" Says="장갑과 벙어리장갑"/>
+  </object>
+  <object Name="GloveSign2" Load="Merge">
+    <part Name="Render" DisplayName="간판"/>
+    <part Name="Chat" Says="손가락 장갑"/>
+  </object>
+  <object Name="GloveSign3" Load="Merge">
+    <part Name="Render" DisplayName="간판"/>
+    <part Name="Chat" Says="지금 장갑을 끼세요"/>
+  </object>
+  <object Name="CloakSign1" Load="Merge">
+    <part Name="Render" DisplayName="간판"/>
+    <part Name="Chat" Says="망토와 케이프"/>
+  </object>
+  <object Name="CloakSign2" Load="Merge">
+    <part Name="Render" DisplayName="간판"/>
+    <part Name="Chat" Says="숄, 망토, 그 밖에도"/>
+  </object>
+  <object Name="CloakSign3" Load="Merge">
+    <part Name="Render" DisplayName="간판"/>
+    <part Name="Chat" Says="멋진 망토"/>
+  </object>
+  <object Name="ArmorSign1" Load="Merge">
+    <part Name="Render" DisplayName="간판"/>
+    <part Name="Chat" Says="조끼와 사슬 갑옷"/>
+  </object>
+  <object Name="ArmorSign2" Load="Merge">
+    <part Name="Render" DisplayName="간판"/>
+    <part Name="Chat" Says="각종 갑옷"/>
+  </object>
+  <object Name="ArmorSign3" Load="Merge">
+    <part Name="Render" DisplayName="간판"/>
+    <part Name="Chat" Says="흉갑"/>
+  </object>
+  <object Name="GunSign1" Load="Merge">
+    <part Name="Render" DisplayName="간판"/>
+    <part Name="Chat" Says="총과 탄약"/>
+  </object>
+  <object Name="GunSign2" Load="Merge">
+    <part Name="Render" DisplayName="간판"/>
+    <part Name="Chat" Says="권총, 소총, 그 밖에도"/>
+  </object>
+  <object Name="GunSign3" Load="Merge">
+    <part Name="Render" DisplayName="간판"/>
+    <part Name="Chat" Says="총!"/>
+  </object>
+  <object Name="DiscSign1" Load="Merge">
+    <part Name="Render" DisplayName="간판"/>
+    <part Name="Chat" Says="데이터 디스크"/>
+  </object>
+  <object Name="DiscSign2" Load="Merge">
+    <part Name="Render" DisplayName="간판"/>
+    <part Name="Chat" Says="설계도"/>
+  </object>
+  <object Name="DiscSign3" Load="Merge">
+    <part Name="Render" DisplayName="간판"/>
+    <part Name="Chat" Says="유물을 직접 제작하세요"/>
+  </object>
+  <object Name="LiquidSign1" Load="Merge">
+    <part Name="Render" DisplayName="간판"/>
+    <part Name="Chat" Says="이국적인 액체"/>
+  </object>
+  <object Name="LiquidSign2" Load="Merge">
+    <part Name="Render" DisplayName="간판"/>
+    <part Name="Chat" Says="이국적인 액체"/>
+  </object>
+  <object Name="LiquidSign3" Load="Merge">
+    <part Name="Render" DisplayName="간판"/>
+    <part Name="Chat" Says="이국적인 액체"/>
+  </object>
+  <object Name="JewelSign1" Load="Merge">
+    <part Name="Render" DisplayName="간판"/>
+    <part Name="Chat" Says="보석과 장신구"/>
+  </object>
+  <object Name="JewelSign2" Load="Merge">
+    <part Name="Render" DisplayName="간판"/>
+    <part Name="Chat" Says="보석 장식 상품"/>
+  </object>
+  <object Name="JewelSign3" Load="Merge">
+    <part Name="Render" DisplayName="간판"/>
+    <part Name="Chat" Says="보석 원석과 장신구"/>
+  </object>
+  <object Name="HookahSign1" Load="Merge">
+    <part Name="Render" DisplayName="간판"/>
+    <part Name="Chat" Says="박하 연기와 포도주"/>
+  </object>
+  <object Name="HookahSign2" Load="Merge">
+    <part Name="Render" DisplayName="간판"/>
+    <part Name="Chat" Says="물담배와 휴식"/>
+  </object>
+  <object Name="HookahSign3" Load="Merge">
+    <part Name="Render" DisplayName="간판"/>
+    <part Name="Chat" Says="흡연 라운지"/>
+  </object>
+  <object Name="GrenadeSign1" Load="Merge">
+    <part Name="Render" DisplayName="간판"/>
+    <part Name="Chat" Says="폭발물"/>
+  </object>
+  <object Name="GrenadeSign2" Load="Merge">
+    <part Name="Render" DisplayName="간판"/>
+    <part Name="Chat" Says="Boomspheres"/>
+  </object>
+  <object Name="GrenadeSign3" Load="Merge">
+    <part Name="Render" DisplayName="간판"/>
+    <part Name="Chat" Says="수류탄과 그 밖에도"/>
+  </object>
+  <object Name="PepperSign1" Load="Merge">
+    <part Name="Render" DisplayName="간판"/>
+    <part Name="Chat" Says="약제상"/>
+  </object>
+  <object Name="PepperSign2" Load="Merge">
+    <part Name="Render" DisplayName="간판"/>
+    <part Name="Chat" Says="약초와 강장제"/>
+  </object>
+  <object Name="PepperSign3" Load="Merge">
+    <part Name="Render" DisplayName="간판"/>
+    <part Name="Chat" Says="단일 약재"/>
+  </object>
+  <object Name="FoodSign1" Load="Merge">
+    <part Name="Render" DisplayName="간판"/>
+    <part Name="Chat" Says="식료품"/>
+  </object>
+  <object Name="FoodSign2" Load="Merge">
+    <part Name="Render" DisplayName="간판"/>
+    <part Name="Chat" Says="달콤하고 짭짤한 것"/>
+  </object>
+  <object Name="FoodSign3" Load="Merge">
+    <part Name="Render" DisplayName="간판"/>
+    <part Name="Chat" Says="매운 음식"/>
+  </object>
+  <object Name="PreserveSign1" Load="Merge">
+    <part Name="Render" DisplayName="간판"/>
+    <part Name="Chat" Says="보존 식품"/>
+  </object>
+  <object Name="PreserveSign2" Load="Merge">
+    <part Name="Render" DisplayName="간판"/>
+    <part Name="Chat" Says="음식과 향신료"/>
+  </object>
+  <object Name="PreserveSign3" Load="Merge">
+    <part Name="Render" DisplayName="간판"/>
+    <part Name="Chat" Says="요리 준비"/>
+  </object>
+  <object Name="PigSign" Load="Merge">
+    <part Name="Render" DisplayName="간판"/>
+    <part Name="Chat" Says="[알아볼 수 없는 휘갈김.]"/>
+  </object>
+  <object Name="WineSign1" Load="Merge">
+    <part Name="Render" DisplayName="간판"/>
+    <part Name="Chat" Says="포도주"/>
+  </object>
+  <object Name="WineSign2" Load="Merge">
+    <part Name="Render" DisplayName="간판"/>
+    <part Name="Chat" Says="포도마녀 양조"/>
+  </object>
+  <object Name="WineSign3" Load="Merge">
+    <part Name="Render" DisplayName="간판"/>
+    <part Name="Chat" Says="포도주 양조가"/>
+  </object>
+  <object Name="ImplantSign1" Load="Merge">
+    <part Name="Render" DisplayName="간판"/>
+    <part Name="Chat" Says="사이버네틱스"/>
+  </object>
+  <object Name="ImplantSign2" Load="Merge">
+    <part Name="Render" DisplayName="간판"/>
+    <part Name="Chat" Says="크롬 내장"/>
+  </object>
+  <object Name="ImplantSign3" Load="Merge">
+    <part Name="Render" DisplayName="간판"/>
+    <part Name="Chat" Says="기계와 사람을 위한 장기"/>
+  </object>
+
+  <!-- Village signs -->
+  <object Name="ArgyveSign" Load="Merge">
+    <part Name="Render" DisplayName="간판"/>
+    <part Name="Chat" Says="꺼져"/>
+  </object>
+  <object Name="JoppaNorthSign" Load="Merge">
+    <part Name="Render" DisplayName="간판"/>
+    <part Name="Chat" Says="묘지와 성소로"/>
+  </object>
+  <object Name="EzraSign" Load="Merge">
+    <part Name="Render" DisplayName="간판"/>
+    <part Name="Chat" Says="&#27; Ezra로"/>
+  </object>
+  <object Name="TamSign" Load="Merge">
+    <part Name="Render" DisplayName="간판"/>
+    <part Name="Chat" Says="소금 잡화"/>
+  </object>
+  <object Name="YurlSign" Load="Merge">
+    <part Name="Render" DisplayName="간판"/>
+    <part Name="Chat" Says="Consortium of Phyta에서 들여온 고급 물품"/>
+  </object>
+  <object Name="YlaSign" Load="Merge">
+    <part Name="Render" DisplayName="간판"/>
+    <part Name="Chat" Says="Omonporch 기기 수리"/>
+  </object>
+  <object Name="SixshrewSign" Load="Merge">
+    <part Name="Render" DisplayName="간판"/>
+    <part Name="Chat" Says="Consortium 교역소"/>
+  </object>
+  <object Name="JoppaMillSign" Load="Merge">
+    <part Name="Render" DisplayName="간판"/>
+    <part Name="Chat" Says="공동 방앗간"/>
+  </object>
+  <object Name="YdColumbariumSign" Load="Merge">
+    <part Name="Render" DisplayName="간판"/>
+    <part Name="Chat" Says="납골당"/>
+  </object>
+  <object Name="YdLivingQuartersSign" Load="Merge">
+    <part Name="Render" DisplayName="간판"/>
+    <part Name="Chat" Says="거주 구역"/>
+  </object>
+  <object Name="YdMedicalSign" Load="Merge">
+    <part Name="Render" DisplayName="간판"/>
+    <part Name="Chat" Says="요양"/>
+  </object>
+  <object Name="YdKitchenSign" Load="Merge">
+    <part Name="Render" DisplayName="간판"/>
+    <part Name="Chat" Says="주방"/>
+  </object>
+  <object Name="YdLibrarySign" Load="Merge">
+    <part Name="Render" DisplayName="간판"/>
+    <part Name="Chat" Says="도서관"/>
+  </object>
+  <object Name="YdMarketSign" Load="Merge">
+    <part Name="Render" DisplayName="간판"/>
+    <part Name="Chat" Says="시장"/>
+  </object>
+  <object Name="YdWorkshopSign" Load="Merge">
+    <part Name="Render" DisplayName="간판"/>
+    <part Name="Chat" Says="작업장"/>
+  </object>
+  <object Name="YdManyEyesSign" Load="Merge">
+    <part Name="Render" DisplayName="간판"/>
+    <part Name="Chat" Says="Many Eyes"/>
+  </object>
+  <object Name="YdSalonSign" Load="Merge">
+    <part Name="Render" DisplayName="간판"/>
+    <part Name="Chat" Says="살롱"/>
+  </object>
+
+  <!-- Crypt plaques -->
+  <object Name="CryptPlaqueTutor" Load="Merge">
+    <part Name="Render" DisplayName="명판이 달린 정교한 대리석 문"/>
+    <part Name="Description" Short=""/>
+    </object>
+  <object Name="CryptPlaqueWarrior" Load="Merge">
+    </object>
+  <object Name="CryptPlaquePriest" Load="Merge">
+    </object>
+  <object Name="CryptPlaqueRoyal" Load="Merge">
+    </object>
+
+
+  <!-- End signs -->
+
+  <!--
+
+    **********************
+       Burial furniture
+    **********************
+
+  -->
+
+  <!-- Tombstones -->
+  <object Name="Tombstone" Load="Merge">
+    <part Name="Render" DisplayName="묘비"/>
+    <part Name="Description" Short=""/>
+    </object>
+  <object Name="RachelsTombstone" Load="Merge">
+    </object>
+  <object Name="ReshephsCrypt" Load="Merge">
+    <part Name="Render" DisplayName="묘실"/>
+    </object>
+  <object Name="Mechanimist Tombstone" Load="Merge">
+    </object>
+
+  <!-- Urns -->
+  <object Name="Empty Urn" Load="Merge">
+    <part Name="Render" DisplayName="장례용 단지"/>
+    <part Name="Description" Short="별, 트리케트라, 구각형, 초승달 무늬 같은 기하학적 의미의 형상들이, 화장 용기 둘레의 고리진 줄들을 따라 테셀레이션처럼 촘촘히 맞물려 있습니다."/>
+    </object>
+  <object Name="Urn" Load="Merge">
+    <part Name="Render" DisplayName="장례용 단지"/>
+    <part Name="Description" Short=""/>
+    </object>
+  <object Name="YdFreeholderUrn" Load="Merge">
+    </object>
+  <object Name="GritGateUrnEmpty" Load="Merge">
+    </object>
+  <object Name="GritGateUrn" Load="Merge">
+    </object>
+  <object Name="TombUrn" Load="Merge">
+    </object>
+
+  <!-- Sarcophagi -->
+  <object Name="Sarcophagus" Load="Merge">
+    <part Name="Render" DisplayName="석관"/>
+    <part Name="Description" Short="지하 대지의 광활한 심연에서 캐낸 검은 대리석을, 죽은 이를 덮는 돌 이불로 정으로 쪼아 다듬었습니다."/>
+    </object>
+  <object Name="SultanSarcophagusW" Load="Merge">
+    <part Name="Render" DisplayName="황실 석관"/>
+    <part Name="Description" Short="유리 초승달 속에서 네온의 권운이 일렁이며, 술탄의 미리 형상화된 닮음을 통과해 빛을 쏘아 냅니다. 그리하여 흐릿한 형상이, 별 없는 거대한 검은 바위의 긴 의자 위로 바로 누운 듯 떠 있습니다. 예술가는 이것으로 어두운 평원 위의 번개 폭풍이나 강 수면 위에 떠 있는 백합 같은 것을 떠올리게 하려 했을지도 모릅니다. 움직이지 않는 몸 위를 떠도는, 밝고 기체 같은 정신을 나타내는 무엇을요."/>
+    </object>
+  <object Name="SultanSarcophagusE" Load="Merge">
+    <part Name="Render" DisplayName="황실 석관"/>
+    <part Name="Description" Short="유리 초승달 속에서 네온의 권운이 일렁이며, 술탄의 미리 형상화된 닮음을 통과해 빛을 쏘아 냅니다. 그리하여 흐릿한 형상이, 별 없는 거대한 검은 바위의 긴 의자 위로 바로 누운 듯 떠 있습니다. 예술가는 이것으로 어두운 평원 위의 번개 폭풍이나 강 수면 위에 떠 있는 백합 같은 것을 떠올리게 하려 했을지도 모릅니다. 움직이지 않는 몸 위를 떠도는, 밝고 기체 같은 정신을 나타내는 무엇을요."/>
+    </object>
+  <object Name="SultanSarcophagusWPeriod1" Load="Merge">
+    <part Name="Render" DisplayName="*Sultan1Name*의 황실 석관"/>
+    </object>
+  <object Name="SultanSarcophagusWPeriod2" Load="Merge">
+    <part Name="Render" DisplayName="*Sultan2Name*의 황실 석관"/>
+    </object>
+  <object Name="SultanSarcophagusWPeriod3" Load="Merge">
+    <part Name="Render" DisplayName="*Sultan3Name*의 황실 석관"/>
+    </object>
+  <object Name="SultanSarcophagusWPeriod4" Load="Merge">
+    <part Name="Render" DisplayName="*Sultan4Name*의 황실 석관"/>
+    </object>
+  <object Name="SultanSarcophagusWPeriod5" Load="Merge">
+    <part Name="Render" DisplayName="*Sultan5Name*의 황실 석관"/>
+    </object>
+  <object Name="SultanSarcophagusWPeriod6" Load="Merge">
+    </object>
+  <object Name="SultanSarcophagusEPeriod1" Load="Merge">
+    <part Name="Render" DisplayName="*Sultan1Name*의 황실 석관"/>
+    </object>
+  <object Name="SultanSarcophagusEPeriod2" Load="Merge">
+    <part Name="Render" DisplayName="*Sultan2Name*의 황실 석관"/>
+    </object>
+  <object Name="SultanSarcophagusEPeriod3" Load="Merge">
+    <part Name="Render" DisplayName="*Sultan3Name*의 황실 석관"/>
+    </object>
+  <object Name="SultanSarcophagusEPeriod4" Load="Merge">
+    <part Name="Render" DisplayName="*Sultan4Name*의 황실 석관"/>
+    </object>
+  <object Name="SultanSarcophagusEPeriod5" Load="Merge">
+    <part Name="Render" DisplayName="*Sultan5Name*의 황실 석관"/>
+    </object>
+  <object Name="SultanSarcophagusEPeriod6" Load="Merge">
+    </object>
+
+
+  <!-- End burial furniture -->
+
+	<!--
+
+    *****************************
+       Special quest furniture
+    *****************************
+
+  -->
+
+	<!-- Golem quest -->
+	<object Name="Golem Mound" Load="Merge">
+		<part Name="Render" DisplayName="고철과 점토의 무덤"/>
+		<part Name="Description" Short="젖은 점토가 바퀴와 납땜용 판에 달라붙어 있습니다. 그 위로 다이오드, 회로, 베인 펌프, 자석들이 꽃처럼 돋아나 있습니다."/>
+		</object>
+	
+	<!-- End special quest furniture -->
+
+	<!--
+
+    ***********************
+       Vehicle furniture
+    ***********************
+
+  -->
+
+	<object Name="VehicleGolemSupportColumn" Load="Merge">
+		<part Name="Render" DisplayName="지지 보"/>
+		<part Name="Description" Short="구조적 지지를 위해, 강철 둘레에 점토를 구워 올리고 갈비뼈 우리 안에 세워 두었습니다."/>
+	</object>
+	<object Name="VehicleGolemExit" Load="Merge">
+		<part Name="Render" DisplayName="출구 해치"/>
+		<part Name="Description" Short="접이식 크롬 패널 한 쌍이 기름칠된 레일 위에 맞춰져 있습니다."/>
+		</object>
+	<object Name="VehicleGolemSeat" Load="Merge">
+		<part Name="Render" DisplayName="조종석"/>
+		<part Name="Description" Short="청록색 폼이 등받이 안쪽과 깊은 좌석 홈을 덧대고 있으며, 곡선형 팔걸이 위로 계기판들이 늘어서 있습니다. 의자 전체는 탈출 모터 위에서 회전합니다."/>
+		</object>
+	<object Name="VehicleGolemPassengerSeat" Load="Merge">
+		<part Name="Render" DisplayName="승객석"/>
+		<part Name="Description" Short="청록색 폼이 등받이 안쪽과 깊은 좌석 홈을 덧대고 있으며, 오른쪽 팔걸이에는 단 하나의 다이얼이 달려 있습니다. 의자 전체는 탈출 모터 위에서 회전합니다."/>
+		</object>
+	<object Name="VehicleConsole N" Load="Merge">
+		<part Name="Render" DisplayName="조종 콘솔"/>
+		<part Name="Description" Short="국물 이슬에 축축한 금속 프레임 안에서, 유리 초승달 면에는 항법과 두 몸의 정렬을 위한 데이터 글리프가 그려져 있습니다. 큰 생물과 작은 생물의 3D 모형이 수직축을 따라 회전하고, 정신전기 스캔은 융합의 상태를 보여 줍니다."/>
+		</object>
+	<object Name="VehicleConsole S" Load="Merge">
+		<part Name="Render" DisplayName="조종 콘솔"/>
+	</object>
+	<object Name="GolemInteriorGlassHydraulicPipe" Load="Merge">
+		</object>
+
+	<object Name="MechExitHatch" Load="Merge">
+		<part Name="Render" DisplayName="출구 해치"/>
+	</object>
+	<object Name="MechPilotSeat" Load="Merge">
+		<part Name="Render"/>
+		<part Name="Description" Short="청록색 폼이 등받이 안쪽과 깊은 좌석 홈을 덧대고 있으며, 곡선형 팔걸이 위로 계기판들이 늘어서 있습니다. 의자 전체는 탈출 모터 위에서 회전합니다."/>		
+	</object>
+	
+	<!-- End vehicle furniture -->
+
+</objects>

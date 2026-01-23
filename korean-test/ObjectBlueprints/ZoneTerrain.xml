@@ -1,0 +1,734 @@
+<?xml version='1.0' encoding='utf-8'?>
+<objects>
+
+  <!--    
+    1 Plants
+    2 Fungi
+    3 Plant-likes
+    4 Floors
+    5 Obstacles
+    6 Up/down connection terrain   
+  -->
+
+  <!--
+
+    ************
+       Plants
+    ************
+
+  -->
+  
+  <object Name="Plant" Load="Merge">
+    <part Name="Render" DisplayName="[Plant]"/>
+    </object>
+  <object Name="SolidPlant" Load="Merge">
+    <part Name="Render"/>
+    </object>
+  <object Name="Tree" Load="Merge">
+    </object>
+  <object Name="SolidTree" Load="Merge">
+    <part Name="Render"/>
+    </object>
+  <object Name="Shimscale Mangrove Tree_blue" Load="Merge">
+    <part Name="Render" DisplayName="심스케일 맹그로브 나무"/>
+    <part Name="Description" Short="빛이 젖은 잎사귀 사이로 산발적으로 새어 나오고, 뿌리는 밀랍 기둥열이 미로처럼 녹아내렸다가 다시 굳어 버린 듯합니다."/>
+    </object>
+  <object Name="Shimscale Mangrove Tree" Load="Merge">
+    <part Name="Render" DisplayName="심스케일 맹그로브 나무"/>
+		<part Name="Description" Short="빛이 젖은 잎사귀 사이로 산발적으로 새어 나오고, 뿌리는 밀랍 기둥열이 미로처럼 녹아내렸다가 다시 굳어 버린 듯합니다."/>
+		</object>
+  <object Name="Holographic Shimscale Mangrove Tree" Load="Merge">
+    </object>
+  <object Name="Banana Tree" Load="Merge">
+    <part Name="Render" DisplayName="바나나 나무"/>
+    <part Name="Description" Short="열매 맺은 송이들이 그리프터 나무의 줄기를 타고 올라가 있습니다. 드러난 구근의 표면에 빛이 걸리면, Spindle의 반짝임이 그것을 넓어진 숲으로 되비추어 보냅니다."/>
+    </object>
+  <object Name="Holographic Banana Tree" Load="Merge">
+    </object>  
+  <object Name="Dogthorn Tree" Load="Merge">
+    <part Name="Render" DisplayName="도그손 나무"/>
+    <part Name="Description" Short="뒤엉킨 뿌리의 둥지가 땅을 뚫고 흘러나와 있습니다. 나무껍질은 뾰족한 가시로 쪼개져 있고, 잎은 기름지고 악취가 납니다."/>
+		</object>
+  <object Name="Holographic Dogthorn Tree" Load="Merge">
+    </object>
+  <object Name="Leafless Dogthorn Tree" Load="Merge">
+    <part Name="Render" DisplayName="도그손 나무"/>
+    <part Name="Description" Short="뒤엉킨 뿌리의 둥지가 땅을 뚫고 흘러나와 있습니다. 나무껍질은 뾰족한 가시로 쪼개져 있습니다."/>
+    </object>
+  <object Name="Dogthorn Tree2" Load="Merge">
+  </object>
+  <object Name="Fracti" Load="Merge">
+    <part Name="Render" DisplayName="프랙투스"/>
+    <part Name="Description" Short="유난히 가시 돋친 페아노 패치입니다."/>
+    </object>
+  <object Name="Fracti2" Load="Merge">
+    <part Name="Render"/>
+    </object>
+  <object Name="Fracti3" Load="Merge">
+    <part Name="Render"/>
+    </object>
+  <object Name="Starapple Tree" Load="Merge">
+    <part Name="Render" DisplayName="별사과 나무"/>
+    <part Name="Description" Short="잿빛 가지에 별사과가 매달려 있어, 바랜 풍경 속에서 농밀한 붉은빛의 티끌처럼 빛나고 있습니다."/>
+    </object>
+  <object Name="Starapple Tree Barathrumite" Load="Merge">
+    </object>
+  <object Name="Starapple Farm Tree" Load="Merge">
+    </object>
+  <object Name="Starapple Farm Ezra" Load="Merge">
+    </object>
+  <object Name="Starapple Tree Ripe" Load="Merge">
+    <part Name="Render" DisplayName="별사과 나무"/>
+    <part Name="Description" Short="잿빛 가지에 별사과가 매달려 있어, 바랜 풍경 속에서 농밀한 붉은빛의 티끌처럼 빛나고 있습니다."/>
+    </object>
+  <object Name="Witchwood Tree" Load="Merge">
+    <part Name="Render" DisplayName="마녀나무"/>
+    <part Name="Description" Short="사막 바람에 습기가 실리면 황금빛 잎자루가 펼쳐집니다. 작은 교차 고리로 모아진 나무껍질 조각들이 나무를 뜯어 먹는 초식성 생물들에게 씹혀 떨어져 나갔습니다."/>
+		</object>
+  <object Name="Dreadroot" Load="Merge">
+    <part Name="Render" DisplayName="공포뿌리"/>
+    <part Name="Description" Short="덩이줄기의 배가 땅을 울리는 저음으로 웅웅거리며, 그 위로 껍질이 벗겨지고 있습니다. 새순들은 거슬리는 스타카토처럼 들쑥날쑥 맥박치며 떨립니다."/>
+    </object>
+  <object Name="Sunflower" Load="Merge">
+    <part Name="Render" DisplayName="해바라기"/>
+    <part Name="Description" Short="더 어둡고 소용돌이치는 꽃송이 원반의 중심에서, 밝은 꽃송이들이 폭발하듯 피어납니다. 모두 합쳐 작은 태양처럼 보입니다."/>
+    </object>  
+  <object Name="Dicalyptus Tree" Load="Merge">
+    <part Name="Render" DisplayName="디칼립투스 나무"/>
+    <part Name="Description" Short="곤충에게 갉아먹힌 나무껍질이 오두막만 한 굵기로 하늘을 향해 치솟고, 끝에서는 잎이 무성한 수관으로 퍼져 나갑니다."/>
+    </object>
+  <object Name="Holographic Dicalyptus Tree" Load="Merge">
+    </object>
+  <object Name="Lahbloom" Load="Merge">
+    <part Name="Render" DisplayName="라블룸"/>
+    <part Name="Description" Short="곤충들이 굵어진 줄기 위로 축 늘어진 황갈색 꽃잎 네 장 주변을 맴돌며 윙윙거립니다. 무언가 닿으면, 꽃송이가 꿈결 같은 분노로 홱 치켜올라 덤벼듭니다."/>
+  </object>
+  <object Name="Yuckwheat" Load="Merge">
+    <part Name="Render" DisplayName="역겨밀"/>
+    <part Name="Description" Short="산호빛 꽃잎이 가느다란 줄기 꼭대기에서 돋아납니다. 금속이나 뼈로 된 발굽이 이웃 개체들을 짓밟아, 산성 섬유질을 흙바닥에 흩뿌려 놓았습니다."/>
+    </object>
+  <object Name="Yuckwheat Barathrumite" Load="Merge">
+    </object>
+  <object Name="Watervine" Load="Merge">
+    <part Name="Render" DisplayName="물덩굴"/>
+    <part Name="Description" Short="골 사이로 소금이 모여듭니다. 잎 대신 수분을 머금어 부푼 얇은 판들이 매듭처럼 엉겨 있습니다."/>
+    </object>
+  <object Name="Watervine Barathrumite" Load="Merge">
+    </object>
+
+  <object Name="Gnawed Watervine" Load="Merge">
+    <part Name="Render" DisplayName="갉아먹힌 물덩굴"/>
+    <part Name="Description" Short="골 사이로 소금이 모여듭니다. 잎 대신 수분을 머금어 부푼 얇은 판들이 매듭처럼 엉겨 있고, 반쯤 뜯어먹힌 듯해 보입니다."/>
+    </object>
+  <object Name="Brinestalk" Load="Merge">
+    <part Name="Render" DisplayName="염수줄기"/>
+    <part Name="Description" Short="섬유질의 염분 부패가 굵은 말뚝처럼 솟아, 이 염수 웅덩이들의 경계를 표시하고 있습니다. 누구의 것도 아닙니다."/>
+    </object>
+  <object Name="Swarmshade Tree_blue" Load="Merge">
+    <part Name="Render" DisplayName="스웜셰이드 나무"/>
+    <part Name="Description" Short="삽날 같은 잎들의 성운이, 마른 개울의 사각거림과 딱정벌레가 갉아먹는 소리에 맞춰 스치듯 흔들립니다."/>
+    </object>
+  <object Name="Swarmshade Tree" Load="Merge">
+    <part Name="Render" DisplayName="스웜셰이드 나무"/>
+    <part Name="Description" Short="삽날 같은 잎들의 성운이, 마른 개울의 사각거림과 딱정벌레가 갉아먹는 소리에 맞춰 스치듯 흔들립니다."/>
+    </object>
+  <object Name="Holographic Swarmshade Tree" Load="Merge">
+    </object>
+  <object Name="Ziv Bough_blue" Load="Merge">
+    <part Name="Render" DisplayName="지브 가지"/>
+    <part Name="Description" Short="줄기 기둥이 빛의 방사 경로를 따라 나사처럼 꼬여 오르며, 승리의 월계관 같은 수관을 피워 올립니다."/>
+		</object>
+  <object Name="Ziv Bough" Load="Merge">
+    <part Name="Render" DisplayName="지브 가지"/>
+		<part Name="Description" Short="줄기 기둥이 빛의 방사 경로를 따라 나사처럼 꼬여 오르며, 승리의 월계관 같은 수관을 피워 올립니다."/>
+		</object>
+  <object Name="Holographic Ziv Bough" Load="Merge">
+    </object>
+	<object Name="Star Palm" Load="Merge">
+		<part Name="Render" DisplayName="별 야자"/>
+		<part Name="Description" Short="태양에 흠뻑 취한 잎자루가, 벌레 자국이 남은 녹아내린 별 모양의 줄기에 기대어 축 늘어져 있습니다."/>				
+		</object>
+	<object Name="Holographic Star Palm" Load="Merge">
+		</object>
+  <object Name="Slime Grass" Load="Merge">
+    <part Name="Render" DisplayName="찌꺼기풀"/>
+    <part Name="Description" Short="가닥들이 거품 이는 막으로 번들거리며 빛나고 있습니다."/>
+    </object>  
+  <object Name="Grave Moss" Load="Merge">
+    <part Name="Render" DisplayName="무덤 이끼"/>
+    <part Name="Description" Short="무채색이고 부스러지기 쉬워, 밟으면 바삭하게 으스러집니다. 매트처럼 군집하는 방식은, 한때 이끼가 피어났고 또다시 짙은 붉은 피로 피어나게 될 ‘생명으로 젖은 몸의 둑’ 형태를 따라야만 하는 듯합니다."/>
+    </object>
+  <object Name="Stillvine" Load="Merge">
+    <part Name="Render" DisplayName="고요덩굴"/>
+    <part Name="Description" Short="유령 같은 줄기들이 그림처럼 정지한 모습으로 비틀려 있고, 꽃눈에는 수분이 맺혀 있습니다."/>
+    </object>   
+  <object Name="Nimbus Beam" Load="Merge">
+    <part Name="Render" DisplayName="님버스 기둥"/>
+    <part Name="Description" Short="산성의 복슬한 고리와 머틀빛 초록 잎들이, 하늘을 향한 나무 미나레트의 길이를 따라 두르고 있습니다. 꼭대기는 수관을 뚫고 솟아올라, 태양을 마시는 놀이에서 승리를 거머쥡니다."/>
+    </object>
+  <object Name="Nachash Tree" Load="Merge">
+    <part Name="Render" DisplayName="나하쉬 나무"/>
+    <part Name="Description" Short="이끼로 미끈한 새순들이, 축 늘어진 줄기 꼭대기에서 암메두사처럼 또아리를 틀고 있습니다. 공기가 그것들을 더욱 흐트러 놓습니다."/>
+    </object>
+  <object Name="Urberry Bush" Load="Merge">
+    <part Name="Render" DisplayName="어베리 관목"/>
+    <part Name="Description" Short="궁륭진 뿌리 격자의 아래편으로, 잎들이 완벽한 각도로 뻗어 햇빛을 거르고, 어베리 꽃눈을 부드러운 황금빛 온기로 목욕시키고 있습니다."/>
+    </object>
+	<object Name="n-Ary Tree" Load="Merge">
+		<part Name="Render" DisplayName="엔-에어리 나무"/>
+		<part Name="Description" Short="밝은 스팽글 잎들이 남색 별자리처럼 반짝이고, 가지들은 엔트로피 곰팡이 사이로 갈라져 뻗어 나갑니다."/>
+		</object>
+	<object Name="Glitchwood Tree" Load="Merge">
+		<part Name="Render" DisplayName="글리치우드 나무"/>
+		<part Name="Description" Short="굽은 뿌리들이 위로 뚫고 올라가 보송한 수관을 이룹니다. 눈은 잎 하나하나의 경계를 그리려 하지만, 그 빛의 선들이 지직거리며 튀고 도함수를 잃어버립니다."/>
+		</object>
+	<object Name="Icosahedar" Load="Merge">
+		<part Name="Render" DisplayName="이코사헤다르"/>
+		<part Name="Description" Short="밀랍 같은 가지들이 대수적 덩이뿌리의 무게에 축 늘어져 있습니다. 각각은 완벽하고 규칙적이며, 면들은 윤기 없는 플라톤의 이슬로 무광택처럼 젖어 있습니다."/>
+		</object>
+	<object Name="Noisegrass" Load="Merge">
+		<part Name="Render" DisplayName="소음풀"/>
+		<part Name="Description" Short="실재하는 잠재력이 거친 물결을 타고 뿌리줄기를 서핑하듯 흐르다가, 양자화되어 나무질의 풀잎으로 굳어집니다."/>
+		</object>
+
+  <!-- Unique -->
+  <object Name="Yempuris" Load="Merge">
+    <part Name="Render" DisplayName="옘푸리스 파이"/>
+    <part Name="Description" Short="초록빛 탁엽의 방울들이 생기를 띤 격자 성장의 고리로 배열되어 있습니다. 그 속도는 마법 같으며, 식물세계의 진지하고 쉼 없이 앞으로 나아가는 의지가 이곳에 백만 배로 담겨 있습니다."/>
+    </object>
+
+  
+  <!-- End plants -->
+
+  <!--
+
+    ***********
+       Fungi
+    ***********
+
+  -->  
+  <object Name="Fungus" Load="Merge">
+    <part Name="Render" DisplayName="[균류]"/>
+    </object>
+  <object Name="SolidFungus" Load="Merge">
+    <part Name="Render"/>
+    </object>
+  <object Name="Godshroom" Load="Merge">
+    <part Name="Render" DisplayName="{{o|엘카틀}}"/>
+    <part Name="Description" Short="투명하게 빛나는 산호가 깃든 듯한 자태를 한 이 버섯은, 그 무엇과도 다르게 눈길을 사로잡습니다. Qud에서는 이런 빛깔을 본 적이 없기에, 당신은 스스로에게 묻습니다. 대체 어떤 찬란한 빗줄기가 이 살을 물들였을까요? 무지개 숲의 흙 속에 미라처럼 묻힌 Eaters의 한 조각이라도 되는 걸까요?"/>
+    </object>
+  <object Name="Brightshroom" Load="Merge">
+    <part Name="Render" DisplayName="빛버섯"/>
+    <part Name="Description" Short="빛나는 균사들이 부드러운 광채를 흘려 보내, 땅등불의 둥근 갓 속으로 밀어 올리고 있습니다."/>
+    </object>
+  <object Name="Spotted Shagspook" Load="Merge">
+    <part Name="Render" DisplayName="점박이 샤그스푹"/>
+    <part Name="Description" Short="자루는 나무줄기처럼 굵고, 거대한 갓의 반점들에는 가루가 내려앉아 있습니다. 껍질의 색은 근처 weep에서 흘러나온 액체 염료입니다."/>
+    </object>
+  <object Name="Dandy Cap" Load="Merge">
+    <part Name="Render" DisplayName="멋쟁이 갓"/>
+    <part Name="Description" Short="자연은, 가늘고 휘어진 자루와 아랫면에서 오그라드는 주름살에 멋쟁이 갓을 물려주었습니다. 껍질의 색은 근처 weep에서 흘러나온 액체 염료입니다."/>
+    </object>
+  <object Name="Arsplice Hyphae" Load="Merge">
+    <part Name="Render" DisplayName="아르스플라이스 균사"/>
+    <part Name="Description" Short="풀-산호-균류가 뒤엉겨 섞인 잡종들이 땋아 만든 요정 고리들이, 그 그늘진 네트워크를 따라 군데군데 솟아오르고, 복제된 버팀대를 외피처럼 분비해 감싸고 있습니다."/>
+    </object>
+  <object Name="Arsplice Hyphae A" Load="Merge">
+    </object>
+  <object Name="Arsplice Hyphae B" Load="Merge">
+    </object>
+
+  <!-- End fungi -->
+
+  <!--
+
+    *****************
+       Plant-likes
+    *****************
+
+  -->
+
+  <!-- Corals -->
+  <object Name="Coral" Load="Merge">
+    <part Name="Render" DisplayName="[산호]"/>
+    </object>
+  <object Name="PolypCache" Load="Merge">
+    <part Name="Render" DisplayName="부풀어 오른 구근"/>
+    <part Name="Description" Short="폴립 군집의 촉수에 들러붙어, 부식된 지주에서 딱정벌레처럼 튀어나온 부풀어 오른 막 덩어리가 있습니다. 탄소에 녹아내린 백금 점액의 밝은 국물이 그 안에서 타오르고 있습니다."/>
+    </object>
+  <object Name="Coral Polyp" Load="Merge">
+    <part Name="Render" DisplayName="산호 폴립"/>
+    <part Name="Description" Short="촉수들이 해골 같은 항아리 기둥 위에서 고리 모양으로 흔들리고 있습니다. 구강 반대쪽은 다른 폴립들과 엮여, 화석화된 아콜로지를 이루고 있습니다."/>
+    </object>
+  <object Name="Coral Polyp A" Load="Merge">
+    </object>
+  <object Name="Coral Polyp B" Load="Merge">
+    </object>
+  <object Name="Coral and Palladium Strut" Load="Merge">
+    <part Name="Render" DisplayName="산호가 자란 팔라듐 지주"/>
+    <part Name="Description" Short="활 모양 폴립들이 격자의 원통형 토폴로지에 자리 잡고, 생명의 그물망 속에서 직교하는 이웃 구획을 짜 맞추고 있습니다."/>
+    </object>
+  <object Name="Coral and Palladium Strut A" Load="Merge">
+    </object>
+  <object Name="Coral and Palladium Strut B" Load="Merge">
+    </object>
+  <object Name="Finger Coral" Load="Merge">
+    <part Name="Render" DisplayName="손가락 산호"/>
+    <part Name="Description" Short="연체 생물들이 자신들의 아콜로지 벽을 석회질로 분비해, 공중을 향해 기어오르는 첨탑처럼 세워 올립니다. 표면은 돌처럼 거칠고, 속 빈 틈에는 미소한 생명들이 깃들어 있습니다."/>
+    <tag Name="Gender" Value="plural"/>
+    </object>
+
+  <!-- Palladium struts -->
+  <object Name="Palladium Strut" Load="Merge">
+    <part Name="Render" DisplayName="팔라듐 지주"/>
+    <part Name="Description" Short="저온에 다져진 외피가 직각으로 맞물린 원통들 위에 주근깨처럼 박혀 있습니다. 더 무른 금속의 광택이 비집고 나오는데, 은백색 팔라듐입니다. 한때 거대한 아콜로지 격자 전반에서 수전도와 전기전도를 맡았던 금속입니다."/>
+    </object>
+  <object Name="Palladium Strut A" Load="Merge">
+    </object>
+  <object Name="Palladium Strut B" Load="Merge">
+    </object>
+
+  <!-- Sponges -->
+  <object Name="Sponge" Load="Merge">
+    <part Name="Render" DisplayName="[해면]"/>
+    </object>
+  <object Name="Tunnel Sponge" Load="Merge">
+    <part Name="Render" DisplayName="터널 해면"/>
+    <part Name="Description" Short="스폰진의 다공성 골격이 뒤집힌 터널 바위언덕에서, 돌처럼 각을 세운 채 삐죽삐죽 솟아 있습니다."/>
+    </object>
+  <object Name="Bop Sponge" Load="Merge">
+    <part Name="Render" DisplayName="밥 해면"/>
+    <part Name="Description" Short="여러 겹으로 쌓인 젤리가, 조류를 걸러 씹어 먹도록 구멍이 난 구상체로 빚어진 것이며, 말랑말랑 흔들립니다."/>
+    </object>
+  <object Name="Farm Bop Sponge" Load="Merge">
+    </object>
+
+	<!-- Crystal -->
+	<object Name="Crystal" Load="Merge">
+		<part Name="Render" DisplayName="[결정]"/>
+		</object>
+	<object Name="Psychal Rhythm Rock" Load="Merge">
+		<part Name="Render" DisplayName="심령 리듬 바위"/>
+		<part Name="Description" Short="종유석 같은 프리즘들이, 심령의 바다 너머 수조에 이르는 존재들의 압축된 생각물질을 더듬거리듯 웅얼거리며 울리고 있습니다."/>
+		</object>
+	
+	<!-- Chavvah -->
+	<object Name="Chavvah Branch" Load="Merge">
+		<part Name="Render" DisplayName="결정질 가지"/>
+		<part Name="Description" Short="백열하는 결정의 미세 기둥들이 촘촘한 꽃다발처럼 묶여 있고, 장엄한 프랙탈로 하늘을 향해 가지를 뻗고 있습니다. 그것들은 달빛을 서로에게 되받아 던집니다."/>
+		</object>
+	<object Name="Chavvah Dense Leaves" Load="Merge">
+		<part Name="Render" DisplayName="빽빽한 결정 잎"/>
+		<part Name="Description" Short="정전기 이슬 방울이 날카로운 결정의 모서리를 보풀처럼 흐리게 만들고 있습니다. 잎의 평면 자체가 찬란히 빛나며, 심령의 바람에 사각사각 몸을 떱니다. 전체로 보면, 마음과 몸의 경계를 가로질러 뒤집히는 스팽글처럼 흘러갑니다."/>
+		<tag Name="Gender" Value="plural"/>
+	</object>
+	<object Name="Chavvah Sparse Leaves" Load="Merge">
+		<part Name="Render" DisplayName="성긴 결정 잎"/>
+		<part Name="Description" Short="정전기 이슬 방울이 날카로운 결정의 모서리를 보풀처럼 흐리게 만들고 있습니다. 잎의 평면 자체가 찬란히 빛나며, 심령의 바람에 사각사각 몸을 떱니다. 전체로 보면, 마음과 몸의 경계를 가로질러 뒤집히는 스팽글처럼 흘러갑니다."/>
+		<tag Name="Gender" Value="plural"/>
+	</object>
+	<object Name="Chavvah Chime Left" Load="Merge">
+		<part Name="Render" DisplayName="울림바위"/>
+		<part Name="Description" Short="정전기가 모서리를 밀랍처럼 깎아냈고, 결정 구근들은 변환된 달빛으로 타오르고 있습니다. 가까운 음과 먼 음으로 울려 퍼집니다."/>
+		</object>
+	<object Name="Chavvah Chime Right" Load="Merge">
+		<part Name="Render" DisplayName="울림바위"/>
+		<part Name="Description" Short="정전기가 모서리를 밀랍처럼 깎아냈고, 결정 구근들은 변환된 달빛으로 타오르고 있습니다. 가까운 음과 먼 음으로 울려 퍼집니다."/>
+		</object>	
+	<object Name="Chavvah Taproot Floor" Load="Merge">
+		<part Name="Render" DisplayName="결정질 곧은뿌리"/>
+		<part Name="Description" Short="작은 결정 새순들이 순수한 자아의 무게에 짓눌려, 굵고 다부지며 균형 잡힌 찰나의 생각-연질 트란듀서로 압착되었습니다. 탈결맞음이 된 감정과 기억이 뿌리를 타고 치솟으며 결정화됩니다."/>
+		</object>
+	<object Name="Crystalline Root" Load="Merge">
+		<part Name="Render" DisplayName="결정질 뿌리"/>
+		<part Name="Description" Short="섬세한 결정의 육각 섬유들이 땅속을 감아 돌며, 주변의 심령 발광을 체관을 따라 지성 있는 종들림까지 끌어올리고 있습니다."/>
+		</object>
+	<object Name="Crystalline Radicle" Load="Merge">
+		<part Name="Render" DisplayName="어린 결정질 뿌리"/>
+		<part Name="Description" Short="섬세하고 막 벗겨진 결정의 육각 섬유들이 땅속을 감아 돌며, 심령 이전의 충만함으로 떨리고 있습니다. 이들은 이른 빛을 뿜어 냅니다."/>
+		</object>
+	<object Name="TauSoft" Load="Merge">
+		<part Name="Render" DisplayName="빛나는 소프트"/>
+		<part Name="Description" Short="심장뿌리들이 결정 나무의 벌어진 심령 결절에서 뒤엉켜 있습니다. 그것들은 기체 같은 감각물질의 빛으로 타오르며, 더 깊은 차원의 뒤틀림이 흙과 바위 속의 주변 질서 조각들을 살아 움직이게 하고 있습니다. 이곳은 심령의 바다에 난 해안입니다."/>
+		</object>
+
+	<!-- Stalagmites -->
+	<object Name="BaseStalagmite" Load="Merge">
+		<part Name="Render" DisplayName="석순"/>
+		</object>
+	<object Name="MiasmaticStalagmite" Load="Merge">
+		<part Name="Description" Short="유선석의 팔다리 한 분대가 동굴 바닥을 움켜쥐고 있고, 띠무늬 방해석 줄기가 썩어 가는 공기 속으로 고개를 내밀고 있습니다. 빙글빙글 도는 꼭대기는 뼈로 만든 증기에 감싸여 있습니다."/>
+		<part Name="Render" DisplayName="잿빛 석순"/>
+		</object>
+
+	<!-- End plant-likes -->
+
+  <!--
+
+    ************
+       Floors
+    ************
+
+  -->
+  <object Name="Floor" Load="Merge">
+    <part Name="Render" DisplayName="[지면]"/>
+    </object>
+  <object Name="ClamGrass" Load="Merge">
+    <part Name="Render" DisplayName="[지면]"/>
+    </object>
+  <object Name="ArenaFloor" Load="Merge">
+    <part Name="Render" DisplayName="[지면]"/>
+    </object>
+  <object Name="VestibuleFloor" Load="Merge">
+    <part Name="Render"/>    
+    </object>
+  <object Name="DirtFloor" Load="Merge">
+    <part Name="Render" DisplayName="다져진 흙바닥"/>
+    </object>
+  <object Name="DirtPath" Load="Merge">
+    <part Name="Render" DisplayName="흙길"/>
+    </object>
+  <object Name="DirtRoad" Load="Merge">
+    <part Name="Render" DisplayName="흙길"/>
+    </object>
+  <object Name="SaltPath" Load="Merge">
+    <part Name="Render" DisplayName="염암 길"/>
+    </object>
+  <object Name="PaintedFlowers" Load="Merge">
+    <part Name="Render" DisplayName="염암 길"/>
+    </object>
+  <object Name="WhiteTile" Load="Merge">
+    <part Name="Render" DisplayName="흰 타일"/>
+    </object>
+  <object Name="GreenTile" Load="Merge">
+    <part Name="Render" DisplayName="초록 타일"/>
+    </object>
+  <object Name="RedTile" Load="Merge">
+    <part Name="Render" DisplayName="빨간 타일"/>
+    </object>
+  <object Name="FungalTrailBrick" Load="Merge">
+    <part Name="Render" DisplayName="산호 길"/>
+		<part Name="Description" Short="산호 벽돌이 어느 다른 곳으로 향하는 길을 테셀레이션처럼 이어 주고 있습니다."/>
+    </object>
+  <object Name="CryptTrail" Load="Merge">
+    <part Name="Render" DisplayName="검은 대리석 보도"/>
+    <part Name="Description" Short="검은 대리석 직사각형이 길을 테셀레이션처럼 메우고 있습니다."/>
+    </object>
+  <object Name="StiltTile" Load="Merge">
+    <part Name="Render" DisplayName="흰 타일"/>
+    </object>
+  <object Name="RandomFlower" RenderLayer="0" Load="Merge">
+    </object>
+  <object Name="Walkway" Load="Merge">
+    <part Name="Render" DisplayName="[보도]"/>    
+    </object>
+  <object Name="Bridge" Load="Merge">
+    <part Name="Render" DisplayName="다리"/>
+    <part Name="Description" Short="벽돌 직사각형이 길을 테셀레이션처럼 메우고 있습니다."/>
+    </object>  
+  <object Name="MetalWalkway" Load="Merge">
+    <part Name="Render" DisplayName="금속 보도"/>
+    <part Name="Description" Short="금속 직사각형이 길을 테셀레이션처럼 메우고 있습니다."/>
+    </object>
+  <object Name="BrickWalkway" Load="Merge">
+    <part Name="Render" DisplayName="벽돌 보도"/>
+    <part Name="Description" Short="벽돌 직사각형이 길을 테셀레이션처럼 메우고 있습니다."/>
+    </object>
+  <object Name="MarbleWalkway" Load="Merge">
+    <part Name="Render" DisplayName="대리석 보도"/>
+    <part Name="Description" Short="대리석 직사각형이 길을 테셀레이션처럼 메우고 있습니다."/>
+    </object>
+  <object Name="BlackMarbleWalkway" Load="Merge">
+    <part Name="Render" DisplayName="검은 대리석 보도"/>
+    <part Name="Description" Short="검은 대리석 직사각형이 길을 테셀레이션처럼 메우고 있습니다."/>
+    </object>
+	<object Name="GreyMarbleWalkway" Load="Merge">
+		<part Name="Render" DisplayName="대리석 보도"/>
+		<part Name="Description" Short="회색 대리석 직사각형이 길을 테셀레이션처럼 메우고 있습니다."/>
+		</object>
+  <object Name="WoodFloor" Load="Merge">
+    <part Name="Render" DisplayName="나무 바닥"/>
+    </object>
+  <object Name="MarbleFloor" Load="Merge">
+    <part Name="Render" DisplayName="[지면]"/>
+    </object>
+  <object Name="BlueMarbleFloor" Load="Merge">
+    <part Name="Render"/>
+  </object>
+  <object Name="GoldMarbleFloor" Load="Merge">
+    <part Name="Render"/>
+  </object>
+  <object Name="GreyMarbleFloor" Load="Merge">
+    <part Name="Render"/>
+  </object>
+  <object Name="BrineBridge" Load="Merge">
+    <part Name="Render" DisplayName="다리"/>
+    <part Name="Description" Short="말린 염수줄기로 만든 다리입니다."/>
+    </object>
+  <object Name="SaltDune" Load="Merge">
+    <part Name="Render" DisplayName="소금 언덕"/>
+  </object>
+  <object Name="HighSaltDune" Load="Merge">
+    <part Name="Render" DisplayName="소금 언덕"/>
+    </object>
+  <object Name="HighSaltDuneWhite" Load="Merge">
+    <part Name="Render"/>
+    </object>
+  <object Name="HighSaltDuneCyan" Load="Merge">
+    <part Name="Render"/>
+    </object>
+  <object Name="HighSaltDune1White" Load="Merge">
+    <part Name="Render"/>
+  </object>
+  <object Name="HighSaltDune2White" Load="Merge">
+    <part Name="Render"/>
+  </object>
+  <object Name="HighSaltDune3White" Load="Merge">
+    <part Name="Render"/>
+  </object>
+  <object Name="HighSaltDune4White" Load="Merge">
+    <part Name="Render"/>
+  </object>
+  <object Name="HighSaltDune5White" Load="Merge">
+    <part Name="Render"/>
+  </object>
+  <object Name="HighSaltDune6White" Load="Merge">
+    <part Name="Render"/>
+  </object>
+  <object Name="HighSaltDune7White" Load="Merge">
+    <part Name="Render"/>
+  </object>
+  <object Name="HighSaltDune8White" Load="Merge">
+    <part Name="Render"/>
+  </object>
+  <object Name="HighSaltDune9White" Load="Merge">
+    <part Name="Render"/>
+  </object>
+  <object Name="HighSaltDune10White" Load="Merge">
+    <part Name="Render"/>
+  </object>
+  <object Name="HighSaltDune11White" Load="Merge">
+    <part Name="Render"/>
+  </object>
+  <object Name="HighSaltDune12White" Load="Merge">
+    <part Name="Render"/>
+  </object>
+  <object Name="HighSaltDune1Cyan" Load="Merge">
+    <part Name="Render"/>
+  </object>
+  <object Name="HighSaltDune2Cyan" Load="Merge">
+    <part Name="Render"/>
+  </object>
+  <object Name="HighSaltDune3Cyan" Load="Merge">
+    <part Name="Render"/>
+  </object>
+  <object Name="HighSaltDune4Cyan" Load="Merge">
+    <part Name="Render"/>
+  </object>
+  <object Name="HighSaltDune5Cyan" Load="Merge">
+    <part Name="Render"/>
+  </object>
+  <object Name="HighSaltDune6Cyan" Load="Merge">
+    <part Name="Render"/>
+  </object>
+  <object Name="HighSaltDune7Cyan" Load="Merge">
+    <part Name="Render"/>
+  </object>
+  <object Name="HighSaltDune8Cyan" Load="Merge">
+    <part Name="Render"/>
+  </object>
+  <object Name="HighSaltDune9Cyan" Load="Merge">
+    <part Name="Render"/>
+  </object>
+  <object Name="HighSaltDune10Cyan" Load="Merge">
+    <part Name="Render"/>
+  </object>
+  <object Name="HighSaltDune11Cyan" Load="Merge">
+    <part Name="Render"/>
+  </object>
+  <object Name="HighSaltDune12Cyan" Load="Merge">
+    <part Name="Render"/>
+  </object>
+  <object Name="Sunken Room Stairs" Load="Merge">
+    <part Name="Render" DisplayName="대리석 계단"/>
+    <part Name="Description" Short="얼룩무늬 대리석 직사각형들이 구덩이 안팎으로 드나드는 디딤돌이 되어 주고 있습니다."/>
+    </object>
+  <object Name="Sunken Room Stairs NW" Load="Merge">
+    <part Name="Render"/>
+  </object>
+  <object Name="Sunken Room Stairs N" Load="Merge">
+    <part Name="Render"/>
+  </object>
+  <object Name="Sunken Room Stairs NE" Load="Merge">
+    <part Name="Render"/>
+  </object>
+  <object Name="Sunken Room Stairs W" Load="Merge">
+    <part Name="Render"/>
+  </object>
+  <object Name="Sunken Room Stairs E" Load="Merge">
+    <part Name="Render"/>
+  </object>
+  <object Name="Sunken Room Stairs SW" Load="Merge">
+    <part Name="Render"/>
+  </object>
+  <object Name="Sunken Room Stairs S" Load="Merge">
+    <part Name="Render"/>
+  </object>
+  <object Name="Sunken Room Stairs SE" Load="Merge">
+    <part Name="Render"/>
+  </object>
+  <object Name="Primal Grass" Load="Merge">
+    <part Name="Render" DisplayName="원초 잔디"/>
+    </object>
+	<object Name="SmallHexFloor" Load="Merge">
+		<part Name="Render" DisplayName="기묘한 바닥"/>
+		</object>
+  <object Name="FoamcreteFloor" Load="Merge">
+    <part Name="Render" DisplayName="폼크리트 바닥"/>
+    </object>
+
+  <!-- End floors -->
+
+  <!--
+
+    ****************
+       Obstacles
+    ****************
+
+  -->
+  <object Name="Web" Load="Merge">
+    <part Name="Render" DisplayName="거미줄"/>
+    <part Name="Description" Short="번들거리는 비단실이 포획 나선으로 짜여, 여러 가닥의 연결 실 위에 걸려 있습니다."/>
+    </object>
+  <object Name="FrostWeb" Load="Merge">
+    <part Name="Render" DisplayName="서리 낀 거미줄"/>
+		<part Name="Description" Short="번들거리는 비단실이 포획 나선으로 짜여, 여러 가닥의 연결 실 위에 걸려 있습니다. 상고대의 프랙탈이 2차원 평면 밖으로도 실가닥의 질감을 새겨 놓았습니다."/>		
+		</object>
+  <object Name="PhaseWeb" Load="Merge">
+    <part Name="Render" DisplayName="위상 거미줄"/>
+    <part Name="Description" Short="번들거리는 비단실이 포획 나선으로 짜여, 여러 가닥의 연결 실 위에 걸려 있습니다. 그 섬유는 다양체 속에서 차원을 가로질러 진동하고 있습니다."/>
+    </object>
+  
+  <!-- End obstacles -->
+
+
+  <!--
+
+    ********************************
+       Up/down connection terrain
+    ********************************
+
+  --> 
+  <object Name="Stairs" Load="Merge">
+    <part Name="Render" DisplayName="계단"/>
+    <tag Name="Gender" Value="plural"/>
+    </object>
+  <object Name="StairsUp" Load="Merge">
+    <part Name="Render" DisplayName="올라가는 계단"/>
+    <part Name="Description" Short="오르는 계단 위로 먼지가 꽃처럼 피어오르고 있습니다."/>
+  </object>
+  <object Name="StairsDown" Load="Merge">
+    <part Name="Render" DisplayName="내려가는 계단"/>
+    <part Name="Description" Short="내려가는 계단에서 빛이 서서히 물러나고 있습니다."/>
+  </object>
+  <object Name="StairsUpUnconnected" Load="Merge">
+    </object>
+  <object Name="StairsDownUnconnected" Load="Merge">
+    </object>
+  <object Name="StairsDownBarathrumsStudy" Load="Merge">
+    </object>
+  <object Name="SlimyShaft" Load="Merge">
+    <part Name="Render" DisplayName="끈적한 구덩이"/>
+    <part Name="Description" Short="어두컴컴한 구덩이의 점액으로 젖은 벽에, 기계적인 음색이 부드럽게 눌려 있습니다. 아래에는 공허가 있습니다."/>
+    <tag Name="Gender" Value="neuter"/>
+    </object>
+  <object Name="OpenShaft" Load="Merge">
+    <part Name="Render" DisplayName="깊은 구덩이"/>
+    <part Name="Description" Short="텅 빈 공간에서 어둠이 거꾸로 밀려 올라오고 있습니다."/>
+    <tag Name="Gender" Value="neuter"/>
+    </object>
+  <object Name="OpenShaft2" Load="Merge">
+    <part Name="Render" DisplayName="깊은 구덩이"/>
+    <part Name="Description" Short="텅 빈 공간에서 어둠이 거꾸로 밀려 올라오고 있습니다."/>
+    <tag Name="Gender" Value="neuter"/>
+    </object>
+  <object Name="Air" Load="Merge">
+    <part Name="Render" DisplayName="텅 빈 공기"/>
+    <part Name="Description" Short="공간에서 단단한 장애물이 비워져 있습니다."/>
+    <tag Name="Gender" Value="neuter"/>
+		</object>
+  <object Name="LazyAir" Load="Merge">
+    </object>
+  <object Name="Pit" Load="Merge">
+    <part Name="Render" DisplayName="텅 빈 공기"/>
+    <part Name="Description" Short="공간에서 단단한 장애물이 비워져 있습니다."/>
+    <tag Name="Gender" Value="neuter"/>
+    </object>
+  <object Name="LazyPit" Load="Merge">
+    </object>
+	<object Name="DarkRedPit" Load="Merge">
+		<part Name="Render"/>
+		</object>
+	<object Name="DarkCyanPit" Load="Merge">
+		<part Name="Render"/>
+		</object>
+  <object Name="TombShaft" Load="Merge">
+    <part Name="Render" DisplayName="깊은 구덩이"/>
+    <part Name="Description" Short="텅 빈 공간에서 어둠이 거꾸로 밀려 올라오고 있습니다."/>
+    <tag Name="Gender" Value="neuter"/>
+    </object>
+  <object Name="ElevatorShaft" Load="Merge">
+    <part Name="Render" DisplayName="승강기 통로"/>
+    <part Name="Description" Short="화물 없는 연결줄이 어둡고 거대한 수직 통로 아래로 길게 늘어뜨려져 있습니다."/>
+    <tag Name="Gender" Value="neuter"/>
+    </object>
+  <object Name="ReefOpenShaft" Load="Merge">
+    <part Name="Render" DisplayName="산호 구덩이"/>
+    <part Name="Description" Short="열린 구덩이의 폴립이 흩뿌려진 가장자리를 따라, 어둠이 거꾸로 밀려 올라오고 있습니다."/>
+    <tag Name="Gender" Value="neuter"/>
+    </object>
+  <object Name="PondDown" Load="Merge">
+    <part Name="Render" DisplayName="작은 균열"/>
+    <part Name="Description" Short="붉은 돌의 갈라진 틈이 지하세계의 물보라로 열려 있습니다."/>
+    </object>
+  <object Name="Yd StairsDown Kitchen" Load="Merge">
+    <part Name="Render" DisplayName="부엌으로 내려가는 계단"/>
+    </object>
+  <object Name="Yd StairsDown Columbarium" Load="Merge">
+    <part Name="Render" DisplayName="봉안소로 내려가는 계단"/>
+    </object>
+  <object Name="Yd StairsDown Library" Load="Merge">
+    <part Name="Render" DisplayName="도서관으로 내려가는 계단"/>
+    </object>
+  <object Name="Yd StairsDown Living Quarters" Load="Merge">
+    <part Name="Render" DisplayName="거주 구역으로 내려가는 계단"/>
+    </object>
+  <object Name="Yd StairsDown Workshop" Load="Merge">
+    <part Name="Render" DisplayName="작업장으로 내려가는 계단"/>
+    </object>
+  <object Name="Yd StairsDown Infirmary" Load="Merge">
+    <part Name="Render" DisplayName="요양실로 내려가는 계단"/>
+    </object>
+  <object Name="Yd StairsDown Market" Load="Merge">
+    <part Name="Render" DisplayName="시장으로 내려가는 계단"/>
+    </object>
+  <object Name="Yd StairsDown Many Eyes" Load="Merge">
+    <part Name="Render" DisplayName="Many Eyes로 내려가는 계단"/>
+    </object>
+  <object Name="Yd StairsDown Salon" Load="Merge">
+    <part Name="Render" DisplayName="살롱으로 내려가는 계단"/>
+    </object>
+	<object Name="Chavvah Spiral StairsUp" Load="Merge">
+		<part Name="Render" DisplayName="올라가는 나선 계단"/>
+		<part Name="Description" Short="매끈하고 흐릿한 절두체들이, 초능력적 부유로 이루어진 나선 속에 떠 있습니다."/>
+		</object>
+	<object Name="Chavvah Spiral StairsDown" Load="Merge">
+		<part Name="Render" DisplayName="내려가는 나선 계단"/>
+		<part Name="Description" Short="매끈하고 흐릿한 절두체들이, 초능력적 부유로 이루어진 나선 속에 떠 있습니다."/>
+		</object>
+	<object Name="Chavvah Roots Spiral StairsDown" Load="Merge">
+		</object>
+  
+  <!-- End up/down connection terrain -->
+
+</objects>
