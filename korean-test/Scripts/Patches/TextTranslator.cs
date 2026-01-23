@@ -46,7 +46,7 @@ namespace KorFontTest.Patches
 			// EquipmentAPI
 			{ "You cannot do that from here.", "여기에서 할 수 없습니다." },
 			// QudSpecificBootHandlersModule
-			{ "You embark for the caves of Qud.", "당신은 쿼드의 동굴로 향합니다."},
+			{ "You embark for the caves of Qud.", "당신은 커드의 동굴로 향합니다."},
 			// Add or edit translations here.
 			{ "You can only set your checkpoint in settlements.", "정착지에서만 체크포인트를 설정할 수 있습니다." }
 		};
