@@ -5,6 +5,7 @@ using System.Collections.Generic;
 using HarmonyLib;
 using TMPro;
 using UnityEngine;
+using Qud.UI;
 using XRL.UI;
 
 namespace KorFontTest.Patches
@@ -19,6 +20,12 @@ namespace KorFontTest.Patches
 		public static void Postfix(UITextSkin __instance)
 		{
 			if (__instance == null)
+			{
+				return;
+			}
+
+			InventoryLine inventoryLine = __instance.GetComponentInParent<InventoryLine>();
+			if (inventoryLine == null || inventoryLine.text != __instance)
 			{
 				return;
 			}
