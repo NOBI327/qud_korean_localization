@@ -14,6 +14,7 @@
 2. ```C:\Users\[사용자 이름]\AppData\LocalLow\Freehold Games\CavesOfQud\Mods\``` 폴더에 ```korean-test``` 폴더 채로 복사
 3. 게임시작 후 메인화면에서 Mods 탭 선택(최초 선택시 모드 활성화 경고창 뜸)
 4. 한글패치 모드 선택 후 활성(Enable) 상태로 만들기
+5. 새 게임 시작
 
 ## 기여
 
