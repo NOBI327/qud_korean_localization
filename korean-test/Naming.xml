@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <naming>
 
-  <namestyles>
+  <namestyles Load="Merge">
 
     <namestyle Name="Qudish" Format="TitleCase">
       <scopes>
@@ -9,7 +9,7 @@
         <scope Name="Genotype" Genotype="Mutated Human" Priority="50" Combine="true" />
         <scope Name="Culture" Culture="Qudish" Priority="100" Combine="true" />
       </scopes>
-      <prefixes Amount="1">
+      <prefixes Load="" Amount="1">
         <prefix Name="fa" />
         <prefix Name="ha" />
         <prefix Name="i" Weight="2" />
@@ -40,7 +40,7 @@
         <prefix Name="yi" />
         <prefix Name="yy" />
       </prefixes>
-      <infixes Amount="0-2">
+      <infixes Load="" Amount="0-2">
         <infix Name="ga" />
         <infix Name="me" />
         <infix Name="mo" />
@@ -62,7 +62,7 @@
         <infix Name="shwu" />
         <infix Name="yu" Weight="2" />
       </infixes>
-      <postfixes Amount="1">
+      <postfixes Load="" Amount="1">
         <postfix Name="bas" />
         <postfix Name="d" />
         <postfix Name="jr" />
@@ -94,7 +94,7 @@
       <scopes>
         <scope Name="Main" Type="Site" Priority="100" Combine="false" />
       </scopes>
-      <prefixes Amount="1">
+      <prefixes Load="" Amount="1">
         <prefix Name="a" />
         <prefix Name="ala" />
         <prefix Name="bi" />
@@ -119,7 +119,7 @@
         <prefix Name="tu" />
         <prefix Name="u" />
       </prefixes>
-      <infixes Amount="0-1">
+      <infixes Load="" Amount="0-1">
         <infix Name="arra" />
         <infix Name="azo" />
         <infix Name="ba" />
@@ -136,7 +136,7 @@
         <infix Name="rsi" />
         <infix Name="rva" />
       </infixes>
-      <postfixes Amount="1">
+      <postfixes Load="" Amount="1">
         <postfix Name="bal" />
         <postfix Name="d" />
         <postfix Name="kesh" />
@@ -176,7 +176,7 @@
       <scopes>
         <scope Name="Main" Type="Site" Region="BananaGrove" Priority="200" Combine="false" />
       </scopes>
-      <templates>
+      <templates Load="">
         <template Name="*Name* 바나나 숲" />
       </templates>
     </namestyle>
@@ -185,7 +185,7 @@
       <scopes>
         <scope Name="Main" Type="Site" Region="BaroqueRuins" Priority="200" Combine="false" />
       </scopes>
-      <templates>
+      <templates Load="">
         <template Name="*Name* 바로크 잔해" />
       </templates>
     </namestyle>
@@ -194,7 +194,7 @@
       <scopes>
         <scope Name="Main" Type="Site" Region="DeepJungle" Priority="200" Combine="false" />
       </scopes>
-      <templates>
+      <templates Load="">
         <template Name="*Name* 심림" />
       </templates>
     </namestyle>
@@ -203,7 +203,7 @@
       <scopes>
         <scope Name="Main" Type="Site" Region="DesertCanyon" Priority="200" Combine="false" />
       </scopes>
-      <templates>
+      <templates Load="">
         <template Name="*Name* 건조 협곡" />
       </templates>
     </namestyle>
@@ -212,7 +212,7 @@
       <scopes>
         <scope Name="Main" Type="Site" Region="Flowerfields" Priority="200" Combine="false" />
       </scopes>
-      <templates>
+      <templates Load="">
         <template Name="*Name* 화원" />
       </templates>
     </namestyle>
@@ -221,7 +221,7 @@
       <scopes>
         <scope Name="Main" Type="Site" Region="Fungal" Priority="200" Combine="false" />
       </scopes>
-      <templates>
+      <templates Load="">
         <template Name="*Name* 균류지" />
       </templates>
     </namestyle>
@@ -230,7 +230,7 @@
       <scopes>
         <scope Name="Main" Type="Site" Region="Hills" Priority="200" Combine="false" />
       </scopes>
-      <templates>
+      <templates Load="">
         <template Name="*Name*의 구릉" />
       </templates>
     </namestyle>
@@ -239,7 +239,7 @@
       <scopes>
         <scope Name="Main" Type="Site" Region="Jungle" Priority="200" Combine="false" />
       </scopes>
-      <templates>
+      <templates Load="">
         <template Name="*Name*의 밀림" />
       </templates>
     </namestyle>
@@ -248,7 +248,7 @@
       <scopes>
         <scope Name="Main" Type="Site" Region="LakeHinnom" Priority="200" Combine="false" />
       </scopes>
-      <templates>
+      <templates Load="">
         <template Name="*Name*의 힌놈 호수" />
       </templates>
     </namestyle>
@@ -257,7 +257,7 @@
       <scopes>
         <scope Name="Main" Type="Site" Region="MoonStair" Priority="200" Combine="false" />
       </scopes>
-      <templates>
+      <templates Load="">
         <template Name="*Name*의 월계" />
       </templates>
     </namestyle>
@@ -266,7 +266,7 @@
       <scopes>
         <scope Name="Main" Type="Site" Region="Mountains" Priority="200" Combine="false" />
       </scopes>
-      <templates>
+      <templates Load="">
         <template Name="*Name*의 산맥" />
       </templates>
     </namestyle>
@@ -275,7 +275,7 @@
       <scopes>
         <scope Name="Main" Type="Site" Region="PalladiumReef" Priority="200" Combine="false" />
       </scopes>
-      <templates>
+      <templates Load="">
         <template Name="*Name*의 팔라듐 암초" />
       </templates>
     </namestyle>
@@ -284,7 +284,7 @@
       <scopes>
         <scope Name="Main" Type="Site" Region="Ruins" Priority="200" Combine="false" />
       </scopes>
-      <templates>
+      <templates Load="">
         <template Name="*Name*의 폐허" />
       </templates>
     </namestyle>
@@ -293,7 +293,7 @@
       <scopes>
         <scope Name="Main" Type="Site" Region="Saltdunes" Priority="200" Combine="false" />
       </scopes>
-      <templates>
+      <templates Load="">
         <template Name="*Name*의 염사구" />
       </templates>
     </namestyle>
@@ -302,7 +302,7 @@
       <scopes>
         <scope Name="Main" Type="Site" Region="Saltmarsh" Priority="200" Combine="false" />
       </scopes>
-      <templates>
+      <templates Load="">
       <template Name="*Name*의 염습지" />
       </templates>
     </namestyle>
@@ -311,7 +311,7 @@
       <scopes>
         <scope Name="Main" Type="Site" Region="TheSpindle" Priority="200" Combine="false" />
       </scopes>
-      <templates>
+      <templates Load="">
         <template Name="*Name*의 첨탑" />
       </templates>
     </namestyle>
@@ -320,7 +320,7 @@
       <scopes>
         <scope Name="Main" Type="Site" Region="Water" Priority="200" Combine="false" />
       </scopes>
-      <templates>
+      <templates Load="">
         <template Name="*Name*의 호수" />
       </templates>
     </namestyle>
@@ -330,7 +330,7 @@
         <scope Name="Culture" Culture="Eater" Priority="100" Combine="true" />
         <scope Name="Faction" Faction="Water" Priority="50" Combine="true" />
       </scopes>
-      <prefixes Amount="1">
+      <prefixes Load="" Amount="1">
         <prefix Name="anti" />
         <prefix Name="arta" />
         <prefix Name="ba" />
@@ -359,14 +359,14 @@
         <prefix Name="yu" />
         <prefix Name="yy" />
       </prefixes>
-      <infixes Amount="0-1">
+      <infixes Load="" Amount="0-1">
         <infix Name="le" />
         <infix Name="ra" />
         <infix Name="thri" />
         <infix Name="xer" />
         <infix Name="yu" />
       </infixes>
-      <postfixes Amount="1">
+      <postfixes Load="" Amount="1">
         <postfix Name="dates" />
         <postfix Name="dokht" />
         <postfix Name="dukht" />
@@ -393,10 +393,10 @@
         <scope Name="Subtype4" Subtype="Syzygyrior" Priority="100" Combine="false" />
         <scope Name="Culture" Culture="Ekuemekiyyen" Priority="100" Combine="false" />
       </scopes>
-      <templates>
+      <templates Load="">
         <template Name="*Name* *Suffix*" />
       </templates>
-      <templatevars>
+      <templatevars Load="">
         <templatevar Name="Suffix">
           <value Name="ka" />
           <value Name="ki" />
@@ -405,7 +405,7 @@
           <value Name="" Weight="5" />
         </templatevar>
       </templatevars>
-      <prefixes Amount="1">
+      <prefixes Load="" Amount="1">
         <prefix Name="ab" />
         <prefix Name="ad" />
         <prefix Name="afi" />
@@ -446,7 +446,7 @@
         <prefix Name="za" />
         <prefix Name="zu" />
       </prefixes>
-      <infixes Amount="0-2">
+      <infixes Load="" Amount="0-2">
         <infix Name="ama" />
         <infix Name="ba" />
         <infix Name="baji" />
@@ -475,7 +475,7 @@
         <infix Name="tu" />
         <infix Name="ye" />
       </infixes>
-      <postfixes Amount="1">
+      <postfixes Load="" Amount="1">
         <postfix Name="bem" />
         <postfix Name="bi" />
         <postfix Name="bola" />
@@ -525,7 +525,7 @@
         <scope Name="Subtype4" Subtype="Praetorian" Priority="100" Combine="false" />
         <scope Name="Culture" Culture="Ibulian" Priority="100" Combine="false" />
       </scopes>
-      <prefixes Amount="1">
+      <prefixes Load="" Amount="1">
         <prefix Name="a" Weight="2" />
         <prefix Name="ae" />
         <prefix Name="an" />
@@ -587,7 +587,7 @@
         <prefix Name="ve" />
         <prefix Name="vi" />
       </prefixes>
-      <infixes Amount="0-1">
+      <infixes Load="" Amount="0-1">
         <infix Name="bi" Weight="2" />
         <infix Name="bri" />
         <infix Name="ce" />
@@ -622,7 +622,7 @@
         <infix Name="xe" />
         <infix Name="xi" />
       </infixes>
-      <postfixes Amount="1">
+      <postfixes Load="" Amount="1">
         <postfix Name="ba" />
         <postfix Name="bius" />
         <postfix Name="bus" />
@@ -667,7 +667,7 @@
 				<scope Name="Subtype4" Subtype="Praetorian" Priority="100" Combine="false" />
 				<scope Name="Culture" Culture="Ibulian" Priority="100" Combine="false" />
 			</scopes>
-			<prefixes Amount="1">
+			<prefixes Load="" Amount="1">
 				<prefix Name="a" Weight="3" />			
 				<prefix Name="agli" />
 				<prefix Name="atta" />
@@ -695,7 +695,7 @@
 				<prefix Name="yah" />
 				<prefix Name="ya" />
 			</prefixes>
-			<infixes Amount="0-2">				
+			<infixes Load="" Amount="0-2">				
 				<infix Name="gli" />
 				<infix Name="tta" />
 				<infix Name="zo" />
@@ -727,7 +727,7 @@
 				<infix Name="bo" />
 				<infix Name="lo" Weight="4" />
 			</infixes>
-			<postfixes Amount="1">
+			<postfixes Load="" Amount="1">
 				<postfix Name="n" />
 				<postfix Name="l" />
 				<postfix Name="r" />
@@ -776,7 +776,7 @@
         <scope Name="Subtype4" Subtype="Fuming God-Child" Priority="100" Combine="false" />
         <scope Name="Culture" Culture="Yawningmoon" Priority="100" Combine="false" />
       </scopes>
-      <prefixes Amount="1">
+      <prefixes Load="" Amount="1">
         <prefix Name="apa" />
         <prefix Name="dya" />
         <prefix Name="ghrta" />
@@ -797,12 +797,12 @@
         <prefix Name="ur" />
         <prefix Name="vri" />
       </prefixes>
-      <infixes Amount="0-1">
+      <infixes Load="" Amount="0-1">
         <infix Name="rth" />
         <infix Name="sh" />
         <infix Name="th" />
       </infixes>
-      <postfixes Amount="1">
+      <postfixes Load="" Amount="1">
         <postfix Name="tar" />
         <postfix Name="dra" />
         <postfix Name="vra" />
@@ -825,7 +825,7 @@
         <scope Name="Genotype" Genotype="True Kin" Priority="50" Combine="true" />
         <scope Name="Culture" Culture="Arcologian" Priority="0" Combine="true" />
       </scopes>
-      <prefixes Amount="1">
+      <prefixes Load="" Amount="1">
         <prefix Name="a" Weight="3" />
         <prefix Name="ado" />
         <prefix Name="ae" />
@@ -889,7 +889,7 @@
         <prefix Name="xa" />
         <prefix Name="ze" />
       </prefixes>
-      <infixes Amount="0-1">
+      <infixes Load="" Amount="0-1">
         <infix Name="ande" />
         <infix Name="bi" />
         <infix Name="biu" />
@@ -951,7 +951,7 @@
         <infix Name="xia" />
         <infix Name="ya" />
       </infixes>
-      <postfixes Amount="1">
+      <postfixes Load="" Amount="1">
         <postfix Name="a" />
         <postfix Name="an" />
         <postfix Name="be" />
@@ -1080,7 +1080,7 @@
         <scope Name="Species" Species="baboon" Priority="50" Combine="true" />
         <scope Name="Culture" Culture="Baboon" Priority="50" Combine="true" />
       </scopes>
-      <prefixes Amount="1-3">
+      <prefixes Load="" Amount="1-3">
         <prefix Name="oo" />
         <prefix Name="ooo" />
         <prefix Name="o" />
@@ -1089,7 +1089,7 @@
         <prefix Name="ho" />
         <prefix Name="hoo" />
       </prefixes>
-      <infixes Amount="1-3">
+      <infixes Load="" Amount="1-3">
         <infix Name="O" />
         <infix Name="OO" Weight="2" />
         <infix Name="OOO" />
@@ -1100,7 +1100,7 @@
         <infix Name="EE" />
         <infix Name="EEE" />
       </infixes>
-      <postfixes Amount="0-2">
+      <postfixes Load="" Amount="0-2">
         <postfix Name="ah" />
         <postfix Name="ahh" />
         <postfix Name="o" />
@@ -1115,10 +1115,10 @@
     </namestyle>
 
     <namestyle Name="Baboon Hero Title">
-      <templates>
+      <templates Load="">
         <template Name="*Rings*고리의 개코원숭이 *Position*" />
       </templates>
-      <templatevars>
+      <templatevars Load="">
         <templatevar Name="Position">
           <value Name="바람둥이" />
           <value Name="수수께끼꾼" />
@@ -1137,7 +1137,7 @@
         <scope Name="Faction" Faction="Mollusks" Priority="50" Weight="100" Combine="true" />        
         <scope Name="Culture" Culture="Clam" Priority="50" Weight="100" Combine="true" />
       </scopes>
-      <prefixes Amount="1">
+      <prefixes Load="" Amount="1">
         <prefix Name="aco" />
         <prefix Name="aga" />
         <prefix Name="ba" />
@@ -1157,7 +1157,7 @@
         <prefix Name="y" />
         <prefix Name="za" />
       </prefixes>
-      <infixes Amount="1-2">
+      <infixes Load="" Amount="1-2">
         <infix Name="bni" />
         <infix Name="do" />
         <infix Name="ggi" />
@@ -1176,7 +1176,7 @@
         <infix Name="tti" />
         <infix Name="ze" />
       </infixes>
-      <postfixes Amount="1">
+      <postfixes Load="" Amount="1">
         <postfix Name="clam" />
       </postfixes>
     </namestyle>
@@ -1187,7 +1187,7 @@
         <scope Name="Species" Species="crab" Priority="50" Weight="100" Combine="true" />
         <scope Name="Culture" Culture="Crab" Priority="50" Weight="100" Combine="true" />
       </scopes>
-      <prefixes Amount="1">
+      <prefixes Load="" Amount="1">
         <prefix Name="aco" />
         <prefix Name="aga" />
         <prefix Name="ba" />
@@ -1207,7 +1207,7 @@
         <prefix Name="y" />
         <prefix Name="za" />
       </prefixes>
-      <infixes Amount="1-2">
+      <infixes Load="" Amount="1-2">
         <infix Name="bni" />
         <infix Name="do" />
         <infix Name="ggi" />
@@ -1226,7 +1226,7 @@
         <infix Name="tti" />
         <infix Name="ze" />
       </infixes>
-      <postfixes Amount="1">
+      <postfixes Load="" Amount="1">
         <postfix Name="crab" />
       </postfixes>
     </namestyle>   
@@ -1235,10 +1235,10 @@
   <scopes>
     <scope Name="Main" Type="Title" Special="Hero" Faction="Crabs" Priority="200" Combine="false" />
   </scopes>
-  <templates>
+  <templates Load="">
     <template Name="*Adjective* *CreatureTypeCap* *Position*" />
   </templates>
-  <templatevars>
+  <templatevars Load="">
     <templatevar Name="Adjective">
       <value Name="메아리치는" />
       <value Name="광란의" />
@@ -1264,7 +1264,7 @@
         <scope Name="Species" Species="goatfolk" Priority="50" Combine="true" />
         <scope Name="Culture" Culture="Goatfolk" Priority="50" Combine="true" />
       </scopes>
-      <prefixes Amount="0-1">
+      <prefixes Load="" Amount="0-1">
         <prefix Name="ba" />
         <prefix Name="baa" Weight="2" />
         <prefix Name="na" />
@@ -1272,14 +1272,14 @@
         <prefix Name="ra" />
         <prefix Name="raa" />
       </prefixes>
-      <infixes Amount="0-3">
+      <infixes Load="" Amount="0-3">
         <infix Name="ba" Weight="2" />
         <infix Name="baa" />
         <infix Name="naa" />
         <infix Name="ra" Weight="2" />
         <infix Name="raa" />
       </infixes>
-      <postfixes Amount="1-2">
+      <postfixes Load="" Amount="1-2">
         <postfix Name="a" />
         <postfix Name="aaa" />
         <postfix Name="aaaaah" />
@@ -1293,7 +1293,7 @@
       <scopes>
         <scope Name="Main" Special="Hero" Faction="Goatfolk" Priority="200" Combine="false" />
       </scopes>
-      <templates>
+      <templates Load="">
         <template Name="*Name*" />
       </templates>
     </namestyle>
@@ -1302,10 +1302,10 @@
       <scopes>
         <scope Name="Main" Type="Epithet" Special="Hero" Faction="Goatfolk" Priority="200" Combine="false" />
       </scopes>
-      <templates>
+      <templates Load="">
         <template Name="*Epithet*" />
       </templates>
-      <templatevars>
+      <templatevars Load="">
         <templatevar Name="Epithet">
           <value Name="별응시자" />
           <value Name="심장물어뜯는자" />
@@ -1321,10 +1321,10 @@
       <scopes>
         <scope Name="Main" Type="Title" Special="Hero" Faction="Goatfolk" Priority="200" Combine="false" />
       </scopes>
-      <templates>
+      <templates Load="">
         <template Name="*Clan* 씨족의 염소인 주술사" />
       </templates>
-      <templatevars>
+      <templatevars Load="">
         <templatevar Name="Clan">
           <value Name="호투르" />
           <value Name="아이벡스" />
@@ -1340,7 +1340,7 @@
       <scopes>
         <scope Name="Main" Type="Site" Culture="Goatfolk" Priority="100" Combine="false" />
       </scopes>
-      <templates>
+      <templates Load="">
         <template Name="*Name**Suffix*" Weight="1800" />
         <template Name="*Prefix**Suffix*" Weight="1800" />
         <template Name="*Sultan**Suffix*" Weight="450" />
@@ -1351,7 +1351,7 @@
         <template Name="*Prefix**Forest*" Weight="1575" />
         <template Name="*Sultan**Forest*" Weight="350" />
       </templates>
-      <templatevars>
+      <templatevars Load="">
         <templatevar Name="Prefix">
           <value Name="Ash" />
           <value Name="Black" />
@@ -1418,7 +1418,7 @@
           <value Name="우물" />
         </templatevar>
       </templatevars>
-      <prefixes Amount="1">
+      <prefixes Load="" Amount="1">
         <prefix Name="ba" />
         <prefix Name="baa" Weight="2" />
         <prefix Name="na" />
@@ -1426,7 +1426,7 @@
         <prefix Name="ra" />
         <prefix Name="raa" />
       </prefixes>
-      <infixes Amount="0-1">
+      <infixes Load="" Amount="0-1">
         <infix Name="ba" Weight="2" />
         <infix Name="baa" />
         <infix Name="naa" />
@@ -1439,14 +1439,14 @@
       <scopes>
         <scope Name="Main" Type="Site" Culture="Goatfolk" Special="Qlippoth" Priority="100" Combine="false" />
       </scopes>
-      <templates>        
+      <templates Load="">        
         <template Name="*Prefix**Suffix*" Weight="1800" />        
         <template Name="*Name**Location*" Weight="1125" />
         <template Name="*Prefix**Location*" Weight="1125" />
         <template Name="*Sultan**Location*" Weight="250" />        
         <template Name="*Prefix**Forest*" Weight="1575" />        
       </templates>
-      <templatevars>
+      <templatevars Load="">
         <templatevar Name="Prefix">
           <value Name="재" />
           <value Name="검은" />
@@ -1514,7 +1514,7 @@
           <value Name="고요" />
         </templatevar>
       </templatevars>
-      <prefixes Amount="1">
+      <prefixes Load="" Amount="1">
         <prefix Name="ba" />
         <prefix Name="baa" Weight="2" />
         <prefix Name="na" />
@@ -1522,7 +1522,7 @@
         <prefix Name="ra" />
         <prefix Name="raa" />
       </prefixes>
-      <infixes Amount="0-1">
+      <infixes Load="" Amount="0-1">
         <infix Name="ba" Weight="2" />
         <infix Name="baa" />
         <infix Name="naa" />
@@ -1536,7 +1536,7 @@
         <scope Name="Faction" Faction="Naphtaali" Priority="100" Combine="false" />
         <scope Name="Culture" Culture="Naphtaali" Priority="50" Combine="true" />
       </scopes>
-      <prefixes Amount="1">
+      <prefixes Load="" Amount="1">
         <prefix Name="a" />
 				<prefix Name="baa" />
 				<prefix Name="bee" />
@@ -1560,7 +1560,7 @@
 				<prefix Name="ya" />
 				<prefix Name="su" />
       </prefixes>
-      <infixes Amount="1-2">
+      <infixes Load="" Amount="1-2">
         <infix Name="dramme" />
 				<infix Name="mu" />
 				<infix Name="nammele" />
@@ -1583,7 +1583,7 @@
 				<infix Name="ra" />
         <infix Name="hwe" />				
       </infixes>
-      <postfixes Amount="1">
+      <postfixes Load="" Amount="1">
         <postfix Name="ch" />
         <postfix Name="n" />
         <postfix Name="h" />
@@ -1606,10 +1606,10 @@
 			<scopes>
 				<scope Name="Main" Type="Honorific" Special="Hero" Faction="Naphtaali" Priority="200" Combine="false" Chance="40" SkipIfHasEpithet="true" Tag="Godhed" />
 			</scopes>
-			<templates>
+			<templates Load="">
 				<template Name="*Honorific* 신두령" />				
 			</templates>
-			<templatevars>
+			<templatevars Load="">
 				<templatevar Name="Honorific">
 					<value Name="spice.adjectives.!random" />
 					<value Name="spice.nouns.!random" />					
@@ -1621,10 +1621,10 @@
 			<scopes>
 				<scope Name="Main" Type="Epithet" Special="Hero" Faction="Naphtaali" Priority="200" Combine="false" Chance="33" SkipIfHasHonorific="true" Tag="Godhed" />
 			</scopes>
-			<templates>				
+			<templates Load="">				
 				<template Name="*Adjective*-신두령" />
 			</templates>
-			<templatevars>				
+			<templatevars Load="">				
 				<templatevar Name="Adjective">
 					<value Name="spice.adjectives.!random" />
 				</templatevar>
@@ -1635,13 +1635,13 @@
 			<scopes>
 				<scope Name="Main" Type="Title" Special="Hero" Faction="Naphtaali" Priority="200" Combine="true" SkipIfHasHonorific="true" SkipIfHasEpithet="true" Tag="Godhed" />
 			</scopes>
-			<templates>				
+			<templates Load="">				
 				<template Name="*Noun1*의 신두령" />
 				<template Name="*Noun1*-*Noun2*의 신두령" Weight="2" />
 				<template Name="*Adj*-*Noun1*의 신두령" Weight="2" />
 				<template Name="*NounPlural*의 신두령" />
 			</templates>
-			<templatevars>				
+			<templatevars Load="">				
 				<templatevar Name="Noun1">
 					<value Name="spice.nouns.!random" />
 				</templatevar>
@@ -1661,7 +1661,7 @@
 			<scopes>
 				<scope Name="Main" Type="Title" Special="Hero" Faction="Naphtaali" Priority="200" Combine="true" Tag="Godhed" />
 			</scopes>
-			<templates>
+			<templates Load="">
 				<template Name="" />
 			</templates>
 		</namestyle>
@@ -1672,7 +1672,7 @@
         <scope Name="Species" Species="snapjaw" Priority="50" Combine="true" />
         <scope Name="Culture" Culture="Snapjaw" Priority="50" Combine="true" />
       </scopes>
-      <prefixes Amount="0-2">
+      <prefixes Load="" Amount="0-2">
         <prefix Name="bar" />
         <prefix Name="bawl" />
         <prefix Name="bor" />
@@ -1695,7 +1695,7 @@
         <prefix Name="scor" />
         <prefix Name="scur" />
       </prefixes>
-      <infixes Amount="1-4">
+      <infixes Load="" Amount="1-4">
         <infix Name="afo" />
         <infix Name="ago" />
         <infix Name="aho" />
@@ -1711,7 +1711,7 @@
         <infix Name="ulu" />
         <infix Name="wof" />
       </infixes>
-      <postfixes Amount="0-2">
+      <postfixes Load="" Amount="0-2">
         <postfix Name="ab" />
         <postfix Name="af" />
         <postfix Name="ago" />
@@ -1738,10 +1738,10 @@
       <scopes>
         <scope Name="Main" Type="Title" Special="Hero" Faction="Snapjaws" Priority="200" Combine="false" />
       </scopes>
-      <templates>
+      <templates Load="">
         <template Name="*Adjective* 스냅조 *Occupation*" />
       </templates>
-      <templatevars>
+      <templatevars Load="">
         <templatevar Name="Adjective">
           <value Name="굳은살박힌" />
           <value Name="무시무시한" />
@@ -1767,7 +1767,7 @@
         <scope Name="Species" Species="star" Priority="100" Combine="false" />
         <scope Name="Faction" Faction="Strangers" Priority="50" Combine="false" />        
       </scopes>
-      <prefixes Amount="1">
+      <prefixes Load="" Amount="1">
         <prefix Name="abho" />
         <prefix Name="ala" />
         <prefix Name="ammu" />
@@ -1864,7 +1864,7 @@
         <prefix Name="ytho" />
         <prefix Name="zsty" />        
       </prefixes>
-      <infixes Amount="1-2">
+      <infixes Load="" Amount="1-2">
         <infix Name="lo" />
         <infix Name="tse" />
         <infix Name="n-" />
@@ -1894,7 +1894,7 @@
         <infix Name="na" />
         <infix Name="thne" />        
       </infixes>
-      <postfixes Amount="1">
+      <postfixes Load="" Amount="1">
         <postfix Name="los" />
         <postfix Name="ba" />
         <postfix Name="th" Weight="4" />
@@ -1933,7 +1933,7 @@
         <scope Name="Species" Species="troll" Priority="50" Combine="true" />
         <scope Name="Culture" Culture="Troll" Priority="50" Combine="true" />
       </scopes>
-      <prefixes Amount="0-1">
+      <prefixes Load="" Amount="0-1">
         <prefix Name="lur" />
         <prefix Name="mub" />
         <prefix Name="mur" />
@@ -1942,7 +1942,7 @@
         <prefix Name="ur" />
         <prefix Name="wub" />
       </prefixes>
-      <infixes Amount="0-3">
+      <infixes Load="" Amount="0-3">
         <infix Name="mon" />
         <infix Name="nom" />
         <infix Name="non" />
@@ -1951,7 +1951,7 @@
         <infix Name="zow" />
         <infix Name="zoz" />
       </infixes>
-      <postfixes Amount="1-2">
+      <postfixes Load="" Amount="1-2">
         <postfix Name="mmu" />
         <postfix Name="mumm" />
         <postfix Name="nnum" />
@@ -1966,10 +1966,10 @@
       <scopes>
         <scope Name="Main" Type="Title" Special="Hero" Faction="Trolls" Priority="200" Combine="false" />
       </scopes>
-      <templates>
+      <templates Load="">
         <template Name="*Adjective* 트롤 *Occupation*" />
       </templates>
-      <templatevars>
+      <templatevars Load="">
         <templatevar Name="Adjective">
           <value Name="뒤틀린" />
           <value Name="영원한" />
@@ -1996,7 +1996,7 @@
         <scope Name="AltFaction" Faction="MechaSub" Priority="100" Combine="false" />
         <scope Name="Culture" Culture="Mechanimist" Priority="50" Combine="true" />
       </scopes>
-      <prefixes Amount="1">
+      <prefixes Load="" Amount="1">
         <prefix Name="aba" />
         <prefix Name="abba" />
         <prefix Name="abi" />
@@ -2056,7 +2056,7 @@
         <prefix Name="sulu" />
         <prefix Name="tobi" />
       </prefixes>
-      <postfixes Amount="1">
+      <postfixes Load="" Amount="1">
         <postfix Name="cai" />
         <postfix Name="diah" />
         <postfix Name="dias" />
@@ -2102,10 +2102,10 @@
         <scope Name="Main" Type="Title" Special="Hero" Faction="Mechanimists" Priority="200" Combine="false" />
         <scope Name="Alt" Type="Title" Special="Hero" Faction="MechaSub" Priority="200" Combine="false" />
       </scopes>
-      <templates>
+      <templates Load="">
         <template Name="*Cognomen*" />
       </templates>
-      <templatevars>
+      <templatevars Load="">
         <templatevar Name="Cognomen">
           <value Name="쉐키나가 선택한 자" />
           <value Name="크롬으로 단련된 자" />
@@ -2120,7 +2120,7 @@
         <scope Name="Faction" Faction="Beasts" Priority="50" Combine="true" />
         <scope Name="Culture" Culture="Animal" Priority="50" Combine="true" />
       </scopes>
-      <prefixes Amount="1">
+      <prefixes Load="" Amount="1">
         <prefix Name="" />
         <prefix Name="a" />
         <prefix Name="ba" Weight="2" />
@@ -2152,7 +2152,7 @@
         <prefix Name="yy" />
         <prefix Name="za" />
       </prefixes>
-      <infixes Amount="0-3">
+      <infixes Load="" Amount="0-3">
         <infix Name="'" />
         <infix Name="ba" />
         <infix Name="hi" />
@@ -2170,7 +2170,7 @@
         <infix Name="ta" Weight="2" />
         <infix Name="tha" />
       </infixes>
-      <postfixes Amount="1">
+      <postfixes Load="" Amount="1">
         <postfix Name="ah" />
         <postfix Name="ayl" />
         <postfix Name="char" />
@@ -2213,7 +2213,7 @@
         <scope Name="Species" Species="bear" Priority="50" Combine="true" />
         <scope Name="Culture" Culture="Bear" Priority="50" Combine="true" />
       </scopes>
-      <prefixes Amount="1-5">
+      <prefixes Load="" Amount="1-5">
         <prefix Name="ba" />
         <prefix Name="baka" />
         <prefix Name="bama" />
@@ -2231,7 +2231,7 @@
         <prefix Name="bumu" />
         <prefix Name="buyu" />
       </prefixes>
-      <postfixes Amount="0-1">
+      <postfixes Load="" Amount="0-1">
         <postfix Name="ba" />
         <postfix Name="bam" />
         <postfix Name="bat" />
@@ -2253,7 +2253,7 @@
         <scope Name="Main" Type="Title" Special="Hero" Faction="Bears" Priority="200" Combine="false" />
         <scope Name="Culture" Type="Title" Special="Hero" Culture="Bear" Priority="150" Combine="true" />
       </scopes>
-      <templates>
+      <templates Load="">
         <template Name="꿀을 사랑하는 명성높은 *CreatureType*" />
       </templates>
     </namestyle>
@@ -2263,7 +2263,7 @@
         <scope Name="Faction" Faction="Apes" Priority="100" Combine="false" />
         <scope Name="Species" Species="ape" Priority="50" Combine="true" />
       </scopes>
-      <prefixes Amount="1-5">
+      <prefixes Load="" Amount="1-5">
         <prefix Name="ka" />
         <prefix Name="kaka" />
         <prefix Name="kama" />
@@ -2291,7 +2291,7 @@
         <prefix Name="oya" />
         <prefix Name="oyu" />
       </prefixes>
-      <postfixes Amount="0-1">
+      <postfixes Load="" Amount="0-1">
         <postfix Name="ka" />
         <postfix Name="kam" />
         <postfix Name="kat" />
@@ -2318,10 +2318,10 @@
         <scope Name="Main" Type="Epithet" Special="Hero" Faction="Apes" Priority="200" Combine="false" />
         <scope Name="Culture" Type="Epithet" Special="Hero" Culture="Ape" Priority="150" Combine="true" />
       </scopes>
-      <templates>
+      <templates Load="">
         <template Name="*Adjective*" />
       </templates>
-      <templatevars>
+      <templatevars Load="">
         <templatevar Name="Adjective">
           <value Name="화려한" />
           <value Name="우아한" />
@@ -2340,7 +2340,7 @@
         <scope Name="Main" Type="Title" Special="Hero" Faction="Apes" Priority="200" Combine="false" />
         <scope Name="Culture" Type="Title" Special="Hero" Culture="Ape" Priority="150" Combine="true" />
       </scopes>
-      <templates>
+      <templates Load="">
         <template Name="전설적인 *CreatureType*" />
       </templates>
     </namestyle>
@@ -2350,7 +2350,7 @@
         <scope Name="Faction" Faction="Robots" Priority="100" Combine="false" />
         <scope Name="Culture" Culture="Robot" Priority="50" Combine="true" />
       </scopes>
-      <prefixes Amount="1-2">
+      <prefixes Load="" Amount="1-2">
         <prefix Name="[ERROR: MISSING HEX VALUE]" />
         <prefix Name="0" Weight="2" />
         <prefix Name="1" Weight="2" />
@@ -2369,7 +2369,7 @@
         <prefix Name="E" Weight="2" />
         <prefix Name="F" Weight="2" />
       </prefixes>
-      <infixes Amount="1">
+      <infixes Load="" Amount="1">
         <infix Name="[ERROR: MISSING HEX VALUE]" />
         <infix Name="0" Weight="2" />
         <infix Name="1" Weight="2" />
@@ -2388,7 +2388,7 @@
         <infix Name="E" Weight="2" />
         <infix Name="F" Weight="2" />
       </infixes>
-      <postfixes Amount="1-2">
+      <postfixes Load="" Amount="1-2">
         <postfix Name="[ERROR: MISSING HEX VALUE]" />
         <postfix Name="0" Weight="2" />
         <postfix Name="1" Weight="2" />
@@ -2414,7 +2414,7 @@
         <scope Name="Faction" Faction="Insects" Priority="100" Combine="false" />
         <scope Name="Culture" Culture="Insect" Priority="50" Combine="true" />
       </scopes>
-      <prefixes Amount="1">
+      <prefixes Load="" Amount="1">
         <prefix Name="a" />
         <prefix Name="ac" />
         <prefix Name="apa" />
@@ -2450,7 +2450,7 @@
         <prefix Name="thy" />
         <prefix Name="va" />
       </prefixes>
-      <infixes Amount="1-2">
+      <infixes Load="" Amount="1-2">
         <infix Name="be" />
         <infix Name="ca" />
         <infix Name="ce" />
@@ -2488,7 +2488,7 @@
         <infix Name="vitt" />
         <infix Name="xen" />
       </infixes>
-      <postfixes Amount="1">
+      <postfixes Load="" Amount="1">
         <postfix Name="bella" />
         <postfix Name="cus" />
         <postfix Name="dae" />
@@ -2526,7 +2526,7 @@
         <scope Name="Faction" Faction="Oozes" Priority="100" Combine="false" />
         <scope Name="Species" Species="ooze" Priority="50" Combine="true" />
       </scopes>
-      <prefixes Amount="1">
+      <prefixes Load="" Amount="1">
         <prefix Name="annu" />
         <prefix Name="astroi" />
         <prefix Name="cubi" />
@@ -2559,7 +2559,7 @@
         <prefix Name="trape" />
         <prefix Name="tri" />
       </prefixes>
-      <infixes Amount="0-1">
+      <infixes Load="" Amount="0-1">
         <infix Name="chrys" />
         <infix Name="dron" />
         <infix Name="kle" />
@@ -2585,7 +2585,7 @@
         <infix Name="xa" />
         <infix Name="xi" />
       </infixes>
-      <postfixes Amount="1">
+      <postfixes Load="" Amount="1">
         <postfix Name="aios" />
         <postfix Name="aster" />
         <postfix Name="bion" />
@@ -2645,7 +2645,7 @@
         <scope Name="Species6" Species="salamander" Priority="50" Combine="true" />
         <scope Name="Culture" Culture="Reptile" Priority="50" Combine="true" />
       </scopes>
-      <prefixes Amount="1">
+      <prefixes Load="" Amount="1">
         <prefix Name="a" />
         <prefix Name="ata" />
         <prefix Name="cha" />
@@ -2670,7 +2670,7 @@
         <prefix Name="ya" />
         <prefix Name="za" />
       </prefixes>
-      <infixes Amount="1-2">
+      <infixes Load="" Amount="1-2">
         <infix Name="ca" />
         <infix Name="ctla" />
         <infix Name="cto" />
@@ -2694,7 +2694,7 @@
         <infix Name="ya" />
         <infix Name="zca" />
       </infixes>
-      <postfixes Amount="1">
+      <postfixes Load="" Amount="1">
         <postfix Name="catl" />
         <postfix Name="ci" />
         <postfix Name="coa" />
@@ -2727,7 +2727,7 @@
         <scope Name="Faction" Faction="Tortoises" Priority="100" Combine="false" />
         <scope Name="Species" Species="tortoise" Priority="50" Combine="true" />
       </scopes>
-      <prefixes Amount="1">
+      <prefixes Load="" Amount="1">
         <prefix Name="mar" />
         <prefix Name="mir" />
         <prefix Name="mor" />
@@ -2739,13 +2739,13 @@
         <prefix Name="nur" />
         <prefix Name="nyr" />
       </prefixes>
-      <infixes Amount="1-2">
+      <infixes Load="" Amount="1-2">
         <infix Name="la" />
         <infix Name="le" />
         <infix Name="lo" />
         <infix Name="lu" />
       </infixes>
-      <postfixes Amount="0-1">
+      <postfixes Load="" Amount="0-1">
         <postfix Name="lab" />
         <postfix Name="leb" />
         <postfix Name="lob" />
@@ -2763,10 +2763,10 @@
         <scope Name="Main" Type="Epithet" Special="Hero" Faction="Tortoises" Priority="200" Combine="false" />
         <scope Name="Culture" Type="Epithet" Special="Hero" Culture="Tortoise" Priority="150" Combine="true" />
       </scopes>
-      <templates>
+      <templates Load="">
         <template Name="*Disposition*" />
       </templates>
-      <templatevars>
+      <templatevars Load="">
         <templatevar Name="Disposition">
           <value Name="심술궂은" />
           <value Name="다혈질의" />
@@ -2783,7 +2783,7 @@
         <scope Name="Main" Type="Title" Special="Hero" Faction="Tortoises" Priority="200" Combine="false" />
         <scope Name="Culture" Type="Title" Special="Hero" Culture="Tortoise" Priority="150" Combine="true" />
       </scopes>
-      <templates>
+      <templates Load="">
         <template Name="전설적인 *CreatureType*" />
       </templates>
     </namestyle>
@@ -2793,7 +2793,7 @@
         <scope Name="Faction" Faction="Fish" Priority="100" Combine="false" />
         <scope Name="Species" Species="Fish" Priority="50" Combine="true" />
       </scopes>
-      <prefixes Amount="1">
+      <prefixes Load="" Amount="1">
         <prefix Name="a" Weight="5" />
         <prefix Name="be" />
         <prefix Name="boa" />
@@ -2820,7 +2820,7 @@
         <prefix Name="sme" />
         <prefix Name="tri" />
       </prefixes>
-      <infixes Amount="0-2">
+      <infixes Load="" Amount="0-2">
         <infix Name="ba" />
         <infix Name="bi" />
         <infix Name="bno" />
@@ -2852,7 +2852,7 @@
         <infix Name="vell" />
         <infix Name="xe" />
       </infixes>
-      <postfixes Amount="1">
+      <postfixes Load="" Amount="1">
         <postfix Name="cura" />
         <postfix Name="dens" Weight="2" />
         <postfix Name="dros" />
@@ -2891,7 +2891,7 @@
         <scope Name="Species2" Species="scorpion" Priority="50" Combine="true" />
         <scope Name="Culture" Culture="Arachnid" Priority="50" Combine="true" />
       </scopes>
-      <prefixes Amount="1">
+      <prefixes Load="" Amount="1">
         <prefix Name="phthis" />
         <prefix Name="sheb" />
         <prefix Name="shob" />
@@ -2901,7 +2901,7 @@
         <prefix Name="tyth" />
         <prefix Name="yith" />
       </prefixes>
-      <postfixes Amount="1-3">
+      <postfixes Load="" Amount="1-3">
         <postfix Name="is" />
         <postfix Name="ith" />
         <postfix Name="os" />
@@ -2918,7 +2918,7 @@
         <scope Name="Main" Type="Title" Special="Hero" Faction="Arachnids" Priority="200" Combine="false" />
         <scope Name="Culture" Type="Title" Special="Hero" Culture="Arachnid" Priority="150" Combine="true" />
       </scopes>
-      <templates>
+      <templates Load="">
         <template Name="전설적인 *CreatureType*이자 명인 직조가" />
       </templates>
     </namestyle>
@@ -2928,7 +2928,7 @@
         <scope Name="Faction" Faction="Birds" Priority="100" Combine="false" />
         <scope Name="Culture" Culture="Bird" Priority="50" Combine="true" />
       </scopes>
-      <prefixes Amount="3-6">
+      <prefixes Load="" Amount="3-6">
         <prefix Name="ca" Weight="2" />
         <prefix Name="CA" Weight="2" />
         <prefix Name="CAAAAAAAAW" />
@@ -2949,10 +2949,10 @@
         <scope Name="Main" Type="Epithet" Special="Hero" Faction="Birds" Priority="200" Combine="false" />
         <scope Name="Culture" Type="Epithet" Special="Hero" Culture="Bird" Priority="150" Combine="true" />
       </scopes>
-      <templates>
+      <templates Load="">
         <template Name="*Singer*" />
       </templates>
-      <templatevars>
+      <templatevars Load="">
         <templatevar Name="Singer">
           <value Name="음유시인" />
           <value Name="악사" />
@@ -2968,10 +2968,10 @@
         <scope Name="Main" Type="Title" Special="Hero" Faction="Birds" Priority="200" Combine="false" />
         <scope Name="Culture" Type="Title" Special="Hero" Culture="Bird" Priority="150" Combine="true" />
       </scopes>
-      <templates>
+      <templates Load="">
         <template Name="*Disposition* *CreatureType*" />
       </templates>
-      <templatevars>
+      <templatevars Load="">
         <templatevar Name="Disposition">
           <value Name="침울한" />
           <value Name="명랑한" />
@@ -2986,7 +2986,7 @@
         <scope Name="Faction" Faction="Worms" Priority="100" Combine="false" />
         <scope Name="Species" Species="Worm" Priority="50" Combine="true" />
       </scopes>
-      <prefixes Amount="1">
+      <prefixes Load="" Amount="1">
         <prefix Name="bru" />
         <prefix Name="drau" />
         <prefix Name="ei" />
@@ -3004,7 +3004,7 @@
         <prefix Name="ra" />
         <prefix Name="ta" />
       </prefixes>
-      <infixes Amount="0-1">
+      <infixes Load="" Amount="0-1">
         <infix Name="dho" />
         <infix Name="fgu" />
         <infix Name="hri" />
@@ -3020,7 +3020,7 @@
         <infix Name="ta" />
         <infix Name="to" />
       </infixes>
-      <postfixes Amount="1">
+      <postfixes Load="" Amount="1">
         <postfix Name="fa" />
         <postfix Name="gg" />
         <postfix Name="ggr" />
@@ -3048,7 +3048,7 @@
         <scope Name="Faction" Faction="Consortium" Priority="100" Combine="false" />
         <scope Name="Culture" Culture="Plant" Priority="50" Combine="true" />
       </scopes>
-      <prefixes Amount="1">
+      <prefixes Load="" Amount="1">
         <prefix Name="a" />
         <prefix Name="bo" />
         <prefix Name="ca" />
@@ -3075,7 +3075,7 @@
         <prefix Name="we" />
         <prefix Name="wi" Weight="2" />
       </prefixes>
-      <infixes Amount="1-2">
+      <infixes Load="" Amount="1-2">
         <infix Name="chardi" />
         <infix Name="de" />
         <infix Name="degge" />
@@ -3109,7 +3109,7 @@
         <infix Name="tzsche" />
         <infix Name="xi" />
       </infixes>
-      <postfixes Amount="1">
+      <postfixes Load="" Amount="1">
         <postfix Name="beech" />
         <postfix Name="bert" />
         <postfix Name="boldt" />
@@ -3145,7 +3145,7 @@
         <scope Name="Faction" Faction="Fungi" Priority="100" Combine="false" />
         <scope Name="Culture" Culture="Fungal" Priority="50" Combine="true" />
       </scopes>
-      <prefixes Amount="1">
+      <prefixes Load="" Amount="1">
         <prefix Name="ama" />
         <prefix Name="aman" />
         <prefix Name="b" />
@@ -3169,7 +3169,7 @@
         <prefix Name="um" />
         <prefix Name="vir" />
       </prefixes>
-      <infixes Amount="1-2">
+      <infixes Load="" Amount="1-2">
         <infix Name="ake" />
         <infix Name="ceps" />
         <infix Name="cini" />
@@ -3193,7 +3193,7 @@
         <infix Name="osa" />
         <infix Name="zhi" />
       </infixes>
-      <postfixes Amount="1">
+      <postfixes Load="" Amount="1">
         <postfix Name="aecium" />
         <postfix Name="agaric" />
         <postfix Name="bolete" />
@@ -3226,7 +3226,7 @@
         <scope Name="Species" Species="antelope" Priority="50" Combine="true" />
         <scope Name="Culture" Culture="Antelope" Priority="50" Combine="true" />
       </scopes>
-      <prefixes Amount="1-5">
+      <prefixes Load="" Amount="1-5">
         <prefix Name="ga" />
         <prefix Name="gaka" />
         <prefix Name="gama" />
@@ -3258,7 +3258,7 @@
         <prefix Name="gumu" />
         <prefix Name="guyu" />
       </prefixes>
-      <postfixes Amount="0-1">
+      <postfixes Load="" Amount="0-1">
         <postfix Name="ga" />
         <postfix Name="gam" />
         <postfix Name="gat" />
@@ -3288,10 +3288,10 @@
         <scope Name="Main" Special="Hero" Faction="Antelopes" Priority="200" Combine="false" />
         <scope Name="Culture" Special="Hero" Culture="Antelope" Priority="150" Combine="true" />
       </scopes>
-      <templates>
+      <templates Load="">
         <template Name="*Name* *Adjective*" />
       </templates>
-      <templatevars>
+      <templatevars Load="">
         <templatevar Name="Adjective">
           <value Name="빠른발굽" />
           <value Name="재빠른도약자" />
@@ -3308,7 +3308,7 @@
         <scope Name="Main" Type="Title" Special="Hero" Faction="Antelopes" Priority="200" Combine="false" />
         <scope Name="Culture" Type="Title" Special="Hero" Culture="Antelope" Priority="150" Combine="true" />
       </scopes>
-      <templates>
+      <templates Load="">
         <template Name="전설적인 *CreatureType*" />
       </templates>
     </namestyle>
@@ -3319,7 +3319,7 @@
         <scope Name="Species" Species="dromad" Priority="50" Combine="true" />
         <scope Name="Culture" Culture="Dromad" Priority="50" Combine="true" />
       </scopes>
-      <prefixes Amount="1-2">
+      <prefixes Load="" Amount="1-2">
         <prefix Name="a" />
         <prefix Name="da" />
         <prefix Name="di" />
@@ -3339,7 +3339,7 @@
         <prefix Name="tu" />
         <prefix Name="u" />
       </prefixes>
-      <postfixes Amount="1">
+      <postfixes Load="" Amount="1">
         <postfix Name="l" />
         <postfix Name="m" />
         <postfix Name="n" />
@@ -3353,7 +3353,7 @@
         <scope Name="Faction" Faction="Urchins" Priority="100" Combine="false" />
         <scope Name="Culture" Culture="Urchin" Priority="50" Combine="true" />
       </scopes>
-      <prefixes Amount="1">
+      <prefixes Load="" Amount="1">
         <prefix Name="bru" />
         <prefix Name="drau" />
         <prefix Name="ei" />
@@ -3371,7 +3371,7 @@
         <prefix Name="ra" />
         <prefix Name="ta" />
       </prefixes>
-      <infixes Amount="0-1">
+      <infixes Load="" Amount="0-1">
         <infix Name="dho" />
         <infix Name="fgu" />
         <infix Name="hri" />
@@ -3387,7 +3387,7 @@
         <infix Name="ta" />
         <infix Name="to" />
       </infixes>
-      <postfixes Amount="1">
+      <postfixes Load="" Amount="1">
         <postfix Name="fa" />
         <postfix Name="gg" />
         <postfix Name="ggr" />
@@ -3415,7 +3415,7 @@
         <scope Name="Faction" Faction="Issachari" Priority="100" Combine="false" />
         <scope Name="Culture" Culture="Issachari" Priority="50" Combine="true" />
       </scopes>
-      <prefixes Amount="1">
+      <prefixes Load="" Amount="1">
         <prefix Name="목욕하는자" />
         <prefix Name="씹는자" />
         <prefix Name="질식하는자" />
@@ -3424,14 +3424,14 @@
         <prefix Name="마시는자" />
         <prefix Name="껍질벗기는자" />
       </prefixes>
-      <infixes Amount="1">
+      <infixes Load="" Amount="1">
         <infix Name="곁에서" />
         <infix Name="속에서" />
         <infix Name="근처에서" />
         <infix Name="위에서" />
         <infix Name="상에서" />
       </infixes>
-      <postfixes Amount="1">
+      <postfixes Load="" Amount="1">
         <postfix Name="아스팔트" />
         <postfix Name="불꽃" />
         <postfix Name="기름" />
@@ -3448,7 +3448,7 @@
         <scope Name="Faction" Faction="Templar" Priority="100" Combine="false" />
         <scope Name="Culture" Culture="Templar" Priority="50" Combine="true" />
       </scopes>
-      <prefixes Amount="1">
+      <prefixes Load="" Amount="1">
         <prefix Name="a" />
         <prefix Name="ba" />
         <prefix Name="be" />
@@ -3488,7 +3488,7 @@
         <prefix Name="se" />
         <prefix Name="tho" />
       </prefixes>
-      <infixes Amount="0-1">
+      <infixes Load="" Amount="0-1">
         <infix Name="bso" />
         <infix Name="cho" />
         <infix Name="cque" />
@@ -3515,7 +3515,7 @@
         <infix Name="xe" />
         <infix Name="xi" />
       </infixes>
-      <postfixes Amount="1">
+      <postfixes Load="" Amount="1">
         <postfix Name="belle" />
         <postfix Name="bert" />
         <postfix Name="beth" />
@@ -3567,7 +3567,7 @@
       <scopes>
         <scope Name="Main" Type="Title" Special="Hero" Faction="Templar" Priority="200" Combine="false" />
       </scopes>
-      <templates>
+      <templates Load="">
         <template Name="진인 가운데 전쟁광" />
       </templates>
     </namestyle>
@@ -3576,7 +3576,7 @@
       <scopes>
         <scope Name="Main" Type="Title" Special="Hero" Faction="Templar" Tag="KnightCommander" Priority="300" Combine="false" />
       </scopes>
-      <templates>
+      <templates Load="">
         <template Name="성전의 기사단장" />
       </templates>
     </namestyle>
@@ -3585,7 +3585,7 @@
       <scopes>
         <scope Name="Main" Type="Title" Special="Hero" Faction="Templar" Tag="WraithKnight" Priority="300" Combine="false" />
       </scopes>
-      <templates>
+      <templates Load="">
         <template Name="이진 호노룸의 망령기사 템플러" />
       </templates>
     </namestyle>
@@ -3594,7 +3594,7 @@
       <scopes>
         <scope Name="Main" Type="Title" Special="Hero" Faction="Templar" Priority="300" Tag="GrandNewfather" Combine="false" />
       </scopes>
-      <templates>
+      <templates Load="">
         <template Name="" />
       </templates>
     </namestyle>
@@ -3603,7 +3603,7 @@
       <scopes>
         <scope Name="Main" Special="Hero" Faction="Templar" Tag="GrandNewfather" Priority="300" Combine="false" />
       </scopes>
-      <templates>
+      <templates Load="">
         <template Name="*Name*" />
       </templates>
     </namestyle>
@@ -3612,7 +3612,7 @@
       <scopes>
         <scope Name="Main" Type="Honorific" Special="Hero" Faction="Templar" Tag="GrandNewfather" Priority="300" Combine="false" />
       </scopes>
-      <templates>
+      <templates Load="">
         <template Name="Grand Newfather" />
       </templates>
     </namestyle>
@@ -3621,7 +3621,7 @@
 			<scopes>
 				<scope Name="Main" Type="Honorific" Special="Hero" Faction="Templar" Priority="300" Tag="TemplarMecha" Combine="false" />
 			</scopes>
-			<templates>
+			<templates Load="">
 				<template Name="고위 메카" />
 			</templates>
 		</namestyle>
@@ -3630,7 +3630,7 @@
 			<scopes>
 				<scope Name="Main" Type="Title" Special="Hero" Faction="Templar" Priority="300" Tag="TemplarMecha" Combine="false" />
 			</scopes>
-			<templates>
+			<templates Load="">
 				<template Name="" />
 			</templates>
 		</namestyle>
@@ -3639,7 +3639,7 @@
 			<scopes>
 				<scope Name="Main" Special="Hero" Faction="Templar" Tag="TemplarMecha" Priority="300" Combine="true" />
 			</scopes>
-			<prefixes Amount="1">
+			<prefixes Load="" Amount="1">
 				<prefix Name="빛나는" />
 				<prefix Name="진주" />
 				<prefix Name="순결한" />
@@ -3662,7 +3662,7 @@
 				<prefix Name="공정한" />
 				<prefix Name="높은" />
 			</prefixes>
-			<infixes Amount="1">
+			<infixes Load="" Amount="1">
 				<infix Name="bso" />
 				<infix Name="cho" />
 				<infix Name="cque" />
@@ -3689,7 +3689,7 @@
 				<infix Name="xe" />
 				<infix Name="xi" />
 			</infixes>
-			<postfixes Amount="1">
+			<postfixes Load="" Amount="1">
 				<postfix Name="belle" />
 				<postfix Name="bert" />
 				<postfix Name="beth" />
@@ -3741,7 +3741,7 @@
 			<scopes>
 				<scope Name="Main" Special="Hero" Faction="Templar" Tag="TemplarMecha" Priority="300" Combine="true" />
 			</scopes>
-			<prefixes Amount="1">
+			<prefixes Load="" Amount="1">
 				<prefix Name="a" />
 				<prefix Name="ba" />
 				<prefix Name="be" />
@@ -3781,7 +3781,7 @@
 				<prefix Name="se" />
 				<prefix Name="tho" />
 			</prefixes>
-			<infixes Amount="1">
+			<infixes Load="" Amount="1">
 				<infix Name="bso" />
 				<infix Name="cho" />
 				<infix Name="cque" />
@@ -3808,7 +3808,7 @@
 				<infix Name="xe" />
 				<infix Name="xi" />
 			</infixes>
-		  <postfixes Amount="1">
+		  <postfixes Load="" Amount="1">
 			  <postfix Name="미인" Weight="2" />
 			  <postfix Name="아들" />
 			  <postfix Name="딸" />
@@ -3835,7 +3835,7 @@
         <scope Name="Faction" Faction="Barathrumites" Priority="100" Combine="false" />
         <scope Name="Culture" Culture="Barathrumite" Priority="50" Combine="true" />
       </scopes>
-      <prefixes Amount="1">
+      <prefixes Load="" Amount="1">
         <prefix Name="b" />
         <prefix Name="ch" />
         <prefix Name="d" />
@@ -3850,7 +3850,7 @@
         <prefix Name="sp" />
         <prefix Name="th" />
       </prefixes>
-      <infixes Amount="1">
+      <infixes Load="" Amount="1">
         <infix Name="aco" />
         <infix Name="afe" />
         <infix Name="afo" />
@@ -3870,7 +3870,7 @@
         <infix Name="otho" />
         <infix Name="otti" />
       </infixes>
-      <postfixes Amount="0-1">
+      <postfixes Load="" Amount="0-1">
         <postfix Name="ccea" />
         <postfix Name="cceo" />
         <postfix Name="da" />
@@ -3894,10 +3894,10 @@
         <scope Name="Main" Type="Title" Special="Hero" Faction="Barathrumites" Priority="200" Combine="false" />
         <scope Name="Culture" Type="Title" Special="Hero" Culture="Barathrumite" Priority="150" Combine="true" />
       </scopes>
-      <templates>
+      <templates Load="">
         <template Name="*Adjective* 바라스럼인 *Role*" />
       </templates>
-      <templatevars>
+      <templatevars Load="">
         <templatevar Name="Adjective">
           <value Name="명성높은" />
           <value Name="저명한" />
@@ -3917,7 +3917,7 @@
         <scope Name="Faction" Faction="Hindren" Priority="100" Combine="false" />
         <scope Name="Culture" Culture="Hindren" Priority="50" Combine="true" />
       </scopes>
-      <prefixes Amount="1">
+      <prefixes Load="" Amount="1">
         <prefix Name="bi" />
         <prefix Name="da" />
         <prefix Name="de" />
@@ -3949,7 +3949,7 @@
         <prefix Name="vi" />
         <prefix Name="vo" />
       </prefixes>
-      <infixes Amount="0-2">
+      <infixes Load="" Amount="0-2">
         <infix Name="aa" />
         <infix Name="ah" />
         <infix Name="aw" />
@@ -3976,7 +3976,7 @@
         <infix Name="teh" />
         <infix Name="ti" />
       </infixes>
-      <postfixes Amount="1">
+      <postfixes Load="" Amount="1">
         <postfix Name="" />
         <postfix Name="hart" Weight="2" />
         <postfix Name="hind" Weight="11" />
@@ -3989,7 +3989,7 @@
         <scope Name="Species" Species="mopango" Priority="50" Combine="true" />
         <scope Name="Culture" Culture="Mopango" Priority="50" Combine="true" />
       </scopes>
-      <prefixes Amount="1">
+      <prefixes Load="" Amount="1">
         <prefix Name="a" />
         <prefix Name="da" />
         <prefix Name="do" />
@@ -4014,7 +4014,7 @@
         <prefix Name="ya" />
         <prefix Name="yo" />
       </prefixes>
-      <infixes Amount="0-2">
+      <infixes Load="" Amount="0-2">
         <infix Name="ba" />
         <infix Name="chra" />
         <infix Name="chre" />
@@ -4045,7 +4045,7 @@
         <infix Name="vy" />
         <infix Name="zo" />
       </infixes>
-      <postfixes Amount="1">
+      <postfixes Load="" Amount="1">
         <postfix Name="b" />
         <postfix Name="ba" />
         <postfix Name="ch" />
@@ -4070,7 +4070,7 @@
       <scopes>
         <scope Name="Mutation" Mutation="Two-Headed" Priority="300" Chance="15" Combine="false" />
       </scopes>
-      <templates>
+      <templates Load="">
         <template Name="*Name*/*AltName*" />
       </templates>
     </namestyle>
@@ -4080,7 +4080,7 @@
         <scope Name="Faction" Faction="Seekers" Priority="100" Combine="false" />
         <scope Name="Culture" Culture="Sightless Way" Priority="100" Combine="false" />
       </scopes>
-      <templates>
+      <templates Load="">
         <template Name="*Name*-더이상아님" />
       </templates>
     </namestyle>
@@ -4090,10 +4090,10 @@
         <scope Name="Main" Type="Title" Special="Hero" Faction="Seekers" Priority="200" Combine="false" />
         <scope Name="PsychicHunter" Type="Title" Special="PsychicHunter" Faction="Seekers" Priority="200" Combine="false" />
       </scopes>
-      <templates>
+      <templates Load="">
         <template Name="*Position*" />
       </templates>
-      <templatevars>
+      <templatevars Load="">
         <templatevar Name="Position">
           <value Name="프토의 종복" />
         </templatevar>
@@ -4104,7 +4104,7 @@
       <scopes>
         <scope Name="Main" Type="Title" Special="Hero" Faction="Seekers" Priority="300" Tag="Dervish" Combine="false" />
       </scopes>
-      <templates>
+      <templates Load="">
         <template Name="전설적인 *CreatureType*" />
       </templates>
     </namestyle>
@@ -4113,7 +4113,7 @@
       <scopes>
         <scope Name="Main" Type="Title" Special="Hero" Faction="Pariahs" Priority="200" Combine="false" />
       </scopes>
-      <templates>
+      <templates Load="">
         <template Name="*CreatureTypeCap* 추방자" />
       </templates>
     </namestyle>
@@ -4122,7 +4122,7 @@
       <scopes>
         <scope Name="Main" Type="Title" Special="Hero" Faction="Pariahs" Culture="Barathrumite" Priority="300" Combine="false" />
       </scopes>
-      <templates>
+      <templates Load="">
         <template Name="*CreatureTypeCap* 우상파괴자" />
       </templates>
     </namestyle>
@@ -4131,7 +4131,7 @@
       <scopes>
         <scope Name="Main" Type="Title" Special="Hero" Faction="Pariahs" Culture="Mechanimist" Priority="300" Combine="false" />
       </scopes>
-      <templates>
+      <templates Load="">
         <template Name="*CreatureTypeCap* 이단자" />
       </templates>
     </namestyle>
@@ -4140,7 +4140,7 @@
       <scopes>
         <scope Name="Main" Type="Title" Special="Hero" Faction="Pariahs" Culture="HindrenPariah" Priority="300" Combine="false" />
       </scopes>
-      <templates>
+      <templates Load="">
         <template Name="*CreatureTypeCap*" />
       </templates>
     </namestyle>
@@ -4149,7 +4149,7 @@
       <scopes>
         <scope Name="Main" Type="Title" Special="Hero" Priority="0" Combine="false" />
       </scopes>
-      <templates>
+      <templates Load="">
         <template Name="전설적인 *CreatureType*" />
       </templates>
     </namestyle>
@@ -4158,7 +4158,7 @@
       <scopes>
         <scope Name="Main" Type="Title" Special="Lair" Priority="0" Combine="false" />
       </scopes>
-      <templates>
+      <templates Load="">
         <template Name="전설적인 *CreatureType*" />
       </templates>
     </namestyle>
@@ -4167,7 +4167,7 @@
       <scopes>
         <scope Name="Main" Type="Honorific" Special="Hero" Tag="Animated" Priority="300" Combine="true" Chance="25" />
       </scopes>
-      <templates>
+      <templates Load="">
         <template Name="*Descriptor*" />
       </templates>
     </namestyle>
@@ -4176,7 +4176,7 @@
       <scopes>
         <scope Name="Main" Type="Epithet" Special="Hero" Tag="Animated" Priority="300" Combine="true" SkipIfHasHonorific="true" />
       </scopes>
-      <templates>
+      <templates Load="">
         <template Name="the *Descriptor*" />
       </templates>
     </namestyle>
@@ -4185,7 +4185,7 @@
       <scopes>
         <scope Name="Main" Type="Title" Special="Hero" Tag="Animated" Priority="300" Combine="true" Chance="50" />
       </scopes>
-      <templates>
+      <templates Load="">
         <template Name="전설적인 *CreatureType*" Weight="6" />
         <template Name="명성높은 *CreatureType*" />
       </templates>
@@ -4195,7 +4195,7 @@
       <scopes>
         <scope Name="Main" Type="ExtraTitle" Special="Hero" Tag="Animated" Priority="300" Combine="true" Chance="50" />
       </scopes>
-      <templates>
+      <templates Load="">
         <template Name="*Clientele*의 친구" />
       </templates>
     </namestyle>
@@ -4204,10 +4204,10 @@
       <scopes>
         <scope Name="Main" Type="Honorific" Special="Mayor" Priority="400" Chance="40" Combine="true" />
       </scopes>
-      <templates>
+      <templates Load="">
         <template Name="*MayorSynCap*" />
       </templates>
-      <templatevars>
+      <templatevars Load="">
         <templatevar Name="MayorSyn">
           <value Name="촌장" />
           <value Name="장로" />
@@ -4223,11 +4223,11 @@
       <scopes>
         <scope Name="Main" Type="Title" Special="Mayor" Priority="400" Chance="40" Combine="true" />
       </scopes>
-      <templates>
+      <templates Load="">
         <template Name="마을 *MayorSyn*" />
         <template Name="마을의 *MayorSyn*" />
       </templates>
-      <templatevars>
+      <templatevars Load="">
         <templatevar Name="MayorSyn">
           <value Name="촌장" />
           <value Name="장로" />
@@ -4243,10 +4243,10 @@
       <scopes>
         <scope Name="Main" Type="Honorific" Special="King" Priority="100" Combine="true" />
       </scopes>
-      <templates>
+      <templates Load="">
         <template Name="*MonarchSynCap*" />
       </templates>
-      <templatevars>
+      <templatevars Load="">
         <templatevar Name="MonarchSyn">
           <value Name="왕" />
         </templatevar>
@@ -4260,10 +4260,10 @@
       <scopes>
         <scope Name="Main" Type="Honorific" Special="King" Priority="100" Combine="true" />
       </scopes>
-      <templates>
+      <templates Load="">
         <template Name="*MonarchSynCap*" />
       </templates>
-      <templatevars>
+      <templatevars Load="">
         <templatevar Name="MonarchSyn">
           <value Name="여왕" />
         </templatevar>
@@ -4277,10 +4277,10 @@
       <scopes>
         <scope Name="Main" Type="Honorific" Special="Councilor" Priority="100" Combine="true" />
       </scopes>
-      <templates>
+      <templates Load="">
         <template Name="*CouncilorSynCap*" />
       </templates>
-      <templatevars>
+      <templatevars Load="">
         <templatevar Name="CouncilorSyn">
           <value Name="의원" />
         </templatevar>
@@ -4294,10 +4294,10 @@
       <scopes>
         <scope Name="Main" Type="Honorific" Special="Senator" Priority="100" Combine="true" />
       </scopes>
-      <templates>
+      <templates Load="">
         <template Name="*CouncilorSynCap*" />
       </templates>
-      <templatevars>
+      <templatevars Load="">
         <templatevar Name="CouncilorSyn">
           <value Name="원로원 의원" />
         </templatevar>
@@ -4311,10 +4311,10 @@
       <scopes>
         <scope Name="Main" Type="Honorific" Special="Parliamentarian" Priority="100" Combine="true" />
       </scopes>
-      <templates>
+      <templates Load="">
         <template Name="*CouncilorSynCap*" />
       </templates>
-      <templatevars>
+      <templatevars Load="">
         <templatevar Name="CouncilorSyn">
           <value Name="국회의원" />
         </templatevar>
@@ -4328,10 +4328,10 @@
       <scopes>
         <scope Name="Main" Type="Honorific" Special="Viceroy" Priority="100" Combine="true" />
       </scopes>
-      <templates>
+      <templates Load="">
         <template Name="*ViceroySynCap*" />
       </templates>
-      <templatevars>
+      <templatevars Load="">
         <templatevar Name="ViceroySyn">
           <value Name="부왕" />
         </templatevar>
@@ -4345,10 +4345,10 @@
       <scopes>
         <scope Name="Main" Type="Honorific" Special="Governor" Priority="100" Combine="true" />
       </scopes>
-      <templates>
+      <templates Load="">
         <template Name="*ViceroySynCap*" />
       </templates>
-      <templatevars>
+      <templatevars Load="">
         <templatevar Name="ViceroySyn">
           <value Name="총독" />
         </templatevar>
@@ -4369,10 +4369,10 @@
         <scope Name="Viceroy" Type="Epithet" Special="Viceroy" Priority="100" Chance="33" Combine="true" />
         <scope Name="Governor" Type="Epithet" Special="Governor" Priority="100" Chance="33" Combine="true" />
       </scopes>
-      <templates>
+      <templates Load="">
         <template Name="the *WiseAdjective*" />
       </templates>
-      <templatevars>
+      <templatevars Load="">
         <templatevar Name="WiseAdjective">
           <value Name="박식한" />
           <value Name="분별있는" />
@@ -4390,7 +4390,7 @@
       <scopes>
         <scope Name="Main" Type="Honorific" Special="Warden" Priority="400" Combine="true" />
       </scopes>
-      <templates>
+      <templates Load="">
         <template Name="감시자" />
       </templates>
     </namestyle>
@@ -4399,7 +4399,7 @@
       <scopes>
         <scope Name="Mutation" Type="Honorific" Special="Warden" Mutation="Two-Headed" Priority="500" Chance="30" Combine="false" />
       </scopes>
-      <templates>
+      <templates Load="">
         <template Name="감시자들" />
       </templates>
     </namestyle>
@@ -4408,7 +4408,7 @@
       <scopes>
         <scope Name="Gender" Type="Honorific" Special="Warden" Gender="plural" Priority="600" Combine="false" />
       </scopes>
-      <templates>
+      <templates Load="">
         <template Name="감시자들" />
       </templates>
     </namestyle>
@@ -4417,7 +4417,7 @@
       <scopes>
         <scope Name="Main" Type="Title" Special="Merchant" Priority="400" Combine="true" />
       </scopes>
-      <templates>
+      <templates Load="">
         <template Name="마을 상인" Weight="2" />
         <template Name="마을의 상인" />
       </templates>
@@ -4427,7 +4427,7 @@
       <scopes>
         <scope Name="Main" Type="Title" Special="Merchant" Species="dromad" Priority="500" Combine="false" />
       </scopes>
-      <templates>
+      <templates Load="">
         <template Name="드로마드 상인" />
       </templates>
     </namestyle>
@@ -4436,7 +4436,7 @@
       <scopes>
         <scope Name="Main" Type="Title" Special="Tinker" Priority="400" Combine="true" />
       </scopes>
-      <templates>
+      <templates Load="">
         <template Name="마을 땜장이" Weight="2" />
         <template Name="마을의 땜장이" />
       </templates>
@@ -4446,7 +4446,7 @@
       <scopes>
         <scope Name="Main" Type="Title" Special="Apothecary" Priority="400" Combine="true" />
       </scopes>
-      <templates>
+      <templates Load="">
         <template Name="마을 약사" Weight="2" />
         <template Name="마을의 약사" />
       </templates>
@@ -4456,7 +4456,7 @@
       <scopes>
         <scope Name="Special" Special="GenderName" Priority="100" Combine="true" />
       </scopes>
-      <prefixes Amount="1">
+      <prefixes Load="" Amount="1">
         <prefix Name="" Weight="2" />
         <prefix Name="a" />
         <prefix Name="al" />
@@ -4475,7 +4475,7 @@
         <prefix Name="xeno" />
         <prefix Name="xyn" />
       </prefixes>
-      <infixes Amount="1">
+      <infixes Load="" Amount="1">
         <infix Name="cla" />
         <infix Name="dre" />
         <infix Name="fa" />
@@ -4495,7 +4495,7 @@
         <infix Name="va" />
         <infix Name="ve" />
       </infixes>
-      <postfixes Amount="1">
+      <postfixes Load="" Amount="1">
         <postfix Name="cer" />
         <postfix Name="dan" />
         <postfix Name="de" />
@@ -4522,7 +4522,7 @@
       <scopes>
         <scope Name="Special" Special="GenderPersonTerm" Priority="100" Chance="50" Combine="true" />
       </scopes>
-      <prefixes Amount="1">
+      <prefixes Load="" Amount="1">
         <prefix Name="ch" />
         <prefix Name="exm" />
         <prefix Name="gl" />
@@ -4531,7 +4531,7 @@
         <prefix Name="st" />
         <prefix Name="wom" />
       </prefixes>
-      <infixes Amount="1">
+      <infixes Load="" Amount="1">
         <infix Name="aa" />
         <infix Name="a" Weight="3" />
         <infix Name="ada" />
@@ -4541,7 +4541,7 @@
         <infix Name="ya" />
         <infix Name="y" Weight="2" />
       </infixes>
-      <postfixes Amount="1">
+      <postfixes Load="" Amount="1">
         <postfix Name="k" />
         <postfix Name="l" />
         <postfix Name="n" />
@@ -4555,7 +4555,7 @@
       <scopes>
         <scope Name="Special" Special="GenderImmaturePersonTerm" Priority="100" Chance="50" Combine="true" />
       </scopes>
-      <prefixes Amount="1">
+      <prefixes Load="" Amount="1">
         <prefix Name="b" />
         <prefix Name="bh" />
         <prefix Name="ch" />
@@ -4564,7 +4564,7 @@
         <prefix Name="x" />
         <prefix Name="zh" />
       </prefixes>
-      <infixes Amount="1">
+      <infixes Load="" Amount="1">
         <infix Name="a" />
         <infix Name="e" />
         <infix Name="i" />
@@ -4572,7 +4572,7 @@
         <infix Name="ya" />
         <infix Name="y" />
       </infixes>
-      <postfixes Amount="1">
+      <postfixes Load="" Amount="1">
         <postfix Name="dy" />
         <postfix Name="ld" />
         <postfix Name="li" />
@@ -4587,7 +4587,7 @@
       <scopes>
         <scope Name="Special" Special="GenderFormalAddressTerm" Priority="100" Chance="50" Combine="true" />
       </scopes>
-      <prefixes Amount="1">
+      <prefixes Load="" Amount="1">
         <prefix Name="fr" />
         <prefix Name="gr" />
         <prefix Name="m" />
@@ -4596,7 +4596,7 @@
         <prefix Name="s" />
         <prefix Name="v" />
       </prefixes>
-      <infixes Amount="1">
+      <infixes Load="" Amount="1">
         <infix Name="a" />
         <infix Name="e" />
         <infix Name="i" />
@@ -4604,7 +4604,7 @@
         <infix Name="u" />
         <infix Name="y" />
       </infixes>
-      <postfixes Amount="1">
+      <postfixes Load="" Amount="1">
         <postfix Name="ia" />
         <postfix Name="i" />
         <postfix Name="m" />
@@ -4620,7 +4620,7 @@
       <scopes>
         <scope Name="Special" Special="GenderOffspringTerm" Priority="100" Chance="50" Combine="true" />
       </scopes>
-      <prefixes Amount="1">
+      <prefixes Load="" Amount="1">
         <prefix Name="b" />
         <prefix Name="bh" />
         <prefix Name="ch" />
@@ -4631,7 +4631,7 @@
         <prefix Name="x" />
         <prefix Name="zh" />
       </prefixes>
-      <infixes Amount="1">
+      <infixes Load="" Amount="1">
         <infix Name="a" />
         <infix Name="au" />
         <infix Name="e" />
@@ -4640,7 +4640,7 @@
         <infix Name="ya" />
         <infix Name="y" />
       </infixes>
-      <postfixes Amount="1">
+      <postfixes Load="" Amount="1">
         <postfix Name="by" />
         <postfix Name="dy" />
         <postfix Name="ghter" />
@@ -4660,7 +4660,7 @@
       <scopes>
         <scope Name="Special" Special="GenderSiblingTerm" Priority="100" Chance="50" Combine="true" />
       </scopes>
-      <prefixes Amount="1">
+      <prefixes Load="" Amount="1">
         <prefix Name="b" />
         <prefix Name="bh" />
         <prefix Name="br" />
@@ -4672,7 +4672,7 @@
         <prefix Name="x" />
         <prefix Name="zh" />
       </prefixes>
-      <infixes Amount="1">
+      <infixes Load="" Amount="1">
         <infix Name="a" />
         <infix Name="au" />
         <infix Name="e" />
@@ -4681,7 +4681,7 @@
         <infix Name="ya" />
         <infix Name="y" />
       </infixes>
-      <postfixes Amount="1">
+      <postfixes Load="" Amount="1">
         <postfix Name="b" />
         <postfix Name="bby" />
         <postfix Name="dy" />
@@ -4701,7 +4701,7 @@
       <scopes>
         <scope Name="Special" Special="GenderParentTerm" Priority="100" Chance="50" Combine="true" />
       </scopes>
-      <prefixes Amount="1">
+      <prefixes Load="" Amount="1">
         <prefix Name="b" />
         <prefix Name="bh" />
         <prefix Name="br" />
@@ -4715,7 +4715,7 @@
         <prefix Name="x" />
         <prefix Name="zh" />
       </prefixes>
-      <infixes Amount="1">
+      <infixes Load="" Amount="1">
         <infix Name="a" />
         <infix Name="au" />
         <infix Name="e" />
@@ -4724,7 +4724,7 @@
         <infix Name="ya" />
         <infix Name="y" />
       </infixes>
-      <postfixes Amount="1">
+      <postfixes Load="" Amount="1">
         <postfix Name="b" />
         <postfix Name="d" />
         <postfix Name="ddy" />
@@ -4747,7 +4747,7 @@
       <scopes>
         <scope Name="Main" Type="Confusion" Priority="100" Combine="false" />
       </scopes>
-      <prefixes Amount="1-2">
+      <prefixes Load="" Amount="1-2">
         <prefix Name="duh" />
         <prefix Name="er" />
         <prefix Name="hu" />
@@ -4757,7 +4757,7 @@
         <prefix Name="wah" />
         <prefix Name="wuh" />
       </prefixes>
-      <infixes Amount="1-2">
+      <infixes Load="" Amount="1-2">
         <infix Name="cal" />
         <infix Name="chu" />
         <infix Name="er" />
@@ -4766,7 +4766,7 @@
         <infix Name="umm" />
         <infix Name="wah" />
       </infixes>
-      <postfixes Amount="1-2">
+      <postfixes Load="" Amount="1-2">
         <postfix Name="cal" />
         <postfix Name="cha" />
         <postfix Name="chu" />
@@ -4783,7 +4783,7 @@
       <scopes>
         <scope Name="Main" Type="FuriousConfusion" Priority="100" Combine="false" />
       </scopes>
-      <prefixes Amount="1-2">
+      <prefixes Load="" Amount="1-2">
         <prefix Name="AH" />
         <prefix Name="BAH" />
         <prefix Name="GAR" />
@@ -4793,7 +4793,7 @@
         <prefix Name="Ur" />
         <prefix Name="UR" />
       </prefixes>
-      <infixes Amount="1-2">
+      <infixes Load="" Amount="1-2">
         <infix Name="AAA" />
         <infix Name="AHH" />
         <infix Name="ARG" />
@@ -4803,7 +4803,7 @@
         <infix Name="RGG" />
         <infix Name="RGH" />
       </infixes>
-      <postfixes Amount="1-2">
+      <postfixes Load="" Amount="1-2">
         <postfix Name="!!!" />
         <postfix Name="!!" />
         <postfix Name="!!1!" />
@@ -4820,7 +4820,7 @@
 			<scopes>
 				<scope Name="Faction" Faction="Gyre Wights" Priority="100" Combine="false" />
 			</scopes>
-			<prefixes Amount="1">
+			<prefixes Load="" Amount="1">
 				<prefix Name="fa" />
 				<prefix Name="ha" />
 				<prefix Name="i" Weight="2" />
@@ -4851,7 +4851,7 @@
 				<prefix Name="yi" />
 				<prefix Name="yy" />
 			</prefixes>
-			<infixes Amount="0-1">
+			<infixes Load="" Amount="0-1">
 				<infix Name="ga" />
 				<infix Name="me" />
 				<infix Name="mo" />
@@ -4873,7 +4873,7 @@
 				<infix Name="shwu" />
 				<infix Name="yu" Weight="2" />
 			</infixes>
-			<postfixes Amount="1">
+			<postfixes Load="" Amount="1">
 				<postfix Name="bas" />
 				<postfix Name="d" />
 				<postfix Name="jr" />
@@ -4905,7 +4905,7 @@
       <scopes>
         <scope Name="Main" Type="Title" Special="Hero" Faction="Gyre Wights" Priority="300" Combine="true" />
       </scopes>
-      <templates>
+      <templates Load="">
         <template Name="" />
       </templates>
     </namestyle>
@@ -4914,7 +4914,7 @@
       <scopes>
         <scope Name="Main" Type="Honorific" Special="Hero" Faction="Gyre Wights" Priority="500" Combine="true" Tag="AgolgotGyreWight" />
       </scopes>
-      <templates>
+      <templates Load="">
         <template Name="관 착유자" />
       </templates>
     </namestyle>
@@ -4922,7 +4922,7 @@
       <scopes>
         <scope Name="Main" Type="Epithet" Special="Hero" Faction="Gyre Wights" Priority="500" Combine="true" Tag="AgolgotGyreWight" />
       </scopes>
-      <templates>
+      <templates Load="">
         <template Name="아골고트의" />
       </templates>
     </namestyle>
@@ -4930,7 +4930,7 @@
       <scopes>
         <scope Name="Main" Type="Title" Special="Hero" Faction="Gyre Wights" Priority="500" Combine="true" Tag="AgolgotGyreWight" />
       </scopes>
-      <templates>
+      <templates Load="">
         <template Name="" />
       </templates>
     </namestyle>
@@ -4939,7 +4939,7 @@
       <scopes>
         <scope Name="Main" Type="Honorific" Special="Hero" Faction="Gyre Wights" Priority="500" Combine="true" Tag="BethsaidaGyreWight" />
       </scopes>
-      <templates>
+      <templates Load="">
         <template Name="회오리 쌍둥이" />
       </templates>
     </namestyle>
@@ -4947,7 +4947,7 @@
       <scopes>
         <scope Name="Main" Type="Epithet" Special="Hero" Faction="Gyre Wights" Priority="500" Combine="true" Tag="BethsaidaGyreWight" />
       </scopes>
-      <templates>
+      <templates Load="">
         <template Name="벳새다의" />
       </templates>
     </namestyle>
@@ -4955,7 +4955,7 @@
       <scopes>
         <scope Name="Main" Type="Title" Special="Hero" Faction="Gyre Wights" Priority="500" Combine="true" Tag="BethsaidaGyreWight" />
       </scopes>
-      <templates>
+      <templates Load="">
         <template Name="" />
       </templates>
     </namestyle>
@@ -4964,7 +4964,7 @@
       <scopes>
         <scope Name="Main" Type="Honorific" Special="Hero" Faction="Gyre Wights" Priority="500" Combine="true" Tag="Shug'ruithGyreWight" />
       </scopes>
-      <templates>
+      <templates Load="">
         <template Name="심연의" />
       </templates>
     </namestyle>
@@ -4972,7 +4972,7 @@
       <scopes>
         <scope Name="Main" Type="Epithet" Special="Hero" Faction="Gyre Wights" Priority="500" Combine="true" Tag="Shug'ruithGyreWight" />
       </scopes>
-      <templates>
+      <templates Load="">
         <template Name="슈그루이스의" />
       </templates>
     </namestyle>
@@ -4980,7 +4980,7 @@
       <scopes>
         <scope Name="Main" Type="Title" Special="Hero" Faction="Gyre Wights" Priority="500" Combine="true" Tag="Shug'ruithGyreWight" />
       </scopes>
-      <templates>
+      <templates Load="">
         <template Name="" />
       </templates>
     </namestyle>
@@ -4989,7 +4989,7 @@
       <scopes>
         <scope Name="Main" Type="Honorific" Special="Hero" Faction="Gyre Wights" Priority="500" Combine="true" Tag="RermadonGyreWight" />
       </scopes>
-      <templates>
+      <templates Load="">
         <template Name="가스빛" />
       </templates>
     </namestyle>
@@ -4997,7 +4997,7 @@
       <scopes>
         <scope Name="Main" Type="Epithet" Special="Hero" Faction="Gyre Wights" Priority="500" Combine="true" Tag="RermadonGyreWight" />
       </scopes>
-      <templates>
+      <templates Load="">
         <template Name="-레르마돈" />
       </templates>
     </namestyle>
@@ -5005,7 +5005,7 @@
       <scopes>
         <scope Name="Main" Type="Title" Special="Hero" Faction="Gyre Wights" Priority="500" Combine="true" Tag="RermadonGyreWight" />
       </scopes>
-      <templates>
+      <templates Load="">
         <template Name="" />
       </templates>
     </namestyle>
@@ -5014,7 +5014,7 @@
       <scopes>
         <scope Name="Main" Type="Title" Special="Hero" Faction="Gyre Wights" Priority="500" Combine="true" Tag="QasGyreWight" />
       </scopes>
-      <templates>
+      <templates Load="">
         <template Name="카스의 신부 들러리" />
       </templates>
     </namestyle>
@@ -5023,7 +5023,7 @@
       <scopes>
         <scope Name="Main" Type="Title" Special="Hero" Faction="Gyre Wights" Priority="500" Combine="true" Tag="QonGyreWight" />
       </scopes>
-      <templates>
+      <templates Load="">
         <template Name="콘의 신부 들러리" />
       </templates>
     </namestyle>
@@ -5033,7 +5033,7 @@
       <scopes>
         <scope Name="Culture" Culture="Chiliad Qudish" Priority="100" Combine="true" />
       </scopes>
-      <prefixes Amount="1">
+      <prefixes Load="" Amount="1">
         <prefix Name="fa" />
         <prefix Name="ha" />
         <prefix Name="y" Weight="2" />
@@ -5059,7 +5059,7 @@
         <prefix Name="ya" />
         <prefix Name="yy" />
       </prefixes>
-      <infixes Amount="0-2">
+      <infixes Load="" Amount="0-2">
         <infix Name="ga" />
         <infix Name="me" />
         <infix Name="no" />
@@ -5078,7 +5078,7 @@
         <infix Name="svo" />
         <infix Name="yu" Weight="2" />
       </infixes>
-      <postfixes Amount="1">
+      <postfixes Load="" Amount="1">
         <postfix Name="bas" />
         <postfix Name="d" />
         <postfix Name="jl" />
@@ -5109,7 +5109,7 @@
       <scopes>
         <scope Name="Main" Type="Site" Culture="Chiliad Qudish" Priority="150" Combine="false" />
       </scopes>
-      <prefixes Amount="1">
+      <prefixes Load="" Amount="1">
         <prefix Name="a" />
         <prefix Name="ala" />
         <prefix Name="by" />
@@ -5133,7 +5133,7 @@
         <prefix Name="tu" />
         <prefix Name="u" />
       </prefixes>
-      <infixes Amount="0-1">
+      <infixes Load="" Amount="0-1">
         <infix Name="arra" />
         <infix Name="azo" />
         <infix Name="ba" />
@@ -5150,7 +5150,7 @@
         <infix Name="rsy" />
         <infix Name="rva" />
       </infixes>
-      <postfixes Amount="1">
+      <postfixes Load="" Amount="1">
         <postfix Name="bal" />
         <postfix Name="d" />
         <postfix Name="kevh" />
