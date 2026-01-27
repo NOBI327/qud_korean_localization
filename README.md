@@ -11,10 +11,18 @@
 ## 적용법
 
 1. [한글패치 최신파일 다운로드 링크](https://github.com/qudkorean/qud_korean_localization/releases/latest)에서 ```korean-test.zip``` 다운로드 후 압축해제
-2. ```C:\Users\[사용자 이름]\AppData\LocalLow\Freehold Games\CavesOfQud\Mods\``` 폴더에 ```korean-test``` 폴더 채로 복사
-3. 게임시작 후 메인화면에서 Mods 탭 선택(최초 선택시 모드 활성화 경고창 뜸)
-4. 한글패치 모드 선택 후 활성(Enable) 상태로 만들기
-5. 새 게임 시작
+2. ```모드``` 폴더에 ```korean-test``` 폴더 채로 복사
+  
+  ```
+  // Windows
+  C:\Users\[사용자 이름]\AppData\LocalLow\Freehold Games\CavesOfQud\Mods\ 
+
+  // Linux
+  ~/.config/unity3d/Freehold Games/CavesOfQud/Mods/
+  ```
+1. 게임시작 후 메인화면에서 Mods 탭 선택(최초 선택시 모드 활성화 경고창 뜸)
+2. 한글패치 모드 선택 후 활성(Enable) 상태로 만들기
+3. 새 게임 시작
 
 ## 기여
 
