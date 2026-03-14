@@ -933,8 +933,8 @@
     },
     "professions": {
       "glassblower": {
-        "singular": "유리 불기 장인",
-        "plural": "유리 불기 장인들",
+        "singular": "glassblower",
+        "plural": "glassblowers",
         "training": "견습생",
         "actions": [
           "유리 정자를 지었다"
@@ -951,8 +951,8 @@
         ]
       },
       "window maker": {
-        "singular": "창문 제작자",
-        "plural": "창문 제작자들",
+        "singular": "window maker",
+        "plural": "window makers",
         "training": "견습생",
         "actions": [
           "스테인드글라스 창문을 제작했다"
@@ -969,8 +969,8 @@
         ]
       },
       "scholar": {
-        "singular": "학자",
-        "plural": "학자들",
+        "singular": "scholar",
+        "plural": "scholars",
         "training": "학생",
         "actions": [
           "논문을 저술했다"
@@ -987,8 +987,8 @@
         ]
       },
       "scribe": {
-        "singular": "서기관",
-        "plural": "서기관들",
+        "singular": "scribe",
+        "plural": "scribes",
         "training": "하급 서기",
         "actions": [
           "<entity.possessivePronoun> 삶의 마지막 해에 일어난 사건들을 기록하였노라"
@@ -1005,8 +1005,8 @@
         ]
       },
       "philosopher": {
-        "singular": "철학자",
-        "plural": "철학자들",
+        "singular": "philosopher",
+        "plural": "philosophers",
         "training": "학생",
         "actions": [
           "그 경험의 의미를 되새겼다"
@@ -1023,8 +1023,8 @@
         ]
       },
       "scientist": {
-        "singular": "과학자",
-        "plural": "과학자들",
+        "singular": "scientist",
+        "plural": "scientists",
         "training": "학생",
         "actions": [
           "그 사건에 대한 가설을 세웠다"
@@ -1041,8 +1041,8 @@
         ]
       },
       "historian": {
-        "singular": "역사가",
-        "plural": "역사가들",
+        "singular": "historian",
+        "plural": "historians",
         "training": "학생",
         "actions": [
           "역사 기록을 작성했다"
@@ -1059,8 +1059,8 @@
         ]
       },
       "cook": {
-        "singular": "요리사",
-        "plural": "요리사들",
+        "singular": "cook",
+        "plural": "cooks",
         "training": "보조 요리사",
         "actions": [
           "만족스러운 식사를 준비했다"
@@ -1078,8 +1078,8 @@
         ]
       },
       "geologist": {
-        "singular": "지질학자",
-        "plural": "지질학자들",
+        "singular": "geologist",
+        "plural": "geologists",
         "training": "학생",
         "actions": [
           "대지의 지층을 파내려갔다"
@@ -1096,8 +1096,8 @@
         ]
       },
       "jeweler": {
-        "singular": "보석상",
-        "plural": "보석상들",
+        "singular": "jeweler",
+        "plural": "jewelers",
         "training": "견습생",
         "actions": [
           "새로 벼린 <spice.jewelry.!random>에 <spice.elements.jewels.adjectives.!random> <spice.elements.jewels.nouns.!random>을(를) 박아 넣었노라"
@@ -1114,8 +1114,8 @@
         ]
       },
       "astrologist": {
-        "singular": "점성술사",
-        "plural": "점성술사들",
+        "singular": "astrologist",
+        "plural": "astrologists",
         "training": "학생",
         "actions": [
           "별자리 점 해석을 내렸다"
@@ -1132,8 +1132,8 @@
         ]
       },
       "astronomer": {
-        "singular": "천문학자",
-        "plural": "천문학자들",
+        "singular": "astronomer",
+        "plural": "astronomers",
         "training": "학생",
         "actions": [
           "가까운 별까지의 거리를 계산했다"
@@ -1150,8 +1150,8 @@
         ]
       },
       "stargazer": {
-        "singular": "별 관측자",
-        "plural": "별 관측자들",
+        "singular": "stargazer",
+        "plural": "stargazers",
         "training": "견습생",
         "actions": [
           "불꽃 태양을 배경으로 짐승과 괴물의 그림을 그렸다"
@@ -1168,8 +1168,8 @@
         ]
       },
       "winter eremite": {
-        "singular": "겨울 은자",
-        "plural": "겨울 은자들",
+        "singular": "winter eremite",
+        "plural": "winter eremites",
         "training": "은둔자",
         "actions": [
           "큰 대가를 치르며 지혜를 나눠줬다"
@@ -1186,8 +1186,8 @@
         ]
       },
       "soldier": {
-        "singular": "병사",
-        "plural": "병사들",
+        "singular": "soldier",
+        "plural": "soldiers",
         "training": "신병",
         "actions": [
           "마을을 약탈하고 집들을 땅바닥까지 불태우는 것을 도왔다"
@@ -1204,8 +1204,8 @@
         ]
       },
       "gladiator": {
-        "singular": "검투사",
-        "plural": "검투사들",
+        "singular": "gladiator",
+        "plural": "gladiators",
         "training": "노예",
         "actions": [
           "불멸의 영광을 위해 싸웠다"
@@ -1222,8 +1222,8 @@
         ]
       },
       "gambler": {
-        "singular": "도박사",
-        "plural": "도박사들",
+        "singular": "gambler",
+        "plural": "gamblers",
         "training": "표적",
         "actions": [
           "밤새도록 도박을 했다"
@@ -1241,8 +1241,8 @@
         ]
       },
       "tinker": {
-        "singular": "땜장이",
-        "plural": "땜장이들",
+        "singular": "tinker",
+        "plural": "tinkers",
         "training": "견습생",
         "actions": [
           "새로운 장치를 조립했다"
@@ -1259,8 +1259,8 @@
         ]
       },
       "electrician": {
-        "singular": "전기 기술자",
-        "plural": "전기 기술자들",
+        "singular": "electrician",
+        "plural": "electricians",
         "training": "견습생",
         "actions": [
           "<spice.elements.circuitry.nounsPlural.!random>을(를) 납땜으로 연결했다"
@@ -1277,8 +1277,8 @@
         ]
       },
       "explorer": {
-        "singular": "탐험가",
-        "plural": "탐험가들",
+        "singular": "explorer",
+        "plural": "explorers",
         "training": "방랑자",
         "actions": [
           "신성한 <spice.elements.!random.nouns.!random>을(를) 찾아 모험을 떠났노라"
@@ -1295,8 +1295,8 @@
         ]
       },
       "nomad": {
-        "singular": "유목민",
-        "plural": "유목민들",
+        "singular": "nomad",
+        "plural": "nomads",
         "training": "떠돌이",
         "actions": [
           "새 보금자리를 찾았다"
@@ -8546,52 +8546,52 @@
         },
         "government": {
           "types": [
-            "도시국가들",
-            "구역들",
-            "구(區)들",
-            "지구(地區)들",
-            "주(州)들",
-            "도시국가들",
-            "도시국가들"
+            "city-states",
+            "precincts",
+            "districts",
+            "quarters",
+            "provinces",
+            "city-states",
+            "city-states"
           ],
           "city-states": {
             "name": [
-              "자주정",
-              "공화국",
-              "도시국가",
-              "군주국",
-              "귀족정",
-              "과두정",
-              "민주정",
-              "신정"
+              "autarchy",
+              "republic",
+              "city-state",
+              "monarchy",
+              "aristocracy",
+              "oligarchy",
+              "democracy",
+              "theocracy"
             ],
-            "nameArticle": "의 ",
-            "of": "의 "
+            "nameArticle": "the ",
+            "of": "of "
           },
           "precincts": {
             "name": [
-              "구역"
+              "precinct"
             ],
             "nameArticle": " ",
             "of": " "
           },
           "districts": {
             "name": [
-              "구(區)"
+              "district"
             ],
             "nameArticle": " ",
             "of": " "
           },
           "quarters": {
             "name": [
-              "지구"
+              "quarter"
             ],
             "nameArticle": " ",
             "of": " "
           },
           "provinces": {
             "name": [
-              "주(州)"
+              "province"
             ],
             "nameArticle": " ",
             "of": " "
@@ -8599,17 +8599,17 @@
         },
         "topology": {
           "types": [
-            "무작위"
+            "random"
           ],
           "random": {}
         },
         "organizingPrinciple": {
           "types": [
-            "기능",
-            "부(富)",
-            "직업",
-            "기능",
-            "종교"
+            "function",
+            "wealth",
+            "profession",
+            "function",
+            "religion"
           ],
           "profession": {
             "name": "직업",
@@ -8626,28 +8626,28 @@
           },
           "function": {
             "types": [
-              "정원",
-              "수영장",
-              "박물관",
-              "학원",
-              "폐기물",
-              "영사관",
-              "시장",
-              "광장",
-              "주거",
-              "극장",
-              "식량 저장소",
-              "배관 중심지",
-              "감옥",
-              "병영",
-              "사원",
-              "주막"
+              "gardens",
+              "pools",
+              "museums",
+              "college",
+              "waste",
+              "consulate",
+              "market",
+              "forums",
+              "residential",
+              "theaters",
+              "food storage",
+              "pipe hub",
+              "prison",
+              "barracks",
+              "temple",
+              "tavern"
             ],
             "gardens": {
               "titles": [
-                "정원",
-                "수목원",
-                "과수원"
+                "garden",
+                "arboretum",
+                "orchard"
               ],
               "thingsTheyDid": [
                 "Eaters는 그들의 기이한 식물들을 감상하였다"
@@ -8655,9 +8655,9 @@
             },
             "pools": {
               "titles": [
-                "호수",
-                "샘",
-                "연못"
+                "lake",
+                "spring",
+                "pond"
               ],
               "thingsTheyDid": [
                 "고요한 웅덩이들이 Eaters의 마음을 달랬다"
@@ -8665,8 +8665,8 @@
             },
             "museums": {
               "titles": [
-                "박물관",
-                "도서관"
+                "museum",
+                "library"
               ],
               "thingsTheyDid": [
                 "예술 작품들이 수집되어 소중히 보존되었다"
@@ -8674,9 +8674,9 @@
             },
             "college": {
               "titles": [
-                "학원",
-                "리케움",
-                "신학교"
+                "college",
+                "lyceum",
+                "seminary"
               ],
               "thingsTheyDid": [
                 "Eaters는 그들의 수수께끼 같은 연구를 수행하였다"
@@ -8684,9 +8684,9 @@
             },
             "waste": {
               "titles": [
-                "폐기물",
-                "쓰레기",
-                "찌꺼기"
+                "waste",
+                "trash",
+                "scum"
               ],
               "thingsTheyDid": [
                 "쓰레기는 저장되고 압축되어 원자화되었다"
@@ -8694,8 +8694,8 @@
             },
             "consulate": {
               "titles": [
-                "영사관",
-                "대사관"
+                "consulate",
+                "embassy"
               ],
               "thingsTheyDid": [
                 "Eaters는 자신들보다도 더 낯선 문화들과 교류하였다"
@@ -8703,7 +8703,7 @@
             },
             "market": {
               "titles": [
-                "시장"
+                "market"
               ],
               "thingsTheyDid": [
                 "진귀품들이 장갑 낀 손에서 손으로 오갔다"
@@ -8711,7 +8711,7 @@
             },
             "forums": {
               "titles": [
-                "광장"
+                "forum"
               ],
               "thingsTheyDid": [
                 "분쟁과 언쟁이 벌어졌다"
@@ -8719,8 +8719,8 @@
             },
             "residential": {
               "titles": [
-                "가옥",
-                "거처"
+                "house",
+                "dwelling"
               ],
               "thingsTheyDid": [
                 "Eaters는 이곳에 거주하며 꿈을 꾸었다"
@@ -8728,11 +8728,11 @@
             },
             "theaters": {
               "titles": [
-                "극장",
-                "경마장",
-                "소극장",
-                "원형경기장",
-                "체육관"
+                "theater",
+                "hippodrome",
+                "odeum",
+                "coliseum",
+                "gymnasium"
               ],
               "thingsTheyDid": [
                 "배우들이 우주적 대본을 연기하였다"
@@ -8740,8 +8740,8 @@
             },
             "food storage": {
               "titles": [
-                "곡창",
-                "사일로"
+                "granary",
+                "silo"
               ],
               "thingsTheyDid": [
                 "밀이 천천히 시들어갔다"
@@ -8749,9 +8749,9 @@
             },
             "pipe hub": {
               "titles": [
-                "관로",
-                "수도 시설",
-                "수로"
+                "pipe",
+                "waterworks",
+                "channel"
               ],
               "thingsTheyDid": [
                 "미로 같은 관들이 Eaters의 재물을 실어 날랐다"
@@ -8759,7 +8759,7 @@
             },
             "prison": {
               "titles": [
-                "감옥"
+                "prison"
               ],
               "thingsTheyDid": [
                 "불운한 일부는 소외되어 잊혀졌다"
@@ -8767,8 +8767,8 @@
             },
             "barracks": {
               "titles": [
-                "병영",
-                "수비대"
+                "barracks",
+                "garrison"
               ],
               "thingsTheyDid": [
                 "병사들이 전사자들의 애도가에 맞춰 행진하였다"
@@ -8776,9 +8776,9 @@
             },
             "temple": {
               "titles": [
-                "사원",
-                "성소",
-                "성막"
+                "temple",
+                "shrine",
+                "tabernacle"
               ],
               "thingsTheyDid": [
                 "Eaters는 낯선 신들에게 제물을 바쳤다"
@@ -8786,9 +8786,9 @@
             },
             "tavern": {
               "titles": [
-                "살롱",
-                "주막",
-                "클럽"
+                "saloon",
+                "tavern",
+                "club"
               ],
               "thingsTheyDid": [
                 "주사위가 던져지고 콧방귀가 뀌어졌다"
@@ -8797,15 +8797,15 @@
           },
           "wealth": {
             "types": [
-              "빈민",
-              "중산층",
-              "부유층"
+              "poor",
+              "middle-class",
+              "rich"
             ],
             "poor": {
               "titles": [
-                "빈민가",
-                "게토",
-                "바리오"
+                "slums",
+                "ghetto",
+                "barrio"
               ],
               "titleArticle": "의",
               "thingsTheyDid": [
@@ -8815,9 +8815,9 @@
             },
             "middle-class": {
               "titles": [
-                "정착지",
-                "둥지",
-                "동네"
+                "homestead",
+                "roost",
+                "neighborhood"
               ],
               "titleArticle": "의",
               "thingsTheyDid": [
@@ -8827,11 +8827,11 @@
             },
             "rich": {
               "titles": [
-                "저택",
-                "홀",
-                "궁전",
-                "장원",
-                "성(城)"
+                "manse",
+                "hall",
+                "palace",
+                "manor",
+                "castle"
               ],
               "titleArticle": " ",
               "thingsTheyDid": [
@@ -8851,14 +8851,14 @@
               "<spice.elements.!random>",
               "<spice.elements.!random>",
               "<spice.elements.!random>",
-              "술탄들",
-              "무신론",
-              "무신론",
-              "무신론"
+              "sultans",
+              "godless",
+              "godless",
+              "godless"
             ],
             "sultans": {
               "nouns": [
-                "술탄"
+                "sultan"
               ],
               "thingsTheyDid": [
                 "Eaters는 과거의 술탄들을 성인으로 추대하고 그 공덕을 노래하였다"
