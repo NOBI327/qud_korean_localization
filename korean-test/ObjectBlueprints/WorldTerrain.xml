@@ -22,7 +22,7 @@
   
   <object Name="TerrainDesertCanyon" Inherits="Terrain">
     <part Name="Render" DisplayName="사막 협곡" RenderString="239" ColorString="&amp;w^k" Tile="Terrain/sw_canyon.bmp" />
-    <part Name="TerrainTravel" Segments="1250" TravelClass="Survival_DesertCanyonSurvival" />.
+    <part Name="TerrainTravel" Segments="1250" TravelClass="Survival_DesertCanyonSurvival" />
     <part Name="Description" Short="아주 오래전, 강들 자체가 굶주려 있었고, Great Salt Sea에서 부풀어 오른 휴식을 취하기 전에 셰일과 석회암을 잔뜩 파먹었습니다. 이제 그 갈라진 상처들은 붉은빛과 소금으로 썩어들었습니다." />
     <tag Name="Gender" Value="plural" />
     <tag Name="LairOwnerTable" Value="LairOwners_DesertCanyon" />
@@ -33,19 +33,19 @@
   </object>
   <object Name="TerrainDesertCanyon2" Inherits="TerrainDesertCanyon">
     <part Name="Render" DisplayName="사막 협곡" RenderString="110" ColorString="&amp;w^k" Tile="Terrain/sw_hills2.bmp" />
-    <part Name="TerrainTravel" Segments="1250" TravelClass="Survival_DesertCanyonSurvival" />.
+    <part Name="TerrainTravel" Segments="1250" TravelClass="Survival_DesertCanyonSurvival" />
     <part Name="Description" Short="아주 오래전, 강들 자체가 굶주려 있었고, Great Salt Sea에서 부풀어 오른 휴식을 취하기 전에 셰일과 석회암을 잔뜩 파먹었습니다. 이제 그 갈라진 상처들은 붉은빛과 소금으로 썩어들었습니다." />
     <tag Name="Gender" Value="plural" />
   </object>
   <object Name="TerrainDesertCanyon3" Inherits="TerrainDesertCanyon">
     <part Name="Render" DisplayName="사막 협곡" RenderString="239" ColorString="&amp;w^k" Tile="Terrain/sw_canyon.bmp" />
-    <part Name="TerrainTravel" Segments="1250" TravelClass="Survival_DesertCanyonSurvival" />.
+    <part Name="TerrainTravel" Segments="1250" TravelClass="Survival_DesertCanyonSurvival" />
     <part Name="Description" Short="아주 오래전, 강들 자체가 굶주려 있었고, Great Salt Sea에서 부풀어 오른 휴식을 취하기 전에 셰일과 석회암을 잔뜩 파먹었습니다. 이제 그 갈라진 상처들은 붉은빛과 소금으로 썩어들었습니다." />
     <tag Name="Gender" Value="plural" />
   </object>
   <object Name="TerrainDesertCanyon4" Inherits="TerrainDesertCanyon">
     <part Name="Render" DisplayName="사막 협곡" RenderString="110" ColorString="&amp;w^k" Tile="Terrain/sw_hills2.bmp" />
-    <part Name="TerrainTravel" Segments="1250" TravelClass="Survival_DesertCanyonSurvival" />.
+    <part Name="TerrainTravel" Segments="1250" TravelClass="Survival_DesertCanyonSurvival" />
     <part Name="Description" Short="아주 오래전, 강들 자체가 굶주려 있었고, Great Salt Sea에서 부풀어 오른 휴식을 취하기 전에 셰일과 석회암을 잔뜩 파먹었습니다. 이제 그 갈라진 상처들은 붉은빛과 소금으로 썩어들었습니다." />
     <tag Name="Gender" Value="plural" />
   </object>
@@ -237,7 +237,7 @@
   </object>
   <object Name="TerrainCraters" Inherits="Terrain">
     <part Name="Render" DisplayName="분화구" RenderString="o" ColorString="&amp;y^k" Tile="Terrain/sw_craters1.bmp" />
-    <part Name="TerrainTravel" Segments="1500" TravelClass="Survival_MountainsSurvival" />.
+    <part Name="TerrainTravel" Segments="1500" TravelClass="Survival_MountainsSurvival" />
     <part Name="Description" Short="" />
     <tag Name="DefaultWall" Value="Basalt" />
     <tag Name="LairOwnerTable" Value="LairOwners_Hills" />
@@ -259,7 +259,7 @@
   </object>
   <object Name="TerrainHills" Inherits="Terrain">
     <part Name="Render" DisplayName="언덕" RenderString="127" ColorString="&amp;y^k" Tile="Terrain/sw_hills.bmp" />
-    <part Name="TerrainTravel" Segments="1500" TravelClass="Survival_MountainsSurvival" />.
+    <part Name="TerrainTravel" Segments="1500" TravelClass="Survival_MountainsSurvival" />
     <part Name="Description" Short="시간에 따라 일렁이는 돌의 파형 그래프에서, 작은 튀어 오름들입니다." />
     <tag Name="DefaultWall" Value="Marl" />
     <tag Name="LairOwnerTable" Value="LairOwners_Hills" />
