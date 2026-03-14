@@ -3,5 +3,10 @@
 __pycache__/
 *.pyc
 docs/SS/
+docs/file-structures.md
+docs/localization-techniques.md
+docs/localization-practical-notes.md
+docs/next-steps.md
+docs/project-status.md
 .claude/
 desktop.ini
