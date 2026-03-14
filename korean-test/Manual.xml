@@ -1,0 +1,507 @@
+<?xml version='1.0' encoding='utf-8'?>
+<help>
+	<topic name="빠른 시작">이것은 게임을 시작할 때 해야 할 아홉 가지 사항입니다.
+이후에는 이 도움말의 나머지 부분을 참고 매뉴얼로 활용하십시오.
+
+{{W|1. 돌아다니기}}
+
+{{?KB|방향키(~CmdMoveN, ~CmdMoveE 등)를 누르거나 지도를 클릭하여 이동하십시오.}}{{?Gamepad|~UI:Navigate로 방향을 지정하고 ~Take A Step을 눌러 이동하거나 길게 눌러 연속 이동하십시오.}}{{?Gamepad|
+~CmdAutoExplore로 자동 탐색도 가능합니다.}}
+
+{{W|2. 사물과 상호작용하기}}
+
+NPC나 다른 물체 옆으로 이동한 후 ~CmdUse를 누르십시오.
+
+{{W|3. 살펴보기}}
+
+{{?KB|}}~CmdLook을 눌러 살펴보기 모드에 진입한 후 커서를 지도 위로 이동하십시오.{{?KB|
+또는 {{hotkey|우클릭}}으로 빠른 살펴보기를 하십시오.}}
+
+{{W|4. 능력 사용하기}}
+
+{{?KB|화면 하단의 능력 바에 있는 버튼을 클릭하거나
+단축키를 누르십시오.}}{{?Gamepad|화면 하단의 핫바에서 ~UI:Navigate/left와 ~UI:Navigate/right로 이동한 후
+~Use Ability를 눌러 능력을 사용하십시오.}}
+
+{{W|5. 캐릭터 시트 보기}}
+
+{{?KB|~CmdCharacter를 눌러 핵심 캐릭터 정보를 확인하십시오.
+~CmdEquipment를 눌러 장비를 확인하십시오.
+~CmdInventory를 눌러 소지품을 확인하십시오.
+~CmdJournal을 눌러 일지를 확인하십시오.
+~CmdQuests를 눌러 퀘스트를 확인하십시오.
+~CmdSkillsPowers를 눌러 스킬을 확인하십시오.
+~CmdFactions를 눌러 세력 관계를 확인하십시오.
+
+~Page Left와 ~Page Right로 페이지를 넘길 수 있습니다.}}{{?Gamepad|~CmdCharacter를 눌러 핵심 캐릭터 정보를 확인하십시오.
+~Page Left와 ~Page Right로 캐릭터 시트의 다른 페이지로 이동하십시오.}}
+
+{{W|6. 관심 지점 목록 불러오기}}
+
+~CmdMoveToPointOfInterest를 누르십시오.
+
+{{W|7. 지도 위 물체에 대한 추가 정보 표시}}
+
+~Highlight를 누르면 적대 상태 등 추가 정보가 오버레이로 표시됩니다
+(빨강 = 적대, 노랑 = 중립, 초록 = 우호). 또한 흥미로운 아이템을
+명확하게 볼 수 있습니다.
+
+{{W|8. 다른 지도로 이동하기}}
+
+화면 밖으로 걸어 나가거나, ~CmdMoveU로 세계 지도로 이동하십시오.
+
+{{W|9. 적 공격하기}}
+
+기본 공격을 수행하려면 적대적인 생물 쪽으로 걸어가면 됩니다.
+또는 공격 능력을 사용할 수 있습니다.</topic>	
+  <topic name="능력치">[[{{C|근력}}]]
+근력 점수는 근접 피해량(관통력 향상을 통해), 강제 이동에 대한 저항력,
+그리고 운반 용량을 결정합니다.
+
+[[{{C|민첩}}]]
+민첩 점수는 근접 및 원거리 무기의 명중률과 공격 회피 능력을
+결정합니다.
+
+[[{{C|강인}}]]
+강인 점수는 체력, 체력 재생 속도, 그리고 독과 질병에 대한
+저항력을 결정합니다.
+
+[[{{C|지능}}]]
+지능 점수는 스킬 포인트 수와 유물 조사 능력을 결정합니다.
+
+[[{{C|의지}}]]
+의지 점수는 활성화 능력의 재사용 대기시간을 조절하고,
+정신 공격에 대한 저항력을 결정하며, 체력 재생 속도를 조절합니다.
+
+[[{{C|자아}}]]
+자아 점수는 정신 돌연변이의 위력, 상인과의 흥정 능력,
+그리고 다른 생물의 의지를 지배하는 능력을 결정합니다.
+
+[[{{C|방어값과 회피값 (AV / DV)}}]]
+방어값(AV)은 물리 공격에 대한 방어력을 나타냅니다. 점수가
+높을수록 상대의 공격이 심각한 피해를 줄 가능성이 낮아집니다.
+대부분의 캐릭터는 기본 AV 0으로 시작합니다.
+
+회피값(DV)은 물리 공격에 맞을 확률을 나타냅니다. 점수가
+높을수록 상대의 공격이 명중할 가능성이 낮아집니다. DV는
+민첩 보정치의 영향을 받습니다. 대부분의 캐릭터는 기본 DV 6으로
+시작합니다.
+
+[[{{C|정신 방어 (MA)}}]]
+정신 방어(MA)는 정신 공격에 대한 방어력을 나타냅니다.
+방어값이 물리 공격에 대한 방어를 나타내듯, 정신 방어는 정신
+공격에 대한 방어를 나타냅니다. 점수가 높을수록 상대의 정신
+공격이 심각한 효과를 줄 가능성이 낮아집니다. MA는 의지
+보정치의 영향을 받습니다. 대부분의 캐릭터는 기본 MA 4로
+시작합니다.
+
+[[{{C|신속 (QN)}}]]
+신속 점수는 모든 행동의 수행 속도를 나타냅니다. 기본 신속
+점수는 100입니다. 이 점수를 높일 수 있는 방법은 매우 적습니다.
+
+[[{{C|이동 속도 (MS)}}]]
+이동 속도는 걷거나 나는 속도를 나타냅니다. 기본 이동 속도는
+100입니다.
+
+[[{{C|온도 (T)}}]]
+온도는 당신이 얼마나 뜨겁거나 차가운지를 나타냅니다. 추위
+상태에서는 신속 점수가 절반으로 감소합니다. 동결 상태에서는
+물리적 행동을 할 수 없습니다. 발화 상태에서는 온도를 낮출 때까지
+매 턴 열 피해를 받습니다.
+
+[[{{C|산성 저항}}]]
+산성 저항은 산성 피해를 얼마나 경감하는지를 나타냅니다. 기본
+산성 저항 점수는 0입니다. 100이면 산성 피해에 면역입니다.
+
+[[{{C|냉기 저항}}]]
+냉기 저항은 냉기 피해를 얼마나 경감하는지, 그리고 온도 감소
+효과에 대한 단열 정도를 나타냅니다. 기본 냉기 저항 점수는
+0입니다. 100이면 냉기 피해에 면역이며 온도가 감소하지 않습니다.
+
+[[{{C|전기 저항}}]]
+전기 저항은 전기 피해를 얼마나 경감하는지, 그리고 전류에 대한
+저항 정도를 나타냅니다. 기본 전기 저항 점수는 0입니다. 100이면
+전기 피해에 면역이며 전기를 전도하지 않습니다.
+
+[[{{C|열 저항}}]]
+열 저항은 열 피해를 얼마나 경감하는지, 그리고 온도 증가 효과에
+대한 단열 정도를 나타냅니다. 기본 열 저항 점수는 0입니다. 100이면
+열 피해에 면역이며 온도가 증가하지 않습니다.</topic>
+  <topic name="스킬">스킬은 당신이 삶에서 배운 능력을 나타냅니다. 각 스킬 트리에는
+여러 스킬이 포함되어 있습니다. 카스트나 소명에 따라 여러 스킬을
+가지고 시작합니다. 레벨을 올릴 때 획득하는 스킬 포인트를 사용하여
+다른 스킬을 구매할 수 있습니다(지능 점수가 높을수록 더 많은 스킬
+포인트를 획득합니다).
+
+새 스킬을 구매하려면 먼저 해당 스킬 트리의 입문 스킬을 구매해야
+합니다. 구매하려는 스킬의 능력치 또는 전력 요구 조건을 충족해야
+합니다. 카스트나 소명이 부여한 경우 입문 스킬 없이도 특정 스킬을
+가지고 시작할 수 있습니다.
+
+스킬은 종종 활성화 능력을 부여합니다. 스킬을 구매하면 능력 관리
+메뉴('a')에서 새로운 활성화 능력을 사용할 수 있습니다.</topic>
+  <topic name="돌연변이와 결함">돌연변이는 쿠드의 거주자들에게 부여된 특수한 생물학적 능력입니다 --
+순혈종은 돌연변이를 보유하지 않습니다. 돌연변이에는
+신체 변이와 정신 변이의 두 가지 유형이 있습니다. 각
+돌연변이에는 돌연변이 점수가 있습니다. 신체 변이의 점수와
+신체 변이가 부여하는 활성화 능력의 재사용 대기시간은 고정되어
+있습니다. 반면에 정신 변이의 점수는 자아 보정치의 영향을 받으며,
+정신 변이가 부여하는 능력의 재사용 대기시간은 의지가 16보다
+높거나 낮은 포인트당 5%씩 조절됩니다.
+
+대부분의 캐릭터는 돌연변이 점수 1로 시작합니다. 레벨이 오를 때
+돌연변이 포인트를 획득하며, 이를 사용하여 돌연변이 중 하나의 점수를
+1 올릴 수 있습니다. 돌연변이 점수는 1 더하기 캐릭터 레벨을 2로
+나눈 값을 초과할 수 없습니다. 또한 돌연변이 포인트로는 최대 점수
+10까지만 올릴 수 있지만, 자아가 추가로 보정하는 경우 정신적
+돌연변이는 10을 초과할 수 있습니다.
+
+또는 돌연변이 포인트 4를 사용하여 무작위로 선택된 세 가지 돌연변이
+중 하나를 선택할 수 있습니다. 선택한 돌연변이는 점수 1로 시작합니다.
+키메라인 경우 신체 변이가, 에스퍼인 경우 정신 변이가
+제시되며, 그 외에는 완전히 무작위 돌연변이가 제시됩니다. 돌연변이는
+종종 활성화 능력을 부여합니다. 돌연변이를 얻으면 능력 관리
+메뉴('a')에서 새로운 활성화 능력을 사용할 수 있습니다.
+
+결함은 주로 부정적인 효과를 가진 돌연변이입니다. 특정 변이인은
+하나의 결함을 가지고 시작합니다. 결함에는 점수가 없습니다.</topic>
+  <topic name="유물">유물은 쿠드의 거주자 중 소수만이 이해할 수 있을 정도로 기술적으로
+복잡한 아이템입니다. 미감정 유물은 "이상한 유물"로 표시됩니다.
+유물을 조사하여 감정을 시도할 수 있습니다. 성공하면 해당 유물의
+기능 가능성을 좁힐 수 있습니다(예를 들어, "곤봉"이었던 것을
+"소총"으로 감정할 수 있습니다). 결국 유물을 완전히 감정할 수
+있습니다. 하지만 감정을 시도하여 실패할 때마다 유물이 파손될
+약간의 확률이 있습니다. 유물 감정 성공 확률은 지능 점수에
+기반합니다.</topic>
+  <topic name="토닉">토닉은 다양한 방식으로 정신적, 신체적 능력치를 향상시키는 화학
+조합물입니다. 유물이므로 효과를 이해하려면 성공적으로 감정해야
+합니다. 다른 토닉의 효과가 지속되는 동안 토닉을 복용하면
+위험합니다; 새로운 토닉을 복용할 때마다 토닉 간에 부작용이
+발생할 확률이 점점 높아집니다. 강인 점수가 높을수록 부작용 없이
+여러 토닉을 복용할 수 있는 확률이 높아집니다.
+
+토닉은 변이인보다 순혈종에게 더 강력한 효과를 발휘합니다. 또한
+변이인의 체내 화학은 본질적으로 불안정하므로, 변이인이 복용한
+토닉이 원치 않는 효과를 발생시킬 확률이 5% 있습니다.
+
+토닉은 땜장이 스킬로 제조할 수 있습니다. 비트 외에도 토닉 제조에는
+종종 천연 재료가 필요합니다.</topic>
+  <topic name="무기와 방어구">[[{{C|무기}}]]
+모든 무기에는 관통값과 피해값이 있습니다
+(예: {{C|[CHR:0x1A]}}4, {{R|[CHR:0x03]}}1d4). 근접 무기의 관통값은
+근력 점수와 관련이 있지만, 무기의 재질에 따른 관통 상한이 있습니다
+(무기를 살펴보면('l') 관통 상한을 확인할 수 있습니다). 원거리 무기는
+근력 점수와 관계없이 고정된 관통값을 가집니다.
+무기는 다른 능력치도 변경할 수 있습니다; 무기를 살펴보면('l') 그
+기능을 완전히 파악할 수 있습니다.
+
+[[{{C|방어구}}]]
+대부분의 방어구에는 방어값과 회피값이 있습니다
+(예: {{b|[CHR:0x04]}}4 {{K|	}}4)) 이 값은 당신의 {{b|[CHR:0x04]}}AV와 {{K|	}}DV를 보강합니다({{g|능력치}} 참조).
+방어구는 다른 능력치도 변경할 수 있습니다; 방어구를 살펴보면('l') 그
+기능을 완전히 파악할 수 있습니다.</topic>
+  <topic name="전투">[[{{C|근접 전투}}]]
+근접 전투는 검, 단검, 도끼, 곤봉 등 표준 근접 무기를 사용하여
+인접한 두 상대 사이에서 벌어지는 전투입니다. 적대적인 인접
+상대를 공격하려면 상대 방향으로 이동하면 됩니다. 비적대적
+상대나 벽 등 다른 것을 공격하려면 'control'을 누른 채
+공격하려는 방향으로 이동하십시오.
+
+근접 공격을 할 때 다음 순서의 사건이 발생합니다:
+
+[[{{c|1. 대상에게 명중했는지 판정합니다.}}]]
+명중 굴림은 1d20에 민첩 보정치와 무기 또는 스킬 능력에서
+받는 보너스를 더합니다. 이 값이 상대의 회피값(DV)을 초과하면
+명중합니다. 대상 위의 빈 원 아이콘은 공격이 빗나갔음을 나타냅니다.
+
+[[{{c|2. 방패 방어가 발생하는지 판정합니다.}}]]
+대상이 방패를 장비하고 있으면 기본 25%의 확률로 방어하며,
+스킬에 따라 확률이 증가합니다. 방어에 성공하면 이 공격에 대해
+방패의 방어값(AV)이 대상의 AV에 추가됩니다.
+
+[[{{c|3. 공격이 대상의 방어구를 얼마나 심하게 관통하는지 판정합니다.}}]]
+각 무기에는 관통값이 있습니다(예: {{C|[CHR:0x1A]}}4). 이 값은
+무기가 쉽게 관통할 수 있는 방어값(AV)을 나타냅니다. 무기의
+관통값이 대상의 AV를 크게 초과하면 여러 번 관통할 수 있습니다.
+무기가 대상의 방어구를 관통할 때마다 무기의 피해값(예:
+{{R|[CHR:0x03]}}1d4)만큼의 피해를 입힙니다. 대상 위의 채워진 원
+아이콘은 공격이 명중했지만 방어구를 관통하지 못했음을 나타냅니다.
+하트 아이콘은 공격이 명중하여 방어구를 관통했음을 나타냅니다.
+
+[[{{c|4. 추가 공격이 이루어지는지 판정합니다.}}]]
+보조 손으로 추가 공격을 할 확률이 15% 있습니다. 여러 팔을
+가진 캐릭터는 이 외에도 추가 공격을 할 수 있습니다.
+
+[[{{C|원거리 전투}}]]
+원거리 전투는 활, 권총, 소총 등 원거리 무기를 사용하여 두 상대
+사이에서 벌어지는 전투입니다. 원거리 공격을 하려면 'f'를 눌러
+무기를 조준한 후 다시 'f'를 눌러 발사하십시오.
+
+원거리 공격을 할 때 다음 순서의 사건이 발생합니다:
+
+[[{{c|1. 투사체의 궤적을 결정합니다.}}]]
+투사체가 예상 경로에서 벗어날 가능성은 민첩 점수와 무기의
+정확도에 의해 결정됩니다.
+
+[[{{c|2. 투사체 궤적을 따라 첫 번째 중간 크기 이상의 물체에}}
+{{c|명중합니다.}}]]
+
+[[{{c|3. 투사체가 대상의 방어구를 얼마나 심하게 관통하는지 판정합니다.}}]]
+이것은 근접 공격과 동일한 방식으로 처리됩니다.
+
+[[{{c|4. 추가 공격이 이루어지는지 판정합니다.}}]]
+특정 능력은 특정 원거리 무기로 여러 발의 투사체를 발사할 수
+있게 합니다.
+
+둘 이상의 적대적 상대와 근접 전투 중인 경우, 각 원거리 공격이
+빗나갈(좌우 45도로 벗어날) 확률이 50% 있습니다.</topic>
+  <topic name="내성 굴림">특정 효과나 능력은 생물에게 내성 굴림을 요구하며, 실패 시 결과가
+발생합니다. 내성 굴림에는 각각 관련된 능력치와 난이도가 있습니다.
+내성 굴림을 통과하려면 기본 1d20을 굴린 후 관련 능력치 보정치를
+더합니다. 그 수치가 난이도 이상이면 통과합니다. 그렇지 않으면
+실패합니다. 생물의 능력에 대한 일부 내성 굴림은 해당 생물의
+능력치 보정치를 난이도에 추가합니다.</topic>
+
+  <topic name="행동 비용">어떤 행동을 하는 데 걸리는 시간은 행동 비용으로 측정됩니다.
+대부분의 작업은 행동 비용이 1000입니다. 신속은 이 비용의
+회복 속도를 높여 느린 생물보다 더 자주 행동할 수 있게 합니다.
+
+일부 스킬, 돌연변이, 장비는 특정 행동의 비용을 줄이거나
+없앨 수 있습니다.</topic>
+<topic name="크레딧">[[{{C|제작}}
+                      Brian Bucklew and Jason Grinblat
+                      
+
+              QA &amp;&amp; Additional Design - Nick Decapua
+              Additional Programming - Corey Frang
+                               Music - Craig Hamilton            
+                                  QA - Autumn McDonell
+              Additional Programming - Bastia Rosen
+         Additional Writing &amp;&amp; Design - Caelyn Sandel
+                    Additional Music - Brandon Tanner        
+                            Tile Art - Samuel Wilson
+                Additional UI Design - Polat Yarisci
+                        Sound Design - A Shell in the Pit
+            QA, Additional Design, &amp;&amp;
+              Additional Programming - Thaumatic Systems              
+                       Legal Counsel - Thomas C. Allison, P.A.
+                      
+                      Background Art - Cyril van der Haegen
+                            Logo Art - Laura &amp;&amp; Jeff Bucholtz
+                Community Management - Ivy Melinda &amp;&amp; the mayor team
+
+
+                                {{C|퍼블리셔}}
+                                Kitfox Games
+
+                                Tina Liu
+                                Xin Ran Liu
+                                Alexandra Orlando
+                                Tanya X. Short
+                                
+
+                                {{C|특별 감사}}
+                                Ashenai
+                                Riley Vincent
+                                Gibbed
+                                Floorislava
+                                Dr Amazing
+                                Devonaut
+                                Vaos
+                                Tyskil
+                                Lakren
+                                Stelas
+                                Social Animal
+                                Contra Duck
+                                Saberwulf
+                                Megaflare
+                                Doctorfrog
+                                Palecur
+                                NovaPolice
+                                Mirdath
+                                The Glow
+                                Dyzzy
+                                Schister
+                                Lazybuttons
+                                Colonp
+                                Niff
+                                Matterhorn
+                                Clamiam
+                                Donraj
+                                Randy Marsh
+                                Rabbi
+                                Getter77
+                                Capuchin
+                                Wafflecopter
+                                Nomikos
+                                Magitek
+                                Andrew Smash
+                                Vastin
+                                Frumple
+                                Sappho
+                                Soulwynd
+                                Cpbpunch
+                                Tarran
+                                Brian Turcotte
+                                Oryx
+                                Jim Shepard, Dungeonmans
+                                MightyMerch
+                                Eva Problems, Carbide Chef
+                                a nonsense bird
+                                Tarn &amp;&amp; Zach Adams
+                                
+
+                                {{C|후원자}}
+                                Reed (mutated human) and Tiffany (rabbit)
+                                epsalon
+                                Tim Linscott
+                                Cody, The Rat
+                                iconmaster
+                                Coal
+                                Reuben Eadon
+                                Goldkin
+                                mdct
+                                Rusted Jake Matz
+                                Benjamin T. Steed
+                                Xerkie!
+                                Dij
+                                LongueVanne
+                                50RCERESS
+                                Chef Agate Severance Star
+                                awful_falafel
+                                Jonny Robertson
+                                Ian Wall
+                                Orion Perruc-Reyes
+                                Ryan Orlando (Fat Thunder)
+                                FS Colley
+                                Asunaro
+                                Trevor Clack
+                                Gillian Eggleston
+                                Nerem
+                                Somsnosa
+                                Ivy Sly
+                                livelongcoffee
+                                SMB64 (Koshi)
+                                NO Press
+                                EveryZig314
+                                Floopygapples
+                                Eric Hulen
+                                Caine DeWitt
+                                Eric Anthony Rodriguez
+                                Nathaniel Krell
+                                Boo-cher
+                                Pax Frank
+                                Matteo De Cristofaro
+                                Meo
+                                Boyarde Roneen
+                                wastrel
+                                Drew Kerrigan
+                                Jordan Wood
+                                Kasey Patrick Morgan
+                                Callum Love
+                                Petrichor "petrak@7604"
+                                Devon Cupo
+                                Big Simple
+                                Kevin Orren
+                                Lennart Schefe
+                                Beemancer
+                                Lady Eithn, Queen of Brokilon
+                                Nic Gard
+                                NeroPrime
+                                InfiniteTidalWave
+                                Aveon Zero
+                                Joshua Southerland
+                                _tr
+                                James Earle
+                                Nick Correale
+                                Micha‚ Byczko                                
+                                Reuben Eadon
+                                Shane Allcroft
+                                Aidan Page
+                                Earthly Delights Ogdo
+                                John Szevin
+                                Shane Allcroft
+                                Kelly Joyce
+                                Cleo Lamb
+                                Mike Sipior
+                                James Canter
+                                Joshua Buckley
+                                Qingyao Sun
+                                CHOWARD
+                                Luke J.
+                                Gobi Silverfrog, siver and gold goddess
+                                Ethan Rigby
+                                Ethan "Kobold" CB
+                                Maria Ross Colton Chamberlin
+                                {{w-W-Y-Y-Y-Y-Y-W-w sequence|Paingouin}} "Jordan B."
+                                James Lagervall
+                                Doug "Severian" Callahan
+                                Leo Durante
+                                Rarden
+                                Ray ({{r|books}})
+                                awful_falafel
+                                ambersand
+                                dmajorduckie
+                                Lukas Wagner (Knig Muskelmagen)
+                                Marek Pohlodek
+                                Kamille Rose
+                                Retes;Nome
+                                Sabboth Ochoa
+                                Almea
+                                Caleb Ulichney
+                                Visnex
+                                CreativeCorpse
+                                Kelly Vincent
+                                Teagan Erika Stephanie Strickland
+                                Mirthful Sloth
+                                beepy roboticvenusian (enchiridion)
+                                AvianAnarchy
+                                Gavin Conover
+
+  ]]</topic>
+<topic name="오픈 소스 라이선스">[[{{c|License for Harmony (https://github.com/pardeike/Harmony)}}
+  {{W|MIT License}}
+
+  Copyright (c) 2017 Andreas Pardeike
+
+{{c|License for FuzzySharp (https://github.com/JakeBayer/FuzzySharp)}}
+  {{W|MIT License}}
+
+  Copyright (c) 2018 
+  
+{{c|License for UnityStandaloneFileBrowser
+ (https://github.com/gkngkc/UnityStandaloneFileBrowser)}}
+  {{W|MIT License}}
+
+  Copyright (c) 2017 Gökhan Gökçe
+
+{{c|License for ZString (https://github.com/Cysharp/ZString)}}
+  {{W|MIT License}}
+
+  Copyright (c) 2020 Yoshifumi Kawai / Cysharp, Inc.
+
+{{c|License for UniTask (https://github.com/Cysharp/UniTask)}}
+  {{W|MIT License}}
+
+  Copyright (c) 2019 Yoshifumi Kawai / Cysharp, Inc.
+
+
+{{W|MIT License}} {{c|- Full Text}}
+  Permission is hereby granted, free of charge, to any person obtaining a copy
+  of this software and associated documentation files (the "Software"), to deal
+  in the Software without restriction, including without limitation the rights
+  to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+  copies of the Software, and to permit persons to whom the Software is
+  furnished to do so, subject to the following conditions:
+
+  The above copyright notice and this permission notice shall be included in all
+  copies or substantial portions of the Software.
+
+  THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+  IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+  FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+  AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+  LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+  SOFTWARE.]]</topic>
+</help>

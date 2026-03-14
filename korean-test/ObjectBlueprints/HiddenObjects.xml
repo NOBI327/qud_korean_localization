@@ -1,0 +1,2745 @@
+<?xml version='1.0' encoding='utf-8'?>
+<objects ExcludeFromCorpusGeneration="true">
+
+  
+
+  
+  <object Name="Ehalcodon" Inherits="BaseNephal">
+    <part Name="Body" Anatomy="Quadruped" />
+    <part Name="Render" DisplayName="{{M|에할코돈}}" Tile="Creatures/nephilim_ehalcodon.png" DetailColor="Y" />
+    <part Name="Description" Short="거대한 존재가 시야의 상단에 우뚝 솟아 신성한 빛을 발산합니다. 스핀들의 반짝임으로 뒤덮인 엉덩이가 이 차원의 의식 있는 배경 복사에 의해 존재로 그려진 생물의 형태를 지탱하고, 넓고 줄무늬가 있는 날개는 항성풍을 타고 활공할 수 있도록 갈려 있습니다. 마침내, =pronouns.possessive= tx-유리 피부 아래에서 소용돌이치는 이중 홍채의 빛이 불가능의 메타스펙트럼으로 굴절되어 몸 밖으로 코르누 나선형으로 쏟아져 나옵니다." />
+    <part Name="Honorifics" Ordinary="{{M|Starformed}}" />
+    <part Name="Physics" VaporTemperature="15000" />
+    <tag Name="PronounSet" Value="qe/qem/qyr" />
+    <tag Name="AIAbilityIgnoreCon" />
+    <tag Name="PrimaryLimbType" Value="Foot" />
+    <part Name="Spawner" SpawnBlueprint="Prism Girshling Cresh" SpawnCheckBlueprint="Prism Girshling" />
+    <mutation Name="QuantumFugue" Level="10" />
+    <stat Name="Level" Value="60" />
+    <stat Name="Hitpoints" Value="8000" />
+    <inventoryobject Blueprint="Nephal_Starhoof" Number="2" />
+    <mutation Name="Wings" Level="20" />
+    <part Name="BlowAwayGas" Message="=subject.T= =verb:bat= =subject.possessive= banded wings and blows the =gas= away!" />
+    <part Name="TimeCubeProtection" Message="=subject.T= =verb:enter= a spacetime cocoon!" />
+    <part Name="AgolgotChord" />
+    <part Name="BethsaidaChord" />
+    <part Name="RermadonChord" />
+    <part Name="ShugruithChord" />
+    <part Name="QasChord" />
+    <part Name="QonChord" />
+    <part Name="DropOnDeath" Blueprints="LightCircleEhalcodon" />
+    <tag Name="ExcludeFromDynamicEncounters" />
+  </object>
+  <object Name="Nephal_Starhoof" Inherits="NaturalWeapon">
+    <part Name="Render" DisplayName="별무늬 발굽" Tile="Creatures/natural-weapon-hoof1.bmp" ColorString="&amp;m" />
+    <part Name="MeleeWeapon" HitBonus="10" BaseDamage="1d6" Skill="Cudgel" Slot="Foot" />
+    <part Name="ElementalDamage" Damage="3d6" Attributes="Umbral" />
+  </object>
+  <object Name="Prism Girshling" Inherits="BaseNephalGirshling">
+    <part Name="Render" DisplayName="프리즘 거슐링" DetailColor="Y" />
+    <part Name="RefractCosmic" />    
+  </object>
+  <object Name="Prism Girshling Cresh" Inherits="BaseGirshCresh">
+    <part Name="Render" DisplayName="프리즘 크레시" DetailColor="Y" />
+    <part Name="SpawnVessel" SpawnBlueprint="Prism Girshling" />
+    <part Name="RefractCosmic" />
+  </object>
+  <object Name="LightCircleEhalcodon" Inherits="BaseNephilimLightCircle">
+    <part Name="Render" DisplayName="{{ehalcodon|에할코돈}}의 화음 속 빛의 원" ColorString="&amp;Y" />
+    <part Name="Description" Short="원시 우주에서 분출된 성폭의 첨탑들이 영점 주위를 맴돌며 비결정론적 신의 무지갯빛 속에 흐려집니다." />
+    <part Name="MutationOnEquip" Level="10" ClassName="QuantumFugue" />   
+    <tag Name="EquipmentFrameColors" Value="YMMY" />
+  </object>
+  
+  
+  <object Name="BaseEaterGreatMachineShrine" Inherits="MountedFurniture">
+    <part Name="Render" DisplayName="위대한 기계의 성소" TileColor="&amp;Y" DetailColor="c" />
+    <part Name="Description" Short="대리석 Eaters가 위대한 기계와 사제적 합의 속에 무릎 꿇고, 레버를 당기고 소화전을 작동시켜 계산된 의지에 의해 조종하고 조종당합니다. 수정 다이오드로 된 단상이 수십만 광년 너머에서 요동치는 지질문화의 전경을 보여줍니다." />
+    <part Name="Physics" Weight="10000" FlameTemperature="99999" VaporTemperature="1500" Solid="true" />
+    <stat Name="AV" Value="20" />
+    <stat Name="Hitpoints" Value="6000" />
+    <part Name="Shrine" />
+    <part Name="SmartuseTwiddles" />
+    <tag Name="VaporObject" Value="LavaPuddle" />
+    <tag Name="BaseObject" Value="*noinherit" />
+    <tag Name="ExcludeFromDynamicEncounters" />
+  </object>
+  <object Name="EaterGreatMachineShrine NW" Inherits="BaseEaterGreatMachineShrine">
+    <part Name="Render" Tile="Furniture/great-machine-shrine-NW.png" />
+  </object>
+  <object Name="EaterGreatMachineShrine W" Inherits="BaseEaterGreatMachineShrine">
+    <part Name="Render" Tile="Furniture/great-machine-shrine-W.png" />
+  </object>
+  <object Name="EaterGreatMachineShrine N" Inherits="BaseEaterGreatMachineShrine">
+    <part Name="Render" Tile="Furniture/great-machine-shrine-N.png" />
+  </object>
+  <object Name="EaterGreatMachineShrine SW" Inherits="BaseEaterGreatMachineShrine">
+    <part Name="Render" Tile="Furniture/great-machine-shrine-SW.png" />
+  </object>
+  <object Name="EaterGreatMachineShrine C" Inherits="BaseEaterGreatMachineShrine">
+    <part Name="Render" Tile="Furniture/great-machine-shrine-C.png" />
+  </object>
+  <object Name="EaterGreatMachineShrine S" Inherits="BaseEaterGreatMachineShrine">
+    <part Name="Render" Tile="Furniture/great-machine-shrine-S.png" />
+  </object>
+  <object Name="EaterGreatMachineShrine E" Inherits="BaseEaterGreatMachineShrine">
+    <part Name="Render" Tile="Furniture/great-machine-shrine-E.png" />
+    <part Name="AnimatedMaterialGeneric" AnimationLength="200" LowFrameOffset="1" HighFrameOffset="1" ColorStringAnimationFrames="0=&amp;y^K,100=&amp;y^W" TileColorAnimationFrames="disable" DetailColorAnimationFrames="0=K,100=W" />
+  </object>
+  <object Name="Eater Globe" Inherits="Globe">
+    <part Name="Render" DisplayName="정지된 지구본" ColorString="&amp;B" DetailColor="C" Tile="Furniture/eater-globe.png" RenderLayer="6" Occluding="false" />
+    <part Name="Physics" Weight="2" Organic="false" Takeable="false" />
+    <part Name="Description" Short="높은 부조로, 모래빛 형태의 주름과 매듭이 구형 모형의 사파이어 표면 위에 왕관처럼 솟아 있습니다. 축척의 병치, 바다와 육지의 비율, 그리고 이러한 것을 고안하기 위해 동원된 집단적 지혜가 당신의 머리를 어지럽게 합니다." />    
+    <part Name="Examiner" Alternate="UnknownBizarreContraption" Complexity="4" />
+    <tag Name="TechTier" Value="8" />
+  </object>
+
+  <object Name="BaseSpindleSupport" Inherits="MountedFurniture">
+    <part Name="Render" Tile="Furniture/left-spindle-support.png" ColorString="&amp;c" DetailColor="B" DisplayName="계류 팔" />
+    <part Name="Description" Short="플랜지가 달린 원강철 앵커가 가우스의 가늘어지는 리본을 저궤도 지점에 고정합니다." />
+    <part Name="Physics" Weight="10000" />
+    <stat Name="Hitpoints" Value="9000" />
+    <stat Name="AV" Value="50" />
+    <tag Name="ExcludeFromDynamicEncounters" />
+    <tag Name="BaseObject" Value="*noinherit" />    
+  </object>
+  <object Name="Left Spindle Support" Inherits="BaseSpindleSupport">
+    <part Name="Render" Tile="Furniture/left-spindle-support.png" ColorString="&amp;W " />
+  </object>
+  <object Name="Right Spindle Support" Inherits="BaseSpindleSupport">
+    <part Name="Render" Tile="Furniture/right-spindle-support.png" ColorString="&amp;W " />
+  </object>
+  <object Name="Spindle Ribbon" Inherits="BaseSpindleSupport">
+    <part Name="Render" Tile="Furniture/spindle-ribbon.png" ColorString="&amp;C" DetailColor="c" DisplayName="그래핀 리본" />
+    <part Name="Description" Short="종이 두께로 깎인 탄소 미립자의 기포 리본이 고정 장치에 부딪히며 하늘 위로 가늘어지며 사라집니다." />
+    <part Name="AscensionCable" />
+    <tag Name="ForceSmartUse" />
+    <tag Name="ExcludeFromDynamicEncounters" />
+    <part Name="UnityPrefabImposter" PrefabID="Prefabs/Particles/SpindleRibbon" />    
+  </object>
+  <object Name="Left Spindle Ribbon" Inherits="BaseSpindleSupport">
+    <part Name="Render" Tile="Furniture/left-spindle-ribbon.png" ColorString="&amp;C" DetailColor="c" DisplayName="그래핀 리본" />
+    <part Name="AscensionCable" />
+    <tag Name="ForceSmartUse" />
+    <tag Name="ExcludeFromDynamicEncounters" />
+  </object>
+  <object Name="Right Spindle Ribbon" Inherits="BaseSpindleSupport">
+    <part Name="Render" Tile="Furniture/right-spindle-ribbon.png" ColorString="&amp;C" DetailColor="c" DisplayName="그래핀 리본" />
+    <part Name="AscensionCable" />
+    <tag Name="ForceSmartUse" />
+    <tag Name="ExcludeFromDynamicEncounters" />
+  </object>
+  <object Name="Left Spindle Support Top" Inherits="BaseSpindleSupport">
+    <part Name="Render" Tile="Furniture/left-spindle-support-top.png" ColorString="&amp;W " />
+  </object>
+  <object Name="Right Spindle Support Top" Inherits="BaseSpindleSupport">
+    <part Name="Render" Tile="Furniture/right-spindle-support-top.png" ColorString="&amp;W " />
+  </object>
+
+  <object Name="Spindle Ribbon Top" Inherits="BaseSpindleSupport">
+    <part Name="Render" Tile="Furniture/spindle-ribbon-top.png" ColorString="&amp;C" DetailColor="c" DisplayName="그래핀 리본" />
+    <part Name="Description" Short="종이 두께로 깎인 탄소 미립자의 기포 리본이 고정 장치에 부딪히며 하늘 위로 가늘어지며 사라집니다." />
+    <part Name="AscensionCable" />
+    <tag Name="ForceSmartUse" />
+    <tag Name="ExcludeFromDynamicEncounters" />
+    <part Name="UnityPrefabImposter" PrefabID="Prefabs/Particles/SpindleRibbonDown" />
+  </object>
+  <object Name="Left Spindle Ribbon Top" Inherits="BaseSpindleSupport">
+    <part Name="Render" Tile="Furniture/left-spindle-ribbon-top.png" ColorString="&amp;C" DetailColor="c" DisplayName="그래핀 리본" />
+    <part Name="AscensionCable" />
+    <tag Name="ForceSmartUse" />
+    <tag Name="ExcludeFromDynamicEncounters" />
+  </object>
+  <object Name="Right Spindle Ribbon Top" Inherits="BaseSpindleSupport">
+    <part Name="Render" Tile="Furniture/right-spindle-ribbon-top.png" ColorString="&amp;C" DetailColor="c" DisplayName="그래핀 리본" />
+    <part Name="AscensionCable" />
+    <tag Name="ForceSmartUse" />
+    <tag Name="ExcludeFromDynamicEncounters" />
+  </object>
+
+    
+  
+  <object Name="TerrainNorthSheva" Inherits="Terrain">
+    <part Name="Render" Tile="Terrain/tile_empty.png" />
+    <part Name="TerrainTravel" Segments="4000" LostChance="0" />
+		<tag Name="Terrain" Value="NorthSheva" />
+    <xtagGrammar massNoun="false" />
+    <part Name="WantsBackdrop" Backdrop="Backdrops/NorthShevaBackdrop" BackdropBleedthrough="true" />
+	</object>
+
+  
+  <object Name="TerrainCosmos" Inherits="TerrainNorthSheva">
+    <part Name="Render" DisplayName="보석빛 우주" />    
+    <part Name="RandomRenderString" Strings="255,255,255,255,255,255,255,255,255,46,250,250,250,250,46,42,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255" />
+    <part Name="RandomColors" MainColor="Y,y,W,w,G,g,B,b,R,r,M,m" />
+    <part Name="Description" Short="시야가 무지개빛 항성 촛불의 모자이크로 가득 차고, 불가능한 간극 너머로 먼지의 섬들이 그 빛을 부드럽게 하며, 융합의 움직임으로 깜빡입니다. 하나의 광경으로서 그 광활함은 의식적인 정신을 압도하며, 정신은 셀 수 없는 화소들을 온전하고 이상적인 형태로 환원하려 분주합니다." />
+    <part Name="UnityPrefabImposterChance" Chance="10" PrefabID="Prefabs/Particles/CosmosStars" />
+  </object>
+  <object Name="TerrainWorld" Inherits="TerrainNorthSheva">
+    <part Name="Render" DisplayName="푸른 구슬 세계" RenderString="178" ColorString="&amp;B^b" />
+    <part Name="Description" Short="거대한 빙붕이 녹아 사파이어빛 바다를 채우고, 바다는 떠다니는 현무암과 석회의 벌집 구조를 어루만집니다. 이 위에서 해안선의 패턴이 수백만 개의 흐르는 등고선에서 드러나며, 각각의 등고선은 달팽이나 나무, 혹은 벼농사꾼의 분류군을 품고 있을지 모릅니다." />
+  </object>
+  <object Name="TerrainHalo" Inherits="TerrainNorthSheva">
+    <part Name="Render" DisplayName="대기의 후광" />
+    <part Name="Description" Short="공기의 보풀 아우라가 구슬 위에서 소용돌이치며, 끝없는 계절 속에서 뭉쳤다 흩어지기를 반복하고, 타오르는 바닷바람이 산들바람으로 식으며 숨 쉬는 세계의 생명 리듬을 이어갑니다." />
+    <part Name="RandomRenderString" Strings="176,177,178" />
+    <part Name="RandomColors" MainColor="Y,y" />    
+  </object>  
+  <object Name="TerrainExtrasolarFungi" Inherits="TerrainNorthSheva">
+    <part Name="Render" DisplayName="외계 균류" />
+    <part Name="RandomRenderString" Strings="009,147,148,149,229,248,111,007" />
+    <part Name="RandomColors" MainColor="R,C,Y,W,R" />
+    <part Name="Description" Short="풍부하고 이 세상 것이 아닌 색조의 거대한 자실체들이 스펀지 갈래에 달라붙어 포자를 토합니다. 포자들은 스핀들 계류의 정전기를 향해 곡선으로 날아가 반짝이는 가루로 비처럼 내립니다." />
+    <part Name="UnityPrefabImposterChance" Chance="50" PrefabID="Prefabs/Particles/ExtrasolarFungi" />
+  </object>
+
+  
+  <object Name="TerrainSolarRibbon" Inherits="TerrainNorthSheva">
+    <part Name="Render" DisplayName="태양 리본" RenderString="236" ColorString="&amp;K" />
+    <part Name="Description" Short="납작하고 햇빛에 취한 전도체의 초타원형이 꼬인 띠를 테셀레이션하며, 햇빛과 반사된 잔광을 가장 잘 받도록 휘어져 있습니다." />
+  </object>
+  <object Name="TerrainSpindleTether" Inherits="TerrainNorthSheva">
+    <part Name="Render" DisplayName="스핀들 계류" RenderString="179" ColorString="&amp;C" />
+    <part Name="Description" Short="기포 마노의 리본이 북쪽으로 휘어 구름의 우물을 관통하며 떨어지고, 아래의 느리게 기우는 대륙붕과 흐릿하게 섞입니다." />
+    <xtagGrammar Proper="true" />
+    <tag Name="IndefiniteArticle" Value="the" />
+    <tag Name="DefiniteArticle" Value="the" />
+  </object>
+  <object Name="TerrainSkyBridge" Inherits="TerrainNorthSheva">
+    <part Name="Render" DisplayName="남쪽 다리" RenderString="#" ColorString="&amp;#" />
+    <part Name="Description" Short="하층부 터널의 어두운 황혼에서 남쪽으로 뻗은 다리가 창공을 가로지르며, 아래의 햇살 비치는 바다에 의해 밝혀집니다." />
+  </object>
+  <object Name="TerrainSurfaceStratum" Inherits="TerrainNorthSheva">
+    <part Name="Render" DisplayName="표면 지층" RenderString="250" ColorString="&amp;b" />
+    <part Name="Description" Short="고도로 섬유질인 복합 재료의 시트 위에 시트가 평평하고 건축 가능한 주름으로 깎여 고궤도 폴리스를 위한 기반을 이룹니다." />
+  </object>
+  <object Name="TerrainSuperStratum" Inherits="TerrainNorthSheva">
+    <part Name="Render" DisplayName="상층부" RenderString="250" ColorString="&amp;b" />
+    <part Name="Description" Short="네모난 섬유질 복합재가 셰바 위로 북쪽으로 솟아올라, 높은 대지에서 낮은 단구로의 기울어진 전경을 제공합니다." />
+  </object>
+  <object Name="TerrainUnderstratum" Inherits="TerrainNorthSheva">
+    <part Name="Render" DisplayName="하층부" RenderString="95" ColorString="&amp;b" />
+    <part Name="Description" Short="표면에서 햇볕을 쬐는 폴리스 아래, 동굴 같은 속이 빈 섬유질의 측량 불가한 미궁이 수천 년의 화석화된 지하문화를 품고 있습니다." />
+  </object>
+  <object Name="TerrainShatteredStratum" Inherits="TerrainNorthSheva">
+    <part Name="Render" DisplayName="파쇄된 지층" RenderString="250" ColorString="&amp;b" />
+    <part Name="Description" Short="거대 지주가 갈라지고 해어진 복합재의 밧줄로 도금되어, 시간의 폭력에 의해 산산이 부서진 채 공기 없는 진공 속에 얼어붙어 있습니다." />
+  </object>
+  <object Name="TerrainUnderhorn" Inherits="TerrainNorthSheva">
+    <part Name="Render" DisplayName="언더혼" RenderString="25" ColorString="&amp;b" />
+    <part Name="Description" Short="초전도성 은이 낮은 지층 아래에 박쥐처럼 매달려 아래에서 뒤척이는 부식토로 신호를 쏘아 보냅니다." />
+  </object>
+
+  
+  <object Name="TerrainMoverRail" Inherits="TerrainNorthSheva">
+    <part Name="Render" DisplayName="무버 레일" RenderString="197" ColorString="&amp;K" />
+    <part Name="Description" Short="초전도성 목재의 긴 선로가 북쪽 셰바를 횡단하며 무버를 하늘을 향한 정류장까지 자기 부양시킵니다." />
+    <tag Name="MoverTransit" />
+    <tag Name="NoPassByMessage" />
+  </object>
+  <object Name="TerrainMoverStop" Inherits="TerrainNorthSheva">
+    <part Name="Render" DisplayName="무버 정류장" RenderString="015" ColorString="&amp;y" TileColor="&amp;Y" DetailColor="m" />
+    <part Name="Description" Short="걸쇠 다이아몬드가 무버 가마의 다리와 자기 잠금을 이루며 이동의 의식을 마무리합니다." />
+    <tag Name="BaseObject" Value="*noinherit" />
+    <tag Name="MoverTransit" />
+  </object>
+  <object Name="TerrainMoverStopActive" Inherits="TerrainMoverStop">    
+    <part Name="AnimatedMaterialGeneric" AnimationLength="200" ColorStringAnimationFrames="0=&amp;m,50=&amp;M,100=&amp;Y,150=&amp;y" TileColorAnimationFrames="0=&amp;Y,50=&amp;y,100=&amp;m,150=&amp;M" DetailColorAnimationFrames="0=m,50=M,100=Y,150=y" />    
+  </object>
+  <object Name="TerrainMoverStopRuined" Inherits="TerrainMoverStop">
+    <part Name="Render" DisplayName="폐허가 된 무버 정류장" />
+    <part Name="Description" Short="걸쇠가 터져 열리고 자기 충전이 밖으로 흘러나갔습니다. 무버 포획은 더 이상 불가능합니다." />
+    <tag Name="MoverTransit" />
+  </object>
+  <object Name="TerrainArrivarium" Inherits="TerrainNorthSheva">
+    <part Name="Render" DisplayName="아리바리움" RenderString="202" ColorString="&amp;C" />
+    <part Name="Description" Short="셰바 방향의 스핀들 계류 길이가 도착 챔버의 잠금 장치에 물려 있습니다. 안정화 타격기가 징을 치며 셰바의 지구동기궤도에서 진동 이상을 매끄럽게 합니다." />
+    <xtagGrammar Proper="true" />
+    <tag Name="IndefiniteArticle" Value="the" />
+    <tag Name="DefiniteArticle" Value="the" />
+  </object>
+  <object Name="TerrainEarthGate" Inherits="TerrainNorthSheva">
+    <part Name="Render" DisplayName="지구 문" RenderString="239" ColorString="&amp;W" />
+    <part Name="Description" Short="어깨 아치와 문이 지상의 나무와 모래에서 별의 횃대로, 그리고 그 역으로의 흐름을 실체화합니다. 통과의 정원에서, 문 자체의 발치에 거대한 조상의 셰일 석판들이 의식의 그릇을 둘러싸고 있습니다." />
+    <xtagGrammar Proper="true" />
+    <tag Name="IndefiniteArticle" Value="the" />
+    <tag Name="DefiniteArticle" Value="the" />
+  </object>
+  <object Name="TerrainEarthGateFlank" Inherits="TerrainNorthSheva">
+    <part Name="Render" DisplayName="지구 문" RenderString="239" ColorString="&amp;W" />
+    <xtagGrammar Proper="true" />
+    <part Name="Description" Short="어깨 아치와 문이 지상의 나무와 모래에서 별의 횃대로, 그리고 그 역으로의 흐름을 실체화합니다. 통과의 정원에서, 문 자체의 발치에 거대한 조상의 셰일 석판들이 의식의 그릇을 둘러싸고 있습니다." />
+    <tag Name="IndefiniteArticle" Value="the" />
+    <tag Name="DefiniteArticle" Value="the" />
+  </object>
+  <object Name="TerrainTifaret" Inherits="TerrainMoverStopActive">
+    <part Name="Render" DisplayName="티파레트 지점" />
+    <part Name="Description" Short="시노로트가 중간 지점에서 교차하며, 블루 슐의 황금빛 황도에 의해 구부러져 무버를 북쪽 셰바의 심장부로 오가게 합니다." />
+    <xtagGrammar Proper="true" />
+    <tag Name="IndefiniteArticle" Value="the" />
+    <tag Name="DefiniteArticle" Value="the" />
+  </object>
+	<object Name="TerrainNorthernArkStop" Inherits="TerrainMoverStopActive">
+	</object>  
+  <object Name="TerrainStarfarersQuayStop" Inherits="TerrainMoverStopActive">
+  </object>
+  <object Name="MoverStopStarOrchidTemple" Inherits="TerrainMoverStopActive">
+  </object>  	
+	<object Name="StationPit" Inherits="DarkCyanPit">
+		<part Name="Render" ColorString="&amp;c^k" TileColor="&amp;c^k" />
+		<removepart Name="StairsDown" />
+	</object>
+
+  
+  <object Name="TerrainNorthernArk" Inherits="TerrainNorthSheva">
+    <part Name="Render" DisplayName="북쪽 방주" RenderString="215" ColorString="&amp;W" />
+    <part Name="Description" Short="벨담 구역은 먼지구름 지느러미가 상층부에 용접되고 미궁석으로 감싸여 하이퍼브레인을 보호합니다. 그 전자기 우리이자 양자 사원 안에서, 위대한 시아크의 움직임이 비결정론적 핵심에서 흘러나옵니다." />
+    <xtagGrammar Proper="true" />
+    <tag Name="IndefiniteArticle" Value="the" />
+    <tag Name="DefiniteArticle" Value="the" />
+  </object>
+  <object Name="TerrainShieldingArch" Inherits="TerrainNorthernArk">
+  </object>
+  <object Name="TerrainNorthernArkSiach" Inherits="TerrainNorthernArk">
+  </object>
+  <object Name="TerrainStarfarersQuay" Inherits="TerrainNorthernArk">
+    <part Name="Render" DisplayName="항성여행자의 부두" RenderString="215" ColorString="&amp;W" />
+    <part Name="Description" Short="무카르나스가 한때 천 갈래 항성민의 길의 배꼽을 덮었던 높은 돔 아래로 쏟아져 내립니다. 이제 노래하는 종이 경마장을 통해 울리지만 생물의 응답은 없습니다." />
+  </object>
+  <object Name="TerrainStarOrchidTemple" Inherits="TerrainNorthSheva">
+    <part Name="Render" DisplayName="별 난초 사원" RenderString="145" ColorString="&amp;m" />
+    <part Name="Description" Short="우주선 배기가스에서 소성된 외계 석회의 첨탑 정원이 낮은 다차 위로 우뚝 솟습니다. 대극의 열주 위로 연못 백합이 난간을 기어올라 자신을 들여다봅니다. 이곳은 차원문의 장소입니다." />
+    <xtagGrammar Proper="true" />
+  </object>
+  <object Name="TerrainGreatMachineTemple" Inherits="TerrainNorthSheva">
+    <part Name="Render" DisplayName="위대한 기계의 사원" RenderString="233" ColorString="&amp;c" />
+    <part Name="Description" Short="별에서 얻은 금속의 느리게 돌아가는 톱니바퀴가 돛으로 덮이고, 대륙 규모의 주판 양 옆에 늘어서 있습니다. 기름이 타오르며 기능적 사원을 밝히는데, 이곳은 72겹 평화의 회당이자 동시에 그 칙령의 엔진이기도 합니다." />
+    <tag Name="IndefiniteArticle" Value="the" />
+    <tag Name="DefiniteArticle" Value="the" />
+  </object>
+  <object Name="TerrainDarkMatterMast" Inherits="TerrainNorthSheva">
+    <part Name="Render" DisplayName="암흑물질 돛대" RenderString="186" ColorString="&amp;K" />
+    <part Name="Description" Short="빛을 피하는 무거운 물질의 높은 활대가 성간 항구 곳곳에 세워졌습니다. 레이라인이 휘어지고 유동적 문화의 새로운 수로가 만들어졌습니다." />    
+  </object>
+  <object Name="TerrainDarkMatterMastRail" Inherits="TerrainDarkMatterMast">
+    <tag Name="MoverTransit" />
+  </object>
+  <object Name="TerrainSurfaceStratumNorthwiseMoors" Inherits="TerrainSurfaceStratum">    
+  </object>
+  <object Name="TerrainStarfarersQuayNorthwiseMoors" Inherits="TerrainStarfarersQuay">    
+  </object>  
+  <object Name="TerrainStarshipMoor" Inherits="TerrainNorthSheva">
+    <part Name="Render" DisplayName="우주선 정박지" RenderString="205" ColorString="&amp;Y" />
+    <part Name="Description" Short="허공을 찌르는 거대한 부두에 우주선 격납고가 점점이 박혀 있고, 무너져가는 대리석 대로가 교차합니다. 보석빛 우주가 사분구 돔 사이로 빛납니다." />
+  </object>
+  <object Name="TerrainObservationLune" Inherits="TerrainNorthSheva">
+    <part Name="Render" DisplayName="관측 루네" RenderString="(" ColorString="&amp;C" />
+    <part Name="Description" Short="점술용 액체의 거대한 원통형 드럼이 지층에 묶여 기포 왕국의 신화시적 사건 흐름을 들여다봅니다." />
+    <tag Name="IndefiniteArticle" Value="the" />
+    <tag Name="DefiniteArticle" Value="the" />
+  </object>
+  <object Name="TerrainObservationLune R" Inherits="TerrainObservationLune">
+    <part Name="Render" DisplayName="관측 루네" RenderString=")" ColorString="&amp;C" />    
+  </object>
+  <object Name="TerrainQor" Inherits="TerrainNorthSheva">
+    <part Name="Render" DisplayName="코르 왕국" RenderString="20" ColorString="&amp;r" />
+    <part Name="Description" Short="Eaters는 어떤 목적으로 동화 속 민족을 키우고 그들의 깃발이 수정 우주 전체에 펄럭인다고 믿게 했을까요? 목적이 있었다면, 그것은 잃어버렸습니다." />
+    <tag Name="IndefiniteArticle" Value="the" />
+    <tag Name="DefiniteArticle" Value="the" />
+  </object>
+  <object Name="TerrainMotedForest" Inherits="TerrainNorthSheva">
+    <part Name="Render" DisplayName="미진 숲" ColorString="&amp;g" />
+    <part Name="Description" Short="별먼지의 미립자가 마법의 캐노피 사이로 비처럼 내려 바람에 소용돌이칩니다. 기포의 빛을 굴절시키며 보이지 않는 색으로 미끄러져, 축축하고 가장 부드러운 잎의 나무들을 두드립니다." />
+    <part Name="RandomRenderString" Strings="005,157,231,230" />
+    <xtagGrammar massNoun="true" />    
+  </object>
+  <object Name="TerrainLakeAvalon" Inherits="TerrainNorthSheva">
+    <part Name="Render" DisplayName="아발론 호수" RenderString="247" ColorString="&amp;B^b" />
+    <part Name="Description" Short="성스러운 호수의 수면이 숲의 마법 노래를 잠재우고 위대한 달을 비추며, 사파이어빛 바다와 재의 대륙이 물결치는 투영 속에서 떨립니다." />    
+    <xtagGrammar Proper="true" />    
+  </object>
+  <object Name="TerrainGlassDome" Inherits="TerrainNorthSheva">
+    <part Name="Render" DisplayName="유리 돔" RenderString="236" ColorString="&amp;Y" />
+    <part Name="Description" Short="거대한 캡슐(외벽이자 세계의 피부)이 왕국을 실재로는 감싸지만 외관상으로는 아니며, 왕국과 왕의 관계를 뒤집습니다." />    
+  </object>
+  <object Name="TerrainSeedVault" Inherits="TerrainNorthSheva">
+    <part Name="Render" DisplayName="종자 저장고" RenderString="21" ColorString="&amp;G" />
+    <part Name="Description" Short="벽화가 그려진 수조가 수천 종의 지상 식물을 보존하는 거대한 액체 바이오뱅크를 담고 있습니다. 그렇게 새겨진 식물학적 색인은 문화의 움직임을 반영하고 예측합니다. 습지 거주민이 비옥한 토양을 따라 강을 거슬러 올라가고, 육식 분류군이 번성하면 협곡으로 퇴각합니다." />
+    <xtagGrammar Proper="true" />
+    <tag Name="IndefiniteArticle" Value="the" />
+    <tag Name="DefiniteArticle" Value="the" />
+  </object>
+  <object Name="TerrainConsulate" Inherits="TerrainNorthSheva">
+    <part Name="Render" DisplayName="삼각자리 영사관" RenderString="31" ColorString="&amp;Y" />
+    <part Name="Description" Short="나선형 삼각 꼭대기 장식이 성단에 명성을 부여한 흐르는 별자리를 묘사합니다. 알파, 베트, 달렛이 은하핵에서 나와 꽃피고, 위대한 기계와 같은 황도 궤도를 따라 순환하며, 꽃잎 존재들의 민얀을 보내 미래의 결합을 기도하고 연주했습니다." />
+    <xtagGrammar Proper="true" />
+    <tag Name="IndefiniteArticle" Value="the" />
+    <tag Name="DefiniteArticle" Value="the" />
+  </object>
+  <object Name="TerrainConsulate U" Inherits="TerrainNorthSheva">
+    <part Name="Render" DisplayName="삼각자리 영사관" RenderString="30" ColorString="&amp;Y" />
+    <part Name="Description" Short="나선형 삼각 꼭대기 장식이 성단에 명성을 부여한 흐르는 별자리를 묘사합니다. 알파, 베트, 달렛이 은하핵에서 나와 꽃피고, 위대한 기계와 같은 황도 궤도를 따라 순환하며, 꽃잎 존재들의 민얀을 보내 미래의 결합을 기도하고 연주했습니다." />
+    <xtagGrammar Proper="true" />
+    <tag Name="IndefiniteArticle" Value="the" />
+    <tag Name="DefiniteArticle" Value="the" />
+  </object>
+  <object Name="TerrainJyEgregore L" Inherits="TerrainNorthSheva">
+    <part Name="Render" DisplayName="지 에그레고르" RenderString="45" ColorString="&amp;r" />
+    <part Name="Description" Short="신비로운 사념체가 지역 지성의 잃어버린 흐름에서 깨어나 표면의 자외선 목욕장에 스펀지 같은 맹그로브를 스스로 자리 잡았습니다. 오래전에 말라붙어, 내장 같은 덩어리가 시간에 의해 종이 펄프 같은 것으로 압축되었습니다." />
+    <xtagGrammar Proper="true" />
+    <tag Name="IndefiniteArticle" Value="the" />
+    <tag Name="DefiniteArticle" Value="the" />
+  </object>
+  <object Name="TerrainJyEgregore C" Inherits="TerrainNorthSheva">
+    <part Name="Render" DisplayName="지 에그레고르" RenderString="25" ColorString="&amp;r" />
+    <part Name="Description" Short="신비로운 사념체가 지역 지성의 잃어버린 흐름에서 깨어나 표면의 자외선 목욕장에 스펀지 같은 맹그로브를 스스로 자리 잡았습니다. 오래전에 말라붙어, 내장 같은 덩어리가 시간에 의해 종이 펄프 같은 것으로 압축되었습니다." />
+    <xtagGrammar Proper="true" />
+    <tag Name="IndefiniteArticle" Value="the" />
+    <tag Name="DefiniteArticle" Value="the" />
+  </object>
+  <object Name="TerrainJyEgregore R" Inherits="TerrainNorthSheva">
+    <part Name="Render" DisplayName="지 에그레고르" RenderString="007" ColorString="&amp;r" />
+    <part Name="Description" Short="신비로운 사념체가 지역 지성의 잃어버린 흐름에서 깨어나 표면의 자외선 목욕장에 스펀지 같은 맹그로브를 스스로 자리 잡았습니다. 오래전에 말라붙어, 내장 같은 덩어리가 시간에 의해 종이 펄프 같은 것으로 압축되었습니다." />
+    <xtagGrammar Proper="true" />
+    <tag Name="IndefiniteArticle" Value="the" />
+    <tag Name="DefiniteArticle" Value="the" />
+  </object>
+
+  
+  <object Name="TerrainDishHorn" Inherits="TerrainNorthSheva">
+    <part Name="Render" DisplayName="접시 뿔" RenderString="011" ColorString="&amp;y" />
+    <part Name="Description" Short="포물선형 포수가 우주의 먼 곳에서 오는 신호를 잡아 울림 뿔 속으로 되쏩니다." />
+  </object>
+  <object Name="TerrainTerrarium" Inherits="TerrainNorthSheva">
+    <part Name="Render" DisplayName="테라리움" RenderString="006" ColorString="&amp;g" />
+    <part Name="Description" Short="지상의 식물과 그 외의 것들이 온실 거품 안에서 번성하며, 뿌리는 섬유질 지층을 통해 반죽하고, 잎은 허공 너머로 햇빛을 향해 고개를 내밉니다." />
+  </object>
+  <object Name="TerrainShatteredTerrarium" Inherits="TerrainNorthSheva">
+    <part Name="Render" DisplayName="파쇄된 테라리움" RenderString="006" ColorString="&amp;g" />
+    <part Name="Description" Short="기이한 성장과 다른 변이가 노출된 식물을 괴롭히며, 산산이 부서진 진공 유리가 여과되지 않은 햇빛, 먼지, 포자 군집을 들여보냅니다." />
+  </object>
+  <object Name="TerrainFarmShelf" Inherits="TerrainNorthSheva">
+    <part Name="Render" DisplayName="자외선 농업 선반" RenderString="110" ColorString="&amp;w" />
+    <part Name="Description" Short="거대한 흙더미가 계단식으로 조성되어 진공에 뿌리내리고 태양의 전체 빛 스펙트럼을 마시도록 개량된 작물이 심어져 있습니다." />
+    <part Name="RandomRenderString" Strings="110,239" />
+  </object>
+  <object Name="TerrainNorthForum" Inherits="TerrainNorthSheva">
+    <part Name="Render" DisplayName="북쪽 포럼" RenderString="197" ColorString="&amp;C" />
+    <part Name="Description" Short="개선문 형태의 비틀림과 시장 돔이 포장된 상층부 계곡을 따라 늘어서 있으며, 메디나와 벨담 구역의 Eaters가 순환 의식을 행하던 곳입니다." />
+    <xtagGrammar Proper="true" />
+    <tag Name="IndefiniteArticle" Value="the" />
+    <tag Name="DefiniteArticle" Value="the" />
+  </object>
+  <object Name="TerrainSheshDacha" Inherits="TerrainNorthSheva">
+    <part Name="Render" DisplayName="셰시 다차" RenderString="179" ColorString="&amp;y" />
+    <part Name="Description" Short="셰시 카님의 아치형 별장들이 별 교통이 낮은 메디나를 붐비게 하고 Eaters가 더 많은 시간을 위쪽에서 보내도록 촉구하면서 덤불처럼 돋아났습니다." />
+    <part Name="RandomRenderString" Strings="179,191,192,193,194,195,196,197,217,218" />
+  </object>
+  <object Name="TerrainShevaDacha" Inherits="TerrainNorthSheva">
+    <part Name="Render" DisplayName="셰바 다차" RenderString="179" ColorString="&amp;y" />
+    <part Name="Description" Short="별장들이 셰시 카님을 채우자, 늦은 상층 거주자들과 변방의 별 민족이 거품 남쪽, 북쪽 대륙의 패널 커튼이 드리운 절벽에 기대어 집을 지었습니다." />
+    <part Name="RandomRenderString" Strings="179,191,192,193,194,195,196,197,217,218" />
+  </object>
+  <object Name="TerrainLowMedina" Inherits="TerrainNorthSheva">
+    <part Name="Render" DisplayName="하부 메디나" RenderString="110" ColorString="&amp;C" />
+    <part Name="Description" Short="표면 지층의 오래되고 경계 지어진 폴리스는 코브넌트 이전의 태초 시대에 가우스를 타고 올라온 Eater 씨족과 길드의 본거지였습니다. 이곳에서 그들은 초기의 별 화물을 운반하고, 자신들이 떠나온 푸른 구슬을 경이로움으로 바라보았습니다." />
+    <part Name="RandomRenderString" Strings="182,186,189,199,208,210,211,214,215" />
+  </object>
+  <object Name="TerrainHighMedina" Inherits="TerrainNorthSheva">
+    <part Name="Render" DisplayName="상부 메디나" RenderString="110" ColorString="&amp;C" />
+    <part Name="Description" Short="초기 Eaters가 하부 메디나에 정착하기 이전, 방주가 지상의 유전체로 먼 하늘을 뿌릴 준비를 할 때, 최초의 폴리스가 가우스 건설의 엔테오정치적이고 신화산문적 논쟁에서 솟아올랐습니다. 어찌된 영문인지, 그것들은 아직도 서 있습니다." />
+    <part Name="RandomRenderString" Strings="182,186,189,199,208,210,211,214,215" />
+  </object>
+  <object Name="TerrainBazaarOfSamech" Inherits="TerrainNorthSheva">
+    <part Name="Render" DisplayName="사메크의 시장" RenderString="110" ColorString="&amp;y" />
+    <part Name="Description" Short="이곳에 항성항구의 바람막이 아래 대시장의 혼합적 아케이드가 솟아 있습니다. 시장은 예순 별의 풍요를 천막 홀에 밀어 넣었습니다: 10억 올 양탄자, 소 수레에 실린 거대 프로세서, 독이 든 향수, 그리고 차가운 복숭아." />
+    <part Name="RandomRenderString" Strings="182,186,189,199,208,210,211,214,215" />    
+    <xtagGrammar Proper="true" />
+    <tag Name="IndefiniteArticle" Value="the" />
+    <tag Name="DefiniteArticle" Value="the" />
+  </object>
+  <object Name="TerrainOutworldVault" Inherits="TerrainNorthSheva">
+    <part Name="Render" DisplayName="외계 금고" RenderString="155" ColorString="&amp;W" />
+    <part Name="Description" Short="가장 부유한 별 민족의 선물이 다이아몬드화된 제타크롬과 주입식 정지장의 금고에 보관되었습니다. 무버에서의 관점으로는 시간의 이온화가 구은행의 이 시공간 방벽을 약화시켰는지 알 수 없습니다." />
+  </object>
+  <object Name="TerrainTelescope" Inherits="TerrainNorthSheva">
+    <part Name="Render" DisplayName="점술 뿔" RenderString="011" ColorString="&amp;C" />
+    <part Name="Description" Short="뿔과 그 거대한 벌집형 거울이 이 차원과 이웃 차원의 가장 먼 곳에서 온 습한 빛을 모읍니다. 이것으로 Eaters는 우주 탄생의 첫 순간을, 그리고 그 이전의 영겁을 들여다보았습니다." />
+  </object>
+  <object Name="TerrainForceCore" Inherits="TerrainNorthSheva">
+    <part Name="Render" DisplayName="역장핵" RenderString="017" ColorString="&amp;B" />
+    <part Name="Description" Short="기계적 우리가 슬립스트림에서 뽑아낸 순수한 힘을 저장하여 국소 시공간을 재형성하는 데 사용합니다. 때때로 비수학적 요동이 푸시톤의 탈출을 허용하여 비스듬한 은하를 핵심 바로 옆에 투사합니다." />
+  </object>
+  <object Name="TerrainForceCore R" Inherits="TerrainNorthSheva">
+    <part Name="Render" DisplayName="역장핵" RenderString="016" ColorString="&amp;B" />
+    <part Name="Description" Short="기계적 우리가 슬립스트림에서 뽑아낸 순수한 힘을 저장하여 국소 시공간을 재형성하는 데 사용합니다. 때때로 비수학적 요동이 푸시톤의 탈출을 허용하여 비스듬한 은하를 핵심 바로 옆에 투사합니다." />
+  </object>
+
+  
+  
+  <object Name="OmniForcefield" Inherits="BaseForcefield">
+    <part Name="Render" DisplayName="역장 방벽" ColorString="&amp;M^k" />
+    <part Name="Description" Short="전위가 자홍색 육각 격자로 극성화되어 위상 스펙트럼의 모든 지층에 맞춰져 있습니다. 예외 없이 모든 물체가 차단됩니다." />
+    <part Name="AnimatedMaterialForcefield" Color="Magenta" />
+    <part Name="Forcefield" MissileOpaque="true" />
+    <tag Name="PaintedFence" Value="force_field_1" />
+    <tag Name="PaintedFenceAtlas" Value="Assets_Content_Textures_Tiles2_" />
+    <tag Name="PaintedFenceExtension" Value=".png" />
+    <tag Name="PaintPart" Value="ForceProjector" />
+    <part Name="OmniphaseObject" />
+    <part Name="DropOnDeath" Blueprints="OmniForcefield" />
+    <tag Name="Tier" Value="8" />
+  </object>
+  <object Name="Fluent Lock" Inherits="MountedFurniture">
+    <part Name="Render" Tile="Furniture/fluent-lock-1.png" ColorString="&amp;W" DetailColor="w" DisplayName="유동 잠금장치" />
+    <part Name="Description" Short="요변성 유체 한 방울이 원심력에 의해 분지로 끌려 내려옵니다. 짝 잠금장치와의 동기화를 통해 북쪽 셰바를 정지궤도에 안정시키고 1g의 주변 압력을 시뮬레이션합니다." />
+    <part Name="Physics" Weight="10000" Solid="true" />
+    <stat Name="Hitpoints" Value="9000" />
+    <stat Name="AV" Value="50" />
+    <part Name="ZeroPointEnergyCollector" ChargeRate="100" World="NorthSheva" />
+    <part Name="ChargeSink" ChargeUse="0" NameForStatus="OrbitalStabilization" />
+    <part Name="AnimatedMaterialGeneric" AnimationLength="150" TileAnimationFrames="0=Furniture/fluent-lock-1.png,75=Furniture/fluent-lock-2.png,80=Furniture/fluent-lock-3.png,105=Furniture/fluent-lock-4.png,120=Furniture/fluent-lock-5.png,135=Furniture/fluent-lock-6.png" />
+    <part Name="Capacitor" Charge="500" MaxCharge="500" ChargeDisplayStyle="" />    
+    <removepart Name="Graffitied" />
+    <part Name="OmniphaseObject" Visual="false" />
+    <tag Name="ExcludeFromDynamicEncounters" />
+    <tag Name="BaseObject" Value="*noinherit" />
+  </object>
+  <object Name="Phasic Screw" Inherits="MountedFurniture">
+    <part Name="Render" Tile="Furniture/phasic-screw-1.png" ColorString="&amp;y" DetailColor="Y" DisplayName="위상 나사" />
+    <part Name="Description" Short="석영질 패널이 자기 극 주위를 날카로운 나선으로 회전합니다. 거울 면이 측면 차원 밖으로 입자를 반사시켜 약화된 성간 공간의 주머니를 통과시킵니다. 에너지의 일부가 포획됩니다." />
+    <part Name="Physics" Weight="10000" Solid="true" />
+    <stat Name="Hitpoints" Value="9000" />
+    <stat Name="AV" Value="50" />
+    <part Name="ZeroPointEnergyCollector" ChargeRate="100" World="NorthSheva" />
+    <part Name="ChargeSink" ChargeUse="0" NameForStatus="HyperdimensionalRotary" />
+    <part Name="AnimatedMaterialGeneric" AnimationLength="60" TileAnimationFrames="0=Furniture/phasic-screw-1.png,10=Furniture/phasic-screw-2.png,20=Furniture/phasic-screw-3.png,30=Furniture/phasic-screw-4.png,40=Furniture/phasic-screw-5.png,50=Furniture/phasic-screw-6.png" RequiresOperationalActivePart="ChargeSink" />
+    <part Name="Capacitor" Charge="500" MaxCharge="500" ChargeDisplayStyle="" />
+    <removepart Name="Graffitied" />
+    <part Name="OmniphaseObject" Visual="false" />
+    <tag Name="ExcludeFromDynamicEncounters" />
+    <tag Name="BaseObject" Value="*noinherit" />
+  </object>
+  <object Name="BaseEaterMonument" Inherits="MountedFurniture">
+    <part Name="Render" DisplayName="[eater 기념비]" RenderString="|" Tile="Terrain/sw_monument1.bmp" ColorString="&amp;W^k" DetailColor="w" Occluding="true" />
+    <part Name="Physics" Weight="10000" FlameTemperature="99999" VaporTemperature="1500" Solid="true" />
+    <stat Name="AV" Value="40" />
+    <stat Name="Hitpoints" Value="10000" />
+    <part Name="Description" Short="" />
+    <part Name="SmartuseLooks" />
+    <removepart Name="MissileCover" />
+    <part Name="Shrine" />    
+    <tag Name="ExcludeFromDynamicEncounters" />
+    <tag Name="BaseObject" Value="*noinherit" />
+  </object>
+  <object Name="Circumcestral Eater Monument" Inherits="BaseEaterMonument">
+    <part Name="Render" DisplayName="순환조상 기념비" />    
+    <part Name="Description" Short="조각된 거석의 형태가 당신 정신의 기어가는 통로에 있는 잊혀진 뉴런 편대를 전기 자극하여, 첫 번째 사유의 문턱 어딘가, 깊은 과거와의 갑작스러운 친밀함 속으로 당신을 내던집니다. 그런 다음 시간의 꼬임 위에서 어느 방향으로 기억하고 있는지에 대한 불확실성이 찾아옵니다." />
+    <builder Name="RandomTile" Tiles="Furniture/eater-monument-1.png,Furniture/eater-monument-2.png,Furniture/eater-monument-3.png,Furniture/eater-monument-4.png,Furniture/eater-monument-5.png,Furniture/eater-monument-6.png,Furniture/eater-monument-7.png,Furniture/eater-monument-8.png,Furniture/eater-monument-9.png,Furniture/eater-monument-10.png,Furniture/eater-monument-11.png,Furniture/eater-monument-12.png,Furniture/eater-monument-13.png,Furniture/eater-monument-14.png,Furniture/eater-monument-15.png,Furniture/eater-monument-16.png" />
+  </object>
+  <object Name="CircumcestralEaterMonumentWithPiping" Inherits="Circumcestral Eater Monument">
+    <part Name="ModPiping" />
+  </object>
+  <object Name="Eater Mounted Monument" Inherits="BaseEaterMonument">
+    <part Name="Render" DisplayName="성스러운 트러스" />
+    <part Name="Description" Short="성스러운 기호가 삼각 전시대 위에 놓여, 소수의 순환 주기로 의식적이고 우상숭배적인 성찰을 위해 다가갈 수 있습니다." />    
+    <builder Name="RandomTile" Tiles="Furniture/eater-diagonal-monument-1.png,Furniture/eater-diagonal-monument-2.png,Furniture/eater-diagonal-monument-3.png,Furniture/eater-diagonal-monument-4.png" />
+    <part Name="FlipTileByAdjacentWall" />
+  </object>
+  <object Name="ShevaBrazier" Inherits="MountedFurniture">
+    <part Name="Render" Tile="Furniture/techlamp6.png" RenderString="249" ColorString="&amp;C" DetailColor="B" DisplayName="정지된 화로" />
+    <part Name="Description" Short="우주 초기 시대의 별 슬래그가 난초색과 남색의 색조로 타오릅니다." />
+    <stat Name="Hitpoints" Value="500" />    
+    <part Name="AnimatedMaterialMagentaFire" />
+    <part Name="UnityPrefabImposter" PrefabID="Prefabs/Particles/PurpleBrazierFlames" />
+    <part Name="LightSource" Lit="true" Radius="10" />
+    <part Name="SoundRender" Sound="sfx_torch_flame_lp" />
+    <tag Name="ExcludeFromDynamicEncounters" />
+  </object>
+  <object Name="ShevaBrazierGreen" Inherits="ShevaBrazier">
+    <part Name="Description" Short="우주 초기 시대의 별 슬래그가 잎사귀색과 공작석의 색조로 타오릅니다." />
+    <part Name="UnityPrefabImposter" PrefabID="Prefabs/Particles/GreenBrazierFlames" />
+    <part Name="AnimatedMaterialGreenFire" />
+  </object>  
+  <object Name="ChevronWall" Inherits="BaseWallMetal">
+    <part Name="Render" DisplayName="크롬 히부르" ColorString="&amp;c^y" TileColor="&amp;c^y" DetailColor="k" Occluding="true" />
+    <part Name="Physics" Weight="10000" />
+    <part Name="Description" Short="아주룸이 안드로메다의 채석장에서 별 항해로 운반되고, 크롬으로 담금질되어, 천상의 금고를 지탱하기 위해 히베르의 의식적 형태로 조각되었습니다." />
+    <stat Name="AV" Value="50" />
+    <stat Name="Hitpoints" Value="10000" />    
+    <tag Name="PaintedWall" Value="sw_chevron" />
+    <tag Name="PaintedCheckerboard" />
+    <tag Name="PaintedWallExtension" Value=".png" />
+    <tag Name="PaintedWallAtlas" Value="Assets_Content_Textures_Walls_" />
+    <tag Name="PaintWith" Value="ChevronWalls" />            
+    <part Name="Graffitied" ChanceOneIn="2000" />    
+    <part Name="DropOnDeath" Blueprints="OmniForcefield" />
+    <part Name="OmniphaseObject" Visual="false" />
+    <tag Name="ExcludeFromDynamicEncounters" />
+  </object>  
+  <object Name="ChevronWallWithPiping" Inherits="ChevronWall">
+    <part Name="ModPiping" />
+  </object>
+  <object Name="Chevron Brown Gold" Inherits="ChevronWall">
+    <part Name="Render" ColorString="&amp;w^W" TileColor="&amp;w^W" DetailColor="k" />
+  </object>  
+  <object Name="BaseShevaHydraulicPipe" Inherits="GlassHydraulicPipe">
+    <part Name="Render" DisplayName="장식용 파이프" DetailColor="W" Occluding="false" />
+    <part Name="Description" Short="서른 개의 태양 세계에서 가져온 녹인 모래가 위상학적 불가능성으로 불어 만들어지고 별 없는 금의 꼭대기 장식으로 마감되었습니다." />
+    <stat Name="AV" Value="15" />
+    <stat Name="Hitpoints" Value="500" />
+    <part Name="LightSource" Lit="true" Radius="8" />
+    <part Name="ModLacquered" />
+    <tag Name="PaintedFence" Value="eater-pipe" />
+    <tag Name="PaintedFenceAtlas" Value="Assets_Content_Textures_Furniture_" />
+    <tag Name="PaintedFenceExtension" Value=".png" />
+    <tag Name="ColorStringByLiquid" Value="*delete" />
+    <tag Name="DetailColorByLiquid" Value="*delete" />
+    <tag Name="BaseObject" Value="*noinherit" />
+    <tag Name="ExcludeFromDynamicEncounters" />
+  </object>
+  <object Name="ShevaHydraulicPipe Cyan" Inherits="BaseShevaHydraulicPipe">
+    <part Name="Render" ColorString="&amp;c" TileColor="&amp;c" DetailColor="W" Occluding="false" />    
+  </object>
+  <object Name="ShevaHydraulicPipe Black" Inherits="BaseShevaHydraulicPipe">
+    <part Name="Render" ColorString="&amp;K" TileColor="&amp;K" />        
+  </object>
+  <object Name="ShevaHydraulicPipe Blue" Inherits="BaseShevaHydraulicPipe">
+    <part Name="Render" ColorString="&amp;b" TileColor="&amp;b" />
+  </object>
+  <object Name="ShevaHydraulicPipe Green" Inherits="BaseShevaHydraulicPipe">
+    <part Name="Render" ColorString="&amp;g" TileColor="&amp;g" />
+  </object>
+  <object Name="BaseShevaEaterHologram" Inherits="Eater Hologram">
+    <builder Name="RandomTile" Tiles="Creatures/sw_eater_1.bmp,Creatures/sw_eater_2.bmp,Creatures/sw_eater_3.bmp,Creatures/sw_eater_4.bmp,Creatures/sw_eater_5.bmp,Creatures/sw_eater_6.bmp,Creatures/sw_eater_7.bmp,Creatures/sw_eater_8.bmp,Creatures/sw_eater_9.bmp,Creatures/sw_eater_10.bmp,Creatures/sw_eater_11.bmp,Creatures/sw_eater_12.bmp,Creatures/sw_eater_13.bmp,Creatures/sw_eater_14.bmp,Creatures/sw_eater_15.bmp,Creatures/sw_eater_16.bmp,Creatures/sw_eater_17.bmp,Creatures/sw_eater_18.bmp,Creatures/sw_eater_19.bmp,Creatures/sw_eater_20.bmp,Creatures/sw_eater_21.bmp,Creatures/sw_eater_22.bmp,Creatures/sw_eater_23.bmp,Creatures/sw_eater_24.bmp,Creatures/sw_eater_25.bmp,Creatures/sw_eater_26.bmp,Creatures/sw_eater_27.bmp,Creatures/sw_eater_28.bmp,Creatures/sw_eater_29.png,Creatures/sw_eater_30.png,Creatures/sw_eater_31.png,Creatures/sw_eater_32.png,Creatures/sw_eater_33.png,Creatures/sw_eater_34.png" />
+    <tag Name="BaseObject" Value="*noinherit" />
+    <tag Name="ExcludeFromDynamicEncounters" />
+  </object>
+  <object Name="BaseShevaEaterHologram Flipped" Inherits="BaseShevaEaterHologram">
+    <part Name="Render" HFlip="true" />
+    <tag Name="BaseObject" Value="*noinherit" />
+    <tag Name="ExcludeFromDynamicEncounters" />
+  </object>
+  <object Name="Sheva Eater Hologram Gold" Inherits="BaseShevaEaterHologram">
+    <part Name="HologramMaterial" ColorStrings="&amp;W,&amp;w,&amp;W,&amp;w" DetailColors="w,W,w,W" />
+    <part Name="FusionReactor" ChargeRate="1000" />
+    <part Name="Circuitry" StartCharge="1000" />
+    <intproperty Name="ThermalInsulation" Value="900" />
+    <part Name="HydraulicPowerTransmission" ChargeRate="10000" IsProducer="true" DischargeLiquidWhenBrokenAndPowered="true" MingleLiquidsWhenPowered="true" />
+    <part Name="LiquidVolume" MaxVolume="256" Volume="0" StartVolume="256" InitialLiquid="water-1000" Sealed="true" LiquidVisibleWhenSealed="false" />
+  </object>
+  <object Name="Sheva Eater Hologram Gold Flipped" Inherits="BaseShevaEaterHologram Flipped">
+    <part Name="HologramMaterial" ColorStrings="&amp;W,&amp;w,&amp;W,&amp;w" DetailColors="w,W,w,W" />
+    <part Name="FusionReactor" ChargeRate="1000" />
+    <part Name="Circuitry" StartCharge="1000" />
+    <intproperty Name="ThermalInsulation" Value="900" />
+    <part Name="HydraulicPowerTransmission" ChargeRate="10000" IsProducer="true" DischargeLiquidWhenBrokenAndPowered="true" MingleLiquidsWhenPowered="true" />
+    <part Name="LiquidVolume" MaxVolume="256" Volume="0" StartVolume="256" InitialLiquid="water-1000" Sealed="true" LiquidVisibleWhenSealed="false" />
+  </object>
+  <object Name="Sheva Eater Hologram Magenta" Inherits="BaseShevaEaterHologram">
+    <part Name="HologramMaterial" ColorStrings="&amp;M,&amp;m,&amp;M,&amp;m" DetailColors="m,M,m,M" />
+    <part Name="FusionReactor" ChargeRate="1000" />
+    <part Name="Circuitry" StartCharge="1000" />
+    <intproperty Name="ThermalInsulation" Value="900" />    
+    <part Name="HydraulicPowerTransmission" ChargeRate="10000" IsProducer="true" DischargeLiquidWhenBrokenAndPowered="true" MingleLiquidsWhenPowered="true" />    
+    <part Name="LiquidVolume" MaxVolume="256" Volume="0" StartVolume="256" InitialLiquid="water-1000" Sealed="true" LiquidVisibleWhenSealed="false" />
+  </object>
+  <object Name="Sheva Eater Hologram Magenta Flipped" Inherits="BaseShevaEaterHologram Flipped">
+    <part Name="HologramMaterial" ColorStrings="&amp;M,&amp;m,&amp;M,&amp;m" DetailColors="m,M,m,M" />
+    <part Name="FusionReactor" ChargeRate="1000" />
+    <part Name="Circuitry" StartCharge="1000" />
+    <intproperty Name="ThermalInsulation" Value="900" />    
+    <part Name="HydraulicPowerTransmission" ChargeRate="10000" IsProducer="true" DischargeLiquidWhenBrokenAndPowered="true" MingleLiquidsWhenPowered="true" />
+    <part Name="LiquidVolume" MaxVolume="256" Volume="0" StartVolume="256" InitialLiquid="water-1000" Sealed="true" LiquidVisibleWhenSealed="false" />
+  </object>
+  <object Name="EaterStatue Black Dynamic Flip" Inherits="EaterStatue">
+    <part Name="Render" ColorString="&amp;K" DetailColor="y" />
+    <builder Name="RandomTile" Tiles="Creatures/sw_eater_1.bmp,Creatures/sw_eater_2.bmp,Creatures/sw_eater_3.bmp,Creatures/sw_eater_4.bmp,Creatures/sw_eater_5.bmp,Creatures/sw_eater_6.bmp,Creatures/sw_eater_7.bmp,Creatures/sw_eater_8.bmp,Creatures/sw_eater_9.bmp,Creatures/sw_eater_10.bmp,Creatures/sw_eater_11.bmp,Creatures/sw_eater_12.bmp,Creatures/sw_eater_13.bmp,Creatures/sw_eater_14.bmp,Creatures/sw_eater_15.bmp,Creatures/sw_eater_16.bmp,Creatures/sw_eater_17.bmp,Creatures/sw_eater_18.bmp,Creatures/sw_eater_19.bmp,Creatures/sw_eater_20.bmp,Creatures/sw_eater_21.bmp,Creatures/sw_eater_22.bmp,Creatures/sw_eater_23.bmp,Creatures/sw_eater_24.bmp,Creatures/sw_eater_25.bmp,Creatures/sw_eater_26.bmp,Creatures/sw_eater_27.bmp,Creatures/sw_eater_28.bmp,Creatures/sw_eater_29.png,Creatures/sw_eater_30.png,Creatures/sw_eater_31.png,Creatures/sw_eater_32.png,Creatures/sw_eater_33.png,Creatures/sw_eater_34.png" />
+    <stag Name="Historical" />
+    <part Name="FlipTileByAdjacentWall" />
+    <tag Name="ExcludeFromDynamicEncounters" />
+    <tag Name="IncludeInDynamicSemanticTables" />
+  </object>
+  <object Name="Eater Sign 1" Inherits="Sign">
+    <part Name="Render" DisplayName="표지판" RenderString="=" Tile="Furniture/eater-sign-shard.png" ColorString="&amp;W" TileColor="&amp;W" DetailColor="w" />
+    <part Name="Description" Short="별 불꽃 도상이 홀로그래픽 청동 판 위에서 춤춥니다." />
+    <part Name="Chat" Says="Westwise to shard" ShowInShortDescription="true" />
+    <part Name="HologramMaterial" ColorStrings="&amp;W,&amp;w,&amp;W,&amp;w" DetailColors="w,W,w,W" />
+    <tag Name="ExcludeFromDynamicEncounters" />
+  </object>
+  <object Name="Eater Sign 2" Inherits="Sign">
+    <part Name="Render" DisplayName="표지판" RenderString="=" Tile="Furniture/eater-sign-script-1.png" ColorString="&amp;W" TileColor="&amp;W" DetailColor="w" />
+    <part Name="Description" Short="별 불꽃 도상이 홀로그래픽 청동 판 위에서 춤춥니다." />
+    <part Name="Chat" Says="Eastwise to movers at the Point of Tifaret" ShowInShortDescription="true" />
+    <part Name="HologramMaterial" ColorStrings="&amp;W,&amp;w,&amp;W,&amp;w" DetailColors="w,W,w,W" />
+    <tag Name="ExcludeFromDynamicEncounters" />
+  </object>
+  <object Name="Eater Sign 3" Inherits="Sign">
+    <part Name="Render" DisplayName="표지판" RenderString="=" Tile="Furniture/eater-sign-arrow.png" ColorString="&amp;W" TileColor="&amp;W" DetailColor="w" />
+    <part Name="Description" Short="별 불꽃 도상이 홀로그래픽 청동 판 위에서 춤춥니다." />
+    <part Name="Chat" Says="Eastwise to Quay" ShowInShortDescription="true" />
+    <part Name="HologramMaterial" ColorStrings="&amp;W,&amp;w,&amp;W,&amp;w" DetailColors="w,W,w,W" />
+    <tag Name="ExcludeFromDynamicEncounters" />
+  </object>
+  <object Name="StationWall" Inherits="Wall">
+    <part Name="Render" DisplayName="스테이션 벽" />
+    <tag Name="ExcludeFromDynamicEncounters" />    
+  </object>
+
+  <object Name="MotedAir" Inherits="Air">
+    <part Name="Render" DisplayName="우주의 진공" ColorString="&amp;k^k" DetailColor="k" RenderString=" " TileColor="&amp;k^k" Tile="Terrain/tile_empty.png" />
+    <part Name="Description" Short="무지개빛 광자가 백만 년의 마라톤을 이곳, 공허의 저압에서 마칩니다." />
+    <part Name="MotedAir" />
+    <xtagGrammar iArticle="the" />
+    <part Name="BackdropWhenVisible" BackdropBleedthrough="true" />
+    <part Name="UnityPrefabImposter" PrefabID="Prefabs/Particles/MotedAir" />
+    <tag Name="NoTeleport" Value="You cannot teleport into the vacuum of space." />
+    <removepart Name="ChasmMaterial" />
+  </object>
+  <object Name="VacuumEdgeGlassWall" Inherits="GlassWall">
+    <part Name="Render" DisplayName="진공 경계 유리" />
+    <part Name="Description" Short="중성자별 궤도의 압력 농장에서 비돌로부터 연마된 모래가 우주선 배기에서 분쇄소성되어 깨지지 않는 투명한 유리판으로 주조되었습니다. 별이 리본처럼 엮인 허공의 전경을 제공하면서도 그로부터 보호합니다." />
+    <stat Name="AV" Value="50" />
+    <stat Name="Hitpoints" Value="9000" />    
+    <removepart Name="Graffitied" />
+    <part Name="DropOnDeath" Blueprints="OmniForcefield" />
+    <tag Name="ExcludeFromDynamicEncounters" />
+  </object>
+  <object Name="QuantumReverbLightRail" Inherits="Light Rail">
+    <part Name="Render" DisplayName="경전철" />
+    <part Name="ModQuantumReverb" />
+    <part Name="TinkerItem" CanDisassemble="true" CanBuild="false" />
+    <tag Name="ExcludeFromDynamicEncounters" />
+  </object>
+  <object Name="Fromshunter" Inherits="BasePistol">
+    <part Name="Render" DisplayName="프롬 분류기" Tile="Items/from-shunter.png" ColorString="&amp;o" TileColor="&amp;y" DetailColor="o" />
+    <part Name="Description" Short="점화식 광선이 최근 레이라인에 각인된 생물의 실루엣을 추적하고 표본을 뒤섞어 진정한 무작위 결과를 생성합니다. 수천 년과 센틸리온의 비트가 홀로그래픽 현재의 좁은 지점을 통과한 후 하나로 소멸됩니다." />
+    <part Name="MissileWeapon" Skill="Pistol" AmmoChar="&amp;o-" ShotsPerAction="1" AmmoPerAction="1" ShotsPerAnimation="1" WeaponAccuracy="4" />
+    <part Name="Commerce" Value="9000" />
+    <part Name="GlitchOnHit" ChancePerThousand="1000" />
+    <part Name="EnergyAmmoLoader" ChargeUse="1500" ProjectileObject="ProjectileFromShunter" />
+    <part Name="EnergyCellSocket" SlotType="EnergyCell" />
+    <part Name="Examiner" Complexity="9" />
+    <part Name="TinkerItem" Bits="7788" CanDisassemble="true" CanBuild="false" />
+    <part Name="ItemElements" Elements="chance::5" />
+    <tag Name="Mods" Value="MissileWeaponMods,FirearmMods,CommonMods,PistolMods,ElectronicsMods,BeamWeaponMods" />
+    <tag Name="MissileFireSound" Value="Sounds/Missile/Fires/Pistols/sfx_missile_spaceInverter_fire" />
+    <tag Name="ReloadSound" Value="Sounds/Missile/Reloads/sfx_missile_spaceInverter_reload" />
+    <tag Name="ExcludeFromDynamicEncounters" />    
+  </object>
+  <object Name="ProjectileFromShunter" Inherits="TemporaryEnergyProjectile">
+    <part Name="Render" DisplayName="{{o|편향 광선}}" ColorString="&amp;C" />
+    <part Name="Projectile" BaseDamage="0" Attributes="Extradimensional Laser" ColorString="&amp;o" PassByVerb="discorporate" />
+    <part Name="TreatAsSolid" LightBased="false" Hits="false" RequiresPhaseMatch="false" Message="The darkness consumes =subject.t=!" />    
+    <tag Name="ProjectileVFX" Value="MissileWeaponsEffects/small_laser" />
+    <tag Name="ProjectileVFXConfiguration" Value="duration::0.25;;beamColor0::#F15F22" />
+    <tag Name="ImpactSound" Value="Sounds/Missile/Hits/sfx_missile_directEnergy_hit" />
+  </object>
+  <object Name="Gimeleth" Inherits="MeleeWeapon">
+    <part Name="Render" DisplayName="기멜레스" Tile="Items/gimeleth.png" ColorString="&amp;M" DetailColor="W" />
+    <part Name="Description" Short="크고 휘어진 플랜지 달린 금속 길이가 세 손을 가진 조각가 종족의 증기 나는 땅 위 마녀 법정의 배치를 재현합니다. 거기 오지점 달 아래에서 전쟁의 랩소디스트들이 의식적 전투에 갇혀 있습니다." />
+    <part Name="RulesDescription" Text="This weapon has multiple grips that change its weapon type." />
+    <part Name="Physics" />
+    <part Name="Commerce" Value="12000" />
+    <part Name="RequireSlots" Base="2" />
+    <tag Name="Tier" Value="9" />
+    <part Name="MeleeWeapon" PenBonus="1" MaxStrengthBonus="10" BaseDamage="9d3" />
+    <part Name="GripChange" />
+    <tag Name="ExcludeFromDynamicEncounters" />
+  </object>
+
+  
+  <object Name="Eater Vessel 1" Inherits="Vessel">
+    <part Name="Render" DisplayName="정지된 그릇" ColorString="&amp;y" DetailColor="Y" Tile="Furniture/eater-vessel-1.png" />    
+    <part Name="Physics" Takeable="false" />
+    <part Name="Description" Short="그릇 표면의 대륙 같은 질감은 이질적인 손의 흔적으로, 안개 낀 다른 세계의 가마에서 점토가 던져진 후 중력의 털이 벗겨진 것입니다." />
+    <part Name="LiquidVolume" MaxVolume="64" StartVolume="1-6" InitialLiquid="water-1000" />   
+    <stag Name="Historical" />
+    <tag Name="Mods" Value="ShevaPotteryMods" />
+    <tag Name="ExcludeFromDynamicEncounters" />
+  </object>
+  <object Name="Eater Vessel 2" Inherits="Eater Vessel 1">
+    <part Name="Render" DisplayName="정지된 그릇" ColorString="&amp;w" DetailColor="W" Tile="Furniture/eater-vessel-2.png" />    
+  </object>
+  <object Name="Bending Gjaus" Inherits="Tree">
+    <part Name="Render" DisplayName="구부러진 가우스" RenderString="157" ColorString="&amp;W" Tile="Terrain/bending-gjaus-1.png" TileColor="&amp;G" DetailColor="g" Occluding="true" />
+    <part Name="Description" Short="공기를 삼키는 녹색 줄기의 스핀들이 보이지 않는 위상학적 공간에 올라타 별에 취한 조각들을 틈새로 쏘아 넣습니다." />
+    <builder Name="RandomTile" Tiles="Terrain/bending-gjaus-1.png,Terrain/bending-gjaus-2.png" />
+    <tag Name="HangingSupport" />    
+    <tag Name="PlacementIsSkippable" />
+    <tag Name="ExcludeFromDynamicEncounters" />
+  </object>
+  <object Name="Moon-and-Sun Shade" Inherits="Tree">
+    <part Name="Render" DisplayName="달과 태양의 그늘" RenderString="157" ColorString="&amp;g" Tile="Terrain/moon-and-sun-shade-1.png" TileColor="&amp;W" DetailColor="w" Occluding="true" />
+    <part Name="Description" Short="밝고 이슬 맺힌 별잎의 왕관이 뿌리 위로 매혹적인 그림자를 드리웁니다." />
+    <builder Name="RandomTile" Tiles="Terrain/moon-and-sun-shade-1.png,Terrain/moon-and-sun-shade-2.png" />
+    <tag Name="HangingSupport" />
+    <tag Name="PlacementIsSkippable" />
+    <tag Name="ExcludeFromDynamicEncounters" />
+  </object>
+  <object Name="Earth Gate W" Inherits="Double Door W">
+    <part Name="Render" DisplayName="지구 문" Tile="Furniture/earth-gate-left.png" ColorString="&amp;C" TileColor="&amp;W" DetailColor="c" RenderString="234" />
+    <part Name="Description" Short="배양된 녹청이 별 청동의 문 위 깎인 홈에서 자랍니다. 이어 붙인 양쪽 면에 거대한 보석 박힌 구체가 감입되어 있으며, 터키석 바다 위에 마노의 섬들이 떠 있습니다. 존재의 무수한 방식이 판 가장자리에 고부조로 묘사되어 있습니다: Eaters가 별리본의 하늘로 사슬을 올리고 내리며, 별먼지를 삼키고, 존재의 아스라한 가장자리를 향해 의식적 원무를 춥니다." />
+    <part Name="Door" Locked="false" ClosedTile="Furniture/earth-gate-left.png" OpenTile="Tiles2/sw_tombgate_w_open.bmp" />    
+    <stat Name="Hitpoints" sValue="10000" />
+    <xtagGrammar iArticle="the" />
+    <tag Name="OpenSound" Value="sfx_ancientDoor_open" />
+    <tag Name="CloseSound" Value="sfx_ancientDoor_close" />
+    <tag Name="ExcludeFromDynamicEncounters" />
+  </object>
+  <object Name="Earth Gate E" Inherits="Double Door E">
+    <part Name="Render" DisplayName="지구 문" Tile="Furniture/earth-gate-right.png" ColorString="&amp;C" TileColor="&amp;W" DetailColor="c" RenderString="234" />
+    <part Name="Description" Short="배양된 녹청이 별 청동의 문 위 깎인 홈에서 자랍니다. 이어 붙인 양쪽 면에 거대한 보석 박힌 구체가 감입되어 있으며, 터키석 바다 위에 마노의 섬들이 떠 있습니다. 존재의 무수한 방식이 판 가장자리에 고부조로 묘사되어 있습니다: Eaters가 별리본의 하늘로 사슬을 올리고 내리며, 별먼지를 삼키고, 존재의 아스라한 가장자리를 향해 의식적 원무를 춥니다." />
+    <part Name="Door" Locked="false" ClosedTile="Furniture/earth-gate-right.png" OpenTile="Tiles2/sw_tombgate_e_open.bmp" />    
+    <stat Name="Hitpoints" sValue="10000" />
+    <xtagGrammar iArticle="the" />
+    <tag Name="OpenSound" Value="sfx_ancientDoor_open" />
+    <tag Name="CloseSound" Value="sfx_ancientDoor_close" />
+    <tag Name="ExcludeFromDynamicEncounters" />
+  </object>
+  <object Name="Sheva Bell" Inherits="MountedFurniture">
+    <part Name="Render" DisplayName="노래하는 종" Tile="Furniture/eater-bell.png" ColorString="&amp;W" TileColor="&amp;W" DetailColor="w" />
+    <part Name="Description" Short="빛나는 별 청동의 울림통이 로타크톤의 완벽한 입구에 대고 주조되었으며 제타크롬 추가 감입되어 있습니다. 쳤을 때 음파가 듣는 이의 주관적 경험과 병치되어 변하며, 존재와 이동의 의식이 고해집니다." />
+    <stat Name="AV" Value="40" />
+    <stat Name="Hitpoints" Value="6000" />
+    <tag Name="ForceSmartUse" />
+    <part Name="HydraulicPowerTransmission" ChargeRate="10000" IsConsumer="true" DischargeLiquidWhenBrokenAndPowered="true" MingleLiquidsWhenPowered="true" />
+    <part Name="Interactable" Action="chime" Sound="sfx_interact_bell" />
+    <tag Name="ExcludeFromDynamicEncounters" />
+  </object>
+
+
+  
+  <object Name="Blueshifted Chrome" Inherits="BaseWallMetal">
+    <part Name="Render" DisplayName="청색편이 크롬" ColorString="&amp;b^C" TileColor="&amp;b^C" DetailColor="k" Occluding="true" />
+    <part Name="Physics" Weight="10000" />
+    <part Name="Description" Short="빛이 조각된 장식용 수조에서 반짝입니다. 액체를 신선하고 유동적으로 유지하도록 설계된 우물 형태입니다. 그것을 만든 크롬 광석은 관찰자의 기준계를 향해 분류되어 정지 엔진에 의해 색이 고정되었습니다." />
+    <stat Name="AV" Value="50" />
+    <stat Name="Hitpoints" Value="10000" />
+    <tag Name="PaintedWall" Value="walls_disk" />
+    <tag Name="PaintedWallAtlas" Value="Assets_Content_Textures_Walls_" />
+    <tag Name="PaintedWallExtension" Value=".png" />
+    <tag Name="PaintWith" Value="DiskWalls" />
+    <part Name="Graffitied" ChanceOneIn="2000" />
+    <part Name="DropOnDeath" Blueprints="OmniForcefield" />
+    <part Name="OmniphaseObject" Visual="false" />
+    <tag Name="ExcludeFromDynamicEncounters" />
+  </object>  
+  <object Name="BaseMoverChute" Inherits="Furniture">
+    <part Name="Render" DisplayName="역장 레일" RenderString="249" ColorString="&amp;B" TileColor="&amp;B" DetailColor="W" Occluding="false" RenderIfDark="true" RenderLayer="1" />
+    <part Name="Description" Short="초전도성 목재의 활주로가 인접한 레이라인과 운율을 맞추어 마찰 없는 활주를 제공합니다." />
+    <part Name="Physics" Weight="1000" Takeable="false" Solid="true" />
+    <part Name="NoMove" />
+    <stat Name="Hitpoints" Value="10000" />    
+    <stat Name="AV" Value="40" />
+    <tag Name="MoverChute" />    
+    <tag Name="BaseObject" Value="*noinherit" />
+    <tag Name="ExcludeFromDynamicEncounters" />
+  </object>
+  <object Name="Mover Chute L" Inherits="BaseMoverChute">
+    <part Name="Render" Tile="Terrain/mover-chute-l.png" />
+    <part Name="DropOnDeath" Blueprints="Mover Chute L" />
+  </object>
+  <object Name="Mover Chute R" Inherits="BaseMoverChute">
+    <part Name="Render" Tile="Terrain/mover-chute-r.png" />
+    <part Name="DropOnDeath" Blueprints="Mover Chute R" />
+  </object>
+  <object Name="Mover Chute Bottom Opening L" Inherits="BaseMoverChute">
+    <part Name="Render" Tile="Terrain/mover-chute-bottom-opening-l.png" />
+    <part Name="StationMoverChute" Direction="N" />
+    <part Name="DropOnDeath" Blueprints="Mover Chute Bottom Opening L" />
+  </object>
+  <object Name="Mover Chute Bottom Opening R" Inherits="BaseMoverChute">
+    <part Name="Render" Tile="Terrain/mover-chute-bottom-opening-r.png" />
+    <part Name="DropOnDeath" Blueprints="Mover Chute Bottom Opening R" />
+  </object>
+  <object Name="Mover Chute Top Opening L" Inherits="BaseMoverChute">
+    <part Name="Render" Tile="Terrain/mover-chute-top-opening-l.png" />
+    <part Name="StationMoverChute" Direction="S" />
+    <part Name="DropOnDeath" Blueprints="Mover Chute Top Opening L" />
+  </object>
+  <object Name="Mover Chute Top Opening R" Inherits="BaseMoverChute">
+    <part Name="Render" Tile="Terrain/mover-chute-top-opening-r.png" />
+    <part Name="DropOnDeath" Blueprints="Mover Chute Top Opening R" />
+  </object>
+  <object Name="BaseEaterFloorClock" Inherits="Walkway">
+    <part Name="Render" DisplayName="무버 황도" RenderString="." RenderLayer="0" RenderIfDark="true" ColorString="&amp;W" />
+    <part Name="Description" Short="비결정론적 수 체계의 금박 숫자가 황도 모자이크의 원주 안에 배열되어 있습니다." />
+    <removepart Name="PickRandomTile" />
+    <tag Name="BaseObject" Value="*noinherit" />
+    <tag Name="ExcludeFromDynamicEncounters" />    
+  </object>
+  <object Name="Eater Floor Clock NW" Inherits="BaseEaterFloorClock">
+    <part Name="Render" Tile="Furniture/floor-clock-nw.png" />
+  </object>
+  <object Name="Eater Floor Clock N" Inherits="BaseEaterFloorClock">
+    <part Name="Render" Tile="Furniture/floor-clock-n.png" />
+  </object>
+  <object Name="Eater Floor Clock NE" Inherits="BaseEaterFloorClock">
+    <part Name="Render" Tile="Furniture/floor-clock-ne.png" />
+  </object>
+  <object Name="Eater Floor Clock SW" Inherits="BaseEaterFloorClock">
+    <part Name="Render" Tile="Furniture/floor-clock-sw.png" />
+  </object>
+  <object Name="Eater Floor Clock S" Inherits="BaseEaterFloorClock">
+    <part Name="Render" Tile="Furniture/floor-clock-s.png" />
+  </object>
+  <object Name="Eater Floor Clock SE" Inherits="BaseEaterFloorClock">
+    <part Name="Render" Tile="Furniture/floor-clock-se.png" />
+  </object>
+  <object Name="Rubble Blue" Inherits="Rubble">
+    <part Name="Render" DisplayName="잔해" ColorString="&amp;b" DetailColor="K" />
+    <tag Name="ExcludeFromDynamicEncounters" />
+  </object>
+  <object Name="LargeBoulder Blue" Inherits="LargeBoulder">
+    <part Name="Render" ColorString="&amp;b" />
+    <tag Name="ExcludeFromDynamicEncounters" />
+  </object>
+  <object Name="MediumBoulder Blue" Inherits="MediumBoulder">
+    <part Name="Render" ColorString="&amp;b" />
+  </object>
+  <object Name="SmallBoulder Blue" Inherits="SmallBoulder">
+    <part Name="Render" ColorString="&amp;b" />
+  </object>
+  <object Name="Eater Hookah" Inherits="Hookah">
+    <part Name="Render" DisplayName="정지된 후카" ColorString="&amp;W" DetailColor="w" Tile="Furniture/eater-hookah.png" />
+    <part Name="Description" Short="별빛 로즈골드의 화병이 땅 위에 떠 있고 수정 줄기의 다발에 흔들립니다. 합쳐서 보면 이 파이프 예술품은 햇볕을 쬐는 백조를 연상시킵니다." />
+    <part Name="Physics" Takeable="false" />
+    <stat Name="AV" Value="20" />
+    <stat Name="Hitpoints" Value="800" />
+    <part Name="ModPiping" />
+    <tag Name="ExcludeFromDynamicEncounters" />    
+  </object>
+  <object Name="Eater Globe with Piping" Inherits="Eater Globe">
+    <part Name="Render" ColorString="&amp;W" DetailColor="w" />
+    <part Name="ModPiping" />
+    <tag Name="ExcludeFromDynamicEncounters" />
+  </object>
+
+  
+  <object Name="Mover" Inherits="BaseRobot">
+    <part Name="Brain" Factions="Inanimate-100" />
+    <part Name="Render" Tile="Vehicles/sheva-mover.png" DisplayName="무버" ColorString="&amp;w" DetailColor="W" />
+    <part Name="Description" Short="세계 외곽의 산호와 수목이 가마의 자화된 다리를 기어올라 황금 지붕을 향합니다. 이동의 의식에 종이 울리고, 과일향 연기가 출입구에서 쏟아져 나옵니다." />
+    <part Name="Interior" Cell="Mover" FallDistance="2" IgnoreWeight="true" />
+    <part Name="Vehicle" Type="Mover" Passengers="20" Autonomous="false" ExitAbility="false" />
+    <part Name="StationMover" />
+    <part Name="Interesting" />
+    <stat Name="Hitpoints" Value="8000" />    
+    <stat Name="AV" Value="30" />
+    <tag Name="Class" Value="vehicle" />
+    <removepart Name="ConversationScript" />
+    <tag Name="DisallowAlternatePullDown" />
+    <tag Name="ExcludeFromDynamicEncounters" />
+    <part Name="NoBackdropBleedthrough" ZoneFilter="NorthSheva" />
+  </object>
+  <object Name="Mover Exit" Inherits="Stairs">
+		<part Name="Render" DisplayName="출구 차원문" RenderLayer="1" ColorString="&amp;W" TileColor="&amp;w" DetailColor="W" RenderString="008" Tile="Tiles/sw_door_wavy.bmp" />
+    <part Name="Description" Short="출구가 무버를 정지된 세계라는 인공물과 다시 만나게 합니다." />
+		<part Name="InteriorPortal" ExitOnEnteredCell="true" />
+		<tag Name="Gender" Value="neuter" />
+		<tag Name="ExcludeFromDynamicEncounters" />
+		<xtagGrammar iArticle="" />
+	</object>
+	<object Name="Mover Baetyl" Inherits="Baetyl">
+    <part Name="Render" DisplayName="조종사 베틸" ColorString="&amp;m" TileColor="&amp;m" />
+    <part Name="Description" Short="성스러운 수학의 열기가 공기를 태우고 식으며 증명 완료된 곳, 매끄러운 돌 위에 유리 렌즈가 피막처럼 굳었습니다. 그 표피와 운석 층 아래에서 전기 심장이 자석의 별판 위를 갈며 지리공간적 복종으로 깜빡입니다." />
+    <part Name="VehicleControl" />
+    <tag Name="ExcludeFromDynamicEncounters" />
+	</object>
+  <object Name="Mover Wall" Inherits="Wall">
+    <part Name="Render" DisplayName="별 청동 비늘" RenderString="177" ColorString="&amp;w^W" TileColor="&amp;w^W" DetailColor="k" Occluding="true" />
+    <part Name="Description" Short="고온 별 청동이 살아있는 중배엽 위에 사이버네틱하게 배치되어 보기 좋고 공간을 채우는 테셀레이션을 이룹니다." />
+    <part Name="Physics" Weight="10000" FlameTemperature="99999" VaporTemperature="2500" Takeable="false" Solid="true" />
+    <stat Name="AV" Value="25" />
+    <stat Name="Hitpoints" Value="6000" />    
+    <tag Name="PaintedWall" Value="wall_golem_interior" />
+    <tag Name="PaintedWallAtlas" Value="Assets_Content_Textures_Walls_" />
+    <tag Name="PaintedWallExtension" Value=".png" />
+    <tag Name="PaintWith" Value="MoverWalls" />
+    <tag Name="Diggable" Value="*delete" />
+    <part Name="NoDamage" />
+    <removepart Name="Graffitied" />
+    <tag Name="ExcludeFromDynamicEncounters" />
+  </object>  
+  <object Name="Mover Chair" Inherits="BaseChair">
+    <part Name="Render" Tile="Furniture/eater-chair-double.png" ColorString="&amp;w" DetailColor="W" DisplayName="넓은 의자" />
+    <part Name="Description" Short="넓은 나무 좌석이 사이버네틱하게 자란 엉덩이나 정신화학적으로 줄어든 한 쌍이나 존재론적으로 압축된 세 쌍에게 충분한 공간을 제공합니다." />
+    <part Name="Physics" Weight="60" />    
+    <part Name="Chair" Level="1" />
+    <stat Name="Hitpoints" Value="800" />   
+    <tag Name="NamingTag" Value="Animated" />
+    <tag Name="BodyType" Value="Chair" />        
+    <tag Name="ExcludeFromDynamicEncounters" />    
+  </object>
+  <object Name="Mover Chair Flipped" Inherits="Mover Chair">
+    <part Name="Render" HFlip="true" />    
+  </object>
+  <object Name="BaseMoverCouch" Inherits="BaseChair">
+    <part Name="Render" DisplayName="소파" ColorString="&amp;w" DetailColor="W" />
+    <part Name="Description" Short="아치형 소파가 여기와 지금이라는 무뎌진 폭정을 통해 무버들을 한데 모읍니다. 코벤 달세계의 나무에서 잘라낸 목재 좌석에는 십만 년 역사 속 모든 앉은 이의 흔적이 패여 있습니다." />
+    <part Name="Chair" Level="3" />
+    <stat Name="AV" Value="20" />
+    <stat Name="Hitpoints" Value="1000" />
+    <tag Name="BaseObject" Value="*noinherit" />
+    <tag Name="ExcludeFromDynamicEncounters" />
+  </object>
+  <object Name="Mover Couch L" Inherits="BaseMoverCouch">
+    <part Name="Render" Tile="Furniture/eater-couch-l.png" />    
+  </object>
+  <object Name="Mover Couch C" Inherits="BaseMoverCouch">
+    <part Name="Render" Tile="Furniture/eater-couch-c.png" />
+  </object>
+  <object Name="Mover Couch R" Inherits="BaseMoverCouch">
+    <part Name="Render" Tile="Furniture/eater-couch-r.png" />
+  </object>
+  <object Name="Eater Thurible" Inherits="MountedFurniture">
+    <part Name="Render" Tile="Furniture/eater-thrurible.png" ColorString="&amp;w" DetailColor="W" DisplayName="황금 향로" />
+    <part Name="Description" Short="중성자별의 충돌에서 융합된 밝은 태양 철이 능형 연기 창으로 절개되어 타오르는 씨앗의 도가니 위에 씌워져 있습니다." />
+    <part Name="Thurible" />
+    <tag Name="ExcludeFromDynamicEncounters" />
+  </object>
+  <object Name="Eater Chimes" Inherits="MountedFurniture">
+    <part Name="Render" Tile="Furniture/eater-chimes.png" ColorString="&amp;w" DetailColor="W" DisplayName="의식용 종" />
+    <part Name="Description" Short="성단의 다양한 광택 나는 경암으로 주조된 종의 성좌가 무버 의식에 음향적 깊이와 범위를 부여합니다." />
+    <stat Name="AV" Value="30" />
+    <stat Name="Hitpoints" Value="2000" />    
+    <tag Name="ExcludeFromDynamicEncounters" />
+  </object>
+
+  
+  
+  <object Name="Chevron Black Cyan" Inherits="ChevronWall">
+    <part Name="Render" ColorString="&amp;K^c" TileColor="&amp;K^c" DetailColor="k" />
+  </object>
+  <object Name="Rubble Black" Inherits="Rubble">
+    <part Name="Render" DisplayName="잔해" ColorString="&amp;K" DetailColor="c" />
+    <tag Name="ExcludeFromDynamicEncounters" />
+  </object>
+  <object Name="LargeBoulder Black" Inherits="LargeBoulder">
+    <part Name="Render" ColorString="&amp;K" />
+    <tag Name="ExcludeFromDynamicEncounters" />
+  </object>
+  <object Name="MediumBoulder Black" Inherits="MediumBoulder">
+    <part Name="Render" ColorString="&amp;K" />
+  </object>
+  <object Name="SmallBoulder Black" Inherits="SmallBoulder">
+    <part Name="Render" ColorString="&amp;K" />
+  </object>
+  <object Name="Dock Door N" Inherits="Double Metal Door N">
+    <part Name="Render" DisplayName="격납고 문" Tile="Tiles/sw_door2_metal_top.bmp" TileColor="y" DetailColor="Y" />
+  </object>
+  <object Name="Dock Door S" Inherits="Double Metal Door S">
+    <part Name="Render" DisplayName="격납고 문" Tile="Tiles/sw_door2_metal_bottom.bmp" TileColor="y" DetailColor="Y" />
+  </object>  
+  <object Name="BaseStarshipPlatform N" Inherits="Platform">
+    <part Name="Render" DisplayName="우주선 플랫폼" Tile="Furniture/dock-platform-n.png" />
+    <part Name="Description" Short="보석빛 우주의 빛으로 물든 검은 격자에 육백 세계의 발자국 서명이 먼지로 찍혀 있습니다." />
+    <part Name="NoDamage" />
+    <tag Name="OverlayColor" Value="&amp;M^k" />
+    <tag Name="ImportantOverlayObject" />
+    <tag Name="EnterSound" Value="sfx_endgame_spacedock_platform_move" />
+    <tag Name="ExitSound" Value="sfx_endgame_spacedock_platform_move" />
+    <tag Name="ExcludeFromDynamicEncounters" />
+    <tag Name="BaseObject" Value="*noinherit" />
+  </object>
+  <object Name="BaseStarshipPlatform S" Inherits="BaseStarshipPlatform N">
+    <part Name="Render" DisplayName="우주선 플랫폼" Tile="Furniture/dock-platform-s.png" />    
+  </object>
+  <object Name="Starship 1 Platform N" Inherits="BaseStarshipPlatform N">        
+    <part Name="Interior" Cell="ShevaStarship" IgnoreWeight="true" />    
+  </object>
+  <object Name="Starship 1 Platform S" Inherits="BaseStarshipPlatform S">        
+    <part Name="ActionForwarder" Direction="N" Part="Interior" />    
+  </object>
+  <object Name="Infested Starship Platform N" Inherits="BaseStarshipPlatform N">
+    <part Name="Interior" Cell="ShevaStarCarousel" IgnoreWeight="true" />
+  </object>
+  <object Name="Infested Starship Platform S" Inherits="BaseStarshipPlatform S">
+    <part Name="ActionForwarder" Direction="N" Part="Interior" />
+  </object>
+  <object Name="HangarWall" Inherits="BaseWallMetal">
+    <part Name="Render" DisplayName="크리스틸 격납 판" RenderLayer="7" RenderString="176" ColorString="&amp;Y^y" TileColor="&amp;y^Y" DetailColor="k" Occluding="true" />
+    <part Name="Physics" Weight="10000" />
+    <part Name="Description" Short="별빛으로 염색된 금속의 넓은 판이 우주선 격납고를 둘러싸고 천 가지 문자의 양피지 역할을 합니다." />
+    <stat Name="AV" Value="50" />
+    <stat Name="Hitpoints" Value="10000" />    
+    <tag Name="PaintedWall" Value="wall_slash" />    
+    <tag Name="PaintedWallExtension" Value=".png" />
+    <tag Name="PaintedWallAtlas" Value="Assets_Content_Textures_Walls2_" />        
+    <removepart Name="Graffitied" />
+    <xtagGrammar iArticle="some" />
+    <part Name="DropOnDeath" Blueprints="OmniForcefield" />
+    <tag Name="ExcludeFromDynamicEncounters" />
+  </object>
+  <object Name="Eel Grass" Inherits="Plant">
+    <part Name="Render" DisplayName="장어풀" RenderString="184" ColorString="&amp;g" Tile="Terrain/extrasolar-grass.png" TileColor="&amp;g" DetailColor="G" Occluding="false" />
+    <part Name="Description" Short="물결치는 잔디가 갈증에 찬 듯 공기를 더듬으며, 먼 곳의 왜성 태양이 내뿜는 독성 플레어로부터 자신을 보호하기 위한 왁스를 분비합니다." />    
+    <xtagGrammar iArticle="some" adjunctNoun="clump" />    
+  </object>
+  <object Name="Wheel of Qv" Inherits="Plant">
+    <part Name="Render" DisplayName="크브의 바퀴" RenderString="244" ColorString="&amp;C" Tile="Terrain/extrasolar-vine-1.png" TileColor="&amp;C" DetailColor="c" Occluding="false" />
+    <part Name="Description" Short="덩굴의 나선이 숨겨진 제8차원 공간의 압력에 대항하여 조여집니다(이 차원은 그들이 잠겨 있던 이상유체의 밀도 밖에서만 활성화됩니다). 이때 고체 아르곤의 교차 뱉음이 알려진 모든 지구 금속을 부식시키는 주파수로 불평합니다." />
+    <xtagGrammar iArticle="some" adjunctNoun="clump" />
+    <builder Name="RandomTile" Tiles="Terrain/extrasolar-vine-1.png,Terrain/extrasolar-vine-2.png,Terrain/extrasolar-vine-3.png,Terrain/extrasolar-vine-4.png" />
+  </object>
+
+
+  
+  <object Name="StarshipGeometricWall" Inherits="BaseWallMetal">
+    <part Name="Physics" FlameTemperature="1200" />
+    <part Name="Render" DisplayName="기하학적 격벽" RenderString="178" ColorString="&amp;w^W" TileColor="&amp;w^W" DetailColor="k" />
+    <part Name="Description" Short="풀크리트, 금속, 거품 띠가 우주의 진공으로부터 보호하며 평평한 내부에 보기 좋은 시각적 질감을 제공하여 긴 항해에서 마음을 밝게 유지합니다." />
+    <stat Name="AV" Value="50" />
+    <stat Name="Hitpoints" Value="10000" />
+    <tag Name="PaintedWall" Value="wall_sharp_geometry" />
+    <tag Name="PaintedWallAtlas" Value="Assets_Content_Textures_Walls2_" />
+    <tag Name="PaintedWallExtension" Value=".png" />
+    <tag Name="PaintWith" Value="StarshipGeometricWall" />
+    <tag Name="Tier" Value="*delete" />
+    <removepart Name="Graffitied" />
+    <xtagGrammar massNoun="true" />
+    <tag Name="Diggable" Value="*delete" />
+    <tag Name="ExcludeFromDynamicEncounters" />
+  </object>
+  <object Name="StarshipGeometricWallGrey" Inherits="StarshipGeometricWall">
+    <part Name="Render" ColorString="&amp;y^W" TileColor="&amp;y^W" />    
+  </object>
+  <object Name="StarshipGeometricWallCyan" Inherits="StarshipGeometricWall">
+    <part Name="Render" ColorString="&amp;c^W" TileColor="&amp;c^W" />
+  </object>
+  <object Name="StarshipGeometricWallBright" Inherits="StarshipGeometricWall">
+    <part Name="Render" ColorString="&amp;C^W" TileColor="&amp;C^W" />
+  </object>
+  <object Name="StarshipGeometricWallBright Endcap" Inherits="StarshipGeometricWallBright">
+    <part Name="Render" DisplayName="내부" Tile="Walls2/wall_sharp_geometry-00010011.png" />
+    <tag Name="PaintedWall" Value="*delete" />
+  </object>
+  <object Name="StarshipGeometricWall L Endcap" Inherits="StarshipGeometricWall">
+    <part Name="Render" DisplayName="내부" Tile="Walls2/wall_sharp_geometry-11010101.png" />
+    <tag Name="PaintedWall" Value="*delete" />
+  </object>
+  <object Name="StarshipGeometricWall R Endcap" Inherits="StarshipGeometricWall">
+    <part Name="Render" DisplayName="내부" Tile="Walls2/wall_sharp_geometry-01111101.png" />
+    <tag Name="PaintedWall" Value="*delete" />
+  </object>
+  <object Name="VacuumEdgeGlassWallStarShip" Inherits="VacuumEdgeGlassWall">
+    <tag Name="PaintWith" Value="StarshipGeometricWall" />
+    <tag Name="ExcludeFromDynamicEncounters" />
+  </object>
+  
+  <object Name="StarshipBed W" Inherits="BaseBed">
+    <part Name="Render" DisplayName="수면 골" RenderString="178" Tile="Walls2/starship-1-wallbed-w.png" ColorString="&amp;w^k" TileColor="&amp;w" DetailColor="W" />
+    <part Name="Description" Short="기하학적 격벽의 나무 조각 골이 담요로 둘러싸이고 무늬 직물로 커튼이 쳐져 있습니다. 별과 별 사이의 긴 허공에서, 헤드론 엔진의 덜컹거림에 부드럽게 흔들리며, 선상 민족은 지상인이 알 수 없는 평온한 수면의 경지에 이릅니다." />
+    <tag Name="PaintWith" Value="StarshipGeometricWall" />
+    <removebuilder Name="Animated" />
+    <stat Name="AV" Value="50" />
+    <stat Name="Hitpoints" Value="5000" />
+    <stag Name="Sleep" Value="*delete" />
+    <tag Name="ExcludeFromDynamicEncounters" />
+  </object>
+  <object Name="StarshipBed E" Inherits="BaseBed">
+    <part Name="Render" DisplayName="수면 골" RenderString="178" Tile="Walls2/starship-1-wallbed-e.png" ColorString="&amp;w^k" TileColor="&amp;w^k" DetailColor="W" />
+    <part Name="Description" Short="기하학적 격벽의 나무 조각 골이 담요로 둘러싸이고 무늬 직물로 커튼이 쳐져 있습니다. 별과 별 사이의 긴 허공에서, 헤드론 엔진의 덜컹거림에 부드럽게 흔들리며, 선상 민족은 지상인이 알 수 없는 평온한 수면의 경지에 이릅니다." />
+    <tag Name="PaintWith" Value="StarshipGeometricWall" />
+    <stag Name="Sleep" Value="*delete" />
+    <tag Name="ExcludeFromDynamicEncounters" />
+  </object>
+  <object Name="StarshipBookshelf W" Inherits="BaseBookshelf">
+    <part Name="Render" DisplayName="붙박이 책장" RenderString="178" Tile="Walls2/starship-1-wallbookshelf-w.png" ColorString="&amp;w^k" TileColor="&amp;w^k" DetailColor="W" />
+    <part Name="Description" Short="비 내리는 녹주석 세계의 나무에서 잘라낸 참나무 판자가 격벽에 박혀 있습니다. 그 아래 바닥 쿠션이 무지갯빛 책등의 푹신하고 낮은 시선을 제공하며, 각 책은 우주의 먼 구석으로 통하는 차원문입니다." />
+    <part Name="MarkovBookshelf" BookTable="MarkovCorpus_Underground" />
+    <tag Name="PaintWith" Value="StarshipGeometricWall" />
+    <tag Name="ExcludeFromDynamicEncounters" />
+  </object>
+  <object Name="StarshipBookshelf E" Inherits="BaseBookshelf">
+    <part Name="Render" DisplayName="붙박이 책장" RenderString="178" Tile="Walls2/starship-1-wallbookshelf-e.png" ColorString="&amp;w^k" TileColor="&amp;w^k" DetailColor="W" />
+    <part Name="Description" Short="비 내리는 녹주석 세계의 나무에서 잘라낸 참나무 판자가 격벽에 박혀 있습니다. 그 아래 바닥 쿠션이 무지갯빛 책등의 푹신하고 낮은 시선을 제공하며, 각 책은 우주의 먼 구석으로 통하는 차원문입니다." />
+    <part Name="MarkovBookshelf" BookTable="MarkovCorpus_Starship" />
+    <tag Name="PaintWith" Value="StarshipGeometricWall" />
+    <tag Name="ExcludeFromDynamicEncounters" />
+  </object>
+
+  <object Name="Starship Double Metal Door N" Inherits="Double Metal Door N">
+    <part Name="Render" TileColor="&amp;y" DetailColor="W" />    
+    <tag Name="ExcludeFromDynamicEncounters" />
+  </object>
+  <object Name="Starship Double Metal Door S" Inherits="Double Metal Door S">
+    <part Name="Render" TileColor="&amp;y" DetailColor="W" />
+    <tag Name="ExcludeFromDynamicEncounters" />    
+  </object>
+  <object Name="Starship Metal Door" Inherits="Metal Door">
+    <part Name="Render" TileColor="&amp;y" DetailColor="W" />
+    <tag Name="ExcludeFromDynamicEncounters" />
+  </object>
+  <object Name="Starship1 Floor Cushion" Inherits="Floor Cushion">
+    <part Name="Render" Tile="Furniture/starship-floor-cushion.png" DetailColor="W" />
+    <part Name="Description" Short="수천 년 전 산악 모아의 자발적으로 뽑은 깃털을 벨벳 쿠션에 채워 넣었으며, 얼마 후 사메크의 시장에서 팔렸습니다." />
+    <part Name="RandomColors" MainColor="r,b,m,c,C,g" />
+    <stag Name="Basic" Value="*delete" />
+    <stag Name="Contemporary" Value="*delete" />
+    <removebuilder Name="Animated" />
+    <removebuilder Name="RandomTile" />
+    <tag Name="ExcludeFromDynamicEncounters" />
+  </object>
+  <object Name="Starship1 Wooden Table" Inherits="Table">
+    <part Name="Render" DisplayName="참나무 탁자" Tile="Furniture/starship-wooden-table.png" TileColor="&amp;w" DetailColor="y" />
+    <part Name="Description" Short="풍부하고 비에 젖은 참나무가 단순한 각도로 벌목되고 못질되었습니다. 표면은 우주의 고요한 끝에서 사고를 정리하기 위한 나뭇결의 캔버스를 제공합니다." />
+    <tag Name="EmptyTile" Value="*delete" />
+    <tag Name="FullTile" Value="*delete" />
+    <tag Name="EmptyDetailColor" Value="*delete" />
+    <tag Name="FullDetailColor" Value="*delete" />
+    <stag Name="Storage" Value="*delete" />
+    <stag Name="Contemporary" Value="*delete" />
+    <tag Name="InventoryPopulationTable" Value="*delete" />
+    <removebuilder Name="Animated" />
+    <tag Name="ExcludeFromDynamicEncounters" />
+  </object>
+  <object Name="Starship1 Wooden Chair" Inherits="BaseChair">
+    <part Name="Render" DisplayName="참나무 의자" Tile="Furniture/starship-wooden-chair.png" TileColor="&amp;w" DetailColor="y" />
+    <part Name="Description" Short="비에 젖은 풍부한 참나무 좌석이 먼 세계의 언덕 마을에서 명장 의자공에 의해 제작되었으며, 별 풍경 명상과 고개 숙인 집중의 이상적인 조합을 제공하도록 각도가 맞춰져 있습니다." />    
+    <stag Name="Contemporary" Value="*delete" />
+    <removebuilder Name="Animated" />
+    <tag Name="ExcludeFromDynamicEncounters" />
+  </object>
+
+  <object Name="Starship Pilot Console" Inherits="MountedFurniture">
+    <part Name="Render" DisplayName="조종사 콘솔" RenderString="220" Tile="Furniture/starship-1-pilot-console.png" ColorString="&amp;b" DetailColor="C" />
+    <part Name="Description" Short="유리 루네가 나선형 팔과 그 사이를 흐르는 끝없는 수로를 보여줍니다. 집게, 슬라이더, 호루라기, 다이얼이 베젤에 배열되어 다양체 전반에 걸친 항법 인터페이스를 제공합니다." />
+    <part Name="ShevaStarshipControl" />
+    <stat Name="Hitpoints" Value="1500" />
+    <part Name="ChargeSink" ChargeUse="0" NameForStatus="StarflightControl" />
+    <tag Name="ExcludeFromDynamicEncounters" />
+  </object>
+  <object Name="Starship Copilot Console" Inherits="MountedFurniture">
+    <part Name="Render" DisplayName="부조종사 콘솔" RenderString="220" Tile="Furniture/starship-1-pilot-console.png" ColorString="&amp;b" DetailColor="C" />
+    <part Name="Description" Short="함선과 별의 진단 데이터가 유리 루네를 타고 데이터 뱅크로 흘러 내립니다. 뒤집기, 스와이프, 정밀 구체의 배열이 대시보드 양 옆 곡면 패널에 위치하여 다양체 전반의 조회 인터페이스를 제공합니다." />
+    <stat Name="Hitpoints" Value="1500" />
+    <part Name="ChargeSink" ChargeUse="0" NameForStatus="StarflightMonitoring" />
+    <tag Name="ExcludeFromDynamicEncounters" />
+  </object>
+  <object Name="Starship1 ExitHatch" Inherits="Stairs">
+    <part Name="Render" DisplayName="탈출 해치" Tile="Furniture/starship-1-escape-hatch.png" ColorString="&amp;W" DetailColor="y" />
+    <part Name="Description" Short="접이식 육각 패널이 기름칠된 레일 위에 장착되어 있습니다." />
+    <part Name="InteriorPortal" />
+    <tag Name="ExcludeFromDynamicEncounters" />
+  </object>
+  <object Name="Starship1 Pilot Seat" Inherits="BaseChair">
+    <part Name="Render" DisplayName="조종사 좌석" Tile="Furniture/starship-1-pilot-seat.png" ColorString="&amp;b" DetailColor="W" />
+    <part Name="Description" Short="좌석 쿠션은 조수열에서 풀려나온 얼어붙은 바다의 색조로 비닐에 감싸여 있습니다. 조종 다이얼, 슬라이더, 스위치가 평면 팔걸이에 격자 형태로 배열되어 있습니다." />
+    <part Name="Chair" Level="4" LevelWhenDisabled="0" ChargeUse="0" IsEMPSensitive="true" IsTechScannable="true" NameForStatus="ErgonomicSystems" />
+    <removebuilder Name="Animated" />
+    <tag Name="ExcludeFromDynamicEncounters" />
+  </object>
+  <object Name="Starship1 Copilot Seat" Inherits="BaseChair">
+    <part Name="Render" DisplayName="부조종사 좌석" Tile="Furniture/starship-1-pilot-seat.png" ColorString="&amp;b" DetailColor="W" />
+    <part Name="Description" Short="좌석 쿠션은 조수열에서 풀려나온 얼어붙은 바다의 색조로 비닐에 감싸여 있습니다. 조종 다이얼, 슬라이더, 스위치가 평면 팔걸이에 격자 형태로 배열되어 있습니다." />
+    <stat Name="Hitpoints" Value="1000" />
+    <part Name="Chair" Level="4" LevelWhenDisabled="0" ChargeUse="0" IsEMPSensitive="true" IsTechScannable="true" NameForStatus="ErgonomicSystems" />
+    <removebuilder Name="Animated" />
+    <tag Name="ExcludeFromDynamicEncounters" />
+  </object>
+  <object Name="Starship1 Passenger Seat" Inherits="BaseChair">
+    <part Name="Render" DisplayName="승객 좌석" Tile="Furniture/starship-1-passenger-seat.png" ColorString="&amp;y" DetailColor="W" />
+    <part Name="Description" Short="좌석 폼은 기이한 등 자국으로 눌려 있고, 수십 가지 땀의 혼합물로 물들어 있으며, 금속 단 위에 균형을 이루고 있습니다." />
+    <stat Name="Hitpoints" Value="500" />
+    <part Name="Chair" Level="4" LevelWhenDisabled="0" ChargeUse="0" IsEMPSensitive="true" IsTechScannable="true" NameForStatus="ErgonomicSystems" />
+    <removebuilder Name="Animated" />
+    <tag Name="ExcludeFromDynamicEncounters" />
+  </object>  
+  <object Name="Starship1 Tree Sculpture" Inherits="MountedFurniture">
+    <part Name="Render" DisplayName="삼각자리 나무 조각상" RenderString="226" Tile="Furniture/starship-1-tree-sculpture.png" ColorString="&amp;w" DetailColor="W" />
+    <part Name="Description" Short="청동 또는 청동 유사 금속의 지지대가 인접 성단의 특징적인 나선형 삼각형으로 구부러져 있습니다. 금색 녹청이 은밀하고 시적인 무늬로 그것을 감싸고 있습니다." />
+    <stat Name="Hitpoints" Value="1000" />
+    <tag Name="ExcludeFromDynamicEncounters" />
+  </object>
+  <object Name="Starship Ornate Potted Plant 2" Inherits="Ornate Potted Plant 2">
+    <part Name="Description" Short="매끄러운 녹색 식물 엽편이 크롬 절개가 새겨진 고대 가마솥에서 펼쳐져 나옵니다. 양토에 뿌리내린 친척처럼 살아 숨 쉬지만, 그 생체 데이터는 불멸의 씨앗과 접합되었습니다." />    
+    <tag Name="ExcludeFromDynamicEncounters" />
+  </object>
+  <object Name="Starship Ornate Potted Plant 3" Inherits="Ornate Potted Plant 3">
+    <part Name="Description" Short="매끄러운 녹색 식물 엽편이 크롬 절개가 새겨진 고대 가마솥에서 펼쳐져 나옵니다. 양토에 뿌리내린 친척처럼 살아 숨 쉬지만, 그 생체 데이터는 불멸의 씨앗과 접합되었습니다." />
+    <tag Name="ExcludeFromDynamicEncounters" />
+  </object>  
+  <object Name="Starship1 Power Core" Inherits="SolidHighTechInstallation">
+    <part Name="Render" DisplayName="파워 헤드론" RenderString="232" Tile="Furniture/starship-1-power-core.png" ColorString="&amp;y" DetailColor="M" />
+    <part Name="Description" Short="자기 횃불이 고핵융합의 배기가스와 함께 헤드론 내부에서 타오르고, 격납실은 잠재력으로 덜컹거립니다." />
+    <part Name="FusionReactor" ChargeRate="3000" />
+    <part Name="Circuitry" StartCharge="3000" />
+    <part Name="Examiner" Complexity="8" />
+    <part Name="ElectricalPowerTransmission" ChargeRate="10000" IsProducer="true" />
+    <stat Name="AV" Value="50" />
+    <stat Name="Hitpoints" Value="10000" />
+    <part Name="AnimatedMaterialGeneric" AnimationLength="600" LowFrameOffset="1" HighFrameOffset="1" DetailColorAnimationFrames="0=y,150=Y,300=M,450=m" />
+    <removebuilder Name="Animated" />
+    <tag Name="ExcludeFromDynamicEncounters" />
+  </object>
+  <object Name="Starship1 Status Panel" Inherits="MountedFurniture">
+    <part Name="Render" DisplayName="상태 패널" Tile="Furniture/starship-1-status-panel.png" ColorString="&amp;y" TileColor="&amp;y" DetailColor="W" />
+    <part Name="Description" Short="진공 유리와 크롬 다이오드의 영역 너머로 헤드론 배열에 맞춰 불빛이 깜박입니다." />
+    <stat Name="Hitpoints" Value="5000" />
+    <part Name="Examiner" Complexity="4" />
+    <part Name="ElectricalPowerTransmission" ChargeRate="100" IsConsumer="true" />
+    <part Name="ChargeSink" ChargeUse="1" NameForStatus="HedronStatusDiodes" />
+    <part Name="AnimatedMaterialGeneric" AnimationLength="180" LowFrameOffset="1" HighFrameOffset="1" ColorStringAnimationFrames="0=&amp;W,140=&amp;k" TileColorAnimationFrames="0=&amp;y" DetailColorAnimationFrames="0=W,140=k" />
+    <tag Name="ExcludeFromDynamicEncounters" />
+  </object>
+  <object Name="Starship1 Cargo Crate" Inherits="Chest">
+    <part Name="Render" DisplayName="화물 상자" RenderString="254" Tile="Furniture/starship-1-viewer.png" TileColor="&amp;y" DetailColor="W" />
+    <part Name="Description" Short="진공 안전 폼목재 보에서 몰약, 별 도자기, 눈가루 복숭아의 잔향이 풍깁니다." />
+    <part Name="RandomColors" DetailColor="all" SetColorStringToDetailColor="true" />
+    <stat Name="Hitpoints" Value="1000" />
+    <stag Name="Storage" Value="*delete" />
+    <tag Name="ExcludeFromDynamicEncounters" />
+  </object>
+  <object Name="Starship1 Pilaster" Inherits="HalfWall">
+    <part Name="Render" DisplayName="벽기둥" ColorString="&amp;y^k" DetailColor="c" />
+    <part Name="Description" Short="금속 지지 기둥에 화물 긁힘, 헤드론 파편, 플라즈마 탄피, 침대벌레 물린 자국의 흠집이 나 있습니다." />
+    <stat Name="AV" Value="20" />
+    <stat Name="Hitpoints" Value="5000" />
+    <tag Name="ExcludeFromDynamicEncounters" />
+  </object>
+  <object Name="Starship1 Comms" Inherits="MountedFurniture">
+    <part Name="Render" DisplayName="통신 리본" RenderString="=" Tile="Furniture/starship-1-comms.png" ColorString="&amp;C" DetailColor="c" />
+    <part Name="Description" Short="세 가닥의 코드선이 회전축에 매달려 있으며, 각각 6방향 스피커가 달려 있습니다. 서로 다른 옥타브의 정전기가 음향 경관에 쏟아집니다." />
+    <stat Name="Hitpoints" Value="1000" />
+    <part Name="Capacitor" MaxCharge="10000" ChargeRate="500" />
+    <part Name="ChargeSink" ChargeUse="0" NameForStatus="VoiceProjection" />
+    <tag Name="ExcludeFromDynamicEncounters" />
+  </object>
+
+  
+  <object Name="Star Carousel Wall" Inherits="BaseWallMetal">
+    <part Name="Physics" FlameTemperature="1200" />
+    <part Name="Render" DisplayName="크리스포일 아가미" RenderString="178" ColorString="&amp;g^y" TileColor="&amp;g^y" DetailColor="k" />
+    <part Name="Description" Short="종이처럼 얇은 크리스틸 조직이 부드러운 파도치듯 흔들리며 회전목마 내부에 공기를 순환시킵니다. 그 구조는 마치 섬 물고기 안에 있는 듯한 인상을 줍니다." />
+    <stat Name="AV" Value="50" />
+    <stat Name="Hitpoints" Value="10000" />
+    <tag Name="PaintedWall" Value="wall_wiggle" />
+    <tag Name="PaintedWallAtlas" Value="Assets_Content_Textures_Walls2_" />
+    <tag Name="PaintedWallExtension" Value=".png" />
+    <tag Name="PaintWith" Value="StarCarouselWall" />
+    <tag Name="Tier" Value="*delete" />
+    <removepart Name="Graffitied" />
+    <xtagGrammar massNoun="true" />
+    <tag Name="Diggable" Value="*delete" />
+    <tag Name="ExcludeFromDynamicEncounters" />
+  </object>
+  <object Name="Star Carousel Infested Wall" Inherits="Star Carousel Wall">    
+    <part Name="Render" DisplayName="감염된 크리스포일 아가미" RenderString="178" ColorString="&amp;g^C" TileColor="&amp;g^C" DetailColor="k" />
+    <part Name="Description" Short="축축한 손처럼 Qv의 바퀴에서 뻗어나온 흡반이 회전목마의 종이 같은 아가미를 움켜쥐고, 그 아래에 짙고 끈적한 물이 고여 있습니다. 기생 부담에 벽이 헐떡이며 쌕쌕거립니다." />
+    <stat Name="AV" Value="15" />
+    <stat Name="Hitpoints" Value="5000" />
+    <tag Name="PaintedWall" Value="wall_wiggle_infested" />        
+  </object>
+  <object Name="Star Carousel Pilot Console" Inherits="MountedFurniture">
+    <part Name="Render" DisplayName="조종사 콘솔" RenderString="220" Tile="Furniture/star-carousel-pilot-console-n.png" ColorString="&amp;b" DetailColor="C" />
+    <part Name="Description" Short="화성 비율의 음조 막대 패널이 조각된 푸른 빛으로 빛납니다. 공간은 과거 비행의 잔여 입력 스키마로 윙윙거립니다." />
+    <stat Name="Hitpoints" Value="1500" />
+    <part Name="ChargeSink" ChargeUse="0" NameForStatus="SpiralCareening" />
+    <part Name="SpawnWithEffect" Effect="Broken" />
+    <tag Name="NoRepair" />
+    <tag Name="ExcludeFromDynamicEncounters" />
+  </object>
+  <object Name="Star Carousel Pilot Console N" Inherits="Star Carousel Pilot Console">
+    <part Name="Render" DisplayName="조종사 콘솔" RenderString="220" ColorString="&amp;b" DetailColor="B" />   
+  </object>
+  <object Name="Star Carousel Pilot Console S" Inherits="Star Carousel Pilot Console">
+    <part Name="Render" DisplayName="조종사 콘솔" RenderString="220" Tile="Furniture/star-carousel-pilot-console-s.png" ColorString="&amp;b" DetailColor="B" />
+  </object>
+  <object Name="Star Carousel Passenger Console 1" Inherits="MountedFurniture">
+    <part Name="Render" DisplayName="조종사 콘솔" RenderString="220" Tile="Furniture/star-carousel-passenger-console-1.png" ColorString="&amp;b" DetailColor="B" />
+    <part Name="Description" Short="습기 매니폴드의 시청각 묘사가 패널의 홀로그램 표면 위로 튀어오릅니다. 작고 부드러운 공허 선율이 하부 조명에서 울려 퍼집니다." />    
+    <stat Name="Hitpoints" Value="1500" />
+    <part Name="ChargeSink" ChargeUse="0" NameForStatus="ExoticMoistureManifold" />
+    <part Name="SpawnWithEffect" Effect="Broken" />
+    <tag Name="NoRepair" />
+    <tag Name="ExcludeFromDynamicEncounters" />
+  </object>
+  <object Name="Star Carousel Passenger Console 2" Inherits="Star Carousel Passenger Console 1">
+    <part Name="Render" DisplayName="승객 콘솔" RenderString="220" Tile="Furniture/star-carousel-passenger-console-2.png" ColorString="&amp;b" DetailColor="B" />    
+  </object>
+  <object Name="Star Carousel ExitHatch" Inherits="Stairs">
+    <part Name="Render" DisplayName="출구 해치" Tile="Furniture/star-carousel-hatch.png" ColorString="&amp;y" DetailColor="g" />
+    <part Name="Description" Short="이끼 바닥의 완벽한 원이 사인파로 갈라지며 상반되는 어둠으로의 출입을 허용합니다." />
+    <part Name="InteriorPortal" />
+    <tag Name="ExcludeFromDynamicEncounters" />
+  </object>
+  <object Name="Star Carousel Pilot Seat" Inherits="BaseChair">
+    <part Name="Render" DisplayName="조종사 좌석" Tile="Furniture/star-carousel-pilot-seat.png" ColorString="&amp;C" DetailColor="y" />
+    <part Name="Description" Short="카운터 높이에서 회전하는 초승달 형상이 다양한 체형에 맞는 집중 자세를 제공합니다." />
+    <part Name="Chair" Level="4" LevelWhenDisabled="0" ChargeUse="0" IsEMPSensitive="true" IsTechScannable="true" NameForStatus="ErgonomicSystems" />
+    <removebuilder Name="Animated" />
+    <tag Name="ExcludeFromDynamicEncounters" />
+  </object>
+  <object Name="Star Carousel Passenger Seat" Inherits="BaseChair">
+    <part Name="Render" DisplayName="승객 좌석" Tile="Furniture/star-carousel-passenger-seat.png" ColorString="&amp;C" DetailColor="y" />
+    <part Name="Description" Short="카운터 높이에서 회전하는 초승달 형상이 다양한 체형에 맞는 집중 자세를 제공합니다." />
+    <part Name="Chair" Level="4" LevelWhenDisabled="0" ChargeUse="0" IsEMPSensitive="true" IsTechScannable="true" NameForStatus="ErgonomicSystems" />
+    <removebuilder Name="Animated" />
+    <tag Name="ExcludeFromDynamicEncounters" />
+  </object>
+  <object Name="Star Carousel Table" Inherits="Table">
+    <part Name="Render" DisplayName="지층 여인상 기둥" Tile="Furniture/star-carousel-table.png" ColorString="&amp;y" TileColor="&amp;y" DetailColor="y" />
+    <part Name="Description" Short="외계 석회암의 유려한 어깨가 평평하고 물건을 올릴 수 있는 머리로 끝납니다. 묘사된 돌피리 생물이 눈 없는 응시를 보냅니다." />
+    <tag Name="EmptyTile" Value="*delete" />
+    <tag Name="FullTile" Value="*delete" />
+    <tag Name="EmptyDetailColor" Value="*delete" />
+    <tag Name="FullDetailColor" Value="*delete" />
+    <stag Name="Storage" Value="*delete" />
+    <stag Name="Contemporary" Value="*delete" />
+    <tag Name="InventoryPopulationTable" Value="*delete" />
+    <removebuilder Name="Animated" />
+    <tag Name="ExcludeFromDynamicEncounters" />
+  </object>
+  <object Name="Star Carousel Display Case" Inherits="Table">
+    <part Name="Render" DisplayName="프랙탈 캐비닛" Tile="Furniture/star-carousel-display-case.png" TileColor="&amp;w" DetailColor="W" />
+    <part Name="Description" Short="비에 젖은 풍성한 참나무가 온갖 크기의 선반을 가진 진기품 캐비닛으로 깎였습니다. 아치형 상자는 이제 백 세계의 시장입니다." />
+    <tag Name="EmptyTile" Value="*delete" />
+    <tag Name="FullTile" Value="*delete" />
+    <tag Name="EmptyDetailColor" Value="*delete" />
+    <tag Name="FullDetailColor" Value="*delete" />
+    <stag Name="Storage" Value="*delete" />
+    <stag Name="Contemporary" Value="*delete" />
+    <tag Name="InventoryPopulationTable" Value="*delete" />
+    <removebuilder Name="Animated" />
+    <tag Name="ExcludeFromDynamicEncounters" />
+  </object>
+  <object Name="Star Carousel Display Case FS" Inherits="Star Carousel Display Case">
+    <inventoryobject Blueprint="Fromshunter" Number="1" />
+  </object>
+  <object Name="Star Carousel Power Core" Inherits="SolidHighTechInstallation">
+    <part Name="Render" DisplayName="기이유체 코어" RenderString="232" Tile="Furniture/star-carousel-power-core.png" ColorString="&amp;Y" TileColor="&amp;g" DetailColor="Y" />
+    <part Name="Description" Short="우주적 질량의 피콜로 형 구체가 별빛의 물젤리를 품고 있습니다. 그 물질은 한순간 바다처럼 유리에 부딪히다가 다음 순간 바닥에 쿵 떨어집니다. 아원자적 권태의 기운을 풍깁니다." />
+    <part Name="FusionReactor" ChargeRate="3000" />
+    <part Name="Circuitry" StartCharge="3000" />
+    <part Name="Examiner" Complexity="8" />
+    <part Name="ElectricalPowerTransmission" ChargeRate="10000" IsProducer="true" />
+    <part Name="SpawnWithEffect" Effect="Broken" />
+    <tag Name="NoRepair" />
+    <stat Name="AV" Value="50" />
+    <stat Name="Hitpoints" Value="10000" />    
+    <removebuilder Name="Animated" />
+    <tag Name="ExcludeFromDynamicEncounters" />
+  </object>
+  <object Name="Star Carousel Art Sculpture 1" Inherits="MountedFurniture">
+    <part Name="Render" DisplayName="수분 봉" RenderString="227" Tile="Furniture/star-carousel-art-1.png" ColorString="&amp;C" TileColor="&amp;g" DetailColor="C" />
+    <part Name="Description" Short="테라리움에 가습 이끼와 조류가 어둠침침한 회전목마에서 번성하며 군락을 이루고 있습니다. 하나의 기울어진 줄기가 아치를 그리며 생명 가득한 국물에서 피어오르는 연기를 내뿜고 있습니다." />
+    <stat Name="Hitpoints" Value="500" />
+    <part Name="Hookah" />    
+    <tag Name="ForceSmartUse" />
+    <part Name="LiquidVolume" MaxVolume="3" Volume="3" StartVolume="1d3" InitialLiquid="water-1000" ManualSeal="true" LiquidVisibleWhenSealed="true" />
+    <tag Name="ExcludeFromDynamicEncounters" />
+  </object>
+  <object Name="Star Carousel Art Sculpture 2" Inherits="MountedFurniture">
+    <part Name="Render" DisplayName="장식용 이끼 꼬투리" RenderString="229" Tile="Furniture/star-carousel-art-2.png" ColorString="&amp;g" TileColor="&amp;g" DetailColor="m" />
+    <part Name="Description" Short="외계 이끼 분기군이 알 수 없는 사회적 역학을 구체화하는 리본 무늬를 형성합니다. 천장 걸이에서 구체 형태로 매달려 있으며, 별 항해자 주인들에게 경이를 불러일으킵니다." />
+  </object>
+  <object Name="Star Carousel Art Sculpture 3" Inherits="MountedFurniture">
+    <part Name="Render" DisplayName="온기의 관찰자" RenderString="248" Tile="Furniture/star-carousel-art-3.png" ColorString="&amp;m" TileColor="&amp;g" DetailColor="m" />
+    <part Name="Description" Short="회전목마 호흡 체계는 더 넓은 생체역학적 감각물질 네트워크에 내장되어 있습니다. 그 결절의 어떤 합류점이 분홍빛의 보는 눈을 지탱하는 줄기 같은 덩굴을 키우기로 결정했습니다. 진단에 따르면 주위를 둘러보는 것이 함선을 안정시킵니다." />
+  </object>
+  <object Name="Star Carousel Star Chart L" Inherits="MountedFurniture">
+    <part Name="Render" DisplayName="홀로그램 성도" RenderString="195" Tile="Furniture/star-carousel-star-chart-l.png" ColorString="&amp;w" DetailColor="W" />
+    <part Name="Description" Short="눈부신 항성들의 네트워크가 시차 운동으로 깜박입니다. 그 체계들은 교역로, 변동하는 주권 경계, 은하단의 수렴으로 매니폴드 안에서 연결되어 있습니다. 더 작은 표기들은 방대한 여행기의 개인 메모를 나타내며, 전체 그림을 초차원적 서사로 바꿉니다." />
+    <stat Name="Hitpoints" Value="1000" />    
+    <part Name="HologramMaterial" ColorStrings="&amp;B,&amp;b,&amp;B,&amp;b" DetailColors="W,W,W,W" />
+    <tag Name="ExcludeFromDynamicEncounters" />
+  </object>
+  <object Name="Star Carousel Star Chart C" Inherits="Star Carousel Star Chart L">
+    <part Name="Render" DisplayName="홀로그램 성도" RenderString="015" Tile="Furniture/star-carousel-star-chart-c.png" ColorString="&amp;w" DetailColor="W" />    
+  </object>
+  <object Name="Star Carousel Star Chart R" Inherits="Star Carousel Star Chart L">
+    <part Name="Render" DisplayName="홀로그램 성도" RenderString="180" Tile="Furniture/star-carousel-star-chart-r.png" ColorString="&amp;w" DetailColor="W" />    
+  </object>
+
+
+
+  
+  <object Name="CrysteelBraidWall" Inherits="BaseWallMetal">
+    <part Name="Render" DisplayName="크리스틸 편조" RenderString="178" ColorString="&amp;g^y" TileColor="&amp;g^y" DetailColor="k" Occluding="true" />    
+    <part Name="Description" Short="특수 계급의 녹색대장장이들이 크리스틸 용광로의 하부 메디나에 거주하며, 아직 부드러운 금속을 빼내어 장갑 낀 손으로 장인의 묶음을 엮었습니다. 조수열에의 적응으로 그들은 자신의 창작물이 쓰이는 지상으로 돌아갈 수 없었지만, 달의 의식이 그것의 운명에 대한 예지력을 부여했습니다." />
+    <stat Name="AV" Value="40" />
+    <stat Name="Hitpoints" Value="9000" />
+    <tag Name="PaintedWall" Value="wall_twist" />
+    <tag Name="PaintedWallExtension" Value=".png" />
+    <tag Name="PaintedWallAtlas" Value="Assets_Content_Textures_Walls2_" />
+    <tag Name="PaintWith" Value="CrysteelBraidWall" />        
+    <part Name="DropOnDeath" Blueprints="OmniForcefield" />
+    <tag Name="Tier" Value="8" />
+    <tag Name="ExcludeFromDynamicEncounters" />
+  </object>
+  <object Name="CrysteelBraidWallwithPiping" Inherits="CrysteelBraidWall">
+    <part Name="ModPiping" />
+  </object>
+  <object Name="HyperconductiveLabyrinthite" Inherits="BaseWallCircuit">
+    <part Name="Render" DisplayName="초전도성 미궁석" RenderLayer="7" RenderString="178" ColorString="&amp;W^c" TileColor="&amp;W^c" DetailColor="k" Occluding="false" />    
+    <part Name="Description" Short="도시 같은 비잔티움 형태로 조각된 인조 금박이 음의 저항으로 전류를 흘립니다. 밝은 문양의 거대한 아치가 방주의 연산 코어를 완충하며, 유입 전자를 스파크월에 동화시키고 내부 성소를 전자기 교란으로부터 차폐합니다." />
+    <stat Name="AV" Value="5" />
+    <stat Name="Hitpoints" Value="1000" />    
+    <stat Name="ElectricResistance" Value="0" />
+    <tag Name="PaintedWall" Value="wall_maze" />    
+    <tag Name="PaintedWallExtension" Value=".png" />
+    <tag Name="PaintedWallAtlas" Value="Assets_Content_Textures_Walls2_" />        
+    <removepart Name="Graffitied" />    
+    <part Name="DropOnDeath" Blueprints="OmniForcefield" />
+    <tag Name="Tier" Value="8" />    
+    <tag Name="ExcludeFromDynamicEncounters" />
+  </object>
+  <object Name="Yempuris Spread" Inherits="Yempuris">
+    <removepart Name="Yempuris" />
+    <part Name="DropOnDeath" Blueprints="Yempuris Spread" />
+    <tag Name="ExcludeFromDynamicEncounters" />
+  </object>
+  <object Name="Red Etz Trellis" Inherits="BrinestalkFence">
+    <part Name="Render" DisplayName="붉은 에츠 격자" RenderString="216" ColorString="&amp;r" DetailColor="R" Occluding="false" />
+    <part Name="Description" Short="타는 듯한 진홍빛 외계 목재가 미로 울타리와 격자를 이루어 영원히 자라는 식물원으로 이어집니다." />
+    <removepart Name="Graffitied" />
+    <tag Name="PaintWith" Value="redetztrellis" />
+    <part Name="DropOnDeath" Blueprints="OmniForcefield" />
+    <tag Name="ExcludeFromDynamicEncounters" />
+  </object>
+  <object Name="VoidTeleportBlockerHothouse" Inherits="Widget">
+    <tag Name="NoTeleport" Value="You cannot teleport into the vacuum-protected hothouse." />
+  </object>
+
+  <object Name="BaseReshephWall" Inherits="BaseWallMetal">
+    <part Name="Render" RenderString="219" ColorString="&amp;y^W" TileColor="&amp;y^W" DetailColor="k" Occluding="true" />
+    <tag Name="PaintedWallAtlas" Value="Assets_Content_Textures_Walls2_" />
+    <tag Name="PaintedWall" Value="walls_resheph_1_0" />
+    <tag Name="PaintedWallExtension" Value=".png" />
+    <tag Name="PaintWith" Value="ReshephMainframe" />
+    <stat Name="AV" Value="50" />
+    <stat Name="Hitpoints" Value="10000" />
+    <part Name="ZeroPointEnergyCollector" ChargeRate="100" World="NorthSheva" />
+    <part Name="ChargeSink" ChargeUse="5" />
+    <part Name="Capacitor" Charge="500" MaxCharge="500" ChargeDisplayStyle="" />
+    <removepart Name="Graffitied" />
+    <tag Name="Mainframe" />    
+    <tag Name="ImpactSound" Value="Sounds/Throw/sfx_throwing_generic_hitMetal" />
+    <tag Name="TakeDamageSound" Value="Sounds/Damage/sfx_damage_electronic" />
+    <tag Name="DeathSounds" Value="Sounds/Damage/sfx_destroy_electronic" />
+    <tag Name="BaseObject" Value="*noinherit" />
+    <tag Name="ExcludeFromDynamicEncounters" />
+  </object>
+  <object Name="ReshephWall1" Inherits="BaseReshephWall">
+    <part Name="Render" DisplayName="진공 플럭스 프로세서" />
+    <part Name="Description" Short="다중 시공간의 압축된 차원 위로 피어나는 색역학이 유니프리즘을 통해 관찰됩니다. 꽃잎을 다듬은 관찰 각도의 강제가 연산에 유사한 무언가를 만들어냅니다." />
+    <stat Name="AV" Value="6" />
+    <tag Name="PaintedWall" Value="walls_resheph_1_0" />    
+    <part Name="AnimatedWallGeneric" Frames="4" Tile="walls_resheph_1_" FrameMS="500" AllowRushing="false" />
+    <part Name="ChargeSink" NameForStatus="ChromodynamicFlowering" />
+  </object>
+  <object Name="ReshephWall2" Inherits="BaseReshephWall">
+    <part Name="Render" DisplayName="기억 토러스" />
+    <part Name="Description" Short="젤리화된 토러스가 추적 정보의 미끄러짐과 응집을 위한 이상적인 위상 표면을 제공합니다." />
+    <tag Name="PaintedWall" Value="walls_resheph_2" />
+    <part Name="AnimatedMaterialGeneric" AnimationLength="1200" LowFrameOffset="1" HighFrameOffset="1" TileColorAnimationFrames="0=&amp;y^k,400=&amp;y^y,600=&amp;y^Y,800=&amp;y^m,1000=&amp;y^M" />
+    <part Name="ChargeSink" NameForStatus="PhenomenologicalSorting" />
+  </object>
+  <object Name="ReshephWall3" Inherits="BaseReshephWall">
+    <part Name="Render" DisplayName="메인프레임 상태 패널" />
+    <part Name="Description" Short="진공 유리와 제타크롬 다이오드의 영역 너머로 선회하며 불빛이 깜박입니다." />
+    <tag Name="PaintedWall" Value="walls_resheph_3" />
+    <part Name="AnimatedMaterialGeneric" AnimationLength="200" LowFrameOffset="1" HighFrameOffset="1" ColorStringAnimationFrames="0=&amp;y^k,100=&amp;y^C" TileColorAnimationFrames="0=&amp;y^k,100=&amp;y^C" />
+    <part Name="ChargeSink" NameForStatus="QualiaObservation" />
+  </object>  
+  <object Name="ReshephWall4" Inherits="BaseReshephWall">
+    <part Name="Render" DisplayName="메인프레임 모니터" TileColor="&amp;y^C" />
+    <part Name="Description" Short="거대한 부수현상적 영역이 발명되고, 해석되고, 비결정론적 코어의 안녕을 전달하기 위한 언어로 토큰화됩니다." />
+    <tag Name="PaintedWall" Value="walls_resheph_4_0" />
+    <part Name="AnimatedWallGeneric" Frames="4" Tile="walls_resheph_4_" FrameMS="1200" AllowRushing="false" />
+    <part Name="ChargeSink" NameForStatus="GestaltEpiphenomena" />
+  </object>
+  <object Name="ReshephWall5" Inherits="BaseReshephWall">
+    <part Name="Render" DisplayName="광자 구동기" />
+    <part Name="Description" Short="레이저 헤드가 나선 은하의 작동을 추적하며 암흑물질 원반 위에 홀로그램을 새깁니다." />
+    <tag Name="PaintedWall" Value="walls_resheph_5_0" />    
+    <part Name="AnimatedWallGeneric" Frames="4" Tile="walls_resheph_5_" FrameMS="500" AllowRushing="true" RushingChance="128" />
+    <part Name="ChargeSink" NameForStatus="BackgroundRadiationPalimpsest" />
+  </object>
+  <object Name="ReshephWall6" Inherits="BaseReshephWall">
+    <part Name="Render" DisplayName="정상성 배기구" TileColor="&amp;y^K" />
+    <part Name="Description" Short="결정화되는 정상성의 돌풍이 배기구를 통해 강제 배출되어 연산 코어를 자유롭고 현상학적으로 유연하게 유지합니다." />
+    <tag Name="PaintedWall" Value="walls_resheph_6" />
+    <part Name="ChargeSink" NameForStatus="OrthogonalizedThroughput" />
+  </object>
+  <object Name="ReshephWall7" Inherits="BaseReshephWall">
+    <part Name="Render" DisplayName="진정한 난수 샘플러" TileColor="&amp;y^m" />
+    <part Name="Description" Short="기계가 충분한 속도로 세계를 회전시키고 멈추면, 샘플링할 수 있으나 모델링할 수 없는 감각질이 생겨납니다." />
+    <tag Name="PaintedWall" Value="walls_resheph_7" />
+    <part Name="AnimatedMaterialGeneric" AnimationLength="400" LowFrameOffset="1" HighFrameOffset="1" ColorStringAnimationFrames="0=&amp;y^y,350=&amp;y^c" TileColorAnimationFrames="0=&amp;y^y,350=&amp;y^c" />
+    <part Name="ChargeSink" NameForStatus="WorldGen/WorldDestruct" />
+  </object>
+  <object Name="BaseHologramProjector" Inherits="MountedFurniture">
+    <part Name="Render" DisplayName="홀로그램 투사기" RenderString="020" Tile="Furniture/hologram-projector.png" ColorString="&amp;W^k" DetailColor="w" Occluding="true" />
+    <part Name="Description" Short="스위치가 먼 원의 입자 산란을 정렬하고 절삭하는 빛을 비춥니다." />
+    <stat Name="AV" Value="40" />
+    <stat Name="Hitpoints" Value="10000" />        
+    <part Name="ZeroPointEnergyCollector" ChargeRate="100" World="NorthSheva" />
+    <part Name="Capacitor" Charge="500" MaxCharge="500" ChargeDisplayStyle="" />
+    <part Name="PowerSwitch" Active="false" />
+    <part Name="HologramProjector" ChargeUse="5" />
+    <part Name="Interesting" />
+    <tag Name="BaseObject" Value="*noinherit" />
+    <tag Name="ExcludeFromDynamicEncounters" />    
+  </object>
+  <object Name="BaseHologramProjector Barathrum" Inherits="BaseHologramProjector">
+    <part Name="Render" DisplayName="홀로그램 투사기" RenderString="020" Tile="Furniture/hologram-projector.png" ColorString="&amp;W^k" DetailColor="w" Occluding="true" />
+    <part Name="HologramProjector" Blueprint="Barathrum Hologram" />
+  </object>
+  <object Name="BaseHologramProjector Archon" Inherits="BaseHologramProjector">
+    <part Name="HologramProjector" Blueprint="Archon Hologram" />
+  </object>
+  <object Name="BaseHologramProjector Rebekah" Inherits="BaseHologramProjector">
+    <part Name="HologramProjector" Blueprint="Rebekah Hologram" />
+  </object>
+  <object Name="HologramCircle" Inherits="MountedFurniture">
+    <part Name="Render" DisplayName="광무대" RenderLayer="1" RenderString="009" Tile="Furniture/hologram-circle.png" ColorString="&amp;W^k" DetailColor="w" Occluding="false" />
+    <part Name="Description" Short="흩어진 점들이 기록된 위치로 배열되어 빛의 극장에서 피어납니다." />
+    <part Name="Physics" Solid="false" />
+    <stat Name="AV" Value="40" />    
+    <part Name="NoDamage" />
+    <tag Name="ProjectionSurface" />
+    <tag Name="ExcludeFromDynamicEncounters" />
+  </object>
+  <object Name="BaseTriumHologram" Inherits="MountedFurniture">
+    <part Name="Render" DisplayName="홀로그램" Tile="Items/sw_shekhinah_hologram.bmp" RenderLayer="6" RenderString="A" ColorString="&amp;y" DetailColor="k" Occluding="false" />    
+    <part Name="Physics" Weight="12000" Takeable="false" Solid="false" />
+    <stat Name="Hitpoints" Value="1200" />       
+    <part Name="HologramInvulnerability" />
+    <part Name="HologramMaterial" ColorStrings="&amp;M,&amp;m,&amp;M,&amp;m" DetailColors="m,M,m,M" />
+    <tag Name="IgnoresGravity" />
+    <tag Name="BaseObject" Value="*noinherit" />
+    <tag Name="ExcludeFromDynamicEncounters" />
+  </object>
+  <object Name="Barathrum Hologram" Inherits="BaseTriumHologram">
+    <part Name="Render" DisplayName="바라스룸의 홀로그램" RenderString="B" Tile="Creatures/young-barathrum.png" />
+    <part Name="Description" Short="젊은 우르쉬브의 밝은 용모와 짧은 가시털 갈기가 흩어지는 빛의 캔버스마저 관통합니다. 어깨는 새로운 목적으로 뒤로 젖혀져 있고, 그의 눈은 레이저의 정밀함으로 전경을 꿰뚫습니다." />
+    <part Name="ConversationScript" ConversationID="BarathrumHologram" />
+  </object>
+  <object Name="Archon Hologram" Inherits="BaseTriumHologram">
+    <part Name="Render" DisplayName="아르콘 메인프레임의 홀로그램" Tile="Terrain/sw_resheph_sultanstatue.bmp" />
+    <part Name="Description" Short="차폐된 전구에 담긴 우주의 폭발적 에너지가 광대하고 날카로운 지성으로 피스톤 압축된 모습이 응집합니다. 그로부터 먹는 자들의 위대한 기계 아르콘들이 신탁소에서 분열하여, 바이틸을 손가락 삼아 깨어 있는 세계를 깎아 만들었습니다." />
+    <tag Name="PaintedWallAtlas" Value="Assets_Content_Textures_Walls2_" />
+    <tag Name="PaintedWall" Value="walls_resheph_1_0" />
+    <tag Name="PaintedWallExtension" Value=".png" />    
+    <part Name="AnimatedWallGeneric" Frames="4" Tile="walls_resheph_1_" FrameMS="500" AllowRushing="false" />
+    <part Name="HologramMaterial" ColorStrings="&amp;m^M,&amp;M^m,&amp;m^M,&amp;M^m" DetailColors="k,k,k,k" />
+    <part Name="ConversationScript" ConversationID="ArchonHologram" Filter="Cryptic Machine" />
+  </object>
+  <object Name="Rebekah Hologram" Inherits="BaseTriumHologram">
+    <part Name="Render" DisplayName="레베카의 홀로그램" RenderString="h" Tile="Creatures/rebekah.png" />
+    <part Name="Description" Short="가운이 작은 어깨 위로 흘러내리고, 옆으로 향한 베일이 익명의 각도로 기울인 얼굴에 글리칭하는 형상을 부여합니다. 마침내 레이스 소매에서 풀려난 손이 마법의 등불처럼 먼지를 머금고, 아름다움으로 빛납니다." />
+    <part Name="ConversationScript" ConversationID="RebekahHologram" />
+  </object>
+  <object Name="Resheph Hologram" Inherits="BaseTriumHologram">
+    <part Name="Render" DisplayName="저 높은 곳의 Resheph의 홀로그램" Tile="Creatures/resheph.png" />
+    <part Name="Description" Short="드리운 천이 신화산문적 필연성으로 그의 어깨에서 흘러내리고, 디지털 이원상은 대지 위의 치유적 평화와 천궁과의 합치를 동시에 암시합니다." />
+    <part Name="ConversationScript" ConversationID="Resheph" Filter="Cryptic Machine" />
+    <part Name="CrypticParticleText" InitialTimer="2-3" />
+    <tag Name="ExcludeFromDynamicEncounters" />
+    <tag Name="ChatSound" Value="sfx_endgame_supercomputer_chat" />
+    <tag Name="ChatNodeSound" Value="sfx_endgame_supercomputer_chat_dialogNode" />
+  </object>
+  <object Name="Resheph Projection Widget" Inherits="Widget">
+    <part Name="ReshephProjectionWidget" />
+  </object>
+  <object Name="Resheph2" Inherits="Resheph Hologram">    
+    <part Name="ConversationScript" ConversationID="Resheph2" Filter="Cryptic Machine" />
+  </object>
+  <object Name="HexacherubimSpawner" Inherits="Widget">
+    <part Name="HexacherubimSpawner" />
+    <tag Name="ExcludeFromDynamicEncounters" />
+  </object>
+
+  <object Name="BaseArkCore" Inherits="MountedFurniture">
+    <part Name="Render" DisplayName="비결정론적 코어" RenderString="223" ColorString="&amp;W" TileColor="&amp;W" DetailColor="R" />
+    <part Name="Description" Short="파랑, 마젠타, 진홍의 장막이 달과 태양의 그늘과 초신성 금빛의 신성한 격납실 위에 드리워져 있습니다 (색상 사양은 내부의 신적 존재로부터 직접 내려온 것입니다). 원초적 비물질성이 용기 경계에서 적출되어 관리된 용량으로 프로세서에 공급되며, 프로세서는 그것을 분해하여 불가산적인 것을 수행합니다: 무에서 결정하는 것." />
+    <part Name="Physics" Weight="12000" />    
+    <part Name="ArkCore" />
+    <part Name="NoDamage" />
+    <part Name="ZeroPointEnergyCollector" ChargeRate="100" World="NorthSheva" />
+    <part Name="ChargeSink" ChargeUse="5" NameForStatus="Amateriality" />
+    <part Name="Capacitor" Charge="500" MaxCharge="500" ChargeDisplayStyle="" />
+    <tag Name="BaseObject" Value="*noinherit" />
+    <tag Name="ExcludeFromDynamicEncounters" />
+  </object>
+  <object Name="Ark Core 1" Inherits="BaseArkCore">
+    <part Name="Render" Tile="Furniture/arkcore-1.png" />    
+  </object>
+  <object Name="Ark Core 2" Inherits="BaseArkCore">
+    <part Name="Render" Tile="Furniture/arkcore-2.png" ColorString="&amp;W" TileColor="&amp;W" DetailColor="R" />     
+  </object>
+  <object Name="Ark Core 3" Inherits="BaseArkCore">
+    <part Name="Render" Tile="Furniture/arkcore-3.png" ColorString="&amp;W" TileColor="&amp;W" DetailColor="R" />
+  </object>
+  <object Name="Ark Core 4" Inherits="BaseArkCore">
+    <part Name="Render" Tile="Furniture/arkcore-4.png" />
+  </object>
+
+  <object Name="Sheyd" Inherits="BaseReptile">
+    <part Name="Render" DisplayName="셰이드" Tile="Creatures/sheyd.png" ColorString="&amp;y" DetailColor="M" />
+    <part Name="Description" Short="기름진 피부물질이 연옥 회색의 소용돌이로 돌며 발톱에서 다이아몬드로 굳어집니다. 셰딤은 그들의 신의 달에서 별에 실려 와, 백 년의 의식으로 기계 아르콘들과 거래되어 애완동물로 길러졌습니다. 역사가 술탄국의 어두운 우물 아래로 길어진 뒤, 그들은 귀한 홍채의 젖을 위해 멸종될 때까지 밀렵당했습니다." />
+    <part Name="Brain" Factions="Prey-100" Calm="true" />
+    <stat Name="Level" Value="29" />
+    <stat Name="Hitpoints" Value="300" />
+    <stat Name="AV" Value="6" />
+    <inventoryobject Blueprint="Sheyd_Claw" Number="2" />
+    <mutation Name="Metamorphosis" Level="6" />
+    <tag Name="Class" Value="sheyd" />
+    <tag Name="Species" Value="sheyd" />
+    <tag Name="Culture" Value="Eater" />
+    <part Name="Pettable" PettableIfPositiveFeeling="True" UseFactionForFeelingFloor="Prey" />
+    <tag Name="PetResponse" Value="=subject.T= =verb:chirr=." />
+    <tag Name="ExcludeFromDynamicEncounters" />
+  </object>
+  <object Name="Sheyd_Claw" Inherits="NaturalWeapon">
+    <part Name="Render" DisplayName="{{K|다이아몬드}} 발톱" Tile="Creatures/natural-weapon-claw.bmp" ColorString="&amp;y" />
+    <part Name="MeleeWeapon" HitBonus="6" BaseDamage="1d6" Skill="ShortBlades" Stat="Strength" Slot="Foot" />
+    <part Name="ElementalDamage" Damage="2d6" Attributes="Umbral Dream Vorpal Laser" />
+    <part Name="ModSerrated" Chance="10" />
+  </object>
+
+  
+  <object Name="Wood-Carved Bookshelf" Inherits="BaseBookshelf">
+    <part Name="Render" DisplayName="목조 책장" Tile="Furniture/wood-carved-bookshelf.png" DetailColor="W" ColorString="&amp;w" />
+    <part Name="Description" Short="성에 거주하는 목공 장인들이 노움의 숲 건축을 모방하여 외계의 이야기를 담을 오두막형 선반을 만들었습니다." />
+    <removepart Name="Graffitied" />
+    <part Name="MarkovBookshelf" BookTable="MarkovCorpus_Hydropon" />
+    <tag Name="ExcludeFromDynamicEncounters" />    
+  </object>
+  <object Name="Wood-Carved Bed" Inherits="BaseBed">
+    <part Name="Render" DisplayName="목조 침대" Tile="Furniture/wood-carved-bed.png" DetailColor="C" ColorString="&amp;w" />
+    <part Name="Description" Short="꿈결 골짜기의 초입에 눕는 이들은 상감 세공의 퍼즐에 빠져 해초빛 부드러움 속으로 녹아듭니다." />
+    <removepart Name="Graffitied" />
+    <stag Name="Sleep" Value="*delete" />
+    <tag Name="ExcludeFromDynamicEncounters" />
+  </object>
+  <object Name="Wood-Carved Chair" Inherits="BaseChair">
+    <part Name="Render" DisplayName="목조 의자" Tile="Furniture/wood-carved-chair.png" DetailColor="g" ColorString="&amp;w" />
+    <part Name="Description" Short="목공 장인들은 평생을 단 한 그루의 나무와 은밀한 대화 속에 보냅니다. 대월의 리듬이 사고의 점점 더 큰 몫을 차지하는 말년이 되어서야, 마침내 증기의 기술을 터득하고 심재를 자신의 의지에 맞춰 구부립니다." />
+    <removepart Name="Graffitied" />    
+    <stag Name="Contemporary" Value="*delete" />
+    <removebuilder Name="Animated" />
+    <tag Name="ExcludeFromDynamicEncounters" />
+  </object>
+  <object Name="Wood-Carved Clothespress" Inherits="MountedFurniture">
+    <part Name="Render" DisplayName="목조 옷장" Tile="Furniture/wood-carved-dresser.png" DetailColor="g" ColorString="&amp;w" />
+    <part Name="Description" Short="태양 시계가 지기 전에 완성되는 옷장이나 캐비닛에는 반드시 비밀 서랍이 있어, 아이들이 요정의 선물을 넣어두고 죽음 예지의 밤에 다시 발견할 수 있습니다." />
+    <removepart Name="Graffitied" />
+    <property Name="DontWarnOnOpen" Value="true" />
+    <part Name="Container" />
+    <part Name="Inventory" />
+    <tag Name="InventoryPopulationTable" Value="WoodCarvedClothespress" />
+    <removebuilder Name="Animated" />
+    <tag Name="ExcludeFromDynamicEncounters" />
+  </object>
+  <object Name="Wood-Carved Table" Inherits="Table">
+    <part Name="Render" DisplayName="목조 탁자" Tile="Furniture/wood-carved-table.png" DetailColor="g" ColorString="&amp;w" />
+    <part Name="Description" Short="마법적 표면의 세심한 곡률이 마법의 호를 추적하고자 하는 학습하는 마음을 위해 세계피부로 가장합니다." />
+    <removepart Name="Graffitied" />    
+    <tag Name="EmptyTile" Value="*delete" />
+    <tag Name="FullTile" Value="*delete" />
+    <tag Name="EmptyDetailColor" Value="*delete" />
+    <tag Name="FullDetailColor" Value="*delete" />
+    <stag Name="Storage" Value="*delete" />
+    <stag Name="Contemporary" Value="*delete" />
+    <tag Name="InventoryPopulationTable" Value="*delete" />
+    <removebuilder Name="Animated" />
+    <tag Name="ExcludeFromDynamicEncounters" />
+  </object>
+  <object Name="Unimax Wood Carving" Inherits="Random Statue">
+    <part Name="Render" ColorString="&amp;w" DetailColor="W" />
+    <part Name="RandomStatue" Material="wood" BaseBlueprint="Unimax" StatueType="carving" />
+  </object>
+  <object Name="Moted Lamp" Inherits="MountedFurniture">
+    <part Name="Render" DisplayName="먼지빛 램프" Tile="Furniture/moted-lamp.png" DetailColor="g" ColorString="&amp;Y" />    
+    <part Name="Description" Short="요정 이끼가 기둥에 가루를 뿌려 무지개 이슬로 축축하게 만듭니다. 갓 안에서 요정의 마법이 구형의 영원함 속에서 흐릅니다." />
+    <part Name="LightSource" Lit="true" Radius="2" />
+    <removepart Name="Graffitied" />
+    <tag Name="ExcludeFromDynamicEncounters" />
+  </object>
+  <object Name="Qorish Veil" Inherits="BaseHat">
+    <part Name="Render" DisplayName="코리쉬 여마법사의 베일" Tile="Items/qor-veil.png" DetailColor="m" ColorString="&amp;Y" />
+    <part Name="Description" Short="힘의 노래가 먼지빛 숲에서 포효하며 세계피부를 타고 미끄러질 때, 옆으로 향한 베일이 여마법사의 귀와 눈을 보호합니다." />
+    <part Name="Physics" Weight="4" />
+    <part Name="Armor" WornOn="Head" AV="0" DV="4" />
+    <part Name="Commerce" Value="50" />
+    <tag Name="ExcludeFromDynamicEncounters" />
+  </object>
+  <object Name="Qorish Gown" Inherits="BaseArmor">
+    <part Name="Render" DisplayName="코리쉬 여마법사의 가운" Tile="Items/qor-gown.png" DetailColor="m" ColorString="&amp;Y" />
+    <part Name="Description" Short="소매의 미세한 바늘 세공은 수정 구체와 대월의 전체 역사를, 적어도 요정의 관점에서 부호화하고 있습니다. 왕국과 성의 심연에서, 수놓인 질감은 가면무도회에서 장갑 낀 손이 춤에 잠긴 압력을 되돌려줍니다." />
+    <part Name="Physics" Weight="3" />
+    <part Name="Armor" AV="0" DV="4" WornOn="Body" />
+    <part Name="Commerce" Value="50" />
+    <tag Name="ExcludeFromDynamicEncounters" />
+  </object>
+  
+  
+  
+
+  
+  <object Name="StarOrchidTempleWidget" Inherits="Widget">
+    <part Name="StarOrchidTempleWidget" />
+  </object>
+
+  <object Name="Star Orchid Limestone" Inherits="BaseSedimentaryRock">
+    <part Name="Render" DisplayName="별난초 석회암" ColorString="&amp;m^Y" TileColor="&amp;g" DetailColor="M" Occluding="true" />
+    <part Name="Description" Short="우주선 배기로 융합된 원시 성석회석이 껍질 생명체의 생체 기하학과 다채로운 색조를 간직하고 있습니다. 결국 석조 형태로 가압되고 연마될 것입니다." />
+    <part Name="Physics" Weight="10000" FlameTemperature="99999" VaporTemperature="1500" Takeable="false" Solid="true" />
+    <stat Name="AV" Value="18" />
+    <stat Name="Hitpoints" Value="1000" />    
+    <xtagGrammar massNoun="true" />
+    <tag Name="ExcludeFromDynamicEncounters" />
+  </object>
+  <object Name="Starship Nozzle" Inherits="BaseWallMetal">
+    <part Name="Render" DisplayName="우주선 노즐" ColorString="&amp;y^Y" TileColor="&amp;y^Y" DetailColor="k" Occluding="true" />
+    <part Name="Description" Short="검게 그을린 우주선 노즐에서 채취한 금속이 배기공 길드에 의해 녹아내려 기념비적 비계로 주조되었습니다. 광택 표면에 튀겨진 허공생물의 실루엣이 아직 보입니다." />
+    <part Name="Physics" Weight="10000" />
+    <stat Name="AV" Value="50" />
+    <stat Name="Hitpoints" Value="10000" />
+    <tag Name="PaintedWall" Value="wall_backslash" />
+    <tag Name="PaintedWallExtension" Value=".png" />
+    <tag Name="PaintedWallAtlas" Value="Assets_Content_Textures_Walls_" />
+    <tag Name="PaintWith" Value="BackslashWall" />
+    <tag Name="ExcludeFromDynamicEncounters" />
+  </object>
+  <object Name="BaseStarOrchidTemplePlaqueEndcap" Inherits="Relief">
+    <part Name="Render" DisplayName="우주선 노즐" Tile="Terrain/sw_fresco1-1.bmp" RenderLayer="6" RenderString="219" ColorString="&amp;y^k" DetailColor="Y" Occluding="true" />
+    <part Name="Description" Short="검게 그을린 우주선 노즐에서 채취한 금속이 배기공 길드에 의해 녹아내려 기념비적 비계로 주조되었습니다. 광택 표면에 튀겨진 허공생물의 실루엣이 아직 보입니다." />
+    <stat Name="AV" Value="40" />
+    <stat Name="Hitpoints" Value="5000" />
+    <tag Name="BaseObject" Value="*noinherit" />
+    <tag Name="ExcludeFromDynamicEncounters" />
+    <tag Name="TakeDamageSound" Value="Sounds/Damage/sfx_damage_metal" />
+    <tag Name="DeathSounds" Value="Sounds/Damage/sfx_destroy_metal" />
+    <tag Name="PaintWith" Value="BackslashWall" />
+  </object>
+  
+  <object Name="BaseStarOrchidTemplePlaque" Inherits="BaseStarOrchidTemplePlaqueEndcap">
+    <part Name="Render" DisplayName="신전 봉헌 명판" />
+    <part Name="Description" Short="" />
+    <part Name="Interesting" />
+    <part Name="TempleDedicationPlaque" />
+  </object>
+  <object Name="Star Orchid Temple Plaque 1" Inherits="BaseStarOrchidTemplePlaqueEndcap">
+    <part Name="Render" Tile="Walls2/star-orchid-monument-1.png" />
+  </object>
+  <object Name="Star Orchid Temple Plaque 2" Inherits="BaseStarOrchidTemplePlaque">
+    <part Name="Render" Tile="Walls2/star-orchid-monument-2.png" />
+  </object>
+  <object Name="Star Orchid Temple Plaque 3" Inherits="BaseStarOrchidTemplePlaque">
+    <part Name="Render" Tile="Walls2/star-orchid-monument-3.png" />
+  </object>
+  <object Name="Star Orchid Temple Plaque 4" Inherits="BaseStarOrchidTemplePlaque">
+    <part Name="Render" Tile="Walls2/star-orchid-monument-4.png" />
+  </object>
+  <object Name="Star Orchid Temple Plaque 5" Inherits="BaseStarOrchidTemplePlaque">
+    <part Name="Render" Tile="Walls2/star-orchid-monument-5.png" />
+  </object>
+  <object Name="Star Orchid Temple Plaque 6" Inherits="BaseStarOrchidTemplePlaque">
+    <part Name="Render" Tile="Walls2/star-orchid-monument-6.png" />
+  </object>
+  <object Name="Star Orchid Temple Plaque 7" Inherits="BaseStarOrchidTemplePlaque">
+    <part Name="Render" Tile="Walls2/star-orchid-monument-7.png" />
+  </object>
+  <object Name="Star Orchid Temple Plaque 8" Inherits="BaseStarOrchidTemplePlaque">
+    <part Name="Render" Tile="Walls2/star-orchid-monument-8.png" />
+  </object>
+  <object Name="Star Orchid Temple Plaque 9" Inherits="BaseStarOrchidTemplePlaqueEndcap">
+    <part Name="Render" Tile="Walls2/star-orchid-monument-9.png" />
+  </object>
+  <object Name="Star Orchid Temple Projector" Inherits="MountedFurniture">
+    <part Name="Render" DisplayName="신전 투사기" Tile="Furniture/orchid-projector.png" ColorString="&amp;o" TileColor="&amp;y" DetailColor="O" />
+    <part Name="Description" Short="시공간의 비눗물 같은 막에 담겼던 때의 초차원적 찌꺼기가 투사 원반 위에서 반짝입니다. 원반은 이제 초월적 얽힘에서 분리되어 침묵하고, 그 받침대는 이끼가 번성하는 그늘벽이 되었습니다." />
+    <stat Name="AV" Value="40" />
+    <stat Name="Hitpoints" Value="6000" />
+    <part Name="SpawnWithEffect" Effect="Broken" />
+    <tag Name="NoRepair" />
+    <tag Name="ExcludeFromDynamicEncounters" />
+  </object>
+  <object Name="BaseStarOrchidTempleGate" Inherits="MountedFurniture">
+    <part Name="Render" DisplayName="신전 문" Tile="Furniture/orchid-gate-n.png" ColorString="&amp;o" TileColor="&amp;Y" DetailColor="o" />
+    <part Name="Description" Short="계단, 무대, 고리 문이 초차원 필라멘트에 의해 주변에 대리석 부조로 주조되어 있습니다. 이세계 신전의 홀로그램 비스타는 사라지고, 대신 현지 백합이 틀을 채우고 있습니다." />
+    <stat Name="AV" Value="40" />
+    <stat Name="Hitpoints" Value="6000" />
+    <tag Name="BaseObject" Value="*noinherit" />
+    <tag Name="ExcludeFromDynamicEncounters" />
+  </object>
+  <object Name="Star Orchid Temple Gate N" Inherits="BaseStarOrchidTempleGate">
+    <part Name="Render" Tile="Furniture/orchid-gate-n.png" />
+  </object>
+  <object Name="Star Orchid Temple Gate SW" Inherits="BaseStarOrchidTempleGate">
+    <part Name="Render" Tile="Furniture/orchid-gate-sw.png" />
+  </object>
+  <object Name="Star Orchid Temple Gate S" Inherits="BaseStarOrchidTempleGate">
+    <part Name="Render" Tile="Furniture/orchid-gate-s.png" />
+  </object>
+  <object Name="Star Orchid Temple Gate SE" Inherits="BaseStarOrchidTempleGate">
+    <part Name="Render" Tile="Furniture/orchid-gate-se.png" />
+  </object>
+  
+  <object Name="Engine Crabs" Inherits="BaseCrab">
+    <part Name="Render" DisplayName="엔진 게" Tile="creatures/tiny-crabs-1.png" ColorString="&amp;c" DetailColor="C" />
+    <part Name="Description" Short="크롬 껍질의 작은 십각류가 헤드론 엔진 기생충으로서 별들 사이를 여행하며, 횃불 잔여물을 마시고 전도선을 갉아먹었습니다. 이제 퇴역한 함선의 노즐을 통해 발사되어 폐차장에 착륙한 뒤 은퇴 정원에 대해 사색합니다." />
+    <part Name="Brain" Hostile="False" Calm="True" Factions="Crabs-100" MaxWanderRadius="3" />
+    <builder Name="RandomTile" Tiles="Creatures/tiny-crabs-1.png,Creatures/tiny-crabs-2.png" />
+    <stat Name="AV" Value="1" />
+    <stat Name="Level" Value="4" />
+    <stat Name="Hitpoints" Value="12" />
+    <tag Name="Gender" Value="plural" />
+    <tag Name="ExcludeFromDynamicEncounters" />
+  </object>
+  <object Name="Star Orchid Lily" Inherits="Plant">
+    <part Name="Render" DisplayName="별난초 백합" RenderString="*" ColorString="&amp;g" Tile="Terrain/star-orchid-lily-1.png" DetailColor="M" Occluding="false" />
+    <part Name="Description" Short="다섯 개의 녹색 엽편이 불타는 배기의 색을 띤 별 모양 꽃에서 늘어집니다. 근경 충동에 이끌려 원을 그리며 떠다닙니다." />
+    <builder Name="RandomTile" Tiles="Terrain/star-orchid-lily-1.png,Terrain/star-orchid-lily-2.png,Terrain/star-orchid-lily-3.png,Terrain/star-orchid-lily-4.png" />    
+    <tag Name="PlacementIsSkippable" />
+    <tag Name="ExcludeFromDynamicEncounters" />
+  </object>
+  <object Name="Nails of Jy" Inherits="Plant">
+    <part Name="Render" DisplayName="Jy의 가시" RenderString="157" ColorString="&amp;r" Tile="Terrain/finger-root-1.png" DetailColor="R" Occluding="false" />
+    <part Name="Description" Short="타는 듯한 진홍 욕망의 날카로운 새순이 흙 장갑에서 공기를 찌릅니다. 인공 바람이 한 줄기 불면 반짝이며 쉬익 소리를 냅니다." />
+    <builder Name="RandomTile" Tiles="Terrain/finger-root-1.png,Terrain/finger-root-2.png,Terrain/finger-root-3.png,Terrain/finger-root-4.png" />
+    <tag Name="Gender" Value="plural" />
+    <tag Name="PlacementIsSkippable" />
+    <tag Name="ExcludeFromDynamicEncounters" />    
+  </object>
+  <object Name="Ring of Moss" Inherits="Plant">
+    <part Name="Render" DisplayName="이끼 고리" RenderString="229" ColorString="&amp;g" Tile="Terrain/ring-moss-1.png" DetailColor="w" Occluding="false" />
+    <part Name="Description" Short="보송한 사당풀이 죽은 식물 줄기의 고리 위로 자라 신전의 그늘을 마십니다." />
+    <builder Name="RandomTile" Tiles="Terrain/ring-moss-1.png,Terrain/ring-moss-2.png" />
+    <tag Name="PlacementIsSkippable" />
+    <tag Name="ExcludeFromDynamicEncounters" />
+  </object>    
+  <object Name="Spoken Ionic" Inherits="NPC">
+    <part Name="Render" DisplayName="{{zetachrome|공유 결합 심장 안의 말하는 이온}}" Tile="Creatures/spoken-ionic.png" RenderString="M" ColorString="&amp;Y" DetailColor="M" />
+    <stat Name="Level" Value="120" />
+    <stat Name="AV" Value="4" />
+    <part Name="Corpse" CorpseChance="0" />
+    <part Name="Brain" Wanders="false" Calm="true" Factions="Strangers-100" />
+    <stat Name="Hitpoints" Value="800" />
+    <part Name="Body" Anatomy="Tree" />   
+    <tag Name="Gender" Value="plural" />
+    <part Name="Description" Short="나무의 잔가지와 줄기의 휘어짐에서 자연 항성 탄생으로는 너무 기하학적으로 복잡한 고향의 항성 배치를 추론할 수 있습니다. =pronouns.Possessive= 리본들이 유리처럼 빛을 던지며 탁한 공기에서 춤추는데, 친숙함이 깎여나간 문명의 낯선 기치입니다. =pronouns.possessive= 이국적 연못 가장자리에서, 방문자인 나무는 당혹스러운 공연 속에 시원한 물을 뿌리로 홀짝입니다." />
+    <part Name="Interesting" />
+    <part Name="ConversationScript" ConversationID="SpokenIonic" ClearLost="true" />
+    <tag Name="LairAmbientBed" Value="Sounds/Ambiences/amb_creature_tree" />
+    <tag Name="DeathSounds" Value="Sounds/Creatures/VO/sfx_creature_animal_tree_vo_die" />
+    <tag Name="TakeDamageSound" Value="Sounds/Creatures/VO/sfx_creature_animal_tree_vo_hurt" />
+    <tag Name="AmbientIdleSound" Value="Sounds/Creatures/VO/sfx_creature_animal_tree_vo_idle" />
+    <tag Name="PunchSound" Value="Sounds/Creatures/VO/sfx_creature_animal_tree_vo_attack" />
+    <tag Name="ExcludeFromDynamicEncounters" />
+  </object>
+  
+
+  
+  <object Name="CodaHost" Inherits="Wall">
+    <part Name="Interior" Cell="Coda" IgnoreWeight="true" />
+  </object>
+
+  
+  <object Name="PathConnection" Inherits="Widget">
+  </object>
+  
+  <object Name="Coda Player Statue" Inherits="Statue">
+    <part Name="Render" DisplayName="플레이어 석상" />
+    <tag Name="ExcludeFromDynamicEncounters" />
+  </object>
+
+  <object Name="Coda Regional Plant" Inherits="Widget">
+    <part Name="Render" RenderString="244" ColorString="&amp;G" Tile="Tiles/sw_watervine2.bmp" TileColor="&amp;W" DetailColor="G" />
+    <part Name="RegionalObject" Table="CodaRegionalPlants" />
+  </object>
+
+  
+  <object Name="Chiliad Watervine" Inherits="Watervine">
+    <part Name="Render" Tile="Terrain/chiliad-watervine-1.png" />
+    <builder Name="RandomTile" Tiles="Terrain/chiliad-watervine-1.png,Terrain/chiliad-watervine-2.png" />
+    <tag Name="ExcludeFromDynamicEncounters" />
+  </object>
+  <object Name="Chiliad Starapple Tree" Inherits="Starapple Tree">
+    <part Name="Render" Tile="Terrain/chiliad-starapple.png" />
+    <tag Name="ExcludeFromDynamicEncounters" />
+  </object>
+  <object Name="Chiliad Dogthorn Tree" Inherits="Dogthorn Tree">
+    <builder Name="RandomTile" Tiles="Terrain/chiliad-dogthorn-1.png,Terrain/chiliad-dogthorn-2.png" />    
+    <tag Name="ExcludeFromDynamicEncounters" />
+  </object>
+  <object Name="Chiliad Witchwood Tree" Inherits="Witchwood Tree">
+    <builder Name="RandomTile" Tiles="Terrain/chiliad-witchwood-1.png,Terrain/chiliad-witchwood-2.png" />
+    <tag Name="ExcludeFromDynamicEncounters" />
+  </object>
+
+  
+  <object Name="Chiliad Village Monument Post" Inherits="Village Monument">
+    <part Name="Render" DisplayName="석조 앙크" Tile="Furniture/chiliad-monument-1.png" ColorString="&amp;y" DetailColor="C" />
+    <part Name="Description" Short="매장된 조개껍데기가 석회암의 뒤집힌 고리 아래에서 엿보이며, 포물선적 삶을 숙고하며 새겨져 있습니다." />
+    <stag Name="Chiliad" />
+    <tag Name="ExcludeFromDynamicEncounters" />
+  </object>
+  <object Name="Chiliad Village Monument Orb" Inherits="Village Monument">
+    <part Name="Render" DisplayName="석조 비둘기집" Tile="Furniture/chiliad-monument-2.png" ColorString="&amp;C" DetailColor="W" />
+    <part Name="Description" Short="유리 렌즈가 매끈한 돌 위에 껍질처럼 굳어 있고, 운동 날개들은 극점에서 잘려나갔습니다." />
+    <stag Name="Chiliad" />
+    <tag Name="ExcludeFromDynamicEncounters" />
+  </object>
+  <object Name="Chiliad Chest" Inherits="Chest">
+    <part Name="Render" Tile="Furniture/chiliad-chest.png" />
+    <part Name="Description" Short="나선형으로 깎은 놋쇠 모서리 조각이 오래된 나무 상자의 밑면을 고정합니다. 연체동물 장인의 양식에 따라 윗면은 금속 없이 맨바닥으로 남겨져 있습니다." />
+    <stag Name="Chiliad" />
+    <tag Name="ExcludeFromDynamicEncounters" />
+  </object>
+  <object Name="Chiliad Bottle" Inherits="Bottle">
+    <part Name="Render" Tile="Furniture/chiliad-bottle.png" />
+    <part Name="Description" Short="깊은 바다빛 목의 고리가 석회암의 큰 손에 맞게 비틀어져 있습니다. 용기에서 와인과 몰약 냄새가 납니다." />
+    <stag Name="Chiliad" />
+    <tag Name="ExcludeFromDynamicEncounters" />
+  </object>
+  <object Name="Chiliad Vase" Inherits="Vase">
+    <part Name="Render" Tile="Furniture/chiliad-vase.png" />
+    <part Name="Description" Short="벌어진 손잡이와 목의 엄지 자국은 도공이 서둘러 점토를 빚고 다음 주문을 구웠음을 보여줍니다. 하지만 실용성의 모서리는 느리고 풍성한 열매 유약으로 부드러워져 있습니다." />
+    <stag Name="Chiliad" />
+    <tag Name="ExcludeFromDynamicEncounters" />
+  </object>
+  <object Name="Chiliad Basket" Inherits="Woven Basket">
+    <part Name="Render" Tile="Furniture/chiliad-basket.png" />
+    <part Name="Description" Short="염색한 골풀과 야자 잎을 서쪽 방향으로 엮어 저장실 보존용으로 만들었습니다. 갈라진 가닥은 진한 사과 빨간색으로 물들어 있습니다." />
+    <stag Name="Chiliad" />
+    <tag Name="EmptyTile" Value="Furniture/chiliad-basket.png" />
+    <tag Name="FullTile" Value="Furniture/chiliad-basket.png" />
+    <tag Name="ExcludeFromDynamicEncounters" />
+  </object>
+  <object Name="Chiliad Floor Cusion" Inherits="Floor Cushion">
+    <part Name="Render" Tile="Furniture/chiliad-floor-cushion.png" />
+    <part Name="Description" Short="염소털 속을 채운 쿠션 돔이 낮고 햇볕 쪽을 향한 안식의 각도를 제공합니다." />
+    <removebuilder Name="RandomTile" />
+    <stag Name="Chiliad" />
+    <tag Name="ExcludeFromDynamicEncounters" />
+  </object>
+  <object Name="Chiliad Table" Inherits="Table">
+    <part Name="Render" Tile="Furniture/chiliad-table.png" />
+    <part Name="Description" Short="타원 무늬 나무의 거대한 판자가 다리 위에 올려져 옛 왕의 연회 판이 되었습니다. 그후 분쟁의 도끼가 그것을 산산조각 냈고, 그 자식들은 옮겨져 다시 평평함을 제공하도록 매끈하게 깎였습니다." />
+    <stag Name="Chiliad" />
+    <tag Name="EmptyTile" Value="Furniture/chiliad-table.png" />
+    <tag Name="FullTile" Value="Furniture/chiliad-table.png" />
+    <tag Name="ExcludeFromDynamicEncounters" />
+  </object>
+  <object Name="Chiliad Oven" Inherits="Oven">
+    <part Name="Render" Tile="Furniture/chiliad-oven.png" />
+    <part Name="Description" Short="두꺼운 점토 화덕의 타닥거리는 불에서 온기가 퍼지며, 함께 맛있는 음식 냄새가 풍깁니다. 높은 차양은 새 계절의 꿀과 잼으로 칠해져 있습니다." />
+    <stag Name="Chiliad" />
+    <tag Name="ExcludeFromDynamicEncounters" />
+  </object>
+  <object Name="Chiliad Torchpost" Inherits="Torchpost">
+    <part Name="Render" Tile="Furniture/chiliad-torchpost.png" />
+    <part Name="UnityPrefabImposter" PrefabID="Prefabs/Particles/TorchpostFlames" Y="2" />
+    <part Name="Description" Short="마른 나무와 오목한 철의 Y자형 횃불이 주거지를 밝힙니다." />
+    <stag Name="Chiliad" />
+    <tag Name="ExcludeFromDynamicEncounters" />
+  </object>
+  <object Name="Chiliad Unlit Torchpost" Inherits="Unlit Torchpost">
+    <part Name="Render" Tile="Furniture/chiliad-torchpost.png" />
+    <part Name="Description" Short="마른 나무와 오목한 철의 Y자형 횃불이 주거지를 밝힙니다." /> 
+     
+    
+    <tag Name="ExcludeFromDynamicEncounters" />
+  </object>
+  <object Name="Chiliad CanvasWall" Inherits="CanvasWall">
+    <part Name="Render" />    
+    <stag Name="Chiliad" />
+    <tag Name="PaintedFence" Value="chiliad-canvas" />
+    <tag Name="PaintedFenceAtlas" Value="Assets_Content_Textures_Walls2_" />
+    <tag Name="PaintedFenceExtension" Value=".png" />
+    <tag Name="ExcludeFromDynamicEncounters" />
+  </object>
+  <object Name="Mechanical Golem" Inherits="MountedFurniture">
+    <part Name="Render" ColorString="&amp;c" DetailColor="y" />
+    <part Name="Description" Short="원소 주기율표 너머의 폐금속들이 신화적 특징의 조각상으로 용접되어 있습니다: =body.features=. 오래된 수프와 =catalyst= 얼룩이 녹슨 몸통을 더럽히고, 그을리는 빛 속에서 그 자세는 죽어가는 =atzmus.creature=의 존재감을 환기합니다. 철 팔다리는 =armament.skill.snippet=의 형상으로 두들겨졌고, 중심부에는 =hamsa.an=의 부서진 인장이 매달려 있습니다." />
+    <part Name="Interactable" Action="enter" Message="=object.Does:are= much too old and rusted to enter." UsePopup="true" CanSmartUse="false" />
+    <part Name="ElectricalPowerTransmission" ChargeRate="10000" IsConsumer="true" SparkWhenBrokenAndPowered="false" />
+    <part Name="ChargeSink" ChargeUse="1" NameForStatus="PrimeMover" />
+    <tag Name="ExcludeFromDynamicEncounters" />
+  </object>
+
+  
+  <object Name="BaseChiliadSlynth" Inherits="BaseSlynth">
+    <part Name="Render" ColorString="&amp;g" TileColor="&amp;g" />
+    <tag Name="BaseObject" Value="*noinherit" />
+    <tag Name="ExcludeFromDynamicEncounters" />    
+  </object>
+  <object Name="Chiliad Slynth Joppa" Inherits="BaseChiliadSlynth">
+    <part Name="Render" DisplayName="슬린스 관개꾼" Tile="Creatures/chiliad-slynth-joppa.png" ColorString="&amp;g" DetailColor="G" />
+    <part Name="Description" Short="=pronouns.Possessive= 챙 잎이 두들겨 맞은 모자처럼 늘어져 높은 소금 태양으로부터 =pronouns.possessive= 빛나는 눈을 가립니다. =pronouns.Subjective= =verb:wield:afterpronoun= 부드럽고 낫질에 취약한 =pronouns.possessive= 뿌리 주위에서 숙련된 솜씨로 덩굴낫을 다룹니다." />
+    <skill Name="CookingAndGathering_Harvestry" />
+    <inventoryobject Blueprint="Iron Vinereaper" />
+    <tag Name="ExcludeFromDynamicEncounters" />
+  </object>
+  <object Name="Chiliad Slynth Grit Gate" Inherits="BaseChiliadSlynth">
+    <part Name="Render" DisplayName="슬린스 렌치수도사" Tile="Creatures/chiliad-slynth-grit-gate.png" ColorString="&amp;c" DetailColor="C" />
+    <part Name="Description" Short="=pronouns.Possessive= 손가락 줄기가 정비하기에 적합한 길이로 자랐고, =pronouns.subjective= =verb:tauten:afterpronoun= 렌치 회전의 토크를 증가시키기 위해 =pronouns.possessive= 뿌리의 땅속 잡는 힘을 =pronouns.possessive= 팽팽하게 합니다." />
+    <skill Name="Tinkering" />
+    <skill Name="Tinkering_Repair" />
+    <inventoryobject Blueprint="Wrench" />
+    <tag Name="ExcludeFromDynamicEncounters" />
+  </object>
+  <object Name="Chiliad Slynth Bey Lah" Inherits="BaseChiliadSlynth">
+    <part Name="Render" DisplayName="슬린스 정찰꾼" Tile="Creatures/chiliad-slynth-bey-lah.png" ColorString="&amp;w" DetailColor="w" />
+    <part Name="Description" Short="=pronouns.Subjective= =verb:sniff:afterpronoun= 공기를 맡고 마른 흙에 =pronouns.possessive= 뒷뿌리를 =verb:stamp:afterpronoun= 구릅니다. 자극적인 황토빛 꽃잎이 =pronouns.possessive= 관 부분에서 흩날려 =pronouns.possessive= 넓은 엉덩이 위에 초원을 이룹니다." />
+    <mutation Name="MultipleLegs" Level="3" />
+    <tag Name="ExcludeFromDynamicEncounters" />
+  </object>
+  <object Name="Chiliad Slynth Kyakukya" Inherits="BaseChiliadSlynth">
+    <part Name="Render" DisplayName="슬린스 사과주입" Tile="Creatures/chiliad-slynth-kyakukya.png" ColorString="&amp;r" DetailColor="r" />
+    <part Name="Description" Short="버섯 무리가 =pronouns.possessive= 꽃관에 공생적으로 뿌리를 내렸습니다. =pronouns.Possessive= 줄기는 그을리고 향신료가 뿌려져 있으며, =pronouns.subjective= =verb:stir:afterpronoun= 나무 국자로 매콤한 펀치를 젓습니다." />
+    <skill Name="CookingAndGathering_Spicer" />
+    <inventoryobject Blueprint="Pestle" Number="1" />
+    <tag Name="ExcludeFromDynamicEncounters" />
+  </object>
+  <object Name="Chiliad Slynth Ezra" Inherits="BaseChiliadSlynth">
+    <part Name="Render" DisplayName="슬린스 추방자" Tile="Creatures/chiliad-slynth-ezra.png" ColorString="&amp;m" DetailColor="m" />
+    <part Name="Description" Short="=pronouns.Possessive= 녹색의 꽃관이 =pronouns.possessive= 어깨를 따라 옆으로 드리운 베일처럼 흘러내리고, =pronouns.possessive= 손가락 줄기가 반짝이는 음극 위에서 꿈틀거립니다." />
+    <inventoryobject Blueprint="Wrench" />
+    <inventoryobject Blueprint="Chem Cell" />
+    <skill Name="Tinkering_ReverseEngineer" />
+    <skill Name="Tinkering_Tinker1" />
+    <tag Name="ExcludeFromDynamicEncounters" />
+  </object>
+  <object Name="Chiliad Slynth Yd Freehold" Inherits="BaseChiliadSlynth">
+    <part Name="Render" DisplayName="슬린스 피리꾼" Tile="Creatures/chiliad-slynth-yd.png" ColorString="&amp;B" DetailColor="B" />
+    <part Name="Description" Short="=pronouns.Possessive= 손가락 줄기가 나무 피리 위에서 톡톡 미끄러지며, =pronouns.subjective= =verb:shuffle:afterpronoun= 접힌 뿌리 위에서 옆걸음 춤을 춥니다. =pronouns.possessive= 관을 장식하는 꽃의 꽃잎이 즐거운 동시성으로 색을 바꿉니다." />
+    <skill Name="Customs" />
+    <skill Name="Customs_Tactful" />
+    <inventoryobject Blueprint="@Junk 1" Number="2-4" />
+    <tag Name="ExcludeFromDynamicEncounters" />
+  </object>
+  <object Name="Chiliad Slynth Mechanimists" Inherits="BaseChiliadSlynth">
+    <part Name="Render" DisplayName="슬린스 성가대원" Tile="Creatures/chiliad-slynth-stilt.png" ColorString="&amp;W" DetailColor="W" />
+    <part Name="Description" Short="꽃 생명체가 크로마 교회의 다이오드 두건을 쓰고 찬송 박자에 맞춰 마른 꽃잎을 바스락거립니다. 광택 크롬 브로치가 목 부근의 =pronouns.possessive= 잎사귀를 집고 있습니다." />
+    <inventoryobject Blueprint="@Trinkets 1" Number="1-2" />
+    <inventoryobject Blueprint="Canticles3" />
+    <tag Name="ExcludeFromDynamicEncounters" />
+  </object>
+  <object Name="Chiliad Slynth Mopango" Inherits="BaseChiliadSlynth">
+    <part Name="Render" DisplayName="슬린스 벗" Tile="Creatures/chiliad-slynth-mopango.png" ColorString="&amp;Y" DetailColor="Y" />
+    <part Name="Description" Short="부드럽고 빛나는 광채가 =pronouns.possessive= 녹색 심부에서 발산되며, =pronouns.possessive= 모든 잎사귀 부분이 소형 태양처럼 그쪽으로 휘어집니다. 위에서 =pronouns.possessive= 밝은 눈이 몽상적 목적으로 반짝입니다." />
+    <mutation Name="LightManipulation" Level="4" />
+    <tag Name="ExcludeFromDynamicEncounters" />
+  </object>
+  <object Name="Chiliad Slynth Chavvah" Inherits="BaseChiliadSlynth">
+    <part Name="Render" DisplayName="수정 슬린스" Tile="Creatures/chiliad-slynth-chavvah.png" ColorString="&amp;Y" DetailColor="Y" />
+    <part Name="Description" Short="빛나는 수정 파편이 =pronouns.possessive= 꽃관의 중심에 놓여 눈 대신 예지의 빛을 발합니다. =pronouns.possessive= 녹색 몸 전체에서 공기가 거친 윙윙 소리로 진동합니다." />
+    <skill Name="Discipline_IronMind" />
+    <skill Name="Discipline_Meditate" />
+    <inventoryobject Blueprint="@Gemstones" Number="1" />
+    <tag Name="ExcludeFromDynamicEncounters" />
+  </object>
+  <object Name="Chiliad Slynth Village" Inherits="BaseChiliadSlynth">
+    <part Name="Render" DisplayName="슬린스 마을 주민" Tile="Creatures/chiliad-slynth-villager.png" ColorString="&amp;y" DetailColor="y" />
+    <part Name="Description" Short="=pronouns.Possessive= 녹색 과성장이 삼각 앞치마로 스스로를 엮었고, =pronouns.subjective= =verb:camber:afterpronoun= 기이하고 시민적인 목적으로 휘어집니다. 따뜻한 한 쌍의 눈이 친근함을 전합니다." />
+    <inventoryobject Blueprint="Vine-Weave Tunic" />
+    <tag Name="ExcludeFromDynamicEncounters" />
+  </object>
+
+  
+  <object Name="Nacham's Loom" Inherits="Wire Extruder">
+    <part Name="Render" DisplayName="나캄의 베틀" RenderString="232" Tile="Furniture/chiliad-nacham-loom.png" ColorString="&amp;M" TileColor="&amp;c" DetailColor="M" />
+    <part Name="Description" Short="평평한 금속판이 경사 빔에서 역으로 풀려나와 느슨한 와이어로 벗겨집니다. 분리 갈대의 막대가 정신전도력으로 윙윙거립니다." />
+    <stat Name="Hitpoints" Value="500" />            
+    <part Name="ItemConvertor" ChargeUse="5" Verb="spin" />
+    <tag Name="ExcludeFromDynamicEncounters" />
+  </object>
+  <object Name="Kah's Conveyor" Inherits="ConveyorDrive">
+    <part Name="Render" DisplayName="카의 컨베이어" Tile="Furniture/chiliad-kah-conveyor.png" ColorString="&amp;M" DetailColor="c" />
+    <part Name="Description" Short="리본형 케이블이 렘니스케이트 형상으로 구동 장치를 통과하며 영구 운동으로 순환합니다." />    
+    <tag Name="ExcludeFromDynamicEncounters" />
+  </object>
+  <object Name="Va'am's Blower" Inherits="Industrial Fan">
+    <part Name="Render" DisplayName="바암의 송풍기" Tile="Furniture/chiliad-vaam-blower-1.png" ColorString="&amp;M" TileColor="&amp;c" DetailColor="M" />
+    <part Name="Description" Short="오션 드럼이 구동 휠에 맞물려 공기와 전자 입자를 감압 깔때기로 밀어 넣습니다." />
+    <part Name="Fan" ChargeUse="3" BlowStrength="100" BlowRange="9" />
+    <part Name="AnimatedMaterialGeneric" AnimationLength="20" LowFrameOffset="1" HighFrameOffset="1" TileAnimationFrames="0=Furniture/chiliad-vaam-blower-1.png,5=Furniture/chiliad-vaam-blower-2.png,10=Furniture/chiliad-vaam-blower-3.png,15=Furniture/chiliad-vaam-blower-4.png" RequiresOperationalActivePart="Fan" />
+    <tag Name="ExcludeFromDynamicEncounters" />
+  </object>
+  <object Name="Dagasha's Crucifix" Inherits="Iron Maiden">
+    <part Name="Render" DisplayName="다가샤의 십자가" RenderString="232" Tile="Furniture/chiliad-dagasha-crucifix.png" ColorString="&amp;M" DetailColor="c" />
+    <part Name="Description" Short="수정질 가시털의 가지 격자가 상징적 십자가 형상으로 뒤틀려 있습니다. 들어가는 자는 오목하게 되지 않을 수 없습니다." />
+    <stat Name="Hitpoints" Value="500" />
+    <removebuilder Name="Animated" />
+    <tag Name="ExcludeFromDynamicEncounters" />
+  </object>
+  
+  <object Name="TauNoLongerFigurine" Inherits="Random Figurine">
+    <part Name="Render" DisplayName="{{B|사파이어}} 수정 비탄의 소상" ColorString="&amp;b" DetailColor="m" Tile="Items/chiliad-tau-figurine.png" />
+    <part Name="Description" Short="유동하는 바다를 죽은 격자로 밀어내고, 타인의 꿈에 종유석처럼 침입하여 꿈꾸는 자를 증발시키는 밤의 공포의 풍부한 면을 가진 형상입니다." />
+    <part Name="Commerce" Value="300" />
+    <part Name="AddsRep" Faction="Seekers:300" />
+    <tag Name="ExcludeFromDynamicEncounters" />
+  </object>
+  <object Name="WanderingTauFigurine" Inherits="Random Figurine">
+    <part Name="Render" DisplayName="{{B|사파이어}} 방랑하는 보석의 소상" ColorString="&amp;b" DetailColor="m" Tile="Items/chiliad-tau-figurine.png" />
+    <part Name="Description" Short="모여드는 지평선 아래의 모든 언덕 마을에는 찾아온 보석에 대한 이야기가 전해집니다. 그녀에게서 많은 것을 배우거나 적게 배우지만, 넓고 빛나는 면의 초상은 한결같습니다." />
+    <part Name="Commerce" Value="300" />
+    <part Name="AddsRep" Faction="Pariahs:300" />
+    <tag Name="ExcludeFromDynamicEncounters" />
+  </object>
+  <object Name="DeadTauFigurine" Inherits="Random Figurine">
+    <part Name="Render" DisplayName="{{B|사파이어}} 꿈파쇄자의 소상" ColorString="&amp;b" DetailColor="m" Tile="Items/chiliad-dream-figurine.png" />
+    <part Name="Description" Short="수정의 복잡체가 산산이 부서지는 영원한 순간으로 묘사되어 있습니다. 조각은 정지해 있으면서 초운동적이며, 생략 속에 모든 가능성을 부호화한 뒤, 아무것도 아닌 것으로 귀결됩니다." />
+    <part Name="AddsRep" Faction="Entropic:300" />
+    <tag Name="ExcludeFromDynamicEncounters" />
+  </object>
+
+  
+  <object Name="Godling" Inherits="Creature">
+    <part Name="Render" DisplayName="기르쉬 신령" Tile="Creatures/chiliad-godling.png" ColorString="&amp;m" DetailColor="M" />
+    <part Name="Description" Short="날개, 발굽, 가시를 가진 생물이 세월의 무게에 구부정하며, 혀로 풍요롭고 서글픈 메아리를 트라라 읊조리고, 얼굴은 감정의 밝은 스펙트럼으로 빛납니다. 무지갯빛 이중 기름이 =pronouns.possessive= 반투명한 피부 아래에서 휘저어지며 3차원 띠로 흩어지는 무지개를 쏘아냅니다. 그것은 부름받지 않은 채 기다립니다." />
+    <part Name="Brain" Wanders="false" Feelings="Player:0" />
+    <part Name="ConversationScript" ConversationID="PartialGodling" />
+    <stat Name="Level" Value="20" />
+    <stat Name="Hitpoints" Value="500" />
+    <inventoryobject Blueprint="Nephal_Claw" Number="2" />
+    <part Name="Interesting" />
+    <tag Name="ExcludeFromDynamicEncounters" />
+  </object>
+  <object Name="True Godling" Inherits="Godling">
+    <part Name="Render" DisplayName="기르쉬 신령" Tile="Creatures/chiliad-true-godling.png" ColorString="&amp;m" DetailColor="M" />
+    <part Name="Description" Short="날개, 발굽, 가시를 가진 생물이 세월의 무게에 구부정하며, 혀로 풍요롭고 서글픈 메아리를 트라라 읊조리고, 얼굴은 감정의 밝은 스펙트럼으로 빛납니다. 무지갯빛 이중 기름이 =pronouns.possessive= 모자이크 피부 (=pronouns.possessive= 다중 혈통으로 프랙탈화된) 아래에서 휘저어지며 7차원 띠로 흩어지는 무지개를 쏘아냅니다. 그것은 부름받지 않은 채 기다립니다." />
+    <part Name="Brain" Wanders="false" Feelings="Player:0" />
+    <part Name="ConversationScript" ConversationID="InheritorGodling" />    
+    <tag Name="ExcludeFromDynamicEncounters" />    
+  </object>
+  <object Name="Fool of the Gyre" Inherits="BaseGyreWight">
+    <part Name="Render" DisplayName="선회의 광대" Tile="Creatures/chiliad-gyre-fool.png" DetailColor="M" />
+    <part Name="Description" Short="천 년 된 어릿광대 의상의 날씬한 형체가 춤추며, =pronouns.possessive= 아치형 모자에 매달린 작은 종들이 딩동 울립니다. 모두 또는 아무도 기다리지 않으며, =pronouns.possessive= 버려진 교단에 홀로 남아, =pronouns.subjective= =verb:speak:afterpronoun= 더 풍요로운 현실의 하부 텍스트 속에서 광대의 특권으로 말합니다." />
+    <part Name="Brain" Wanders="false" Feelings="Player:0" />
+    <part Name="ConversationScript" ConversationID="Fool" />
+    <part Name="Interesting" />
+    <tag Name="ExcludeFromDynamicEncounters" />
+  </object>
+  
+
+  
+  <object Name="Chiliad Hologram Locket" Inherits="BaseBracelet">
+    <part Name="Render" DisplayName="곰 형상 로켓" Tile="Items/chiliad-locket.png" ColorString="&amp;M" TileColor="&amp;M" DetailColor="b" />
+    <part Name="Description" Short="운석 마노의 카메오에 알 수 없는 씨족 문장이 작은 톱니바퀴와 돛으로 장식된 화려한 서체로 새겨져 있습니다." />
+    <part Name="Examiner" Complexity="1" />
+    <part Name="TinkerItem" CanDisassemble="false" CanBuild="false" />
+    <part Name="DecoyHologramEmitter" ChargeUse="5" Range="4" Stationary="true" WorksOnSelf="true" Blueprint="Starshiib Hologram" />
+    <part Name="EnergyCellSocket" SlotType="EnergyCell" ChanceSlotted="100" />
+    <tag Name="ExcludeFromDynamicEncounters" />    
+  </object>
+  <object Name="Starshiib Hologram" Inherits="MountedFurniture">
+    <part Name="Render" DisplayName="외계인의 홀로그램" Tile="Creatures/chiliad-starshiib.png" RenderLayer="6" RenderString="A" ColorString="&amp;y" DetailColor="k" Occluding="false" />
+    <part Name="Description" Short="방해석 나사로 줄어든 가시가 생물을 육각 격자로 표시하고, 가톨릭적 표현력의 귀가 쿼크처럼 위아래로 펄럭입니다. 제독의 자이로스코프 코트가 정지한 채, 빛 조각의 주변부는 삶의 미세한 움직임으로 째깍거립니다." />
+    <part Name="Physics" Weight="12000" Takeable="false" Solid="false" />
+    <stat Name="Hitpoints" Value="1200" />    
+    <part Name="HologramMaterial" />
+    <part Name="HologramInvulnerability" />
+    <tag Name="HologramOf" Value="an outworlder" />
+    <tag Name="IgnoresGravity" />
+    <tag Name="ExcludeFromDynamicEncounters" />
+  </object>
+  <object Name="Amaranthine Dust" Inherits="Preservable">
+    <part Name="Render" DisplayName="{{r|불멸의 먼지}}" RenderString="%" ColorString="&amp;r" TileColor="&amp;y" DetailColor="r" RenderLayer="5" Tile="Items/sw_paste.bmp" />
+    <part Name="Description" Short="어둠의 수정이 산산이 부서지고 먼지로 마모되었습니다; 백만 개의 자아 세계가 무너졌습니다." />
+    <part Name="Commerce" Value="15" />    
+    <part Name="PreparedCookingIngredient" type="ego" charges="1" />    
+  </object>
+  <object Name="LoveAndFearCompleted" Inherits="Book">
+    <part Name="Render" DisplayName="{{W|베이 라의 사랑 이야기}}" Tile="Items/sw_unfurled_scroll2.bmp" ColorString="&amp;R" TileColor="&amp;y" DetailColor="R" />
+    <part Name="Description" Short="몇 장의 낡고 세월에 얼룩진 양피지가 일종의 접착제로 가장자리가 묶여 있습니다." />
+    <part Name="Book" ID="LoveinBeyLah" />
+    <part Name="Commerce" Value="200" />
+    <tag Name="ExcludeFromDynamicEncounters" />
+  </object>
+  <object Name="LoveAndFearUncompleted" Inherits="Book">
+    <part Name="Render" DisplayName="{{W|베이 라의 공포 이야기}}" RenderString="=" Tile="Items/sw_unfurled_scroll2.bmp" ColorString="&amp;K" TileColor="&amp;y" DetailColor="K" />
+    <part Name="Description" Short="몇 장의 낡고 세월에 얼룩진 양피지가 일종의 접착제로 가장자리가 묶여 있습니다." />
+    <part Name="Book" ID="FearinBeyLah" />
+    <part Name="Commerce" Value="200" />
+    <tag Name="ExcludeFromDynamicEncounters" />
+  </object>
+  
+  
+  <object Name="BaseChiliadCreatureStats">
+    <stat Name="Level" Value="6" />
+    <stat Name="Hitpoints" Value="25" />
+    <stat Name="AV" Value="2" />
+    <builder Name="CreatureRegionSpice" DetailColor="g,G,b,B,w,W,m,M,r,R,y,Y,K" />
+    <stag Name="Chiliad" />
+    <tag Name="BaseObject" Value="*noinherit" />
+    <tag Name="ExcludeFromDynamicEncounters" />
+  </object>
+
+  <object Name="Chiliad Creature Antelopes" Inherits="BaseAntelope">
+    <part Name="Render" DisplayName="=creatureRegionAdjective= 쿠두" Tile="Creatures/chiliad-kudu.png" />
+    <part Name="Description" Short="당당히 들어올린 머리에서 거대한 나선형 뿔이 솟아 있습니다." />
+    <inventoryobject Blueprint="Chiliad Creature Hoof" Number="4" />    
+    <mixin Name="BaseChiliadCreatureStats" />
+  </object>
+  <object Name="Chiliad Creature Apes" Inherits="BaseApe">
+    <part Name="Render" DisplayName="=creatureRegionAdjective= 유인원" Tile="Creatures/chiliad-ape.png" />
+    <part Name="Description" Short="=pronouns.Subjective= =verb:squat:afterpronoun= 겸손한 안식으로 낮게 쪼그리고, 색깔 있는 털 뭉치가 =pronouns.possessive= 볼에서 돋아납니다." />    
+    <inventoryobject Blueprint="Chiliad Creature Fist" Number="2" />
+    <mixin Name="BaseChiliadCreatureStats" />
+  </object>
+  <object Name="Chiliad Creature Arachnids" Inherits="BaseSpider">
+    <part Name="Render" DisplayName="=creatureRegionAdjective= 전갈" Tile="Creatures/chiliad-scorpion.png" />
+    <part Name="Description" Short="빛나는 갑각이 흙바닥에 스치고, 날카로운 꼬리 가시가 완벽한 기하학으로 휘어져 있습니다." />    
+    <mutation Name="Stinger" Variant="Stinger Poison" Level="2" />
+    <inventoryobject Blueprint="Chiliad Creature Bite" Number="1" />
+    <inventoryobject Blueprint="Chiliad Creature Pincer" Number="2" />
+    <mixin Name="BaseChiliadCreatureStats" />
+  </object>
+  <object Name="Chiliad Creature Baboons" Inherits="BaseBaboon">
+    <part Name="Render" DisplayName="개코원숭이 =creatureRegionNoun=" Tile="Creatures/chiliad-baboon.png" />
+    <part Name="Description" Short="털 돋은 능선이 긴 소금바람을 받으며, 재주 좋은 꼬리가 땅을 두드립니다." />    
+    <inventoryobject Blueprint="Chiliad Creature Bite" Number="1" />
+    <mixin Name="BaseChiliadCreatureStats" />
+  </object>
+  <object Name="Chiliad Creature Baetyls" Inherits="BaseRobot">
+    <part Name="Render" DisplayName="=creatureRegionAdjective= 바이틸" Tile="Creatures/chiliad-baetyl.png" />
+    <part Name="Body" Anatomy="HoverRobot" />
+    <part Name="Brain" Factions="Baetyls-100" />
+    <part Name="Description" Short="이끼 블라우스를 입은 수정 구체가 숙련된 관찰 속에 쪼그리고 앉아 있습니다." />
+    <part Name="PartsGas" ChargeUse="0" Radius="1" Chance="25" WorksOnSelf="true" NameForStatus="ParticulateRepulsion" />    
+    <inventoryobject Blueprint="Chiliad Creature Spade" Number="1" />
+    <mixin Name="BaseChiliadCreatureStats" />
+  </object>
+  <object Name="Chiliad Creature Barathrumites" Inherits="Urshiib">
+    <part Name="Brain" Factions="Barathrumites-100" />
+    <part Name="Render" DisplayName="우르쉬브 =creatureRegionNoun=" Tile="Creatures/chiliad-urshiib.png" />
+    <part Name="Description" Short="=pronouns.Possessive= 어깨가 축 처지고 =pronouns.possessive= 가시털 끝이 어두워지기 시작했습니다." />   
+    <mixin Name="BaseChiliadCreatureStats" />
+  </object>
+  <object Name="Chiliad Creature Bears" Inherits="BaseBear">
+    <part Name="Render" DisplayName="=creatureRegionAdjective= 곰" Tile="Creatures/chiliad-bear.png" />
+    <part Name="Description" Short="커다란 털 날개가 =pronouns.possessive= 귀의 벌레를 쫓다가, 넓은 곰 등 위에 내려앉습니다." />    
+    <mutation Name="Wings" Level="2" />
+    <inventoryobject Blueprint="Chiliad Creature Bite" Number="1" />
+    <inventoryobject Blueprint="Chiliad Creature Claw" Number="2" />    
+    <mixin Name="BaseChiliadCreatureStats" />
+  </object>
+  <object Name="Chiliad Creature Birds" Inherits="BaseBird">
+    <part Name="Render" DisplayName="=creatureRegionAdjective= 모아" Tile="Creatures/chiliad-bird.png" />
+    <part Name="Description" Short="상당한 길이의 목이 떨며 각다귀를 쫓고, =pronouns.possessive= 바스락거리는 주둥이가 낙오자를 물어뜯습니다." />    
+    <inventoryobject Blueprint="Chiliad Creature Peck" Number="1" />
+    <mixin Name="BaseChiliadCreatureStats" />
+  </object>
+  <object Name="Chiliad Creature Cannibals" Inherits="BaseCannibal">
+    <part Name="Render" DisplayName="=creatureRegionAdjective= 식인종" Tile="Creatures/chiliad-cannibal.png" />
+    <part Name="Description" Short="짙은 공기의 무게가 =pronouns.objective= 를 =pronouns.possessive= 땅딸막한 다리 위로 내리누릅니다." />    
+    <mixin Name="BaseChiliadCreatureStats" />
+  </object>
+  <object Name="Chiliad Creature Cats" Inherits="BaseCat">
+    <part Name="Render" DisplayName="=creatureRegionAdjective= 고양이" Tile="Creatures/chiliad-cat.png" />
+    <part Name="Description" Short="규칙적인 가르랑거림이 끊임없는 인내로 =pronouns.possessive= 후두에서 흘러나옵니다." />    
+    <inventoryobject Blueprint="Chiliad Creature Claw" Number="2" />
+    <inventoryobject Blueprint="Chiliad Creature Bite" Number="1" />
+    <mixin Name="BaseChiliadCreatureStats" />    
+  </object>
+  <object Name="Chiliad Creature Chavvah" Inherits="Creature">
+    <part Name="Render" DisplayName="=creatureRegionAdjective= 차임" Tile="Creatures/chiliad-chime.png" />
+    <part Name="Description" Short="안절부절못하는 수정이 =pronouns.possessive= 회전과 기울임으로 주변 광선을 굴절시킵니다." />
+    <part Name="Brain" Factions="Chavvah-100" />
+    <part Name="Body" Anatomy="HumanoidOctohedron" />
+    <part Name="Corpse" CorpseChance="100" CorpseBlueprint="GlitterGas" />
+    <stat Name="Strength" sValue="6,1d3,(t-1)d1" />
+    <stat Name="Agility" sValue="6,1d3,(t-1)d1" />
+    <stat Name="Toughness" sValue="6,1d3,(t-1)d1" />
+    <stat Name="Intelligence" sValue="18,1d4,(t-1)d2" />
+    <stat Name="Willpower" sValue="18,1d4,(t-1)d2" />
+    <stat Name="Ego" sValue="7,1d3,(t-1)d2-1" />
+    <intproperty Name="Bleeds" Value="0" />
+    <intproperty Name="Humanoid" Value="0" />    
+    <tag Name="Gender" Value="nonspecific" />
+    <part Name="ConversationScript" ConversationID="Crystals" />
+    <xtagTextFragments PoeticFeatures="굴절하는 피부, 프리즘 손가락, 찬란한 빛" />
+    <tag Name="Species" Value="crystal" />
+    <inventoryobject Blueprint="Chiliad Creature Prism Point" Number="1" />
+    <mixin Name="BaseChiliadCreatureStats" />
+  </object> 
+  <object Name="Chiliad Creature Consortium" Inherits="SapientMutatedVine">
+    <part Name="Render" DisplayName="식물 연합 =creatureRegionNoun=" />
+    <part Name="Description" Short="식물이 다른 존재의 기척에 부풀어 오르며 부드러운 빛 속에서 일광욕합니다." />
+    <part Name="Brain" Factions="Consortium-100" />
+    <builder Name="RandomTile" Tiles="Creatures/sw_yurl.bmp,Creatures/sw_flower.bmp,Creatures/sw_glowpad.bmp,Items/sw_pottedplant_ornate_2.bmp,Creatures/sw_tillifergaewicz.bmp,Creatures/sw_santalalotze.bmp" />
+    <builder Name="CreatureRegionSpice" TileColor="&amp;g" DetailColor="G,b,B,w,W,m,M,r,R,y,Y,K" />
+    <mixin Name="BaseChiliadCreatureStats" />
+  </object>
+  <object Name="Chiliad Creature Crabs" Inherits="BaseCrab">
+    <part Name="Render" DisplayName="=creatureRegionAdjective= 게" Tile="Creatures/chiliad-crab.png" />
+    <part Name="Description" Short="=pronouns.Subjective= =verb:hover:afterpronoun= 땅에 바짝 붙어 풀을 쌍으로 잘라냅니다." />    
+    <inventoryobject Blueprint="Chiliad Creature Pincer" Number="1" />
+    <mixin Name="BaseChiliadCreatureStats" />
+  </object>
+  <object Name="Chiliad Creature Cragmensch" Inherits="Cragmensch">
+    <part Name="Render" DisplayName="크래그멘슈 =creatureRegionNoun=" Tile="Creatures/chiliad-cragmensch.png" />
+    <part Name="Description" Short="바위 선반이 철사, 숄, 구슬로 =pronouns.reflexive= 를 꾸몄습니다." />    
+    <stat Name="Speed" Value="40" />
+    <stat Name="AV" Value="15" />
+    <mixin Name="BaseChiliadCreatureStats" />
+  </object>
+  <object Name="Chiliad Creature Daughters" Inherits="Daughter of Exile">
+    <part Name="Render" DisplayName="=creatureRegionAdjective= 딸" Tile="Creatures/chiliad-daughter.png" />
+    <part Name="Description" Short="흙이 =pronouns.possessive= 수도복을 더럽히고 녹이 =pronouns.possessive= 렌치에 가루를 뿌립니다." />    
+    <removepart Name="AIPilgrim" />
+    <removepart Name="SpawnWithEffect" />
+    <mixin Name="BaseChiliadCreatureStats" />
+  </object>
+  <object Name="Chiliad Creature Dogs" Inherits="BaseDog">
+    <part Name="Render" DisplayName="=creatureRegionAdjective= 개" Tile="Creatures/chiliad-dog.png" />
+    <part Name="Description" Short="초승달 귀가 먼 울음소리에 쫑긋하고 =pronouns.subjective= =verb:sniff:afterpronoun= 바람 냄새를 맡습니다." />    
+    <inventoryobject Blueprint="Chiliad Creature Bite" Number="1" />
+    <builder Name="CreatureRegionSpice" DetailColor="y" />
+    <mixin Name="BaseChiliadCreatureStats" />
+  </object>
+  <object Name="Chiliad Creature Dromads" Inherits="Dromad">
+    <part Name="Render" DisplayName="드로마드 =creatureRegionNoun=" Tile="Creatures/chiliad-dromad.png" />
+    <part Name="Description" Short="=pronouns.Subjective= =verb:waggle:afterpronoun= =pronouns.possessive= 목을 바람의 뻣뻣한 리듬에 맞춰 흔들며 =pronouns.possessive= 혹을 앞으로 으쓱합니다." />    
+    <mixin Name="BaseChiliadCreatureStats" />
+  </object>
+  <object Name="Chiliad Creature Equines" Inherits="BaseEquine">
+    <part Name="Render" DisplayName="=creatureRegionAdjective= 얼룩말" Tile="Creatures/chiliad-zebra.png" />
+    <part Name="Description" Short="=pronouns.Possessive= 줄무늬 옆구리가 시선을 끌었다가 어지럽힙니다." />    
+    <inventoryobject Blueprint="Chiliad Creature Hoof" Number="4" />
+    <builder Name="CreatureRegionSpice" DetailColor="y" />
+    <mixin Name="BaseChiliadCreatureStats" />
+  </object>
+  <object Name="Chiliad Creature Farmers" Inherits="BaseFarmer">
+    <part Name="Render" DisplayName="=creatureRegionAdjective= 농부" Tile="Creatures/chiliad-farmer.png" />    
+    <part Name="Description" Short="=pronouns.Possessive= 눈이 다져진 흙을 꿰뚫어 보고 =pronouns.subjective= =verb:rub:afterpronoun= =pronouns.possessive= 손가락 사이에서 점토를 비빕니다." />
+    <removepart Name="RandomTile" />
+    <stat Name="Level" Value="18" />
+    <mixin Name="BaseChiliadCreatureStats" />
+  </object>
+  <object Name="Chiliad Creature Wardens" Inherits="NPC">
+    <part Name="Render" DisplayName="=creatureRegionAdjective= 관리인" Tile="Creatures/chiliad-warden.png" />
+    <part Name="Brain" Factions="Wardens-100" />
+    <part Name="Description" Short="긴장된 팔이 =pronouns.possessive= 무기를 받치고 있으며, =pronouns.subjective= =verb:hold:afterpronoun= 신중한 의심의 눈빛으로 당신의 시선을 맞추고 있습니다." />    
+    <mixin Name="BaseChiliadCreatureStats" />
+  </object>
+  <object Name="Chiliad Creature Fish" Inherits="BaseFish">
+    <part Name="Render" DisplayName="=creatureRegionAdjective= 물고기" Tile="Creatures/chiliad-fish.png" />
+    <part Name="Description" Short="화려한 부드러운 빛줄기가 =pronouns.possessive= 몸에서 반사되고, 호기심 어린 눈이 =pronouns.possessive= 납작한 머리에서 내다보고 있습니다." />    
+    <inventoryobject Blueprint="Chiliad Creature Bite" Number="1" />
+    <mixin Name="BaseChiliadCreatureStats" />
+  </object>
+  <object Name="Chiliad Creature Flowers" Inherits="SapientMutatedFlower">
+    <part Name="Render" DisplayName="꽃피는 =creatureRegionNoun=" Tile="Creatures/chiliad-flower.png" />
+    <part Name="Description" Short="바람에 이끌린 암술머리와 암술대가 당당한 꽃봉오리의 틈새에서 뻗어 나옵니다." />    
+    <inventoryobject Blueprint="Chiliad Creature Pistil" Number="1" />
+    <builder Name="CreatureRegionSpice" TileColor="G,b,B,w,W,m,M,r,R,y,Y,K" DetailColor="g" />
+    <mixin Name="BaseChiliadCreatureStats" />
+  </object>
+  <object Name="Chiliad Creature Frogs" Inherits="BaseFrog">
+    <part Name="Render" DisplayName="=creatureRegionAdjective= 개구리" Tile="Creatures/chiliad-frog.png" />
+    <part Name="Description" Short="뿌리 내린 진흙의 작은 생물이 자랑스럽게 뛰어오릅니다." />    
+    <inventoryobject Blueprint="Chiliad Creature Bite" Number="1" />
+    <mixin Name="BaseChiliadCreatureStats" />
+  </object>
+  <object Name="Chiliad Creature Fungi" Inherits="SapientMutatedFungus">
+    <part Name="Render" DisplayName="=creatureRegionAdjective= 균류" Tile="Creatures/chiliad-fungus.png" />
+    <part Name="Description" Short="밝은 균사가 땅에서 진흙을 핥아 올립니다." />    
+    <inventoryobject Blueprint="Chiliad Creature Nodule" Number="2" />
+    <mixin Name="BaseChiliadCreatureStats" />
+  </object>
+  <object Name="Chiliad Creature Girsh" Inherits="Girshling">
+    <part Name="Render" DisplayName="=creatureRegionAdjective= 기르슐링" Tile="Creatures/chiliad-girshling.png" />
+    <part Name="Brain" Factions="Girsh-100" />
+    <part Name="Description" Short="별 난초의 침이 =pronouns.possessive= 송곳니 끝에 고여 땅으로 떨어집니다." />    
+    <inventoryobject Blueprint="Chiliad Creature Pincer" Number="2" />
+    <inventoryobject Blueprint="Chiliad Creature Fangs" Number="1" />
+    <mixin Name="BaseChiliadCreatureStats" />
+  </object>
+  <object Name="Chiliad Creature Goatfolk" Inherits="Goatfolk">
+    <part Name="Render" DisplayName="염소인 =creatureRegionNoun=" Tile="Creatures/chiliad-goatfolk.png" />
+    <part Name="Description" Short="=pronouns.Subjective= =verb:stand:afterpronoun= 발굽으로 아치를 그리며 서서 하늘을 향해 자랑스럽게 울부짖습니다." />
+    <xtagTextFragments PoeticFeatures="근육질 가슴, 나선형 뿔, 깊은 으르렁거림" />
+    <mixin Name="BaseChiliadCreatureStats" />
+  </object>
+  <object Name="Chiliad Creature Prey" Inherits="BaseGoat">
+    <part Name="Render" DisplayName="=creatureRegionAdjective= 염소" Tile="Creatures/chiliad-goat.png" />
+    <part Name="Description" Short="벌레가 들끓는 지저분한 털의 엉덩이가 평화롭고 염소다운 리듬으로 흔들립니다." />    
+    <inventoryobject Blueprint="Chiliad Creature Horns" Number="1" />
+    <mixin Name="BaseChiliadCreatureStats" />
+  </object>
+  <object Name="Chiliad Creature Gyre Wights" Inherits="BaseGyreWight">
+    <part Name="Render" DisplayName="선회의 =creatureRegionNoun=" Tile="Creatures/chiliad-gyrewight.png" />
+    <part Name="Description" Short="등 길이의 스누드가 변성적 변덕으로 펄럭이며, 죽음/생명의 시종이 별과 고향의 만가에 맞춰 뛰어다닙니다." />    
+    <mixin Name="BaseChiliadCreatureStats" />
+  </object>
+  <object Name="Chiliad Creature Hermits" Inherits="BaseHumanoid">
+    <part Name="Render" DisplayName="=creatureRegionAdjective= 은둔자" Tile="Creatures/chiliad-hermit.png" />    
+    <part Name="Description" Short="다시마로 덮인 유리의 회수된 수족관 거품이 은둔자를 깨어 있는 세계로부터 격리시킵니다." />
+    <part Name="Brain" Factions="Hermits-100" />
+    <mixin Name="BaseChiliadCreatureStats" />
+  </object>
+  <object Name="Chiliad Creature Entropic" Inherits="BaseStar">
+    <part Name="Render" DisplayName="엔트로피 =creatureRegionNoun=" Tile="Creatures/chiliad-entropic-being.png" />
+    <part Name="Description" Short="문명의 연골로 만들어진 가시들이 바깥 차원의 무역풍에 의해 불쾌한 형상으로 조각되었습니다." />
+    <part Name="Brain" Factions="Entropic-100" />
+    <inventoryobject Blueprint="Chiliad Creature Bite Arm" Number="5" />
+    <mixin Name="BaseChiliadCreatureStats" />
+  </object>
+  <object Name="Chiliad Creature Hindren" Inherits="BaseHindren">
+    <part Name="Render" DisplayName="힌드렌 =creatureRegionNoun=" Tile="Creatures/chiliad-hindren.png" />
+    <part Name="Description" Short="곱슬머리 장식이 왜소한 뿔 위로 쏟아지며, =pronouns.possessive= 뒷다리 엉덩이에는 대부분의 동물보다 긴장감이 적습니다." />
+    <part Name="Brain" Factions="Hindren-100" />
+    <builder Name="CreatureRegionSpice" TileColor="g,G,b,B,W,m,M,r,R,y,Y,K" DetailColor="w" />
+    <mixin Name="BaseChiliadCreatureStats" />
+  </object>
+  <object Name="Chiliad Creature Insects" Inherits="BaseInsect">
+    <part Name="Render" DisplayName="=creatureRegionAdjective= 파리" Tile="Creatures/chiliad-insect.png" />
+    <part Name="Description" Short="종이같은 키틴질 모자이크 한 쌍이 두꺼운 공기를 치며, 유리 같은 구형 마디가 뒤에서 딸깍거립니다." />
+    <mutation Name="Wings" Level="10" CapOverride="10" />    
+    <inventoryobject Blueprint="Chiliad Creature Bite" Number="1" />
+    <mixin Name="BaseChiliadCreatureStats" />
+  </object>
+  <object Name="Chiliad Creature Issachari" Inherits="BaseIssachari">
+    <part Name="Render" DisplayName="Issachari =creatureRegionNoun=" Tile="Creatures/chiliad-issachari.png" />
+    <part Name="Description" Short="바람이 술 달린 타우브와 목장식을 인간 형체에 밀착시킵니다. 직물은 소금과 별이 새겨진 하늘의 무늬와 운율을 맞추도록 수놓아져 있습니다." />    
+    <mixin Name="BaseChiliadCreatureStats" />
+  </object>
+  <object Name="Chiliad Creature Mechanimists" Inherits="Mechanimist">
+    <part Name="Render" DisplayName="메카니미스트 =creatureRegionNoun=" Tile="Creatures/chiliad-mechanimist.png" />
+    <part Name="Description" Short="크로마틱 교회의 다이오드 두건을 쓰고 있지만, =pronouns.possessive= 야외 예복에는 의례적 딱딱함이 전혀 없습니다." />        
+    <mixin Name="BaseChiliadCreatureStats" />
+  </object>
+  <object Name="Chiliad Creature Merchants" Inherits="BaseMerchant">
+    <part Name="Render" DisplayName="=creatureRegionAdjective= 상인" Tile="Creatures/chiliad-merchant.png" />
+    <part Name="Description" Short="오드룸 방식의 삼중 주머니 가방이 =pronouns.possessive= 등에 땀으로 눌려 붙어 있습니다." />    
+    <mixin Name="BaseChiliadCreatureStats" />
+  </object>
+  <object Name="Chiliad Creature Mollusks" Inherits="BaseClam">
+    <part Name="Render" DisplayName="=creatureRegionAdjective= 조개" Tile="Creatures/chiliad-mollusk.png" />
+    <part Name="Description" Short="도끼 모양의 두툼한 조직이 기계로 깎인 이매패 껍데기 밖으로 쏟아져 나옵니다." />    
+    <inventoryobject Blueprint="Chiliad Creature Muscular Foot" Number="1" />
+    <mixin Name="BaseChiliadCreatureStats" />
+  </object>
+  <object Name="Chiliad Creature Mopango" Inherits="BaseMopango">
+    <part Name="Render" DisplayName="모팡고 =creatureRegionNoun=" Tile="Creatures/chiliad-mopango.png" />    
+    <part Name="Description" Short="부드러운 내면의 빛이 =pronouns.possessive= 멍에 같은 비늘에서 방사되어 =pronouns.possessive= 목 주위의 주름진 펠레린을 후광처럼 감쌉니다." />
+    <part Name="Brain" Factions="Mopango-100" />
+    <mixin Name="BaseChiliadCreatureStats" />
+  </object>
+  <object Name="Chiliad Creature Strangers" Inherits="BaseHumanoid">
+    <part Name="Render" DisplayName="수수께끼의 =creatureRegionNoun=" Tile="Creatures/chiliad-stranger.png" />
+    <part Name="Brain" Factions="Strangers-100" />
+    <part Name="Description" Short="=pronouns.Possessive= 술 달린 망토(잊혀진 강가에서 엮은)가 주의 깊은 고요의 가냘픈 자세를 돋보이게 합니다." />    
+    <mixin Name="BaseChiliadCreatureStats" />
+  </object>
+  <object Name="Chiliad Creature Naphtaali" Inherits="BaseNaphtaali">
+    <part Name="Render" DisplayName="Naphtaali =creatureRegionNoun=" Tile="Creatures/chiliad-naphtaali.png" />
+    <part Name="Description" Short="=pronouns.Possessive= 이끼 털이 두텁게 자라(심지어 열매도 맺으며), 밝은 청록색 눈이 =pronouns.possessive= 미냔의 똑같은 가면 속에서 내다봅니다." />    
+    <mixin Name="BaseChiliadCreatureStats" />
+  </object>
+  <object Name="Chiliad Creature Oozes" Inherits="BaseOoze">
+    <part Name="Render" DisplayName="=creatureRegionAdjective= 점액체" Tile="Creatures/chiliad-ooze.png" />
+    <part Name="Description" Short="유리 막에 갇힌 점성 흐름에 의해 유연한 거품이 공중에 떠 있습니다." />    
+    <inventoryobject Blueprint="Chiliad Creature Pseudopod" Number="4" />
+    <mixin Name="BaseChiliadCreatureStats" />
+  </object>
+  <object Name="Chiliad Creature Templar" Inherits="Templar">
+    <part Name="Render" DisplayName="템플러 =creatureRegionNoun=" Tile="Creatures/chiliad-templar.png" />
+    <part Name="Description" Short="천 겹에 걸쳐 두드리고 닦은 쇠사슬 갑옷이 운동 에너지의 세월로 기사를 짓누릅니다. =pronouns.possessive= 투구에 새겨진 빛바랜 마름모꼴은 끈질긴 형이상학을 이어갑니다." />    
+    <mixin Name="BaseChiliadCreatureStats" />
+  </object>
+  <object Name="Chiliad Creature Roots" Inherits="MutatedRoots">
+    <part Name="Render" DisplayName="=creatureRegionAdjective= 뿌리" Tile="Creatures/chiliad-root.png" />
+    <part Name="Brain" Factions="Roots-100" />
+    <part Name="Description" Short="거꾸로 된 스펀지 같은 조직의 나선이 어딘가 꽃 피는 지하 식물을 위해 지표의 공기를 맛봅니다." />    
+    <inventoryobject Blueprint="Chiliad Creature Strangle" Number="2" />
+    <mixin Name="BaseChiliadCreatureStats" />
+  </object>
+  <object Name="Chiliad Creature Snapjaws" Inherits="Snapjaw">
+    <part Name="Render" DisplayName="스냅조 =creatureRegionNoun=" Tile="Creatures/chiliad-snapjaw.png" />
+    <part Name="Description" Short="막대기와 뾰족한 어깨 갑옷이 =pronouns.possessive= 털 달린 주둥이 각도에 맞춰져 있으며, =pronouns.possessive= 귀가 묘하게 익숙한 기쁨으로 씰룩입니다." />    
+    <mixin Name="BaseChiliadCreatureStats" />
+  </object>
+  <object Name="Chiliad Creature Robots" Inherits="BaseRobot">
+    <part Name="Render" DisplayName="기계 =creatureRegionNoun=" Tile="Creatures/chiliad-robot.png" />
+    <part Name="Description" Short="어깨 레이더가 달 시간에 맞춰 생동하는 견장처럼 돌아가며, =pronouns.possessive= 통 부츠가 기계적 걸음걸이로 종종걸음칩니다." />    
+    <mixin Name="BaseChiliadCreatureStats" />
+  </object>
+  <object Name="Chiliad Creature Robots Random" Inherits="BaseRobot">
+    <part Name="RobotSpawner" Village="true" />
+    <mixin Name="BaseChiliadCreatureStats" />
+  </object>
+  <object Name="Chiliad Creature Succulents" Inherits="MutatedSucculent">
+    <part Name="Render" DisplayName="=creatureRegionAdjective= 선인장" Tile="Creatures/chiliad-succulent.png" />
+    <part Name="Description" Short="홈이 파인 팔들이 흔들리며 두꺼운 공기에서 수분을 빨아들이고, =pronouns.possessive= 토기 화분의 금에서는 성장에 대한 갈망이 드러납니다." />    
+    <inventoryobject Blueprint="Chiliad Creature Spines" Number="2" />
+    <builder Name="CreatureRegionSpice" TileColor="&amp;g" DetailColor="G,b,B,w,W,m,M,r,R,y,Y,K" />
+    <mixin Name="BaseChiliadCreatureStats" />
+  </object>
+  <object Name="Chiliad Creature Svardym" Inherits="Svardym">
+    <part Name="Render" DisplayName="스바르딤 =creatureRegionNoun=" Tile="Creatures/chiliad-svardym.png" />
+    <part Name="Description" Short="지친 세월의 무게가 개구리 종족의 고막을 처지게 하여 잎이 젖은 대지에 묶어놓았습니다." />    
+    <mixin Name="BaseChiliadCreatureStats" />
+  </object>
+  <object Name="Chiliad Creature Swine" Inherits="BaseSwine">
+    <part Name="Render" DisplayName="=creatureRegionAdjective= 돼지" Tile="Creatures/chiliad-swine.png" />
+    <part Name="Description" Short="마을 생활이 돼지를 기울게 하고 =pronouns.possessive= 넓적다리의 털을 닳게 했습니다. 또한, =pronouns.possessive= 앞발굽은 금속 도구 사용의 흔적으로 벌어져 있습니다." />    
+    <inventoryobject Blueprint="Chiliad Creature Bite" Number="1" />
+    <mixin Name="BaseChiliadCreatureStats" />
+  </object>
+  <object Name="Chiliad Creature Tortoises" Inherits="BaseTortoise">
+    <part Name="Render" DisplayName="=creatureRegionAdjective= 거북" Tile="Creatures/chiliad-tortoise.png" />
+    <part Name="Description" Short="유구한 세월의 바람 선반이 복갑을 오래되고 매끄러운 돌이 될 때까지 갈아내고, 껍질 달린 친구에게 시큼한 미소를 남겼습니다." />    
+    <inventoryobject Blueprint="Chiliad Creature Bite" Number="1" />
+    <mixin Name="BaseChiliadCreatureStats" />
+  </object>
+  <object Name="Chiliad Creature Trees" Inherits="SapientMutatedTree">
+    <part Name="Render" DisplayName="그늘짓는 =creatureRegionNoun=" Tile="Creatures/chiliad-tree.png" />
+    <part Name="Description" Short="=pronouns.Subjective= =verb:have:afterpronoun= 정성스러운 손질과 수분 보충을 받았으며, =pronouns.possessive= 화분은 하품달의 양식으로 다시 유약칠되었습니다." />    
+    <inventoryobject Blueprint="Chiliad Creature Bark" Number="2" />
+    <stat Name="Hitpoints" Value="200" />
+    <builder Name="CreatureRegionSpice" TileColor="G,b,B,w,W,m,M,r,R,y,Y,K" DetailColor="g" />
+    <mixin Name="BaseChiliadCreatureStats" />
+  </object>
+  <object Name="Chiliad Creature Trolls" Inherits="Troll">
+    <part Name="Render" DisplayName="트롤 =creatureRegionNoun=" Tile="Creatures/chiliad-troll.png" />
+    <part Name="Description" Short="경화된 점토의 바위 존재는 =pronouns.possessive= 어깨와 등의 압력 균열 사이로 머리카락과 풀이 자라고 있습니다." />    
+    <mixin Name="BaseChiliadCreatureStats" />
+  </object>
+  <object Name="Chiliad Creature Unshelled Reptiles" Inherits="BaseReptile">
+    <part Name="Render" DisplayName="=creatureRegionAdjective= 도마뱀" Tile="Creatures/chiliad-reptile.png" />
+    <part Name="Description" Short="기어다니는 생물이 작은 세계의 골짜기와 틈새를 누비기 위해 낮게 웅크립니다." />    
+    <inventoryobject Blueprint="Chiliad Creature Bite" Number="1" />
+    <mixin Name="BaseChiliadCreatureStats" />
+  </object>
+  <object Name="Chiliad Creature Urchins" Inherits="BaseUrchin">
+    <part Name="Render" DisplayName="가시돋친 =creatureRegionNoun=" Tile="Creatures/chiliad-urchin.png" />
+    <part Name="Description" Short="형형색색의 가시들이 반죽 같고 햇볕에 바랜 구체 위에 톱니바퀴 이빨처럼 펼쳐져 있습니다." />    
+    <inventoryobject Blueprint="Chiliad Creature Body Spines" Number="1" />
+    <mixin Name="BaseChiliadCreatureStats" />
+  </object>
+  <object Name="Chiliad Creature Vines" Inherits="SapientMutatedVine">
+    <part Name="Render" DisplayName="=creatureRegionAdjective= 덩굴" Tile="Creatures/chiliad-vine.png" />
+    <part Name="Description" Short="두 개의 침 뱉는 잎 부리가 서로의 목을 다듬으며 잡초를 씨주머니로 씹어 만듭니다." />    
+    <inventoryobject Blueprint="Chiliad Creature Strangle" Number="2" />
+    <builder Name="CreatureRegionSpice" TileColor="&amp;g" DetailColor="G,b,B,w,W,m,M,r,R,y,Y,K" />
+    <mutation Name="TwoHeaded" Level="3" />
+    <mixin Name="BaseChiliadCreatureStats" />
+  </object>
+  <object Name="Chiliad Creature Water" Inherits="NPC">
+    <part Name="Render" DisplayName="=creatureRegionAdjective= 남작" Tile="Creatures/chiliad-water-baron.png" />
+    <part Name="Brain" Factions="Water-100" />
+    <part Name="Description" Short="앉는 기술이 양자 색역학의 뉘앙스로 부유한 계급 사이에서 실천됩니다. 여기서 =pronouns.subjective= =verb:perch:afterpronoun= =pronouns.possessive= 가마 보행기 위에 앉아 =verb:drink:afterpronoun= 풍요로운 영역을 마셔들입니다." />    
+    <mixin Name="BaseChiliadCreatureStats" />
+  </object>
+  <object Name="Chiliad Creature Winged Mammals" Inherits="BaseBat">
+    <part Name="Render" DisplayName="=creatureRegionAdjective= 박쥐" Tile="Creatures/chiliad-bat.png" />
+    <part Name="Description" Short="큰 눈의 박쥐가 사체로 어두워진 공간에서 성가시게 날갯짓합니다." />    
+    <inventoryobject Blueprint="Chiliad Creature Bite" Number="1" />
+    <mixin Name="BaseChiliadCreatureStats" />
+  </object>
+  <object Name="Chiliad Creature Worms" Inherits="BaseWorm">
+    <part Name="Render" DisplayName="=creatureRegionAdjective= 벌레" Tile="Creatures/chiliad-worm.png" />
+    <part Name="Description" Short="무자비한 시간이 =pronouns.possessive= 환절을 가장 가느다란 형태로 굴리고 마디들을 하나로 뭉개버렸습니다. 녹아내리는 침의 줄이 =pronouns.possessive= 구전부와 땅을 잇고 있습니다." />    
+    <inventoryobject Blueprint="Chiliad Creature Bands" Number="1" />
+    <mixin Name="BaseChiliadCreatureStats" />
+  </object>
+  <object Name="Chiliad Creature Seekers" Inherits="BaseSightless">
+    <part Name="Render" DisplayName="Sightless Way의 =creatureRegionNoun=" Tile="Creatures/chiliad-seeker.png" />
+    <part Name="Description" Short="후기 추적자 패션의 옆으로 흐르는 리본이 습기 찬 공기 속에서 빙글빙글 돌며, 몸짓 없는 흥 소리와 함께 =pronouns.subjective= =verb:brush:afterpronoun= =pronouns.possessive= 두건의 먼지를 털어냅니다." />    
+    <mixin Name="BaseChiliadCreatureStats" />
+  </object>
+  <object Name="Chiliad Creature Pariahs" Inherits="Pariah">
+    <part Name="Render" DisplayName="=creatureRegionNoun= 이자 =subject.possessive= 민족의 추방자" />    
+    <part Name="PariahSpawner" InheritName="true" InheritDescription="false" />
+    <mixin Name="BaseChiliadCreatureStats" />
+  </object>
+  <object Name="Chiliad Creature Newly Sentient Beings" Inherits="Creature">
+    <part Name="Render" Tile="Creatures/chiliad-chair.png" />
+    <part Name="Brain" Factions="Newly Sentient Beings-100" />
+    <part Name="AnimateInZone" />
+    <mixin Name="BaseChiliadCreatureStats" />
+  </object>
+
+  
+  <object Name="Chiliad Creature Hoof" Inherits="NaturalWeapon">
+    <part Name="Render" DisplayName="발굽" Tile="Creatures/natural-weapon-hoof1.bmp" ColorString="&amp;w" />
+    <part Name="MeleeWeapon" BaseDamage="2d2" Skill="Cudgel" Stat="Strength" Slot="Foot" />
+  </object>
+  <object Name="Chiliad Creature Fist" Inherits="NaturalFist">    
+    <part Name="MeleeWeapon" BaseDamage="1d2" Slot="Hand" />
+  </object>
+  <object Name="Chiliad Creature Bite" Inherits="Bite">
+    <part Name="MeleeWeapon" BaseDamage="1d4" />
+  </object>
+  <object Name="Chiliad Creature Bite Arm" Inherits="Bite">
+    <part Name="MeleeWeapon" BaseDamage="1d4" Slot="Arm" />
+  </object>
+  <object Name="Chiliad Creature Fangs" Inherits="Bite">
+    <part Name="MeleeWeapon" BaseDamage="1d4" Skill="ShortBlades" />
+    <part Name="Render" DisplayName="송곳니" />
+    <tag Name="Gender" Value="plural" />
+  </object>
+  <object Name="Chiliad Creature Pincer" Inherits="NaturalWeapon">
+    <part Name="Render" DisplayName="발톱" Tile="Creatures/natural-weapon-pincer.bmp" ColorString="&amp;w" />
+    <part Name="MeleeWeapon" BaseDamage="1d3" Skill="Axe" Stat="Strength" Slot="Arm" />    
+  </object>
+  <object Name="Chiliad Creature Claw" Inherits="NaturalWeapon">
+    <part Name="Render" DisplayName="발톱" Tile="Creatures/natural-weapon-paw.bmp" ColorString="&amp;w" />
+    <part Name="MeleeWeapon" BaseDamage="1d3" Skill="ShortBlades" Stat="Strength" Slot="Foot" />
+  </object>
+  <object Name="Chiliad Creature Spade" Inherits="NaturalWeapon">
+    <part Name="Render" DisplayName="삽날" Tile="Creatures/natural-weapon-shovel.bmp" ColorString="&amp;y" />
+    <part Name="MeleeWeapon" BaseDamage="1d6" Skill="Axe" Stat="Strength" Slot="Body" />
+  </object>
+  <object Name="Chiliad Creature Peck" Inherits="NaturalWeapon">
+    <part Name="Render" DisplayName="쪼기" Tile="Creatures/natural-weapon-beak.bmp" ColorString="&amp;w" />
+    <part Name="MeleeWeapon" BaseDamage="1d3" Skill="ShortBlades" Slot="Face" />
+  </object>
+  <object Name="Chiliad Creature Prism Point" Inherits="NaturalWeapon">
+    <part Name="Render" DisplayName="{{Y|프리즘 뾰족이}}" Tile="Creatures/natural-weapon-thorns.bmp" ColorString="&amp;B" />
+    <part Name="MeleeWeapon" BaseDamage="2d3" Skill="ShortBlades" Stat="Strength" Slot="Hand" />
+  </object>
+  <object Name="Chiliad Creature Pistil" Inherits="NaturalWeapon">
+    <part Name="Render" DisplayName="암술" Tile="Creatures/natural-weapon-thorns.bmp" ColorString="&amp;g" />
+    <part Name="MeleeWeapon" BaseDamage="1d3" Skill="Cudgel" Stat="Strength" Slot="Head" />
+  </object>
+  <object Name="Chiliad Creature Nodule" Inherits="NaturalWeapon">
+    <part Name="Render" DisplayName="혹" Tile="Creatures/natural-weapon-knob.bmp" ColorString="&amp;w" />
+    <part Name="MeleeWeapon" BaseDamage="1d4" Skill="Cudgel" Stat="Strength" Slot="Hand" />
+  </object>
+  <object Name="Chiliad Creature Horns" Inherits="NaturalWeapon">
+    <part Name="Render" DisplayName="뿔" Tile="Items/sw_horns2.bmp" ColorString="&amp;w" />
+    <part Name="MeleeWeapon" BaseDamage="1d3" Skill="ShortBlades" Stat="Strength" Slot="Head" />
+    <part Name="Shield" AV="2" DV="0" WornOn="Head" />
+    <tag Name="Gender" Value="plural" />
+  </object>
+  <object Name="Chiliad Creature Muscular Foot" Inherits="NaturalWeapon">
+    <part Name="Render" DisplayName="근육질 발" Tile="Creatures/natural-weapon-pseudopod.bmp" ColorString="&amp;y" />
+    <part Name="MeleeWeapon" BaseDamage="1d6" Skill="Cudgel" Stat="Strength" Slot="Tail" />
+  </object>
+  <object Name="Chiliad Creature Pseudopod" Inherits="NaturalWeapon">
+    <part Name="Render" DisplayName="위족" Tile="Creatures/natural-weapon-pseudopod.bmp" ColorString="&amp;G" />
+    <part Name="MeleeWeapon" BaseDamage="1d3" Skill="Cudgel" Stat="Strength" Slot="Hand" />
+  </object>
+  <object Name="Chiliad Creature Strangle" Inherits="NaturalWeapon">
+    <part Name="Render" DisplayName="목조르기" Tile="Creatures/natural-weapon-frond.bmp" ColorString="&amp;g" />
+    <part Name="MeleeWeapon" BaseDamage="1d6" Skill="Cudgel" Stat="Strength" Slot="Arm" />
+  </object>
+  <object Name="Chiliad Creature Spines" Inherits="NaturalWeapon">
+    <part Name="Render" DisplayName="가시" Tile="Creatures/natural-weapon-thorns.bmp" ColorString="&amp;y" />
+    <part Name="MeleeWeapon" BaseDamage="1d6" Skill="ShortBlades" Stat="Strength" Slot="Arm" />
+  </object>
+  <object Name="Chiliad Creature Body Spines" Inherits="Chiliad Creature Spines">
+    <part Name="MeleeWeapon" Slot="Body" />
+  </object>  
+  <object Name="Chiliad Creature Bark" Inherits="NaturalWeapon">
+    <part Name="Render" DisplayName="나무껍질" Tile="Creatures/natural-weapon-thorns.bmp" ColorString="&amp;w" />
+    <part Name="MeleeWeapon" BaseDamage="1d6" Skill="Cudgel" Stat="Strength" Slot="Hand" />
+  </object>
+  <object Name="Chiliad Creature Bands" Inherits="NaturalWeapon">
+    <part Name="Render" DisplayName="압쇄 띠" Tile="Creatures/natural-weapon-bands.bmp" ColorString="&amp;w" />
+    <part Name="MeleeWeapon" BaseDamage="1d6" Skill="Cudgel" Stat="Strength" Slot="Body" />
+  </object>  
+
+</objects>

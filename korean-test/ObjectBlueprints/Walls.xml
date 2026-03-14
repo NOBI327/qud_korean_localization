@@ -1,1064 +1,2222 @@
 <?xml version='1.0' encoding='utf-8'?>
 <objects>
 
-  <!--    
-    1 Base objects
-    2 Natural walls
-    3 Constructed walls
-    4 Wall-likes
-  -->
-
-  <!--
-
-    *******************
-       Base objects
-    *******************
-
-  -->
-
-  <object Name="Wall" Load="Merge">
-    <part Name="Render" DisplayName="[벽]"/>
-    <part Name="Description" Short="[벽]"/>
-    </object>
-  <object Name="BaseWallBrick" Load="Merge">
-    <part Name="Render"/>
-    </object>
-  <object Name="BaseWallCircuit" Load="Merge">
-    <part Name="Render"/>
-    </object>
-  <object Name="BaseWallCyber" Load="Merge">
-    <part Name="Render"/>
-    </object>
-  <object Name="BaseWallFluted" Load="Merge">
-    <part Name="Render"/>
-    </object>
-  <object Name="BaseWallGranite" Load="Merge">
-    <part Name="Render"/>
-    </object>
-  <object Name="BaseWallMarble" Load="Merge">
-    <part Name="Render"/>
-    </object>
-  <object Name="BaseWallMetal" Load="Merge">
-    <part Name="Render"/>
-    </object>
-  <object Name="BaseWallTubing" Load="Merge">
-    <part Name="Render"/>
-    </object>
-  <object Name="BaseWallMainframe" Load="Merge">
-    <part Name="Render"/>
-    </object>
-  <object Name="BaseWallMud" Load="Merge">
-    <part Name="Render"/>
-    </object>
-  <object Name="BaseWallRock" Load="Merge">
-    <part Name="Render"/>
-    </object>
-  <object Name="BaseWallSecure" Load="Merge">
-    <part Name="Render"/>
-    </object>
-  <object Name="BaseWallStone" Load="Merge">
-    <part Name="Render"/>
-    </object>
-  <object Name="BaseWallWood" Load="Merge">
-    <part Name="Render"/>
-    </object>
-  <object Name="BaseWallCrystal1" Load="Merge">
-    <part Name="Render"/>
-    </object>
-  <object Name="BaseWallBone" Load="Merge">
-    <part Name="Render"/>
-    </object>
-  <object Name="BaseWallFlower" Load="Merge">
-    <part Name="Render"/>
-    </object>
-  <object Name="BaseWallScale" Load="Merge">
-    <part Name="Render"/>
-    </object>
-  <object Name="BaseSedimentaryRock" Load="Merge">
-    <part Name="Render" DisplayName="[암석 벽]"/>
-    </object>
-  <object Name="BaseMetamorphicRock" Load="Merge">
-    <part Name="Render" DisplayName="[암석 벽]"/>
-    </object>
-  <object Name="BasePlantWall" Load="Merge">
-    <part Name="Render" DisplayName="[식물 벽]"/>
-    </object>
-  <object Name="BaseMushroomWall" Load="Merge">
-		<part Name="Render" DisplayName="버섯 살점"/>
-		<part Name="Description" Short="포자가 가득한 점액이 우리처럼 생긴 자실체 위에서 번들거리고, 가정의 질서정연한 각에 맞춰 울타리처럼 다듬어져 있다."/>
-		</object>
-
-  <!--
-
-    *******************
-       Natural walls
-    *******************
-
-  -->
-
-  <object Name="Shale" Load="Merge">
-    <part Name="Render" DisplayName="셰일"/>
-    <part Name="Description" Short="점토와 석영이 말라 으깨져, 붉은 바위가 되었습니다. 산사람들은 수천 년에 수천 년을 거듭하며 그것을 캐내 왔습니다."/>
-    </object>
-  <object Name="Sandstone" Load="Merge">
-    <part Name="Render" DisplayName="사암"/>
-    <part Name="Description" Short="바위는 마모되어 모래가 되고, 모래는 바람에 실려 호수로 날아들고, 호수는 진흙에 묻히고, 진흙은 모래를 짓눌러 다시 바위로 만듭니다. 땅은 재배열됩니다."/>
-    </object>
-  <object Name="Limestone" Load="Merge">
-    <part Name="Render" DisplayName="석회암"/>
-    <part Name="Description" Short="무척추 생명은 수백만 년에 걸쳐 살점이 빨려나가고, 피를 다 흘린 채로 남겨졌습니다. 푸르스름한 그 바위는 공동묘지입니다."/>
-    </object>
-  <object Name="Marl" Load="Merge">
-    <part Name="Render" DisplayName="이회토"/>
-    <part Name="Description" Short="석회가 풍부한 진흙에 주조된 호수 생태계가, 분필처럼 희고 윤이 나는 빛으로 수백만 년 묵은 사연을 드러내고 있습니다."/>
-    </object>
-  <object Name="Halite" Load="Merge">
-    <part Name="Render" DisplayName="암염"/>
-    <part Name="Description" Short="진홍빛 구름이 결정의 습성을 띱니다. 안팎으로 포개진 정육면체들입니다. 왜 Moghra'yi는 이 형태를 태양으로부터 숨기는 걸까요?"/>
-    </object>
-  <object Name="Gypsum" Load="Merge">
-    <part Name="Render" DisplayName="석고"/>
-    <part Name="Description" Short="그을린 결정의 황금빛이, 물이 스민 백만 개의 석굴 바닥에 기하학적 그림자를 던지고 있습니다."/>
-    </object>
-  <object Name="Black Shale" Load="Merge">
-    <part Name="Render" DisplayName="검은 셰일"/>
-    <part Name="Description" Short="검은 돌이, 점토 아래에서 죽어 썩어 황철석이 되어버린 달팽이 도시들을 기리는 기념비로 서 있습니다."/>
-    </object>
-  <object Name="Coral Rag" Load="Merge">
-    <part Name="Render" DisplayName="산호석"/>
-    <part Name="Description" Short="암초는 젊은 바다의 아콜로지였습니다. 이제는 청록빛 납골당이 되었고, 표면은 산성 물에 갉아먹혀 거친 상처로 남아 있습니다."/>
-    </object>
-  <object Name="Porous Coral Rag" Load="Merge">
-    </object>
-  <object Name="Oolite" Load="Merge">
-    <part Name="Render" DisplayName="어란석"/>
-    <part Name="Description" Short="돌로 된 알들이 진주빛 평면의 얇은 층에서 품어집니다. 그러나 어떤 유충도 끝내 부화하지 못하고, 마모되어 먼지가 됩니다."/>
-    </object>
-  <object Name="Serpentinite" Load="Merge">
-    <part Name="Render" DisplayName="사문암"/>
-    <part Name="Description" Short="지상의 존재들에겐 이름조차 없는 지하의 탄생 전실에서, 초염기성 암석이 양수에 적셔져 세계뱀으로 태어납니다."/>
-    </object>
-  <object Name="Slate" Load="Merge">
-    <part Name="Render" DisplayName="점판암"/>
-    <part Name="Description" Short="화산재가 깊은 땅속의 고치에서 번데기가 되어, 회색 돌로 갈라져 나왔습니다. 소피스트들은 이것이 순수한 에테르의 색이라고 이론화합니다."/>
-    </object>
-  <object Name="Quartzite" Load="Merge">
-    <part Name="Render" DisplayName="규암"/>
-    <part Name="Description" Short="붉은빛과 청록빛이 얼룩진 결정 모자이크는 무너져 가는 지각판의 변성 잔해입니다. 새 대지는 태어나려 몸부림치고 있습니다."/>
-    </object>
-  <object Name="Marble" Load="Merge">
-    <part Name="Render" DisplayName="대리석 벽"/> asd
-    <part Name="Description" Short="달팽이와 산호가 지질의 압착기에서 짓눌려 불순물의 띠로 물들었고, 이상적인 평면을 따라 윤이 나게 연마되었습니다."/>
-    </object>
-  <object Name="MarbleWithPiping" Load="Merge">
-    </object>
-  <object Name="Star Orchid Marble" Load="Merge">
-    <part Name="Render" DisplayName="별난초 대리석 벽"/>asd
-    <part Name="Description" Short="바깥세계의 단단한 껍질 생명체들이 미행성에서 수확되었고, 수집자들의 함선이 내뿜는 자홍빛 배기가스 속에서 눈부시게 타올랐으며, 재진입을 위한 성좌의 새총 궤도에서 한데 으깨졌습니다."/>
-    </object>
-  <object Name="Black Marble" Load="Merge">
-    <part Name="Render" DisplayName="검은 대리석"/> asd
-    <part Name="Description" Short="행성의 가장 깊은 심연에 있는 세계-공허들은 신비로운 석조 공법으로 구획되어 있습니다. 희미한 흰 세공 무늬의 패턴에는 의미가 담겨 있지만, 그 누구도 그것을 알아보지 못합니다."/>
-    </object>
-  <object Name="Polished Black Marble" Load="Merge">
-    <part Name="Render" DisplayName="윤이 난 검은 대리석"/> asd
-    <part Name="Description" Short="행성의 가장 깊은 심연에 있는 세계-공허들은 신비로운 석조 공법으로 구획되어 있습니다. 희미한 흰 세공 무늬의 패턴에는 의미가 담겨 있지만, 그 누구도 그것을 알아보지 못합니다."/>
-    </object>
-  <object Name="Granite" Load="Merge">
-    <part Name="Render" DisplayName="화강암"/>
-    <part Name="Description" Short="장석과 그 사촌 바위들이 합쳐져 정전기 무늬 같은 결로 점점이 패였습니다. 균열은 훗날의 자갈들을 예고합니다."/>
-    </object>
-  <object Name="Mudroot" Load="Merge">
-    <part Name="Render" DisplayName="뒤엉킨 진흙뿌리"/>
-    <part Name="Description" Short="섬유질 식물 맥의 땋은 줄기들이 다져진 진흙을 휘감고, 염수 같은 피를 흘리고 있습니다."/>
-    </object>
-  <object Name="Basalt" Load="Merge">
-    <part Name="Render" DisplayName="현무암"/>
-    <part Name="Description" Short="용암이 흘러간 흉터가 넓은 돌 위에 작은 턱들로 또렷이 새겨져 있습니다. 작고 어두운 구멍들은 한때 녹아 있던 기체들이 태어나던 분화구였습니다."/>
-    </object>
-  <object Name="BasaltWithPipes" Load="Merge">
-    </object>
-  <object Name="GodshroomWall" Load="Merge">
-    <part Name="Render" DisplayName="버섯 살점"/>	
-    </object>
   
-  <object Name="MushroomWall-Red" Load="Merge">
-    <part Name="Render" DisplayName="버섯 살점"/>  
-    </object>
-  <object Name="MushroomWall-White" Load="Merge">
-    <part Name="Render" DisplayName="버섯 살점"/>  
-    </object>
-  <object Name="PlantWall" Load="Merge">
-    <part Name="Render" DisplayName="식물질"/>
-    <part Name="Description" Short="시간과 우연, 곧 자연의 두 손이 뿌리와 줄기와 잎을 엮어 섬유질의 둑을 짜 놓았습니다."/>
-    </object>
 
-  <!-- Gemstone walls -->
-  <object Name="AgateWall" Load="Merge">
-    <part Name="Render" DisplayName="{{K|마노}} 광맥이 박힌 셰일 벽"/>
-    <part Name="Description" Short="점토와 석영이 말라 으깨져, 산사람들이 수천 년에 수천 년을 거듭하며 캐내 온 붉은 바위가 되었습니다. 바위 전체를 가로지르며 윤이 나는 검은 띠가 뻗어 있습니다."/>
-    </object>
-  <object Name="TopazWall" Load="Merge">
-    <part Name="Render" DisplayName="{{W|토파즈}} 광맥이 박힌 셰일 벽"/>
-    <part Name="Description" Short="점토와 석영이 말라 으깨져, 산사람들이 수천 년에 수천 년을 거듭하며 캐내 온 붉은 바위가 되었습니다. 바위 전체를 가로지르며 윤이 나는 황금 띠가 뻗어 있습니다."/>
-    </object>
-  <object Name="JasperWall" Load="Merge">
-    <part Name="Render" DisplayName="{{R|벽옥}} 광맥이 박힌 셰일 벽"/>
-    <part Name="Description" Short="점토와 석영이 말라 으깨져, 산사람들이 수천 년에 수천 년을 거듭하며 캐내 온 붉은 바위가 되었습니다. 바위 전체를 가로지르며 윤이 나는 붉은 띠가 뻗어 있습니다."/>
-    </object>
-  <object Name="AmethystWall" Load="Merge">
-    <part Name="Render" DisplayName="{{M|자수정}} 광맥이 박힌 셰일 벽"/>
-    <part Name="Description" Short="점토와 석영이 말라 으깨져, 산사람들이 수천 년에 수천 년을 거듭하며 캐내 온 붉은 바위가 되었습니다. 바위 전체를 가로지르며 윤이 나는 보랏빛 띠가 뻗어 있습니다."/>
-    </object>
-  <object Name="SapphireWall" Load="Merge">
-    <part Name="Render" DisplayName="{{B|사파이어}} 광맥이 박힌 셰일 벽"/>
-    <part Name="Description" Short="점토와 석영이 말라 으깨져, 산사람들이 수천 년에 수천 년을 거듭하며 캐내 온 붉은 바위가 되었습니다. 바위 전체를 가로지르며 윤이 나는 푸른 띠가 뻗어 있습니다."/>
-    </object>
-  <object Name="EmeraldWall" Load="Merge">
-    <part Name="Render" DisplayName="{{G|에메랄드}} 광맥이 박힌 셰일 벽"/>
-    <part Name="Description" Short="점토와 석영이 말라 으깨져, 산사람들이 수천 년에 수천 년을 거듭하며 캐내 온 붉은 바위가 되었습니다. 바위 전체를 가로지르며 윤이 나는 초록 띠가 뻗어 있습니다."/>
-    </object>
-  <object Name="PeridotWall" Load="Merge">
-    <part Name="Render" DisplayName="{{peridot|페리도트}} 광맥이 박힌 운석 벽"/>
-    <part Name="Description" Short="점토와 석영이 말라 으깨져, 산사람들이 수천 년에 수천 년을 거듭하며 캐내 온 붉은 바위가 되었습니다. 바위 전체를 가로지르며 윤이 나는 초록과 황금의 띠가 뻗어 있습니다."/>
-    </object>
+  
 
-  <!-- End natural walls -->
-
-  <!--
-
-    ***********************
-       Constructed walls
-    ***********************
-
-  -->
-
-  <object Name="Fulcrete" Load="Merge">
-    <part Name="Render" DisplayName="풀크리트"/>
-    <part Name="Description" Short="탄소 자갈의 섬들이 역청의 바다를 메우고, 수평면에서 솟아올라 air-rasp의 공허를 향해 뻗어 있습니다. 시간과 압력이 분지 전체를 따라 머리카락처럼 가는 도랑을 새겨 두었습니다."/>
-    </object>
-  <object Name="EbonFulcrete" Load="Merge">
-    <part Name="Description" Short="검은 탄소 자갈의 섬들이 역청의 바다를 메우고, 수평면에서 솟아올라 air-rasp의 공허를 향해 뻗어 있습니다. 시간과 압력이 분지 전체를 따라 머리카락처럼 가는 도랑을 새겨 두었습니다."/>
-    <part Name="Render" DisplayName="흑단 풀크리트"/>
-    </object>
-  <object Name="EbonFulcrete High Graffiti Chance" Load="Merge">
-    </object>
-  <object Name="HighCapacityWiredEbonFulcrete" Load="Merge">
-    </object>
-  <object Name="HighCapacityWiredEbonFulcretePowerGenerator" Load="Merge">
-    </object>
-  <object Name="PipeFulcrete" Load="Merge">
-    </object>
-  <object Name="WiredFulcrete" Load="Merge">
-    </object>
-  <object Name="HighCapacityWiredFulcrete" Load="Merge">
-    </object>
-  <object Name="WiredPipeFulcrete" Load="Merge">
-    </object>
-  <object Name="MetalWall" Load="Merge">
-    <part Name="Render" DisplayName="금속 벽"/>
-    <part Name="Description" Short="판금이 마름모 무늬로 맞물려 용접되어, 내부를 둘러막고 있습니다. 표면은 군데군데 그을리고 긁혀 있습니다."/>
-    </object>
-  <object Name="MetalWallWithPipes" Load="Merge">
-    </object>
-	<object Name="RustedMetalWall" Load="Merge">
-		<part Name="Render" DisplayName="녹슨 금속 벽"/>		
-		<part Name="Description" Short="판금이 마름모 무늬로 맞물려 용접되어, 내부를 둘러막고 있습니다. 표면은 군데군데 그을리고 긁혀 있습니다."/>		
+  <object Name="Wall" Inherits="InorganicObject">
+    <part Name="Render" DisplayName="[벽]" Tile="assets_content_textures_tiles_tile-0-13.png" RenderLayer="7" RenderString="219" ColorString="&amp;y^k" Occluding="true" />
+    <part Name="Physics" Weight="10000" Takeable="false" Solid="true" SpecificHeat="1.55" Conductivity="20" />
+    <part Name="Description" Short="[벽]" />
+    <stat Name="AV" Value="5" />
+    <stat Name="Hitpoints" Value="100" />
+    <tag Name="Wall" />
+    <tag Name="Diggable" />
+    <tag Name="NoEffects" />
+    <stat Name="ColdResistance" Value="50" />
+    <stat Name="ElectricResistance" Value="50" />
+    <tag Name="PaintedWall" Value="wall_brick" />
+    <tag Name="BaseObject" Value="*noinherit" />
+    <tag Name="HeroNameTitleDescriptor" Value="Cracked,Crackless,Once-Cracked,Painted,Still-Standing,Studded,Sturdy,Twice-Cracked,Unpainted,Unstudded" />
+    <tag Name="HeroNameTitleClientele" Value="Builders,Cowards,Defenders,Roofs,the Assailed,the Stalwart" />
+    <xtagTextFragments Skin="질감" PoeticFeatures="우뚝 솟은 자연,고요한 정적,포근한 밀폐" />
+    <builder Name="Animated" ChanceOneIn="200000" />
+    <tag Name="Animatable" />
+    <tag Name="NamingTag" Value="Animated" />
+    <tag Name="DynamicObjectsTable:AnimatableFurniture" />
+    <tag Name="Class" Value="wall" />
+    <tag Name="BodyType" Value="Wall" />
+    <tag Name="NoSparkingQuest" />
+    <part Name="Graffitied" ChanceOneIn="2000" />
+    <tag Name="ImpactSound" Value="Sounds/Throw/sfx_throwing_generic_hitStone" />
+    <tag Name="TakeDamageSound" Value="Sounds/Damage/sfx_damage_stone" />
+    <tag Name="DeathSounds" Value="Sounds/Damage/sfx_destroy_stone" />
+    <tag Name="LairAmbientBed" Value="Sounds/Ambiences/amb_creature_rocks" />
+		<tag Name="Breakable" Value="*delete" />
+  </object>
+  <object Name="BaseWallBrick" Inherits="Wall">
+    <part Name="Render" ColorString="&amp;r^y" TileColor="&amp;r" DetailColor="y" />
+    <tag Name="PaintedWall" Value="wall_brick" />
+    <tag Name="PaintedWallAtlas" Value="Assets_Content_Textures_Walls_" />
+    <tag Name="PaintedWallExtension" Value=".png" />
+    <tag Name="BaseObject" Value="*noinherit" />
+    <tag Name="Tier" Value="1" />
+    <part Name="Graffitied" ChanceOneIn="300" />
+  </object>
+  <object Name="BaseWallCircuit" Inherits="Wall">
+    <part Name="Render" ColorString="&amp;c^W" TileColor="&amp;c" DetailColor="W" />
+    <part Name="Metal" />
+    <tag Name="BodyType" Value="MetalWall" />
+    <tag Name="PaintedWall" Value="wall_circuit" />
+    <tag Name="Mods" Value="TechWallMods" />
+    <tag Name="BaseObject" Value="*noinherit" />
+    <tag Name="Tier" Value="4" />
+    <part Name="Graffitied" ChanceOneIn="300" />
+    <tag Name="TakeDamageSound" Value="Sounds/Damage/sfx_damage_electronic" />
+    <tag Name="DeathSounds" Value="Sounds/Damage/sfx_destroy_electronic" />
+  </object>
+  <object Name="BaseWallCyber" Inherits="Wall">
+    <part Name="Render" ColorString="&amp;y^R" TileColor="&amp;y" DetailColor="R" />
+    <part Name="Metal" />
+    <tag Name="BodyType" Value="MetalWall" />
+    <tag Name="PaintedWall" Value="wall_cyber" />
+    <tag Name="Mods" Value="TechWallMods" />
+    <tag Name="BaseObject" Value="*noinherit" />
+    <tag Name="Tier" Value="5" />
+    <part Name="Graffitied" ChanceOneIn="300" />
+    <tag Name="ImpactSound" Value="Sounds/Throw/sfx_throwing_generic_hitMetal" />
+    <tag Name="TakeDamageSound" Value="Sounds/Damage/sfx_damage_electronic" />
+    <tag Name="DeathSounds" Value="Sounds/Damage/sfx_destroy_electronic" />
+  </object>
+  <object Name="BaseWallFluted" Inherits="Wall">
+    <part Name="Render" ColorString="&amp;y^R" TileColor="&amp;y" DetailColor="R" />
+    <tag Name="PaintedWall" Value="wall_fluted" />
+    <tag Name="BaseObject" Value="*noinherit" />
+    <tag Name="Tier" Value="2" />
+    <part Name="Graffitied" ChanceOneIn="300" />
+  </object>
+  <object Name="BaseWallGranite" Inherits="Wall">
+    <part Name="Render" ColorString="&amp;y^R" TileColor="&amp;y" DetailColor="R" />
+    <tag Name="PaintedWall" Value="wall_granite" />
+    <tag Name="BaseObject" Value="*noinherit" />
+    <tag Name="Tier" Value="1" />
+    <part Name="Graffitied" ChanceOneIn="300" />
+  </object>
+  <object Name="BaseWallMarble" Inherits="Wall">
+    <part Name="Render" ColorString="&amp;y^R" TileColor="&amp;y" DetailColor="R" />
+    <tag Name="PaintedWall" Value="wall_marble" />
+    <tag Name="BaseObject" Value="*noinherit" />
+    <tag Name="Tier" Value="1" />
+    <part Name="Graffitied" ChanceOneIn="300" />
+  </object>
+  <object Name="BaseWallMetal" Inherits="Wall">
+    <part Name="Render" ColorString="&amp;y^R" TileColor="&amp;y" DetailColor="R" />
+    <part Name="Metal" />
+    <tag Name="BodyType" Value="MetalWall" />
+    <tag Name="PaintedWall" Value="wall_metal" />
+    <tag Name="Mods" Value="TechWallMods" />
+    <tag Name="BaseObject" Value="*noinherit" />
+    <tag Name="Tier" Value="2" />
+    <part Name="Graffitied" ChanceOneIn="300" />
+    <tag Name="ImpactSound" Value="Sounds/Throw/sfx_throwing_generic_hitMetal" />
+    <tag Name="TakeDamageSound" Value="Sounds/Damage/sfx_damage_metal" />
+    <tag Name="DeathSounds" Value="Sounds/Damage/sfx_destroy_metal" />
+  </object>
+  <object Name="BaseWallTubing" Inherits="Wall">
+    <part Name="Render" ColorString="&amp;y^R" TileColor="&amp;y" DetailColor="R" RenderString="216" />
+    <part Name="Metal" />
+    <tag Name="BodyType" Value="MetalWall" />
+    <tag Name="PaintedWall" Value="wall_coolant,wall_coolant_b" />
+    <tag Name="PaintedWallAtlas" Value="Assets_Content_Textures_Walls_" />
+    <tag Name="PaintedWallExtension" Value=".png" />
+		<tag Name="PaintWith" Value="MachineWallsTubing" />
+    <tag Name="Mods" Value="TechWallMods" />
+    <tag Name="BaseObject" Value="*noinherit" />
+    <tag Name="Tier" Value="2" />
+    <part Name="Graffitied" ChanceOneIn="300" />
+    <tag Name="ImpactSound" Value="Sounds/Throw/sfx_throwing_generic_hitMetal" />
+    <tag Name="TakeDamageSound" Value="Sounds/Damage/sfx_damage_tubing" />
+    <tag Name="DeathSounds" Value="Sounds/Damage/sfx_destroy_tubing" />
+  </object>
+  <object Name="BaseWallMainframe" Inherits="Wall">
+    <part Name="Render" ColorString="&amp;y^y" TileColor="&amp;y" DetailColor="y" />
+    <part Name="Metal" />
+    <tag Name="BodyType" Value="MetalWall" />
+    <tag Name="Tier" Value="5" />
+    <part Name="Graffitied" ChanceOneIn="500" />
+    <tag Name="PaintedWallAtlas" Value="Assets_Content_Textures_Tiles2_" />
+    <tag Name="PaintedWall" Value="mainframe_status_panel" />
+    <tag Name="PaintedWallExtension" Value=".png" />
+    <tag Name="PaintWith" Value="MainframeWalls" />
+    <tag Name="BaseObject" Value="*noinherit" />
+    <tag Name="Mainframe" />
+    <tag Name="ImpactSound" Value="Sounds/Throw/sfx_throwing_generic_hitMetal" />
+    <tag Name="TakeDamageSound" Value="Sounds/Damage/sfx_damage_electronic" />
+    <tag Name="DeathSounds" Value="Sounds/Damage/sfx_destroy_electronic" />
+  </object>
+  <object Name="BaseWallMud" Inherits="Wall">
+    <part Name="Render" ColorString="&amp;y^R" TileColor="&amp;y" DetailColor="R" />
+    <part Name="Physics" Conductivity="60" />
+    <tag Name="PaintedWall" Value="wall_mud" />
+    <tag Name="BaseObject" Value="*noinherit" />
+    <tag Name="Tier" Value="0" />
+  </object>
+  <object Name="BaseWallRock" Inherits="Wall">
+    <part Name="Render" ColorString="&amp;y^R" TileColor="&amp;y" DetailColor="R" />
+    <tag Name="PaintedWall" Value="wall_rock" />
+    <tag Name="BaseObject" Value="*noinherit" />
+    <tag Name="Tier" Value="0" />
+    <tag Name="ImpactSound" Value="Sounds/Throw/sfx_throwing_generic_hitDirt" />
+		<tag Name="SingleTile" Value="Tiles/wall_rock-00000000.bmp" />
+  </object>
+  <object Name="BaseWallSecure" Inherits="Wall">
+    <part Name="Render" ColorString="&amp;y^R" TileColor="&amp;y" DetailColor="R" />
+    <part Name="Metal" />
+    <tag Name="BodyType" Value="MetalWall" />
+    <tag Name="PaintedWall" Value="wall_secure" />
+    <tag Name="Mods" Value="TechWallMods" />
+    <tag Name="BaseObject" Value="*noinherit" />
+    <tag Name="Tier" Value="4" />
+    <part Name="Graffitied" ChanceOneIn="300" />
+    <tag Name="ImpactSound" Value="Sounds/Throw/sfx_throwing_generic_hitMetal" />
+    <tag Name="TakeDamageSound" Value="Sounds/Damage/sfx_damage_metal" />
+    <tag Name="DeathSounds" Value="Sounds/Damage/sfx_destroy_metal" />
+  </object>
+  <object Name="BaseWallStone" Inherits="Wall">
+    <part Name="Render" ColorString="&amp;y^R" TileColor="&amp;y" DetailColor="R" />
+    <tag Name="PaintedWall" Value="wall_stone" />
+    <tag Name="BaseObject" Value="*noinherit" />
+    <tag Name="Tier" Value="1" />
+  </object>
+  <object Name="BaseWallWood" Inherits="Wall">
+    <part Name="Render" ColorString="&amp;w^K" TileColor="&amp;w" DetailColor="K" />
+    <part Name="Springy" Factor="0.05" />
+    <tag Name="BodyType" Value="WoodWall" />
+    <tag Name="PaintedWall" Value="wall_wood_worn" />
+    <tag Name="PaintedWallAtlas" Value="Assets_Content_Textures_Walls_" />
+    <tag Name="PaintedWallExtension" Value=".png" />
+		<tag Name="PaintWith" Value="WoodWall" />
+    <tag Name="BaseObject" Value="*noinherit" />
+    <tag Name="Tier" Value="0" />
+    <tag Name="TakeDamageSound" Value="Sounds/Damage/sfx_damage_manufacturedWood" />
+    <tag Name="DeathSounds" Value="Sounds/Damage/sfx_destroy_manufacturedWood" />
+  </object>
+  <object Name="BaseWallCrystal1" Inherits="Wall">
+    <part Name="Render" ColorString="&amp;b^C" TileColor="&amp;b" DetailColor="C" />
+    <tag Name="PaintedWall" Value="wall_crystal1" />
+    <tag Name="PaintedWallExtension" Value=".png" />
+    <tag Name="BaseObject" Value="*noinherit" />
+    <tag Name="Tier" Value="1" />
+    <tag Name="ImpactSound" Value="Sounds/Throw/sfx_throwing_generic_hitGlass" />
+    <tag Name="TakeDamageSound" Value="Sounds/Damage/sfx_damage_gemstone" />
+    <tag Name="DeathSounds" Value="Sounds/Damage/sfx_destroy_gemstone" />
+  </object>
+  <object Name="BaseWallBone" Inherits="Wall">
+    <part Name="Render" ColorString="&amp;y^w" TileColor="&amp;y" DetailColor="w" />
+    <part Name="Physics" Conductivity="5" />
+    <tag Name="BodyType" Value="BoneWall" />
+    <tag Name="PaintedWall" Value="wall_bone" />
+    <tag Name="PaintedWallExtension" Value=".png" />
+    <tag Name="BaseObject" Value="*noinherit" />
+    <tag Name="Tier" Value="0" />
+    <tag Name="TakeDamageSound" Value="Sounds/Damage/sfx_damage_manufacturedWood" />
+    <tag Name="DeathSounds" Value="Sounds/Damage/sfx_destroy_manufacturedWood" />
+  </object>
+  <object Name="BaseWallFlower" Inherits="Wall">
+    <part Name="Render" ColorString="&amp;w^W" TileColor="&amp;w" DetailColor="W" />
+    <part Name="Physics" Conductivity="90" />
+    <part Name="RandomColors" DetailColor="all" />
+    <part Name="Springy" Factor="0.1" />
+    <tag Name="BodyType" Value="PlantWall" />
+    <tag Name="PaintedWall" Value="wall_flower" />
+    <tag Name="PaintedWallExtension" Value=".png" />
+    <tag Name="BaseObject" Value="*noinherit" />
+    <tag Name="Tier" Value="0" />
+    <tag Name="ImpactSound" Value="Sounds/Throw/sfx_throwing_generic_hitPlant" />
+    <tag Name="TakeDamageSound" Value="Sounds/Damage/sfx_damage_genPlant" />
+    <tag Name="DeathSounds" Value="Sounds/Damage/sfx_destroy_genPlant" />
+  </object>
+  <object Name="BaseWallScale" Inherits="Wall">
+    <part Name="Render" ColorString="&amp;g^w" TileColor="&amp;g" DetailColor="w" />
+    <part Name="Physics" Conductivity="10" />
+    <tag Name="BodyType" Value="LeatherWall" />
+    <tag Name="PaintedWall" Value="wall_scale" />
+    <tag Name="PaintedWallExtension" Value=".png" />
+    <tag Name="BaseObject" Value="*noinherit" />
+    <tag Name="Tier" Value="1" />
+  </object>
+  <object Name="BaseSedimentaryRock" Inherits="BaseWallRock">
+    <part Name="Render" DisplayName="[암석 벽]" RenderString="177" ColorString="&amp;r^w" TileColor="&amp;r" DetailColor="w" Occluding="true" />
+    <part Name="Physics" Weight="10000" FlameTemperature="99999" VaporTemperature="1500" Takeable="false" Solid="true" />
+    <stat Name="AV" Value="10" />
+    <stat Name="Hitpoints" Value="200" />    
+    <tag Name="PaintedWall" Value="wall_rock" />
+    <tag Name="NoSparkingQuest" />
+    <tag Name="VaporObject" Value="LavaPuddle" />
+    <tag Name="ImmutableWhenUnexplored" Value="1" />
+    <tag Name="BaseObject" Value="*noinherit" />
+    <tag Name="Tier" Value="0" />
+		<stag Name="Geological" />		
 	</object>
-	<object Name="RustedMetalWallPowerGenerator" Load="Merge">
-		</object>
-  <object Name="CrysteelPlatedWall" Load="Merge">
-    <part Name="Render" DisplayName="크리스틸 판 전단벽"/>
-    <part Name="Description" Short="길이 방향으로 끼운 윤이 난 크리스틸 충전 판들이 풀크리트 들보에 의해 지지되고 있습니다. 텅 빈 공간 너머로 생명의 소리가 메아리칩니다."/>
-    </object>
-  <object Name="Foamcrete" Load="Merge">
-    <part Name="Render" DisplayName="폼크리트"/>
-    <part Name="Description" Short="벽의 균열은, 압축된 폼크리트가 육각형으로 팽창하던 무늬가 화석처럼 남은 것입니다."/>
-    </object>
-  <object Name="Verdigris" Load="Merge">
-    <part Name="Render" DisplayName="빛바랜 크롬"/>
-    <part Name="Description" Short="독빛 청록의 이끼가 금속의 형태를 환히 물들이고, 황동에 취한 벌레들을 끌어모읍니다."/>
-    </object>
-  <object Name="Concrete" Load="Merge">
-    <part Name="Render" DisplayName="콘크리트 벽"/>
-    <part Name="Description" Short="매끈한 회색 돌이 결합된 자갈 속살과 시멘트의 피 같은 반죽을 감추고 있습니다. 흙먼지가 줄지어 얼룩져 있습니다."/>
-    </object>
-  <object Name="PigskinWall" Load="Merge">
-    <part Name="Render" DisplayName="돼지가죽 벽"/>
-    <part Name="Description" Short="분홍빛의 보송한 살점 한 조각이 잘려 나와 늘여 무두질되었고, 안쪽을 덮는 지붕처럼 드리워져 있습니다."/>
-    </object>
-  <object Name="WoodWall" Load="Merge">
-    <part Name="Render" DisplayName="염수줄기 벽"/>
-    <part Name="Description" Short="누르스름한 염수줄기의 껍질을 벗긴 줄기 여러 개가 진흙으로 접착되어 있습니다."/>
-    </object>
-  <object Name="WoodWallWithGearbox" Load="Merge">
-    </object>
-	<object Name="BrinestalkWall" Load="Merge">
-		<part Name="Render" DisplayName="염수줄기 벽"/>
-		<part Name="Description" Short="누르스름한 염수줄기의 껍질을 벗긴 줄기 여러 개가 진흙으로 접착되어 있습니다."/>
-		</object>
-	<object Name="BrinestalkWallWithGearbox" Load="Merge">
-		</object>
-  <object Name="BurntWood" Load="Merge">
-    <part Name="Render" DisplayName="그을린 목재"/>
-    <part Name="Description" Short="나무껍질이 하늘불의 습격으로 새까맣게 탔고, 이제 잔광 속에서 번들거리고 있습니다."/>
-    </object>
-  <object Name="CanvasWall" Load="Merge">
-    <part Name="Render" DisplayName="캔버스"/>
-    <part Name="Description" Short="땅의 활기를 머금은 아마가 간단한 정사각 무늬로 평직되어, 말뚝 울타리에 걸려 있습니다."/>
-    </object>
-  <object Name="ThatchedWall" Load="Merge">
-    <part Name="Render" DisplayName="이엉 벽"/>
-    <part Name="Description" Short="물덩굴과 염수줄기 짚이 줄무늬로 묶여 비스듬히 놓여, 소금 찌꺼기를 빗겨 내도록 되어 있습니다."/>
-    </object>
-  <object Name="WornWoodWall" Load="Merge">
-    <part Name="Render" DisplayName="풍화된 목재"/>
-    <part Name="Description" Short="누르스름한 염수줄기의 껍질을 벗긴 줄기 여러 개가 진흙으로 접착되어 있습니다."/>
-    </object>
-	<object Name="WornWoodWall with Mask" Load="Merge">
-		<part Name="Render" DisplayName="가면이 걸린 풍화된 목재"/>
-		<part Name="Description" Short="누르스름한 염수줄기의 껍질을 벗긴 줄기 여러 개가 진흙으로 접착되어 있습니다. 그 앞에 네 개의 못에 매달린 해진 나방날개 가면이 걸려 있는데, 섬세한 녹빛 석고 잎들이 나노위브로 코바늘질되어 뻣뻣한 철사 골조 위로 팽팽히 당겨져 있습니다. 한때 눈이 들여다보고 입이 숨 쉬던 자리에는 이제 수지가 틈을 메우고 있습니다."/>
-		</object>
-  <object Name="BrickWall" Load="Merge">
-    <part Name="Render" DisplayName="벽돌"/>
-    <part Name="Description" Short="구운 점토 잉곳들이 가로지르게 쌓여 장벽을 이루고 있습니다. 각 벽돌은 세월이 남긴 얼룩진 상처, 그것이 구워졌던 가마의 열 균형이 빚어낸 결함, 그리고 탄생의 진흙 속 곰팡이로 흠집이 나 있습니다."/>
-    </object>
-  <object Name="CyberWall" Load="Merge">
-    <part Name="Render" DisplayName="테트라제노노글라스 벽"/>
-    <part Name="Description" Short="홈이 진 프리즘 유리 기둥들이 증강의 광경을 천 갈래로 갈라진 전망 속으로 흩뿌립니다."/>
-    </object>
-  <object Name="MachineWallHotTubing" Load="Merge">
-    <part Name="Render" DisplayName="기계 벽"/>
-    <part Name="Description" Short="진공관들이 접힌 산맥의 강줄기처럼 회로 지형을 가로지릅니다. 뜨거운 기체가 요동치며 통과해, 황동과 실리콘의 드넓은 면면을 붉은 빛으로 물들입니다."/>
-    </object>
-  <object Name="MachineWallColdTubing" Load="Merge">
-    <part Name="Render" DisplayName="기계 벽"/>
-    <part Name="Description" Short="진공관들이 접힌 산맥의 강줄기처럼 회로 지형을 가로지릅니다. 차가운 기체가 요동치며 통과해, 황동과 실리콘의 드넓은 면면을 청록 빛으로 물들입니다."/>
-    </object>
-  <object Name="MachineWallEmptyTubing" Load="Merge">
-    <part Name="Render" DisplayName="기계 벽"/>
-    <part Name="Description" Short="진공관들이 접힌 산맥의 강줄기처럼 회로 지형을 가로지릅니다."/>
+  <object Name="BaseMetamorphicRock" Inherits="BaseWallRock">
+    <part Name="Render" DisplayName="[암석 벽]" RenderString="177" ColorString="&amp;r^w" TileColor="&amp;r" DetailColor="w" Occluding="true" />
+    <part Name="Physics" Weight="10000" FlameTemperature="99999" VaporTemperature="2500" Takeable="false" Solid="true" />
+    <stat Name="AV" Value="20" />
+    <stat Name="Hitpoints" Value="2000" />    
+    <tag Name="PaintedWall" Value="wall_rock" />
+    <tag Name="NoSparkingQuest" />
+    <tag Name="VaporObject" Value="LavaPuddle" />
+    <tag Name="ImmutableWhenUnexplored" Value="1" />
+    <tag Name="BaseObject" Value="*noinherit" />
+    <tag Name="Tier" Value="0" />
+		<stag Name="Geological" />
   </object>
-  <object Name="MachineWallHotTubingWithPiping" Load="Merge">
-    </object>
-  <object Name="GlassWall" Load="Merge">
-    <part Name="Render" DisplayName="유리 벽"/>
-    <part Name="Description" Short="모래가 으깨 불에 구워져, 투명한 판으로 빚어졌습니다."/>
-    </object>
-  <object Name="TintedGlassWall" Load="Merge">
-    <part Name="Render" DisplayName="색유리 벽"/>
-    <part Name="Description" Short="모래가 으깨 불에 구워지고 안료가 더해져, 그을음 낀 판으로 빚어졌습니다."/>
+  <object Name="BasePlantWall" Inherits="BaseWallRock">
+    <part Name="Render" DisplayName="[식물 벽]" RenderString="177" ColorString="&amp;r^w" TileColor="&amp;r" DetailColor="w" Occluding="true" />
+    <part Name="Physics" Weight="1000" FlameTemperature="350" VaporTemperature="1500" Takeable="false" Solid="true" Organic="true" Conductivity="90" />
+    <part Name="ShouldAttackToReachTarget" />
+    <stat Name="Hitpoints" Value="50" />    
+    <tag Name="BodyType" Value="PlantWall" />
+    <tag Name="PaintedWall" Value="wall_plant" />
+    <tag Name="PaintedWallExtension" Value=".png" />
+    <tag Name="NoSparkingQuest" />
+    <tag Name="VaporObject" Value="Ashes" />
+    <tag Name="ImmutableWhenUnexplored" Value="1" />
+    <tag Name="Tier" Value="0" />
+    <tag Name="BaseObject" Value="*noinherit" />
+    <tag Name="ImpactSound" Value="Sounds/Throw/sfx_throwing_generic_hitPlant" />
+    <tag Name="TakeDamageSound" Value="Sounds/Damage/sfx_damage_genPlant" />
+    <tag Name="DeathSounds" Value="Sounds/Damage/sfx_destroy_genPlant" />
   </object>
-  <object Name="SpindleGlassWall" Load="Merge">
-    <part Name="Render" DisplayName="번뜩이는 유리 벽"/>
-    <part Name="Description" Short="Spindle channel 안쪽에서 비추는 푸른빛이, 은하 원반의 별들처럼 혹은 회로기판의 다이오드처럼 유리판 위로 반짝입니다. 그 빛이 유리에 신성을 불어넣습니다."/>
-    </object>
-  <object Name="HGlassWall" Load="Merge">
-    <part Name="Render"/>
-  </object>
-  <object Name="VGlassWall" Load="Merge">
-    <part Name="Render"/>
-  </object>
-  <object Name="Burnished Azzurum" Load="Merge">
-    <part Name="Render" DisplayName="윤이 난 azzurum"/>
-    <part Name="Description" Short="청록빛이 유리 같은 외피를 뚫고 터져나와, 하늘이 육각 기둥의 덤불로 결정화된 듯 보입니다. Eaters가 그것을 마그마의 탄생지에서 파내어, Spindle을 모시기 위해 둔덕처럼 쌓아 올렸습니다."/>
-    </object>
-  <object Name="Petal-Strewn WoodWall" Load="Merge">
-    <part Name="Render" DisplayName="꽃잎이 흩뿌려진 염수줄기 벽"/>
-    <part Name="Description" Short="누르스름한 염수줄기의 껍질을 벗긴 줄기 여러 개가 진흙으로 접착되어 있고, 그 위로 꽃잎이 흩뿌려져 있습니다."/>
-    </object>
-
-  <!-- Fences -->
-  <object Name="BrinestalkStakes" Load="Merge">
-    <part Name="Render" DisplayName="염수줄기 말뚝"/>
-    <part Name="Description" Short="누르스름한 염수줄기 줄기 여러 개를 날카롭게 다듬어, 이곳 땅에 박아 두었습니다."/>
-    <tag Name="Gender" Value="plural"/>
-    </object>
-  <object Name="BrinestalkArrowslit" Load="Merge">
-    <part Name="Render" DisplayName="화살구멍"/>
-    <part Name="Description" Short="누르스름한 염수줄기 줄기 여러 개를 날카롭게 다듬어, 이곳 땅에 박아 두었습니다. 틈이 충분히 넓지 않아 비집고 지나갈 수는 없습니다."/>
-    </object>
-  <object Name="WoodFence" Load="Merge">
-    <part Name="Render" DisplayName="목재 울타리"/>
-    <part Name="Description" Short="땅에 박힌 dogthorn 말뚝의 나뭇결 위로 소용돌이 무늬가 가로지르고 있습니다."/>
-    </object>
-  <object Name="IronFence" Load="Merge">
-    <part Name="Render" DisplayName="단철 울타리"/>
-    <part Name="Description" Short="세월에 긁힌 철제 말뚝들이 두 개의 수평 난간 사이에 줄지어 서 있습니다."/>
-    </object>
-  <object Name="BrinestalkFence" Load="Merge">
-    <part Name="Render" DisplayName="염수줄기 울타리"/>
-    <part Name="Description" Short="땅에 박힌 염수줄기 말뚝의 나뭇결 위로, 소금자국 같은 물결 무늬가 가로지르고 있습니다."/>
-    </object>
-
-  <!-- Holographic walls -->
-  <object Name="HolographicShaleWall" Load="Merge">
-    <part Name="Render" DisplayName="홀로그래픽 셰일"/>
-    <part Name="Description" Short="반짝이는 빛이 시차를 따라 조각되어, 셰일 벽의 환영을 빚어내고 있습니다. 점토와 석영이 말라 으깨져 붉은 바위가 되었고, 산사람들이 수천 년에 수천 년을 거듭하며 그것을 캐내 왔습니다. "/>
-    </object>
-  <object Name="HoloMarble" Load="Merge">
-    <part Name="Render" DisplayName="대리석 벽"/>
-    <part Name="Description" Short="반짝이는 빛이 시차를 따라 조각되어, 대리석 벽의 환영을 빚어내고 있습니다. 달팽이와 산호가 지질의 압착기에서 짓눌려 불순물의 띠로 물들었고, 이상적인 평면을 따라 윤이 나게 연마되었습니다."/>
-    </object>
-  <object Name="HolographicLowSandstoneWall" Load="Merge">
-    <part Name="Render" DisplayName="홀로그래픽 사암"/>
-    <part Name="Description" Short="반짝이는 빛이 시차를 따라 조각되어, 사암 벽의 환영을 빚어내고 있습니다. 바위는 마모되어 모래가 되고, 모래는 바람에 실려 호수로 날아들고, 호수는 진흙에 묻히고, 진흙은 모래를 짓눌러 다시 바위로 만듭니다. 땅은 재배열됩니다."/>
-    </object>
-  <object Name="HolographicThatchedWall" Load="Merge">
-    <part Name="Render" DisplayName="홀로그래픽 이엉 벽"/>
-    <part Name="Description" Short="반짝이는 빛이 시차를 따라 조각되어, 이엉 벽의 환영을 빚어내고 있습니다. 물덩굴과 염수줄기 짚이 줄무늬로 묶여 비스듬히 놓여, 소금 찌꺼기를 빗겨 내도록 되어 있습니다."/>
-    </object>
-
-  <!-- Low walls -->
-  <object Name="HalfWall" Load="Merge">
-    <part Name="Render" DisplayName="낮은 벽"/>
-    <part Name="Description" Short="오래된 돌을 허리 높이까지 다듬어, 쏟아지는 것은 막되 시야는 막지 않도록 해 두었습니다."/>
-    </object>
-  <object Name="TombHalfWall" Load="Merge">
-    <part Name="Render"/>
-  </object>
-  <object Name="StoneHalfWall" Load="Merge">
-    <part Name="Render"/>
-  </object>
-  <object Name="MoverHalfWall" Load="Merge">
-    <part Name="Render"/>
-  </object>
-  <object Name="LowSandstoneWall" Load="Merge">
-    <part Name="Render"/>
-    <part Name="Description" Short="단단한 사암으로 만든 낮은 벽입니다."/>
-    </object>
-  <object Name="HalfWall_Aquamarine" Load="Merge">
-    <part Name="Render" DisplayName="낮은 아쿠아마린 벽"/>
+  <object Name="BaseMushroomWall" Inherits="BaseWallRock">
+		<part Name="Render" DisplayName="버섯 살점" RenderString="219" ColorString="&amp;r^R" TileColor="&amp;r" DetailColor="R" Occluding="true" />
+		<part Name="Physics" Weight="10000" Takeable="false" Solid="true" Organic="true" Conductivity="60" />
+		<part Name="Description" Short="포자가 가득한 점액이 우리처럼 생긴 자실체 위에서 번들거리고, 가정의 질서정연한 각에 맞춰 울타리처럼 다듬어져 있습니다." />
+		<stat Name="AV" Value="6" />
+		<stat Name="Hitpoints" Value="150" />		
+		<tag Name="PaintedWall" Value="wall_mushroom" />
+		<tag Name="PaintedWallAtlas" Value="Assets_Content_Textures_Walls_" />
+	  <tag Name="ImpactSound" Value="Sounds/Throw/sfx_throwing_generic_hitOrganic" />
+		<tag Name="PaintedWallExtension" Value=".png" />
+		<tag Name="PaintWith" Value="MushroomFlesh" />
+		<tag Name="BodyType" Value="FungusWall" />
+		<tag Name="LiveFungus" />
+		<tag Name="Tier" Value="0" />    
   </object>
 
-  <!-- Wall traps -->
-  <object Name="Walltrap" Load="Merge">
-    <part Name="Render" DisplayName="[벽 함정]"/>
-    </object>
-  <object Name="WalltrapFire" Load="Merge">
-    <part Name="Render" DisplayName="김이 피어오르는 통풍구"/>
-    <part Name="Description" Short="빛바랜 크롬 기둥에 파낸 수직 통풍구에서, 가느다란 김이 소용돌이치며 새어 나오고 있습니다."/>
-    <tag Name="Gender" Value="plural"/>
-    </object>
-  <object Name="WalltrapAcid" Load="Merge">
-    <part Name="Render" DisplayName="독기가 피어오르는 통풍구"/>
-    <part Name="Description" Short="빛바랜 크롬 기둥에 파낸 수직 통풍구에서, 유독한 연무가 가느다랗게 소용돌이치며 새어 나오고 있습니다."/>
-    <tag Name="Gender" Value="plural"/>
-    </object>
-  <object Name="WalltrapShock" Load="Merge">
-    <part Name="Render" DisplayName="불꽃이 튀는 통풍구"/>
-    <part Name="Description" Short="빛바랜 크롬 기둥에 파낸 수직 통풍구에서 불꽃이 튀고 있습니다."/>
-    <tag Name="Gender" Value="plural"/>
-    </object>
-  <object Name="WalltrapCrabs" Load="Merge">
-    <part Name="Render" DisplayName="긁힌 통풍구"/>
-    <part Name="Description" Short="빛바랜 크롬에 줄지어 파낸 수평 통풍구에, 아주 작은 긁힌 자국들이 남아 있습니다."/>
-    <tag Name="Gender" Value="plural"/>
-    </object>
-  <object Name="WalltrapClockworkBeetles" Load="Merge">
-    <part Name="Render" DisplayName="째깍거리는 통풍구"/>
-    <part Name="Description" Short="빛바랜 크롬에 줄지어 파낸 수평 통풍구에, 아주 작은 긁힌 자국들이 남아 있습니다."/>
-    <tag Name="Gender" Value="plural"/>
-    </object>
-  <object Name="WalltrapNormalityGas" Load="Merge">
-    <part Name="Render" DisplayName="육각 잔여물이 묻은 통풍구"/>
-    <part Name="Description" Short="Normality 응축물이, 빛바랜 크롬 기둥에 파낸 수직 통풍구를 따라 테셀레이션처럼 패턴을 이루고 있습니다."/>
-    <tag Name="Gender" Value="plural"/>
-    </object>
-  <object Name="WalltrapDefoliant" Load="Merge">
-    <part Name="Render" DisplayName="이끼 가루가 묻은 통풍구"/>
-    <part Name="Description" Short="Golden Dawn의 거센 소용돌이에 오래전에 죽어 부스러기로 흩어진 이끼가, 빛바랜 크롬 통풍구에 들러붙어 있습니다."/>
-    <tag Name="Gender" Value="plural"/>
-    </object>
-  <object Name="WalltrapFungicide" Load="Merge">
-    <part Name="Render" DisplayName="곰팡이 가루가 묻은 통풍구"/>
-    <part Name="Description" Short="자홍빛 소나기에 오래전에 죽어 침식되어 부스러기가 된 곰팡이 찌꺼기가, 빛바랜 크롬 통풍구에 들러붙어 있습니다."/>
-    <tag Name="Gender" Value="plural"/>
-    </object>
-	<object Name="WalltrapFireCrematory" Load="Merge">
-		<part Name="Render" DisplayName="김이 피어오르는 통풍구"/>
-		<part Name="Description" Short="그을음이 밴 크롬 기둥에 파낸 수직 통풍구에서, 가느다란 김이 소용돌이치며 새어 나오고 있습니다."/>
-		<tag Name="Gender" Value="plural"/>
-		</object>
+  
 
-  <object Name="CryochamberWall" Load="Merge">
-    <part Name="Render" DisplayName="서리 낀 기둥"/>
-    <part Name="Description" Short="대리석 기둥의 크롬 허리받이에 파낸 수평 통풍구에서, 얼어붙는 안개가 소용돌이치며 새어 나오고 있습니다."/>
-    </object>
-  <object Name="CryochamberWallBroken" Load="Merge">
-    <part Name="Render" DisplayName="서리 낀 기둥"/>
-    <part Name="Description" Short="대리석 기둥의 크롬 허리받이에 파낸 수평 통풍구에, 차가운 이슬이 내려앉아 있습니다."/>
-    </object>
-  <object Name="CryochamberWallSE" Load="Merge">
-    </object>
-  <object Name="CryochamberWallSW" Load="Merge">
-    </object>
-  <object Name="CryochamberWallNE" Load="Merge">
-    </object>
-  <object Name="CryochamberWallNW" Load="Merge">
-    </object> 
-
-  <!-- Forcefields -->
-  <object Name="BaseForcefield" Load="Merge">
-    <part Name="Render" DisplayName="[역장]"/>
-    <part Name="Description" Short="잠재력이 청록빛 육각 격자망으로 편극되어 조율자에 맞춰 잠금되어 있습니다. 충분한 질량을 지닌 물체는 차단되지만, 바람 뒤쪽으로 쏘아 보낸 작은 물체는 통과할 수 있습니다."/>
-    </object>
-  <object Name="Forcefield" Load="Merge">
-    <part Name="Render" DisplayName="역장"/>
-    </object>
-  <object Name="ForceBarrier" Load="Merge">
-    <part Name="Render" DisplayName="역장 장벽"/>
-    <part Name="Description" Short="잠재력이 선홍빛 육각 격자망으로 편극되어 조율자에 맞춰 잠금되어 있습니다. 분자 수준에서 허가 목록에 오른 물체가 아니라면 차단됩니다."/>
-    </object>
-  <object Name="Stasisfield" Load="Merge">
-    <part Name="Render" DisplayName="정지장"/>
-    <part Name="Description" Short="희뿌연 얇은 막이 시공간의 한 조각을 둘러치고 있으며, 그 안에는 양자 마찰이 너무도 커서 그곳의 거주자들이 완전히 멈춰 서게 됩니다."/>
-    </object>
-
-  <!-- Six Day Stilt -->
-  <object Name="SixDayStiltWall1" Load="Merge">
-    <part Name="Render" DisplayName="콘크리트 벽"/>
-    </object>
-  <object Name="SixDayStiltWall2" Load="Merge">
-    <part Name="Render" DisplayName="대리석 벽"/>
-    </object>
-  <object Name="SixDayStiltPillarWall1" Load="Merge">
-    <part Name="Render" DisplayName="홈이 파인 대리석 기둥"/>
-    </object>
-  <object Name="SixDayStiltPillarWall2" Load="Merge">
-    <part Name="Render" DisplayName="홈이 파인 대리석 기둥"/>
-    </object>
-
-  <object Name="Relief" Load="Merge">
-    <part Name="Render" DisplayName="[벽]"/>
-    </object>
-  <object Name="Relief1" Load="Merge">
-    <part Name="Description" Short="이것은 귀한 감청색 대리석에서 정교하게 깎아낸 고부조입니다. 신전의 대사제들에게 Father Shekhinah가 전해 주었다고 하는 Sacred Joining을 묘사하고 있습니다. 우리 우주의 이른 새벽, Argent Fathers는 무감한 심장을 지닌 채 끝없는 aether를 떠돌았습니다. 그곳, 우주에서도 가장 차가운 먼 곳에서, 그들은 아름다움과 크롬의 화신인 Kasaphescence를 발견했습니다. 그들은 함께, 그녀의 벌거벗은 자궁에서 기계들을 빚어내어 백 개의 대지에 거처를 마련했습니다. 이 장면에서는 Fathers가 처음으로 그녀의 Radiance에 다가섭니다. 그 선두에는 Shekhinah가 있으며, 그는 두드러진 자리를 차지하고 있습니다."/>
-    <!--<part Name="AddObservation" ID="SacredJoiningSecret" Text="You learned about the Sacred Joining." Category="Gossip" Attributes="Mechanimist,SacredJoining" />
-    <part Name="RevealObservationOnLook" />-->
-    </object>
-  <object Name="Relief2" Load="Merge">
-    <part Name="Description" Short="이것은 희귀한 감청색 대리석에서 정교하게 깎아낸 고부조입니다. Canticles Chromaic에서 노래하는 Edification을 묘사하고 있습니다. Sacred Joining 이후, Argent Fathers는 Kasaphescence의 장액 같은 금속을 빚어 필멸의 사람들이 거주할 만한 건조물로 만들었습니다. 그들은 산 위에 첨탑을 세우고 강 위에 아치를 놓았습니다. 이곳에서는 Shekhinah가 동쪽을 바라보며, 새로이 번뜩이는 그의 세계에서 진행되는 건설을 감독하고 있습니다."/>
-    </object>
-  <object Name="Relief11" Load="Merge">
-    <part Name="Render" DisplayName="Sacred Joining의 대리석 부조"/>
+  <object Name="Shale" Inherits="BaseSedimentaryRock">
+    <part Name="Render" DisplayName="셰일" ColorString="&amp;r^w" TileColor="&amp;r" DetailColor="w" />
+    <stat Name="AV" Value="10" />
+    <stat Name="Hitpoints" Value="200" />
+    <part Name="Description" Short="점토와 석영이 말라 으깨져, 붉은 바위가 되었습니다. 산사람들은 수천 년에 수천 년을 거듭하며 그것을 캐내 왔습니다." />
+    <part Name="ShaleVines" />
+    <tag Name="PaintWith" Value="MarbleWalls" />
+    <xtagGrammar massNoun="true" />
   </object>
-  <object Name="Relief12" Load="Merge">
-    <part Name="Render" DisplayName="Sacred Joining의 대리석 부조"/>
+  <object Name="Sandstone" Inherits="BaseSedimentaryRock">
+    <part Name="Render" DisplayName="사암" ColorString="&amp;r^W" TileColor="&amp;r" DetailColor="W" />
+    <stat Name="AV" Value="8" />
+    <stat Name="Hitpoints" Value="150" />
+    <part Name="Description" Short="바위는 마모되어 모래가 되고, 모래는 바람에 실려 호수로 날아들고, 호수는 진흙에 묻히고, 진흙은 모래를 짓눌러 다시 바위로 만듭니다. 땅은 재배열됩니다." />
+    <xtagGrammar massNoun="true" />
   </object>
-  <object Name="Relief13" Load="Merge">
-    <part Name="Render" DisplayName="Sacred Joining의 대리석 부조"/>
+  <object Name="Limestone" Inherits="BaseSedimentaryRock">
+    <part Name="Render" DisplayName="석회암" ColorString="&amp;y^K" TileColor="&amp;y" DetailColor="K" Occluding="true" />
+    <part Name="Physics" Weight="10000" FlameTemperature="99999" VaporTemperature="1500" Takeable="false" Solid="true" />
+    <stat Name="AV" Value="15" />
+    <stat Name="Hitpoints" Value="1000" />
+    <part Name="Description" Short="무척추 생명은 수백만 년에 걸쳐 살점이 빨려나가고, 피를 다 흘린 채로 남겨졌습니다. 푸르스름한 그 바위는 공동묘지입니다." />
+    <xtagGrammar massNoun="true" />
   </object>
-  <object Name="Relief14" Load="Merge">
-    <part Name="Render" DisplayName="Sacred Joining의 대리석 부조"/>
+  <object Name="Marl" Inherits="BaseSedimentaryRock">
+    <part Name="Render" DisplayName="이회토" ColorString="&amp;y^Y" TileColor="&amp;y" DetailColor="Y" Occluding="true" />
+    <part Name="Physics" Weight="10000" FlameTemperature="99999" VaporTemperature="1500" Takeable="false" Solid="true" />
+    <stat Name="AV" Value="6" />
+    <stat Name="Hitpoints" Value="300" />
+    <part Name="Description" Short="석회가 풍부한 진흙에 주조된 호수 생태계가, 분필처럼 희고 윤이 나는 빛으로 수백만 년 묵은 사연을 드러내고 있습니다." />
+    <xtagGrammar massNoun="true" />
   </object>
-  <object Name="Relief15" Load="Merge">
-    <part Name="Render" DisplayName="Sacred Joining의 대리석 부조"/>
+  <object Name="Halite" Inherits="BaseSedimentaryRock">
+    <part Name="Render" DisplayName="암염" RenderString="176" ColorString="&amp;Y^r" TileColor="&amp;Y" DetailColor="r" Occluding="true" />
+    <stat Name="AV" Value="10" />
+    <stat Name="Hitpoints" Value="500" />
+    <part Name="Description" Short="진홍빛 구름이 결정의 습성을 띱니다. 안팎으로 포개진 정육면체들입니다. 왜 Moghra'yi는 이 형태를 태양으로부터 숨기는 걸까요?" />
+    <tag Name="PaintedWall" Value="wall_marble" />
+    <xtagGrammar massNoun="true" />
   </object>
-  <object Name="Relief16" Load="Merge">
-    <part Name="Render" DisplayName="Sacred Joining의 대리석 부조"/>
+  <object Name="Gypsum" Inherits="BaseSedimentaryRock">
+    <part Name="Render" DisplayName="석고" RenderString="176" ColorString="&amp;Y^W" TileColor="&amp;Y" DetailColor="W" Occluding="true" />
+    <stat Name="AV" Value="6" />
+    <stat Name="Hitpoints" Value="200" />
+    <part Name="Description" Short="그을린 결정의 황금빛이, 물이 스민 백만 개의 석굴 바닥에 기하학적 그림자를 던지고 있습니다." />
+    <tag Name="PaintedWall" Value="wall_marble" />
+    <xtagGrammar massNoun="true" />
   </object>
-  <object Name="Relief17" Load="Merge">
-    <part Name="Render" DisplayName="Sacred Joining의 대리석 부조"/>
+  <object Name="Black Shale" Inherits="BaseSedimentaryRock">
+    <part Name="Render" DisplayName="검은 셰일" ColorString="&amp;K^y" TileColor="&amp;K" DetailColor="y" />
+    <stat Name="AV" Value="12" />
+    <stat Name="Hitpoints" Value="500" />
+    <part Name="Description" Short="검은 돌이, 점토 아래에서 죽어 썩어 황철석이 되어버린 달팽이 도시들을 기리는 기념비로 서 있습니다." />
+    <xtagGrammar massNoun="true" />
   </object>
-  <object Name="Relief21" Load="Merge">
-    <part Name="Render" DisplayName="Edification의 대리석 부조"/>
+  <object Name="Coral Rag" Inherits="BaseSedimentaryRock">
+    <part Name="Render" DisplayName="산호석" ColorString="&amp;C^B" TileColor="&amp;C" DetailColor="B" Occluding="true" />
+    <part Name="Physics" Weight="10000" FlameTemperature="99999" VaporTemperature="1500" Takeable="false" Solid="true" />
+    <stat Name="AV" Value="18" />
+    <stat Name="Hitpoints" Value="1000" />
+    <part Name="Description" Short="암초는 젊은 바다의 아콜로지였습니다. 이제는 청록빛 납골당이 되었고, 표면은 산성 물에 갉아먹혀 거친 상처로 남아 있습니다." />
+    <xtagGrammar massNoun="true" />
   </object>
-  <object Name="Relief22" Load="Merge">
-    <part Name="Render" DisplayName="Edification의 대리석 부조"/>
+  <object Name="Porous Coral Rag" Inherits="Coral Rag">
+    <tag Name="ExcludeFromDynamicEncounters" />
   </object>
-  <object Name="Relief23" Load="Merge">
-    <part Name="Render" DisplayName="Edification의 대리석 부조"/>
+  <object Name="Oolite" Inherits="BaseSedimentaryRock">
+    <part Name="Render" DisplayName="어란석" ColorString="&amp;Y^y" TileColor="&amp;Y" DetailColor="y" Occluding="true" />
+    <part Name="Physics" Weight="10000" FlameTemperature="99999" VaporTemperature="1500" Takeable="false" Solid="true" />
+    <stat Name="AV" Value="20" />
+    <stat Name="Hitpoints" Value="1500" />
+    <part Name="Description" Short="돌로 된 알들이 진주빛 평면의 얇은 층에서 품어집니다. 그러나 어떤 유충도 끝내 부화하지 못하고, 마모되어 먼지가 됩니다." />
+    <tag Name="PaintedWall" Value="wall_oolite" />
+    <tag Name="PaintedWallExtension" Value=".png" />
+    <xtagGrammar massNoun="true" />
   </object>
-  <object Name="Relief24" Load="Merge">
-    <part Name="Render" DisplayName="Edification의 대리석 부조"/>
+  <object Name="Serpentinite" Inherits="BaseMetamorphicRock">
+    <part Name="Render" DisplayName="사문암" ColorString="&amp;g^K" TileColor="&amp;g" DetailColor="K" Occluding="true" />
+    <stat Name="AV" Value="25" />
+    <stat Name="Hitpoints" Value="2000" />
+    <part Name="Description" Short="지상의 존재들에겐 이름조차 없는 지하의 탄생 전실에서, 초염기성 암석이 양수에 적셔져 세계뱀으로 태어납니다." />
+    <xtagGrammar massNoun="true" />
   </object>
-  <object Name="Relief25" Load="Merge">
-    <part Name="Render" DisplayName="Edification의 대리석 부조"/>
+  <object Name="Slate" Inherits="BaseMetamorphicRock">
+    <part Name="Render" DisplayName="점판암" ColorString="&amp;y^K" TileColor="&amp;y" DetailColor="K" Occluding="true" />
+    <stat Name="AV" Value="25" />
+    <stat Name="Hitpoints" Value="3000" />
+    <part Name="Description" Short="화산재가 깊은 땅속의 고치에서 번데기가 되어, 회색 돌로 갈라져 나왔습니다. 소피스트들은 이것이 순수한 에테르의 색이라고 이론화합니다." />
+    <xtagGrammar massNoun="true" />
+    <tag Name="PaintedWall" Value="wall_granite" />
   </object>
-  <object Name="Relief26" Load="Merge">
-    <part Name="Render" DisplayName="Edification의 대리석 부조"/>
+  <object Name="Quartzite" Inherits="BaseMetamorphicRock">
+    <part Name="Render" DisplayName="규암" ColorString="&amp;C^r" TileColor="&amp;C" DetailColor="r" Occluding="true" />
+    <stat Name="AV" Value="35" />
+    <stat Name="Hitpoints" Value="2000" />
+    <part Name="Description" Short="붉은빛과 청록빛이 얼룩진 결정 모자이크는 무너져 가는 지각판의 변성 잔해입니다. 새 대지는 태어나려 몸부림치고 있습니다." />
+    <xtagGrammar massNoun="true" />
+    <tag Name="PaintedWall" Value="wall_crystal1" />
+    <tag Name="PaintedWallExtension" Value=".png" />
   </object>
-  <object Name="Relief27" Load="Merge">
-    <part Name="Render" DisplayName="Edification의 대리석 부조"/>
+  <object Name="Marble" Inherits="Wall">
+    <part Name="Render" DisplayName="대리석 벽" RenderString="176" ColorString="&amp;Y^c" TileColor="&amp;c" DetailColor="Y" Occluding="true" /> asd
+    <part Name="Physics" Weight="10000" FlameTemperature="99999" VaporTemperature="1500" Takeable="false" Solid="true" />
+    <stat Name="AV" Value="25" />
+    <stat Name="Hitpoints" Value="6000" />
+    <part Name="Description" Short="달팽이와 산호가 지질의 압착기에서 짓눌려 불순물의 띠로 물들었고, 이상적인 평면을 따라 윤이 나게 연마되었습니다." />
+    <tag Name="PaintedWall" Value="wall_marble" />
+    <tag Name="PaintWith" Value="MarbleWalls" />
+    <tag Name="VaporObject" Value="LavaPuddle" />
+    <tag Name="ImmutableWhenUnexplored" Value="1" />
+    <tag Name="Tier" Value="0" />
+    <part Name="Graffitied" ChanceOneIn="300" />
   </object>
-
-  <!-- Yd Freehold -->
-  <object Name="YdFreeholdCrysteelPlatedWallWithPipes" Load="Merge">
-    </object>
-  <object Name="FulcreteWithSquareWave" Load="Merge">
-    <part Name="Render" DisplayName="사각파 무늬가 새겨진 풀크리트"/>
-    <part Name="Description" Short="일체형 안료로 물들인 풀크리트가 얼룩진 색으로 터져 나옵니다. 규칙적인 기하 무늬가 새겨져, 시선을 수평면을 따라 끌어갑니다."/>
-    </object>
-  <object Name="Fulcrete With Square Wave rW" Load="Merge">
-    <part Name="Render"/>
+  <object Name="MarbleWithPiping" Inherits="Marble">
+    <part Name="ModPiping" />
+		<tag Name="Breakable" />
+    <tag Name="ExcludeFromDynamicEncounters" />
   </object>
-  <object Name="Fulcrete With Square Wave Wg" Load="Merge">
-    <part Name="Render"/>
+  <object Name="Star Orchid Marble" Inherits="Wall">
+    <part Name="Render" DisplayName="별난초 대리석 벽" RenderString="176" ColorString="&amp;Y^m" TileColor="&amp;m" DetailColor="Y" Occluding="true" />asd
+    <part Name="Physics" Weight="10000" FlameTemperature="99999" VaporTemperature="1500" Takeable="false" Solid="true" />
+    <stat Name="AV" Value="25" />
+    <stat Name="Hitpoints" Value="6000" />
+    <part Name="Description" Short="바깥세계의 단단한 껍질 생명체들이 미행성에서 수확되었고, 수집자들의 함선이 내뿜는 자홍빛 배기가스 속에서 눈부시게 타올랐으며, 재진입을 위한 성좌의 새총 궤도에서 한데 으깨졌습니다." />
+    <tag Name="PaintedWall" Value="wall_marble" />
+    <tag Name="PaintWith" Value="MarbleWalls" />
+    <tag Name="VaporObject" Value="LavaPuddle" />
+    <tag Name="ImmutableWhenUnexplored" Value="1" />
+    <tag Name="Tier" Value="7" />
+    <part Name="Graffitied" ChanceOneIn="300" />
   </object>
-  <object Name="Fulcrete With Square Wave KC" Load="Merge">
-    <part Name="Render"/>
+  <object Name="Black Marble" Inherits="BaseMetamorphicRock">
+    <part Name="Render" DisplayName="검은 대리석" ColorString="&amp;y^K" TileColor="&amp;K" DetailColor="y" RenderString="176" Occluding="true" /> asd
+    <stat Name="AV" Value="25" />
+    <stat Name="Hitpoints" Value="2000" />
+    <part Name="Description" Short="행성의 가장 깊은 심연에 있는 세계-공허들은 신비로운 석조 공법으로 구획되어 있습니다. 희미한 흰 세공 무늬의 패턴에는 의미가 담겨 있지만, 그 누구도 그것을 알아보지 못합니다." />
+    <xtagGrammar massNoun="true" />
+    <tag Name="PaintedWall" Value="wall_marble" />
   </object>
-  <object Name="Fulcrete With Square Wave yW" Load="Merge">
-    <part Name="Render"/>
+  <object Name="Polished Black Marble" Inherits="Black Marble">
+    <part Name="Render" DisplayName="윤이 난 검은 대리석" ColorString="&amp;Y^K" TileColor="&amp;K" DetailColor="Y" RenderString="176" Occluding="true" /> asd
+    <stat Name="AV" Value="25" />
+    <stat Name="Hitpoints" Value="2000" />
+    <part Name="Description" Short="행성의 가장 깊은 심연에 있는 세계-공허들은 신비로운 석조 공법으로 구획되어 있습니다. 희미한 흰 세공 무늬의 패턴에는 의미가 담겨 있지만, 그 누구도 그것을 알아보지 못합니다." />
+    <xtagGrammar massNoun="true" />
+    <tag Name="PaintedWall" Value="wall_marble" />
   </object>
-  <object Name="Fulcrete With Square Wave rM" Load="Merge">
-    <part Name="Render"/>
+  <object Name="Granite" Inherits="Wall">
+    <part Name="Render" DisplayName="화강암" RenderString="177" ColorString="&amp;K^w" TileColor="&amp;K" DetailColor="w" Occluding="true" />
+    <part Name="Physics" Weight="10000" FlameTemperature="99999" VaporTemperature="21500" Takeable="false" Solid="true" />
+    <stat Name="AV" Value="40" />
+    <stat Name="Hitpoints" Value="26000" />
+    <part Name="Description" Short="장석과 그 사촌 바위들이 합쳐져 정전기 무늬 같은 결로 점점이 패였습니다. 균열은 훗날의 자갈들을 예고합니다." />
+    <tag Name="PaintedWall" Value="wall_rock" />
+    <tag Name="NoSparkingQuest" />
+    <tag Name="VaporObject" Value="LavaPuddle" />
+    <tag Name="ImmutableWhenUnexplored" Value="1" />
+    <tag Name="Tier" Value="0" />
+    <xtagGrammar massNoun="true" />
   </object>
-  <object Name="Fulcrete With Square Wave rG" Load="Merge">
-    <part Name="Render"/>
+  <object Name="Mudroot" Inherits="Wall">
+    <part Name="Render" DisplayName="뒤엉킨 진흙뿌리" RenderString="177" ColorString="&amp;w^g" TileColor="&amp;w" DetailColor="g" Occluding="true" />
+    <part Name="Corpse" CorpseChance="100" BuildCorpseChance="0" CorpseBlueprint="BrackishPool" />
+    <part Name="Physics" Weight="10000" FlameTemperature="99999" VaporTemperature="1500" Takeable="false" Solid="true" Organic="true" />
+    <stat Name="AV" Value="7" />
+    <stat Name="Hitpoints" Value="100" />
+    <part Name="Description" Short="섬유질 식물 맥의 땋은 줄기들이 다져진 진흙을 휘감고, 염수 같은 피를 흘리고 있습니다." />
+    <tag Name="BodyType" Value="PlantWall" />
+    <tag Name="PaintedWall" Value="wall_rock" />
+    <tag Name="NoSparkingQuest" />
+    <tag Name="VaporObject" Value="BrackishPool" />
+    <tag Name="ImmutableWhenUnexplored" Value="1" />
+    <tag Name="LivePlant" />
+    <tag Name="Tier" Value="0" />
+    <tag Name="ImpactSound" Value="Sounds/Throw/sfx_throwing_generic_hitPlant" />
+    <tag Name="TakeDamageSound" Value="Sounds/Damage/sfx_damage_genPlant" />
+    <tag Name="DeathSounds" Value="Sounds/Damage/sfx_destroy_genPlant" />
+    <xtagGrammar massNoun="true" />
   </object>
-  <object Name="Fulcrete With Square Wave rr" Load="Merge">
-    <part Name="Render"/>
+  <object Name="Basalt" Inherits="Wall">
+    <part Name="Render" DisplayName="현무암" RenderString="177" ColorString="&amp;K^y" TileColor="&amp;K" DetailColor="y" Occluding="true" />
+    <part Name="Physics" Weight="10000" FlameTemperature="99999" VaporTemperature="3000" Takeable="false" Solid="true" />
+    <stat Name="AV" Value="10" />
+    <stat Name="Hitpoints" Value="200" />
+    <part Name="Description" Short="용암이 흘러간 흉터가 넓은 돌 위에 작은 턱들로 또렷이 새겨져 있습니다. 작고 어두운 구멍들은 한때 녹아 있던 기체들이 태어나던 분화구였습니다." />
+    <tag Name="PaintedWall" Value="wall_rock" />
+    <tag Name="PaintWith" Value="BasaltWalls" />
+    <tag Name="NoSparkingQuest" />
+    <tag Name="VaporObject" Value="LavaPuddle" />
+    <tag Name="ImmutableWhenUnexplored" Value="1" />
+    <xtagGrammar massNoun="true" />
+    <tag Name="Tier" Value="0" />
   </object>
-  <object Name="Yd ColumbariumWall" Load="Merge">
-    <part Name="Render"/>
+  <object Name="BasaltWithPipes" Inherits="Basalt">
+    <part Name="ModPiping" />
+		<tag Name="Breakable" />
   </object>
-
-  <!-- Tomb of the Eaters -->
-  <object Name="CatacombWall" Load="Merge">
-    <part Name="Render" DisplayName="다져진 뼈"/>
-    <part Name="Description" Short="인간 형상의 뼈 조각들이, 올바르게 테셀레이션을 이루도록 일부러 어긋나게 배치되어 있습니다. 둥근 두개골은 배열 사이의 틈을 메우기 위해 척골 매듭을 필요로 합니다. 이 세계의 경계는 쌀처럼 희고, 존재감으로 가득 차 있습니다."/>
-    </object>
-  <object Name="ColumbariumWall" Load="Merge">
-    <part Name="Render" DisplayName="화려하게 조각된 대리석"/>
-    <part Name="Description" Short="온 세상이 저부조로 새겨져 있으며, 재의 꿈을 꾸는 Eaters의 잡다한 삶을 본뜬 모사체들입니다. 종려나무 잎이 별빛 띠가 두른 하늘로 피라미드를 들어 올리고, 생명의 물이 오이노코에의 가장자리를 넘어 쏟아져 내립니다."/>
-    </object>
-  <object Name="CryptWall" Load="Merge">
-    <part Name="Render" DisplayName="화려한 세공 무늬의 대리석"/>
-    <part Name="Description" Short="온 세상이 삼차원 세공 무늬로 엮여 있으며, 재의 꿈을 꾸는 Eaters의 잡다한 삶을 본뜬 모사체들입니다. 종려나무 잎이 별빛 띠가 두른 하늘로 피라미드를 들어 올리고, 생명의 물이 오이노코에의 가장자리를 넘어 쏟아져 내립니다."/>
-    </object>
-  <object Name="CryptWall Period 1" Load="Merge">
+  <object Name="GodshroomWall" Inherits="BaseMushroomWall">
+    <part Name="Render" DisplayName="버섯 살점" RenderString="007" ColorString="&amp;O^o" TileColor="&amp;o" DetailColor="O" Occluding="true" />	
+    <part Name="RandomColors" MainColor="o^o,O^o" />
+    <part Name="FungalVision" />
+    <tag Name="ImmutableWhenUnexplored" Value="1" />    
+    <tag Name="Tier" Value="6" />
+    <tag Name="NoClear" />
   </object>
-  <object Name="CryptWall Period 2" Load="Merge">
+  
+  <object Name="MushroomWall-Red" Inherits="BaseMushroomWall">
+    <part Name="Render" DisplayName="버섯 살점" RenderString="007" ColorString="&amp;Y^r" TileColor="&amp;r" DetailColor="R" Occluding="true" />  
+    <part Name="RandomColors" MainColor="r^r,Y^r" />
+    <tag Name="Tier" Value="3" />
   </object>
-  <object Name="CryptWall Period 3" Load="Merge">
+  <object Name="MushroomWall-White" Inherits="BaseMushroomWall">
+    <part Name="Render" DisplayName="버섯 살점" RenderString="007" ColorString="&amp;y^Y" TileColor="&amp;y" DetailColor="Y" Occluding="true" />  
+    <part Name="RandomColors" MainColor="y^Y,Y^Y" />
+    <tag Name="Tier" Value="3" />
   </object>
-  <object Name="CryptWall Period 4" Load="Merge">
-  </object>
-  <object Name="CryptWall Period 5" Load="Merge">
-  </object>
-
-  <!-- Sultan walls -->
-  <object Name="BaseSultanWall" Load="Merge">
-    <part Name="Render" DisplayName="[의례용 술탄국 벽]"/>
-    <part Name="Description" Short="sultan_wall"/>
-    </object>
-  <object Name="BaseInnerSultanWall" Load="Merge">
-    <part Name="Description" Short="sultan_wall"/>
-    </object>
-  <object Name="SultanWall_Period1" Load="Merge">
-    <part Name="Render" DisplayName="*Sultan1Name* 술탄국의 조각된 돌"/>
-    <part Name="Description" Short="거대하고 오래된 돌이 쌓이고, 쪼아 다듬어지고, *Sultan1Name*의 시대에 유행하던 양식에 맞춰 긴 호를 그리며 조각되었습니다. 그 뒤로 이 작업에는 협업자들이 늘어났고, 그들의 서명이 곳곳에 새겨졌습니다. 여기에는 누군가 훼손해 덧댄 흔적의 공백이 있고, 저기에는 세월의 붓이 남긴 부드러운 터치가 있습니다."/>
-    </object>
-  <object Name="SultanWall_Period1 High Graffiti Chance" Load="Merge">
-    </object>
-  <object Name="HighCapacityWiredSultanWall_Period1" Load="Merge">
-    </object>
-  <object Name="SultanWall_Period2" Load="Merge">
-    <part Name="Render" DisplayName="*Sultan2Name* 술탄국의 조각된 돌"/>
-    <part Name="Description" Short="거대하고 오래된 돌이 쌓이고, 쪼아 다듬어지고, *Sultan2Name*의 시대에 유행하던 양식에 맞춰 긴 호를 그리며 조각되었습니다. 그 뒤로 이 작업에는 협업자들이 늘어났고, 그들의 서명이 곳곳에 새겨졌습니다. 여기에는 누군가 훼손해 덧댄 흔적의 공백이 있고, 저기에는 세월의 붓이 남긴 부드러운 터치가 있습니다."/>
-    </object>
-  <object Name="SultanWall_Period2 High Graffiti Chance" Load="Merge">
-    </object>
-  <object Name="SultanWall_Period3" Load="Merge">
-    <part Name="Render" DisplayName="*Sultan3Name* 술탄국의 조각된 돌"/>
-    <part Name="Description" Short="거대하고 오래된 돌이 쌓이고, 쪼아 다듬어지고, *Sultan3Name*의 시대에 유행하던 양식에 맞춰 긴 호를 그리며 조각되었습니다. 그 뒤로 이 작업에는 협업자들이 늘어났고, 그들의 서명이 곳곳에 새겨졌습니다. 여기에는 누군가 훼손해 덧댄 흔적의 공백이 있고, 저기에는 세월의 붓이 남긴 부드러운 터치가 있습니다."/>
-    </object>
-  <object Name="SultanWall_Period3 High Graffiti Chance" Load="Merge">
-    </object>
-  <object Name="SultanWall_Period4" Load="Merge">
-    <part Name="Render" DisplayName="*Sultan4Name* 술탄국의 조각된 돌"/>
-    <part Name="Description" Short="거대하고 오래된 돌이 쌓이고, 쪼아 다듬어지고, *Sultan4Name*의 시대에 유행하던 양식에 맞춰 긴 호를 그리며 조각되었습니다. 그 뒤로 이 작업에는 협업자들이 늘어났고, 그들의 서명이 곳곳에 새겨졌습니다. 여기에는 누군가 훼손해 덧댄 흔적의 공백이 있고, 저기에는 세월의 붓이 남긴 부드러운 터치가 있습니다."/>
-    </object>
-  <object Name="SultanWall_Period5" Load="Merge">
-    <part Name="Render" DisplayName="*Sultan5Name* 술탄국의 조각된 돌"/>
-    <part Name="Description" Short="거대하고 오래된 돌이 쌓이고, 쪼아 다듬어지고, *Sultan5Name*의 시대에 유행하던 양식에 맞춰 긴 호를 그리며 조각되었습니다. 그 뒤로 이 작업에는 협업자들이 늘어났고, 그들의 서명이 곳곳에 새겨졌습니다. 여기에는 누군가 훼손해 덧댄 흔적의 공백이 있고, 저기에는 세월의 붓이 남긴 부드러운 터치가 있습니다."/>
-    </object>
-  <object Name="SultanWall_Period6" Load="Merge">
-    <part Name="Render" DisplayName="Resheph 술탄국의 조각된 돌"/>
-    <part Name="Description" Short="거대하고 오래된 돌이 쌓이고, 쪼아 다듬어지고, Resheph의 시대에 유행하던 양식에 맞춰 긴 호를 그리며 조각되었습니다. 그 뒤로 이 작업에는 협업자들이 늘어났고, 그들의 서명이 곳곳에 새겨졌습니다. 여기에는 누군가 훼손해 덧댄 흔적의 공백이 있고, 저기에는 세월의 붓이 남긴 부드러운 터치가 있습니다."/>
-    </object>
-  <object Name="SultanWall_Ornate_Period5" Load="Merge">
-    <part Name="Render" DisplayName="*Sultan5Name* 술탄국의 조각된 돌"/>
-    <part Name="Description" Short="거대하고 오래된 돌이 쌓이고, 쪼아 다듬어지고, *Sultan5Name*의 시대에 유행하던 양식에 맞춰 긴 호를 그리며 조각되었습니다. 그 뒤로 이 작업에는 협업자들이 늘어났고, 그들의 서명이 곳곳에 새겨졌습니다. 여기에는 누군가 훼손해 덧댄 흔적의 공백이 있고, 저기에는 세월의 붓이 남긴 부드러운 터치가 있습니다."/>
-    </object>
-  <object Name="InnerSultanWall_Period1" Load="Merge">
-    <part Name="Render" DisplayName="*Sultan1Name* 술탄국의 금박 대리석"/>
-    <part Name="Description" Short="귀한 돌이 꿈꾸는 대지의 먼 심연에서 끌려 나와, 키클롭스식 거석 설계로 쌓이고, 천 송이 꽃이 만개한 듯한 장엄함으로 조각되었습니다. 습기 없는 공기가 금박을 보존하지만, 세월은 그 가장자리를 부드럽게 무디게 만들었습니다."/>
-    </object>
-  <object Name="InnerSultanWall_Period1 High Graffiti Chance" Load="Merge">
-    </object>
-  <object Name="InnerSultanWall_Period2" Load="Merge">
-    <part Name="Render" DisplayName="*Sultan2Name* 술탄국의 금박 대리석"/>
-    <part Name="Description" Short="귀한 돌이 꿈꾸는 대지의 먼 심연에서 끌려 나와, 키클롭스식 거석 설계로 쌓이고, 천 송이 꽃이 만개한 듯한 장엄함으로 조각되었습니다. 습기 없는 공기가 금박을 보존하지만, 세월은 그 가장자리를 부드럽게 무디게 만들었습니다."/>
-    </object>
-  <object Name="InnerSultanWall_Period3" Load="Merge">
-    <part Name="Render" DisplayName="*Sultan3Name* 술탄국의 금박 대리석"/>
-    <part Name="Description" Short="귀한 돌이 꿈꾸는 대지의 먼 심연에서 끌려 나와, 키클롭스식 거석 설계로 쌓이고, 천 송이 꽃이 만개한 듯한 장엄함으로 조각되었습니다. 습기 없는 공기가 금박을 보존하지만, 세월은 그 가장자리를 부드럽게 무디게 만들었습니다."/>
-    </object>
-  <object Name="InnerSultanWall_Period4" Load="Merge">
-    <part Name="Render" DisplayName="*Sultan4Name* 술탄국의 금박 대리석"/>
-    <part Name="Description" Short="귀한 돌이 꿈꾸는 대지의 먼 심연에서 끌려 나와, 키클롭스식 거석 설계로 쌓이고, 천 송이 꽃이 만개한 듯한 장엄함으로 조각되었습니다. 습기 없는 공기가 금박을 보존하지만, 세월은 그 가장자리를 부드럽게 무디게 만들었습니다."/>
-    </object>
-  <object Name="InnerSultanWall_Period4 High Graffiti Chance" Load="Merge">
-    </object>
-  <object Name="InnerSultanWall_Period5" Load="Merge">
-    <part Name="Render" DisplayName="*Sultan5Name* 술탄국의 금박 대리석"/>
-    <part Name="Description" Short="귀한 돌이 꿈꾸는 대지의 먼 심연에서 끌려 나와, 키클롭스식 거석 설계로 쌓이고, 천 송이 꽃이 만개한 듯한 장엄함으로 조각되었습니다. 습기 없는 공기가 금박을 보존하지만, 세월은 그 가장자리를 부드럽게 무디게 만들었습니다."/>
-    </object>
-  <object Name="InnerSultanWall_Period5 High Graffiti Chance" Load="Merge">
-    </object>
-  <object Name="InnerSultanWall_Period6" Load="Merge">
-    <part Name="Render" DisplayName="Resheph 술탄국의 금박 대리석"/>
-    <part Name="Description" Short="옷자락의 흐름이 원형을 두르고 고부조로 대리석에 얼어붙어 있습니다. 제국의 금박 벽들은 바로크 풍이지만, 초기 술탄들의 금박에 비하면 여전히 더 절제되어 있습니다."/>
-    </object>
-  <object Name="BaseTombWall" Load="Merge">
-    <part Name="Render"/>
-    </object>
-  <object Name="TombExteriorWall" Load="Merge">
-  </object>
-  <object Name="TombWarriorCryptWall" Load="Merge">
-    </object>
-  <object Name="TombSultan1Wall" Load="Merge">
-  </object>
-  <object Name="TombSultan2Wall" Load="Merge">
-  </object>
-  <object Name="TombSultan2HalfWall" Load="Merge">
-  </object>
-  <object Name="TombSultan3Wall" Load="Merge">
-  </object>
-  <object Name="TombSultan3HalfWall" Load="Merge">
-  </object>
-  <object Name="TombSultan4Wall" Load="Merge">
-  </object>
-  <object Name="TombSultan4HalfWall" Load="Merge">
-  </object>
-  <object Name="TombSultan5Wall" Load="Merge">
-  </object>
-  <object Name="TombSultan5HalfWall" Load="Merge">
-  </object>
-  <object Name="TombSultan6Wall" Load="Merge">
-  </object>
-  <object Name="TombSultan6HalfWall" Load="Merge">
+  <object Name="PlantWall" Inherits="BasePlantWall">
+    <part Name="Render" DisplayName="식물질" RenderString="176" ColorString="&amp;w^g" TileColor="&amp;w" DetailColor="g" Occluding="true" />
+    <stat Name="AV" Value="0" />
+    <stat Name="Hitpoints" Value="5" />
+    <part Name="Description" Short="시간과 우연, 곧 자연의 두 손이 뿌리와 줄기와 잎을 엮어 섬유질의 둑을 짜 놓았습니다." />
+    <xtagGrammar massNoun="true" />
+    <tag Name="LivePlant" />
   </object>
 
-  <!-- Sultan murals -->
-  <object Name="BaseMuralWall" Load="Merge">
-    <part Name="Render" DisplayName="[벽화 벽]"/>
-    <part Name="Description" Short="sultan_wall"/>
-    </object>
-  <object Name="BaseMuralLeftend" Load="Merge">
-    <part Name="Render" DisplayName="벽화 끝마감"/>
-    <part Name="Description" Short="이른 대지에서 채석한 돌이 한 생의 예술을 묶어 두었습니다."/>
-    </object>
-  <object Name="BaseMuralCenter" Load="Merge">
-    <part Name="Render" DisplayName="벽화 중앙부"/>
-    <part Name="Description" Short="이른 대지에서 채석한 돌이 한 생의 예술을 갈라 놓았습니다."/>
-    </object>
-  <object Name="BaseMuralRightend" Load="Merge">
-    <part Name="Render" DisplayName="벽화 끝마감"/>
-    <part Name="Description" Short="이른 대지에서 채석한 돌이 한 생의 예술을 묶어 두었습니다."/>
-    </object>
-  <object Name="Mural Leftend Period 1" Load="Merge">
-    <part Name="Render"/>
+  
+  <object Name="AgateWall" Inherits="BaseSedimentaryRock">
+    <part Name="Render" DisplayName="{{K|마노}} 광맥이 박힌 셰일 벽" ColorString="&amp;r^K" TileColor="&amp;r" DetailColor="K" />
+    <part Name="Description" Short="점토와 석영이 말라 으깨져, 산사람들이 수천 년에 수천 년을 거듭하며 캐내 온 붉은 바위가 되었습니다. 바위 전체를 가로지르며 윤이 나는 검은 띠가 뻗어 있습니다." />
+    <part Name="Corpse" CorpseChance="4" CorpseBlueprint="Rough Agate" />
+    <tag Name="TakeDamageSound" Value="Sounds/Damage/sfx_damage_gemstone" />
+    <tag Name="DeathSounds" Value="Sounds/Damage/sfx_destroy_gemstone" />
   </object>
-  <object Name="Mural Center Period 1" Load="Merge">
-    <part Name="Render"/>
-    </object>
-  <object Name="Mural Rightend Period 1" Load="Merge">
-    <part Name="Render"/>
+  <object Name="TopazWall" Inherits="BaseSedimentaryRock">
+    <part Name="Render" DisplayName="{{W|토파즈}} 광맥이 박힌 셰일 벽" ColorString="&amp;r^W" TileColor="&amp;r" DetailColor="W" />
+    <part Name="Description" Short="점토와 석영이 말라 으깨져, 산사람들이 수천 년에 수천 년을 거듭하며 캐내 온 붉은 바위가 되었습니다. 바위 전체를 가로지르며 윤이 나는 황금 띠가 뻗어 있습니다." />
+    <part Name="Corpse" CorpseChance="4" CorpseBlueprint="Rough Topaz" />
+    <tag Name="TakeDamageSound" Value="Sounds/Damage/sfx_damage_gemstone" />
+    <tag Name="DeathSounds" Value="Sounds/Damage/sfx_destroy_gemstone" />
   </object>
-  <object Name="Mural Leftend Period 2" Load="Merge">
-    <part Name="Render"/>
+  <object Name="JasperWall" Inherits="BaseSedimentaryRock">
+    <part Name="Render" DisplayName="{{R|벽옥}} 광맥이 박힌 셰일 벽" ColorString="&amp;r^R" TileColor="&amp;r" DetailColor="R" />
+    <part Name="Description" Short="점토와 석영이 말라 으깨져, 산사람들이 수천 년에 수천 년을 거듭하며 캐내 온 붉은 바위가 되었습니다. 바위 전체를 가로지르며 윤이 나는 붉은 띠가 뻗어 있습니다." />
+    <part Name="Corpse" CorpseChance="4" CorpseBlueprint="Rough Jasper" />
+    <tag Name="TakeDamageSound" Value="Sounds/Damage/sfx_damage_gemstone" />
+    <tag Name="DeathSounds" Value="Sounds/Damage/sfx_destroy_gemstone" />
   </object>
-  <object Name="Mural Center Period 2" Load="Merge">
-    <part Name="Render"/>
+  <object Name="AmethystWall" Inherits="BaseSedimentaryRock">
+    <part Name="Render" DisplayName="{{M|자수정}} 광맥이 박힌 셰일 벽" ColorString="&amp;r^M" TileColor="&amp;r" DetailColor="M" />
+    <part Name="Description" Short="점토와 석영이 말라 으깨져, 산사람들이 수천 년에 수천 년을 거듭하며 캐내 온 붉은 바위가 되었습니다. 바위 전체를 가로지르며 윤이 나는 보랏빛 띠가 뻗어 있습니다." />
+    <part Name="Corpse" CorpseChance="4" CorpseBlueprint="Rough Amethyst" />
+    <tag Name="TakeDamageSound" Value="Sounds/Damage/sfx_damage_gemstone" />
+    <tag Name="DeathSounds" Value="Sounds/Damage/sfx_destroy_gemstone" />
   </object>
-  <object Name="Mural Rightend Period 2" Load="Merge">
-    <part Name="Render"/>
+  <object Name="SapphireWall" Inherits="BaseSedimentaryRock">
+    <part Name="Render" DisplayName="{{B|사파이어}} 광맥이 박힌 셰일 벽" ColorString="&amp;r^B" TileColor="&amp;r" DetailColor="B" />
+    <part Name="Description" Short="점토와 석영이 말라 으깨져, 산사람들이 수천 년에 수천 년을 거듭하며 캐내 온 붉은 바위가 되었습니다. 바위 전체를 가로지르며 윤이 나는 푸른 띠가 뻗어 있습니다." />
+    <part Name="Corpse" CorpseChance="4" CorpseBlueprint="Rough Sapphire" />
+    <tag Name="TakeDamageSound" Value="Sounds/Damage/sfx_damage_gemstone" />
+    <tag Name="DeathSounds" Value="Sounds/Damage/sfx_destroy_gemstone" />
   </object>
-  <object Name="Mural Leftend Period 2 Outside" Load="Merge">
-    <part Name="Render"/>
+  <object Name="EmeraldWall" Inherits="BaseSedimentaryRock">
+    <part Name="Render" DisplayName="{{G|에메랄드}} 광맥이 박힌 셰일 벽" ColorString="&amp;r^G" TileColor="&amp;r" DetailColor="G" />
+    <part Name="Description" Short="점토와 석영이 말라 으깨져, 산사람들이 수천 년에 수천 년을 거듭하며 캐내 온 붉은 바위가 되었습니다. 바위 전체를 가로지르며 윤이 나는 초록 띠가 뻗어 있습니다." />
+    <part Name="Corpse" CorpseChance="4" CorpseBlueprint="Rough Emerald" />
+    <tag Name="TakeDamageSound" Value="Sounds/Damage/sfx_damage_gemstone" />
+    <tag Name="DeathSounds" Value="Sounds/Damage/sfx_destroy_gemstone" />
   </object>
-  <object Name="Mural Center Period 2 Outside" Load="Merge">
-    <part Name="Render"/>
-  </object>
-  <object Name="Mural Rightend Period 2 Outside" Load="Merge">
-    <part Name="Render"/>
-  </object>
-  <object Name="Mural Leftend Period 3" Load="Merge">
-    <part Name="Render"/>
-  </object>
-  <object Name="Mural Center Period 3" Load="Merge">
-    <part Name="Render"/>
-  </object>
-  <object Name="Mural Rightend Period 3" Load="Merge">
-    <part Name="Render"/>
-  </object>
-  <object Name="Mural Leftend Period 3 Outside" Load="Merge">
-    <part Name="Render"/>
-  </object>
-  <object Name="Mural Center Period 3 Outside" Load="Merge">
-    <part Name="Render"/>
-  </object>
-  <object Name="Mural Rightend Period 3 Outside" Load="Merge">
-    <part Name="Render"/>
-  </object>
-  <object Name="Mural Leftend Period 4" Load="Merge">
-    <part Name="Render"/>
-  </object>
-  <object Name="Mural Center Period 4" Load="Merge">
-    <part Name="Render"/>
-  </object>
-  <object Name="Mural Rightend Period 4" Load="Merge">
-    <part Name="Render"/>
-  </object>
-  <object Name="Mural Leftend Period 4 Outside" Load="Merge">
-    <part Name="Render"/>
-  </object>
-  <object Name="Mural Center Period 4 Outside" Load="Merge">
-    <part Name="Render"/>
-  </object>
-  <object Name="Mural Rightend Period 4 Outside" Load="Merge">
-    <part Name="Render"/>
-  </object>
-  <object Name="Mural Leftend Period 5" Load="Merge">
-    <part Name="Render"/>
-  </object>
-  <object Name="Mural Center Period 5" Load="Merge">
-    <part Name="Render"/>
-  </object>
-  <object Name="Mural Rightend Period 5" Load="Merge">
-    <part Name="Render"/>
-  </object>
-  <object Name="Mural Leftend Period 6" Load="Merge">
-    <part Name="Render"/>
-    <part Name="Description" Short="이른 대지에서 채석한 검은 대리석이 한 생의 예술을 묶어 두었습니다."/>
-  </object>
-  <object Name="Mural Center Period 6" Load="Merge">
-    <part Name="Render"/>
-    <part Name="Description" Short="이른 대지에서 채석한 검은 대리석이 한 생의 예술을 갈라 놓았습니다."/>
-  </object>
-  <object Name="Mural Rightend Period 6" Load="Merge">
-    <part Name="Render"/>
-    <part Name="Description" Short="이른 대지에서 채석한 검은 대리석이 한 생의 예술을 묶어 두었습니다."/>
-  </object>
-  <object Name="Mural AppeasesBaetyl Left" Load="Merge">
-    <part Name="Render"/>
-  </object>
-  <object Name="Mural AppeasesBaetyl Center" Load="Merge">
-    <part Name="Render"/>
-  </object>
-  <object Name="Mural AppeasesBaetyl Right" Load="Merge">
-    <part Name="Render"/>
-  </object>
-  <object Name="Mural Ruined4 Left" Load="Merge">
-    <part Name="Render"/>
-  </object>
-  <object Name="Mural Ruined4 Center" Load="Merge">
-    <part Name="Render"/>
-  </object>
-  <object Name="Mural Ruined4 Right" Load="Merge">
-    <part Name="Render"/>
+  <object Name="PeridotWall" Inherits="BaseSedimentaryRock">
+    <part Name="Render" DisplayName="{{peridot|페리도트}} 광맥이 박힌 운석 벽" ColorString="&amp;K^G" TileColor="&amp;K" DetailColor="G" />
+    <part Name="Description" Short="점토와 석영이 말라 으깨져, 산사람들이 수천 년에 수천 년을 거듭하며 캐내 온 붉은 바위가 되었습니다. 바위 전체를 가로지르며 윤이 나는 초록과 황금의 띠가 뻗어 있습니다." />
+    <part Name="Corpse" CorpseChance="4" CorpseBlueprint="Rough Peridot" />
+    <tag Name="TakeDamageSound" Value="Sounds/Damage/sfx_damage_gemstone" />
+    <tag Name="DeathSounds" Value="Sounds/Damage/sfx_destroy_gemstone" />
   </object>
 
-  <object Name="SultanMuralWall" Load="Merge">
-    <part Name="Render" DisplayName="[술탄 벽화]"/>
-    <part Name="Description" Short="검은 대리석이 공허한 궁륭의 캔버스로 거칠게 갈려 나간 뒤 그대로 남겨져, 있었을지도 모를 것에 대한 경이를 자아내고 있습니다."/>
-    </object>
-  <object Name="SultanMuralWall1" Load="Merge">
-    <part Name="Render" DisplayName="[술탄 벽화]"/>
-    </object>
-  <object Name="SultanMuralWall2" Load="Merge">
-    <part Name="Render" DisplayName="[술탄 벽화]"/>
-    </object>
-  <object Name="SultanMuralWallOutside2" Load="Merge">
-    <part Name="Render" DisplayName="[술탄 벽화]"/>
-    </object>
-  <object Name="SultanMuralWallOutside2Preserved" Load="Merge">
-    <part Name="Render" DisplayName="[술탄 벽화]"/>
-    </object>
-  <object Name="SultanMuralWall3" Load="Merge">
-    <part Name="Render" DisplayName="[술탄 벽화]"/>
-    </object>
-  <object Name="SultanMuralWallOutside3" Load="Merge">
-    <part Name="Render" DisplayName="[술탄 벽화]"/>
-    </object>
-  <object Name="SultanMuralWall4" Load="Merge">
-    <part Name="Render" DisplayName="[술탄 벽화]"/>
-    </object>
-  <object Name="SultanMuralWallOutside4" Load="Merge">
-    <part Name="Render" DisplayName="[술탄 벽화]"/>
-    </object>
-  <object Name="SultanMuralWall5" Load="Merge">
-    <part Name="Render" DisplayName="[술탄 벽화]"/>
-    </object>
-  <object Name="SultanMuralWall6" Load="Merge">
-    <part Name="Render" DisplayName="[술탄 벽화]"/>
-    </object>
+  
 
-	<!-- Vehicles -->
-  	<!-- Golem -->
-	<object Name="GolemInteriorWall" Load="Merge">
-		<part Name="Render" DisplayName="전기로 구운 점토, 금속 장갑판, 그리고 조직"/>
-		<part Name="Description" Short="축축한 조직 내피가 전기로 구운 점토와 납땜된 금속 판 위로 팽팽히 늘어서 있습니다. 반투명한 막 아래로, 하부 회로망의 격자들이 황금빛을 깜빡이고 있습니다."/>
-		</object>
-	<object Name="GolemInteriorWall Endcap" Load="Merge">
-		<part Name="Render" DisplayName="내부"/>
-		</object>
-	<object Name="InteriorContainer" Load="Merge">
-		<part Name="Description" Short="지질학적 늑골 안쪽에 커다란 수납 캐비닛이 만들어져 있습니다. 자력으로 떠 있는 선반들이 공간을 나누고 있습니다."/>
-		<part Name="Render" DisplayName="수납 해치"/>
-		</object>
-	<object Name="GolemInteriorGlassWall" Load="Merge">
-		</object>
-	<object Name="GolemInteriorWallwPiping" Load="Merge">
-		</object>
-	<object Name="PumpingColumnProducer" Load="Merge">
-		</object>
-	<object Name="PumpingColumnConsumer" Load="Merge">
-		</object>
-	  <!-- End Golem -->
+  
 
-	<object Name="MechInteriorWall" Load="Merge">		
-		</object>
-	<object Name="MechInteriorWall Endcap" Load="Merge">
-		<part Name="Render"/>
-		</object>
-	<object Name="MechInteriorContainer" Load="Merge">		
-		<part Name="Description" Short="금속 늑골 안쪽에 커다란 수납 캐비닛이 만들어져 있습니다. 자력으로 떠 있는 선반들이 공간을 나누고 있습니다."/>
-		<part Name="Render" DisplayName="수납 해치"/>
-		</object>
-	<object Name="MechInteriorGlassWall" Load="Merge">
-		</object>	
-
-  <!-- Nephilim walls -->
-	<object Name="BaseNephilimWall" Load="Merge">
-		<part Name="Render" DisplayName="Nephilim 벽"/>
-		<part Name="Description" Short=""/>
-		</object>
-	<object Name="BaseNephilimWall_Agolgot" Load="Merge">
-		<part Name="Render" DisplayName="Agolgot가 분출한 수지층"/>
-		<part Name="Description" Short="기름진 셸락의 산등성이 같은 흘러내림이 바닥의 윤곽에 맞춰 빚어져, 별난초 길을 따라 흔적을 그립니다. 구역 전체는 말라붙은 죽음의 슬러지로 유약처럼 덮여 있습니다."/>
+  <object Name="Fulcrete" Inherits="Wall">
+    <part Name="Render" DisplayName="풀크리트" RenderString="176" ColorString="&amp;Y^k" TileColor="&amp;Y" DetailColor="k" Occluding="true" />
+    <part Name="Physics" Weight="15000" FlameTemperature="25000" VaporTemperature="58000" Takeable="false" Solid="true" />
+    <stat Name="AV" Value="40" />
+    <stat Name="Hitpoints" Value="100" />
+    <part Name="Description" Short="탄소 자갈의 섬들이 역청의 바다를 메우고, 수평면에서 솟아올라 air-rasp의 공허를 향해 뻗어 있습니다. 시간과 압력이 분지 전체를 따라 머리카락처럼 가는 도랑을 새겨 두었습니다." />
+    <tag Name="PaintedWall" Value="wall_mud" />
+    <stat Name="HeatResistance" Value="75" />
+    <stat Name="ColdResistance" Value="75" />
+    <tag Name="PaintWith" Value="FulcreteWalls" />
+    <tag Name="ImmutableWhenUnexplored" Value="1" />
+    <tag Name="Mods" Value="TechWallMods" />
+    <tag Name="Tier" Value="5" />
+    <xtagGrammar massNoun="true" />
+    <part Name="Graffitied" ChanceOneIn="300" />
+  </object>
+  <object Name="EbonFulcrete" Inherits="Fulcrete">
+    <part Name="Description" Short="검은 탄소 자갈의 섬들이 역청의 바다를 메우고, 수평면에서 솟아올라 air-rasp의 공허를 향해 뻗어 있습니다. 시간과 압력이 분지 전체를 따라 머리카락처럼 가는 도랑을 새겨 두었습니다." />
+    <part Name="Render" DisplayName="흑단 풀크리트" RenderString="176" ColorString="&amp;k^K" TileColor="&amp;K" DetailColor="y" Occluding="true" />
+    <tag Name="Tier" Value="6" />
+  </object>
+  <object Name="EbonFulcrete High Graffiti Chance" Inherits="EbonFulcrete">
+    <part Name="Graffitied" ChanceOneIn="3" />
+    <tag Name="ExcludeFromDynamicEncounters" Value="*noinherit" />
+  </object>
+  <object Name="HighCapacityWiredEbonFulcrete" Inherits="EbonFulcrete">
+    <tag Name="PaintWith" Value="FulcreteWalls" />
+    <part Name="ModWired" Tier="5" />
+		<tag Name="Breakable" />
+    <tag Name="TakeDamageSound" Value="Sounds/Damage/sfx_damage_electronic" />
+    <tag Name="DeathSounds" Value="Sounds/Damage/sfx_destroy_electronic" />
+  </object>
+  <object Name="HighCapacityWiredEbonFulcretePowerGenerator" Inherits="EbonFulcrete">
+    <tag Name="PaintWith" Value="FulcreteWalls" />
+    <part Name="FusionReactor" ChargeRate="1000" />
+    <part Name="Circuitry" StartCharge="1000" />
+    <part Name="ElectricalPowerTransmission" ChargeRate="10000" IsProducer="true" />
+		<tag Name="Breakable" />
+    <tag Name="ExcludeFromDynamicEncounters" Value="*noinherit" />
+    <tag Name="TakeDamageSound" Value="Sounds/Damage/sfx_damage_electronic" />
+    <tag Name="DeathSounds" Value="Sounds/Damage/sfx_destroy_electronic" />
+  </object>
+  <object Name="PipeFulcrete" Inherits="Fulcrete">
+    <tag Name="PaintWith" Value="FulcreteWalls" />
+    <part Name="ModPiping" />
+		<tag Name="Breakable" />
+  </object>
+  <object Name="WiredFulcrete" Inherits="Fulcrete">
+    <tag Name="PaintWith" Value="FulcreteWalls" />
+    <part Name="ModWired" />
+		<tag Name="Breakable" />
+    <tag Name="TakeDamageSound" Value="Sounds/Damage/sfx_damage_electronic" />
+    <tag Name="DeathSounds" Value="Sounds/Damage/sfx_destroy_electronic" />
+  </object>
+  <object Name="HighCapacityWiredFulcrete" Inherits="Fulcrete">
+    <tag Name="PaintWith" Value="FulcreteWalls" />
+    <part Name="ModWired" Tier="5" />
+		<tag Name="Breakable" />
+    <tag Name="TakeDamageSound" Value="Sounds/Damage/sfx_damage_electronic" />
+    <tag Name="DeathSounds" Value="Sounds/Damage/sfx_destroy_electronic" />
+  </object>
+  <object Name="WiredPipeFulcrete" Inherits="Fulcrete">
+    <tag Name="PaintWith" Value="FulcreteWalls" />
+    <part Name="ModWired" />
+    <part Name="ModPiping" />
+		<tag Name="Breakable" />
+    <tag Name="TakeDamageSound" Value="Sounds/Damage/sfx_damage_electronic" />
+    <tag Name="DeathSounds" Value="Sounds/Damage/sfx_destroy_electronic" />
+  </object>
+  <object Name="MetalWall" Inherits="BaseWallMetal">
+    <part Name="Render" DisplayName="금속 벽" RenderString="177" ColorString="&amp;c^C" TileColor="&amp;c" DetailColor="C" Occluding="true" />
+    <stat Name="AV" Value="30" />
+    <stat Name="Hitpoints" Value="400" />
+    <part Name="Description" Short="판금이 마름모 무늬로 맞물려 용접되어, 내부를 둘러막고 있습니다. 표면은 군데군데 그을리고 긁혀 있습니다." />
+    <tag Name="PaintWith" Value="MetalWalls" />
+    <tag Name="NoSparkingQuest" />
+    <tag Name="VaporObject" Value="LavaPuddle" />
+    <tag Name="ImmutableWhenUnexplored" Value="1" />
+    <tag Name="Mods" Value="TechWallMods" />
+    <tag Name="Tier" Value="3" />
+    <part Name="Graffitied" ChanceOneIn="300" />
+    <tag Name="ImpactSound" Value="Sounds/Throw/sfx_throwing_generic_hitMetal" />
+  </object>
+  <object Name="MetalWallWithPipes" Inherits="MetalWall">
+    <part Name="ModPiping" />
+		<tag Name="Breakable" />
+  </object>
+	<object Name="RustedMetalWall" Inherits="MetalWall">
+		<part Name="Render" DisplayName="녹슨 금속 벽" RenderString="177" ColorString="&amp;r^C" TileColor="&amp;r" DetailColor="C" Occluding="true" />		
+		<part Name="Description" Short="판금이 마름모 무늬로 맞물려 용접되어, 내부를 둘러막고 있습니다. 표면은 군데군데 그을리고 긁혀 있습니다." />		
 	</object>
-	<object Name="BaseNephilimWall_Bethsaida" Load="Merge">
-		<part Name="Render" DisplayName="Bethsaida가 분출한 수지층"/>
-		<part Name="Description" Short="기름진 셸락의 산등성이 같은 흘러내림이 바닥의 윤곽에 맞춰 빚어져, 별난초 길을 따라 흔적을 그립니다. 구역 전체는 갈라진 신경다발로 유약처럼 덮여 있습니다."/>
+	<object Name="RustedMetalWallPowerGenerator" Inherits="RustedMetalWall">
+		<part Name="FusionReactor" ChargeRate="400" ExplodeForce="0" />
+		<part Name="Circuitry" StartCharge="400" />
+		<part Name="ElectricalPowerTransmission" ChargeRate="2000" IsProducer="true" />
+		<part Name="ModWired" />
+		<tag Name="ExcludeFromDynamicEncounters" />
 	</object>
-	<object Name="BaseNephilimWall_Rermadon" Load="Merge">
-		<part Name="Render" DisplayName="Rermadon가 분출한 수지층"/>
-		<part Name="Description" Short="기름진 셸락의 산등성이 같은 흘러내림이 바닥의 윤곽에 맞춰 빚어져, 별난초 길을 따라 흔적을 그립니다. 구역 전체는 응고된 별 가스로 유약처럼 덮여 있습니다."/>
+  <object Name="CrysteelPlatedWall" Inherits="BaseWallMetal">
+    <part Name="Render" DisplayName="크리스틸 판 전단벽" RenderString="177" ColorString="&amp;g^y" TileColor="&amp;g" DetailColor="y" Occluding="true" />
+    <stat Name="AV" Value="30" />
+    <stat Name="Hitpoints" Value="3000" />
+    <part Name="Description" Short="길이 방향으로 끼운 윤이 난 크리스틸 충전 판들이 풀크리트 들보에 의해 지지되고 있습니다. 텅 빈 공간 너머로 생명의 소리가 메아리칩니다." />
+    <tag Name="PaintWith" Value="MetalWalls" />
+    <tag Name="NoSparkingQuest" />
+    <tag Name="VaporObject" Value="LavaPuddle" />
+    <tag Name="ImmutableWhenUnexplored" Value="1" />
+    <tag Name="Mods" Value="TechWallMods" />
+    <tag Name="Tier" Value="6" />
+    <part Name="Graffitied" ChanceOneIn="300" />
+    <tag Name="ImpactSound" Value="Sounds/Throw/sfx_throwing_generic_hitGlass" />
+  </object>
+  <object Name="Foamcrete" Inherits="Wall">
+    <part Name="Render" DisplayName="폼크리트" RenderString="176" ColorString="&amp;C^k" TileColor="&amp;C" DetailColor="k" Occluding="true" />
+    <part Name="Physics" Weight="15000" FlameTemperature="25000" VaporTemperature="58000" Takeable="false" Solid="true" />
+    <stat Name="AV" Value="40" />
+    <stat Name="Hitpoints" Value="100" />
+    <part Name="Description" Short="벽의 균열은, 압축된 폼크리트가 육각형으로 팽창하던 무늬가 화석처럼 남은 것입니다." />
+    <part Name="FillPit" DestroySelf="true" ReplaceWith="FoamcreteFloor" />
+    <stat Name="HeatResistance" Value="75" />
+    <stat Name="ColdResistance" Value="75" />
+    <tag Name="PaintedWall" Value="wall_mud" />
+    <tag Name="Tier" Value="5" />
+    <xtagGrammar massNoun="true" />
+    <part Name="Graffitied" ChanceOneIn="300" />
+  </object>
+  <object Name="Verdigris" Inherits="BaseWallMetal">
+    <part Name="Render" DisplayName="빛바랜 크롬" RenderString="177" ColorString="&amp;c^g" TileColor="&amp;c" DetailColor="g" Occluding="true" />
+    <part Name="Physics" Weight="25000" FlameTemperature="25000" VaporTemperature="58000" Takeable="false" Solid="true" />
+    <stat Name="AV" Value="50" />
+    <stat Name="Hitpoints" Value="300" />
+    <part Name="Description" Short="독빛 청록의 이끼가 금속의 형태를 환히 물들이고, 황동에 취한 벌레들을 끌어모읍니다." />
+    <stat Name="AcidResistance" Value="100" />
+    <stat Name="HeatResistance" Value="100" />
+    <stat Name="ColdResistance" Value="100" />
+    <stat Name="ElectricResistance" Value="100" />
+    <tag Name="PaintedWall" Value="wall_metal" />
+    <tag Name="ImmutableWhenUnexplored" Value="1" />
+    <tag Name="Mods" Value="TechWallMods" />
+    <tag Name="Tier" Value="4" />
+    <xtagGrammar massNoun="true" />
+    <part Name="Graffitied" ChanceOneIn="300" />
+  </object>
+  <object Name="Concrete" Inherits="Wall">
+    <part Name="Render" DisplayName="콘크리트 벽" RenderString="178" ColorString="&amp;y^c" TileColor="&amp;y" DetailColor="c" Occluding="true" />
+    <part Name="Physics" Weight="12000" FlameTemperature="24000" VaporTemperature="57000" Takeable="false" Solid="true" />
+    <part Name="Description" Short="매끈한 회색 돌이 결합된 자갈 속살과 시멘트의 피 같은 반죽을 감추고 있습니다. 흙먼지가 줄지어 얼룩져 있습니다." />
+    <stat Name="AV" Value="30" />
+    <stat Name="Hitpoints" Value="100" />
+    <stat Name="HeatResistance" Value="75" />
+    <stat Name="ColdResistance" Value="75" />
+    <tag Name="PaintedWall" Value="wall_mud" />
+    <tag Name="ImmutableWhenUnexplored" Value="1" />
+    <tag Name="Mods" Value="TechWallMods" />
+    <tag Name="Tier" Value="3" />
+    <part Name="Graffitied" ChanceOneIn="300" />
+  </object>
+  <object Name="PigskinWall" Inherits="Wall">
+    <part Name="Render" DisplayName="돼지가죽 벽" RenderString="178" ColorString="&amp;r^w" TileColor="&amp;r" DetailColor="w" Occluding="true" />
+    <part Name="Physics" Weight="500" Takeable="false" Solid="true" Organic="true" />
+    <part Name="Description" Short="분홍빛의 보송한 살점 한 조각이 잘려 나와 늘여 무두질되었고, 안쪽을 덮는 지붕처럼 드리워져 있습니다." />
+    <stat Name="AV" Value="5" />
+    <stat Name="Hitpoints" Value="100" />
+    <tag Name="BodyType" Value="LeatherWall" />
+    <tag Name="PaintedWall" Value="wall_wood" />
+    <tag Name="PaintedWallExtension" Value=".bmp" />
+    <tag Name="ImmutableWhenUnexplored" Value="1" />
+    <tag Name="Category_Settlement" />
+    <tag Name="Tier" Value="1" />
+    <part Name="Graffitied" ChanceOneIn="300" />
+  </object>
+  <object Name="WoodWall" Inherits="Wall">
+    <part Name="Render" DisplayName="염수줄기 벽" Tile="assets_content_textures_tiles_tile-1-18.png" RenderString="215" ColorString="&amp;w^y" TileColor="&amp;w" DetailColor="y" Occluding="true" />
+    <part Name="Physics" Weight="10000" Takeable="false" Solid="true" Organic="true" />
+    <part Name="Description" Short="누르스름한 염수줄기의 껍질을 벗긴 줄기 여러 개가 진흙으로 접착되어 있습니다." />
+    <stat Name="AV" Value="5" />
+    <stat Name="Hitpoints" Value="100" />
+    <tag Name="BodyType" Value="WoodWall" />
+    <tag Name="PaintedWall" Value="wall_wood" />
+    <tag Name="PaintedWallExtension" Value=".bmp" />
+    <tag Name="PaintWith" Value="WoodWalls" />
+    <tag Name="ImmutableWhenUnexplored" Value="1" />
+    <tag Name="Category_Settlement" />
+    <tag Name="Tier" Value="0" />
+    <part Name="Graffitied" ChanceOneIn="300" />
+    <tag Name="ImpactSound" Value="Sounds/Throw/sfx_throwing_generic_hitWood" />
+    <tag Name="TakeDamageSound" Value="Sounds/Damage/sfx_damage_manufacturedWood" />
+    <tag Name="DeathSounds" Value="Sounds/Damage/sfx_destroy_manufacturedWood" />
+    <tag Name="ExcludeFromDynamicEncounters" Value="*noinherit" />
+  </object>
+  <object Name="WoodWallWithGearbox" Inherits="WoodWall">
+    <tag Name="ExcludeFromDynamicEncounters" Value="*noinherit" />
+    <part Name="ModGearbox" />
+  </object>
+	<object Name="BrinestalkWall" Inherits="BaseWallWood">
+		<part Name="Render" DisplayName="염수줄기 벽" Tile="Walls/wall_brinestalk-00000000.png" RenderString="215" ColorString="&amp;w^y" TileColor="&amp;w" DetailColor="y" Occluding="true" />
+		<part Name="Physics" Weight="10000" Takeable="false" Solid="true" Organic="true" />
+		<part Name="Description" Short="누르스름한 염수줄기의 껍질을 벗긴 줄기 여러 개가 진흙으로 접착되어 있습니다." />
+		<stat Name="AV" Value="5" />
+		<stat Name="Hitpoints" Value="100" />
+		<tag Name="BodyType" Value="WoodWall" />
+		<tag Name="PaintedWall" Value="wall_brinestalk" />
+		<tag Name="PaintedWallAtlas" Value="Assets_Content_Textures_Walls_" />
+		<tag Name="PaintedWallExtension" Value=".png" />
+		<tag Name="PaintWith" Value="BrinestalkWalls" />
+		<tag Name="ImmutableWhenUnexplored" Value="1" />
+		<tag Name="Category_Settlement" />
+		<tag Name="Tier" Value="0" />
+		<part Name="Graffitied" ChanceOneIn="300" />
+		<tag Name="ImpactSound" Value="Sounds/Throw/sfx_throwing_generic_hitWood" />
+		<tag Name="TakeDamageSound" Value="Sounds/Damage/sfx_damage_manufacturedWood" />
+		<tag Name="DeathSounds" Value="Sounds/Damage/sfx_destroy_manufacturedWood" />
 	</object>
-	<object Name="BaseNephilimWall_QasQon" Load="Merge">
-		<part Name="Render" DisplayName="Qas and Qon이 분출한 수지층"/>
-		<part Name="Description" Short="기름진 셸락의 산등성이 같은 흘러내림이 바닥의 윤곽에 맞춰 빚어져, 별난초 길을 따라 흔적을 그립니다. 구역 전체는 응고된 꿈 가스가 직각으로 뻗으며 유약처럼 덮여 있습니다."/>
+	<object Name="BrinestalkWallWithGearbox" Inherits="BrinestalkWall">
+		<part Name="ModGearbox" />
 	</object>
-	<object Name="BaseNephilimWall_QasQonHolo" Load="Merge">
-		</object>
-	<object Name="BaseNephilimWall_Shug'rith" Load="Merge">
-		<part Name="Render" DisplayName="Shug'ruith가 분출한 수지층"/>
-		<part Name="Description" Short="기름진 셸락의 산등성이 같은 흘러내림이 바닥의 윤곽에 맞춰 빚어져, 별난초 길을 따라 흔적을 그립니다. 구역 전체는 셰일 조각과 먼지로 유약처럼 덮여 있습니다."/>
+  <object Name="BurntWood" Inherits="Wall">
+    <part Name="Render" DisplayName="그을린 목재" Tile="assets_content_textures_tiles_tile-1-18.png" RenderString="215" ColorString="&amp;k^y" TileColor="&amp;k" DetailColor="y" Occluding="true" />
+    <part Name="Physics" Weight="10000" Takeable="false" Solid="true" Organic="true" />
+    <part Name="Description" Short="나무껍질이 하늘불의 습격으로 새까맣게 탔고, 이제 잔광 속에서 번들거리고 있습니다." />
+    <stat Name="AV" Value="6" />
+    <stat Name="Hitpoints" Value="200" />
+    <tag Name="PaintedWall" Value="wall_wood" />
+    <tag Name="PaintedWallExtension" Value=".bmp" />
+    <tag Name="PaintWith" Value="WoodWalls" />
+    <tag Name="ImmutableWhenUnexplored" Value="1" />
+    <tag Name="Category_Settlement" />
+    <xtagGrammar massNoun="true" />
+    <part Name="Graffitied" ChanceOneIn="300" />
+    <tag Name="TakeDamageSound" Value="Sounds/Damage/sfx_damage_manufacturedWood" />
+    <tag Name="DeathSounds" Value="Sounds/Damage/sfx_destroy_manufacturedWood" />
+  </object>
+  <object Name="CanvasWall" Inherits="Wall">
+    <part Name="Render" DisplayName="캔버스" RenderString="216" ColorString="&amp;w" DetailColor="r" Occluding="true" />
+    <part Name="Physics" Weight="100" Takeable="false" Solid="true" Organic="true" />
+    <part Name="Description" Short="땅의 활기를 머금은 아마가 간단한 정사각 무늬로 평직되어, 말뚝 울타리에 걸려 있습니다." />
+    <stat Name="AV" Value="1" />
+    <stat Name="Hitpoints" Value="15" />
+    <tag Name="BodyType" Value="ClothWall" />
+    <tag Name="PaintedFence" Value="tent" />
+    <tag Name="ImmutableWhenUnexplored" Value="1" />
+    <tag Name="Category_Settlement" />
+    <tag Name="Tier" Value="1" />
+    <part Name="Graffitied" ChanceOneIn="300" />
+    <tag Name="UsesGate" Value="Brinestalk Gate" />
+    <tag Name="ImpactSound" Value="Sounds/Throw/sfx_throwing_generic_hitFabric" />
+  </object>
+  <object Name="ThatchedWall" Inherits="BasePlantWall">
+    <part Name="Render" DisplayName="이엉 벽" RenderString="176" ColorString="&amp;y^w" TileColor="&amp;y" DetailColor="w" Occluding="true" />
+    <part Name="Physics" Weight="300" FlameTemperature="300" VaporTemperature="6000" Takeable="false" Solid="true" />
+    <stat Name="Hitpoints" Value="40" />
+    <part Name="Description" Short="물덩굴과 염수줄기 짚이 줄무늬로 묶여 비스듬히 놓여, 소금 찌꺼기를 빗겨 내도록 되어 있습니다." />
+    <tag Name="BodyType" Value="WoodWall" />
+    <tag Name="PaintedWall" Value="wall_wood" />
+    <tag Name="PaintedWallExtension" Value=".bmp" />
+    <tag Name="Category_Settlement" />
+    <part Name="Graffitied" ChanceOneIn="500" />
+  </object>
+  <object Name="WornWoodWall" Inherits="BaseWallWood">
+    <part Name="Render" DisplayName="풍화된 목재" RenderString="215" Occluding="true" />
+    <part Name="Physics" Weight="10000" Takeable="false" Solid="true" Organic="true" />
+    <part Name="Description" Short="누르스름한 염수줄기의 껍질을 벗긴 줄기 여러 개가 진흙으로 접착되어 있습니다." />
+    <stat Name="AV" Value="5" />
+    <stat Name="Hitpoints" Value="150" />
+    <tag Name="BodyType" Value="WoodWall" />
+    <tag Name="PaintedWall" Value="wall_wood_worn" />
+    <tag Name="ImmutableWhenUnexplored" Value="1" />
+    <tag Name="Category_Settlement" />
+    <tag Name="Tier" Value="2" />
+    <xtagGrammar iArticle="some" />
+    <part Name="Graffitied" ChanceOneIn="300" />
+  </object>
+	<object Name="WornWoodWall with Mask" Inherits="WornWoodWall">
+		<part Name="Render" DisplayName="가면이 걸린 풍화된 목재" RenderString="215" Occluding="true" ColorString="&amp;M^K" TileColor="&amp;M" />
+		<part Name="Description" Short="누르스름한 염수줄기의 껍질을 벗긴 줄기 여러 개가 진흙으로 접착되어 있습니다. 그 앞에 네 개의 못에 매달린 해진 나방날개 가면이 걸려 있는데, 섬세한 녹빛 석고 잎들이 나노위브로 코바늘질되어 뻣뻣한 철사 골조 위로 팽팽히 당겨져 있습니다. 한때 눈이 들여다보고 입이 숨 쉬던 자리에는 이제 수지가 틈을 메우고 있습니다." />
+		<tag Name="PaintWith" Value="WoodWall" />
+		<removepart Name="Graffitied" />
+		<tag Name="ExcludeFromDynamicEncounters" Value="*noinherit" />
 	</object>
-	<object Name="BaseNephilimWall_Shug'rithSpawn" Load="Merge">
-		<part Name="Render" DisplayName="Shug'ruith 새끼가 분출한 수지층"/>
-		<part Name="Description" Short="기름진 셸락의 비탈진 흘러내림이 바닥의 윤곽에 맞춰 빚어져, 별난초 길을 따라 흔적을 그립니다. 구역 전체는 셰일 조각과 먼지로 유약처럼 덮여 있습니다."/>
+  <object Name="BrickWall" Inherits="BaseWallBrick">
+    <part Name="Render" DisplayName="벽돌" RenderString="177" Occluding="true" ColorString="&amp;r^w" TileColor="&amp;r" DetailColor="w" />
+    <part Name="Physics" Weight="10000" Takeable="false" Solid="true" />
+    <part Name="Description" Short="구운 점토 잉곳들이 가로지르게 쌓여 장벽을 이루고 있습니다. 각 벽돌은 세월이 남긴 얼룩진 상처, 그것이 구워졌던 가마의 열 균형이 빚어낸 결함, 그리고 탄생의 진흙 속 곰팡이로 흠집이 나 있습니다." />
+    <stat Name="AV" Value="7" />
+    <stat Name="Hitpoints" Value="200" />
+    <tag Name="ImmutableWhenUnexplored" Value="1" />
+    <tag Name="Category_Settlement" />
+    <xtagGrammar massNoun="true" />
+    <tag Name="Tier" Value="2" />
+    <part Name="Graffitied" ChanceOneIn="300" />
+  </object>
+  <object Name="CyberWall" Inherits="Wall">
+    <part Name="Render" DisplayName="테트라제노노글라스 벽" RenderString="215" ColorString="&amp;C^k" DetailColor="Y" Occluding="false" />
+    <part Name="Physics" FlameTemperature="9999" FreezeTemperature="-9999" BrittleTemperature="-9999" Weight="1000" Takeable="false" Solid="true" />
+    <part Name="Description" Short="홈이 진 프리즘 유리 기둥들이 증강의 광경을 천 갈래로 갈라진 전망 속으로 흩뿌립니다." />
+    <part Name="RefractLight" Chance="30" />
+    <stat Name="AV" Value="2" />
+    <stat Name="Hitpoints" Value="40" />
+    <stat Name="ColdResistance" Value="100" />
+    <tag Name="Tier" Value="5" />
+    <tag Name="BodyType" Value="GlassWall" />
+    <tag Name="PaintWith" Value="GlassWall" />
+    <tag Name="PaintedFence" Value="glass" />
+    <tag Name="PaintedFenceAtlas" Value="Assets_Content_Textures_Tiles2_" />
+    <tag Name="PaintedFenceExtension" Value=".png" />
+    <tag Name="Transparent" />
+    <part Name="Graffitied" ChanceOneIn="200" />
+		<tag Name="ImpactSound" Value="Sounds/Throw/sfx_throwing_generic_hitGlass" />
+    <tag Name="TakeDamageSound" Value="Sounds/Damage/sfx_damage_glass" />
+    <tag Name="DeathSounds" Value="Sounds/Damage/sfx_destroy_glass" />
+  </object>
+  <object Name="MachineWallHotTubing" Inherits="BaseWallTubing">
+    <part Name="Render" DisplayName="기계 벽" ColorString="&amp;R^K" TileColor="&amp;y" DetailColor="R" />
+    <part Name="Description" Short="진공관들이 접힌 산맥의 강줄기처럼 회로 지형을 가로지릅니다. 뜨거운 기체가 요동치며 통과해, 황동과 실리콘의 드넓은 면면을 붉은 빛으로 물들입니다." />
+    <part Name="Corpse" CorpseChance="100" BuildCorpseChance="100" CorpseBlueprint="SmallLavaPuddle" />
+    <part Name="LightSource" Lit="true" Radius="2" />
+    <part Name="DrawInTheDark" ForegroundTileColor="K" BackgroundTileColor="k" DetailColor="R" />
+    <part Name="AvoidMovingOnto" Weight="40" />
+  </object>
+  <object Name="MachineWallColdTubing" Inherits="BaseWallTubing">
+    <part Name="Render" DisplayName="기계 벽" ColorString="&amp;C^K" TileColor="&amp;y" DetailColor="C" />
+    <part Name="Description" Short="진공관들이 접힌 산맥의 강줄기처럼 회로 지형을 가로지릅니다. 차가운 기체가 요동치며 통과해, 황동과 실리콘의 드넓은 면면을 청록 빛으로 물들입니다." />
+    <part Name="Corpse" CorpseChance="100" BuildCorpseChance="100" CorpseBlueprint="SmallConvalessencePuddle" />
+    <part Name="LightSource" Lit="true" Radius="2" />
+    <part Name="DrawInTheDark" ForegroundTileColor="K" BackgroundTileColor="k" DetailColor="C" />
+  </object>
+  <object Name="MachineWallEmptyTubing" Inherits="BaseWallTubing">
+    <part Name="Render" DisplayName="기계 벽" ColorString="&amp;c^y" TileColor="&amp;y" DetailColor="c" />
+    <part Name="Description" Short="진공관들이 접힌 산맥의 강줄기처럼 회로 지형을 가로지릅니다." />
+  </object>
+  <object Name="MachineWallHotTubingWithPiping" Inherits="MachineWallHotTubing">
+    <part Name="ModPiping" />
+		<tag Name="Breakable" />
+  </object>
+  <object Name="GlassWall" Inherits="Wall">
+    <part Name="Render" DisplayName="유리 벽" RenderString="215" ColorString="&amp;Y^k" DetailColor="y" Occluding="false" />
+    <part Name="Physics" FreezeTemperature="-9999" BrittleTemperature="-9999" Weight="1000" Takeable="false" Solid="true" />
+    <part Name="Description" Short="모래가 으깨 불에 구워져, 투명한 판으로 빚어졌습니다." />
+    <stat Name="AV" Value="2" />
+    <stat Name="Hitpoints" Value="40" />
+    <stat Name="ColdResistance" Value="100" />
+    <tag Name="BodyType" Value="GlassWall" />
+    <tag Name="Tier" Value="4" />
+    <tag Name="PaintWith" Value="GlassWall" />
+    <tag Name="PaintedFence" Value="glass" />
+    <tag Name="PaintedFenceAtlas" Value="Assets_Content_Textures_Tiles2_" />
+    <tag Name="PaintedFenceExtension" Value=".png" />
+    <tag Name="Transparent" />
+    <part Name="Graffitied" ChanceOneIn="300" />
+    <tag Name="ImpactSound" Value="Sounds/Throw/sfx_throwing_generic_hitGlass" />
+    <tag Name="TakeDamageSound" Value="Sounds/Damage/sfx_damage_glass" />
+    <tag Name="DeathSounds" Value="Sounds/Damage/sfx_destroy_glass" />
+  </object>
+  <object Name="TintedGlassWall" Inherits="GlassWall">
+    <part Name="Render" DisplayName="색유리 벽" ColorString="&amp;K^k" Occluding="true" />
+    <part Name="Description" Short="모래가 으깨 불에 구워지고 안료가 더해져, 그을음 낀 판으로 빚어졌습니다." />
+  </object>
+  <object Name="SpindleGlassWall" Inherits="GlassWall">
+    <part Name="Render" DisplayName="번뜩이는 유리 벽" RenderString="215" ColorString="&amp;Y^k" DetailColor="y" Occluding="false" />
+    <part Name="AnimatedMaterialGeneric" AnimationLength="360" LowFrameOffset="1" HighFrameOffset="300" ColorStringAnimationFrames="0=&amp;Y^k,355=&amp;C^k" />
+    <part Name="Description" Short="Spindle channel 안쪽에서 비추는 푸른빛이, 은하 원반의 별들처럼 혹은 회로기판의 다이오드처럼 유리판 위로 반짝입니다. 그 빛이 유리에 신성을 불어넣습니다." />
+    <part Name="OmniphaseObject" />
+  </object>
+  <object Name="HGlassWall" Inherits="GlassWall">
+    <part Name="Render" RenderString="196" />
+  </object>
+  <object Name="VGlassWall" Inherits="GlassWall">
+    <part Name="Render" RenderString="179" />
+  </object>
+  <object Name="Burnished Azzurum" Inherits="BaseMetamorphicRock">
+    <part Name="Render" DisplayName="윤이 난 azzurum" ColorString="&amp;C^c" TileColor="&amp;C" DetailColor="c" Occluding="true" />
+    <stat Name="AV" Value="35" />
+    <stat Name="Hitpoints" Value="2000" />
+    <part Name="Description" Short="청록빛이 유리 같은 외피를 뚫고 터져나와, 하늘이 육각 기둥의 덤불로 결정화된 듯 보입니다. Eaters가 그것을 마그마의 탄생지에서 파내어, Spindle을 모시기 위해 둔덕처럼 쌓아 올렸습니다." />
+    <xtagGrammar massNoun="true" />
+    <tag Name="PaintedWall" Value="wall_crystal1" />
+    <tag Name="PaintedWallExtension" Value=".png" />
+    <tag Name="TakeDamageSound" Value="Sounds/Damage/sfx_damage_glass" />
+    <tag Name="DeathSounds" Value="Sounds/Damage/sfx_destroy_glass" />
+  </object>
+  <object Name="Petal-Strewn WoodWall" Inherits="BaseWallFlower">
+    <part Name="Render" DisplayName="꽃잎이 흩뿌려진 염수줄기 벽" Tile="assets_content_textures_tiles_tile-1-18.png" RenderString="215" ColorString="&amp;w" Occluding="true" />
+    <part Name="Physics" Weight="10000" Takeable="false" Solid="true" Organic="true" />
+    <part Name="Description" Short="누르스름한 염수줄기의 껍질을 벗긴 줄기 여러 개가 진흙으로 접착되어 있고, 그 위로 꽃잎이 흩뿌려져 있습니다." />
+    <stat Name="AV" Value="5" />
+    <stat Name="Hitpoints" Value="100" />
+    <tag Name="ImmutableWhenUnexplored" Value="1" />
+    <tag Name="Category_Settlement" />
+    <tag Name="TakeDamageSound" Value="Sounds/Damage/sfx_damage_manufacturedWood" />
+    <tag Name="DeathSounds" Value="Sounds/Damage/sfx_destroy_manufacturedWood" />
+  </object>
+
+  
+  <object Name="BrinestalkStakes" Inherits="Wall">
+    <part Name="Render" DisplayName="염수줄기 말뚝" RenderString="215" ColorString="&amp;w" DetailColor="y" Occluding="true" />
+    <part Name="Physics" Weight="500" Takeable="false" Solid="true" Organic="true" />
+    <part Name="Description" Short="누르스름한 염수줄기 줄기 여러 개를 날카롭게 다듬어, 이곳 땅에 박아 두었습니다." />
+    <stat Name="AV" Value="3" />
+    <stat Name="Hitpoints" Value="74" />
+    <tag Name="BodyType" Value="WoodWall" />
+    <tag Name="PaintedFence" Value="fence" />
+    <tag Name="ImmutableWhenUnexplored" Value="1" />
+    <tag Name="Category_Settlement" />
+    <tag Name="Flyover" />
+    <intproperty Name="AllowMissiles" Value="1" />
+    <tag Name="Gender" Value="plural" />
+    <tag Name="Tier" Value="0" />
+    <part Name="Graffitied" ChanceOneIn="300" />
+    <tag Name="UsesGate" Value="Brinestalk Gate" />
+    <tag Name="ImpactSound" Value="Sounds/Throw/sfx_throwing_generic_hitWood" />
+		<tag Name="TakeDamageSound" Value="Sounds/Damage/sfx_damage_genPlant" />
+		<tag Name="DeathSounds" Value="Sounds/Damage/sfx_destroy_genPlant" />
+		<stag Name="Contemporary" />
+  </object>
+  <object Name="BrinestalkArrowslit" Inherits="Wall">
+    <part Name="Render" DisplayName="화살구멍" RenderString="008" ColorString="&amp;w" DetailColor="y" Occluding="false" />
+    <part Name="Physics" Weight="500" Takeable="false" Solid="true" Organic="true" />
+    <part Name="Description" Short="누르스름한 염수줄기 줄기 여러 개를 날카롭게 다듬어, 이곳 땅에 박아 두었습니다. 틈이 충분히 넓지 않아 비집고 지나갈 수는 없습니다." />
+    <stat Name="AV" Value="3" />
+    <stat Name="Hitpoints" Value="74" />
+    <intproperty Name="AllowMissiles" Value="1" />
+    <tag Name="BodyType" Value="WoodWall" />
+    <tag Name="PaintedFence" Value="fence" />
+    <tag Name="ImmutableWhenUnexplored" Value="1" />
+    <tag Name="Category_Settlement" />
+    <tag Name="Tier" Value="0" />
+    <part Name="Graffitied" ChanceOneIn="300" />
+    <tag Name="UsesGate" Value="Brinestalk Gate" />
+    <tag Name="ImpactSound" Value="Sounds/Throw/sfx_throwing_generic_hitWood" />
+    <tag Name="TakeDamageSound" Value="Sounds/Damage/sfx_damage_genPlant" />
+    <tag Name="DeathSounds" Value="Sounds/Damage/sfx_destroy_genPlant" />
+  </object>
+  <object Name="WoodFence" Inherits="Wall">
+    <part Name="Render" DisplayName="목재 울타리" RenderString="216" ColorString="&amp;w" DetailColor="y" Occluding="false" />
+    <part Name="Physics" Weight="100" Takeable="false" Solid="true" Organic="true" />
+    <part Name="Description" Short="땅에 박힌 dogthorn 말뚝의 나뭇결 위로 소용돌이 무늬가 가로지르고 있습니다." />
+    <stat Name="AV" Value="1" />
+    <stat Name="Hitpoints" Value="15" />
+    <tag Name="BodyType" Value="WoodWall" />
+    <tag Name="PaintedFence" Value="fence" />
+    <tag Name="ImmutableWhenUnexplored" Value="1" />
+    <tag Name="Category_Settlement" />
+    <tag Name="Flyover" />
+    <tag Name="Tier" Value="0" />
+    <intproperty Name="AllowMissiles" Value="1" />
+    <part Name="Graffitied" ChanceOneIn="300" />
+    <tag Name="UsesGate" Value="Brinestalk Gate" />
+    <tag Name="ImpactSound" Value="Sounds/Throw/sfx_throwing_generic_hitWood" />
+    <tag Name="TakeDamageSound" Value="Sounds/Damage/sfx_damage_manufacturedWood" />
+    <tag Name="DeathSounds" Value="Sounds/Damage/sfx_destroy_manufacturedWood" />
+    <tag Name="Fence" />
+		<stag Name="Contemporary" />
+  </object>
+  <object Name="IronFence" Inherits="Wall">
+    <part Name="Render" DisplayName="단철 울타리" RenderString="216" ColorString="&amp;y^k" TileColor="&amp;y^k" DetailColor="y" Occluding="false" />
+    <part Name="Physics" Weight="100" Takeable="false" Solid="true" />
+    <part Name="Description" Short="세월에 긁힌 철제 말뚝들이 두 개의 수평 난간 사이에 줄지어 서 있습니다." />
+    <stat Name="AV" Value="8" />
+    <stat Name="Hitpoints" Value="45" />
+    <part Name="Metal" />
+    <tag Name="BodyType" Value="MetalWall" />
+    <tag Name="PaintedFence" Value="ironfence" />
+    <tag Name="ImmutableWhenUnexplored" Value="1" />
+    <tag Name="Flyover" />
+    <tag Name="NoWallPaint" />
+    <tag Name="Tier" Value="1" />
+    <intproperty Name="AllowMissiles" Value="1" />
+    <part Name="Graffitied" ChanceOneIn="300" />
+    <tag Name="UsesGate" Value="Iron Gate" />
+    <tag Name="ImpactSound" Value="Sounds/Throw/sfx_throwing_generic_hitMetal" />
+    <tag Name="TakeDamageSound" Value="Sounds/Damage/sfx_damage_metal" />
+    <tag Name="DeathSounds" Value="Sounds/Damage/sfx_destroy_metal" />
+    <tag Name="Fence" />
+  </object>
+  <object Name="BrinestalkFence" Inherits="Wall">
+    <part Name="Render" DisplayName="염수줄기 울타리" RenderString="216" ColorString="&amp;w" DetailColor="y" Occluding="false" />
+    <part Name="Physics" Weight="100" Takeable="false" Solid="true" Organic="true" />
+    <part Name="Description" Short="땅에 박힌 염수줄기 말뚝의 나뭇결 위로, 소금자국 같은 물결 무늬가 가로지르고 있습니다." />
+    <stat Name="AV" Value="1" />
+    <stat Name="Hitpoints" Value="15" />
+    <tag Name="BodyType" Value="WoodWall" />
+    <tag Name="PaintedFence" Value="fence" />
+		<tag Name="PaintWith" Value="brinestalkfence" />
+		<tag Name="ImmutableWhenUnexplored" Value="1" />
+    <tag Name="Category_Settlement" />
+    <tag Name="Flyover" />
+    <tag Name="Tier" Value="0" />
+    <intproperty Name="AllowMissiles" Value="1" />
+    <part Name="Graffitied" ChanceOneIn="300" />
+    <tag Name="UsesGate" Value="Brinestalk Gate" />
+    <tag Name="ImpactSound" Value="Sounds/Throw/sfx_throwing_generic_hitWood" />
+    <tag Name="TakeDamageSound" Value="Sounds/Damage/sfx_damage_genPlant" />
+    <tag Name="DeathSounds" Value="Sounds/Damage/sfx_destroy_genPlant" />
+    <tag Name="Fence" />
+  </object>
+
+  
+  <object Name="HolographicShaleWall" Inherits="Wall">
+    <part Name="Render" DisplayName="홀로그래픽 셰일" RenderString="177" ColorString="&amp;r^w" TileColor="&amp;r" DetailColor="w" Occluding="true" />
+    <part Name="Physics" Weight="10000" FlameTemperature="99999" VaporTemperature="1500" Takeable="false" Solid="false" />
+    <stat Name="AV" Value="0" />
+    <stat Name="Hitpoints" Value="20000" />
+    <part Name="Description" Short="반짝이는 빛이 시차를 따라 조각되어, 셰일 벽의 환영을 빚어내고 있습니다. 점토와 석영이 말라 으깨져 붉은 바위가 되었고, 산사람들이 수천 년에 수천 년을 거듭하며 그것을 캐내 왔습니다. " />
+    <tag Name="PaintedWall" Value="wall_rock" />
+    <tag Name="NoSparkingQuest" />
+    <tag Name="IgnoresGravity" />
+    <tag Name="Tier" Value="6" />
+    <part Name="HologramMaterial" />
+		<part Name="HologramInvulnerability" />
+    <xtagGrammar massNoun="true" />
+  </object>
+  <object Name="HoloMarble" Inherits="Wall">
+    <part Name="Render" DisplayName="대리석 벽" RenderString="176" ColorString="&amp;Y^c" TileColor="&amp;c" DetailColor="Y" Occluding="true" />
+    <part Name="Physics" Weight="10000" FlameTemperature="99999" VaporTemperature="1500" Takeable="false" Solid="false" />
+    <stat Name="AV" Value="0" />
+    <stat Name="Hitpoints" Value="20000" />
+    <part Name="Description" Short="반짝이는 빛이 시차를 따라 조각되어, 대리석 벽의 환영을 빚어내고 있습니다. 달팽이와 산호가 지질의 압착기에서 짓눌려 불순물의 띠로 물들었고, 이상적인 평면을 따라 윤이 나게 연마되었습니다." />
+    <tag Name="PaintedWall" Value="wall_marble" />
+    <tag Name="PaintWith" Value="MarbleWalls" />
+    <tag Name="NoSparkingQuest" />
+    <tag Name="IgnoresGravity" />
+    <tag Name="Tier" Value="6" />
+    <part Name="HologramMaterial" />
+		<part Name="HologramInvulnerability" />
+  </object>
+  <object Name="HolographicLowSandstoneWall" Inherits="LowSandstoneWall">
+    <part Name="Render" DisplayName="홀로그래픽 사암" Occluding="false" />
+    <part Name="Description" Short="반짝이는 빛이 시차를 따라 조각되어, 사암 벽의 환영을 빚어내고 있습니다. 바위는 마모되어 모래가 되고, 모래는 바람에 실려 호수로 날아들고, 호수는 진흙에 묻히고, 진흙은 모래를 짓눌러 다시 바위로 만듭니다. 땅은 재배열됩니다." />
+    <part Name="Physics" Weight="10000" FlameTemperature="99999" VaporTemperature="1500" Takeable="false" Solid="false" />
+    <stat Name="AV" Value="0" />
+    <stat Name="Hitpoints" Value="20000" />
+    <tag Name="NoSparkingQuest" />
+    <tag Name="IgnoresGravity" />
+    <tag Name="Tier" Value="6" />
+    <part Name="HologramMaterial" />
+		<part Name="HologramInvulnerability" />
+  </object>
+  <object Name="HolographicThatchedWall" Inherits="Wall">
+    <part Name="Render" DisplayName="홀로그래픽 이엉 벽" RenderString="176" ColorString="&amp;y^w" TileColor="&amp;y" DetailColor="w" Occluding="true" />
+    <part Name="Physics" Weight="10000" FlameTemperature="99999" VaporTemperature="1500" Takeable="false" Solid="false" />
+    <stat Name="AV" Value="0" />
+    <stat Name="Hitpoints" Value="20000" />
+    <part Name="Description" Short="반짝이는 빛이 시차를 따라 조각되어, 이엉 벽의 환영을 빚어내고 있습니다. 물덩굴과 염수줄기 짚이 줄무늬로 묶여 비스듬히 놓여, 소금 찌꺼기를 빗겨 내도록 되어 있습니다." />
+    <tag Name="PaintedWall" Value="wall_wood" />
+    <tag Name="PaintedWallExtension" Value=".bmp" />
+    <part Name="HologramMaterial" />
+		<part Name="HologramInvulnerability" />
+  </object>
+
+  
+  <object Name="HalfWall" Inherits="Wall">
+    <part Name="Render" DisplayName="낮은 벽" RenderString="216" ColorString="&amp;y^k" DetailColor="w" Occluding="false" RenderLayer="6" />
+    <part Name="Physics" Weight="100" Takeable="false" Solid="true" />
+    <part Name="Description" Short="오래된 돌을 허리 높이까지 다듬어, 쏟아지는 것은 막되 시야는 막지 않도록 해 두었습니다." />
+    <stat Name="AV" Value="1" />
+    <stat Name="Hitpoints" Value="15" />
+    <tag Name="PaintedFence" Value="half-wall" />
+    <tag Name="PaintedFenceAtlas" Value="Assets_Content_Textures_Tiles2_" />
+    <tag Name="PaintedFenceExtension" Value=".png" />
+    <tag Name="ImmutableWhenUnexplored" Value="1" />
+    <tag Name="Category_Settlement" />
+    <tag Name="Flyover" />
+    <intproperty Name="AllowMissiles" Value="1" />
+    <part Name="Graffitied" ChanceOneIn="300" />
+  </object>
+  <object Name="TombHalfWall" Inherits="HalfWall">
+    <part Name="Render" ColorString="&amp;K^k" DetailColor="w" />
+  </object>
+  <object Name="StoneHalfWall" Inherits="HalfWall">
+    <part Name="Render" ColorString="&amp;K^k" DetailColor="y" />
+  </object>
+  <object Name="MoverHalfWall" Inherits="HalfWall">
+    <part Name="Render" ColorString="&amp;w^k" DetailColor="W" />
+  </object>
+  <object Name="LowSandstoneWall" Inherits="Sandstone">
+    <part Name="Render" Occluding="false" />
+    <part Name="Physics" Solid="false" />
+    <part Name="Description" Short="단단한 사암으로 만든 낮은 벽입니다." />
+    <stat Name="Hitpoints" Value="2000" />
+  </object>
+  <object Name="HalfWall_Aquamarine" Inherits="HalfWall">
+    <part Name="Render" DisplayName="낮은 아쿠아마린 벽" RenderString="216" ColorString="&amp;C^k" DetailColor="c" Occluding="false" />
+  </object>
+
+  
+  <object Name="Walltrap" Inherits="Wall">
+    <part Name="Render" DisplayName="[벽 함정]" RenderString="240" ColorString="&amp;c^g" TileColor="&amp;c" DetailColor="g" Occluding="true" Tile="Items/sw_vent.bmp" />
+    <part Name="Physics" Weight="25000" FlameTemperature="25000" VaporTemperature="58000" Takeable="false" Solid="true" />
+    <stat Name="AV" Value="50" />
+    <stat Name="Hitpoints" Value="500" />    
+    <part Name="Walltrap" />
+    <part Name="Metal" />
+    <tag Name="BodyType" Value="MetalWall" />
+    <tag Name="PaintedWall" Value="*delete" />
+    <tag Name="Tier" Value="4" />
+    <part Name="Graffitied" ChanceOneIn="300" />
+    <tag Name="ImpactSound" Value="Sounds/Throw/sfx_throwing_generic_hitMetal" />
+		<tag Name="Breakable" />
+		<tag Name="BaseObject" Value="*noinherit" />
+    <tag Name="TakeDamageSound" Value="Sounds/Damage/sfx_damage_metal" />
+    <tag Name="DeathSounds" Value="Sounds/Damage/sfx_destroy_metal" />
+  </object>
+  <object Name="WalltrapFire" Inherits="Walltrap">
+    <part Name="Render" DisplayName="김이 피어오르는 통풍구" />
+    <part Name="WalltrapFire" />
+    <part Name="Description" Short="빛바랜 크롬 기둥에 파낸 수직 통풍구에서, 가느다란 김이 소용돌이치며 새어 나오고 있습니다." />
+    <tag Name="Gender" Value="plural" />
+    <tag Name="Tier" Value="4" />
+    <xtagGrammar massNoun="true" />
+  </object>
+  <object Name="WalltrapAcid" Inherits="Walltrap">
+    <part Name="Render" DisplayName="독기가 피어오르는 통풍구" />
+    <part Name="Walltrap" WarmColor="^K&amp;g" ReadyColor="^K&amp;G" />
+    <part Name="Description" Short="빛바랜 크롬 기둥에 파낸 수직 통풍구에서, 유독한 연무가 가느다랗게 소용돌이치며 새어 나오고 있습니다." />
+    <part Name="WalltrapAcid" />
+    <tag Name="Gender" Value="plural" />
+    <tag Name="Tier" Value="4" />
+    <xtagGrammar massNoun="true" />
+  </object>
+  <object Name="WalltrapShock" Inherits="Walltrap">
+    <part Name="Render" DisplayName="불꽃이 튀는 통풍구" />
+    <part Name="Walltrap" WarmColor="^g&amp;w" ReadyColor="^g&amp;W" />
+    <part Name="WalltrapShock" />
+    <part Name="Description" Short="빛바랜 크롬 기둥에 파낸 수직 통풍구에서 불꽃이 튀고 있습니다." />
+    <tag Name="Gender" Value="plural" />
+    <tag Name="Tier" Value="4" />
+    <xtagGrammar massNoun="true" />
+    <tag Name="TakeDamageSound" Value="Sounds/Damage/sfx_damage_electronic" />
+    <tag Name="DeathSounds" Value="Sounds/Damage/sfx_destroy_electronic" />
+  </object>
+  <object Name="WalltrapCrabs" Inherits="Walltrap">
+    <part Name="Render" DisplayName="긁힌 통풍구" RenderString="c" />
+    <part Name="Walltrap" WarmColor="^g&amp;k" ReadyColor="^g&amp;Y" />
+    <part Name="WalltrapCrabs" />
+    <part Name="Description" Short="빛바랜 크롬에 줄지어 파낸 수평 통풍구에, 아주 작은 긁힌 자국들이 남아 있습니다." />
+    <tag Name="Gender" Value="plural" />
+    <tag Name="Tier" Value="4" />
+    <xtagGrammar massNoun="true" />
+  </object>
+  <object Name="WalltrapClockworkBeetles" Inherits="Walltrap">
+    <part Name="Render" DisplayName="째깍거리는 통풍구" RenderString="c" />
+    <part Name="Walltrap" WarmColor="^W&amp;c" ReadyColor="^W&amp;C" />
+    <part Name="WalltrapClockworkBeetles" SpawnLimit="30" />
+		<part Name="Description" Short="빛바랜 크롬에 줄지어 파낸 수평 통풍구에, 아주 작은 긁힌 자국들이 남아 있습니다." />
+    <tag Name="Gender" Value="plural" />
+    <tag Name="Tier" Value="5" />
+    <xtagGrammar massNoun="true" />
+  </object>
+  <object Name="WalltrapNormalityGas" Inherits="Walltrap">
+    <part Name="Render" DisplayName="육각 잔여물이 묻은 통풍구" RenderString="c" />
+    <part Name="Walltrap" WarmColor="^K&amp;y" ReadyColor="^K&amp;Y" />
+    <part Name="WalltrapGas" GasBlueprint="NormalityGas" Density="1d60+40" PrimaryColor="K" SecondaryColor="y" />
+    <part Name="Description" Short="Normality 응축물이, 빛바랜 크롬 기둥에 파낸 수직 통풍구를 따라 테셀레이션처럼 패턴을 이루고 있습니다." />
+    <tag Name="Gender" Value="plural" />
+    <tag Name="Tier" Value="6" />
+    <xtagGrammar massNoun="true" />
+  </object>
+  <object Name="WalltrapDefoliant" Inherits="Walltrap">
+    <part Name="Render" DisplayName="이끼 가루가 묻은 통풍구" />
+    <part Name="Walltrap" WarmColor="^K&amp;w" ReadyColor="^K&amp;W" />
+    <part Name="WalltrapGas" GasBlueprint="DefoliantGas" Density="1d60+40" PrimaryColor="W" SecondaryColor="w" />
+    <part Name="Description" Short="Golden Dawn의 거센 소용돌이에 오래전에 죽어 부스러기로 흩어진 이끼가, 빛바랜 크롬 통풍구에 들러붙어 있습니다." />
+    <tag Name="Gender" Value="plural" />
+    <tag Name="Tier" Value="4" />
+    <xtagGrammar massNoun="true" />
+  </object>
+  <object Name="WalltrapFungicide" Inherits="Walltrap">
+    <part Name="Render" DisplayName="곰팡이 가루가 묻은 통풍구" />
+    <part Name="Walltrap" WarmColor="^K&amp;m" ReadyColor="^K&amp;M" />
+    <part Name="WalltrapGas" GasBlueprint="FungicideGas" Density="1d60+40" PrimaryColor="M" SecondaryColor="m" />
+    <part Name="Description" Short="자홍빛 소나기에 오래전에 죽어 침식되어 부스러기가 된 곰팡이 찌꺼기가, 빛바랜 크롬 통풍구에 들러붙어 있습니다." />
+    <tag Name="Gender" Value="plural" />
+    <tag Name="Tier" Value="4" />
+    <xtagGrammar massNoun="true" />
+  </object>
+	<object Name="WalltrapFireCrematory" Inherits="WalltrapFire">
+		<part Name="Render" DisplayName="김이 피어오르는 통풍구" ColorString="&amp;r^y" TileColor="&amp;r" DetailColor="y" />
+		<part Name="Walltrap" WarmColor="^y&amp;r" ReadyColor="^y&amp;R" />
+		<part Name="WalltrapFire" />
+		<part Name="Description" Short="그을음이 밴 크롬 기둥에 파낸 수직 통풍구에서, 가느다란 김이 소용돌이치며 새어 나오고 있습니다." />
+		<tag Name="Gender" Value="plural" />
+		<xtagGrammar massNoun="true" />
+	</object>
+
+  <object Name="CryochamberWall" Inherits="Walltrap">
+    <part Name="Render" RenderString="240" DisplayName="서리 낀 기둥" />
+    <part Name="Physics" FreezeTemperature="-9999" BrittleTemperature="-9999" />
+    <part Name="CryochamberWall" />
+    <part Name="Description" Short="대리석 기둥의 크롬 허리받이에 파낸 수평 통풍구에서, 얼어붙는 안개가 소용돌이치며 새어 나오고 있습니다." />
+    <part Name="Walltrap" TurnInterval="8" WarmColor="^y&amp;c" ReadyColor="^y&amp;C" />
+    <stat Name="ColdResistance" Value="100" />
+    <stat Name="AV" Value="10" />
+    <stat Name="Hitpoints" Value="80" />
+    <tag Name="Tier" Value="5" />
+    <tag Name="ImpactSound" Value="Sounds/Throw/sfx_throwing_generic_hitGlass" />
+  </object>
+  <object Name="CryochamberWallBroken" Inherits="Walltrap">
+    <part Name="Render" RenderString="240" DisplayName="서리 낀 기둥" />
+    <part Name="Physics" FreezeTemperature="-9999" BrittleTemperature="-9999" />
+		<part Name="Description" Short="대리석 기둥의 크롬 허리받이에 파낸 수평 통풍구에, 차가운 이슬이 내려앉아 있습니다." />
+    <part Name="Walltrap" TurnInterval="2" WarmColor="^y&amp;c" ReadyColor="^y&amp;c" />
+    <stat Name="ColdResistance" Value="100" />
+    <tag Name="Tier" Value="5" />
+    <tag Name="ImpactSound" Value="Sounds/Throw/sfx_throwing_generic_hitGlass" />
+  </object>
+  <object Name="CryochamberWallSE" Inherits="CryochamberWall">
+    <part Name="CryochamberWall" Direction="SE" />
+  </object>
+  <object Name="CryochamberWallSW" Inherits="CryochamberWall">
+    <part Name="CryochamberWall" Direction="SW" />
+  </object>
+  <object Name="CryochamberWallNE" Inherits="CryochamberWall">
+    <part Name="CryochamberWall" Direction="NE" />
+  </object>
+  <object Name="CryochamberWallNW" Inherits="CryochamberWall">
+    <part Name="CryochamberWall" Direction="NW" />
+  </object> 
+
+  
+  <object Name="BaseForcefield" Inherits="Wall">
+    <part Name="Render" DisplayName="[역장]" RenderString="176" Occluding="false" RenderIfDark="false" RenderLayer="6" />
+    <part Name="Physics" Weight="100000" FlameTemperature="99999" VaporTemperature="99999" FreezeTemperature="-99999" BrittleTemperature="-99999" SpecificHeat="100" Takeable="false" Solid="true" />
+    <part Name="Description" Short="잠재력이 청록빛 육각 격자망으로 편극되어 조율자에 맞춰 잠금되어 있습니다. 충분한 질량을 지닌 물체는 차단되지만, 바람 뒤쪽으로 쏘아 보낸 작은 물체는 통과할 수 있습니다." />
+    <part Name="Forcefield" RejectOwner="true" />
+    <stat Name="AV" Value="100" />
+    <stat Name="Hitpoints" Value="100" />
+    <stat Name="AcidResistance" Value="100" />
+    <stat Name="ColdResistance" Value="100" />
+    <stat Name="ElectricResistance" Value="50" />
+    <stat Name="HeatResistance" Value="100" />
+    <tag Name="BaseObject" Value="*noinherit" />
+    <tag Name="IgnoresGravity" />
+    <part Name="SoundOnCreate" Sounds="Sounds/Abilities/sfx_ability_forcefield_create" Volume="1" />
+    <part Name="SoundOnDestroy" Sounds="Sounds/Abilities/sfx_ability_forcefield_away" Volume="1" />
+    <tag Name="TakeDamageSound" Value="Sounds/Damage/sfx_damage_forcefield" />
+    <tag Name="DeathSounds" Value="Sounds/Damage/sfx_destroy_forcefield" />
+  </object>
+  <object Name="Forcefield" Inherits="BaseForcefield">
+    <part Name="Render" DisplayName="역장" ColorString="&amp;C^k" />
+    <part Name="Forcefield" Unwalkable="true" />
+    <part Name="AnimatedMaterialForcefield" />
+    <tag Name="PaintedFence" Value="force_field_1" />
+    <tag Name="PaintedFenceAtlas" Value="Assets_Content_Textures_Tiles2_" />
+    <tag Name="PaintedFenceExtension" Value=".png" />
+    <tag Name="Tier" Value="6" />
+  </object>
+  <object Name="ForceBarrier" Inherits="BaseForcefield">
+    <part Name="Render" DisplayName="역장 장벽" ColorString="&amp;R^k" />
+    <part Name="Description" Short="잠재력이 선홍빛 육각 격자망으로 편극되어 조율자에 맞춰 잠금되어 있습니다. 분자 수준에서 허가 목록에 오른 물체가 아니라면 차단됩니다." />
+    <part Name="AnimatedMaterialForcefield" Color="Red" />
+    <part Name="Forcefield" MissileOpaque="true" />
+    <tag Name="PaintedFence" Value="force_field_1" />
+    <tag Name="PaintedFenceAtlas" Value="Assets_Content_Textures_Tiles2_" />
+    <tag Name="PaintedFenceExtension" Value=".png" />
+    <tag Name="PaintPart" Value="ForceProjector" />
+    <tag Name="Tier" Value="6" />
+  </object>
+  <object Name="Stasisfield" Inherits="BaseForcefield">
+    <part Name="Render" DisplayName="정지장" ColorString="&amp;C^M" TileColor="&amp;C" DetailColor="M" />
+    <part Name="AnimatedMaterialStasisfield" />
+    <part Name="Stasisfield" />
+    <stat Name="Energy" Value="0" />
+    <stat Name="Speed" Value="500" />
+    <stat Name="ElectricResistance" Value="100" />
+    <part Name="NoDamage" />
+    <part Name="Description" Short="희뿌연 얇은 막이 시공간의 한 조각을 둘러치고 있으며, 그 안에는 양자 마찰이 너무도 커서 그곳의 거주자들이 완전히 멈춰 서게 됩니다." />
+    <tag Name="PaintedWall" Value="wall_mud" />
+    <tag Name="Tier" Value="7" />
+    <part Name="SoundRender" Sound="Sounds/EnvironmentalEffect/sfx_environmentalEffect_stasisField_loop" Volume="0.1" />
+    <part Name="SoundOnCreate" Sounds="Sounds/EnvironmentalEffect/sfx_environmentalEffect_stasisField_head" Volume="0.1" />
+    <part Name="SoundOnDestroy" Sounds="Sounds/EnvironmentalEffect/sfx_environmentalEffect_stasisField_tail" Volume="0.1" />
+  </object>
+
+  
+  <object Name="SixDayStiltWall1" Inherits="Concrete">
+    <part Name="Render" DisplayName="콘크리트 벽" RenderString="178" ColorString="&amp;y^c" TileColor="&amp;y" DetailColor="c" Occluding="true" />
+    <part Name="Physics" Weight="12000" FlameTemperature="24000" VaporTemperature="57000" Takeable="false" Solid="true" />    
+    <part Name="Graffitied" ChanceOneIn="100" />
+  </object>
+  <object Name="SixDayStiltWall2" Inherits="Marble">
+    <part Name="Render" DisplayName="대리석 벽" RenderString="176" ColorString="&amp;Y^c" TileColor="&amp;c" DetailColor="Y" Occluding="true" />
+    <part Name="Physics" Weight="10000" FlameTemperature="99999" VaporTemperature="1500" Takeable="false" Solid="true" />
+    <stat Name="AV" Value="20" />
+    <stat Name="Hitpoints" Value="6000" />
+    <tag Name="PaintedWall" Value="wall_marble" />
+    <tag Name="VaporObject" Value="LavaPuddle" />
+    <tag Name="ImmutableWhenUnexplored" Value="1" />
+    <tag Name="Tier" Value="1" />
+    <part Name="Graffitied" ChanceOneIn="100" />
+  </object>
+  <object Name="SixDayStiltPillarWall1" Inherits="Marble">
+    <part Name="Render" DisplayName="홈이 파인 대리석 기둥" RenderString="176" ColorString="&amp;Y^C" TileColor="&amp;C" DetailColor="Y" Occluding="true" />
+    <part Name="Physics" Weight="10000" FlameTemperature="99999" VaporTemperature="1500" Takeable="false" Solid="true" />
+    <stat Name="AV" Value="20" />
+    <stat Name="Hitpoints" Value="6000" />
+    <tag Name="PaintedWall" Value="wall_fluted" />
+    <tag Name="VaporObject" Value="LavaPuddle" />
+    <tag Name="ImmutableWhenUnexplored" Value="1" />
+    <tag Name="Tier" Value="1" />
+    <part Name="Graffitied" ChanceOneIn="100" />
+  </object>
+  <object Name="SixDayStiltPillarWall2" Inherits="Marble">
+    <part Name="Render" DisplayName="홈이 파인 대리석 기둥" RenderString="176" ColorString="&amp;Y^c" TileColor="&amp;c" DetailColor="Y" Occluding="true" />
+    <part Name="Physics" Weight="10000" FlameTemperature="99999" VaporTemperature="1500" Takeable="false" Solid="true" />
+    <stat Name="AV" Value="20" />
+    <stat Name="Hitpoints" Value="6000" />
+    <tag Name="PaintedWall" Value="wall_fluted" />
+    <tag Name="VaporObject" Value="LavaPuddle" />
+    <tag Name="ImmutableWhenUnexplored" Value="1" />
+    <tag Name="Tier" Value="1" />
+    <part Name="Graffitied" ChanceOneIn="100" />
+  </object>
+
+  <object Name="Relief" Inherits="InorganicObject">
+    <part Name="Render" DisplayName="[벽]" Tile="Terrain/sw_fresco1-1.bmp" RenderLayer="6" RenderString="219" ColorString="&amp;c^k" DetailColor="Y" Occluding="true" />
+    <part Name="Physics" Weight="10000" Takeable="false" Solid="true" SpecificHeat="1.55" />    
+    <stat Name="AV" Value="5" />
+    <stat Name="Hitpoints" Value="100" />
+    <tag Name="NoEffects" />
+    <stat Name="HeatResistance" Value="0" />
+    <stat Name="ColdResistance" Value="50" />
+    <stat Name="ElectricResistance" Value="50" />
+    <stat Name="AcidResistance" Value="0" />
+    <part Name="SmartuseLooks" />
+    <tag Name="BaseObject" Value="*noinherit" />
+    <tag Name="Wall" />
+    <tag Name="HangingSupport" />
+    <tag Name="NoSparkingQuest" />
+    <tag Name="TakeDamageSound" Value="Sounds/Damage/sfx_damage_stone" />
+    <tag Name="DeathSounds" Value="Sounds/Damage/sfx_destroy_stone" />
+  </object>
+  <object Name="Relief1" Inherits="Relief">
+    <part Name="Description" Short="이것은 귀한 감청색 대리석에서 정교하게 깎아낸 고부조입니다. 신전의 대사제들에게 Father Shekhinah가 전해 주었다고 하는 Sacred Joining을 묘사하고 있습니다. 우리 우주의 이른 새벽, Argent Fathers는 무감한 심장을 지닌 채 끝없는 aether를 떠돌았습니다. 그곳, 우주에서도 가장 차가운 먼 곳에서, 그들은 아름다움과 크롬의 화신인 Kasaphescence를 발견했습니다. 그들은 함께, 그녀의 벌거벗은 자궁에서 기계들을 빚어내어 백 개의 대지에 거처를 마련했습니다. 이 장면에서는 Fathers가 처음으로 그녀의 Radiance에 다가섭니다. 그 선두에는 Shekhinah가 있으며, 그는 두드러진 자리를 차지하고 있습니다." />
+    
+    <tag Name="NoSparkingQuest" />
+    <tag Name="BaseObject" Value="*noinherit" />
+    <part Name="Graffitied" ChanceOneIn="300" />
+  </object>
+  <object Name="Relief2" Inherits="Relief">
+    <part Name="Description" Short="이것은 희귀한 감청색 대리석에서 정교하게 깎아낸 고부조입니다. Canticles Chromaic에서 노래하는 Edification을 묘사하고 있습니다. Sacred Joining 이후, Argent Fathers는 Kasaphescence의 장액 같은 금속을 빚어 필멸의 사람들이 거주할 만한 건조물로 만들었습니다. 그들은 산 위에 첨탑을 세우고 강 위에 아치를 놓았습니다. 이곳에서는 Shekhinah가 동쪽을 바라보며, 새로이 번뜩이는 그의 세계에서 진행되는 건설을 감독하고 있습니다." />
+    <tag Name="BaseObject" Value="*noinherit" />
+  </object>
+  <object Name="Relief11" Inherits="Relief1">
+    <part Name="Render" DisplayName="Sacred Joining의 대리석 부조" Tile="Terrain/sw_fresco1-1.bmp" RenderLayer="6" RenderString="219" ColorString="&amp;c^k" DetailColor="Y" Occluding="true" />
+  </object>
+  <object Name="Relief12" Inherits="Relief1">
+    <part Name="Render" DisplayName="Sacred Joining의 대리석 부조" Tile="Terrain/sw_fresco1-2.bmp" RenderLayer="6" RenderString="219" ColorString="&amp;c^k" DetailColor="Y" Occluding="true" />
+  </object>
+  <object Name="Relief13" Inherits="Relief1">
+    <part Name="Render" DisplayName="Sacred Joining의 대리석 부조" Tile="Terrain/sw_fresco1-3.bmp" RenderLayer="6" RenderString="219" ColorString="&amp;c^k" DetailColor="Y" Occluding="true" />
+  </object>
+  <object Name="Relief14" Inherits="Relief1">
+    <part Name="Render" DisplayName="Sacred Joining의 대리석 부조" Tile="Terrain/sw_fresco1-4.bmp" RenderLayer="6" RenderString="219" ColorString="&amp;c^k" DetailColor="Y" Occluding="true" />
+  </object>
+  <object Name="Relief15" Inherits="Relief1">
+    <part Name="Render" DisplayName="Sacred Joining의 대리석 부조" Tile="Terrain/sw_fresco1-5.bmp" RenderLayer="6" RenderString="219" ColorString="&amp;c^k" DetailColor="Y" Occluding="true" />
+  </object>
+  <object Name="Relief16" Inherits="Relief1">
+    <part Name="Render" DisplayName="Sacred Joining의 대리석 부조" Tile="Terrain/sw_fresco1-6.bmp" RenderLayer="6" RenderString="219" ColorString="&amp;c^k" DetailColor="Y" Occluding="true" />
+  </object>
+  <object Name="Relief17" Inherits="Relief1">
+    <part Name="Render" DisplayName="Sacred Joining의 대리석 부조" Tile="Terrain/sw_fresco1-7.bmp" RenderLayer="6" RenderString="219" ColorString="&amp;c^k" DetailColor="Y" Occluding="true" />
+  </object>
+  <object Name="Relief21" Inherits="Relief2">
+    <part Name="Render" DisplayName="Edification의 대리석 부조" Tile="Terrain/sw_fresco2-1.bmp" RenderLayer="6" RenderString="219" ColorString="&amp;c^k" DetailColor="Y" Occluding="true" />
+  </object>
+  <object Name="Relief22" Inherits="Relief2">
+    <part Name="Render" DisplayName="Edification의 대리석 부조" Tile="Terrain/sw_fresco2-2.bmp" RenderLayer="6" RenderString="219" ColorString="&amp;c^k" DetailColor="Y" Occluding="true" />
+  </object>
+  <object Name="Relief23" Inherits="Relief2">
+    <part Name="Render" DisplayName="Edification의 대리석 부조" Tile="Terrain/sw_fresco2-3.bmp" RenderLayer="6" RenderString="219" ColorString="&amp;c^k" DetailColor="Y" Occluding="true" />
+  </object>
+  <object Name="Relief24" Inherits="Relief2">
+    <part Name="Render" DisplayName="Edification의 대리석 부조" Tile="Terrain/sw_fresco2-4.bmp" RenderLayer="6" RenderString="219" ColorString="&amp;c^k" DetailColor="Y" Occluding="true" />
+  </object>
+  <object Name="Relief25" Inherits="Relief2">
+    <part Name="Render" DisplayName="Edification의 대리석 부조" Tile="Terrain/sw_fresco2-5.bmp" RenderLayer="6" RenderString="219" ColorString="&amp;c^k" DetailColor="Y" Occluding="true" />
+  </object>
+  <object Name="Relief26" Inherits="Relief2">
+    <part Name="Render" DisplayName="Edification의 대리석 부조" Tile="Terrain/sw_fresco2-6.bmp" RenderLayer="6" RenderString="219" ColorString="&amp;c^k" DetailColor="Y" Occluding="true" />
+  </object>
+  <object Name="Relief27" Inherits="Relief2">
+    <part Name="Render" DisplayName="Edification의 대리석 부조" Tile="Terrain/sw_fresco2-7.bmp" RenderLayer="6" RenderString="219" ColorString="&amp;c^k" DetailColor="Y" Occluding="true" />
+  </object>
+
+  
+  <object Name="YdFreeholdCrysteelPlatedWallWithPipes" Inherits="CrysteelPlatedWall">
+    <part Name="ModPiping" />
+    <part Name="Graffitied" ChanceOneIn="1" />
+		<tag Name="Breakable" />
+    <tag Name="ExcludeFromDynamicEncounters" />
+  </object>
+  <object Name="FulcreteWithSquareWave" Inherits="BaseMetamorphicRock">
+    <part Name="Render" DisplayName="사각파 무늬가 새겨진 풀크리트" ColorString="&amp;r^C" TileColor="&amp;r" DetailColor="C" Occluding="true" />
+    <stat Name="AV" Value="35" />
+    <stat Name="Hitpoints" Value="3000" />
+    <part Name="Description" Short="일체형 안료로 물들인 풀크리트가 얼룩진 색으로 터져 나옵니다. 규칙적인 기하 무늬가 새겨져, 시선을 수평면을 따라 끌어갑니다." />
+    <xtagGrammar massNoun="true" />
+    <tag Name="PaintedWall" Value="wall_zigzag" />
+    <tag Name="PaintWith" Value="ZigzagWalls" />
+    <tag Name="PaintedWallAtlas" Value="Assets_Content_Textures_Walls_" />
+    <tag Name="PaintedWallExtension" Value=".png" />
+    <part Name="Graffitied" ChanceOneIn="3000" />
+  </object>
+  <object Name="Fulcrete With Square Wave rW" Inherits="FulcreteWithSquareWave">
+    <part Name="Render" ColorString="&amp;r^W" TileColor="&amp;r" DetailColor="W" />
+  </object>
+  <object Name="Fulcrete With Square Wave Wg" Inherits="FulcreteWithSquareWave">
+    <part Name="Render" ColorString="&amp;W^g" TileColor="&amp;W" DetailColor="g" />
+  </object>
+  <object Name="Fulcrete With Square Wave KC" Inherits="FulcreteWithSquareWave">
+    <part Name="Render" ColorString="&amp;K^C" TileColor="&amp;K" DetailColor="C" />
+  </object>
+  <object Name="Fulcrete With Square Wave yW" Inherits="FulcreteWithSquareWave">
+    <part Name="Render" ColorString="&amp;y^W" TileColor="&amp;y" DetailColor="W" />
+  </object>
+  <object Name="Fulcrete With Square Wave rM" Inherits="FulcreteWithSquareWave">
+    <part Name="Render" ColorString="&amp;r^M" TileColor="&amp;r" DetailColor="M" />
+  </object>
+  <object Name="Fulcrete With Square Wave rG" Inherits="FulcreteWithSquareWave">
+    <part Name="Render" ColorString="&amp;r^G" TileColor="&amp;r" DetailColor="G" />
+  </object>
+  <object Name="Fulcrete With Square Wave rr" Inherits="FulcreteWithSquareWave">
+    <part Name="Render" ColorString="&amp;r^r" TileColor="&amp;r" DetailColor="r" />
+  </object>
+  <object Name="Yd ColumbariumWall" Inherits="ColumbariumWall">
+    <part Name="Render" ColorString="&amp;K^y" TileColor="&amp;K" DetailColor="y" />
+  </object>
+
+  
+  <object Name="CatacombWall" Inherits="BaseWallBone">
+    <part Name="Render" ColorString="&amp;y^Y" TileColor="&amp;y" DetailColor="Y" DisplayName="다져진 뼈" />
+    <part Name="Description" Short="인간 형상의 뼈 조각들이, 올바르게 테셀레이션을 이루도록 일부러 어긋나게 배치되어 있습니다. 둥근 두개골은 배열 사이의 틈을 메우기 위해 척골 매듭을 필요로 합니다. 이 세계의 경계는 쌀처럼 희고, 존재감으로 가득 차 있습니다." />
+    <tag Name="PaintedWall" Value="wall_skull_1,wall_skull_2" />
+    <tag Name="PaintedWallAtlas" Value="Assets_Content_Textures_Walls_" />
+    <tag Name="PaintedWallExtension" Value=".png" />
+    <tag Name="BaseObject" Value="*noinherit" />
+    <tag Name="Tier" Value="6" />
+    <xtagGrammar massNoun="true" />
+  </object>
+  <object Name="ColumbariumWall" Inherits="Wall">
+    <part Name="Render" DisplayName="화려하게 조각된 대리석" RenderString="177" ColorString="&amp;Y^C" TileColor="&amp;Y" DetailColor="C" Occluding="true" />
+    <part Name="Physics" Weight="10000" FlameTemperature="99999" VaporTemperature="1500" Takeable="false" Solid="true" />
+    <stat Name="AV" Value="25" />
+    <stat Name="Hitpoints" Value="6000" />
+    <part Name="Description" Short="온 세상이 저부조로 새겨져 있으며, 재의 꿈을 꾸는 Eaters의 잡다한 삶을 본뜬 모사체들입니다. 종려나무 잎이 별빛 띠가 두른 하늘로 피라미드를 들어 올리고, 생명의 물이 오이노코에의 가장자리를 넘어 쏟아져 내립니다." />
+    <tag Name="PaintedWall" Value="wall_filigree" />
+    <tag Name="PaintedWallAtlas" Value="Assets_Content_Textures_Walls_" />
+    <tag Name="PaintedWallExtension" Value=".png" />
+    <tag Name="VaporObject" Value="LavaPuddle" />
+    <tag Name="ImmutableWhenUnexplored" Value="1" />
+    <tag Name="Tier" Value="6" />
+    <part Name="Graffitied" ChanceOneIn="200" />
+  </object>
+  <object Name="CryptWall" Inherits="Wall">
+    <part Name="Render" DisplayName="화려한 세공 무늬의 대리석" RenderString="177" ColorString="&amp;K^C" TileColor="&amp;K" DetailColor="C" Occluding="true" />
+    <part Name="Physics" Weight="10000" FlameTemperature="99999" VaporTemperature="1500" Takeable="false" Solid="true" />
+    <stat Name="AV" Value="25" />
+    <stat Name="Hitpoints" Value="6000" />
+    <part Name="Description" Short="온 세상이 삼차원 세공 무늬로 엮여 있으며, 재의 꿈을 꾸는 Eaters의 잡다한 삶을 본뜬 모사체들입니다. 종려나무 잎이 별빛 띠가 두른 하늘로 피라미드를 들어 올리고, 생명의 물이 오이노코에의 가장자리를 넘어 쏟아져 내립니다." />
+    <tag Name="PaintedWall" Value="wall_filigree" />
+    <tag Name="PaintedWallAtlas" Value="Assets_Content_Textures_Walls_" />
+    <tag Name="PaintedWallExtension" Value=".png" />
+    <tag Name="VaporObject" Value="LavaPuddle" />
+    <tag Name="ImmutableWhenUnexplored" Value="1" />
+    <tag Name="Tier" Value="6" />
+    <part Name="Graffitied" ChanceOneIn="200" />
+		<stag Name="Historical" />
+		<tag Name="SingleTile" Value="Walls/wall_filigree-00000000.png" />
+  </object>
+  <object Name="CryptWall Period 1" Inherits="CryptWall">
+  </object>
+  <object Name="CryptWall Period 2" Inherits="CryptWall">
+  </object>
+  <object Name="CryptWall Period 3" Inherits="CryptWall">
+  </object>
+  <object Name="CryptWall Period 4" Inherits="CryptWall">
+  </object>
+  <object Name="CryptWall Period 5" Inherits="CryptWall">
+  </object>
+
+  
+  <object Name="BaseSultanWall" Inherits="Wall">
+    <part Name="Render" DisplayName="[의례용 술탄국 벽]" RenderString="176" ColorString="&amp;w^W" TileColor="&amp;w" DetailColor="W" Occluding="true" />
+    <part Name="Physics" Weight="10000" FlameTemperature="99999" VaporTemperature="1500" Takeable="false" Solid="true" />
+    <stat Name="AV" Value="25" />
+    <stat Name="Hitpoints" Value="6000" />
+    <part Name="Description" Short="sultan_wall" />
+    <tag Name="PaintedWall" Value="wall_marble" />
+    <tag Name="PaintedWallAtlas" Value="Assets_Content_Textures_Walls_" />
+    <tag Name="PaintedWallExtension" Value=".png" />
+    <tag Name="PaintWith" Value="SultanWalls" />
+    <tag Name="VaporObject" Value="LavaPuddle" />
+    <tag Name="ImmutableWhenUnexplored" Value="1" />
+    <tag Name="Tier" Value="0" />
+    <part Name="Graffitied" ChanceOneIn="200" />
+    <xtagGrammar massNoun="true" />
+    <tag Name="BaseObject" Value="*noinherit" />
+		<stag Name="Historical" />
+		<tag Name="SingleTile" Value="Walls/wall_marble-00000000.png" />
+	</object>
+  <object Name="BaseInnerSultanWall" Inherits="BaseSultanWall">
+    <part Name="Description" Short="sultan_wall" />
+    <tag Name="BaseObject" Value="*noinherit" />
+  </object>
+  <object Name="SultanWall_Period1" Inherits="BaseSultanWall">
+    <part Name="Render" DisplayName="*Sultan1Name* 술탄국의 조각된 돌" />
+    <part Name="Description" Short="거대하고 오래된 돌이 쌓이고, 쪼아 다듬어지고, *Sultan1Name*의 시대에 유행하던 양식에 맞춰 긴 호를 그리며 조각되었습니다. 그 뒤로 이 작업에는 협업자들이 늘어났고, 그들의 서명이 곳곳에 새겨졌습니다. 여기에는 누군가 훼손해 덧댄 흔적의 공백이 있고, 저기에는 세월의 붓이 남긴 부드러운 터치가 있습니다." />
+    <part Name="ReplaceText" Variables="*Sultan1Name*" />
+    <tag Name="PaintedWall" Value="wall_sultan_diamonds" />
+		<tag Name="SingleTile" Value="Tiles/wall_sultan_diamonds-00000000.png" />
+  </object>
+  <object Name="SultanWall_Period1 High Graffiti Chance" Inherits="SultanWall_Period1">
+    <part Name="Graffitied" ChanceOneIn="3" />
+    <tag Name="ExcludeFromDynamicEncounters" Value="*noinherit" />
+  </object>
+  <object Name="HighCapacityWiredSultanWall_Period1" Inherits="SultanWall_Period1">
+    <part Name="ModWired" Tier="5" />
+		<tag Name="Breakable" />
+  </object>
+  <object Name="SultanWall_Period2" Inherits="BaseSultanWall">
+    <part Name="Render" DisplayName="*Sultan2Name* 술탄국의 조각된 돌" />
+    <part Name="Description" Short="거대하고 오래된 돌이 쌓이고, 쪼아 다듬어지고, *Sultan2Name*의 시대에 유행하던 양식에 맞춰 긴 호를 그리며 조각되었습니다. 그 뒤로 이 작업에는 협업자들이 늘어났고, 그들의 서명이 곳곳에 새겨졌습니다. 여기에는 누군가 훼손해 덧댄 흔적의 공백이 있고, 저기에는 세월의 붓이 남긴 부드러운 터치가 있습니다." />
+    <part Name="ReplaceText" Variables="*Sultan2Name*" />
+    <tag Name="PaintedWall" Value="wall_sultan_runes" />
+		<tag Name="SingleTile" Value="Walls/wall_sultan_runes-00000000.png" />
+  </object>
+  <object Name="SultanWall_Period2 High Graffiti Chance" Inherits="SultanWall_Period2">
+    <part Name="Graffitied" ChanceOneIn="3" />
+    <tag Name="ExcludeFromDynamicEncounters" Value="*noinherit" />
+  </object>
+  <object Name="SultanWall_Period3" Inherits="BaseSultanWall">
+    <part Name="Render" DisplayName="*Sultan3Name* 술탄국의 조각된 돌" />
+    <part Name="Description" Short="거대하고 오래된 돌이 쌓이고, 쪼아 다듬어지고, *Sultan3Name*의 시대에 유행하던 양식에 맞춰 긴 호를 그리며 조각되었습니다. 그 뒤로 이 작업에는 협업자들이 늘어났고, 그들의 서명이 곳곳에 새겨졌습니다. 여기에는 누군가 훼손해 덧댄 흔적의 공백이 있고, 저기에는 세월의 붓이 남긴 부드러운 터치가 있습니다." />
+    <part Name="ReplaceText" Variables="*Sultan3Name*" />
+    <tag Name="PaintedWall" Value="wall_sultan_shields" />
+		<tag Name="SingleTile" Value="Walls/wall_sultan_shields-00000000.png" />
+  </object>
+  <object Name="SultanWall_Period3 High Graffiti Chance" Inherits="SultanWall_Period3">
+    <part Name="Graffitied" ChanceOneIn="3" />
+    <tag Name="ExcludeFromDynamicEncounters" Value="*noinherit" />
+  </object>
+  <object Name="SultanWall_Period4" Inherits="BaseSultanWall">
+    <part Name="Render" DisplayName="*Sultan4Name* 술탄국의 조각된 돌" />
+    <part Name="Description" Short="거대하고 오래된 돌이 쌓이고, 쪼아 다듬어지고, *Sultan4Name*의 시대에 유행하던 양식에 맞춰 긴 호를 그리며 조각되었습니다. 그 뒤로 이 작업에는 협업자들이 늘어났고, 그들의 서명이 곳곳에 새겨졌습니다. 여기에는 누군가 훼손해 덧댄 흔적의 공백이 있고, 저기에는 세월의 붓이 남긴 부드러운 터치가 있습니다." />
+    <part Name="ReplaceText" Variables="*Sultan4Name*" />
+    <tag Name="PaintedWall" Value="wall_sultan_arches" />
+		<tag Name="SingleTile" Value="Walls/wall_sultan_arches-00000000.png" />
+  </object>
+  <object Name="SultanWall_Period5" Inherits="BaseSultanWall">
+    <part Name="Render" DisplayName="*Sultan5Name* 술탄국의 조각된 돌" />
+    <part Name="Description" Short="거대하고 오래된 돌이 쌓이고, 쪼아 다듬어지고, *Sultan5Name*의 시대에 유행하던 양식에 맞춰 긴 호를 그리며 조각되었습니다. 그 뒤로 이 작업에는 협업자들이 늘어났고, 그들의 서명이 곳곳에 새겨졌습니다. 여기에는 누군가 훼손해 덧댄 흔적의 공백이 있고, 저기에는 세월의 붓이 남긴 부드러운 터치가 있습니다." />
+    <part Name="ReplaceText" Variables="*Sultan5Name*" />
+    <tag Name="PaintedWall" Value="wall_sultan_columns" />
+		<tag Name="SingleTile" Value="Walls/wall_sultan_columns-00000000.png" />
+  </object>
+  <object Name="SultanWall_Period6" Inherits="BaseSultanWall">
+    <part Name="Render" DisplayName="Resheph 술탄국의 조각된 돌" />
+    <part Name="Description" Short="거대하고 오래된 돌이 쌓이고, 쪼아 다듬어지고, Resheph의 시대에 유행하던 양식에 맞춰 긴 호를 그리며 조각되었습니다. 그 뒤로 이 작업에는 협업자들이 늘어났고, 그들의 서명이 곳곳에 새겨졌습니다. 여기에는 누군가 훼손해 덧댄 흔적의 공백이 있고, 저기에는 세월의 붓이 남긴 부드러운 터치가 있습니다." />
+    <tag Name="PaintedWall" Value="wall_sultan_valence" />
+		<tag Name="SingleTile" Value="Walls/wall_sultan_valence-00000000.png" />
+  </object>
+  <object Name="SultanWall_Ornate_Period5" Inherits="BaseSultanWall">
+    <part Name="Render" DisplayName="*Sultan5Name* 술탄국의 조각된 돌" />
+    <part Name="Description" Short="거대하고 오래된 돌이 쌓이고, 쪼아 다듬어지고, *Sultan5Name*의 시대에 유행하던 양식에 맞춰 긴 호를 그리며 조각되었습니다. 그 뒤로 이 작업에는 협업자들이 늘어났고, 그들의 서명이 곳곳에 새겨졌습니다. 여기에는 누군가 훼손해 덧댄 흔적의 공백이 있고, 저기에는 세월의 붓이 남긴 부드러운 터치가 있습니다." />
+    <part Name="ReplaceText" Variables="*Sultan5Name*" />
+    <tag Name="PaintedWall" Value="wall_sultan_columns_b" />
+		<tag Name="SingleTile" Value="Walls/wall_sultan_columns_b-00000000.png" />
+  </object>
+  <object Name="InnerSultanWall_Period1" Inherits="BaseInnerSultanWall">
+    <part Name="Render" DisplayName="*Sultan1Name* 술탄국의 금박 대리석" ColorString="&amp;K^C" TileColor="&amp;K" DetailColor="C" Occluding="true" />
+    <part Name="Description" Short="귀한 돌이 꿈꾸는 대지의 먼 심연에서 끌려 나와, 키클롭스식 거석 설계로 쌓이고, 천 송이 꽃이 만개한 듯한 장엄함으로 조각되었습니다. 습기 없는 공기가 금박을 보존하지만, 세월은 그 가장자리를 부드럽게 무디게 만들었습니다." />
+    <part Name="ReplaceText" Variables="*Sultan1Name*" />
+    <tag Name="PaintedWall" Value="wall_sultan_diamonds_b" />
+		<tag Name="SingleTile" Value="Walls/wall_sultan_diamonds_b-00000000.png" />
+  </object>
+  <object Name="InnerSultanWall_Period1 High Graffiti Chance" Inherits="InnerSultanWall_Period1">
+    <part Name="Graffitied" ChanceOneIn="3" />
+    <tag Name="ExcludeFromDynamicEncounters" Value="*noinherit" />
+  </object>
+  <object Name="InnerSultanWall_Period2" Inherits="BaseInnerSultanWall">
+    <part Name="Render" DisplayName="*Sultan2Name* 술탄국의 금박 대리석" ColorString="&amp;y^m" TileColor="&amp;y" DetailColor="m" Occluding="true" />
+    <part Name="Description" Short="귀한 돌이 꿈꾸는 대지의 먼 심연에서 끌려 나와, 키클롭스식 거석 설계로 쌓이고, 천 송이 꽃이 만개한 듯한 장엄함으로 조각되었습니다. 습기 없는 공기가 금박을 보존하지만, 세월은 그 가장자리를 부드럽게 무디게 만들었습니다." />
+    <part Name="ReplaceText" Variables="*Sultan2Name*" />
+    <tag Name="PaintedWall" Value="wall_sultan_runes_b" />
+		<tag Name="SingleTile" Value="Walls/wall_sultan_runes_b-00000000.png" />
+  </object>
+  <object Name="InnerSultanWall_Period3" Inherits="BaseInnerSultanWall">
+    <part Name="Render" DisplayName="*Sultan3Name* 술탄국의 금박 대리석" ColorString="&amp;r^M" TileColor="&amp;r" DetailColor="M" Occluding="true" />
+    <part Name="Description" Short="귀한 돌이 꿈꾸는 대지의 먼 심연에서 끌려 나와, 키클롭스식 거석 설계로 쌓이고, 천 송이 꽃이 만개한 듯한 장엄함으로 조각되었습니다. 습기 없는 공기가 금박을 보존하지만, 세월은 그 가장자리를 부드럽게 무디게 만들었습니다." />
+    <part Name="ReplaceText" Variables="*Sultan3Name*" />
+    <tag Name="PaintedWall" Value="wall_sultan_shields_b" />
+		<tag Name="SingleTile" Value="Walls/wall_sultan_shields_b-00000000.png" />
+  </object>
+  <object Name="InnerSultanWall_Period4" Inherits="BaseInnerSultanWall">
+    <part Name="Render" DisplayName="*Sultan4Name* 술탄국의 금박 대리석" ColorString="&amp;c^r" TileColor="&amp;c" DetailColor="r" Occluding="true" />
+    <part Name="Description" Short="귀한 돌이 꿈꾸는 대지의 먼 심연에서 끌려 나와, 키클롭스식 거석 설계로 쌓이고, 천 송이 꽃이 만개한 듯한 장엄함으로 조각되었습니다. 습기 없는 공기가 금박을 보존하지만, 세월은 그 가장자리를 부드럽게 무디게 만들었습니다." />
+    <part Name="ReplaceText" Variables="*Sultan4Name*" />
+    <tag Name="PaintedWall" Value="wall_sultan_arches_b" />
+		<tag Name="SingleTile" Value="Walls/wall_sultan_arches_b-00000000.png" />
+  </object>
+  <object Name="InnerSultanWall_Period4 High Graffiti Chance" Inherits="InnerSultanWall_Period4">
+    <part Name="Graffitied" ChanceOneIn="3" />
+    <tag Name="ExcludeFromDynamicEncounters" Value="*noinherit" />
+  </object>
+  <object Name="InnerSultanWall_Period5" Inherits="BaseInnerSultanWall">
+    <part Name="Render" DisplayName="*Sultan5Name* 술탄국의 금박 대리석" ColorString="&amp;Y^C" TileColor="&amp;Y" DetailColor="C" Occluding="true" />
+    <part Name="Description" Short="귀한 돌이 꿈꾸는 대지의 먼 심연에서 끌려 나와, 키클롭스식 거석 설계로 쌓이고, 천 송이 꽃이 만개한 듯한 장엄함으로 조각되었습니다. 습기 없는 공기가 금박을 보존하지만, 세월은 그 가장자리를 부드럽게 무디게 만들었습니다." />
+    <part Name="ReplaceText" Variables="*Sultan5Name*" />
+    <tag Name="PaintedWall" Value="wall_sultan_columns_b" />
+		<tag Name="SingleTile" Value="Walls/wall_sultan_columns_b-00000000.png" />
+  </object>
+  <object Name="InnerSultanWall_Period5 High Graffiti Chance" Inherits="InnerSultanWall_Period5">
+    <part Name="Graffitied" ChanceOneIn="3" />
+    <tag Name="ExcludeFromDynamicEncounters" Value="*noinherit" />
+  </object>
+  <object Name="InnerSultanWall_Period6" Inherits="BaseInnerSultanWall">
+    <part Name="Render" DisplayName="Resheph 술탄국의 금박 대리석" RenderString="177" ColorString="&amp;y^K" TileColor="&amp;y" DetailColor="K" Occluding="true" />
+    <part Name="Description" Short="옷자락의 흐름이 원형을 두르고 고부조로 대리석에 얼어붙어 있습니다. 제국의 금박 벽들은 바로크 풍이지만, 초기 술탄들의 금박에 비하면 여전히 더 절제되어 있습니다." />
+    <tag Name="PaintedWall" Value="wall_sultan_valence_b" />
+		<tag Name="SingleTile" Value="Walls/wall_sultan_valence_b-00000000.png" />
+  </object>
+  <object Name="BaseTombWall" Inherits="BaseWallBrick">
+    <part Name="Render" ColorString="&amp;r^W" TileColor="&amp;r" DetailColor="W" />
+    <tag Name="BaseObject" Value="*noinherit" />
+  </object>
+  <object Name="TombExteriorWall" Inherits="SultanWall_Ornate_Period5">
+  </object>
+  <object Name="TombWarriorCryptWall" Inherits="BaseTombWall">
+    <tag Name="BaseObject" Value="*noinherit" />
+  </object>
+  <object Name="TombSultan1Wall" Inherits="SultanWall_Period1">
+  </object>
+  <object Name="TombSultan2Wall" Inherits="SultanWall_Period2">
+  </object>
+  <object Name="TombSultan2HalfWall" Inherits="HalfWall">
+  </object>
+  <object Name="TombSultan3Wall" Inherits="SultanWall_Period3">
+  </object>
+  <object Name="TombSultan3HalfWall" Inherits="HalfWall">
+  </object>
+  <object Name="TombSultan4Wall" Inherits="SultanWall_Period4">
+  </object>
+  <object Name="TombSultan4HalfWall" Inherits="HalfWall">
+  </object>
+  <object Name="TombSultan5Wall" Inherits="SultanWall_Period5">
+  </object>
+  <object Name="TombSultan5HalfWall" Inherits="HalfWall">
+  </object>
+  <object Name="TombSultan6Wall" Inherits="Fulcrete">
+  </object>
+  <object Name="TombSultan6HalfWall" Inherits="HalfWall">
+  </object>
+
+  
+  <object Name="BaseMuralWall" Inherits="InorganicObject">
+    <part Name="Render" DisplayName="[벽화 벽]" RenderString="176" ColorString="&amp;W^k" DetailColor="w" Occluding="true" RenderLayer="7" />
+    <part Name="Physics" Weight="10000" FlameTemperature="99999" VaporTemperature="1500" Takeable="false" Solid="true" />
+    <stat Name="AV" Value="25" />
+    <stat Name="Hitpoints" Value="6000" />
+    <part Name="Description" Short="sultan_wall" />
+    <tag Name="PaintWith" Value="SultanWalls" />
+    <tag Name="VaporObject" Value="LavaPuddle" />
+    <tag Name="Tier" Value="0" />
+    <part Name="Graffitied" ChanceOneIn="3000" />
+    <tag Name="Wall" />
+    <tag Name="Diggable" />
+    <tag Name="NoEffects" />
+    <tag Name="HeroNameTitleDescriptor" Value="Sturdy,Studded,Unstudded,Crackless,Cracked,Once-Cracked,Twice-Cracked,Still-Standing,Painted,Unpainted" />
+    <tag Name="NamingTag" Value="Animated" />
+    <builder Name="Animated" ChanceOneIn="200000" />
+    <tag Name="Animatable" />
+    <tag Name="DynamicObjectsTable:AnimatableFurniture" />
+    <tag Name="Class" Value="wall" />
+    <tag Name="BodyType" Value="Wall" />
+    <tag Name="NoSparkingQuest" />
+    <part Name="SmartuseLooks" />
+    <tag Name="BaseObject" Value="*noinherit" />
+    <tag Name="ExcludeFromDynamicEncounters" />
+    <tag Name="TakeDamageSound" Value="Sounds/Damage/sfx_damage_stone" />
+    <tag Name="DeathSounds" Value="Sounds/Damage/sfx_destroy_stone" />
+  </object>
+  <object Name="BaseMuralLeftend" Inherits="BaseMuralWall">
+    <part Name="Render" DisplayName="벽화 끝마감" RenderString="218" ColorString="&amp;C^k" DetailColor="K" Tile="Walls/sw_mural_leftend_period_1.bmp" />
+    <part Name="Description" Short="이른 대지에서 채석한 돌이 한 생의 예술을 묶어 두었습니다." />
+    <tag Name="PaintWith" Value="SultanWalls" />
+  </object>
+  <object Name="BaseMuralCenter" Inherits="BaseMuralWall">
+    <part Name="Render" DisplayName="벽화 중앙부" RenderString="196" ColorString="&amp;C^k" DetailColor="K" Tile="Walls/sw_mural_centerpiece_period_1.bmp" />
+    <part Name="Description" Short="이른 대지에서 채석한 돌이 한 생의 예술을 갈라 놓았습니다." />
+    <tag Name="PaintWith" Value="SultanWalls" />
+  </object>
+  <object Name="BaseMuralRightend" Inherits="BaseMuralWall">
+    <part Name="Render" DisplayName="벽화 끝마감" RenderString="191" ColorString="&amp;C^k" DetailColor="K" Tile="Walls/sw_mural_rightend_period_1.bmp" />
+    <part Name="Description" Short="이른 대지에서 채석한 돌이 한 생의 예술을 묶어 두었습니다." />
+    <tag Name="PaintWith" Value="SultanWalls" />
+  </object>
+  <object Name="Mural Leftend Period 1" Inherits="BaseMuralLeftend">
+    <part Name="Render" ColorString="&amp;C^k" DetailColor="K" Tile="Walls/sw_mural_leftend_period_1.bmp" />
+  </object>
+  <object Name="Mural Center Period 1" Inherits="BaseMuralCenter">
+    <part Name="Render" ColorString="&amp;C^k" DetailColor="K" Tile="Walls/sw_mural_centerpiece_period_1.bmp" />
+    <tag Name="PaintWith" Value="SultanWalls" />
+  </object>
+  <object Name="Mural Rightend Period 1" Inherits="BaseMuralRightend">
+    <part Name="Render" ColorString="&amp;C^k" DetailColor="K" Tile="Walls/sw_mural_rightend_period_1.bmp" />
+  </object>
+  <object Name="Mural Leftend Period 2" Inherits="BaseMuralLeftend">
+    <part Name="Render" ColorString="&amp;m^k" DetailColor="y" Tile="Walls/sw_mural_leftend_period_2.bmp" />
+  </object>
+  <object Name="Mural Center Period 2" Inherits="BaseMuralCenter">
+    <part Name="Render" ColorString="&amp;m^k" DetailColor="y" Tile="Walls/sw_mural_centerpiece_period_2.bmp" />
+  </object>
+  <object Name="Mural Rightend Period 2" Inherits="BaseMuralRightend">
+    <part Name="Render" ColorString="&amp;m^k" DetailColor="y" Tile="Walls/sw_mural_rightend_period_2.bmp" />
+  </object>
+  <object Name="Mural Leftend Period 2 Outside" Inherits="BaseMuralLeftend">
+    <part Name="Render" ColorString="&amp;W^k" DetailColor="w" Tile="Walls/sw_mural_leftend_period_2.bmp" />
+  </object>
+  <object Name="Mural Center Period 2 Outside" Inherits="BaseMuralCenter">
+    <part Name="Render" ColorString="&amp;W^k" DetailColor="w" Tile="Walls/sw_mural_centerpiece_period_2.bmp" />
+  </object>
+  <object Name="Mural Rightend Period 2 Outside" Inherits="BaseMuralRightend">
+    <part Name="Render" ColorString="&amp;W^k" DetailColor="w" Tile="Walls/sw_mural_rightend_period_2.bmp" />
+  </object>
+  <object Name="Mural Leftend Period 3" Inherits="BaseMuralLeftend">
+    <part Name="Render" ColorString="&amp;M^k" DetailColor="r" Tile="Walls/sw_mural_leftend_period_3.bmp" />
+  </object>
+  <object Name="Mural Center Period 3" Inherits="BaseMuralCenter">
+    <part Name="Render" ColorString="&amp;M^k" DetailColor="r" Tile="Walls/sw_mural_centerpiece_period_3.bmp" />
+  </object>
+  <object Name="Mural Rightend Period 3" Inherits="BaseMuralRightend">
+    <part Name="Render" ColorString="&amp;M^k" DetailColor="r" Tile="Walls/sw_mural_rightend_period_3.bmp" />
+  </object>
+  <object Name="Mural Leftend Period 3 Outside" Inherits="BaseMuralLeftend">
+    <part Name="Render" ColorString="&amp;W^k" DetailColor="w" Tile="Walls/sw_mural_leftend_period_3.bmp" />
+  </object>
+  <object Name="Mural Center Period 3 Outside" Inherits="BaseMuralCenter">
+    <part Name="Render" ColorString="&amp;W^k" DetailColor="w" Tile="Walls/sw_mural_centerpiece_period_3.bmp" />
+  </object>
+  <object Name="Mural Rightend Period 3 Outside" Inherits="BaseMuralRightend">
+    <part Name="Render" ColorString="&amp;W^k" DetailColor="w" Tile="Walls/sw_mural_rightend_period_3.bmp" />
+  </object>
+  <object Name="Mural Leftend Period 4" Inherits="BaseMuralLeftend">
+    <part Name="Render" ColorString="&amp;r^k" DetailColor="c" Tile="Walls/sw_mural_leftend_period_4.bmp" />
+  </object>
+  <object Name="Mural Center Period 4" Inherits="BaseMuralCenter">
+    <part Name="Render" ColorString="&amp;r^k" DetailColor="c" Tile="Walls/sw_mural_centerpiece_period_4.bmp" />
+  </object>
+  <object Name="Mural Rightend Period 4" Inherits="BaseMuralRightend">
+    <part Name="Render" ColorString="&amp;r^k" DetailColor="c" Tile="Walls/sw_mural_rightend_period_4.bmp" />
+  </object>
+  <object Name="Mural Leftend Period 4 Outside" Inherits="BaseMuralLeftend">
+    <part Name="Render" ColorString="&amp;W^k" DetailColor="w" Tile="Walls/sw_mural_leftend_period_4.bmp" />
+  </object>
+  <object Name="Mural Center Period 4 Outside" Inherits="BaseMuralCenter">
+    <part Name="Render" ColorString="&amp;W^k" DetailColor="w" Tile="Walls/sw_mural_centerpiece_period_4.bmp" />
+  </object>
+  <object Name="Mural Rightend Period 4 Outside" Inherits="BaseMuralRightend">
+    <part Name="Render" ColorString="&amp;W^k" DetailColor="w" Tile="Walls/sw_mural_rightend_period_4.bmp" />
+  </object>
+  <object Name="Mural Leftend Period 5" Inherits="BaseMuralLeftend">
+    <part Name="Render" ColorString="&amp;c^k" DetailColor="Y" Tile="Walls/sw_mural_leftend_period_5.bmp" />
+  </object>
+  <object Name="Mural Center Period 5" Inherits="BaseMuralCenter">
+    <part Name="Render" ColorString="&amp;c^k" DetailColor="Y" Tile="Walls/sw_mural_centerpiece_period_5.bmp" />
+  </object>
+  <object Name="Mural Rightend Period 5" Inherits="BaseMuralRightend">
+    <part Name="Render" ColorString="&amp;c^k" DetailColor="Y" Tile="Walls/sw_mural_rightend_period_5.bmp" />
+  </object>
+  <object Name="Mural Leftend Period 6" Inherits="BaseMuralLeftend">
+    <part Name="Render" ColorString="&amp;K^k" DetailColor="y" Tile="Walls/sw_mural_leftend_period_6.bmp" />
+    <part Name="Description" Short="이른 대지에서 채석한 검은 대리석이 한 생의 예술을 묶어 두었습니다." />
+  </object>
+  <object Name="Mural Center Period 6" Inherits="BaseMuralCenter">
+    <part Name="Render" ColorString="&amp;K^k" DetailColor="y" Tile="Walls/sw_mural_centerpiece_period_6.bmp" />
+    <part Name="Description" Short="이른 대지에서 채석한 검은 대리석이 한 생의 예술을 갈라 놓았습니다." />
+  </object>
+  <object Name="Mural Rightend Period 6" Inherits="BaseMuralRightend">
+    <part Name="Render" ColorString="&amp;K^k" DetailColor="y" Tile="Walls/sw_mural_rightend_period_6.bmp" />
+    <part Name="Description" Short="이른 대지에서 채석한 검은 대리석이 한 생의 예술을 묶어 두었습니다." />
+  </object>
+  <object Name="Mural AppeasesBaetyl Left" Inherits="BaseMuralWall">
+    <part Name="Render" Tile="Walls/sw_mural_appeasesbaetyl_l.bmp" />
+  </object>
+  <object Name="Mural AppeasesBaetyl Center" Inherits="BaseMuralWall">
+    <part Name="Render" Tile="Walls/sw_mural_appeasesbaetyl_c.bmp" />
+  </object>
+  <object Name="Mural AppeasesBaetyl Right" Inherits="BaseMuralWall">
+    <part Name="Render" Tile="Walls/sw_mural_appeasesbaetyl_r.bmp" />
+  </object>
+  <object Name="Mural Ruined4 Left" Inherits="BaseMuralWall">
+    <part Name="Render" Tile="Walls/sw_mural_ruined4_l.bmp" />
+  </object>
+  <object Name="Mural Ruined4 Center" Inherits="BaseMuralWall">
+    <part Name="Render" Tile="Walls/sw_mural_ruined4_c.bmp" />
+  </object>
+  <object Name="Mural Ruined4 Right" Inherits="BaseMuralWall">
+    <part Name="Render" Tile="Walls/sw_mural_ruined4_r.bmp" />
+  </object>
+
+  <object Name="SultanMuralWall" Inherits="BaseMuralWall">
+    <part Name="Render" DisplayName="[술탄 벽화]" />
+    <part Name="Description" Short="검은 대리석이 공허한 궁륭의 캔버스로 거칠게 갈려 나간 뒤 그대로 남겨져, 있었을지도 모를 것에 대한 경이를 자아내고 있습니다." />
+    <part Name="SultanMural" />
+    <tag Name="PaintedWall" Value="" />
+    <tag Name="PaintWith" Value="*" />
+    <tag Name="BaseObject" Value="*noinherit" />
+    <tag Name="ExcludeFromDynamicEncounters" />
+  </object>
+  <object Name="SultanMuralWall1" Inherits="SultanMuralWall">
+    <part Name="Render" ColorString="&amp;M^k" DetailColor="K" DisplayName="[술탄 벽화]" />
+    <tag Name="SultanatePeriod" Value="1" />
+  </object>
+  <object Name="SultanMuralWall2" Inherits="SultanMuralWall">
+    <part Name="Render" ColorString="&amp;Y^k" DetailColor="y" DisplayName="[술탄 벽화]" />
+    <tag Name="SultanatePeriod" Value="2" />
+  </object>
+  <object Name="SultanMuralWallOutside2" Inherits="SultanMuralWall">
+    <part Name="Render" DisplayName="[술탄 벽화]" />
+    <tag Name="SultanatePeriod" Value="2" />
+  </object>
+  <object Name="SultanMuralWallOutside2Preserved" Inherits="SultanMuralWallOutside2">
+    <part Name="Render" DisplayName="[술탄 벽화]" />
+    <tag Name="SultanatePeriod" Value="2preserved" />
+    <tag Name="ExcludeFromDynamicEncounters" Value="*noinherit" />
+  </object>
+  <object Name="SultanMuralWall3" Inherits="SultanMuralWall">
+    <part Name="Render" ColorString="&amp;C^k" DetailColor="r" DisplayName="[술탄 벽화]" />
+    <tag Name="SultanatePeriod" Value="3" />
+  </object>
+  <object Name="SultanMuralWallOutside3" Inherits="SultanMuralWall">
+    <part Name="Render" DisplayName="[술탄 벽화]" />
+    <tag Name="SultanatePeriod" Value="3" />
+  </object>
+  <object Name="SultanMuralWall4" Inherits="SultanMuralWall">
+    <part Name="Render" ColorString="&amp;R^k" DetailColor="c" DisplayName="[술탄 벽화]" />
+    <tag Name="SultanatePeriod" Value="4" />
+  </object>
+  <object Name="SultanMuralWallOutside4" Inherits="SultanMuralWall">
+    <part Name="Render" DisplayName="[술탄 벽화]" />
+    <tag Name="SultanatePeriod" Value="4" />
+  </object>
+  <object Name="SultanMuralWall5" Inherits="SultanMuralWall">
+    <part Name="Render" ColorString="&amp;W^k" DetailColor="Y" DisplayName="[술탄 벽화]" />
+    <tag Name="SultanatePeriod" Value="5" />
+  </object>
+  <object Name="SultanMuralWall6" Inherits="SultanMuralWall">
+    <part Name="Render" ColorString="&amp;W^k" DetailColor="y" DisplayName="[술탄 벽화]" />
+    <tag Name="SultanatePeriod" Value="6" />
+  </object>
+
+	
+  	
+	<object Name="GolemInteriorWall" Inherits="Wall">
+		<part Name="Physics" FlameTemperature="1200" />
+		<part Name="Render" DisplayName="전기로 구운 점토, 금속 장갑판, 그리고 조직" RenderString="178" ColorString="&amp;w^W" DetailColor="k" />
+		<part Name="Description" Short="축축한 조직 내피가 전기로 구운 점토와 납땜된 금속 판 위로 팽팽히 늘어서 있습니다. 반투명한 막 아래로, 하부 회로망의 격자들이 황금빛을 깜빡이고 있습니다." />
+		<stat Name="AV" Value="10" />
+		<stat Name="Hitpoints" Value="1000" />
+		<tag Name="PaintedWall" Value="wall_golem_interior" />
+		<tag Name="PaintedWallAtlas" Value="Assets_Content_Textures_Walls_" />
+		<tag Name="PaintedWallExtension" Value=".png" />
+		<tag Name="PaintWith" Value="GolemInteriorWall" />
+		<xtagGrammar massNoun="true" />
+		<tag Name="Diggable" Value="*delete" />
+		<tag Name="ExcludeFromDynamicEncounters" />
+	</object>
+	<object Name="GolemInteriorWall Endcap" Inherits="GolemInteriorWall">
+		<part Name="Render" DisplayName="내부" Tile="Walls/wall_golem_interior-00010011.png" />
+		<tag Name="PaintedWall" Value="*delete" />
+	</object>
+	<object Name="InteriorContainer" Inherits="GolemInteriorWall Endcap">
+		<part Name="Physics" Takeable="false" Solid="true" />
+		<part Name="Description" Short="지질학적 늑골 안쪽에 커다란 수납 캐비닛이 만들어져 있습니다. 자력으로 떠 있는 선반들이 공간을 나누고 있습니다." />
+		<part Name="Render" DisplayName="수납 해치" Tile="Furniture/sw_golem_interior_locker.bmp" DetailColor="W" ColorString="&amp;W" TileColor="&amp;w" RenderString="254" Occluding="false" RenderIfDark="true" RenderLayer="6" />
+		<part Name="InteriorContainer" />
+		<tag Name="PaintWith" Value="GolemInteriorWall" />
+		<tag Name="ExcludeFromDynamicEncounters" />
+	</object>
+	<object Name="GolemInteriorGlassWall" Inherits="GlassWall">
+		<tag Name="PaintWith" Value="GolemInteriorWall" />
+		<tag Name="Diggable" Value="*delete" />
+		<tag Name="ExcludeFromDynamicEncounters" />
+	</object>
+	<object Name="GolemInteriorWallwPiping" Inherits="GolemInteriorWall">
+		<part Name="ModPiping" />
+		<tag Name="Breakable" />
+	</object>
+	<object Name="PumpingColumnProducer" Inherits="GolemInteriorWall">
+		<part Name="FusionReactor" ChargeRate="1000" />
+		<part Name="Circuitry" StartCharge="1000" />
+		<part Name="CatalystLiquid" />
+		<part Name="HydraulicPowerTransmission" ChargeRate="10000" IsProducer="true" DependsOnLiquid="proteangunk" DischargeLiquidWhenBrokenAndPowered="true" MingleLiquidsWhenPowered="true" />
+		<part Name="LiquidVolume" MaxVolume="256" Volume="0" StartVolume="256" InitialLiquid="proteangunk-1000" Sealed="true" LiquidVisibleWhenSealed="true" />
+		<intproperty Name="ThermalInsulation" Value="900" />
+	</object>
+	<object Name="PumpingColumnConsumer" Inherits="GolemInteriorWall">
+		<part Name="HydraulicPowerTransmission" ChargeRate="10000" IsConsumer="true" DependsOnLiquid="proteangunk" DischargeLiquidWhenBrokenAndPowered="true" MingleLiquidsWhenPowered="true" />
+		<part Name="LiquidVolume" MaxVolume="32" StartVolume="32" InitialLiquid="proteangunk-1000" Sealed="true" />
+		<part Name="CatalystLiquid" />
+		<intproperty Name="ThermalInsulation" Value="900" />
+	</object>
+	  
+
+	<object Name="MechInteriorWall" Inherits="MachineWallEmptyTubing">		
+		<tag Name="Diggable" Value="*delete" />
+	</object>
+	<object Name="MechInteriorWall Endcap" Inherits="MachineWallEmptyTubing">
+		<part Name="Render" Tile="Walls/wall_coolant-00010011.png" />
+		<tag Name="PaintedWall" Value="*delete" />
+		<tag Name="PaintedWallAtlas" Value="*delete" />
+		<tag Name="PaintedWallExtension" Value="*delete" />
+		<tag Name="Diggable" Value="*delete" />
+	</object>
+	<object Name="MechInteriorContainer" Inherits="MechInteriorWall Endcap">		
+		<part Name="Description" Short="금속 늑골 안쪽에 커다란 수납 캐비닛이 만들어져 있습니다. 자력으로 떠 있는 선반들이 공간을 나누고 있습니다." />
+		<part Name="Render" DisplayName="수납 해치" Tile="Furniture/sw_golem_interior_locker.bmp" DetailColor="c" ColorString="&amp;y" TileColor="&amp;y" />
+		<part Name="InteriorContainer" />
+		<tag Name="PaintWith" Value="MachineWallsTubing" />
+		<tag Name="ExcludeFromDynamicEncounters" Value="*noinherit" />
+		<tag Name="Diggable" Value="*delete" />
+	</object>
+	<object Name="MechInteriorGlassWall" Inherits="GlassWall">
+		<tag Name="PaintWith" Value="MachineWallsTubing" />
+		<tag Name="ExcludeFromDynamicEncounters" />
+		<tag Name="Diggable" Value="*delete" />
+	</object>	
+
+  
+	<object Name="BaseNephilimWall" Inherits="Wall">
+		<part Name="Render" ColorString="&amp;y" DisplayName="Nephilim 벽" />
+		<part Name="Description" Short="" />
+		<tag Name="PaintedWall" Value="wall_nephilim_1,wall_nephilim_2" />
+		<tag Name="PaintedWallAtlas" Value="Assets_Content_Textures_Walls_" />
+		<tag Name="PaintedWallExtension" Value=".png" />
+		<tag Name="Tier" Value="8" />
+		<xtagGrammar massNoun="true" />
+		<tag Name="BaseObject" Value="*noinherit" />
+		<tag Name="ExcludeFromDynamicEncounters" />
+	</object>
+	<object Name="BaseNephilimWall_Agolgot" Inherits="BaseNephilimWall">
+		<part Name="Render" ColorString="&amp;m^g" DisplayName="Agolgot가 분출한 수지층" />
+		<part Name="Description" Short="기름진 셸락의 산등성이 같은 흘러내림이 바닥의 윤곽에 맞춰 빚어져, 별난초 길을 따라 흔적을 그립니다. 구역 전체는 말라붙은 죽음의 슬러지로 유약처럼 덮여 있습니다." />
+	</object>
+	<object Name="BaseNephilimWall_Bethsaida" Inherits="BaseNephilimWall">
+		<part Name="Render" ColorString="&amp;m^W" DisplayName="Bethsaida가 분출한 수지층" />
+		<part Name="Description" Short="기름진 셸락의 산등성이 같은 흘러내림이 바닥의 윤곽에 맞춰 빚어져, 별난초 길을 따라 흔적을 그립니다. 구역 전체는 갈라진 신경다발로 유약처럼 덮여 있습니다." />
+	</object>
+	<object Name="BaseNephilimWall_Rermadon" Inherits="BaseNephilimWall">
+		<part Name="Render" ColorString="&amp;m^G" DisplayName="Rermadon가 분출한 수지층" />
+		<part Name="Description" Short="기름진 셸락의 산등성이 같은 흘러내림이 바닥의 윤곽에 맞춰 빚어져, 별난초 길을 따라 흔적을 그립니다. 구역 전체는 응고된 별 가스로 유약처럼 덮여 있습니다." />
+	</object>
+	<object Name="BaseNephilimWall_QasQon" Inherits="BaseNephilimWall">
+		<part Name="Render" ColorString="&amp;m^C" DisplayName="Qas and Qon이 분출한 수지층" />
+		<part Name="Description" Short="기름진 셸락의 산등성이 같은 흘러내림이 바닥의 윤곽에 맞춰 빚어져, 별난초 길을 따라 흔적을 그립니다. 구역 전체는 응고된 꿈 가스가 직각으로 뻗으며 유약처럼 덮여 있습니다." />
+	</object>
+	<object Name="BaseNephilimWall_QasQonHolo" Inherits="BaseNephilimWall_QasQon">
+		<part Name="Physics" Solid="false" />
+		<part Name="ConcealedHologramMaterial" />
+	</object>
+	<object Name="BaseNephilimWall_Shug'rith" Inherits="BaseNephilimWall">
+		<part Name="Render" ColorString="&amp;m^w" DisplayName="Shug'ruith가 분출한 수지층" />
+		<part Name="Description" Short="기름진 셸락의 산등성이 같은 흘러내림이 바닥의 윤곽에 맞춰 빚어져, 별난초 길을 따라 흔적을 그립니다. 구역 전체는 셰일 조각과 먼지로 유약처럼 덮여 있습니다." />
+	</object>
+	<object Name="BaseNephilimWall_Shug'rithSpawn" Inherits="BaseNephilimWall">
+		<part Name="Render" ColorString="&amp;y^w" DisplayName="Shug'ruith 새끼가 분출한 수지층" />
+		<part Name="Description" Short="기름진 셸락의 비탈진 흘러내림이 바닥의 윤곽에 맞춰 빚어져, 별난초 길을 따라 흔적을 그립니다. 구역 전체는 셰일 조각과 먼지로 유약처럼 덮여 있습니다." />
 	</object>
 	
-	<!-- End constructed walls -->
-
-  <!--
-
-    *****************
-       Wall-likes
-    *****************
-
-  -->
-
-  <!-- Terrain -->
-  <object Name="Rubble" Load="Merge">
-    <part Name="Render" DisplayName="잔해"/>
-    <part Name="Description" Short="불규칙한 크기의 돌덩이들이 한데 수북이 쌓여 있습니다. 그 엔트로피의 더미 사이사이로, 질서의 점들이 듬성듬성 얼굴을 내밀고 있습니다. 조각상의 손가락, 해시계의 영침, 회로기판 조각 같은 것들입니다."/>
-    </object>
-  <object Name="Rubble Grey" Load="Merge">
-    <part Name="Render" DisplayName="잔해"/>
-  </object>    
-  <object Name="Wax Block" Load="Merge">
-    <part Name="Render" DisplayName="밀랍 덩어리"/>
-    <part Name="Description" Short="끈적한 야자즙의 분비물이 식어 커다란 덩어리가 된 것입니다."/>
-    </object>
-	<object Name="CrystalWall" Load="Merge">
-		<part Name="Render" DisplayName="거대한 육각 결정"/>
-		<part Name="Description" Short="양자적 난장판이 식어 스스로 정렬되며 우뚝 솟은 육각형이 되었습니다. 대지 가스의 기포와 시간의 기묘한 흔적들이 석영-호박 속에 얼어붙어 있고, 달빛이 무(無)의 선반에서 존재를 깎아내고 있습니다."/>
-		</object>
-	<object Name="SmallHexCrystal" Load="Merge">
-		<part Name="Render" DisplayName="육각 결정"/>
-		<part Name="Description" Short="이끼가 빠르게 자란 석영의 작은 달빛 면들을 둘러싸고 있습니다. 엔트로피가 질서를 지워 버리면, 질서는 더 작은 규모에서 다시 조립됩니다."/>
-		</object>
-	<object Name="ChavvahTrunk" Load="Merge">
-		<part Name="Render" DisplayName="결정질 줄기"/>
-		<part Name="Description" Short="방사상 습성으로 자란 석영질이 연석층 위에 껍질처럼 들러붙어 있고, 그 아래에는 정전기성 수지를 뚝뚝 흘리며 정신적 약속으로 노래하는 죽은 결정층이 놓여 있습니다."/>
-		</object>
-	<object Name="HolographicChavvahTrunk" Load="Merge">
-		</object>
-	<object Name="Chavvah Taproot" Load="Merge">
-		<part Name="Render" DisplayName="결정질 곧은뿌리"/>
-		<part Name="Description" Short="작은 결정 새순들이 순수한 자아의 무게에 짓눌려, 굵고 다부지며 균형 잡힌 찰나의 생각-연질 트란듀서로 압착되었습니다. 탈결맞음이 된 감정과 기억이 뿌리를 타고 치솟으며 결정화됩니다."/>
-	</object>
-
-  <!-- Plaques -->
-  <object Name="CryochamberPlaque" Load="Merge">
-    <part Name="Render" DisplayName="크롬 명판"/>
-    <part Name="Chat" Says="실 비어 있음: 표본 대기 중"/>
-		<part Name="Description" Short="퀵크롬의 번쩍이는 표면이 끊임없이 바뀌는 굴절 무늬 속에서 일렁이고 있습니다. 빛이 초점을 맺자, 문양들이 서서히 드러나기 시작합니다."/>
-    </object>
-  <object Name="CryochamberPlaqueSpider" Load="Merge">
-    <part Name="Chat" Says="표본: 위상 거미"/>
-  </object>
-  <object Name="CryochamberPlaqueRhinox" Load="Merge">
-    <part Name="Chat" Says="표본: 라이녹스"/>
-  </object>
-  <object Name="CryochamberPlaqueSkybear" Load="Merge">
-    <part Name="Chat" Says="표본: SAAD AMUS, THE SKY-BEAR, CHAMPION OF SALUM"/>
-  </object>
-  <object Name="CryochamberPlaqueYempris" Load="Merge">
-    <part Name="Chat" Says="표본: YEMPURIS PHI"/>
-  </object>
-
-  <!-- Mainframe -->
-  <object Name="GritGateMainframeWall" Load="Merge">
-    <part Name="Render"/>
-    </object>
-  <object Name="GritGate Mainframe Tape Drive" Load="Merge">
-    <part Name="Render" DisplayName="진공 컬럼 테이프 드라이브"/>
-    <part Name="Description" Short="자기 테이프가 바퀴 둘레에 감겨 있고, 기록하고 들여다보는 드라이브 헤드로 공급되고 있습니다. 헤드는 데이터를 삼차원에서 찍어냈다가 다시 그 안에 생기를 불어넣고 있습니다."/>
-    </object>
-  <object Name="GritGate Mainframe Status Panel" Load="Merge">
-    <part Name="Render" DisplayName="메인프레임 상태 패널"/>
-    <part Name="Description" Short="황동과 크롬으로 된 바탕 위로, 다이오드들이 소용돌이치듯 깜빡이고 있습니다."/>
-    </object>
-  <object Name="GritGate Mainframe Monitor 1" Load="Merge">
-    <part Name="Render" DisplayName="메인프레임 모니터"/>
-    <part Name="Description" Short="주사선이 음극의 호박빛으로 달빛 같은 원반을 물들이고 있습니다."/>
-    </object>
-  <object Name="GritGate Mainframe Monitor 2" Load="Merge">
-    <part Name="Render" DisplayName="메인프레임 제어 패널"/>
-    <part Name="Description" Short="스프링폼 키들이 손가락을 밀어내며, 기계와 사람 사이의 장난스러운 결합을 따라 반발하고 있습니다."/>
-    </object>
-  <object Name="CrematoryMainframeWall" Load="Merge">
-    <part Name="Render"/>
-    </object>
-  <object Name="Crematory Mainframe Monitor 1" Load="Merge">
-    <part Name="Render" DisplayName="메인프레임 모니터"/>
-    <part Name="Description" Short="주사선이 음극의 호박빛으로 달빛 같은 원반을 물들이고 있습니다."/>
-    </object>
-  <object Name="Crematory Mainframe Status Panel" Load="Merge">
-    <part Name="Render" DisplayName="메인프레임 상태 패널"/>
-    <part Name="Description" Short="황동과 크롬으로 된 바탕 위로, 다이오드들이 소용돌이치듯 깜빡이고 있습니다."/>
-    </object>
+	
 
   
-  <!-- End wall-likes -->
-	<!-- description waterline -->
+
+  
+  <object Name="Rubble" Inherits="InorganicObject">
+    <part Name="Render" DisplayName="잔해" ColorString="&amp;W" DetailColor="w" RenderString="177" Occluding="false" RenderIfDark="true" RenderLayer="7" />
+    <builder Name="RandomTile" Tiles="Tiles2/sw_rubble_1.bmp,Tiles2/sw_rubble_2.bmp,Tiles2/sw_rubble_3.bmp,Tiles2/sw_rubble_4.bmp" />
+    <part Name="Description" Short="불규칙한 크기의 돌덩이들이 한데 수북이 쌓여 있습니다. 그 엔트로피의 더미 사이사이로, 질서의 점들이 듬성듬성 얼굴을 내밀고 있습니다. 조각상의 손가락, 해시계의 영침, 회로기판 조각 같은 것들입니다." />
+    <part Name="Physics" Weight="10000" FlameTemperature="99999" VaporTemperature="6000" Takeable="false" Solid="true" />
+    <stat Name="AV" Value="10" />
+    <stat Name="Hitpoints" Value="5000" />
+    <tag Name="NoSparkingQuest" />
+    <tag Name="VaporObject" Value="LavaPuddle" />
+    <tag Name="ImmutableWhenUnexplored" Value="1" />
+    <tag Name="Diggable" />
+    <tag Name="Flyover" />
+    <tag Name="Wall" />
+    <tag Name="Tier" Value="0" />
+    <intproperty Name="AllowMissiles" Value="1" />
+    <xtagGrammar massNoun="true" />
+  </object>
+  <object Name="Rubble Grey" Inherits="Rubble">
+    <part Name="Render" DisplayName="잔해" ColorString="&amp;y" DetailColor="K" />
+  </object>    
+  <object Name="Wax Block" Inherits="Wall">
+    <part Name="Render" DisplayName="밀랍 덩어리" RenderString="177" ColorString="&amp;Y^y" TileColor="&amp;Y" DetailColor="y" Occluding="true" />
+    <part Name="Physics" Weight="10000" FlameTemperature="250" VaporTemperature="400" Takeable="false" Solid="true" Organic="true" />
+    <stat Name="AV" Value="3" />
+    <stat Name="Hitpoints" Value="20" />
+    <part Name="Description" Short="끈적한 야자즙의 분비물이 식어 커다란 덩어리가 된 것입니다." />
+    <tag Name="PaintedWall" Value="wall_mud" />
+    <tag Name="NoSparkingQuest" />
+    <tag Name="VaporObject" Value="MoltenWaxPuddle" />
+    <tag Name="ImmutableWhenUnexplored" Value="1" />
+    <tag Name="Tier" Value="0" />
+  </object>
+	<object Name="CrystalWall" Inherits="Crystal">
+		<part Name="Render" DisplayName="거대한 육각 결정" RenderLayer="7" RenderString="178" ColorString="&amp;K^M" TileColor="&amp;M^k" DetailColor="K" Occluding="true" />
+		<part Name="Physics" Weight="10000" Takeable="false" Solid="true" SpecificHeat="1.55" />
+		<part Name="Description" Short="양자적 난장판이 식어 스스로 정렬되며 우뚝 솟은 육각형이 되었습니다. 대지 가스의 기포와 시간의 기묘한 흔적들이 석영-호박 속에 얼어붙어 있고, 달빛이 무(無)의 선반에서 존재를 깎아내고 있습니다." />
+		<stat Name="AV" Value="5" />
+		<stat Name="Hitpoints" Value="100" />
+		<tag Name="Wall" />
+		<tag Name="Diggable" />
+		<tag Name="NoEffects" />
+		<stat Name="ColdResistance" Value="50" />
+		<stat Name="ElectricResistance" Value="50" />
+		<tag Name="PaintedCrystal" Value="cryshex_" />
+		<tag Name="BaseObject" Value="*noinherit" />
+		<tag Name="BodyType" Value="Wall" />
+		<tag Name="NoSparkingQuest" />
+		<part Name="Graffitied" ChanceOneIn="2000" />
+		<part Name="HexCrystal" />
+		<tag Name="Immutable" Value="*delete" />
+	</object>
+	<object Name="SmallHexCrystal" Inherits="Crystal">
+		<part Name="Render" DisplayName="육각 결정" Tile="Terrain/sw_hex_small.bmp" RenderLayer="7" RenderString="015" ColorString="&amp;K^k" TileColor="&amp;K" DetailColor="C" Occluding="true" />
+		<part Name="Physics" Weight="10000" Takeable="false" Solid="true" SpecificHeat="1.55" />
+		<part Name="Description" Short="이끼가 빠르게 자란 석영의 작은 달빛 면들을 둘러싸고 있습니다. 엔트로피가 질서를 지워 버리면, 질서는 더 작은 규모에서 다시 조립됩니다." />
+		<stat Name="AV" Value="5" />
+		<stat Name="Hitpoints" Value="100" />
+		<tag Name="NoSparkingQuest" />
+		<tag Name="Wall" Value="1" />
+		<part Name="Graffitied" ChanceOneIn="2000" />
+		<tag Name="Immutable" Value="*delete" />
+		<tag Name="DynamicObjectsTable:MoonStair_Plants" />
+		<tag Name="DynamicObjectsTable:FarmablePlants" />
+		<tag Name="DynamicObjectsTable:MoonStair_FarmablePlants" />
+	</object>
+	<object Name="ChavvahTrunk" Inherits="BaseMetamorphicRock">
+		<part Name="Render" DisplayName="결정질 줄기" ColorString="&amp;m^y" TileColor="&amp;m" DetailColor="y" Occluding="true" />
+		<stat Name="AV" Value="35" />
+		<stat Name="Hitpoints" Value="2000" />
+		<part Name="Description" Short="방사상 습성으로 자란 석영질이 연석층 위에 껍질처럼 들러붙어 있고, 그 아래에는 정전기성 수지를 뚝뚝 흘리며 정신적 약속으로 노래하는 죽은 결정층이 놓여 있습니다." />
+		<xtagGrammar massNoun="true" />
+		<tag Name="PaintedWall" Value="wall_crystal1" />
+		<tag Name="PaintedWallExtension" Value=".png" />
+	</object>
+	<object Name="HolographicChavvahTrunk" Inherits="ChavvahTrunk">
+		<tag Name="IgnoresGravity" />
+		<part Name="HologramMaterial" ColorStrings="&amp;Y,&amp;m,&amp;y,&amp;m" DetailColors="m,K,M,y" />
+	</object>
+	<object Name="Chavvah Taproot" Inherits="ChavvahTrunk">
+		<part Name="Render" DisplayName="결정질 곧은뿌리" />
+		<part Name="Description" Short="작은 결정 새순들이 순수한 자아의 무게에 짓눌려, 굵고 다부지며 균형 잡힌 찰나의 생각-연질 트란듀서로 압착되었습니다. 탈결맞음이 된 감정과 기억이 뿌리를 타고 치솟으며 결정화됩니다." />
+	</object>
+
+  
+  <object Name="CryochamberPlaque" Inherits="Wall">
+    <part Name="Render" DisplayName="크롬 명판" ColorString="&amp;y" RenderString="254" Occluding="false" />
+    <part Name="Physics" FreezeTemperature="-9999" BrittleTemperature="-9999" />
+    <part Name="Chat" Says="CHAMBER UNOCCUPIED: AWAITING SPECIMEN" ShowInShortDescription="true" />
+		<part Name="SmartuseLooks" />
+    <part Name="Description" Short="퀵크롬의 번쩍이는 표면이 끊임없이 바뀌는 굴절 무늬 속에서 일렁이고 있습니다. 빛이 초점을 맺자, 문양들이 서서히 드러나기 시작합니다." />
+    <stat Name="AV" Value="10" />
+    <stat Name="Hitpoints" Value="80" />
+    <tag Name="BodyType" Value="MetalWall" />
+    <tag Name="Tier" Value="6" />
+    <part Name="Graffitied" ChanceOneIn="300" />
+    <tag Name="TakeDamageSound" Value="Sounds/Damage/sfx_damage_metal" />
+    <tag Name="DeathSounds" Value="Sounds/Damage/sfx_destroy_metal" />
+  </object>
+  <object Name="CryochamberPlaqueSpider" Inherits="CryochamberPlaque">
+    <part Name="Chat" Says="SPECIMEN: PHASE SPIDER" />
+  </object>
+  <object Name="CryochamberPlaqueRhinox" Inherits="CryochamberPlaque">
+    <part Name="Chat" Says="SPECIMEN: RHINOX" />
+  </object>
+  <object Name="CryochamberPlaqueSkybear" Inherits="CryochamberPlaque">
+    <part Name="Chat" Says="SPECIMEN: SAAD AMUS, THE SKY-BEAR, CHAMPION OF SALUM" />
+  </object>
+  <object Name="CryochamberPlaqueYempris" Inherits="CryochamberPlaque">
+    <part Name="Chat" Says="SPECIMEN: YEMPURIS PHI" />
+  </object>
+
+  
+  <object Name="GritGateMainframeWall" Inherits="BaseWallMainframe">
+    <part Name="Render" ColorString="&amp;y^y" TileColor="&amp;y" DetailColor="y" />
+    <tag Name="ExcludeFromDynamicEncounters" />
+    <part Name="GritGateMainframeTerminal" />
+    <part Name="Interesting" Key="GritGateMainframeTerminal" IfPartOperational="GritGateMainframeTerminal" />
+  </object>
+  <object Name="GritGate Mainframe Tape Drive" Inherits="GritGateMainframeWall">
+    <part Name="Render" DisplayName="진공 컬럼 테이프 드라이브" />
+    <part Name="Description" Short="자기 테이프가 바퀴 둘레에 감겨 있고, 기록하고 들여다보는 드라이브 헤드로 공급되고 있습니다. 헤드는 데이터를 삼차원에서 찍어냈다가 다시 그 안에 생기를 불어넣고 있습니다." />
+    <part Name="ElectricalPowerTransmission" ChargeRate="10000" IsConsumer="true" />
+    <part Name="ChargeSink" ChargeUse="10" NameForStatus="StorageSystem" />
+    <tag Name="PaintedWall" Value="mainframe_tape_drive_1" />
+    <part Name="AnimatedMaterialMainframeTapeDrive" />    
+  </object>
+  <object Name="GritGate Mainframe Status Panel" Inherits="GritGateMainframeWall">
+    <part Name="Render" DisplayName="메인프레임 상태 패널" />
+    <part Name="Description" Short="황동과 크롬으로 된 바탕 위로, 다이오드들이 소용돌이치듯 깜빡이고 있습니다." />
+    <part Name="ElectricalPowerTransmission" ChargeRate="10000" IsConsumer="true" />
+    <part Name="ChargeSink" ChargeUse="10" NameForStatus="Display" />
+    <part Name="AnimatedMaterialGeneric" AnimationLength="160" LowFrameOffset="1" HighFrameOffset="1" ColorStringAnimationFrames="0=&amp;y^K,120=&amp;y^G" TileColorAnimationFrames="disable" DetailColorAnimationFrames="0=K,120=G" RequiresOperationalActivePart="ChargeSink" />
+    <tag Name="PaintedWall" Value="mainframe_status_panel" />
+  </object>
+  <object Name="GritGate Mainframe Monitor 1" Inherits="GritGateMainframeWall">
+    <part Name="Render" DisplayName="메인프레임 모니터" />
+    <part Name="Description" Short="주사선이 음극의 호박빛으로 달빛 같은 원반을 물들이고 있습니다." />
+    <part Name="ElectricalPowerTransmission" ChargeRate="10000" IsConsumer="true" />
+    <part Name="ChargeSink" ChargeUse="10" NameForStatus="Display" />
+    <part Name="AnimatedMaterialGeneric" AnimationLength="200" LowFrameOffset="1" HighFrameOffset="1" ColorStringAnimationFrames="0=&amp;y^K,100=&amp;y^W" TileColorAnimationFrames="disable" DetailColorAnimationFrames="0=K,100=W" RequiresOperationalActivePart="ChargeSink" />
+    <tag Name="PaintedWall" Value="mainframe_monitor_1" />
+  </object>
+  <object Name="GritGate Mainframe Monitor 2" Inherits="GritGateMainframeWall">
+    <part Name="Render" DisplayName="메인프레임 제어 패널" />
+    <part Name="Description" Short="스프링폼 키들이 손가락을 밀어내며, 기계와 사람 사이의 장난스러운 결합을 따라 반발하고 있습니다." />
+    <part Name="ElectricalPowerTransmission" ChargeRate="10000" IsConsumer="true" />
+    <part Name="ChargeSink" ChargeUse="10" NameForStatus="Display" />
+    <part Name="AnimatedMaterialGeneric" AnimationLength="80" LowFrameOffset="1" HighFrameOffset="1" ColorStringAnimationFrames="0=&amp;y^K,65=&amp;y^R" TileColorAnimationFrames="disable" DetailColorAnimationFrames="0=K,65=R" RequiresOperationalActivePart="ChargeSink" />
+    <tag Name="PaintedWall" Value="mainframe_monitor_2" />
+  </object>
+  <object Name="CrematoryMainframeWall" Inherits="BaseWallMainframe">
+    <part Name="Render" ColorString="&amp;y^y" TileColor="&amp;y" DetailColor="y" />
+    <part Name="GenericTerminal" ChargeUse="0" StartingScreen="XRL.World.Terminals.CrematoryMachineRoomTerminalWelcome" />
+    <part Name="Interesting" Key="CrematoryMainframeTerminal" IfPartOperational="GenericTerminal" />
+    <tag Name="ExcludeFromDynamicEncounters" />
+  </object>
+  <object Name="Crematory Mainframe Monitor 1" Inherits="CrematoryMainframeWall">
+    <part Name="Render" DisplayName="메인프레임 모니터" />
+    <part Name="Description" Short="주사선이 음극의 호박빛으로 달빛 같은 원반을 물들이고 있습니다." />
+    <part Name="ElectricalPowerTransmission" ChargeRate="10000" IsConsumer="true" />
+    <part Name="ChargeSink" ChargeUse="10" NameForStatus="Display" />
+    <part Name="AnimatedMaterialGeneric" AnimationLength="200" LowFrameOffset="1" HighFrameOffset="1" ColorStringAnimationFrames="0=&amp;y^K,100=&amp;y^W" TileColorAnimationFrames="disable" DetailColorAnimationFrames="0=K,100=W" RequiresOperationalActivePart="ChargeSink" />
+    <tag Name="PaintedWall" Value="mainframe_monitor_1" />
+  </object>
+  <object Name="Crematory Mainframe Status Panel" Inherits="CrematoryMainframeWall">
+    <part Name="Render" DisplayName="메인프레임 상태 패널" />
+    <part Name="Description" Short="황동과 크롬으로 된 바탕 위로, 다이오드들이 소용돌이치듯 깜빡이고 있습니다." />
+    <part Name="ElectricalPowerTransmission" ChargeRate="10000" IsConsumer="true" />
+    <part Name="ChargeSink" ChargeUse="10" NameForStatus="Display" />
+    <part Name="AnimatedMaterialGeneric" AnimationLength="160" LowFrameOffset="1" HighFrameOffset="1" ColorStringAnimationFrames="0=&amp;y^K,120=&amp;y^G" TileColorAnimationFrames="disable" DetailColorAnimationFrames="0=K,120=G" RequiresOperationalActivePart="ChargeSink" />
+    <tag Name="PaintedWall" Value="mainframe_status_panel" />
+  </object>
+
+  
+  
+	
 
 </objects>

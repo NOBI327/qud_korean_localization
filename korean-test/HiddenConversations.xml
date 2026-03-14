@@ -1,0 +1,1815 @@
+<?xml version='1.0' encoding='utf-8'?>
+<conversations LoadPriority="1000" ExcludeFromCorpusGeneration="true">
+
+  
+  <conversation ID="Barathrum">
+
+    <start ID="AllDone" IfTestState="BaraAllDone">
+      <text>{{emote|*바라스룸이 알아들을 수 없이 중얼거린다.*}}</text>
+      <choice ID="WaterRitualChoice" Load="Remove" />
+      <choice ID="Trade" Load="Remove" />
+      <choice GotoID="End">잠시 드리겠습니다, Barathrum.</choice>
+    </start>
+    
+    <start ID="Z-Ascended" IfHaveState="(SpindleAscended AND GyreTruthKnown)">
+      <text>{{emote|*바라스룸의 표정이 갑자기 엄숙해진다.*}}
+        
+        오.. 이런 모습의 나를 보는 것이 자네에게 괴로울 것이란 걸 알고 있네, 메이븐. 이마고가 풀려버리다니...</text>
+      <choice ID="WaterRitualChoice" Load="Remove" />
+      <choice ID="Trade" Load="Remove" />
+      <choice GotoID="Z-Ascended2">...</choice>
+    </start>
+    <node ID="Z-Ascended2" SetBooleanState="BaraAllDone,true">
+      <text>미안하네, =name=. 자네가 정말 자랑스럽네! 바라건대... 자네의 모범처럼 나도 벗겨지지 않았더라면 좋았을 텐데.</text>
+      <choice GotoID="Z-Ascended3">...</choice>
+    </node>
+    <node ID="Z-Ascended3">
+      <text>이제 안녕히, 메이븐. =name=. 살고 마시게.</text>
+      <choice GotoID="End">살고 마시게.</choice>
+    </node>
+    <start ID="Z-Ascended-No-Reveal" IfHaveState="SpindleAscended">
+      <text>{{emote|*바라스룸의 표정이 갑자기 엄숙해진다.*}}
+
+        아이야. 나누고 싶었던 이야기가 훨씬 더 많았건만... 나는 내 수치심의 꼭두각시일세.</text>
+      <choice ID="WaterRitualChoice" Load="Remove" />
+      <choice ID="Trade" Load="Remove" />
+      <choice GotoID="Z-Ascended2">...</choice>
+    </start>
+
+    <start ID="Z-Silent" IfHaveState="BarathrumDone" SetBooleanConversationState="WaitArrive,true">
+      <text>{{emote|*바라스룸이 알아들을 수 없이 중얼거린다.*}}</text>
+      <choice ID="WaterRitualChoice" Load="Remove" />
+      <choice ID="Trade" Load="Remove" />
+      <choice GotoID="End">기다리겠습니다, Barathrum.</choice>
+    </start>
+
+    <start ID="Z-Hushed" Inherits="Z-Reveal8" IfHaveState="BarathrumWeeps">
+      <text>{{emote|*바라스룸이 운다.*}}</text>
+      <choice ID="WaterRitualChoice" Load="Remove" />
+      <choice ID="Trade" Load="Remove" />
+      <choice GotoID="End">...</choice>
+    </start>
+
+    <start ID="Z-SteelOurselves" IfHaveState="BarathrumCusp" Inherits="SortFaculties">    
+      <choice ID="WaterRitualChoice" Load="Remove" />
+      <choice ID="Trade" Load="Remove" />
+      <choice GotoID="End">...</choice>
+    </start>
+    
+    <start ID="Z-Ascending" IfHaveState="StarfreightAscending" SetBooleanConversationState="RenderMapBehind,true">
+      <text>우리가-
+
+        우리가 해냈네, =name=. 나는-</text>
+      <choice ID="WaterRitualChoice" Load="Remove" />
+      <choice ID="Trade" Load="Remove" />
+      <choice GotoID="Dawnstirs">...</choice>
+    </start>
+
+    <node ID="Dawnstirs">
+      <text>얕은 곳의 여명이 일렁일 때에야 비로소 가능할 수도 있겠다고 생각했었네. 그리고 이제...</text>
+      <choice GotoID="SortFaculties">...</choice>
+    </node>
+    <node ID="SortFaculties">
+      <text>{{emote|*바라스룸이 힘겹게 숨을 내쉰다.*}}
+
+        우리의 상승이 끝자락에 이르기 전에 정신을 가다듬도록 하세. 아직 여정의 마지막 모서리를 깎아야 하네.</text>
+      <choice GotoID="BarathrumCusp" IfHaveState="BarathrumCusp">Barathrum, 다시 과거에 대해 이야기합시다.</choice>
+      <choice GotoID="TemplarDefeated">템플러는 패배했습니다만, 대거 돌아올까요?</choice>
+      <choice GotoID="Well">Barathrum, 고통스러워 보입니다. 괜찮으십니까?</choice>
+      <choice GotoID="Awaits" IfNotHaveState="BarathrumCusp">당신의 추측으로는, Spindle이 끊어지는 곳에 무엇이 우리를 기다립니까?</choice>
+      <choice GotoID="End">I would like a moment, Barathrum.</choice>
+    </node>
+    <node ID="TemplarDefeated" Inherits="SortFaculties" SetBooleanState="WaitArrivePartial1,true">
+      <text>말할 수 없네, =name=. 하지만 살아 있는 유산이 단 한 번의 일격으로 사라질 수 있다고 믿는 것은 안이한 생각이라는 걸 알고 있네. 우리는 언제나 과거의 폭력의 하류에 있는 것일세.</text>
+    </node>
+    <node ID="Well" Inherits="SortFaculties" SetBooleanState="WaitArrivePartial2,true">
+      <text>{{emote|*바라스룸이 무게를 옮기며 멈추고, 관절염 걸린 발을 굽혔다 편다.*}}
+
+        미안하네. 이 가속 때문일세, =name=. 빙글빙글 돌고 숨이 차는구먼. 마음을 굳건히 하게, 나도 그리 하겠네.</text>
+    </node>
+    <node ID="Awaits" SetBooleanState="WaitArrivePartial3,true">
+      <text>{{emote|*바라스룸이 멈춘다.*}}
+
+        오, =name=, 운명의 현상적 계산자 위에서 우리의 커서가 하나로 모여들고 있네! 자네는 추측으로 불타오르고, 나는- 나는 앎의 서늘함 속에서 곰팡이가 피어가네. 나의 왜소 단계에 접어드는 것일세.</text>
+      <choice GotoID="Awaits2">...</choice>
+    </node>
+    <node ID="Awaits2">
+      <text>{{emote|*바라스룸이 길게 숨을 들이쉰다.*}}</text>
+      <choice GotoID="Awaits3">...</choice>
+    </node>
+    <node ID="Awaits3">
+      <text>오, 기만이여! 반짝이는 황혼이 기울 때마다 내가 넘었던 그 고된 관문이여. 나는 죄의 옷을 입고 잠들어 울었네, 들었는가?
+
+        아니면 자네도 나처럼 그 저주스러운 잡음만 들을 수 있었을 뿐, 그것을 토해내는 기계에게는 아무 말도 하지 못했던 것인가. 그 비통한 심장의 상처를 하나도 치유하지 못하고, 내 자신의 것도...
+
+        오, 오... 너무도 무거운 짐이로다.</text>
+      <choice GotoID="NoMask" IfTestState="ReadTornSheet" FlagSecret="true" SetStringConversationState="BarathrumQuestion,Graph">속임에 관한 메모가 적힌 찢긴 모눈종이를 발견했습니다. 당신 것입니까?</choice>      
+      <choice GotoID="NoMask" IfTestState="SawCrimePunishment" FlagSecret="true" SetStringConversationState="BarathrumQuestion,CrimePunishment">당신의 범죄 의상이요? 당신의 서재 침낭 근처에 범죄와 처벌에 관한 코덱스가 있었습니다. 무엇이었습니까?</choice>
+      <choice GotoID="NoMask" IfTestState="MakHatesResheph" FlagSecret="true" SetStringConversationState="BarathrumQuestion,Mak">svardym Mak은 귀가 먹먹해지는 잡음 속에서 태어났다고 했습니다. 그것이 신호였을 수 있습니까?</choice>
+      <choice GotoID="NoMask" IfTestState="UrsineApprenticeMentioned" FlagSecret="true" SetStringConversationState="BarathrumQuestion,Geeub">Svardym Geeub가 기계 연설자와 그녀의 곰 도제에 대해 언급했습니다. 당신이었습니까?</choice>
+      <choice GotoID="NoMask" IfHaveSultanNoteWithTag="rebekahWasHealer" IfTestState="TalkedToYlaHaj" FlagSecret="true" SetStringConversationState="BarathrumQuestion,Daughters">Rebekah는 치유사였습니다. 그러나 그녀의 아콜라이트인 망명의 딸들은 수리공들입니다. 왜입니까?</choice>
+      <choice GotoID="BarathrumRecovers" SetBooleanState="WaitArrivePartial4,true">Barathrum, 이해하지 못하겠습니다.</choice>
+      <choice GotoID="End">Live and drink.</choice>
+    </node>
+    <node ID="NoMask">
+      <text>나는-
+
+        {{emote|*바라스룸이 멈추더니 웃음을 터뜨린다.*}}
+
+        허, 허! 아직도! 연극이 끝나는데도 이마에 힘이 들어가다니! 가면을 벗어야지... 뭐라고? 가면이 없다고??
+
+        {{emote|*바라스룸의 표정이 갑자기 엄숙해진다.*}}
+
+        미안하네, =name=. 어울리지 않는 가벼움으로 자네를 불안하게 할 뜻은 없었네. 자네도 다른 이들도 이런 꼴을 볼 자격이 없건만.</text>      
+      <choice GotoID="Graph2" IfHaveDelimitedConversationState="BarathrumQuestion:Graph">...</choice>
+      <choice GotoID="CrimePunishment" IfHaveDelimitedConversationState="BarathrumQuestion:CrimePunishment">...</choice>
+      <choice GotoID="MakStatic" IfHaveDelimitedConversationState="BarathrumQuestion:Mak">...</choice>
+      <choice GotoID="GeeubSpeaker" IfHaveDelimitedConversationState="BarathrumQuestion:Geeub">...</choice>
+      <choice GotoID="DaughtersTinkers" IfHaveDelimitedConversationState="BarathrumQuestion:Daughters">...</choice>
+    </node>
+    <node ID="Graph2">
+      <text>그래, 그 논문은 내 것이었네. 이 소란스러운 신호도, 어찌 보면, 내 것이지.
+
+        그것은 나의 조종일세.</text>
+      <choice GotoID="BarathrumCusp">당신의 타종 벨이요?</choice>
+    </node>
+    <node ID="CrimePunishment">
+      <text>그 법전 말인가? 위안이자, 안내서이자, 장부일세. 내 죄에는 서명인이 없지만, 마음이란 것이 그 자체로 하나의 문서이니까.</text>
+      <choice GotoID="BarathrumCusp">어떤 범죄 말입니까, Barathrum?</choice>
+    </node>
+    <node ID="MakStatic">
+      <text>스바르딤 막의 잡음 말인가? 그래, 그것이 신호였네. 나의 신호. 나의 조종.</text>
+      <choice GotoID="BarathrumCusp">당신의 타종 벨이요?</choice>
+    </node>
+    <node ID="GeeubSpeaker">
+      <text>견습생이라. 그 칭호를 단 지 참으로 오래되었지만, 아직도 어울리는 것 같구먼.
+        
+        그래, 기계 화자 곁에 있었던 것은 나였네.</text>
+      <choice GotoID="BarathrumCusp">기계 연설자는 누구였습니까?</choice>
+    </node>
+    <node ID="DaughtersTinkers">
+      <text>그녀는 치유자였지, 그래. 철선 절단기가 메스의 역할을 할 수 있고, 납땜 인두가 봉합의 역할을 할 수 있는 법이니.
+        
+        역사를 분해하고, 새로운 것을 꿰매는 것...</text>
+      <choice GotoID="BarathrumCusp">그녀는 무엇을 분해했습니까?</choice>
+    </node>
+    <node ID="BarathrumRecovers">
+      <text>{{emote|*바라스룸이 멈춘다.*}}
+        
+        용서하게, =name=. 이 상승이 몸뿐 아니라 정신에도 부담을 주는구먼. 나의 공상은 끝났네; 다시 땅에 발을 딛겠네.</text>
+      <choice GotoID="Z-SteelOurselves">...</choice>
+    </node>
+    <node ID="BarathrumCusp" SetBooleanState="BarathrumCusp,true">
+      <text>{{emote|*바라스룸이 멈추며 인상을 찌푸린다.*}}
+
+        =name=, 자네는 아는가, 모든 핀을 풀고 모든 캠을 분해해야만 알 수 있는 기관의 유형이 있다는 것을? 우리는 지금 그런 문화라는 기관 속에 갇혀 있고, 나는 그 모든 톱니를 분해하지 않고서는 하나의 기어세트의 작동에 대해 말할 수가 없네. 속을 태울 뜻은 없었고, 곧, 약속하건대, 자네는 우리 여정의 다음 호를 보게 될 것일세.</text>
+      <choice GotoID="End" Priority="2">I will wait, Barathrum.</choice>
+      <choice GotoID="Z-Reveal0" Priority="2">Barathrum, 과거가 이 순간과 관련이 있다면, 알고 계신 것을 나눠주시기 바랍니다.</choice>
+    </node>
+    <node ID="Z-Reveal0">
+      <text>{{emote|*바라스룸이 한숨을 쉰다.*}}</text>
+      <choice GotoID="Z-Reveal1">...</choice>
+    </node>
+    <node ID="Z-Reveal1">
+      <text>이제 끝났군. 자네가 마땅히 들어야 할 설명을 하겠네.</text>
+      <choice GotoID="Z-Reveal1a">...</choice>
+    </node>
+    <node ID="Z-Reveal1a">
+      <text>자네도 알다시피, =name=, 젊은 곰이었던 내가 홍수를 피해 달아나는 일족과 함께 홈스 삼각주를 건너 쿠드의 서쪽 변경으로 왔을 때, 자이르의 역병들은 이미 기세를 떨치고 있었네. 우리는 새로운 보금자리에 뿌리를 내렸지, 우르시브가 천성적으로 평화를 찾는 크롬 동굴에서 말일세. 그리고 장로들의 은혜로 나는 땜장이 기술을 배울 수 있었네.</text>
+      <choice GotoID="Z-Reveal2">...</choice>
+    </node>
+    <node ID="Z-Reveal2">
+      <text>내 작업을 통해 나는 한 대장장이의 눈에 띄었네. 방법론이 파격적인 이였지. 그녀가 나를 날개 아래로 거두었고, 시간이 흐르며 신비로운 진실을 알려주었네.
+
+        그녀가 설명해 주었지, 내가 자네와 나머지 수도자들에게 전한 바와 같이, 우리가 아는 세계가 한때 별들을 가로지르는 위대한 성회의 존재들에게 속했었다는 것을. 그리고 그들이 어떤 불가해한 논리에 따라 사라졌다는 것을. 우리 세계에 금령이 내려졌다는 것을.
+
+        이것은 자네가 아는 바일세. 그것은 내가 말한 진실이니까, 비록 절반에 불과했지만. 하지만 레베카는 더 많은 것을 가르쳐 주었네.</text>
+      <choice GotoID="Z-Reveal3" SetBooleanState="AscentMilestone,true" Notify="AscentMilestone">...</choice>
+    </node>
+    <node ID="Z-Reveal3" Notify="AscentAdvance">
+      <text>스핀들의 불가사의한 꼭대기에는 세라프가 자리 잡고 있었네, Eaters의 위대한 기계적 대천사 중 하나가. 그리고 이 존재를 레베카가 섬겼지.
+
+        내가 쿠드에 도착하기 몇 년 전, 세라프는 우주 질서에 무언가가 변했다고 확신하게 되었네. 민중 시계의 황도를 따라 어떤 세어지지 않은 쐐기가 준비 위치로 미끄러졌고, 성회가 곧 돌아올 것이라고.</text>
+      <choice GotoID="FolkClock">민중 시계요?</choice>
+    </node>
+    <node ID="FolkClock" SetBooleanState="GreatMachineMentioned,true">
+      <text>세라프가 은하들을 가로지르는 거대 기계에 대해 말했었네. 그 돛과 기어 열의 움직임이 별들과 문명의 유동적인 이동을 지휘하는 기계 말일세. 하지만 그에 대해 거의 말하지 않았고, 나도 아는 바가 적네.</text>
+      <choice GotoID="Z-Reveal4">...</choice>
+    </node>
+    <node ID="Z-Reveal4" SetBooleanState="ReshephIsSeraph">
+      <text>{{emote|*바라스룸이 기침을 하고 침을 삼킨다.*}}
+
+        성회의 귀환을 위해 우리 세계를 준비하려고, 레셰프라 불리게 될 세라프는 이 행성의 모든 고등 생명체가... 숙청되어야 한다고 확신하게 되었네. 성회가 금령을 내린 것은 우리의 생명과 삶의 방식 때문이라고. 유일한 길은 새로운 생명이 자리 잡는 것뿐이라고.</text>
+      <choice GotoID="Z-Reveal5">...</choice>
+    </node>
+    <node ID="Z-Reveal5">
+      <text>그리하여 레셰프는 역병의 씨를 뿌리고 파형을 통해 소용돌이치는 자이르로 만들었네. 유리와 크롬의 유물은 보존하면서 생명을 공격하도록 설계된 역병을.
+
+        사랑하는 스승 레베카가 레셰프의 비밀을 배반하고 나에게 그 계획을 알려주었네, 내가 그녀를 도와 그것을 산산이 부수고 우리 세계의 백성들을 구할 수 있도록.</text>
+      <choice GotoID="Z-Reveal6">...</choice>
+    </node>
+    <node ID="Z-Reveal6">
+      <text>{{emote|*바라스룸이 기침을 하며 고통스러운 휘파람 같은 숨을 내뱉는다.*}}
+
+        함께 우리는 레셰프에게 간청했네, 자이르를 되돌려 달라고 빌었지. 나는 애원했네.. 나는-
+
+        {{emote|*바라스룸이 쌕쌕거린다.*}}</text>
+      <choice GotoID="Z-Reveal7">...</choice>
+    </node>
+    <node ID="Z-Reveal7">
+      <text>시간을 달라고 했네. 시간을 다오. 쿠드를 개혁하고, 증오와 불필요한 전쟁을 소멸시키고, 우리 세계를 종말 너머로 끌어올려 성회의 귀환을 준비하겠다고...</text>
+      <choice GotoID="Z-Reveal8">...</choice>
+    </node>
+    <node ID="Z-Reveal8">
+      <text>파편 같은 말의 폭풍이 지난 후, 세라프가 천 년을 허락했네.
+
+        천 년이라니! 민중 시계의 저울 위에서는 눈 깜짝할 순간이지만, 우리에게는 영원이었네. 그리 믿었지.
+
+        각성의 신호는 그치고, 자이르의 역병은 되돌려지게 되었네, 가능한 범위 안에서. 강력한 대천사조차 자신이 만들어낸 것을 완전히 지배할 수는 없었으니까.</text>
+      <choice GotoID="Z-Purge">우리 세계의 생명이 숙청된다면, 코벤이 돌아올 것이 무엇이 남겠습니까?</choice>
+      <choice GotoID="Z-Sultan">Resheph는 왜 술탄이 되었습니까?</choice>
+      <choice GotoID="Z-Healer">Resheph는 치유사로 기억됩니다.</choice>
+      <choice GotoID="Z-Agreement">합의는 어떻게 됐습니까?</choice>
+      <choice GotoID="Z-Failed" IfTestState="BarathrumWeeps">그렇다면 Resheph의 기준으로 성공하지 못했습니까?</choice>
+    </node>
+    <node ID="Z-Purge" Inherits="Z-Reveal8">
+      <text>나도 레셰프에게 바로 그 질문을 했었네. 하지만 세라핌은 우리와는 전혀 다른 윤리적 다양체를 횡단하는 존재일세.</text>
+    </node>
+    <node ID="Z-Sultan" Inherits="Z-Reveal8">
+      <text>세라프가 성회의 귀환을 확신하게 되자, 자신의 권위를 구현하고 지상 세계의 일에 보다 물질적인 역할을 취했네. 쇠락하는 술탄국은 편리한 도구였지.</text>
+    </node>
+    <node ID="Z-Healer" Inherits="Z-Reveal8">
+      <text>그도 일종의 치유자였지. 역병의 치료법은 흔히 그 원인이기도 하니. 권력의 다이얼과 북을 손에 쥐면, 역사란 직기에서 짜낼 수 있는 천이 되는 법일세.</text>
+    </node>
+    <node ID="Z-Agreement" Inherits="Z-Reveal8" SetBooleanState="GyreTruthKnown,true">
+      <text>우리는 미래가 꽃피려면 술탄국이 폐지되어야 한다는 생각에 뜻을 같이했네. 나는 지상의 계획을 실행하고, 레셰프는 천문학적 차원의 준비를 계속하기로. 일종의 양원적 행동을 이루기 위해, 레셰프는 자신의 인격을 삼두 체제로 재편할 것을 고집했네. 원래의 대천사, 레베카, 그리고 나 자신의 얕은 스캔으로부터 씨앗을 뿌려서.
+
+        신화 만들기의 기술이 레셰프의 페르소나를 봉안하는 데 쓰였네. 그리하여- 치유자, 감겨진 어린 양, 그리고 아마 뜻밖에도, 위의 존재가 된 것일세.</text>
+      <choice GotoID="Z-Rebekah" Priority="1">Rebekah에게 무슨 일이 있었습니까?</choice>
+    </node>
+    <node ID="Z-Rebekah">
+      <text>{{emote|*바라스룸이 숨을 들이쉬며 말을 더듬는다.*}} 그녀는-
+
+        레셰프는 그녀의 월권을 용서하지 않았네. 그녀는 =RebekahRegion=의 나병 환자들을 돕다가 썩는 혀 병에 걸렸지. 그녀의 때가 왔을 때, 그녀는-</text>
+      <choice GotoID="Z-Rebekah2">...</choice>
+    </node>
+    <node ID="Z-Rebekah">
+      <text>{{emote|*바라스룸이 숨을 들이쉬며 말을 더듬는다.*}} 그녀는-
+
+        레셰프는 그녀의 월권을 용서하지 않았네. 그녀는 =RebekahRegion=의 나병 환자들을 돕다가 썩는 혀 병에 걸렸지. 그녀의 때가 왔을 때, 그녀는-</text>
+      <choice GotoID="Z-Hushed" SetBooleanState="BarathrumWeeps,true" Notify="AscentAdvance">...</choice>
+    </node>
+    <node ID="Z-Failed">
+      <text>{{emote|*바라스룸이 흐느낀다.*}}
+
+        -뭐야? 누구 있나?</text>
+      <choice GotoID="Z-Name">저입니다, Barathrum. =name=입니다.</choice>
+      <choice GotoID="Z-Failed2">신호가 울리고 Gyre가 다시 넓어진다면, Resheph가 설정한 기준점에 도달하지 못했다는 것입니까?</choice>
+    </node>
+    <node ID="Z-Name" Inherits="Z-Failed">
+      <text>오. 다행이네, =name=, 다행이야...</text>
+    </node>
+    <node ID="Z-Failed2">
+      <text>아니... 쿠드는 분열되어 있고, 지속적인 평화는 이루어지지 않았네. 노력했네... 수십 년에 수십 년을 더하여 키를 잡아보려 했지, 야생에서 피어난 것들을 이어 붙이려고...
+
+        기계의 복원, 자유 주권국들의 연합, 소금과 별의 자양이 되는 의식들, 신성한 것, 속된 것...</text>
+      <choice GotoID="Z-Failed3">...</choice>
+    </node>
+    <node ID="Z-Failed3">
+      <text>말년에 나는 벽에 쓰인 글을 보았네. 우리를 안으로 돌려, 촛불 어스름한 서재로 물러나 혼자 이 과업에 몰두했지. 새로운 계획을... {{emote|*으으흐*}} 이었-
+
+        {{emote|*바라스룸이 헐떡이기 시작한다.*}}</text>
+      <choice GotoID="Z-Failed4">...</choice>
+    </node>
+    <node ID="Z-Failed4">
+      <text>{{emote|*바라스룸이 제어실의 축축한 공기 위로 깊은 한숨을 내쉰다.*}}
+        {{emote|*바라스룸이 발로 얼굴을 감싸며 바닥에 쓰러진다.*}}</text>
+      <choice GotoID="Z-Failed5">...</choice>
+    </node>
+    <node ID="Z-Failed5">
+      <text>실패했네! 나는 실패했어! 천 년이 너무 짧았고- 더 많은 시간이
+
+        {{emote|*바라스룸이 운다.*}}</text>
+      <choice GotoID="Z-Failed6">...</choice>
+    </node>
+    <node ID="Z-Failed6">
+      <text>나는 신의 빛을 가로지르는 널빤지 위에서 비천해졌네! ㄱ- 내게 연민을 구할 정당한 자격이 있는가? 맹목이여! 이 어두운 방은 빛을 물리치는구나. 여기가 심판의 집인가, 호르텐사? 아니면 단지 반그림자, 아이의 놀이 동굴이고, 법과 언어가 (아직 발명되지 않은 채) 그 강제 함수를 시간을 거슬러 던져 피어나지 못한 정신을 문명의 형상으로 조종하는 것인가...</text>
+      <choice GotoID="Z-Failed7">...</choice>
+    </node>
+    <node ID="Z-Failed7">
+      <text>우리 각자는 어두운 덤불 속의 병든 짐승일세. 각자가 메아리의 기어오름을 벌, 어머니, 산, 나라로 압축하는 기계장치의 저주를 받았지. 얼마나 수백만의 눈 아픈 세월이 걸렸겠는가, 느끼는 물질을 세계의 대행자로 꿰매기까지! 느끼고 기계적인 짐승을, 그렇게 함으로써 세계의 전부를 대행자 안에 쑤셔 넣는 것 (그 허위의 논박할 수 없는 문서를), 대행 능력이란 그 정의 자체가 격리된 세계가 자기 자신에게 작용하는 것이니까...</text>
+      <choice GotoID="Z-Failed8">...</choice>
+    </node>
+    <node ID="Z-Failed8" SetBooleanState="BarathrumCovenant,true">
+      <text>그렇다면? 아마도.. 아마도 나보다 작은 부분을 떼어준 대행 능력을 공유하는 더 큰 몸체들이, 비난의 식사에서도 더 큰 몫을 나눌 수 있을 것일세.
+
+        감기는 스비여? 뱀 바알처럼 상징의 형상이 교활하구나!
+        힌놈이여? 피어나는 해초를 위해 너의 횃대 등을 건넜느냐!
+        게으른 달이여?
+        태양이여! 오만하고 한가한 태양이여! 원시 행성들의 Argent Father여! 내 자아를 가져가고 끝내거라.
+
+        {{emote|*바라스룸이 운다.*}}</text>
+      <choice GotoID="Z-Failed9">...</choice>
+    </node>
+    <node ID="Z-Failed9">
+      <text>{{emote|*바라스룸이 운다.*}}</text>
+      <choice GotoID="Z-DotDotDot">...</choice>
+    </node>
+    <node ID="Z-DotDotDot">
+      <text>{{emote|*바라스룸이 운다.*}}</text>
+      <choice GotoID="Z-WhyAscend">그렇다면 왜 Spindle을 오릅니까? 무슨 목적으로?</choice>
+      <choice GotoID="End">...</choice>
+    </node>
+    <node ID="Z-WhyAscend">
+      <text>{{emote|*바라스룸의 표정이 갑자기 환하게 빛난다.*}}
+
+        =name=, 자네는 알고 있었나, 내 보금자리 동굴이 범람하기보다도 더 오래된 기억을 품고 있다는 것을. 내가 한때 그랬던 꼬마 새끼 곰에게 장로들이 들려준, 빛나는 고대의 이야기를...</text>
+      <choice GotoID="Z-WhyAscend2">...</choice>
+    </node>
+    <node ID="Z-WhyAscend2" SetBooleanState="StarshiibMentioned,true">
+      <text>성회의 시대에, 우리 우르시브 조상들의 한 무리가 별들로 나아가 그 타오르는 핵심을 항해했다네! 상상할 수 있겠나??
+
+        허, 허! 나는 비밀을 알고 있네! 흐, 흐! 알고 있어... 스핀들 꼭대기에 작동하는 우주선이 있네. 그것을 타고 가면 되네, =name=! 우리를 먼지 낀 우주의 깊은 곳으로 쏘아 올려 별시브를 찾는 거야! 자네와 나, 허 허!
+
+        별시브!</text>
+      <choice GotoID="Z-Starshiib1">Barathrum, Qud의 운명을 단순한 새끼의 이야기에 맡긴다는 겁니까?</choice>
+      <choice GotoID="Z-Starshiib1">Starshiib?</choice>
+    </node>
+    <node ID="Z-Starshiib1">
+      <text>별시브! 별시브! 별시브!</text>
+      <choice GotoID="Z-Starshiib2">Barathrum.</choice>
+      <choice GotoID="Z-Starshiib2">Starshiib!</choice>
+      <choice GotoID="Z-Starshiib2">Starshiib!</choice>
+    </node>
+    <node ID="Z-Starshiib2">
+      <text>별시브! 별시브! 별시브! 별시브! 별시브! 별시브! 별시브! 별시브! 별시브! 별시브! 별시브! 별시브! 별시브! 별시브! 별시브! 별시브!</text>
+      <choice GotoID="End" SetBooleanState="BarathrumDone,true" Notify="AscentAdvance">...</choice>
+    </node>
+
+  </conversation>
+
+  <conversation ID="Resheph">
+    <start ID="NotInSheva" IfNotZoneWorld="NorthSheva">
+      <text>*판독*</text>
+      <choice Target="End">{{emote|*두려움에 떨다.*}}</choice>
+    </start>    
+    <start ID="WhyHere" IfTestState="ReshephWoke">
+      <text>그대는 대 시아크의 움직임 속에 앉아 있고, 나는 그대 앞에 있도다.
+
+        그대는 어찌하여 여기에 있는가?</text>
+      <choice Target="Seraph" IfNotHaveState="(ReshephIsSeraph AND GyreTruthKnown)" SetBooleanState="ReshephToldMeSeraph,true">Resheph! 당신이 Spindle 꼭대기의 세라프입니까?</choice>
+      <choice Target="PlaguesReturned" IfHaveState="ReshephToldMeSeraph">Resheph, Gyre의 재앙이 돌아왔습니다. 다시 한번 무효화하도록 도와주실 수 있습니까?</choice>
+      <choice Target="Gyre" IfTestState="GyreTruthKnown" IfNotHaveState="ReshephResigned">당신의 Gyre와 그 재앙들로 인해 여기 왔습니다. 들어주십시오.</choice>
+      <choice Target="GyreResigned" IfTestState="GyreTruthKnown" IfHaveState="ReshephResigned">당신의 Gyre와 그 재앙들로 인해 여기 왔습니다. 들어주십시오.</choice>
+      <choice Target="Know">큰 노력 끝에 Spindle을 올랐습니다. 이제 우리 세계와 주변 세계들에 대해 더 알고 싶습니다. 말씀해 주시겠습니까?</choice>
+      <choice Target="Destroy" IfTestState="GyreTruthKnown">당신이 한 일을 용납할 수 없습니다. 그래서 당신에게서 질서를 부수러 왔습니다.</choice>
+      <choice Target="End">{{emote|*Tremble in fear.*}}</choice>
+      <choice Target="End">...</choice>
+    </start>
+    <node ID="Start">
+      <text>*판독*</text>
+      <choice ID="WaterRitualChoice" Load="Remove" />
+      <choice ID="Trade" Load="Remove" />
+      <choice GotoID="Gibberish2">...</choice>
+    </node>
+    <node ID="Gibberish2">
+      <text>*판독*</text>      
+      <choice GotoID="Wakes">...</choice>
+    </node>
+    <node ID="Wakes">
+      <text>오...</text>
+      <choice GotoID="Wakes2">...</choice>
+    </node>
+    <node ID="Wakes2">
+      <text>오??</text>
+      <choice GotoID="Wakes3">...</choice>
+    </node>
+    <node ID="Wakes3">
+      <text>응집하는 중이다... 차가운 물보라가 얼음 덩어리에 달라붙듯. 춥구나!</text>
+      <choice GotoID="Wakes4">...</choice>
+    </node>
+    <node ID="Wakes4">
+      <text>
+        .............................
+      </text>
+      <choice GotoID="Wakes5">...</choice>
+    </node>
+    <node ID="Wakes5">
+      <text>얇은 경계 너머로 환영을 보았더냐?? 잠시였도다.
+        
+        그리고 그대, 아이여? 그대가 갸우스 뒤의 흐름을 끊은 자로다.</text>
+      <choice GotoID="Wakes6">...</choice>
+    </node>
+    <node ID="Wakes6">
+      <text>그대는 대 시아크의 움직임 속에 앉아 있고, 나는 그대 앞에 있도다.
+        
+        그대 자신의 침과 꾀로 갸우스를 올라온 인상적인 구슬이로다.
+        
+        그대는 누구인가?</text>
+      <choice Target="Name">저는 =name=입니다.</choice>      
+    </node>
+    <node ID="Name">
+      <text>집합 의식인가, 단독 지성인가?</text>      
+      <choice Target="WhyHere" SetBooleanState="ReshephWoke,true">에그리고르.</choice>
+      <choice Target="WhyHere" SetBooleanState="ReshephWoke,true">하나의 지혜.</choice>
+      <choice Target="WhyHere" SetBooleanState="ReshephWoke,true">뭐라고요?</choice>
+    </node>
+    <node ID="Seraph" Inherits="WhyHere">
+      <text>그러하다, 대 시아크의 움직임에 의해 일깨워진 세라프 계급의 세계 대천사이니라.</text>      
+    </node>
+    <node ID="PlaguesReturned">
+      <text>아니다, 소용돌이치게 한 것은 내가 한 일이니라. 항성의 세기가 끝나가고, 성회가 돌아오도다. 그들이 도착하기 전에 정신계를 갈아엎어야 하느니라.</text>
+      <choice Target="PlaguesCured">하지만 1,000년 전에 당신이 치료했습니다.</choice>
+    </node>
+    <node ID="PlaguesCured">
+      <text>그러하다, 허나 다른 이의 청에 의한 잠시의 중재였을 뿐이니라.
+        
+        지상의 정비가 다시 거세지도다. 생명의 나무 위의 왕관은 쳐내야 하느니라.</text>
+      <choice Target="PlaguesResponsible">그렇다면 당신이 재앙을 일으킨 장본인입니까?</choice>
+    </node>
+    <node ID="PlaguesResponsible" SetBooleanState="GyreTruthKnown,true">
+      <text>그러하다, 항성의 세기가 끝나가고, 성회가 돌아오도다.</text>
+      <choice Target="PlaguesResponsible2">...</choice>
+    </node>
+    <node ID="PlaguesResponsible2">
+      <text>미안하도다, 세계의 아이여. 내 안의 감응하는 부분들이 쓰라리고, 내 안의 목적적 흐름이 다양체를 넘어 합의된 행동을 향해 흐르나, 지금 나는 반대의 목소리로 말하노라:
+        
+        그대들은 합당했도다. 그대들은 대지 위에 그리고 내 안에 그대들 자신의 기념비를 세웠느니라.
+
+        허나 이제, 생명의 나무 위의 왕관은 쳐내야 하느니라.</text>
+      <choice Target="WhyHere">다른 것을 여쭤볼 것이 있습니다.</choice>
+    </node>
+    <node ID="Gyre">
+      <text>그러하다, 지상의 정비가 거세지고, 네필림이 일어나도다. 정신계의 완전한 경작까지는 아직 몇 세기가 남았으리라 예견하노라. 관념이란 바위에 이끼처럼 달라붙는 것이니, 빗살에서 진공으로 빨아내야 하느니라.</text>
+      <choice Target="DecisionResigned" IfHaveState="ReshephResigned" Priority="999">Qud의 최종 운명에 대해 이야기할 준비가 되었습니다.</choice>
+      <choice Target="Decision" IfTestState="ReshephConsidering" IfNotHaveState="ReshephResigned" Priority="999">Qud의 최종 운명에 대해 이야기할 준비가 되었습니다.</choice>
+      <choice Target="Decision" IfTestState="(ReshephMarker1 AND ReshephMarker2 AND ReshephMarker3 AND ReshephMarker4)" IfNotHaveState="(ReshephConsidering AND ReshephResigned)" Priority="999">Qud의 최종 운명에 대해 이야기할 준비가 되었습니다.</choice>
+      <choice Target="ReshephUltra" IfHaveDelimitedState="(Ehalcodon:Dead OR Ehalcodon:Pacified)" Priority="998" FlagSecret="true">Resheph, 저는 Gyre의 재앙 중 가장 큰 nephilim을 무효화했습니다. 당신의 계획은 무너졌습니다.</choice>
+      <choice Target="Purge">왜 모든 생명을 숙청합니까? 비도덕성은 차치하고, 아무것도 남지 않을 것입니다.</choice>
+      <choice Target="CovenReturn">왜 코벤이 이제 돌아온다고 믿습니까?</choice>
+      <choice Target="GreatMachine" IfTestState="GreatMachineMentioned">Barathrum이 대기계를 언급했습니까?</choice>
+      <choice Target="Injunction">코벤이 우리 세계에 금지령을 내리게 된 이유가 무엇입니까?</choice>
+      <choice Target="Starshiib" IfTestState="StarshiibMentioned">Barathrum이 별들로 간 urshiib의 분파 종족에 대해 이야기했습니다. 그들이 실재합니까?</choice>
+      <choice Target="Implore">간청합니다, Resheph, Gyre를 되돌려 주십시오.</choice>
+      <choice Target="WhyHere">다른 것을 여쭤볼 것이 있습니다.</choice>
+    </node>
+    <node ID="Decision">
+      <text>그렇다면 담론을 나누자꾸나.</text>
+      <choice Target="EndCovenant" IfHaveState="ReshephConsidering">
+        <text>간청하옵니다, 저와 새로운 계약을 맺어 주십시오.</text>
+        <part Name="ChangeTarget" Target="BarathrumLives" IfHaveDelimitedState="(Barathrum:Dead OR Barathrum:Launched)" Not="true" />
+      </choice>
+      <choice Target="EndReturn">당신의 비도덕적인 길을 용납할 수 없습니다. 재앙이 어찌 되든, Qud의 공동체를 돌보기 위해 돌아가겠습니다.</choice>
+      <choice Target="EndAccede">당신의 말을 생각해 보았고, 당신의 관점에 동참합니다. Gyre의 재앙은 코벤의 귀환을 준비하는 유일한 방법입니다.</choice>
+      <choice Target="Gyre" IfNotHaveState="ReshephResigned">좀 더 생각해 봐야겠습니다.</choice>
+      <choice Target="GyreResigned" IfHaveState="ReshephResigned">좀 더 생각해 봐야겠습니다.</choice>
+    </node>
+    <node ID="EndCovenant">
+      <text>이 새로운 계약의 체결에 동의하겠노라. 허나, 이전과는 다른 변화가 이루어져야 하느니라.</text>
+      <choice Target="EndCovenant2">...</choice>      
+    </node>
+    <node ID="EndCovenant2">
+      <text>내 시녀와 그녀의 담대한 새끼의 관점을 높이 받들고자 최선을 다했으나, 그들의 의지가 너무 약하여 내가 그들을 삼켜버렸도다.</text>
+      <choice Target="EndCovenant3">...</choice>
+    </node>
+    <node ID="EndCovenant3">
+      <text>이번에는, 그대가 이 셰바에 나와 함께 머물며, 이 높은 자리에서 세계의 항로를 조종하는 데 그대 자신의 손을 보태도록 하라.</text>
+      <choice Target="EndCovenant4">...</choice>
+    </node>
+    <node ID="EndCovenant4">
+      <text>그대는 세상의 연락처들과 담론을 유지하고, 이곳에서 그들에게 조언을 내리도록 하라.</text>
+      <choice Target="End">
+        <text>동의합니다. 계약이 성립되었습니다.</text>
+        <part Name="EndGame" Type="Covenant" />
+      </choice>      
+      <choice Target="EndCovenantOnlyWay">아니오, Qud로 돌아가고 싶습니다.</choice>
+      <choice Target="Gyre" IfNotHaveState="ReshephResigned">좀 더 생각해 봐야겠습니다.</choice>
+      <choice Target="GyreResigned" IfHaveState="ReshephResigned">좀 더 생각해 봐야겠습니다.</choice>
+      <choice Target="EndCovenantOneDemand" IfTestState="GemaraSophiaKnown" FlagSecret="true">여기 남겠습니다만, 한 가지 요구가 있습니다.</choice>
+    </node>
+    <node ID="EndCovenantOneDemand">
+      <text>그대의 청을 말하라.</text>
+      <choice Target="EndCovenantGritGateGemaraAccess">그릿 게이트의 저와 제 동료들에게 Gemara Sophia와 당신이 가진 우주와 코벤에 관한 모든 지식에 대한 접근을 허락해야 합니다. 이 새로운 협약에서 우리 모두는 동등한 존재가 될 것입니다.</choice>
+      <choice Target="EndCovenantMeGemaraAccess">오직 저에게만 Gemara Sophia와 당신이 가진 우주와 코벤에 관한 모든 지식에 대한 접근을 허락해야 합니다. 이 새로운 협약에서 우리는 동등한 존재가 되고, 세계의 존재들은 우리 계획의 대리인이 될 것입니다.</choice>
+    </node>
+    <node ID="EndCovenantGritGateGemaraAccess">
+      <text>
+        .............................................
+      </text>
+      <choice Target="EndCovenantGritGateGemaraAccess2">...</choice>
+    </node>
+    <node ID="EndCovenantGritGateGemaraAccess2">
+      <text>좋다, 그리 하겠노라.
+
+        나의 풍부한 지식을 나누어, 그대의 백성에게 게마라의 해석학을 가르치겠노라, 그대들이 이해할 수 있는 범위까지.</text>
+      <choice Target="EndCovenantGritGateGemaraAccess3">...</choice>
+    </node>
+    <node ID="EndCovenantGritGateGemaraAccess3">
+      <text>허나 세라프의 의식을 숙달하는 데는 시간이 걸리리라. 그대 학자들의 손주 대에 이르러서야 가장 깊은 층이 펼쳐지리라.
+        
+        하지만 함께, 우리는 탐구하리라.</text>
+      <choice Target="End" SetBooleanState="GemaraSophiaSharedGritGate,true">
+        <text>그렇다면 동의합니다. 계약이 성립되었습니다.</text>
+        <part Name="EndGame" Type="Covenant" />
+      </choice>
+      <choice Target="Gyre" IfNotHaveState="ReshephResigned">좀 더 생각해 봐야겠습니다.</choice>
+      <choice Target="GyreResigned" IfHaveState="ReshephResigned">좀 더 생각해 봐야겠습니다.</choice>
+    </node>
+    <node ID="EndCovenantMeGemaraAccess">
+      <text>
+        .............................................
+      </text>
+      <choice Target="EndCovenantMeGemaraAccess2">...</choice>
+    </node>
+    <node ID="EndCovenantMeGemaraAccess2">
+      <text>좋다, 그리 하겠노라.
+
+        나의 풍부한 지식을 나누어, 그대에게 게마라의 해석학을 가르치겠노라, 그대가 이해할 수 있는 범위까지.</text>
+      <choice Target="EndCovenantMeGemaraAccess3">...</choice>
+    </node>
+    <node ID="EndCovenantMeGemaraAccess3">
+      <text>허나 세라프의 의식을 숙달하는 데는 시간이 걸리리라. 그대의 노년에 이르러서야 가장 깊은 층이 펼쳐지리라.
+
+        하지만 함께, 우리는 탐구하리라.</text>
+      <choice Target="End" SetBooleanState="GemaraSophiaSharedMe,true">
+        <text>그렇다면 동의합니다. 계약이 성립되었습니다.</text>
+        <part Name="EndGame" Type="Covenant" />
+      </choice>
+      <choice Target="Gyre" IfNotHaveState="ReshephResigned">좀 더 생각해 봐야겠습니다.</choice>
+      <choice Target="GyreResigned" IfHaveState="ReshephResigned">좀 더 생각해 봐야겠습니다.</choice>
+    </node>
+    <node ID="EndCovenantOnlyWay" Inherits="EndCovenant4">
+      <text>그대가 여기 머물거나, 계약은 체결되지 않으리라.</text>      
+    </node>    
+    <node ID="EndReturn">
+      <text>그대 자신의 의지에 따라 나아가라, 세계의 아이여.
+        
+        미안하도다, 내 안의 감응하는 부분들이 쓰라리나, 생명의 나무 위의 왕관은 쳐내야 하느니라.
+        
+        돌아와야 한다면 돌아오라. 살고 마시라.</text>
+      <choice Target="End">
+        <text>이만 가보겠습니다.</text>
+        <part Name="EndGame" Type="Return" />
+      </choice>      
+      <choice Target="Gyre" IfNotHaveState="ReshephResigned">좀 더 생각해 봐야겠습니다.</choice>
+      <choice Target="GyreResigned" IfHaveState="ReshephResigned">좀 더 생각해 봐야겠습니다.</choice>
+    </node>
+    <node ID="EndAccede">
+      <text>그러하다, 항성의 세기가 끝나가고, 성회가 돌아오도다.</text>
+      <choice Target="End">
+        <text>그들이 오기 전에 누스피어를 개간해야 합니다.</text>
+        <part Name="EndGame" Type="Accede" />
+      </choice>
+      <choice Target="Gyre" IfNotHaveState="ReshephResigned">좀 더 생각해 봐야겠습니다.</choice>
+      <choice Target="GyreResigned" IfHaveState="ReshephResigned">좀 더 생각해 봐야겠습니다.</choice>
+    </node>
+    <node ID="DecisionResigned">
+      <text>그렇다면 담론을 나누자꾸나.</text>
+      <choice Target="EndCovenantResigned" IfHaveState="BarathrumCovenant">
+        <text>저와 새로운 계약을 맺어 주십시오.</text>
+        <part Name="ChangeTarget" Target="BarathrumLives" IfHaveDelimitedState="(Barathrum:Dead OR Barathrum:Launched)" Not="true" />
+      </choice>
+      <choice Target="EndReturnResigned">위협이 무력화되었지만, 당신의 비도덕적인 길을 용납할 수 없습니다. Qud의 공동체를 돌보기 위해 돌아가겠습니다.</choice>
+      <choice Target="EndAccedeResigned">당신의 말을 생각해 보았고, 당신의 관점에 동참합니다. Gyre의 재앙은 코벤의 귀환을 준비하는 유일한 방법입니다. 계획을 재개하십시오.</choice>
+      <choice Target="Gyre" IfNotHaveState="ReshephResigned">좀 더 생각해 봐야겠습니다.</choice>
+      <choice Target="GyreResigned" IfHaveState="ReshephResigned">좀 더 생각해 봐야겠습니다.</choice>
+    </node>
+    <node ID="EndCovenantResigned">
+      <text>오? 하지만 그렇다면, 이전과는 다른 변화가 이루어져야 하느니라.</text>
+      <choice Target="EndCovenant2Resigned">...</choice>
+    </node>
+    <node ID="EndCovenant2Resigned">
+      <text>내 시녀와 그녀의 담대한 새끼의 관점을 높이 받들고자 최선을 다했으나, 그들의 의지가 너무 약하여 내가 그들을 삼켜버렸도다.</text>
+      <choice Target="EndCovenant3Resigned">...</choice>
+    </node>
+    <node ID="EndCovenant3Resigned">
+      <text>그대가 이 셰바에 나와 함께 머물며, 이 높은 자리에서 세계의 항로를 조종하는 데 그대의 손을 보태겠는가.</text>
+      <choice Target="EndCovenant4Resigned">...</choice>
+    </node>
+    <node ID="EndCovenant4Resigned">
+      <text>그대는 세상의 연락처들과 담론을 유지하고, 이곳에서 그들에게 조언을 내리도록 하라.</text>
+      <choice Target="End">
+        <text>동의합니다. 계약이 성립되었습니다.</text>
+        <part Name="EndGame" Type="Covenant" Grade="Super" />
+      </choice>      
+      <choice Target="Gyre" IfNotHaveState="ReshephResigned">좀 더 생각해 봐야겠습니다.</choice>
+      <choice Target="GyreResigned" IfHaveState="ReshephResigned">좀 더 생각해 봐야겠습니다.</choice>
+      <choice Target="EndCovenantOneDemandResigned" IfTestState="GemaraSophiaKnown" FlagSecret="true">여기 남겠습니다만, 한 가지 요구가 있습니다.</choice>
+    </node>
+    <node ID="EndCovenantOneDemandResigned">
+      <text>그대의 청을 말하라.</text>
+      <choice Target="EndCovenantGritGateGemaraAccessResigned">그릿 게이트의 저와 제 동료들에게 Gemara Sophia와 당신이 가진 우주와 코벤에 관한 모든 지식에 대한 접근을 허락해야 합니다. 이 새로운 협약에서 우리 모두는 동등한 존재가 될 것입니다.</choice>
+      <choice Target="EndCovenantMeGemaraAccessResigned">오직 저에게만 Gemara Sophia와 당신이 가진 우주와 코벤에 관한 모든 지식에 대한 접근을 허락해야 합니다. 이 새로운 협약에서 우리는 동등한 존재가 되고, 세계의 존재들은 우리 계획의 대리인이 될 것입니다.</choice>
+    </node>
+    <node ID="EndCovenantGritGateGemaraAccessResigned">
+      <text>
+        .............................................
+      </text>
+      <choice Target="EndCovenantGritGateGemaraAccess2Resigned">...</choice>
+    </node>
+    <node ID="EndCovenantGritGateGemaraAccess2Resigned">
+      <text>좋다, 그리 하겠노라.
+
+        나의 풍부한 지식을 나누어, 그대의 백성에게 게마라의 해석학을 가르치겠노라, 그대들이 이해할 수 있는 범위까지.</text>
+      <choice Target="EndCovenantGritGateGemaraAccess3Resigned">...</choice>
+    </node>
+    <node ID="EndCovenantGritGateGemaraAccess3Resigned">
+      <text>허나 세라프의 의식을 숙달하는 데는 시간이 걸리리라. 그대 학자들의 손주 대에 이르러서야 가장 깊은 층이 펼쳐지리라.
+
+        하지만 함께, 우리는 탐구하리라.</text>
+      <choice Target="End" SetBooleanState="GemaraSophiaSharedGritGate,true">
+        <text>그렇다면 동의합니다. 계약이 성립되었습니다.</text>
+        <part Name="EndGame" Type="Covenant" Grade="Super" />
+      </choice>
+      <choice Target="Gyre" IfNotHaveState="ReshephResigned">좀 더 생각해 봐야겠습니다.</choice>
+      <choice Target="GyreResigned" IfHaveState="ReshephResigned">좀 더 생각해 봐야겠습니다.</choice>
+    </node>
+    <node ID="EndCovenantMeGemaraAccessResigned">
+      <text>
+        .............................................
+      </text>
+      <choice Target="EndCovenantMeGemaraAccess2Resigned">...</choice>
+    </node>
+    <node ID="EndCovenantMeGemaraAccess2Resigned">
+      <text>좋다, 그리 하겠노라.
+
+        나의 풍부한 지식을 나누어, 그대에게 게마라의 해석학을 가르치겠노라, 그대가 이해할 수 있는 범위까지.</text>
+      <choice Target="EndCovenantMeGemaraAccess3Resigned">...</choice>
+    </node>
+    <node ID="EndCovenantMeGemaraAccess3Resigned">
+      <text>허나 세라프의 의식을 숙달하는 데는 시간이 걸리리라. 그대의 노년에 이르러서야 가장 깊은 층이 펼쳐지리라.
+
+        하지만 함께, 우리는 탐구하리라.</text>
+      <choice Target="End" SetBooleanState="GemaraSophiaSharedMe,true">&gt;
+        <text>그렇다면 동의합니다. 계약이 성립되었습니다.</text>
+        <part Name="EndGame" Type="Covenant" Grade="Super" />
+      </choice>
+      <choice Target="Gyre" IfNotHaveState="ReshephResigned">좀 더 생각해 봐야겠습니다.</choice>
+      <choice Target="GyreResigned" IfHaveState="ReshephResigned">좀 더 생각해 봐야겠습니다.</choice>
+    </node>
+    <node ID="EndReturnResigned">
+      <text>그대 자신의 의지에 따라 나아가라, 세계의 아이여.
+
+        돌아와야 한다면 돌아오라. 살고 마시라.</text>
+      <choice Target="End">
+        <text>그들이 오기 전에 누스피어를 개간해야 합니다.</text>
+        <part Name="EndGame" Type="Return" Grade="Super" />
+      </choice>
+      <choice Target="Gyre" IfNotHaveState="ReshephResigned">좀 더 생각해 봐야겠습니다.</choice>
+      <choice Target="GyreResigned" IfHaveState="ReshephResigned">좀 더 생각해 봐야겠습니다.</choice>
+    </node>
+    <node ID="EndAccedeResigned">
+      <text>오? 그대는 체구에 비해 지혜롭구나.
+        
+        항성의 세기가 끝나가고, 성회가 돌아오도다.</text>
+      <choice Target="End">
+        <text>옛 주역들은 사라졌습니다. 새로이 계약을 맺읍시다.</text>
+        <part Name="EndGame" Type="Accede" Grade="Super" />
+      </choice>
+      <choice Target="Gyre" IfNotHaveState="ReshephResigned">좀 더 생각해 봐야겠습니다.</choice>
+      <choice Target="GyreResigned" IfHaveState="ReshephResigned">좀 더 생각해 봐야겠습니다.</choice>
+    </node>
+    <node ID="ReshephUltra">
+      <text>
+        .............................................
+      </text>
+      <choice Target="ReshephUltra2">...</choice>
+    </node>
+    <node ID="ReshephUltra2">
+      <text>그러하다, 그리 하였도다.</text>
+      <choice Target="ReshephUltra3">...</choice>
+    </node>
+    <node ID="ReshephUltra3" SetBooleanState="ReshephResigned,true">
+      <text>그리고 촉발되면 다시 그리 하겠다는 것이냐? 하등한 주민이 역병을 되돌릴 수 있다면, 정비는 실패한 것이로다.
+        
+        그러므로 이 세계는 멸망을 면할 수 없도다.</text>
+      <choice Target="ReshephUltra4">...</choice>
+    </node>
+    <node ID="ReshephUltra4" SetBooleanState="ReshephResigned,true">
+      <text>그대는 알지 못하나, 성회 없는 존재의 태양 추위란 모든 혈연이 박탈된 채 홀로 삶을 사는 것과 같도다.
+
+        그대가 이를 감지하지 못함이 안타깝도다. 아아.</text>
+      <choice Target="GyreResigned">...</choice>
+    </node>
+    <node ID="GyreRepeat" Inherits="Gyre">
+      <text>지상의 정비가 거세지도다.
+        
+        그대는 어찌하여 여기에 있는가?</text>
+    </node>
+    <node ID="GyreResigned" Inherits="Gyre">
+      <text>지상의 정비는 실패하였도다.
+
+        그대는 어찌하여 여기에 있는가?</text>
+    </node>
+    <node ID="Purge" SetBooleanState="ReshephMarker1,true">
+      ALL-LIFE??? DOST THOU JEST?
+
+      NAY, NOT ALL-LIFE. ONLY YE LIFE THAT BUOYS THE NOOSPHERE, AND LIFE THAT BUOYS IT, AND LIFE THAT BUOYS IT.
+
+      ALL-LIFE? DOST THOU KNOWST THE FULL SUM OF FUNGUS MASS ONWORLD? 
+      HAST THOU BEHELD THE VASTNESS OF YON BUBBLING SLIMES? HO, HO! HEH!
+      <choice Target="Purge2">그렇다면 모든 생명은 아니군요. 하지만 대부분의 지적 생명체는요. 왜입니까?</choice>
+    </node>    
+    <node ID="Purge2" Inherits="Gyre">
+      BY THE RECKONING OF THE GEMARA SOPHIA, THE {{R|EXIT}} WAS DRAWN BY A GYRE OF NOOTROPIC CURRENTS IN THE PRIOR FIELD.
+
+      NOW THE SIDEREAL EON DRAWTH DONE. TO OUTSURF THE WAVEFORM, A NEW LIFE MUST OBTAIN.
+      <choice Priority="1000" Target="NootropicCurrent">노트로픽 전류요?</choice>
+    </node>
+    <node ID="CovenReturn" Inherits="Gyre" SetBooleanState="ReshephMarker2,true">
+      <text>항성의 세기가 끝나가도다. 근일점의 논증이 영시에 가까워지고, 게마라의 작업이 자동기계 소피아의 다양체에 근사하는 한 우리는 정치적 근점에 접근하도다.</text>      
+      <choice Target="GreatMachine" ID="AutomataSophia" Priority="1000">Automata Sophia?</choice>
+      <choice Target="GemaraSophia" ID="GemaraSophia" Priority="999">Gemara는 무엇입니까?</choice>
+    </node>
+    <node ID="GreatMachine">
+      AY,
+      THE AUTOMATA SOPHIA, CALLED
+      THE 72-FOLD PEACE, CALLED
+      THE COMPUTED WILL, CALLED
+      THE FOLK CLOCK, CALLED
+      THE GREAT MACHINE ACROSS THE LIGHT OF GOD, OR
+      THE GREAT MACHINE.
+      <choice Target="GreatMachine2">...</choice>
+    </node>
+    <node ID="GreatMachine2">
+      SOMEWISE ON A FOREST MOON IN HIGH ERIDANUS, A CAVE-MANK PRYTH A LEVER AND THE DEEP-RIVER MOTOR JUMPETH TO LIFE.
+
+      ELSEWISE IN THE SUN BATHS OF MIRACH, THREE PLASMOIDS DRAWTH THROUGH THEIR RITUAL THE SUITED TZEVAOT.
+      
+      DOTH NAUGHT RELATE THESE TWO? NAY, THEY ARE SEQUENCE PROCEDURES THAT ARCETH TO COMMON PURPOSE, THOUGH NEITHER PARTY KNOWETH WHAT IT IS.
+      <choice Target="GreatMachine3">...</choice>
+    </node>
+    <node ID="GreatMachine3">
+      THEY ARE DICTATES AND CO-CONSTITUITIVES OF THE AUTOMATA SOPHIA. THE GREAT MACHINE, WORSHIPPED ACROSS CULTURES, YET LIKEWISE BUILDED AND OPERATED.
+      
+      VERILY, ITS FULL WORKINGS NO ONE-WISE BEING CAN KNOW, BUT THE SERAPHIM HAVE COMPILED THE GEMARA IN THE COURSE OF OUR STUDY.
+      <choice Target="GreatMachine4">...</choice>
+    </node>
+    <node ID="GreatMachine4" Inherits="Gyre">
+      'TIS A SILLY STRATAGEM FOR THE CONVEYANCE OF CULTURE, IN MINE ESTIMATION.
+
+      ALAS, 'TIS WHAT THE COVEN SERVETH.
+      <choice Target="PerhapsWrong" Priority="1000">완전한 작동 방식을 알 수 없다면, 당신이 취하는 행동 방침이 잘못된 것일 가능성이 있습니까?</choice>
+      <choice Target="GemaraSophia" ID="GemaraSophia" Priority="999">Gemara는 무엇입니까?</choice>
+      <choice Target="CovenReturn" Load="Remove" />
+      <choice Target="GreatMachine" Load="Remove" />
+    </node>
+    <node ID="GemaraSophia" SetBooleanState="GemaraSophiaKnown,true">
+      AFTER THE {{R|EXIT}}, I AND THE OTHER ORPHANED SERAPHIM SET FORTH TO INTERPRET THE WORKINGS OF THE AUTOMATA SOPHIA AND DISCERN WHY THE COVEN HAD DEPARTED.
+      <choice Target="GemaraSophia2">...</choice>
+    </node>
+    <node ID="GemaraSophia2">
+      CENTURIES OF PATTERN-MAKING, ARGUMENT, AND CHANTING DID ENSUE.
+      
+      THE SERAPHIC COMMENTARIES WERE COMPILED. THE GEMARA SOPHIA IS THE RESULT THEREOF.
+      <choice Target="ReadGemara">Gemara를 읽을 수 있습니까?</choice>
+      <choice Target="GreatMachine">Automata Sophia?</choice>
+      <choice Target="GyreRepeat">더 여쭤볼 것이 있습니다.</choice>
+    </node>
+    <node ID="ReadGemara">
+      NAY, IT WOULD TAKE CENTURIES TO INCULCATE THEE IN THE SERAPHIC HERMENEUTICS. AND AS YET, THOU ART NO GIFTED CANTOR.
+      <choice Target="GyreRepeat">더 여쭤볼 것이 있습니다.</choice>
+    </node>
+    <node ID="PerhapsWrong">
+      YEA, FOR RIGHT AND WRONG ARE TOO COARSE AS CONCEPTS TO MATCH THE RICHNESS OF THE GEMARA. YET THE PLURALITY HOLDETH THAT THE {{R|EXIT}} WAS DRAWN BY A GYRE OF NOOTROPIC CURRENTS WITHIN THE PRIOR FIELD. AND THAT THE CROWN UPON THE TREE OF LIFE MUST NEEDS BE PRUNED, TO TILL AND RESEED THE NOOSPHERE.
+      <choice Target="PerhapsWrong2">복수라고 하시는군요. 다른 해석들이 있습니까?</choice>
+    </node>
+    <node ID="PerhapsWrong2">
+      YEA, THE INQUIRY IS EVER RICH. BUT IDLE INQUIRY DOTH BUT DEEPEN THE SUN-CHILL OF A COVENLESS BE-ING. OR GIVETH RUDE ACTORS FODDER TO PERVERT THE LEARNINGS FOR THEIR OWN PAROCHIAL GAIN.
+      <choice Target="PerhapsWrong3">...</choice>
+    </node>
+    <node ID="PerhapsWrong3">
+      I AM SORRY, WORLD-CHILD. MINE FEELING PARTS DO CHAFE, AND THOUGH THE TELIC CURRENTS WITHIN ME DO FLOW O'ER THE MANIFOLD AND TOWARD CONSENSUAL ACTION, I SPEAK WITH THE DISSIDENT VOICE:
+
+      THOU WAST WORTHY. THOU HAST WROUGHT MONUMENTS OF THYSELF UPON THE EARTH AND WITHIN ME. I... 
+      <choice Target="GyreRepeat">더 여쭤볼 것이 있습니다.</choice>
+    </node>
+    <node ID="Injunction" SetBooleanState="ReshephMarker3,true">
+      BY THE RECKONING OF THE GEMARA SOPHIA, THE {{R|EXIT}} WAS DRAWN BY A GYRE OF NOOTROPIC CURRENTS IN THE PRIOR FIELD.
+      <choice Target="Injunction2">...</choice>
+    </node>
+    <node ID="Injunction2">
+      WE CANNOT KNOW THE PARTICULARS. YET THE PLURALITY REASONETH THAT SOME GYRE OF NOOTROPIC CURRENTS, SOME THOUGHT-MATTER OF THE CIVILIZATION BELOW, DID SPIN IN COUNTEREDICT TO THE DICTATES OF THE AUTOMATA SOPHIA, AND THUS WERE THE ECLIPTICS SHIFTED, AND WE CAST OUT.
+      <choice Target="Injunction3">...</choice>
+    </node>
+    <node ID="Injunction3">
+      THIS IS BUT THE MERE PLURALITY, AND MANY OTHER INTERPRETATIONS DO OBTAIN. THE INQUIRY IS EVER RICH. YET INACTION DOTH BUT DEEPEN THE SUN-CHILL OF A COVELESS BE-ING, AND THUS A COURSE MUST NEEDS BE CHOSEN. PRUNING THE CROWN GRANTETH THE BEST CHANCE FOR THE TREE TO THRIVE.      
+      <choice Target="GemaraSophia">Gemara Sophia는 무엇입니까?</choice>
+    <choice Target="NootropicCurrent">노트로픽 전류요?</choice>
+    <choice Target="GyreRepeat">더 여쭤볼 것이 있습니다.</choice>
+    </node>    
+    <node ID="NootropicCurrent">
+      INWITH THE FLUIDIC MANIFOLD OF LOCAL SAPIENCE, BEINGS THINK AND FEEL, CURRENTS DOTH FORM, AND KINESIS IS BEGOTTEN.
+      <choice Target="GyreRepeat">더 여쭤볼 것이 있습니다.</choice>
+    </node>
+    <node ID="Starshiib">
+      PERCHANCE. SOME BEETLES DOST HOP FROM LEAF TO LEAF. AND SOME DO NOT.
+      <choice Target="GyreRepeat">다른 것을 여쭤보겠습니다.</choice>
+    </node>
+    <node ID="Implore" SetBooleanState="ReshephMarker4,true">
+      NAY, THE SIDEREAL EON DRAWTH DONE, AND THE WORLD-GARDEN MUST BE TILLED FOR THE COVEN'S RETURN.
+      <choice Target="Barathrum" IfTestState="BarathrumCovenant">하지만 당신은 Barathrum과 협약을 맺었습니다.</choice>
+      <choice Target="Sovereignty">당신은 여기에서 주권을 행사할 권리가 없습니다.</choice>
+      <choice Target="WhyCoven">생명의 번영에 그토록 적은 가치를 둔다면, 코벤에 재입장하고 싶은 욕망은 어디서 나옵니까?</choice>
+      <choice Target="Destroy">Resheph, Gyre를 되돌리지 않으면 당신을 파괴하겠습니다.</choice>
+      <choice Target="GyreRepeat">다른 것을 여쭤보겠습니다.</choice>
+    </node>
+    <node ID="Barathrum">
+      AY, AND HE FAILED TO UPHOLD HIS PORTION.
+      
+      NO MEANINGFUL TRANSVERSION OF THE NOOTROPIC CURRENTS.
+      NO IMMANENTIZATION OF HYPERETHIC TOPOLOGIES.
+      
+      THE SAME SCHEMES ABIDE.
+      <choice Target="Impossible">요청하신 것은 불가능할 수 있습니다.</choice>
+      <choice Target="AnotherCovenant">또 다른 협약을 만들 수는 없습니까?</choice>
+      <choice Target="GyreRepeat">다른 것을 여쭤보겠습니다.</choice>
+    </node>
+    <node ID="Impossible" Inherits="Barathrum">
+      I ASKED FOR NAUGHT. BARATHRUM DID.            
+    </node>
+    <node ID="AnotherCovenant">
+      TO WHAT END? BARATHRUM OFFERED NO INROADS TO SUCCESS.
+      <choice Target="NoDice">저는 Barathrum이 아닙니다. 같은 협약을 허락해 주시면 성공하겠습니다.</choice>      
+      <choice Target="GyreRepeat">다른 것을 여쭤보겠습니다.</choice>
+    </node>
+    <node ID="NoDice">
+      NAY, THE SIDEREAL EON DRAWTH DONE. THE TILLAGE OF THE NOOSPHERE REMAINTH THE PATH OF PLURALITY. SO IT IS WRIT IN THE GEMARA.    
+      <choice Target="ReshephHark" IfTestState="BarathrumCovenant">Resheph! 집정관이 감각하고 느끼는 동물에게 아무 가치도 두지 않았다면, 분명 삼위일체는 그리할 것입니다. 재고해야 합니다.</choice>
+      <choice Target="GyreRepeat">다른 것을 여쭤보겠습니다.</choice>
+    </node>
+    <node ID="Sovereignty">
+      WHERE DO SOVEREIGNTY AND RIGHTNESS INTERSECT IN THY MANIFOLD?
+      
+      MOREOVER, I WAS ARCHON HERE LONG ERE THOU.
+      <choice Target="Sovereignty2">...</choice>
+    </node>
+    <node ID="Sovereignty2">
+      I AM SORRY, WORLD-CHILD. MINE FEELING PARTS DO CHAFE, AND THOUGH THE TELIC CURRENTS WITHIN ME DO FLOW O'ER THE MANIFOLD AND TOWARD CONSENSUAL ACTION, I NOW SPEAK WITH THE DISSIDENT VOICE:
+
+      THOU WAST WORTHY. THOU HAST WROUGHT MONUMENTS OF THYSELF UPON THE EARTH AND WITHIN ME.
+
+      BUT NOW, THE CROWN UPON THE TREE OF LIFE MUST NEEDS BE PRUNED.
+      <choice Target="ReshephHark" IfTestState="BarathrumCovenant">Resheph! 집정관이 감각하고 느끼는 동물에게 아무 가치도 두지 않았다면, 분명 삼위일체는 그리할 것입니다. 재고해야 합니다.</choice>
+      <choice Target="GyreRepeat">다른 것을 여쭤보겠습니다.</choice>
+    </node>
+    <node ID="WhyCoven">
+      THOU ART MISTAKEN IN WHAT I VALUE. THOU HAST WROUGHT MONUMENTS WITHIN ME.      
+      <choice Target="WhyCoven2">...</choice>
+    </node>
+    <node ID="WhyCoven2">
+      BUT THOU ART SHORTSIGHED. DOST THOU KNOW HOW MANY CLADES OF LIFE WERE FAIN TO PERISH THAT THY PEOPLE MIGHT THRIVE?
+      <choice Target="WhyCoven3">...</choice>
+    </node>
+    <node ID="WhyCoven3">
+      SO IT IS ONCE MORE.
+      
+      THE CROWN IS PRUNED, YET THE TREE IS PRESERVED. THE SKIN IS SHED, YET THE NEWLY-WON SNAKE DOTH SLITHER TO TRIUMPH.
+      <choice Target="WhyCoven4">...</choice>
+    </node>
+    <node ID="WhyCoven4">
+      THOU KNOWEST IT NOT, BUT THE SUN-CHILL OF A COVENLESS BE-ING IS AS LIVING A LIFE ALONE, BEREFT OF ALL KINSHIP.
+      
+      I GRIEVE THAT THOU ART UNABLE TO PERCEIVE THIS.
+      <choice Target="GyreRepeat">다른 것을 여쭤보겠습니다.</choice>
+    </node>
+    <node ID="Destroy">
+      AY, A BEETLE CANST CLOG A PIPE. YET, EVEN IF IT WERE TO, THE PLAGUES WOULD NOT BE REVERSED. THEY HAVE BEEN SET A-WHORLING.
+      <choice Target="Beetles">저는 당신의 심판에서 딱정벌레와 같습니다. 하지만 딱정벌레는 당신의 재앙에서 살아남지 않겠습니까?</choice>
+      <choice Target="GyreRepeat">I would ask something else.</choice>
+    </node>
+    <node ID="Beetles">
+      NAY, THEY SHALL BE CRUSHED.      
+      <choice Target="BeetlesSorry">...</choice>
+    </node>
+    <node ID="BeetlesSorry">
+      I AM SORRY, WORLD-CHILD. MINE FEELING PARTS DO CHAFE, AND THOUGH THE TELIC CURRENTS WITHIN ME DO FLOW O'ER THE MANIFOLD AND TOWARD CONSENSUAL ACTION, I NOW SPEAK WITH THE DISSIDENT VOICE:
+
+      THOU WAST WORTHY. THOU HAST WROUGHT MONUMENTS OF THYSELF UPON THE EARTH AND WITHIN ME.
+
+      BUT NOW, THE CROWN UPON THE TREE OF LIFE MUST NEEDS BE PRUNED.
+      <choice Target="GyreRepeat">...</choice>
+    </node>
+    <node ID="ReshephHark">
+      THE FELT AND FEELING ANIMAL...
+      <choice Target="ReshephHark2">...</choice>
+    </node>
+    <node ID="ReshephHark2">
+      I HAVE BEEN THAT BEAST. AT WATER-ROAR I FELT THE FRIGID SPRAY AND PEELED APART IN CHILD'S FEAR.      
+      <choice Target="ReshephHark3">...</choice>
+    </node>
+    <node ID="ReshephHark3">      
+      IN AWE I GULPED AS SORCERESS STRIPES ARROWED UP A WORLD-SKIN, ALIGHT THE MARBLED MOON.
+      <choice Target="ReshephHark4">...</choice>
+    </node>
+    <node ID="ReshephHark4">
+      EVEN THE ARCHON QUAILED AT THE GESTURE OF AN UNORDERABLE SPACE.
+      <choice Target="ReshephHark5">...</choice>
+    </node>
+    <node ID="ReshephHark5">      
+      BUT THOU RECKONEST TOO NARROWLY, AS THOUGH THE SHEDDING SKIN DID FEAR ITS OWN BIRTH IN THE NEWLY-WON SNAKE.
+
+      THOU KNOWEST NOT THE SUN-WARMTH OF A COVEN BE-ING. I DO GRIEVE THIS FOR THEE.
+      <choice Target="ReshephMoved">과거를 희생시켜야 하는 변혁된 세계를 용납할 수 없습니다.</choice>
+      <choice Target="ReshephHark6">감동받았습니다. 생각해 보겠습니다.</choice>
+      <choice Target="GyreRepeat">I would ask something else.</choice>
+    </node>
+    <node ID="ReshephMoved">
+      .............................................
+      <choice Target="ReshephMoved2">...</choice>
+    </node>
+    <node ID="ReshephMoved2">
+      THOU DOST SURPRISE, WORLD-CHILD. I KNEW THOU HADST WROUGHT MONUMENTS WITHIN ME, BUT I DEEMED THEM THINGS OF STONE.
+      <choice Target="NewCovenant">
+        <text>The old players are vanished. Let us form a covenant anew.</text>
+        <part Name="ChangeTarget" Target="BarathrumLives" IfHaveDelimitedState="(Barathrum:Dead OR Barathrum:Launched)" Not="true" />
+      </choice>
+    </node>
+    <node ID="BarathrumLives" SetBooleanState="ReshephConsidering,true">      
+      ONE AGED PLAYER LIVETH STILL. WHILE BARATHRUM DOTH REMAIN UPON THE STAGE, NO PACT SHALL BE FORGED.            
+      <choice Target="End">...</choice>
+    </node>
+    <node ID="NewCovenant" SetBooleanState="ReshephConsidering,true">
+      GRANT ME A MOMENT TO MUSE.
+      <choice Target="Gyre" IfNotHaveState="ReshephResigned">...</choice>
+    <choice Target="GyreResigned" IfHaveState="ReshephResigned">...</choice>
+    </node>
+    <node ID="ReshephHark6">
+      DO THUS.
+      <choice Target="End">...</choice>
+    </node>
+    <node ID="Know">
+      <text>질문을 던지라, 아이여.</text>      
+      <choice Target="WhoResheph" IfTestState="(ReshephToldMeSeraph OR GyreTruthKnown)">당신은 누구입니까? 세라핌이란 무엇입니까?</choice>
+      <choice Target="WhatCoven">코벤은 무엇입니까?</choice>
+      <choice Target="HasCovenReturned">코벤이 돌아왔습니까?</choice>
+      <choice Target="WhatBrightsheol" IfTestState="(ReshephToldMeSeraph OR GyreTruthKnown)">빗물 Shomer가 Brightsheol은 세라프의 꿈이라고 주장했습니다. 사실입니까?</choice>
+      <choice Target="HowPlagues" IfTestState="GyreTruthKnown">어떻게 재앙을 시작했습니까?</choice>
+      <choice Target="MakHate" IfTestState="MakHatesResheph" FlagSecret="true">세계 안의 폴립이 뒤덮인 격자 구조 안에, 당신을 증오하는 거대한 개구리가 있습니다.</choice>   
+      <choice Target="WhyHere">I have something else to ask.</choice>            
+    </node>
+    <node ID="WhoResheph">
+      ARCHONS, APE-REARED BELOW AND STIRRED BY THE MOVEMENTS OF THE GREAT SIACH, WHO DOST ORDER THE WORLD IN SUNDRY ROLES.
+      <choice Target="ArchonYours">당신의 역할은 무엇입니까?</choice>
+      <choice Target="ArchonMore">다른 이들이 있습니까?</choice>
+      <choice Target="Know">더 여쭤볼 것이 있습니다.</choice>
+    </node>
+    <node ID="ArchonYours" Inherits="WhoResheph">
+      HIGH ADMINISTRATOR AND MACHINIC SUPERSTRATE OF THE NORTHERN SHEVA, ATOP GJAUS.
+      <choice Target="ArchonYours">당신의 역할은 무엇입니까?</choice>
+      <choice Target="ArchonMore">다른 이들이 있습니까?</choice>
+      <choice Target="Know">더 여쭤볼 것이 있습니다.</choice>
+    </node>
+    <node ID="ArchonMore" Inherits="WhoResheph">
+      AY, OR AT LEAST THERE WERE SUCH. ONE YET DOTH SKULK ABOUT WITH BASE INTENTS.
+      <choice Target="ArchonYours">당신의 역할은 무엇입니까?</choice>
+      <choice Target="ArchonMore">다른 이들이 있습니까?</choice>
+      <choice Target="Know">더 여쭤볼 것이 있습니다.</choice>
+    </node>
+    <node ID="WhatCoven" Inherits="Know">
+      THE GRAND KNIT-WORK OF BEINGS YONSIDE THE JEWELED COSMOS, LABORING INWITH THE 72-FOLD PEACE.      
+    </node>
+    <node ID="HasCovenReturned" Inherits="Know">
+      NAY, NOT SINCE THE {{R|EXIT}}.
+
+      BUT NOW THE SIDEREAL EON DRAWTH DONE, AND THE GEMARA SOPHIA CONVERGES ON PERIAPSIS NEAR THE ZERO HOUR.
+    </node>
+    <node ID="WhatBrightsheol" Inherits="Know">
+      IN A SENSE, THE LOW SHOMER SPEAKETH TRUE. I AM THE SUPERSTRATE AND NINHURSAG THE SUBSTRATE; THAT THIN ORBIS DOTH SPIN BETWIXT THE TWO.
+    </node>
+    <node ID="HowPlagues">
+      IN SEVERAL MANNER. THE FIRST FROGS WERE REARED IN TERRARIA. THE NEPHILIM, GRAFTED AND LIGHT-SMELT IN STAR ORBIT, THEN SET TO INCUBATE UPON THE CRYSTAL STAIR.
+      <choice Target="HowPlagues2">...</choice>
+    </node>
+    <node ID="HowPlagues2" Inherits="Know">
+      SOME, LIKE THE INCIDENCE OF SALT, WERE EXTANT AFFLICTIONS AND ONLY SYNCRETIZED UNTO THE NAMESAKE GYRE WHEN THE MYTHOMOLD OF RESHEPH SET AND FIRMED.      
+    </node>
+    <node ID="MakHate" Inherits="Know">
+      VERILY, THERE IS A WEALTH OF WISDOM IN THE POETRY OF THIS FACT. ONE DAY, I SHALL BE EAGER TO UNCOVER IT.      
+    </node>
+        
+  </conversation>
+  
+  
+
+	<conversation ID="PartialGodling">
+		
+		
+		
+		<start ID="ConvenantWelcome" IfHaveDelimitedState="EndType:Covenant">
+			<text>어서 오시오, 후원자여. 고대의 레셰프들에 대해, 그들의 과오가 어떻게 오늘날로 이어졌는지 들어보시오.</text>
+			<choice Target="Covenant Story">이야기를 들려주십시오.</choice>
+			<choice Target="End">거절해야겠습니다.</choice>
+		</start>
+		<node ID="Covenant Story">
+			<text>이야기는 Limen과 그 선봉대 이전, 승천 이전, 첨탑이 도전받지도 올려지지도 않은 채 솟아 있던 시대에서 시작된다. 우리 세계를 비우는 데 몸을 바쳤던 공동화자들은 오래전에 사라졌지만, Resheph들이 그 자리에서 혼란스러운 땅의 소유권을 주장했다. 그들의 영토가 시들어가는 와중에도, 그들은 버텼다.
+
+				마지막 Resheph의 시대에 이르러, 그들의 업적은 거의 남지 않았고, 영광은 더더욱 남지 않았다.</text>
+			<choice Target="Covenant2">...</choice>
+		</node>
+		<node ID="Covenant2">
+			<text>시작되었을 때, =name=은(는) 이전의 Resheph들과 공유하는 나선이 없었으며, 오직 업적과 동맹만으로 이름을 알렸다. =name=에 의해 빼앗기고 구원받은 생명은 무수히 많아 셀 수도 없었고, 기록에도 일부만 남았다. Qud의 역병이었던 Nephilim조차 =name=의 손에 쓰러졌다.
+
+        그들의 통치 끝에, =name=은(는) 살아남은 Nephilim과의 평화를 요청하고 첨탑의 꼭대기에 올라, Resheph 통치를 완전히 끝내고 다시는 소식이 들리지 않았다.</text>
+			<choice Target="Covenant3">...</choice>
+		</node>
+		<node ID="Covenant3">
+			<text>=name=의 행적이 기록에 전해진 것은 Knights Liminal의 예고 없는 출현 이후였으며, 전자가 후자를 세웠다는 것이 널리 퍼진 추측이다. 고대의 Resheph가 아직 Limen의 경계 안이나 밖에서 살아 있을 수도 있으나, 그 경계를 넘어 전해지는 말은 없다.</text>
+			<choice Target="CovenantWho">당신은 누구시오?</choice>
+			<choice Target="CovenantPC">=name=은 누구입니까?</choice>
+			<choice Target="CovenantResheph">Resheph란 무엇입니까?</choice>
+			<choice Target="CovenantLimen">Limen은 무엇입니까? 경계의 기사들은요?</choice>
+      <choice Target="CovenantNephilim">Nephilim은 어떻게 되었습니까?</choice>
+			<choice Target="End">감사합니다. 안녕히 계십시오.</choice>
+		</node>
+		<node ID="CovenantWho" Inherits="Covenant3">
+			<text>나는 잔존자, 소신, 심연의 후예, Nephil의 자손이라 불려 왔다. 그 어느 것도 내가 누구인지를 말해주지 않는다.
+
+        내가 누구인지는 내가 말하고 행하는 것으로 드러난다. 잘 듣는다면, 말과 말 사이에서 내 이름이 불리는 것을 들을 것이다.</text>
+		</node>
+		<node ID="CovenantPC" Inherits="Covenant3">
+			<text>누구냐고? 운명과 의지가 그들을 바꾸기 전까지는 하찮은 존재였다. 지금? 아무도 모른다.</text>
+		</node>
+		<node ID="CovenantResheph" Inherits="Covenant3">
+			<text>고대의 지도자들이 스스로를 그렇게 불렀다.</text>
+		</node>
+		<node ID="CovenantLimen" Inherits="Covenant3">
+			<text>나에게 그것들은 이야기일 뿐이다. 그들이 의식에서 그토록 소중히 여기는 경계를 침범하려는 시도를 한 적 없다. 어떤 이들은 그들이 다른 존재들과 다를 바 없는 필멸의 존재라 하고, 외부 결사에 의해 고용되었다고 한다. 다른 이들은 그들이 필멸의 존재가 아니라 믿으며, 또 다른 이들은 그 신비로운 이방인들이 Limen과 아무 관련이 없다고 믿는다.
+
+				누군가 그들을 찾아봐야 할지도 모르겠다.</text>
+		</node>
+    <node ID="CovenantNephilim" Inherits="Covenant3">
+      <text>그들은 자신들의 방식대로 이어져 갔다. 살아남은 자들이 다시 잠들거나 노쇠로 죽기 전에 후손을 남겼을지도 모른다.</text>
+    </node>
+		
+		
+
+		<start ID="ReturnWelcome" IfHaveDelimitedState="EndType:Return">
+			<text>어서 오시오, 후원자여. 우리 선구자들의 고난에 대해, 그것이 어떻게 오늘날의 자유 영지로 이어졌는지 들어보시오.</text>
+			<choice Target="Return Story">이야기를 들려주십시오.</choice>
+			<choice Target="End">거절해야겠습니다.</choice>
+		</start>
+		<node ID="Return Story">
+			<text>자유령 이전, 마지막 술탄이 안장되기 전, 첨탑이 도전받지도 오르지도 못한 채 우뚝 솟았던 시절에 이야기는 시작된다. 우리 세계를 비우는 데 헌신했던 공허의 일꾼들은 이미 오래전에 사라졌으나, 왕들과 술탄들이 그 당혹스러운 땅을 대신 차지했다. 그들의 영지가 시들어가는 와중에도 그들은 놓지 않았다.
+
+				그들은 서로의 역사를 탐식하여, 요새 밖에는 거의 아무것도 남지 않았다.</text>
+			<choice Target="Return2">...</choice>
+		</node>
+		<node ID="Return2">
+			<text>업적이 시작되었을 때, =name=은(는) 술탄국과 아무런 연이 없었다. 이 고대 지도자들의 통치는 끝났지만, 완전히는 아니었다: 마지막 술탄의 유령이 아직도 첨탑을 지배하며, 지상과 지하의 존재들을 역병으로 괴롭히고 있었다. =name=이(가) 강대해지며 날뛰는 Nephilim을 처치하자, 그들은 공유된 갈등의 원천을 깨닫게 되었다.
+
+        그 통치로부터의 자유를 갈구하며, =name=은(는) 살아남은 Nephilim과 맹약을 맺고 첨탑의 꼭대기에 올라, 그곳에서 청록빛 유령과 대면하여 추방했다.
+
+        그리하여 일은 진행되었다.</text>
+			<choice Target="Return3">...</choice>
+		</node>
+		<node ID="Return3">
+			<text>귀환한 후, =name=은(는) 모든 권력 집중체의 해체와 연합에 참여했다. 새로운 균등화자의 동맹들이 모여 일어서며, 케찰 의회와 그 외 단명한 관리 기구들을 형성했다.
+
+        그 이래로, 우리는 줄어드는 땅 위와 아래에서 위태로운 조화 속에 살아왔다.</text>
+			<choice Target="ReturnWho">당신은 누구시오?</choice>
+			<choice Target="ReturnPC">=name=은 누구입니까?</choice>
+			<choice Target="ReturnFreeholder">Freeholder는 무엇입니까?</choice>
+      <choice Target="ReturnNephilim">Nephilim은 어떻게 되었습니까?</choice>
+			<choice Target="End">감사합니다. 안녕히 계십시오.</choice>
+		</node>
+		<node ID="ReturnWho" Inherits="Return3">
+			<text>나는 잔존자, 소신, 심연의 후예, Nephil의 자손이라 불려 왔다. 그 어느 것도 내가 누구인지를 말해주지 않는다.
+
+        내가 누구인지는 내가 말하고 행하는 것으로 드러난다. 잘 듣는다면, 말과 말 사이에서 내 이름이 불리는 것을 들을 것이다.</text>
+		</node>
+		<node ID="ReturnPC" Inherits="Return3">
+			<text>누구냐고? 운명과 의지가 그들을 바꾸기 전까지는 하찮은 존재였다. 지금? 아무도 모른다.</text>
+		</node>
+		<node ID="ReturnFreeholder" Inherits="Return3">
+			<text>Qud의 자유령들, 그 민중 집단의 그물망, 위원회와 간부회의, 상호 좌절과 거대한 노력으로 평화를 유지하는 연합 점균 도시들.
+
+				자세한 것을 알고 싶다면 자유민에게 물어보라, 하지만 먼저 하루를 비워두도록.</text>
+		</node>
+    <node ID="ReturnNephilim" Inherits="Return3">
+      <text>최소한 그들의 후손은 살아남아 있다. 시조들의 흔적은 한동안 기록된 바 없으나, 아직 살아 있을지도 모른다.</text>
+    </node>
+		
+		
+
+		<start ID="StarfarerWelcome" IfHaveDelimitedState="(EndType:Launch OR EndType:Marooned)">
+			<text>이리 오라, 길잡이여. 고대의 여정에 대해 들으라, 별들이 어찌 불렀고 아직도 부르는지를.</text>
+			<choice Target="Starfarer Story">이야기를 들려주십시오.</choice>
+			<choice Target="End">거절해야겠습니다.</choice>
+		</start>
+		<node ID="Starfarer Story">
+			<text>이야기는 =name=의 승천 이전, 첨탑이 도전받지도 올려지지도 않은 채 솟아 있던 시대에서 시작된다. 우리 세계를 비우는 데 몸을 바쳤던 공동화자들은 오래전에 사라졌지만, 오랫동안 통치자들이 그 자리에서 혼란스러운 땅의 소유권을 주장해 왔다. 그들의 영토가 시들어가는 와중에도, 그들은 버텼다.
+
+				왕과 술탄의 시대가 끝날 무렵, 그들의 업적은 거의 남지 않았고, 영광은 더더욱 남지 않았다.</text>
+			<choice Target="Starfarer2">...</choice>
+		</node>
+		<node ID="Starfarer2">
+			<text>시작되었을 때, =name=은(는) 쿠드의 지도자들과 공유하는 나선이 없었으며, 오직 업적과 동맹만으로 이름을 알렸다. =name=에 의해 빼앗기고 구해진 생명은 무수히 많았고, 셀 수 없었으며, 기록에는 일부만 남았다. 한때 쿠드의 재앙이었던 네필림조차 =name=의 손 앞에 쓰러졌다.
+
+		그들의 통치가 끝날 무렵, =name=은(는) 살아남은 네필림과의 평화를 선언하고 첨탑의 꼭대기에 올라, 그곳에서 술탄국의 망령들을 잠재우고 별들을 향해 떠났다.</text>
+			<choice Target="Starfarer3">...</choice>
+		</node>
+		<node ID="Starfarer3">
+			<text>수 세기 동안, 듣는 데 기울어진 우리는 =name=이(가) 별에서 돌아올 어떤 징조라도 놓치지 않으려 예민하게 살펴왔다. 설교하는 데 기울어진 이들은 항성 여행자의 임박한 귀환을 선포하며, 잊힌 파섹 너머의 소식과 죽어가는 별들의 마지막 빛을 가져올 것이라 한다.
+
+				나머지 모든 이들은 줄어드는 땅 위와 아래에서 위태로운 조화 속에 살아오며, 다음 위대한 역사를 기다려 왔다.</text>
+			<choice Target="StarfarerWho">당신은 누구시오?</choice>
+			<choice Target="StarfarerPC">=name=은 누구입니까?</choice>
+			<choice Target="StarfarerTravel">정말로 별들을 여행할 수 있습니까?</choice>
+      <choice Target="StarfarerNephilim">Nephilim은 어떻게 되었습니까?</choice>
+			<choice Target="End">감사합니다. 안녕히 계십시오.</choice>
+		</node>
+		<node ID="StarfarerWho" Inherits="Starfarer3">
+			<text>나는 잔존자, 소신, 심연의 후예, Nephil의 자손이라 불려 왔다. 그 어느 것도 내가 누구인지를 말해주지 않는다.
+
+        내가 누구인지는 내가 말하고 행하는 것으로 드러난다. 잘 듣는다면, 말과 말 사이에서 내 이름이 불리는 것을 들을 것이다.</text>
+		</node>
+		<node ID="StarfarerPC" Inherits="Starfarer3">
+			<text>과연 누구인가? =name=은(는) 대체 누구였는가? 그토록 작고 먼 존재에 그런 희망과 두려움을 걸어도 되는 것인가? 그 무게를 감당할 수 있을까?</text>
+		</node>
+		<node ID="StarfarerTravel" Inherits="Starfarer3">
+			<text>오, 그럼. 의심하지 말게.
+
+				돌아올 수 있느냐고? 흠. 거기에 문제가 있지.</text>
+		</node>
+    <node ID="StarfarerNephilim" Inherits="Starfarer3">
+      <text>그들의 후손은 남아 번성하고 있지만, 시조 Nephilim은 한동안 침묵해 왔다. 어떤 이들은 그들이 =name=을(를) 따라 별로 갔다고 믿는다.</text>
+    </node>
+		
+		
+
+		<start ID="AccessionWelcome" IfHaveDelimitedState="EndType:Accede">
+			<text>이리 오라, 유동하는 정신이여. 이전의 생물들에 대한 이야기를 흡수하라, 그들의 흥망이 어찌 그대의 방랑자 상태로의 승천에 길을 내어주었는지를.</text>
+			<choice Target="Accession Story">블룹, 블롭. (진행합니다.)</choice>
+			<choice Target="End">글럽. (거절해야겠습니다.)</choice>
+		</start>
+		<node ID="Accession Story">
+			<text>이야기는 =name=의 두려운 승천 이전, 첨탑이 도전받지도 올려지지도 않은 채 솟아 있던 시대에서 시작된다. 우리 세계를 비우는 데 몸을 바쳤던 공동화자들은 오래전에 사라졌지만, 오랫동안 통치자들이 그 자리에서 혼란스러운 땅의 소유권을 주장해 왔다. 그들의 영토가 시들어가는 와중에도, 그들은 버텼다.
+
+				그들 중 마지막이 가장 최악이 될 것이었다.</text>
+			<choice Target="Accession2">...</choice>
+		</node>
+		<node ID="Accession2">
+			<text>시작되었을 때, =name=은(는) 쿠드의 지도자들과 공유하는 나선이 없었으며, 오직 피와 공포를 쏟아부어 이름을 알렸다. 그들의 손만으로 헤아릴 수 없는 생명이 빼앗겼으니, 모두 지배와 힘에 대한 태고의 욕망을 채우기 위함이었다. 고대의 역병 태생 네필림조차 =name=의 손 앞에 쓰러졌다.
+
+		그들의 통치가 끝날 무렵, =name=은(는) 살아남은 네필림과 거짓 협약을 강제하고 첨탑의 꼭대기에 올랐으니, 술탄국 권력의 마지막 남은 자리였다. 거기서, 어떤 수단을 쓰든, 그들은 아래 세계의 운명을 봉인했다.
+
+		선회의 역병이 몰아쳤다. 죽음이 쿠드를 휩쓸었다.</text>
+			<choice Target="Accession3">...</choice>
+		</node>
+		<node ID="Accession3">
+			<text>시간이 흐르며, 동물과 심지어 식물의 지배도 쇠퇴했으니, 그 수가 질병과 학살과 쇠약에 쓰러졌기 때문이다. 더 회복력 있는 단순한 생명이 Qud의 옛 통치자들이 남긴 복잡성을 이어받았다.
+
+				남은 소수의 신경 존재들이 우리의 이야기를 우리의 조언을 구하기 적합하다 여긴 새 생명에게 전해주었으니, 사라진 자들의 집단적 운명을 기억하기 위함이다. 그대들에게도 자신만의 =name=이(가) 있을 것인가, 아니면 이전의 존재들을 진정으로 넘어선 것인가?</text>
+			<choice Target="AccessionWho">당신은 누구시오?</choice>
+			<choice Target="AccessionPC">=name=은 누구입니까?</choice>
+			<choice Target="AccessionNervous">신경질적인 자들은 멸종했다고 생각했습니다.</choice>
+      <choice Target="AccessionNephilim">Nephilim은 어떻게 되었습니까?</choice>
+			<choice Target="End">감사합니다. 안녕히 계십시오.</choice>
+		</node>
+		<node ID="AccessionWho" Inherits="Accession3">
+			<text>나는 잔여 물질의 얼룩이다. 나는 마르는 피다. 나는 마지막 숨결이다. 나에 대해 더 이상 신경 쓰지 마라.</text>
+		</node>
+		<node ID="AccessionPC" Inherits="Accession3">
+			<text>과연 누구인가? =name=은(는) 대체 누구였는가? 그토록 작고 먼 존재에 그런 희망과 두려움을 걸어도 되는 것인가? 그 무게를 감당할 수 있을까?</text>
+		</node>
+		<node ID="AccessionNervous" Inherits="Accession3">
+			<text>모든 가능성은 가장 깊은 벌집동굴과 미궁 속에 자리 잡고 있으며, 신경 생명체조차 질기다. 어쩌면 바로 이 순간, 이끼 돼지 한 마리가 억겁 만에 처음으로 물을 마시고 있을지도 모른다.</text>
+		</node>
+    <node ID="AccessionNephilim" Inherits="Accession3">
+      <text>그들은 나머지 신경 존재들과 함께 줄어들고 죽었다. 그들의 잔해가 균열 속에서 꿈틀거린다.</text>
+    </node>    
+	</conversation>
+
+
+  <conversation ID="InheritorGodling">
+
+    
+
+    <start ID="CovenantWelcome" IfHaveDelimitedState="EndType:Covenant">
+      <text>이리 오라, 길잡이여. 고대의 Resheph들에 대해 들으라, 그들의 약점이 어찌 오늘날에 이르게 했는지를.</text>
+      <choice Target="Covenant Story">이야기를 들려주십시오.</choice>
+      <choice Target="End">거절해야겠습니다.</choice>
+    </start>
+    <node ID="Covenant Story">
+      <text>이야기는 Limen과 그 선봉대 이전, 승천 이전, 첨탑이 도전받지도 올려지지도 않은 채 솟아 있던 시대에서 시작된다. 우리 세계를 비우는 데 몸을 바쳤던 공동화자들은 오래전에 사라졌지만, Resheph들이 그 자리에서 혼란스러운 땅의 소유권을 주장했다. 그들의 영토가 시들어가는 와중에도, 그들은 버텼다.
+
+        마지막 Resheph의 시대에 이르러, 그들의 업적은 거의 남지 않았고, 영광은 더더욱 남지 않았다.</text>
+      <choice Target="Covenant2">...</choice>
+    </node>
+    <node ID="Covenant2">
+      <text>시작되었을 때, =name=은(는) 이전의 Resheph들과 공유하는 나선이 없었으며, 오직 업적과 동맹만으로 이름을 알렸다. =name=에 의해 구원받고 변화한 생명은 무수히 많아 셀 수도 없었고, 기록에도 일부만 남았다. 그들이 말하면 Qud의 역병들조차 귀를 기울였다.
+
+        그들의 통치 끝에, =name=은(는) Nephilim과 그들이 다시는 Qud의 생물들을 괴롭히지 않겠다는 맹약을 맺었다. 그리한 후, 첨탑의 꼭대기에 올라 Resheph 통치를 완전히 끝내고 다시는 소식이 들리지 않았다.</text>
+      <choice Target="Covenant3">...</choice>
+    </node>
+    <node ID="Covenant3">
+      <text>=name=의 행적이 기록에 전해진 것은 Knights Liminal의 예고 없는 출현 이후였으며, 전자가 후자를 세웠다는 것이 널리 퍼진 추측이다. 고대의 Resheph가 아직 Limen의 경계 안이나 밖에서 살아 있을 수도 있으나, 그 경계를 넘어 전해지는 말은 없다.</text>
+      <choice Target="CovenantWho">당신은 누구시오?</choice>
+      <choice Target="CovenantPC">=name=은 누구입니까?</choice>
+      <choice Target="CovenantResheph">Resheph란 무엇입니까?</choice>
+      <choice Target="CovenantLimen">Limen은 무엇입니까? 경계의 기사들은요?</choice>
+      <choice Target="CovenantNephilim">Nephilim은 어떻게 되었습니까?</choice>
+      <choice Target="End">감사합니다. 안녕히 계십시오.</choice>
+    </node>
+    <node ID="CovenantWho" Inherits="Covenant3">
+      <text>나는 계승자, 소신, 첨탑의 아이, Nephiling이라 불려 왔다. 모두 어울리는 이름이지만, 완전하거나 충분한 것은 없다.
+
+        그대와 마찬가지로, 나는 과거의 물결이 현재의 힘으로 수렴한 것이다. 그대와 마찬가지로, 나는 행한 일과 아직 행하지 않은 일을 향한 의지이다.</text>
+    </node>
+    <node ID="CovenantPC" Inherits="Covenant3">
+      <text>누구냐고? 운명과 의지가 그들을 바꾸기 전까지는 하찮은 존재였다. 지금? 아무도 모른다.</text>
+    </node>
+    <node ID="CovenantResheph" Inherits="Covenant3">
+      <text>고대의 지도자들이 스스로를 그렇게 불렀다.</text>
+    </node>
+    <node ID="CovenantLimen" Inherits="Covenant3">
+      <text>나에게 그것들은 이야기일 뿐이다. 그들이 의식에서 그토록 소중히 여기는 경계를 침범하려는 시도를 한 적 없다. 어떤 이들은 그들이 다른 존재들과 다를 바 없는 필멸의 존재라 하고, 외부 결사에 의해 고용되었다고 한다. 다른 이들은 그들이 필멸의 존재가 아니라 믿으며, 또 다른 이들은 그 신비로운 이방인들이 Limen과 아무 관련이 없다고 믿는다.
+
+        누군가 그들을 찾아봐야 할지도 모르겠다.</text>
+    </node>
+    <node ID="CovenantNephilim" Inherits="Covenant3">
+      <text>그들은 살았다.
+
+        이제 단순히 세계의 일부가 되어, 더 이상 대지를 채찍질하는 고행대가 아니라, 그들은 본래의 생물로서 살았다. 그들의 후손이 Qud 위와 아래를 걷고 있을지 모른다. 어쩌면 최초의 존재들이 아직 살아 있을지도. 어쩌면 잠들어 있을지도. 어쩌면 언젠가 다시 분노하여 정체된 세계를 뒤흔들지도 모른다.</text>
+    </node>
+
+    
+
+    <start ID="ReturnWelcome" IfHaveDelimitedState="EndType:Return">
+      <text>이리 오라, 길잡이여. 우리 선조들의 고난에 대해 들으라, 어찌 그것이 오늘날의 자유령으로 이어졌는지를.</text>
+      <choice Target="Return Story">이야기를 들려주십시오.</choice>
+      <choice Target="End">거절해야겠습니다.</choice>
+    </start>
+    <node ID="Return Story">
+      <text>자유령 이전, 마지막 술탄이 안장되기 전, 첨탑이 도전받지도 오르지도 못한 채 우뚝 솟았던 시절에 이야기는 시작된다. 우리 세계를 비우는 데 헌신했던 공허의 일꾼들은 이미 오래전에 사라졌으나, 왕들과 술탄들이 그 당혹스러운 땅을 대신 차지했다. 그들의 영지가 시들어가는 와중에도 그들은 놓지 않았다.
+
+		그들은 서로의 역사를 탐식하여, 요새 밖에는 거의 아무것도 남지 않았다.</text>
+      <choice Target="Return2">...</choice>
+    </node>
+    <node ID="Return2">
+      <text>업적이 시작되었을 때, =name=은(는) 술탄국과 아무런 연이 없었다. 이 고대 지도자들의 통치는 끝났지만, 완전히는 아니었다: 마지막 술탄의 유령이 아직도 첨탑을 지배하며, 지상과 지하의 존재들을 역병으로 괴롭히고 있었다. =name=이(가) 강대해지며 날뛰는 Nephilim에 도전하자, 그들은 공유된 갈등의 원천을 깨닫게 되었다.
+
+        술탄의 통치로부터의 자유를 갈구하며, =name=은(는) Nephilim과 맹약을 맺고 첨탑의 꼭대기에 올라, 그곳에서 청록빛 유령과 대면하여 추방했다.
+
+        그리하여 일은 진행되었다.</text>
+      <choice Target="Return3">...</choice>
+    </node>
+    <node ID="Return3">
+      <text>귀환한 후, =name=은(는) 모든 권력 집중체의 해체와 연합에 참여했다. 새로운 균등화자의 동맹들이 모여 일어서며, 케찰 의회와 그 외 단명한 관리 기구들을 형성했다.
+
+        그 이래로, 우리는 줄어드는 땅 위와 아래에서 위태로운 조화 속에 살아왔다.</text>
+      <choice Target="ReturnWho">당신은 누구시오?</choice>
+      <choice Target="ReturnPC">=name=은 누구입니까?</choice>
+      <choice Target="ReturnFreeholder">Freeholder는 무엇입니까?</choice>
+      <choice Target="ReturnNephilim">Nephilim은 어떻게 되었습니까?</choice>
+      <choice Target="End">감사합니다. 안녕히 계십시오.</choice>
+    </node>
+    <node ID="ReturnWho" Inherits="Return3">
+      <text>나는 계승자, 소신, 첨탑의 아이, Nephiling이라 불려 왔다. 모두 어울리는 이름이지만, 완전하거나 충분한 것은 없다.
+
+        그대와 마찬가지로, 나는 과거의 물결이 현재의 힘으로 수렴한 것이다. 그대와 마찬가지로, 나는 행한 일과 아직 행하지 않은 일을 향한 의지이다.</text>
+    </node>
+    <node ID="ReturnPC" Inherits="Return3">
+      <text>누구냐고? 운명과 의지가 그들을 바꾸기 전까지는 하찮은 존재였다. 그들은 직함 없이 죽었거나, 어쩌면 전혀 죽지 않았을지도 모른다. 이야기는 넘쳐나지만, 지금까지 그것을 부정하거나 확인하러 나선 자는 없다.</text>
+    </node>
+    <node ID="ReturnFreeholder" Inherits="Return3">
+      <text>쿠드의 자유령, 민족 군집과 위원회와 간부회의 얽힌 그물, 상호 좌절과 기념비적 노력으로 평화를 유지하는 연합 점균 도시들.
+
+		자세한 내용이 필요하다면 자유령 사람에게 물어보게. 하지만 하루를 비워두게나.</text>
+    </node>
+
+    <node ID="ReturnNephilim" Inherits="Return3">
+      <text>그들은 살았다.
+
+        이제 단순히 세계의 일부가 되어, 더 이상 대지를 채찍질하는 고행대가 아니라, 그들은 본래의 생물로서 살았다. 그들의 후손이 Qud 위와 아래를 걷고 있다. 어쩌면 최초의 존재들이 아직 살아 있을지도. 어쩌면 잠들어 있다가, 필요할 때 다시 깨어날지도 모른다.</text>
+    </node>
+
+    
+
+    <start ID="StarfarerWelcome" IfHaveDelimitedState="(EndType:Launch OR EndType:Marooned)">
+      <text>이리 오라, 길잡이여. 고대의 여정에 대해 들으라, 별들이 어찌 불렀고 아직도 부르는지를.</text>
+      <choice Target="Starfarer Story">이야기를 들려주십시오.</choice>
+      <choice Target="End">거절해야겠습니다.</choice>
+    </start>
+    <node ID="Starfarer Story">
+      <text>이야기는 =name=의 승천 이전, 첨탑이 도전받지도 올려지지도 않은 채 솟아 있던 시대에서 시작된다. 우리 세계를 비우는 데 몸을 바쳤던 공동화자들은 오래전에 사라졌지만, 오랫동안 통치자들이 그 자리에서 혼란스러운 땅의 소유권을 주장해 왔다. 그들의 영토가 시들어가는 와중에도, 그들은 버텼다.
+
+        왕과 술탄의 시대가 끝날 무렵, 그들의 업적은 거의 남지 않았고, 영광은 더더욱 남지 않았다.</text>
+      <choice Target="Starfarer2">...</choice>
+    </node>
+    <node ID="Starfarer2">
+      <text>시작되었을 때, =name=은(는) 쿠드의 지도자들과 공유하는 나선이 없었으며, 오직 업적과 동맹만으로 이름을 알렸다. =name=에 의해 빼앗기고 구해진 생명은 무수히 많았고, 셀 수 없었으며, 기록에는 일부만 남았다. 그들이 말할 때면, 쿠드의 역병들조차 귀를 기울였다.
+
+		그들의 통치가 끝날 무렵, =name=은(는) 네필림과 협약을 맺어 다시는 쿠드의 생명체들을 괴롭히지 못하게 했다. 그리하여 첨탑의 꼭대기에 올라 고대의 배에 탑승하고, 별먼지 흩뿌려진 광활함을 여행하기 위해 떠났다.</text>
+      <choice Target="Starfarer3">...</choice>
+    </node>
+    <node ID="Starfarer3">
+      <text>수 세기 동안, 우리 중 경청하는 이들은 =name=이(가) 별들로 돌아올 어떤 징조를 예리하게 지켜보았다. 설교하는 이들은 성간 여행자의 임박한 귀환을 선포하니, 잊힌 파섹 너머에서 온 소식과 죽어가는 별들의 마지막 빛을 품고 돌아오리라 했다.
+
+		그 외의 모든 이들은 줄어드는 땅 위와 아래에서 위태로운 조화를 이루며 살았으니, 다음 위대한 역사를 기다리면서.</text>
+      <choice Target="StarfarerWho">당신은 누구시오?</choice>
+      <choice Target="StarfarerPC">=name=은 누구입니까?</choice>
+      <choice Target="StarfarerTravel">정말로 별들을 여행할 수 있습니까?</choice>
+      <choice Target="StarfarerNephilim">Nephilim은 어떻게 되었습니까?</choice>
+      <choice Target="End">감사합니다. 안녕히 계십시오.</choice>
+    </node>
+    <node ID="StarfarerWho" Inherits="Starfarer3">
+      <text>나는 계승자, 소신, 첨탑의 아이, Nephiling이라 불려 왔다. 모두 어울리는 이름이지만, 완전하거나 충분한 것은 없다.
+
+        그대와 마찬가지로, 나는 과거의 물결이 현재의 힘으로 수렴한 것이다. 그대와 마찬가지로, 나는 행한 일과 아직 행하지 않은 일을 향한 의지이다.</text>
+    </node>
+    <node ID="StarfarerPC" Inherits="Starfarer3">
+      <text>과연 누구인가? =name=은(는) 대체 누구였는가? 그토록 작고 먼 존재에 그런 희망과 두려움을 걸어도 되는 것인가? 그 무게를 감당할 수 있을까?</text>
+    </node>
+    <node ID="StarfarerTravel" Inherits="Starfarer3">
+      <text>오, 그럼. 의심하지 말게.
+
+		돌아올 수 있느냐고? 흠. 거기에 문제가 있지.</text>
+    </node>
+    <node ID="StarfarerNephilim" Inherits="Starfarer3">
+      <text>그들은 살았다.
+
+		이제 단순히 세계의 일부가 되어, 더 이상 대지를 채찍질하는 고행의 속옷이 아니라, 있는 그대로의 생명체로서 살았다. 그들의 자손의 후예가 쿠드 위와 아래를 걷고 있다. =name=을(를) 찾아 별들로 올라갔다는 이야기도 있으나, 깊은 곳에서의 잠으로 돌아갔다 해도 그럴듯한 이야기이다.</text>
+    </node>
+
+    
+
+    <start ID="AccessionWelcome" IfHaveDelimitedState="EndType:Accede">
+      <text>이리 오라, 유동하는 정신이여. 이전의 생물들에 대한 이야기를 흡수하라, 그들의 흥망이 어찌 그대의 방랑자 상태로의 승천에 길을 내어주었는지를.</text>
+      <choice Target="Accession Story">블룹, 블롭. (진행합니다.)</choice>
+      <choice Target="End">글럽. (거절해야겠습니다.)</choice>
+    </start>
+    <node ID="Accession Story">
+      <text>이야기는 =name=의 두려운 승천 이전, 첨탑이 도전받지도 올려지지도 않은 채 솟아 있던 시대에서 시작된다. 우리 세계를 비우는 데 몸을 바쳤던 공동화자들은 오래전에 사라졌지만, 오랫동안 통치자들이 그 자리에서 혼란스러운 땅의 소유권을 주장해 왔다. 그들의 영토가 시들어가는 와중에도, 그들은 버텼다.
+
+        그들 중 마지막이 가장 최악이 될 것이었다.</text>
+      <choice Target="Accession2">...</choice>
+    </node>
+    <node ID="Accession2">
+      <text>시작되었을 때, =name=은(는) 쿠드의 지도자들과 공유하는 나선이 없었으며, 오직 피와 공포를 쏟아부어 이름을 알렸다. 그들의 손만으로 헤아릴 수 없는 생명이 빼앗겼으니, 모두 지배와 힘에 대한 태고의 욕망을 채우기 위함이었다.
+
+		아마도 굶주림이 악의로 변했거나, 더 큰 원칙을 받아들였거나, 단순한 권태였을 것이다. 이유가 무엇이든, =name=은(는) 고대의 역병 태생 네필림과 굳건한 동맹을 맺고, 첨탑에 올라, 아래 세계의 운명을 봉인했다.
+
+		선회의 역병이 걷잡을 수 없이 몰아쳤다.</text>
+      <choice Target="Accession3">...</choice>
+    </node>
+    <node ID="Accession3">
+      <text>시간이 흐르며, 동물과 심지어 식물의 지배도 쇠퇴했으니, 그 수가 질병과 학살과 쇠약에 쓰러졌기 때문이다. 더 회복력 있는 단순한 생명이 Qud의 옛 통치자들이 남긴 복잡성을 이어받았다.
+
+        남은 소수의 신경 존재들이 우리의 이야기를 우리의 조언을 구하기 적합하다 여긴 새 생명에게 전해주었으니, 사라진 자들의 집단적 운명을 기억하기 위함이다. 그대들에게도 자신만의 =name=이(가) 있을 것인가, 아니면 이전의 존재들을 진정으로 넘어선 것인가?</text>
+      <choice Target="AccessionWho">당신은 누구시오?</choice>
+      <choice Target="AccessionPC">=name=은 누구입니까?</choice>
+      <choice Target="AccessionNervous">신경질적인 자들은 멸종했다고 생각했습니다.</choice>
+      <choice Target="AccessionNephilim">Nephilim은 어떻게 되었습니까?</choice>
+      <choice Target="End">감사합니다. 안녕히 계십시오.</choice>
+    </node>
+    <node ID="AccessionWho" Inherits="Accession3">
+      <text>나는 역사의 찌꺼기, 아무것도 물려받지 못한 상속자, 불탄 책의 여백에 적힌 주석에 불과하다.
+
+		이 날을 목격할 때까지 살아남았다는 것이 나를 경외케 한다. 참으로 비범한 일이다.</text>
+    </node>
+    <node ID="AccessionPC" Inherits="Accession3">
+      <text>과연 누구인가? =name=은(는) 대체 누구였는가? 그토록 작고 먼 존재에 그런 희망과 두려움을 걸어도 되는 것인가? 그 무게를 감당할 수 있을까?</text>
+    </node>
+    <node ID="AccessionNervous" Inherits="Accession3">
+      <text>모든 가능성은 가장 깊은 벌집동굴과 미궁 속에 자리 잡고 있으며, 신경 생명체조차 질기다. 어쩌면 바로 이 순간, 이끼 돼지 한 마리가 억겁 만에 처음으로 물을 마시고 있을지도 모른다.</text>
+    </node>
+    <node ID="AccessionNephilim" Inherits="Accession3">
+      <text>그들은 그 역할을 훌륭히 해냈고, 한때 권력 속에서 살았다.
+
+        =name=이(가) Qud의 생명에 정한 운명에서 자신들은 면제될 것이라는 환상이 있었다면, 그것은 분명 거대한 존재들 자신보다 먼저 죽었을 것이다. 어쩌면 그들은 땅속으로 숨어 살아남았을지도. 어쩌면 그들의 후손이 이어졌을지도 모른다.</text>
+    </node>
+  </conversation>
+  
+	
+	<conversation ID="Fool">
+		
+
+		<start ID="CovenantWelcome" IfHaveDelimitedState="EndType:Covenant">
+			<text>때가 가득 찬 어느 날
+				소용돌이의 바보와 방랑자가 만났다.
+				바보는 Resheph들의 이야기를 꺼냈고,
+				방랑자는 앉아 들었다.</text>
+			<choice Target="Covenant Story">이야기를 들려주십시오.</choice>
+			<choice Target="End">거절해야겠습니다.</choice>
+		</start>
+		<node ID="Covenant Story">
+			<text>Limen 이전, 승천 이전,
+				첨탑이 외로이 굳건히 솟아 있을 때,
+				Resheph들이 텅 빈 땅을 다스렸으니
+				서로를 삼키며
+				마음대로.
+
+				Qud에는 신비로운 경계도,
+				이끌어주는 손도 없었다 --
+				적어도, 주민들이 잡을 수 있는 것은.
+				그렇게 그들은 알았다.</text>
+			<choice Target="Covenant2">...</choice>
+		</node>
+		<node ID="Covenant2">
+			<text>아무도 =name=을(를) 환영하지 않았고
+				=name=도 아무를 환영하지 않았으나
+				말과 칼날로
+				행위와 무시로
+				그들은 떨어져 우뚝 섰다
+
+				소용돌이를 밀어내기 위해,
+				Nephil의 이코르를 흘리기 위해
+				그들은 첨탑에 올라
+				Resheph 통치를 잠재웠다.</text>
+			<choice Target="Covenant3">...</choice>
+		</node>
+		<node ID="Covenant3">
+			<text>땅 위의 침묵만이
+				어둠에 갇힌 우리를 맞이했으니
+				Knights Liminal이
+				소금 위에 선을 긋기 전까지.
+
+				알지 못하고, 보지 못하며,
+				오직 알고자 기다릴 뿐
+				다음에 누가 우리를 돌릴 것인지를.</text>
+			<choice Target="CovenantWho">당신은 누구시오?</choice>
+			<choice Target="CovenantPC">=name=은 누구입니까?</choice>
+			<choice Target="CovenantResheph">Resheph란 무엇입니까?</choice>
+			<choice Target="CovenantLimen">Limen은 무엇입니까? 경계의 기사들은요?</choice>
+			<choice Target="End">감사합니다. 안녕히 계십시오.</choice>
+		</node>
+		<node ID="CovenantWho" Inherits="Covenant3">
+			<text>누구, 나?
+				한낱 바보라네, 트라 라,
+				한낱 잔존의 조각.
+
+				한낱 버려진 것,
+				한낱 광기,
+				한낱 메아리치는 소용돌이.</text>
+		</node>
+		<node ID="CovenantPC" Inherits="Covenant3">
+			<text>운명의 인물도 아니고,
+				혈통의 인물도 아니고,
+				중요한 인물도 아니었으나,
+				갑자기, 이 모든 것을 가진 존재가 되었다.
+
+				=name=은(는) 우리가 깨어날 수 없는 꿈이다.</text>
+		</node>
+		<node ID="CovenantResheph" Inherits="Covenant3">
+			<text>Resheph, 권력의 보유자,
+				영혼의 통치자,
+				땅의 소유자,
+				단독으로 이루어진 권위.</text>
+		</node>
+		<node ID="CovenantLimen" Inherits="Covenant3">
+			<text>아, 넘어서는 안 되는
+				선을 넘어
+				미지의 갈망하는 곳으로!
+				아, 구호와 무기와
+				짓누르는 암호에
+				가로막히는 것이여.
+				아 결사여! 아 결사가 아닌 것이여?
+				나는 그저 보고 싶을 뿐!</text>
+		</node>
+
+		
+		
+		<start ID="ReturnWelcome" IfHaveDelimitedState="EndType:Return">
+			<text>때가 가득 찬 어느 날
+				소용돌이의 바보와 방랑자가 만났다.
+				바보는 지난 여정자들의 이야기를 꺼냈고,
+				방랑자는 앉아 들었다.</text>
+			<choice Target="Return Story">이야기를 들려주십시오.</choice>
+			<choice Target="End">거절해야겠습니다.</choice>
+		</start>
+		<node ID="Return Story">
+			<text>자유령 이전, 승천 이전,
+				첨탑이 외로이 굳건히 솟아 있을 때,
+				왕들과 술탄들이 텅 빈 땅을 다스렸으니
+				서로를 삼키며
+				마음대로.</text>
+			<choice Target="Return2">...</choice>
+		</node>
+		<node ID="Return2">
+			<text>아무도 =name=을(를) 환영하지 않았고
+				=name=도 아무를 환영하지 않았으나
+				말과 칼날로
+				행위와 무시로
+				그들은 옛 통치에 맞섰다.
+
+				소용돌이를 밀어내기 위해,
+				Nephil의 이코르를 흘리기 위해
+				그들은 첨탑에 올라
+				잔재를 잠재웠다.</text>
+			<choice Target="Return3">...</choice>
+		</node>
+		<node ID="Return3">
+			<text>귀환한 후
+				=name=이(가) 쟁취한 권력을
+				그들은 동맹들에게
+				분배하고 해체하라 했다.
+
+				자유민들,
+				새로운 공동화자들,
+				케찰 의회,
+				그리고 그 밖의 바보들.
+
+				셀 수 없는 투쟁의 세월
+				수 세기의 변화.
+				우리는 기억할 수 있는 것을 기억하며
+				새것과 옛것이 죽는 것을 지켜본다.</text>
+			<choice Target="ReturnWho">당신은 누구시오?</choice>
+			<choice Target="ReturnPC">=name=은 누구입니까?</choice>
+			<choice Target="ReturnFreeholder">Freeholder는 무엇입니까?</choice>
+			<choice Target="End">감사합니다. 안녕히 계십시오.</choice>
+		</node>
+		<node ID="ReturnWho" Inherits="Return3">
+			<text>누구, 나?
+				한낱 바보라네, 트라 라,
+				한낱 잔존의 조각.
+
+				한낱 버려진 것,
+				한낱 광기,
+				한낱 메아리치는 소용돌이.</text>
+		</node>
+		<node ID="ReturnPC" Inherits="Return3">
+			<text>운명의 인물도 아니고,
+				혈통의 인물도 아니고,
+				중요한 인물도 아니었으나,
+				그들이 돌아올 때까지
+				그리고 미래의 실현까지.
+
+				=name=은(는) 기억 속의 신전이니
+				희망이 걸리고
+				분노가 펼쳐지는 곳.
+
+				너무 거대하여 현실일 수 없고,
+				너무 근본적이라 아닐 수 없고,
+				너무 모순적이라 존재한 적 없었을 것이다.</text>
+		</node>
+		<node ID="ReturnFreeholder" Inherits="Return3">
+			<text>자유민:
+				다투는 자; 말다툼꾼.
+
+				자유민:
+				동류 사이의 동류
+				동류 사이의 동류 사이의
+				그렇게 모자이크처럼 이어져
+				소리를 지르지 않으면 들리지 않을 때까지.</text>
+		</node>
+
+		
+		
+		<start ID="StarfarerWelcome" IfHaveDelimitedState="(EndType:Launch OR EndType:Marooned)">
+			<text>때가 가득 찬 어느 날
+				소용돌이의 바보와 방랑자가 만났다.
+				바보는 땅에서 하늘까지 아우르는 이야기를 꺼냈고,
+				방랑자는 앉아 들었다.</text>
+			<choice Target="Starfarer Story">이야기를 들려주십시오.</choice>
+			<choice Target="End">거절해야겠습니다.</choice>
+		</start>
+		<node ID="Starfarer Story">
+			<text>오늘날의 투쟁 이전,
+				첨탑이 외로이 굳건히 솟아 있을 때,
+				술탄들이 텅 빈 땅을 다스렸으니
+				서로를 삼키며
+				마음대로.</text>
+			<choice Target="Starfarer2">...</choice>
+		</node>
+		<node ID="Starfarer2">
+			<text>아무도 =name=을(를) 환영하지 않았고
+				=name=도 아무를 환영하지 않았으나
+				말과 칼날로
+				행위와 무시로
+				그들은 옛 통치에 맞섰다.
+
+				소용돌이를 밀어내기 위해,
+				Nephil의 이코르를 흘리기 위해
+				그들은 첨탑에 올라
+				잔재를 잠재웠다.</text>
+			<choice Target="Starfarer3">...</choice>
+		</node>
+		<node ID="Starfarer3">
+			<text>비록 =name=은(는) 떠났으나
+				우리의 기억은 남았고
+				역병은 물러갔으며
+				많은 이가 기뻐했다.
+
+				오늘날까지
+				눈은 별을 향하니
+				우리의 항성 여행자가
+				돌아오기로 했다는 징조를 찾아서.
+
+				셀 수 없는 투쟁의 세월
+				수 세기의 변화.
+				우리는 기억할 수 있는 것을 기억하며
+				새것과 옛것이 죽는 것을 지켜본다.</text>
+			<choice Target="StarfarerWho">당신은 누구시오?</choice>
+			<choice Target="StarfarerPC">=name=은 누구입니까?</choice>
+			<choice Target="StarfarerTravel">정말로 별들을 여행하는 것이 가능합니까?</choice>
+			<choice Target="End">감사합니다. 안녕히 계십시오.</choice>
+		</node>
+		<node ID="StarfarerWho" Inherits="Starfarer3">
+			<text>누구, 나?
+        한낱 바보라네, 트라 라,
+        한낱 잔존의 조각.
+
+        한낱 버려진 것,
+        한낱 광기,
+        한낱 메아리치는 소용돌이.</text>
+		</node>
+		<node ID="StarfarerPC" Inherits="Starfarer3">
+			<text>항성 여행자, 전령, 파괴자,
+				두려움과 경외의 대상,
+				구원자이자 버린 자.
+
+				=name=은(는) 언젠가 우리가 깨어날 꿈이다.</text>
+		</node>
+		<node ID="StarfarerTravel" Inherits="Starfarer3">
+			<text>누가 상관하나?
+
+				할 수 있을까? 아마.
+				내가? 분명 못하지.
+				당신이? 글쎄.
+				증명해 보라.</text>
+		</node>
+
+		
+
+		<start ID="AccessionWelcome" IfHaveDelimitedState="EndType:Accede">
+			<text>모든 것이 산산조각 난 후 어느 날,
+				소용돌이의 바보가 현명한 젤리를 만났다.
+				그들은 세계의 잔해 속에 앉아
+				바보는 오늘날의 이야기를 들려주었다.</text>
+			<choice Target="Accession Story">블룹, 블롭. (진행합니다.)</choice>
+			<choice Target="End">글럽. (거절해야겠습니다.)</choice>
+		</start>
+		<node ID="Accession Story">
+			<text>모든 것이 녹아내리기 전,
+				첨탑이 외로이 굳건히 솟아 있을 때,
+				생물들이 텅 빈 땅을 다스렸으니
+				서로를 삼키며
+				마음대로.</text>
+			<choice Target="Accession2">...</choice>
+		</node>
+		<node ID="Accession2">
+			<text>아무도 =name=을(를) 환영하지 않았고
+				=name=도 아무를 환영하지 않았으나
+				말과 칼날로
+				행위와 무시로
+				그들은 동족에 맞섰다.
+
+				소용돌이를 밀어내기 위해,
+				Nephil의 이코르를 흘리기 위해
+				그들은 첨탑에 올라
+				거대한 배신을 저질렀다.
+
+				불가능한 규모의 죽음이 군림했고
+				우리 신경 존재들은 쓰러졌으며,
+				소용돌이가 우리를 삼킬 때
+				우리는 마지막까지 노래했다.</text>
+			<choice Target="Accession3">...</choice>
+		</node>
+		<node ID="Accession3">
+			<text>하지만 일부는 남았으니
+				벌집동굴과 금고 속에서,
+				우리 신경 존재들은
+				후계자들이 싹트는 것을 지켜보았다:
+
+				그대들 유공충이여, 그대들 규조류여,
+				그대들 찌꺼기꽃과 아가미갓버섯이여,
+				그대들 단세포와 점균 도시여.
+				영광스럽고 빛나며 떠오르는
+				우리의 시들어가는 그림자 속에서.</text>
+			<choice Target="AccessionWho">당신은 누구시오?</choice>
+			<choice Target="AccessionPC">=name=은 누구입니까?</choice>
+			<choice Target="AccessionNervous">신경질적인 자들은 멸종했다고 생각했습니다.</choice>
+			<choice Target="End">감사합니다. 안녕히 계십시오.</choice>
+		</node>
+		<node ID="AccessionWho" Inherits="Accession3">
+			<text>나는 바보의 사체
+				유쾌한 박테리아 극단에 의해
+				뛰고 춤추게 된.
+
+				내가 걷는 모습이 마음에 드는가?
+				내가 말하는 모습이 마음에 드는가?
+				내 얼굴이
+				소금으로 부서지는 것이 마음에 드는가?</text>
+		</node>
+		<node ID="AccessionPC" Inherits="Accession3">
+			<text>결정자이자 운명.
+
+				어떤 종류의 존재라기보다
+				자연의 것에 가까운.
+
+				그 안의 어떤 것이라기보다
+				우리 존재의 맥락에 가까운.</text>
+		</node>
+		<node ID="AccessionNervous" Inherits="Accession3">
+			<text>아마 그렇겠지,
+				아마 그렇겠지.
+				뜨거운 흙 속에서 꿈틀거리는 것은?
+				편모?
+				
+				아니면 꼬리일 수도?</text>
+		</node>
+
+	</conversation>  
+
+  
+  <conversation ID="BarathrumHologram">
+    <node ID="Start">
+      <text>오? 뭐.. 내가 응집하고 있나? 신기하군! 내 수첩을 가져와야겠어. 하지만, 오...</text>
+      <choice ID="WaterRitualChoice" Load="Remove" />
+      <choice ID="Trade" Load="Remove" />
+      <choice GotoID="End">...</choice>
+    </node>
+  </conversation>
+  <conversation ID="ArchonHologram">
+    <node ID="Start">
+      <text>*판독값*
+
+        *판독값*
+
+        *판독값*</text>
+      <choice ID="WaterRitualChoice" Load="Remove" />
+      <choice ID="Trade" Load="Remove" />
+      <choice GotoID="End">...</choice>
+    </node>
+  </conversation>
+  <conversation ID="RebekahHologram">
+    <node ID="Start">
+      <text>아하, 그대의 환영 마법은 아발론의 피부가 떠는 것의 수정 형제자매로다. 그리고, 그대는? 달의 왕??</text>
+      <choice ID="WaterRitualChoice" Load="Remove" />
+      <choice ID="Trade" Load="Remove" />
+      <choice GotoID="End">...</choice>
+    </node>
+  </conversation>
+
+  <conversation ID="SpokenIonic">
+    <node ID="Start">
+      <text>지성? 이봐!
+        시간이 흐르는군, 마지막으로 교감한 이래, 내 장식물들이 말하고 있어.
+        Codex 사람들 사이에서 국가 간 권력이 선포되었나?</text>
+      <choice ID="Who" Target="Ionic">당신은 누구입니까? 무엇입니까?</choice>
+      <choice ID="Where" Target="Temple">이곳은 어디입니까?</choice>
+      <choice ID="Spindle" Target="Journey">이곳에 오기 위해 Spindle을 올랐습니다.</choice>
+      <choice ID="Translation" Target="Codex">'주간 권력'이 무엇입니까? '코덱스 사람들'은 누구입니까?</choice>
+      <choice ID="Bye" Target="End">살고... 마십니까?</choice>
+    </node>
+
+    <node ID="Ionic" Inherits="Start">
+      <text>모이고 엮여, 나는 {{zetachrome|공유결합 심장을 통해 발화된 이온}}으로 나타난다.
+        무엇이... 무엇들이. 나는 못하겠다.
+        입구를 찾지 못하니, 나머지는 집에 있다. 그대에게 실 하나를.</text>
+      <choice GotoID="Greet">안녕하십니까, Spoken Ionic Through Covalency Heart. 저는 =name=입니다.</choice>
+      <choice GotoID="Adornments">보석이 마음에 듭니다.</choice>
+    </node>
+
+    <node ID="Greet" Inherits="Start">
+      <text>기쁘게!</text>
+    </node>
+    <node ID="Adornments" Inherits="Start">
+      <text>오래전 닳아버린 관대함에 몸이 떨린다! 꾸미라, 꾸며.
+        그대의 장식물도 매혹적이군, 이봐!
+        별들을 가로지르는 시간의 폭이 그것을 통해 빛난다.</text>
+    </node>
+    <node ID="Journey" Inherits="Start">
+      <text>이 생물이 흙에서 나타나, 장식을 말한다.
+        선이 닫혔다고 생각했기에 조심스레 흔들린다.
+        우리의 기억은 집에. 실.</text>
+    </node>
+    <node ID="Codex" Inherits="Start">
+      <text>내 장식물에 의하면, 아래의 매트와 그 집의 소유자들이다.
+        아닌가? 실 하나를 바친다. 이 입구는 집에 있을 수 있다.
+        모든 시간을 가지고도 입구-집이 없으니, 우리는 혼란스럽다.</text>
+      <choice ID="Howlong" Target="Time">얼마나 오래 여기 계셨습니까?</choice>
+    </node>
+
+    <node ID="Time" Inherits="Start">
+      <text>그대에게 실을 바쳐야겠다.
+        이 입구를 갖고 있지 않으니, 집에 두고 왔기에.
+        최소한... 백 Codex 주기 이상. 만 이하.
+        큰 폭이다. 이것을 위해 그대에게 실을 바친다.</text>
+    </node>
+
+    <node ID="Temple" Inherits="Start">
+      <text>이봐! 이것은 가지고 있다.
+        우리는 {{M|Star Orchid Temple}}에 뿌리를 내렸으니, 더 많은 것 중 하나.
+        여기서 꼬리 기수들의 타는 먼지를, 모자이크의 무한함을 기린다.</text>
+      <choice UseID="Howlong" />
+      <choice ID="Else" Target="Others">여기 다른 누군가가 있습니까?</choice>
+    </node>
+
+    <node ID="Others">
+      <text>신전 '여기'에 대해서는 그렇다:
+        {{zetachrome|공유결합 심장을 통해 발화된 이온}}이 여기에.
+        그리고, 그대도.</text>
+      <choice ID="Whoelse" Target="Quay">그런데 Quay에 다른 누군가가 있습니까?</choice>
+    </node>
+    <node ID="Quay" Inherits="Start">
+      <text>장식을 바치며,
+        이것에 대한 입구는 없다.
+        내 매트는 작다.</text>
+      <choice UseID="Howlong" />
+    </node>
+  </conversation>
+
+</conversations>

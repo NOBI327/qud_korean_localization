@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<genotypes>
+
+  <genotype Name="Mutated Human" Load="Merge" DisplayName="변이인">
+    <stat Name="Strength" ChargenDescription="{{W|힘}} 점수는 근접 공격으로 상대의 갑옷을 얼마나 효과적으로 관통하는지, 근접 공격의 피해량, 강제 이동에 대한 저항력, 그리고 적재 용량을 결정합니다."/>
+    <stat Name="Agility" ChargenDescription="{{W|민첩}} 점수는 근접 및 원거리 무기의 정확도와 공격을 회피하는 능력을 결정합니다."/>
+    <stat Name="Toughness" ChargenDescription="{{W|강인함}} 점수는 HP, 자연 치유 속도, 그리고 독과 질병에 대한 저항력을 결정합니다."/>
+    <stat Name="Intelligence" ChargenDescription="{{W|지능}} 점수는 스킬 포인트 수와 유물을 분석하는 능력을 결정합니다."/>
+    <stat Name="Willpower" ChargenDescription="{{W|의지력}} 점수는 활성 능력의 쿨다운을 조정하고, 정신 공격에 대한 저항력을 결정하며, 자연 치유 속도를 조정합니다."/>
+    <stat Name="Ego" ChargenDescription="{{W|자아}} 점수는 정신 변이의 효능, 상인과의 흥정 능력, 그리고 다른 생물의 의지를 지배하는 능력을 결정합니다."/>
+    <extrainfo Load="Replace">돌연변이</extrainfo>
+    <extrainfo Load="Replace">보통 수준의 초기 능력치</extrainfo>
+    <extrainfo Load="Replace">{{C|푸투스 템플러}}와 평판 -600</extrainfo>
+  </genotype>
+
+  <genotype Name="True Kin" Load="Merge" DisplayName="순혈종">
+    <stat Name="Strength" ChargenDescription="{{W|힘}} 점수는 근접 공격으로 상대의 갑옷을 얼마나 효과적으로 관통하는지, 근접 공격의 피해량, 강제 이동에 대한 저항력, 그리고 적재 용량을 결정합니다."/>
+    <stat Name="Agility" ChargenDescription="{{W|민첩}} 점수는 근접 및 원거리 무기의 정확도와 공격을 회피하는 능력을 결정합니다."/>
+    <stat Name="Toughness" ChargenDescription="{{W|강인함}} 점수는 HP, 자연 치유 속도, 그리고 독과 질병에 대한 저항력을 결정합니다."/>
+    <stat Name="Intelligence" ChargenDescription="{{W|지능}} 점수는 스킬 포인트 수와 유물을 분석하는 능력을 결정합니다."/>
+    <stat Name="Willpower" ChargenDescription="{{W|의지력}} 점수는 활성 능력의 쿨다운을 조정하고, 정신 공격에 대한 저항력을 결정하며, 자연 치유 속도를 조정합니다."/>
+    <stat Name="Ego" ChargenDescription="{{W|자아}} 점수는 상인과의 흥정 능력과 다른 생물의 의지를 지배하는 능력을 결정합니다."/>
+    <extrainfo Load="Replace">높은 초기 능력치</extrainfo>
+    <extrainfo Load="Replace">사이버네틱 이용 가능</extrainfo>
+    <extrainfo Load="Replace">레벨당 추가 스킬 포인트 {{C|20}}</extrainfo>
+    <extrainfo Load="Replace">출신 아콜로지에 따른 추가 저항</extrainfo>
+    <extrainfo Load="Replace">로봇 질책 가능</extrainfo>
+  </genotype>
+
+</genotypes>

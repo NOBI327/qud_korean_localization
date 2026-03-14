@@ -1,2 +1,7 @@
 *.ttf
 *.zip
+__pycache__/
+*.pyc
+docs/SS/
+.claude/
+desktop.ini

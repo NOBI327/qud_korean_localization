@@ -1,37 +1,456 @@
-<?xml version="1.0" encoding="utf-8" ?>
+<?xml version='1.0' encoding='utf-8'?>
 <quests>
-    <quest Name="What's Eating the Watervine?"
-            DisplayName="무엇이 수중덩굴을 갉아먹고 있나?"
-            DisplayAccomplishment="당신은 씹어먹힌 물덩굴의 수수께끼를 풀고 조파 마을 사람들에게 기르쉬에 대해 경고했습니다." 
-            DisplayHagiograph="=year=년 =month=월, =name=은 크롬 아치를 지나 기르쉬 무리들을 물리치고 시들어가는 농작물을 치료했습니다."
-            DisplayGospel="붉은 바위에서의 전투에서, =name= fought the combined girshling and baboon forces to liberate the villagers of Joppa. In =player.t's= honor they &lt;spice.history.gospels.Celebration.LateSultanate.!random&gt;.">
-        <step Name="Travel to Red Rock" DisplayName="붉은 바위로 이동하세요.">
-            <text>조파에서 북쪽으로 두 파라상을 여행하여 붉은 바위로 이동하세요.</text>
-        </step>
-        <step Name="Find the Vermin" DisplayName="해충을 찾으세요.">
-            <text>조파의 수중덩굴을 갉아먹는 생물들을 찾으세요.</text>
-        </step>
-        <step Name="Get a Corpse" DisplayName="시체를 가져오세요.">
-            <text>생물 중 하나의 시체를 수집하세요.</text>
-        </step>
-        <step Name="Return with the Corpse" DisplayName="시체를 가지고 돌아가세요.">
-            <text>수중덩굴 해충의 시체를 가지고 조파로 돌아가세요.</text>
-        </step>
-    </quest>
+  
+  <quest Name="물덩굴을 먹어치우는 것은?" Factions="Joppa" Reputation="200" Level="1" Achievement="ACH_COMPLETE_WATERVINE" Accomplishment="너는 씹어먹힌 워터바인의 수수께끼를 풀고 조파 마을 사람들에게 기르시의 위험을 경고했다." Hagiograph="=year=년 =month=월에, =name=은 크롬 아치 아래를 걸으며 기르시링 무리를 물리치고 시들어가는 작물을 치유했다." HagiographCategory="DoesSomethingRad" Gospel="피비린내 나는 레드 록 전투에서, =name=은 조파 마을 사람들을 해방시키기 위해 기르시링과 바붕의 연합군과 싸웠다. =player.t's= 명예를 기려 그들은 &lt;spice.history.gospels.Celebration.LateSultanate.!random&gt;했다.">
 
-    <quest Name="Fetch Argyve a Knickknack" 
-            DisplayName="아르기브를 위한 장신구 가져오기" 
-         DisplayAccomplishment="당신은 장신구를 노인에게 가져다주었습니다."
-         DisplayHagiograph="물과 덩굴의 사원 안에서, =name=은 노인에게 크롬의 가치를 가르쳤습니다."
-         DisplayGospel="&lt;spice.elements.entity$elements[random].weddingConditions.!random.capitalize&gt;, =name=은 Tinkers' Guild와의 우정을 Argyve를 기쁘게 함으로써 굳혔습니다.">
+    <step Name="레드 록으로 여행" XP="50">
+      <text>조파에서 북쪽으로 두 파라상을 여행하여 붉은 바위로 이동하세요.</text>
+    </step>
+
+    <step Name="해충 찾기" XP="100">
+      <text>조파의 수중덩굴을 갉아먹는 생물들을 찾으세요.</text>
+    </step>
+
+    <step Name="시체 수집" XP="100">
+      <text>생물 중 하나의 시체를 수집하세요.</text>
+    </step>
+
+    <step Name="시체와 함께 돌아가기" XP="750">
+      <text>수중덩굴 해충의 시체를 가지고 조파로 돌아가세요.</text>
+    </step>
+
+  </quest>
+ 
+  <quest Name="Indrix 일으키기" Level="20" Factions="Kyakukya,Wardens" Reputation="100" Hagiograph="오 은혜여! =name=은 무성한 정글에서 검은 유리 조각을 회수하여 그것이 전력을 공급하는 기계 염소에게 돌려주었다." HagiographCategory="FindsObject" Gospel="키아쿠키아 근처의 정글을 방황하는 동안, =name=은 =player.subjective=가 어둠의 별을 공전하고 그 거대한 강착 원반에 자아의 구성 요소가 쌓여 있는 꿈을 꾸었다. 그때부터, =name=은 =player.possessive= 몸에 별 없는 삼각 프리즘을 지니고 다녔다.">
     
-    <step Name="Find a Knickknack" DisplayName="장신구를 찾으세요.">
+    <step Name="마몬 소울드링커 찾기" XP="1000">
+      <text>염소족 마을로 여행하여 마몬 소울드링커를 찾으세요.</text>
+    </step>
+
+    <step Name="아마란틴 프리즘 회수" XP="3250">
+      <text>아마란틴 프리즘을 워든 인드릭스에게 돌려주세요.</text>
+    </step>
+
+  </quest>
+
+  <quest Name="아르자이브에게 장신구 가져다주기" Level="3" System="ArgyveKnicknackSystem" Accomplishment="너는 한 노인을 위해 장식품을 가져왔다." Hagiograph="물과 덩굴의 신전 안에서, =name=은 한 노인에게 크롬의 가치를 가르쳤다." HagiographCategory="Trysts" Gospel="&lt;spice.elements.entity$elements[random].weddingConditions.!random.capitalize&gt;, =name=은 아르기브와 결혼하여 틴커 길드와 =player.possessive= 우정을 굳건히 했다.">
+    
+    <step Name="장식품 찾기" XP="0">
       <text>조파 주변 지역에서 유물을 찾으세요.</text>
     </step>
 
-    <step Name="Return to Argyve" DisplayName="아르기브에게 돌아가세요.">
+    <step Name="아르기브에게 돌아가기" XP="75">
       <text>유물을 아르기브에게 가져가세요.</text>
     </step>
 
+  </quest>
+
+  <quest Name="아르자이브에게 장신구 하나 더 가져다주기" Level="5" System="ArgyveAnotherKnicknackSystem" Accomplishment="너는 한 노인을 위해 또 다른 장식품을 가져왔다." Hagiograph="높은 소금 태양 아래 강철의 그림자 속에서, =name=은 한 노인에게 크롬의 가치를 가르쳤다." HagiographCategory="Trysts" Gospel="&lt;spice.elements.entity$elements[random].weddingConditions.!random.capitalize&gt;, =name=은 아르기브와 두 번째로 결혼하여 틴커 길드와 =player.possessive= 우정을 굳건히 했다.">
+
+    <step Name="또 다른 장식품 찾기" XP="0">
+			<text>조파 주변 지역에서 또 다른 유물을 찾으세요.</text>
+    </step>
+
+    <step Name="아르기브에게 돌아가기" XP="150">
+      <text>유물을 가지고 아르기브에게 돌아가세요.</text>
+    </step>
+
+  </quest>
+
+  <quest Name="위어드와이어 도관... 유레카!" Level="7" System="WeirdwireConduitSystem" Accomplishment="네 도움으로, 아르기브는 이상한 신호를 감지했다." Achievement="ACH_WEIRDWIRE_CONDUIT" Hagiograph="습지의 후원으로, =name=은 위어드와이어 컨듀이트를 발명하고 숨겨진 신호를 감지했다." HagiographCategory="CreatesSomething" Gospel="조파 오아시스 마을 근처의 외딴 작업장에서, =name=과 =player.possessive= 제자 아르기브는 두드리는 드럼과 타는 듯한 와이어의 존재를 불러일으키는 장치를 발명했다. 그들은 그것을 위어드와이어 컨듀이트라고 명명했다.">
+    
+    <step Name="200피트의 와이어 찾기" XP="0">
+      <text>조파 동쪽의 녹 웰에서 200피트의 와이어를 찾으세요.</text>
+    </step>
+
+    <step Name="아르기브에게 돌아가기" XP="500">
+      <text>와이어를 아르기브에게 전달하세요.</text>
+    </step>
+  </quest>
+
+  <quest Name="바라스룸을 위한 성가" Level="10" Accomplishment="너는 그릿 게이트의 그들의 영지에서 바라트루마이트들과 대화했다." Hagiograph="=name=은 땅 아래에 사는 평화로운 퀼베어들을 위한 찬송가를 쓰고 불렀다." HagiographCategory="CreatesSomething" Gospel="서쪽 정글을 배회하는 동안, =name=은 비밀 의식을 행하는 우르시브 일족을 만났다. =player.t's= 원반 같은 눈 때문에, 그들은 =name=을 그들의 무리에 받아들이고 =player.objective=에게 그들의 비밀을 가르쳤다.">
+
+    <step Name="그릿 게이트로 여행" XP="500">
+      <text>조파 북동쪽의 폐허가 된 지하 게이트로 여행하세요.</text>
+    </step>
+
+    <step Name="바라트루마이트 영지 찾기" XP="250">
+      <text>그릿 게이트 내의 바라트루마이트 영지를 찾아라</text>
+    </step>
+
+    <step Name="바라트루마이트들과 대화" XP="500">
+      <text>아르기브의 이상한 신호에 대해 바라트루마이트들에게 물어보라.</text>
+    </step>
+  </quest>
+
+  <quest Name="소음 속의 신호" Level="10" Accomplishment="너는 그릿 게이트의 그들의 영지에서 바라트루마이트들과 대화했다." Hagiograph="=name=은 땅 아래에 사는 평화로운 퀼베어들을 위한 찬송가를 쓰고 불렀다." HagiographCategory="CreatesSomething" Gospel="서쪽 정글을 배회하는 동안, =name=은 비밀 의식을 행하는 우르시브 일족을 만났다. =player.t's= 원반 같은 눈 때문에, 그들은 =name=을 그들의 무리에 받아들이고 =player.objective=에게 그들의 비밀을 가르쳤다.">
+
+    <step Name="그릿 게이트로 여행" XP="500">
+      <text>서쪽 정글의 폐허가 된 지하 게이트로 여행하세요.</text>
+    </step>
+
+    <step Name="바라트루마이트 영지 찾기" XP="250">
+      <text>그릿 게이트 내의 바라트루마이트 영지를 찾아라</text>
+    </step>
+
+    <step Name="바라트루마이트들과 대화" XP="500">
+      <text>이상한 신호에 대해 바라트루마이트들에게 물어보라.</text>
+    </step>
+  </quest>
+
+  <quest Name="기꺼운 마음 그 이상" Level="10" BonusAtLevel="12,18" System="WillingSpiritSystem" Factions="Barathrumites" Reputation="100" Accomplishment="너는 골고타를 용감하게 헤쳐나가고 바라트루마이트들에게 네 실력을 보여주었다." Achievement="ACH_WILLING_SPIRIT" Hagiograph="=year=년 =month=월에, =name=은 골고타의 쓰레기 슈트에서 승리하고 점액에 목욕한 채로 나타났다." HagiographCategory="DoesSomethingRad" Gospel="서쪽 정글을 배회하는 동안, =name=은 비밀 의식을 행하는 우르시브 일족을 만났다. =player.t's= 역겨운 점액 코팅 때문에, 그들은 =name=을 그들의 무리에 받아들이고 =player.objective=에게 그들의 비밀을 가르쳤다.">
+         
+    <step Name="골고타로 여행" XP="250">
+      <text>그릿 게이트 북쪽의 거대한 동굴 골고타로 여행하세요.</text>
+    </step>
+
+    <step Name="고장난 웨이드로이드 찾기" XP="250">
+      <text>골고타의 폐허 속에서 고장난 웨이드로이드를 찾으세요.</text>
+    </step>
+
+    <step Name="웨이드로이드 수리" XP="250">
+      <text>웨이드로이드를 수리하라.</text>
+    </step>
+
+    <step Name="그릿 게이트로 돌아가기" XP="1250">
+      <text>웨이드로이드를 가지고 그릿 게이트로 돌아가 바라트루마이트들과 대화하세요.</text>
+    </step>
+  </quest>
+
+  <quest Name="신호 해독" Level="15" Factions="Barathrumites" Reputation="100" Accomplishment="너는 바위 신전의 바이틸과 대화하고 신비로운 신호를 해독했다." Achievement="ACH_DECODING_SIGNAL" Hagiograph="용맹함! =name=은 열린 빙붕의 입으로 뛰어들어 신성한 언어로 바이틸과 대화했다." HagiographCategory="AppeasesBaetyl" Gospel="거대한 얼음 덩어리 안에서, =name=은 번쩍이는 바이틸과 속삭이는 맹세를 교환하여 메카니미스트들과 =player.possessive= 우정을 굳건히 했다.">
+         
+    <step Name="데이터 디스크에 Q 걸의 지시사항 넣기" XP="250">
+      <text>작업장의 Q 걸에게 말하고 바이틸을 위한 그녀의 지시사항을 디스크에 인코딩해달라고 요청하라.</text>
+    </step>
+    <step Name="베데스다 수사의 메카니미스트 거주지 찾기" XP="2500">
+      <text>북쪽으로 여행하여 거대한 동굴 베데스다 수사로 가서 메카니미스트 신전을 찾으세요.</text>
+    </step>
+
+    <step Name="신호 해독" XP="4000">
+      <text>메카니미스트 거주지에 침투하고, 바이틸과 교신하며, 신호를 해독하세요.</text>
+    </step>
+
+    <step Name="그릿 게이트로 돌아가기" XP="6000">
+      <text>그릿 게이트로 돌아가 오토와 대화하세요.</text>
+    </step>
+  </quest>
+
+  <quest Name="오 영광스러운 Shekhinah!" Level="3" System="TravelToStiltSystem" Accomplishment="개종자의 추천으로, 너는 식스 데이 스틸트의 상인 바자와 대성당을 방문했다." Hagiograph="=name=은 소금 평원을 가로질러 북쪽과 서쪽으로 여행하여 식스 데이 스틸트의 상인 바자와 대성당에 도착했다. 거기서, 스틸트족이 술탄의 명예를 기려 찬송가를 불렀다." HagiographCategory="VisitsLocation" Gospel="빈 평원을 가로지른 후, =name=은 식스 데이 스틸트의 상인 바자와 성당으로 여행했다. 거기서 =player.subjective=는 메카니미스트들과 친구가 되고 유물을 신성한 우물에 던졌다.">
+
+    <step Name="식스 데이 스틸트로 순례" XP="1500">
+      <text>대 소금 사막을 가로질러 상인 바자와 메카니미스트 성당을 방문하세요. 거기서 개종자가 네게 장식품을 바치라고 요청했다.</text>
+    </step>
+
+  </quest>
+
+  <quest Name="오몬포치의 백작" Level="20" System="OmonporchEarlSystem" Factions="Barathrumites" Reputation="100" Accomplishment="너는 아스포델과 거래하고 스핀들 기지의 땅을 확보했다." Achievement="ACH_OMONPORCH_EARL" Hagiograph="=year=년 =month=월에, =name=은 아스포델 더 러블리를 오몬포치의 백작이자 스핀들 그자우스의 수호자로 임명했다." HagiographCategory="Treats" Gospel="=year=년에, =name=은 부패한 관리자 아스포델을 오몬포치의 백작이자 장관으로 임명했다. 거기서 xe는 =player.t's= 이름으로 &lt;spice.elements.entity$elements[random].practices.!random&gt;의 관행을 명령했다.">
+
+    <step Name="오몬포치로 여행" XP="1000">
+      <text>북쪽으로 여행하여 오몬포치의 스핀들로 가라.</text>
+    </step>
+
+    <step Name="스핀들 확보" XP="1000">
+      <text>스핀들 아래의 땅을 장악하라.</text>
+    </step>
+
+    <step Name="그릿 게이트로 돌아가기" XP="5000">
+      <text>성공을 보고하기 위해 그릿 게이트로 돌아가세요.</text>
+    </step>
+  </quest>
+
+  <quest Name="무덤의 사색" Level="20">
+    <step Name="울림 조사">
+      <text>메인프레임에 접근하고 영지 주변의 셰일을 스캔하라.</text>
+    </step>
+   
+    <step Name="오토에게 말하기">
+      <text>메인프레임 방 내부 통신기나 직접 오토에게 말하세요.</text>
+    </step>
+  </quest>
+
+  <quest Name="무장 소집" Level="20" Accomplishment="너는 푸투스 템플러의 공격으로부터 그릿 게이트를 용감하게 방어했다." Achievement="ACH_CALL_TO_ARMS" Hagiograph="=name=은 거대한 메인프레임을 통해 아들과 딸들의 대대를 박살내고, 주변 신전에 유리와 갈륨을 쏟아부었다." HagiographCategory="Slays" Gospel="=year=년 =month=월에, =name=은 피비린내 나는 그릿 게이트 전투에서 연합 템플러 군대에 대해 결정적인 승리를 거두었다. 그릿 게이트는 뜨거운 갈륨과 부서진 유리로 너무나 황폐해져서 오토의 묘지로 개명되었다.">
+
+    <step Name="방어 준비" Optional="true">
+      <text>푸투스 템플러 공격에 대비하여 레이저 포대에 전원을 공급하고, 포스 프로젝터에 전원을 공급하고, 크롬링을 오버클럭하며, 로다니스 Y를 활성화하세요.</text>
+    </step>
+    
+    <step Name="그릿 게이트 방어">
+      <text>그릿 게이트를 공격자들로부터 방어하라.</text>
+    </step>
+  </quest>
+
+  <quest Name="평가" Level="20">
+    <step Name="오토에게 말하기" XP="10000">
+      <text>공격으로 입은 손실을 평가하기 위해 오토에게 말하세요.</text>
+    </step>    
+  </quest>
+
+  <quest Name="Pax Klanq, 맞으시죠?" Level="25" System="PaxKlanqIPresumeSystem" Factions="Barathrumites" Reputation="100" Accomplishment="너는 산호의 길을 걸었고 버섯 신동 팩스 클랑크를 설득하여 Q 걸의 설계대로 배터리를 제작하게 했다." Achievement="ACH_PAX_KLANQ" Hagiograph="공허의 공간에서, 석공 =name=은 별벽돌로 산호의 길을 건설하고 신성한 언어로 버섯과 대화했다." HagiographCategory="CreatesSomething" Gospel="산호와 균류 살로 만든 차원 밖 성당에서, =name=은 팩스 클랑크와 결혼하여 균류들과 =player.possessive= 관계를 굳건히 했다.">
+
+    <step Name="클라이머를 위한 Q 걸의 청사진 얻기" XP="250">
+      <text>팩스 클랑크에게 전달할 클라이머의 청사진을 얻으세요.</text>
+    </step>
+
+    <step Name="무지개의 심장 찾기" XP="1500">
+      <text>수수께끼의 첫 번째 부분을 해독하세요.</text>
+    </step>
+
+    <step Name="신의 살 먹기" XP="1500">
+      <text>수수께끼의 두 번째 부분을 해독하세요.</text>
+    </step>
+
+    <step Name="산호의 길 따라가기" XP="1500">
+      <text>수수께끼의 세 번째 부분을 해독하세요.</text>
+    </step>
+
+    <step Name="팩스 클랑크를 설득하여 클라이머 제작" XP="1500">
+      <text>팩스 클랑크를 설득하여 Q 걸의 설계대로 클라이머를 제작하기로 동의하게 하라.</text>
+    </step>
+
+    <step Name="그릿 게이트로 돌아가기" XP="4000">
+      <text>그릿 게이트로 돌아가 바라트룸에게 말하세요.</text>
+    </step>
+  </quest>
+
+  <quest Name="바람 위의 꽃잎" System="PetalsOnTheWindSystem" Accomplishment="힌드렌 파리아의 요청으로, 너는 수수께끼를 조사하기 위해 베이 라의 숨겨진 마을로 여행했다." Hagiograph="자비로운 =name=은 사슴족 파리아의 요청으로 초원의 일에 간섭하기로 동의했다. 술탄은 친절함으로 통치한다!" HagiographCategory="MeetsWithCounselors" Gospel="&lt;spice.time.partsOfDay.!random&gt;에 &lt;spice.commonPhrases.strange.!random.article&gt; 아래 초원 하늘에서, 베이 라의 힌드렌은 지평선에 거대한 거울처럼 보이는 형상을 보았다. 그것은 =name=이었고, =player.subjective=가 도착하자, 힌드렌은 =player.objective=에게 기념비를 세웠고 그때부터 =player.objective=를 거울 켄드렌이라고 불렀다.">
+
+    <step Name="베이 라 조사" XP="250">
+      <text>숨겨진 마을 베이 라로 여행하여 그곳의 문제들을 조사하세요.</text>
+    </step>    
+
+  </quest>
+
+  <quest Name="Eskhind 찾기" Accomplishment="너는 속이 비어 있는 나무 안에서 힌드렌 파리아 에스킨드와 그녀의 자매들을 찾았다." Hagiograph="기억하라! =name=은 자신의 운명에서 도망친 파리아 에스킨드를 훈계했다. 그때부터 그녀는 온유한 에스킨드로 알려졌다." HagiographCategory="Slays" Gospel="=year=년 =month=월에, =name=은 힌드렌 가보 킨드리시의 위치를 두고 고발당한 에스킨드에게 결투를 신청받았다. =name=은 승리했고 에스킨드를 베이 라로 돌아가도록 훈계했다.">
+
+    <step Name="에스킨드 찾기" XP="250">
+      <text>에스킨드를 찾고 킨드리시를 회수하세요.</text>
+    </step>
+
+    <step Name="워든 닐라힌드에게 말하기" XP="0" Optional="true">
+      <text>에스킨드와 절친이었던 워든 닐라힌드에게 말하세요.</text>
+    </step>
+
+    <step Name="에스킨드의 소식 전달" XP="250">
+      <text>에스킨드의 소식을 가지고 케에게 말하세요.</text>
+    </step>
+
+  </quest>
+
+  <quest Name="사랑과 공포" Accomplishment="너는 버려진 사랑 시를 찾아 돌려주었다." Achievement="ACH_BEY_LAH_SONNET" Hagiograph="=name=의 존재가 얼마나 고무적인가, 그가 온유한 에스킨드를 그렇게 구원하여 그녀가 베이 라의 가장 위대한 챔피언의 손을 구하게 했다!" HagiographCategory="Trysts" Gospel="나무 그루터기의 타버린 핵심에서, =name=은 에스킨드와 워든 닐라힌드와 결혼하여 베이 라의 힌드렌들과 =player.possessive= 우정을 굳건히 했다.">
+		 
+	<step Name="위험에 처한 사랑 구하기" XP="250" Optional="true">
+	  <text>연인들의 운명이 봉인되기 전에 개입하라.</text>
+	</step>
+    
+    <step Name="사랑 소넷 반환" XP="50">
+      <text>구겨진 종이를 그 작가나 의도된 수신자에게 주라.</text>
+    </step>
+
+  </quest>
+
+  <quest Name="혈연과 친지" Accomplishment="베이 라의 운명에 좋든 나쁘든, 너는 킨드리시 실종의 수수께끼를 풀고 워든 닐라힌드가 정의를 집행하는 것을 도왔다." Hagiograph="거룩한 구원자! =name=은 베이 라 초원의 고통받는 사슴족들에게 평화와 번영을 가져왔다." HagiographCategory="BecomesLoved" Gospel="도둑들과 그들을 권력화하는 당국에 맞서, =name=은 베이 라 마을에서 조사를 이끌었다. =player.t's= &lt;spice.elements.entity$elements[random].adjectives.!random&gt; 지혜 때문에, 워든 닐라힌드는 제대로 정의를 집행할 수 있었다.">
+
+    <step Name="워든 닐라힌드에게 보고" XP="250">
+      <text>베이 라의 워든에게 킨드리시 도난의 논쟁적인 성격에 대해 말하세요.</text>
+    </step>
+
+    <step Name="모든 증거 발견" XP="250" Optional="true">
+      <text>도둑으로 이어질 수 있는 모든 증거를 발견하라.</text>
+    </step>
+
+    <step Name="도둑 고발" XP="1000">
+      <text>사건의 증거를 가지고 워든 닐라힌드에게 말하고 킨드리시를 훔친 도둑을 고발하라.</text>
+    </step>
+  </quest>
+
+  <quest Name="매장된 감시자들" Accomplishment="너는 무덤에 거주하는 모팽고의 소집단을 방문했다." Hagiograph="오몬포치의 이터들의 무덤 깊숙이에서, =name=은 비밀 의식을 행하는 모팽고 일족을 우연히 만났다. Ey는 술탄을 eir 무리에 받아들이고 =player.objective=에게 eir 비밀을 가르쳤다." HagiographCategory="Treats" Gospel="오몬포치의 이터들의 무덤 깊숙이에서, =name=은 비밀 의식을 행하는 모팽고 일족을 우연히 만났다. Ey는 =sultanTerm=을 eir 무리에 받아들이고 =player.objective=에게 eir 비밀을 가르쳤다.">
+
+    <step Name="이터들의 무덤의 모팽고 정착지 방문" XP="2000">
+      <text>북서쪽 지하묘지의 친절한 포탑 비비라를 찾고, 조톰이 너를 보냈다고 em에게 말하세요.</text>
+    </step>
+  </quest>
+  
+  <quest Name="닳아가는 애착" System="FrayingFavoritesSystem">
+
+    <step Name="레바와 대화" XP="500">
+      <text>레바에게 eir가 반발 장치와의 만남에 대해 물어보라.</text>
+    </step>
+    
+    <step Name="반발 장치 회수" XP="4000">
+      <text>포크 지하묘지에서 k-고니논을 찾고 반발 장치를 회수하세요.</text>
+    </step>
+    
+    <step Name="감시자들과 대화" XP="0" Optional="true">
+      <text>모팽고 감시자 다도곰, 도요바, 갸묘, 요나에게 반발 장치에 대해 물어보라.</text>
+    </step>
+
+    <step Name="반발 장치 사용" XP="4000">
+      <text>반발 장치를 가장 잘 적용하는 방법을 선택하라.</text>
+    </step>
+
+  </quest>
+
+  <quest Name="Eaters의 무덤" Level="30" Factions="Barathrumites" Reputation="100" Accomplishment="너는 스핀들의 자기장을 성공적으로 비활성화한 후 이터들의 무덤에서 돌아왔다." Achievement="ACH_EATER_TOMB">
+    
+    <step Name="죽음의 표시 회수" XP="2500">
+      <text>이터들이 그들의 죽은 자를 표시하는 데 사용한 잃어버린 인장을 회수하세요.</text>
+    </step>
+
+    <step Name="표시 새기기" XP="2500">
+      <text>네 몸에 표시를 문신하라.</text>
+    </step>
+
+    <step Name="이터들의 무덤 입장" XP="2500">
+      <text>봉인된 무덤에 입장하라.</text>
+    </step>
+
+    <step Name="무덤을 올라가 브라이트솔로 건너가기" XP="2500">
+      <text>무덤을 올라가고 레셰프의 묘실을 찾으세요. 거기서부터 브라이트솔로 여행하는 방법을 발견하라.</text>
+    </step>
+
+    <step Name="스핀들의 자기장 비활성화" XP="2500">
+      <text>스핀들의 제어 장치에 접근하고 장을 끄라.</text>
+    </step>
+    
+    <step Name="그릿 게이트로 돌아가기" XP="7500">
+      <text>그릿 게이트로 돌아가 바라트룸에게 말하세요.</text>
+    </step>
+  </quest>
+
+  <quest Name="착륙장" Level="35" Factions="Newly Sentient Beings" Reputation="300" System="LandingPadsSystem" Achievement="ACH_SLYNTH_HOME">
+    <step Name="정착지와 상담">
+      <text>최소 세 개의 정착지 지도자들을 설득하여 슬린스에게 성역을 제공하도록 하라.</text>
+    </step>
+    <step Name="성역 후보">
+      <text>이 파벌들이 슬린스를 받아들이기로 동의했다.</text>
+    </step>
+    <step Name="슬린스에게 선택하게 하기">
+      <text>타에게 슬린스를 소집하고 결정을 내리라고 말하세요.</text>
+    </step>
+  </quest>
+
+  <quest Name="하이드로폰으로 귀환" Level="35">
+    <step Name="하이드로폰으로 돌아가기">
+      <text>슬린스가 그들의 새 집에 도착하면, 하이드로폰에서 타에게 말하세요.</text>
+    </step>    
+  </quest>
+	
+	<quest Name="If, Then, Else" Level="40" Factions="Chavvah" Reputation="200" Accomplishment="너는 생명의 나무 차바를 도와 -elseing 의식을 완료하고 그 엔티티-차임 중 하나를 영원히 분리시켰다." Hagiograph="빼기의 아름다움! 가지치기꾼 =name=은 생명의 나무를 더 미학적인 형태로 잘랐다." HagiographCategory="DoesSomethingRad" Gospel="생명의 나무의 많은 의지에 따라 행동하며, =name=은 차바의 줄기 아래 빛나는 소프트로 이동 바위를 가져왔다. 거기서 =player.subjective=는 비밀 의식을 수행하고 영원히 변한 채로 표면으로 돌아왔다.">
+    <step Name="타우의 차임 수집" XP="2500">
+      <text>케테르의 그녀의 가지에서 타우의 차임을 회수하세요.</text>
+    </step>
+    <step Name="주근 바닥으로 가기" XP="5000">
+      <text>차바의 주근을 따라 그 종점까지, 40층 깊이로 여행하세요.</text>
+    </step>
+    <step Name="타우를 그녀의 차임과 재결합" XP="5000">
+      <text>그녀의 차임을 주근에 접촉시키고 -elseing 의식을 완료하세요.</text>
+    </step>
+		<step Name="케테르로 돌아가기" XP="15000">
+			<text>케테르로 돌아가 디브라크와 대화하세요.</text>
+		</step>
+  </quest>
+
+	<quest Name="골렘" Level="40" Accomplishment="" Achievement="ACH_GOLEM">
+		<step ID="Soup" Name="혈액 유체 획득">
+			<text>원시 수프 20드램을 팩스 클랑크에게 가져가세요.</text>
+		</step>
+		<step ID="Body" Name="몸체 선택">
+			<text>레벨 30 이상의 추종자를 제공하세요.</text>
+		</step>
+		<step ID="Catalyst" Name="촉매 선택">
+			<text>순수한 액체 3드램을 제공하세요.</text>
+		</step>
+		<step ID="Atzmus" Name="아츠무스 선택">
+			<text>생물의 팔다리를 제공하세요.</text>
+		</step>
+		<step ID="Armament" Name="무기 선택">
+			<text>제타크롬 무기 하나를 제공하세요.</text>
+		</step>
+		<step ID="Incantation" Name="주문 선택">
+			<text>네 연대기에서 항목 하나를 제공하세요.</text>
+		</step>
+		<step ID="Hamsa" Name="함사 선택">
+			<text>무게가 5파운드 이하인 아이템을 제공하세요.</text>
+		</step>
+		<step ID="Power" Name="승천 동력원 획득">
+			<text>중성자 플럭스 3드램을 제공하거나 다른 동력원을 찾으세요.</text>
+		</step>
+	</quest>
+
+	<quest Name="우리는 별의 화물" Level="40" Achievement="ACH_STARFREIGHT" System="AscensionSystem">
+		<step ID="Barathrum" Name="승천 준비">
+			<text>골렘 안에 바라트룸을 넣어라.</text>
+		</step>
+		<step ID="Ascend" Name="승천">
+			<text>스핀들의 승천 메커니즘을 작동시켜라.</text>
+		</step>		
+	</quest>
+
+  <quest Name="탈환" Level="40" System="ReclamationSystem" Achievement="ACH_RECLAMATION">
+    
+    <intproperty Name="MinorBattles" Value="2" />
+    <intproperty Name="HealDelay" Value="2400" />
+    <intproperty Name="ReinforcementDelay" Value="1200" />
+    <intproperty Name="ReinforcementChance" Value="33" />
+    <intproperty Name="ClusterChance" Value="50" />
+    <intproperty Name="ClusterDistance" Value="4" />
+    <intproperty Name="ClusterRadius" Value="4" />
+    <intproperty Name="DisplaceBiotaChance" Value="25" />   
+    <intproperty Name="DisplaceFaunaChance" Value="25" />
+    <intproperty Name="DisplaceFloraChance">
+      <value>85</value>
+      <value>75</value>
+    </intproperty>
+    <property Name="ArrivalTimer" Value="300-1500" />
+    <property Name="ArrivalSound" Value="grenade_heat,Sounds/Creatures/VO/sfx_creature_insect_generic_vo_idle" />
+    <property Name="NephalRetryZone" Value="JoppaWorld.53.4.1.0.10" />
+    <property Name="MessageLeaving">
+      Leaving the battlefield may give the Templar time to regroup and result in more Barathrumite casualties. Proceed?
+    </property>
+    <property Name="MessageArrival">
+      {{m|ULLLLLLLLLLLLQ!}}
+			
+			The aching world-moan of the Nephilim resounds, and your body throbs in the electric air!
+			
+			It has arrived, {{R|=direction=}}.
+    </property>
+    <property Name="MessageArrivalSuper">
+      {{m|QQQYQQQYQQQYQQQYQQQ!}}
+
+      Starburst ejecta rains down in burning ribbons, and your body is nearly negated into nothing by the unutterable moans of the early universe!
+
+      =name= descends, {{R|=direction=}}.
+    </property>
+    <property Name="FixedSpawnLocations">
+      <entry Key="JoppaWorld.53.4.1.0.10">Major</entry>
+      <entry Key="JoppaWorld.53.4.0.0.10">Ezra</entry>
+    </property>
+    <property Name="BattlePopulations">
+      <entry Key="Major">OmonporchBattle_Major</entry>
+      <entry Key="Minor">OmonporchBattle_Minor</entry>
+      <entry Key="Ezra">OmonporchBattle_Ezra</entry>
+    </property>
+    <property Name="ReinforcementPopulations">
+      <entry Key="Major">OmonporchBattle_Reinforcements_Major</entry>
+      <entry Key="Minor">OmonporchBattle_Reinforcements_Minor</entry>
+      <entry Key="Ezra">OmonporchBattle_Reinforcements_Ezra</entry>
+    </property>
+
+    
+    <step ID="Warleader1" Name="=name=을(를) 물리치세요" Value="OmonporchBattle_Major_KnightCommander">
+      <text>오몬포치 주변에서 템플러 전쟁 지도자의 위협을 제거하세요.</text>
+    </step>
+    <step ID="Warleader2" Name="=name=을(를) 물리치세요" Value="OmonporchBattle_Major_KnightCommander">
+      <text>오몬포치 주변에서 템플러 전쟁 지도자의 위협을 제거하세요.</text>
+    </step>
+    <step ID="Warleader3" Name="=name=을(를) 물리치세요" Value="OmonporchBattle_Major_GrandNewfather">
+      <text>오몬포치 주변에서 템플러 전쟁 지도자의 위협을 제거하세요.</text>
+    </step>
+    <step ID="Warleader4" Name="=name=을(를) 물리치세요" Value="OmonporchBattle_Major_TemplarMech">
+      <text>오몬포치 주변에서 템플러 전쟁 지도자의 위협을 제거하세요.</text>
+    </step>
+    <step ID="Nephal" Name="짐승의 걸음" Hidden="true">
+      <text>=name=의 위협을 제거하세요.</text>
+    </step>
   </quest>
 </quests>
