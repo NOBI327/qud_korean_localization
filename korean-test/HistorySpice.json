@@ -3,8 +3,8 @@
     "elements": {
       "glass": {
         "professions": [
-          "유리 불기 장인",
-          "창문 제작자"
+          "glassblower",
+          "window maker"
         ],
         "materials": [
           "유리",
@@ -75,8 +75,8 @@
       },
       "jewels": {
         "professions": [
-          "보석상",
-          "지질학자"
+          "jeweler",
+          "geologist"
         ],
         "materials": [
           "보석",
@@ -167,9 +167,9 @@
       },
       "stars": {
         "professions": [
-          "점성술사",
-          "천문학자",
-          "별 관측자"
+          "astrologist",
+          "astronomer",
+          "stargazer"
         ],
         "materials": [
           "별먼지",
@@ -248,8 +248,8 @@
       },
       "time": {
         "professions": [
-          "역사가",
-          "서기관"
+          "historian",
+          "scribe"
         ],
         "materials": [
           "작은 톱니바퀴들",
@@ -326,7 +326,7 @@
       },
       "salt": {
         "professions": [
-          "요리사"
+          "cook"
         ],
         "materials": [
           "소금",
@@ -396,11 +396,11 @@
       },
       "ice": {
         "professions": [
-          "지질학자",
-          "별 관측자",
-          "천문학자",
-          "유리 불기 장인",
-          "겨울 은자"
+          "geologist",
+          "stargazer",
+          "astronomer",
+          "glassblower",
+          "winter eremite"
         ],
         "materials": [
           "얼음",
@@ -478,11 +478,11 @@
       },
       "scholarship": {
         "professions": [
-          "학자",
-          "서기관",
-          "철학자",
-          "과학자",
-          "역사가"
+          "scholar",
+          "scribe",
+          "philosopher",
+          "scientist",
+          "historian"
         ],
         "materials": [
           "잉크",
@@ -551,8 +551,8 @@
       },
       "might": {
         "professions": [
-          "병사",
-          "검투사"
+          "soldier",
+          "gladiator"
         ],
         "materials": [
           "제타크롬",
@@ -649,7 +649,7 @@
       },
       "chance": {
         "professions": [
-          "도박사"
+          "gambler"
         ],
         "materials": [
           "운 그 자체",
@@ -740,8 +740,8 @@
       },
       "circuitry": {
         "professions": [
-          "땜장이",
-          "전기 기술자"
+          "tinker",
+          "electrician"
         ],
         "materials": [
           "전선",
@@ -832,8 +832,8 @@
       },
       "travel": {
         "professions": [
-          "탐험가",
-          "유목민"
+          "explorer",
+          "nomad"
         ],
         "materials": [
           "물",
